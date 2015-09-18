@@ -52,9 +52,66 @@
                 <p id="ambp1">Quin és el teu àmbit</p>
                 <p id="ambp2">de treball?</p>
             </div>
-            <div class="caixa mini literatura groc">
+            <div class="caixa mini literatura groc" data-ambit="literatura">
                 <p id="lit">Literatura</p>
+            </div>
+            <div class="caixa mini cinema blau" data-ambit="cinema">
+                <p id="lit">Cinema</p>
+            </div>
+            <div class="caixa mini fotografia roig" data-ambit="fotografia">
+                <p id="lit">Fotografia</p>
+            </div>
+            <div class="caixa mini ornitologia verd" data-ambit="ornitologia">
+                <p id="lit">Ornitologia</p>
             </div>
         </div>
     </body>
+    <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
+    <script async>
+        $('.mini').on('click',function(){
+            switch($(this).data('ambit')){
+              case 'literatura':
+                $('.ornitologia').hide(300,function(){
+                  $('.fotografia').hide(300,function(){
+                    $('.cinema').hide(300);
+                  });
+                });
+                break;
+              case 'cinema':
+                $('.ornitologia').hide(300,function(){
+                  $('.fotografia').hide(300,function(){
+                    $('.literatura').hide(300,function(){
+                      $('.cinema').animate({
+                        'top':'-=55px'
+                      },'slow');
+                    });
+                  });
+                });
+                break;
+              case 'fotografia':
+                $('.ornitologia').hide(300,function(){
+                  $('.cinema').hide(300,function(){
+                    $('.literatura').hide(300,function(){
+                      $('.fotografia').animate({
+                        'top':'-=110px'
+                      },'slow');
+                    });
+                  });
+                });
+                break;
+              case 'ornitologia':
+                $('.fotografia').hide(300,function(){
+                  $('.cinema').hide(300,function(){
+                    $('.literatura').hide(300,function(){
+                      $('.ornitologia').animate({
+                        'top':'-=165px'
+                      },'slow');
+                    
+                    });
+                  });
+                });
+                break;                             
+            }
+        });
+    </script>
 </html>
