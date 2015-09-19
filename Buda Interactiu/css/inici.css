@@ -8,7 +8,7 @@ img{
     font-weight: bolder;
     position: relative;
     text-transform: uppercase;
-    font-size: 16rem;
+    font-size: 15rem;
     margin-left: -0.07em;
     animation-name: buda;
     animation-duration: 1s;
@@ -19,7 +19,7 @@ img{
 }
 #t2{
     font-weight: bolder;
-    font-size: 3.5rem;
+    font-size: 3.3rem;
     animation-name: illa;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -28,7 +28,7 @@ img{
     z-index: 10;
 }
 #t3{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: bold;
     animation-name: delta;
     animation-duration: 1s;
@@ -321,4 +321,29 @@ nav{
 @keyframes cp{
     0% {transform:scaleX(0);}
     100% {transform:scaleX(1);}
+}
+.text{
+    display: none;
+    top: 657px;
+    height: auto;
+}
+.text p{
+    text-transform: none;
+    font-size: 18px;
+    color: black;
+    font-weight: normal;
+    line-height: 1.1;
+    margin-bottom: 35px;
+}
+.text a{
+    display: block;
+    font-size: 16px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    border: black solid 1px;
+    border-radius: 3px;
+    text-transform: uppercase;
 }

@@ -64,53 +64,32 @@
             <div class="caixa mini ornitologia verd" data-ambit="ornitologia">
                 <p id="lit">Ornitologia</p>
             </div>
+            <div class="caixa text">
+                <p></p>
+                <a href="#">Començar</a>
+            </div>
         </div>
     </body>
     <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
+    <script src="js/jquery.color.js" type="text/javascript"></script>
+    <script src="js/variables.js" type="text/javascript"></script>
+    <script src="js/funcions.js" type="text/javascript"></script>
     <script async>
         $('.mini').on('click',function(){
+          $('.mini').off('click');
             switch($(this).data('ambit')){
               case 'literatura':
-                $('.ornitologia').hide(300,function(){
-                  $('.fotografia').hide(300,function(){
-                    $('.cinema').hide(300);
-                  });
-                });
+                clicaLite();
                 break;
               case 'cinema':
-                $('.ornitologia').hide(300,function(){
-                  $('.fotografia').hide(300,function(){
-                    $('.literatura').hide(300,function(){
-                      $('.cinema').animate({
-                        'top':'-=55px'
-                      },'slow');
-                    });
-                  });
-                });
+                clicaCine();
                 break;
               case 'fotografia':
-                $('.ornitologia').hide(300,function(){
-                  $('.cinema').hide(300,function(){
-                    $('.literatura').hide(300,function(){
-                      $('.fotografia').animate({
-                        'top':'-=110px'
-                      },'slow');
-                    });
-                  });
-                });
+                clicaFoto();
                 break;
               case 'ornitologia':
-                $('.fotografia').hide(300,function(){
-                  $('.cinema').hide(300,function(){
-                    $('.literatura').hide(300,function(){
-                      $('.ornitologia').animate({
-                        'top':'-=165px'
-                      },'slow');
-                    
-                    });
-                  });
-                });
-                break;                             
+                clicaOrni();
+                break;                     
             }
         });
     </script>
