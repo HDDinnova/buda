@@ -233,7 +233,8 @@ nav{
 }
 .mini{
     padding-top: 15px;
-    height: 48px;  
+    height: 48px;
+    cursor: pointer;
 }
 .mini:hover{
     background-color: black;
@@ -346,4 +347,12 @@ nav{
     border: black solid 1px;
     border-radius: 3px;
     text-transform: uppercase;
+}
+.fcolors2{
+    display: none;
+    position: fixed;
+    height: 95vh;
+    right: 12%;
+    top: 6%;
+    z-index: 5;
 }

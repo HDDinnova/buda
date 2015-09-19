@@ -8,6 +8,8 @@ function clicaLite(){
           $('#plite').animate({
             'height':'95vh',
             'top':'6%'
+          },function(){
+              $('#cl2').fadeIn('slow');
           });
         });
       });
@@ -36,6 +38,7 @@ function clicaLite(){
       $('.text p').html(tlite);
       $('.text').show('slow');
     });
+    $('#go').attr('href','registre.php?a=lite');
 }
 function clicaCine(){
     $('#porni').hide(300);
@@ -48,6 +51,8 @@ function clicaCine(){
             'height':'95vh',
             'top':'6%',
             'right':'12%'
+          },function(){
+              $('#cc2').fadeIn('slow');
           });
         });
       });
@@ -75,6 +80,8 @@ function clicaCine(){
       $('.text p').html(tcine);
       $('.text').show('slow');
     });
+    
+    $('#go').attr('href','registre.php?a=cine');
 }
 function clicaFoto(){
     $('#porni').hide(300);
@@ -87,6 +94,8 @@ function clicaFoto(){
             'height':'95vh',
             'top':'6%',
             'right':'12%'
+          },function(){
+              $('#cf2').fadeIn('slow');
           });
         });
       });
@@ -113,6 +122,8 @@ function clicaFoto(){
       $('.text p').html(tfoto);
       $('.text').show('slow');
     });
+    
+    $('#go').attr('href','registre.php?a=foto');
 }
 function clicaOrni(){
     $('#pfoto').hide(300);
@@ -125,6 +136,8 @@ function clicaOrni(){
             'height':'95vh',
             'top':'6%',
             'right':'12%'
+          },function(){
+              $('#co2').fadeIn('slow');
           });
         });
       });
@@ -149,4 +162,5 @@ function clicaOrni(){
       $('.text p').html(torni);
       $('.text').show('slow');
     });
+    $('#go').attr('href','registre.php?a=orni');
 }
