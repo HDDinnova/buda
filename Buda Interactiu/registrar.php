@@ -5,28 +5,25 @@ $edat=filter_input(INPUT_POST,'edat');
 $pais=utf8_decode(filter_input(INPUT_POST,'pais'));
 $correu=filter_input(INPUT_POST,'correu');
 $tipus=filter_input(INPUT_POST,'tipus');
+$contrasenya=filter_input(INPUT_POST,'contrasenya');
 
-function getConnection() {
-    $dbhost="localhost";
-    $dbuser="admin_buda";
-    $dbpass="@Buda#Interactiu";
-    $dbname="budainteractiu";
-    $dbh = new PDO("mysql:host=$dbhost;dbname=$dbname;charset=utf8", $dbuser, $dbpass);	
-    $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    return $dbh;
-}
+require_once 'class/connexio.php';
 
-$sql = "INSERT INTO usuaris(nom,cognom,edat,pais,correu,tipus) VALUES ('$nom','$cognom',$edat,'$pais','$correu','$tipus')";
-try {
-    $db = getConnection();
-    $stmt = $db->query($sql);
-    $db = null;
+$encriptada=  crypt($contrasenya);
+$sql = "INSERT INTO usuaris(nom,cognom,edat,pais,correu,tipus,contrasenya) VALUES ('$nom','$cognom',$edat,'$pais','$correu','$tipus','$encriptada')";
+$sqlcheck = "SELECT id FROM usuaris WHERE correu='$correu'";
+$db = new connexio();
+$a=$db->query($sqlcheck);
+if ($a->num_rows===0){
+  if($db->query($sql)){
     
     setcookie('personatge[nom]',$nom);
     setcookie('personatge[cognom]',$cognom);
     setcookie('personatge[tipus]',$tipus);
-    
-    header('Location: inici.php');
-} catch(PDOException $e) {
-    echo '{"error":{"text":'. $e->getMessage() .'}}'; 
+    header('Location: inici');
+  }else {echo $db->error;
+  }
+  $db->close();
+} else {
+  header('Location: jaregistrat');
 }

@@ -1,0 +1,33 @@
+html{
+    overflow: hidden;
+}
+img{
+    display: block;
+}
+.caixa{
+    margin-bottom: 7px;
+    padding: 20px;
+    margin-left: 50px;
+}
+.caixa img{
+    height: 15rem;
+    border: black solid 1px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+h2{
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 30px;
+    line-height: normal;
+}
+.caixa p{
+    text-transform: uppercase;
+}
+button[type=submit]{
+    background-color: transparent !important;
+    background-repeat:no-repeat;
+    border: black solid 1px !important;
+    margin-top: 50px;
+}

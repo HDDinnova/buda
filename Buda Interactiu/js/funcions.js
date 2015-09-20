@@ -1,4 +1,45 @@
 function clicaLite(){
+    if($('.literatura').hasClass('negre')){
+        console.log('negre');
+    }else if($('.literatura').hasClass('gris')){
+        lite2();
+    } else {
+        lite1();
+    }
+    $('#go').attr('href','registre/lite');
+}
+function clicaCine(){
+     if($('.cinema').hasClass('negre')){
+        console.log('negre');
+    }else if($('.cinema').hasClass('gris')){
+        cine2();
+    } else {
+        cine1();
+    }
+    $('#go').attr('href','registre/cine');
+}
+function clicaFoto(){
+     if($('.fotografia').hasClass('negre')){
+        console.log('negre');
+    }else if($('.fotografia').hasClass('gris')){
+        foto2()
+    } else {
+        foto1();
+    } 
+    $('#go').attr('href','registre/foto');
+}
+function clicaOrni(){
+     if($('.ornitologia').hasClass('negre')){
+        console.log('negre');
+    }else if($('.ornitologia').hasClass('gris')){
+        orni2();
+    } else {
+        orni1();
+    }
+    $('#go').attr('href','registre/orni');
+}
+
+function lite1(){
     $('#porni').hide(300);
     $('#corni').hide(300,function(){
       $('#pfoto').hide(300);
@@ -9,8 +50,8 @@ function clicaLite(){
             'height':'95vh',
             'top':'6%'
           },function(){
-              $('#cl2').fadeIn('slow');
-          });
+              $('#cl2').fadeIn('slow').addClass('persgran');
+          }).addClass('persgran');
         });
       });
     });
@@ -18,19 +59,19 @@ function clicaLite(){
     $('.cinema').animate({
       backgroundColor:'gray',
       'top':c1
-    });
+    }).addClass('gris');
     $('.fotografia').animate({
       backgroundColor:'gray',
       'top':c2
-    });
+    }).addClass('gris');
     $('.ornitologia').animate({
       backgroundColor:'gray',
       'top':c3
-    });
+    }).addClass('gris');
     $('.literatura').animate({
       backgroundColor:'#000000',
       'top':c4
-    });
+    }).addClass('negre');
     $('.ambit').animate({
       backgroundColor:'#EEC41B'
     },function(){
@@ -38,9 +79,9 @@ function clicaLite(){
       $('.text p').html(tlite);
       $('.text').show('slow');
     });
-    $('#go').attr('href','registre.php?a=lite');
 }
-function clicaCine(){
+function cine1(){    
+    $('#go').attr('href','registre/lite');
     $('#porni').hide(300);
     $('#corni').hide(300,function(){
       $('#pfoto').hide(300);
@@ -52,8 +93,8 @@ function clicaCine(){
             'top':'6%',
             'right':'12%'
           },function(){
-              $('#cc2').fadeIn('slow');
-          });
+              $('#cc2').fadeIn('slow').addClass('persgran');
+          }).addClass('persgran');
         });
       });
     });
@@ -61,18 +102,18 @@ function clicaCine(){
     $('.cinema').animate({
       backgroundColor:'black',
       'top':c4
-    });
+    }).addClass('negre');
     $('.fotografia').animate({
       backgroundColor:'gray',
       'top':c2
-    });
+    }).addClass('gris');
     $('.ornitologia').animate({
       backgroundColor:'gray',
       'top':c3
-    });
+    }).addClass('gris');
     $('.literatura').animate({
       backgroundColor:'gray'
-    });
+    }).addClass('gris');
     $('.ambit').animate({
       backgroundColor:'#66A8C8'
     },function(){
@@ -80,10 +121,8 @@ function clicaCine(){
       $('.text p').html(tcine);
       $('.text').show('slow');
     });
-    
-    $('#go').attr('href','registre.php?a=cine');
 }
-function clicaFoto(){
+function foto1(){
     $('#porni').hide(300);
     $('#corni').hide(300,function(){
       $('#pcine').hide(300);
@@ -95,26 +134,26 @@ function clicaFoto(){
             'top':'6%',
             'right':'12%'
           },function(){
-              $('#cf2').fadeIn('slow');
-          });
+              $('#cf2').fadeIn('slow').addClass('persgran');
+          }).addClass('persgran');
         });
       });
     });
     $('#cfoto').fadeOut('slow');
     $('.cinema').animate({
       backgroundColor:'gray'
-    });
+    }).addClass('gris');
     $('.fotografia').animate({
       backgroundColor:'black',
       'top':c4
-    });
+    }).addClass('negre');
     $('.ornitologia').animate({
       backgroundColor:'gray',
       'top':c3
-    });
+    }).addClass('gris');
     $('.literatura').animate({
       backgroundColor:'gray'
-    });
+    }).addClass('gris');
     $('.ambit').animate({
       backgroundColor:'#F15D42'
     },function(){
@@ -122,10 +161,8 @@ function clicaFoto(){
       $('.text p').html(tfoto);
       $('.text').show('slow');
     });
-    
-    $('#go').attr('href','registre.php?a=foto');
 }
-function clicaOrni(){
+function orni1(){
     $('#pfoto').hide(300);
     $('#cfoto').hide(300,function(){
       $('#pcine').hide(300);
@@ -137,30 +174,96 @@ function clicaOrni(){
             'top':'6%',
             'right':'12%'
           },function(){
-              $('#co2').fadeIn('slow');
-          });
+              $('#co2').fadeIn('slow').addClass('persgran');
+          }).addClass('persgran');
         });
       });
     });
     $('#corni').fadeOut('slow');
     $('.cinema').animate({
       backgroundColor:'gray'
-    });
+    }).addClass('gris');
     $('.fotografia').animate({
       backgroundColor:'gray'
-    });
+    }).addClass('gris');
     $('.ornitologia').animate({
       backgroundColor:'black'
-    });
+    }).addClass('negre');
     $('.literatura').animate({
       backgroundColor:'gray'
-    });
+    }).addClass('gris');
     $('.ambit').animate({
       backgroundColor:'#ABB057'
     },function(){
       $('.text').addClass('verd');
       $('.text p').html(torni);
       $('.text').show('slow');
+    });    
+}
+
+function lite2(){
+    $('.persgran').hide(100,function(){
+        $('#plite').css('height','95vh').css('top','6%');
+        $('#plite').show(function(){
+            $('#cl2').fadeIn('slow').addClass('persgran');
+        }).addClass('persgran');
     });
-    $('#go').attr('href','registre.php?a=orni');
+    $('.cinema').animate({
+      backgroundColor:'gray',
+      'top':c1
+    }).removeClass('gris').addClass('gris').removeClass('negre');
+    $('.fotografia').animate({
+      backgroundColor:'gray',
+      'top':c2
+    }).removeClass('gris').addClass('gris').removeClass('negre');
+    $('.ornitologia').animate({
+      backgroundColor:'gray',
+      'top':c3
+    }).removeClass('gris').addClass('gris').removeClass('negre');
+    $('.literatura').animate({
+      backgroundColor:'#000000',
+      'top':c4
+    }).addClass('negre').removeClass('gris');   
+    $('.ambit').animate({
+      backgroundColor:'#EEC41B'
+    },function(){
+      $('.text').removeClass('blau').removeClass('roig').removeClass('verd').animate({
+        backgroundColor:'#EEC41B'
+      });
+      $('.text p').html(tlite);
+      $('.text').show('slow');
+    });
+}
+function cine2(){
+    $('.persgran').hide(100,function(){
+        $('#pcine').css('height','95vh').css('top','6%').css('right','12%');
+        $('#pcine').show(function(){
+            $('#cc2').fadeIn('slow').addClass('persgran');
+        }).addClass('persgran');
+    });
+    $('.cinema').animate({
+      backgroundColor:'black',
+      'top':c4
+    }).addClass('negre').removeClass('gris');
+    $('.fotografia').animate({
+      backgroundColor:'gray',
+      'top':c2
+    }).removeClass('gris').addClass('gris').removeClass('negre');
+    $('.ornitologia').animate({
+      backgroundColor:'gray',
+      'top':c3
+    }).removeClass('gris').addClass('gris').removeClass('negre');
+    $('.literatura').animate({
+      backgroundColor:'gray',
+      'top':c1
+    }).removeClass('gris').addClass('gris').removeClass('negre');   
+    $('.ambit').animate({
+      backgroundColor:'#66A8C8'
+    },function(){
+      $('.text').removeClass('groc').removeClass('roig').removeClass('verd').animate({
+        backgroundColor:'#66A8C8'
+      });
+      $('.text p').html(tcine);
+      $('.text').show('slow');
+    });
 }
