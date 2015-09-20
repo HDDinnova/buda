@@ -1,3 +1,50 @@
+$('.mini').on('click',function(){
+    switch($(this).data('ambit')){
+        case 'literatura':
+            clicaLite();
+            break;
+        case 'cinema':
+            clicaCine();
+            break;
+        case 'fotografia':
+            clicaFoto();
+            break;
+        case 'ornitologia':
+            clicaOrni();
+            break;                     
+    }
+});
+
+$('.pers').on('click',function(){
+    switch($(this).data('ambit')){
+        case 'literatura':
+            clicaLite();
+            break;
+        case 'cinema':
+            clicaCine();
+            break;
+        case 'fotografia':
+            clicaFoto();
+            break;
+        case 'ornitologia':
+            clicaOrni();
+            break;                     
+    }
+});
+
+var menu1 = function(){
+    $('#menu1').click(function() {
+        $('.menu').animate({
+          right: '0px'
+        }, 200);
+    });
+      $('.icon-close').click(function() {
+        $('.menu').animate({
+          right: "-285px"
+        }, 200);
+      });
+};
+
 function clicaLite(){
     if($('.literatura').hasClass('negre')){
         console.log('negre');
@@ -40,12 +87,12 @@ function clicaOrni(){
 }
 
 function lite1(){
-    $('#porni').hide(300);
-    $('#corni').hide(300,function(){
-      $('#pfoto').hide(300);
-      $('#cfoto').hide(300,function(){
-        $('#pcine').hide(300);
-        $('#ccine').hide(300,function(){
+    $('#porni').fadeOut(300);
+    $('#corni').fadeOut(300,function(){
+      $('#pfoto').fadeOut(300);
+      $('#cfoto').fadeOut(300,function(){
+        $('#pcine').fadeOut(300);
+        $('#ccine').fadeOut(300,function(){
           $('#plite').animate({
             'height':'95vh',
             'top':'6%'
@@ -80,14 +127,13 @@ function lite1(){
       $('.text').show('slow');
     });
 }
-function cine1(){    
-    $('#go').attr('href','registre/lite');
-    $('#porni').hide(300);
-    $('#corni').hide(300,function(){
-      $('#pfoto').hide(300);
-      $('#cfoto').hide(300,function(){
-        $('#plite').hide(300);
-        $('#clite').hide(300,function(){
+function cine1(){
+    $('#porni').fadeOut(300);
+    $('#corni').fadeOut(300,function(){
+      $('#pfoto').fadeOut(300);
+      $('#cfoto').fadeOut(300,function(){
+        $('#plite').fadeOut(300);
+        $('#clite').fadeOut(300,function(){
           $('#pcine').animate({
             'height':'95vh',
             'top':'6%',
@@ -123,12 +169,12 @@ function cine1(){
     });
 }
 function foto1(){
-    $('#porni').hide(300);
-    $('#corni').hide(300,function(){
-      $('#pcine').hide(300);
-      $('#ccine').hide(300,function(){
-        $('#plite').hide(300);
-        $('#clite').hide(300,function(){
+    $('#porni').fadeOut(300);
+    $('#corni').fadeOut(300,function(){
+      $('#pcine').fadeOut(300);
+      $('#ccine').fadeOut(300,function(){
+        $('#plite').fadeOut(300);
+        $('#clite').fadeOut(300,function(){
           $('#pfoto').animate({
             'height':'95vh',
             'top':'6%',
@@ -163,12 +209,12 @@ function foto1(){
     });
 }
 function orni1(){
-    $('#pfoto').hide(300);
-    $('#cfoto').hide(300,function(){
-      $('#pcine').hide(300);
-      $('#ccine').hide(300,function(){
-        $('#plite').hide(300);
-        $('#clite').hide(300,function(){
+    $('#pfoto').fadeOut(300);
+    $('#cfoto').fadeOut(300,function(){
+      $('#pcine').fadeOut(300);
+      $('#ccine').fadeOut(300,function(){
+        $('#plite').fadeOut(300);
+        $('#clite').fadeOut(300,function(){
           $('#porni').animate({
             'height':'95vh',
             'top':'6%',
@@ -202,10 +248,10 @@ function orni1(){
 }
 
 function lite2(){
-    $('.persgran').hide(100,function(){
+    $('.persgran').fadeOut(100,function(){
         $('#plite').css('height','95vh').css('top','6%');
         $('#plite').show(function(){
-            $('#cl2').fadeIn('slow').addClass('persgran');
+            $('#cl2').fadeIn(200).addClass('persgran');
         }).addClass('persgran');
     });
     $('.cinema').animate({
@@ -235,10 +281,10 @@ function lite2(){
     });
 }
 function cine2(){
-    $('.persgran').hide(100,function(){
+    $('.persgran').fadeOut(100,function(){
         $('#pcine').css('height','95vh').css('top','6%').css('right','12%');
         $('#pcine').show(function(){
-            $('#cc2').fadeIn('slow').addClass('persgran');
+            $('#cc2').fadeIn(200).addClass('persgran');
         }).addClass('persgran');
     });
     $('.cinema').animate({
@@ -264,6 +310,72 @@ function cine2(){
         backgroundColor:'#66A8C8'
       });
       $('.text p').html(tcine);
+      $('.text').show('slow');
+    });
+}
+function foto2(){
+    $('.persgran').fadeOut(100,function(){
+        $('#pfoto').css('height','95vh').css('top','6%').css('right','12%');
+        $('#pfoto').show(function(){
+            $('#cf2').fadeIn(200).addClass('persgran');
+        }).addClass('persgran');
+    });
+    $('.cinema').animate({
+      backgroundColor:'gray',
+      'top':c2
+    }).removeClass('gris').addClass('gris').removeClass('negre');
+    $('.fotografia').animate({
+      backgroundColor:'black',
+      'top':c4
+    }).removeClass('gris').addClass('negre');
+    $('.ornitologia').animate({
+      backgroundColor:'gray',
+      'top':c3
+    }).removeClass('gris').addClass('gris').removeClass('negre');
+    $('.literatura').animate({
+      backgroundColor:'gray',
+      'top':c1
+    }).removeClass('gris').addClass('gris').removeClass('negre');   
+    $('.ambit').animate({
+      backgroundColor:'#F15D42'
+    },function(){
+      $('.text').removeClass('groc').removeClass('roig').removeClass('verd').animate({
+        backgroundColor:'#F15D42'
+      });
+      $('.text p').html(tfoto);
+      $('.text').show('slow');
+    });
+}
+function orni2(){
+    $('.persgran').fadeOut(100,function(){
+        $('#porni').css('height','95vh').css('top','6%').css('right','12%');
+        $('#porni').show(function(){
+            $('#co2').fadeIn(200).addClass('persgran');
+        }).addClass('persgran');
+    });
+    $('.cinema').animate({
+      backgroundColor:'gray',
+      'top':c2
+    }).removeClass('gris').addClass('gris').removeClass('negre');
+    $('.fotografia').animate({
+      backgroundColor:'gray',
+      'top':c3
+    }).removeClass('gris').addClass('gray').removeClass('negre');
+    $('.ornitologia').animate({
+      backgroundColor:'black',
+      'top':c4
+    }).removeClass('gris').addClass('negre');
+    $('.literatura').animate({
+      backgroundColor:'gray',
+      'top':c1
+    }).removeClass('gris').addClass('gris').removeClass('negre');   
+    $('.ambit').animate({
+      backgroundColor:'#ABB057'
+    },function(){
+      $('.text').removeClass('groc').removeClass('roig').removeClass('verd').animate({
+        backgroundColor:'#ABB057'
+      });
+      $('.text p').html(torni);
       $('.text').show('slow');
     });
 }

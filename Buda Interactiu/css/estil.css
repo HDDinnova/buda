@@ -5785,4 +5785,26 @@ button.close {
     display: none !important;
   }
 }
-   
+
+
+.menu {
+  background-color: #333333;
+  top: 0px;
+  right: -285px;  /* start off behind the scenes */
+  height: 100vh;
+  position: fixed;
+  width: 285px;
+  z-index: 9999;
+  color: white;
+}
+.menu button{
+    background-color: transparent;
+    border: white solid 1px;
+    border-radius: 5px;
+}
+.menu button:hover{
+    color: #f5f5f5;
+}
+.icon-close{
+  cursor: pointer;
+}

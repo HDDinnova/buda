@@ -22,25 +22,46 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><img src="img/menu-menu.png" alt=""/></a></li>
+                  <li><a href="#"><img id="menu1" src="img/menu-menu.png" alt="icona menú"/></a></li>
                 
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
+        <div class="menu">
+            <!-- Menu icon -->
+            <div class="icon-close">
+                <img src="img/close.png" alt="icona tancar">
+            </div>
+
+            <!-- Menu -->
+            <div class="col-md-12">
+                <h3>Benvingut a <strong>Buda</strong></h3>
+                <p>Introdueix les teves dades per continuar</p>
+                <form method="post" action="login">
+                    <div class="form-group">
+                        <input class="form-control" id="correu" name="correu" type="email" placeholder="Correu" required>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" id="contrasenya" name="contrasenya" type="password" placeholder="Contrasenya" required>
+                    </div>
+                    <button type="submit" class="btn btn-sm">ENTRAR&nbsp;&nbsp;<i class="fa fa-play"></i></button>
+                </form>
+            </div>
+        </div>
         <!--Fi capçalera-->
         <img id="fletxa1" src="img/fletxa-1.png" alt="fletxa horitzontal entra per esquerra"/>
         <img id="fletxa2" src="img/fletxa-2.png" alt="fletxa curvada gira per mostrar personatges"/>
-        <img id="pfoto" src="img/personatge-foto.png" alt="imatge perfil fotograf"/>
+        <img id="pfoto" class="pers" data-ambit="fotografia" src="img/personatge-foto.png" alt="imatge perfil fotograf"/>
         <img id="cfoto" src="img/personatge-foto-colors.png" alt="colors imatge perfil fotograf"/>
         <img id="cf2" class="fcolors2" src="img/personatge-foto-colors-2.png" alt="colors imatge perfil fotograf"/>
-        <img id="porni" src="img/personatge-orni.png" alt="imatge perfil ornitoleg"/>
+        <img id="porni" class="pers" data-ambit="ornitologia" src="img/personatge-orni.png" alt="imatge perfil ornitoleg"/>
         <img id="corni" src="img/personatge-orni-colors.png" alt="colors imatge perfil ornitoleg"/>
         <img id="co2" class="fcolors2" src="img/personatge-orni-colors-2.png" alt="colors imatge perfil ornitoleg"/>
-        <img id="plite" src="img/personatge-lite.png" alt="imatge perfil escriptor"/>
+        <img id="plite" class="pers" data-ambit="literatura" src="img/personatge-lite.png" alt="imatge perfil escriptor"/>
         <img id="clite" src="img/personatge-lite-colors.png" alt="colors imatge perfil escriptor"/>
         <img id="cl2" class="fcolors2" src="img/personatge-lite-colors-2.png" alt="colors imatge perfil escriptor"/>
-        <img id="pcine" src="img/personatge-cine.png" alt="imatge perfil cineasta"/>
+        <img id="pcine" class="pers" data-ambit="cinema" src="img/personatge-cine.png" alt="imatge perfil cineasta"/>
         <img id="ccine" src="img/personatge-cine-colors.png" alt="colors imatge perfil cineasta"/>
         <img id="cc2" class="fcolors2" src="img/personatge-cine-colors-2.png" alt="colors imatge perfil cineasta"/>
         <img id="fletxa3" src="img/fletxa-3.png" alt="fletxa inclinada per mostrar últim personatge"/>
@@ -79,23 +100,7 @@
     <script src="js/variables.js" type="text/javascript"></script>
     <script src="js/funcions.js" type="text/javascript"></script>
     <script>
-        $('.mini').on('click',function(){
-          //$('.mini').off('click');
-            switch($(this).data('ambit')){
-              case 'literatura':
-                clicaLite();
-                break;
-              case 'cinema':
-                clicaCine();
-                break;
-              case 'fotografia':
-                clicaFoto();
-                break;
-              case 'ornitologia':
-                clicaOrni();
-                break;                     
-            }
-        });
+        $(document).ready(menu1);
     </script>
     </body>
 </html>

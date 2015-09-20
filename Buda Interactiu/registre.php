@@ -42,14 +42,17 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><img src="../img/menu-llibreta.png" alt=""/></a></li>
-                <li><a href="#"><img src="../img/menu-audio.png" alt=""/></a></li>
-                <li><a href="#"><img src="../img/menu-menu.png" alt=""/></a></li>
+                <li><a href="#"><img src="../img/menu-llibreta.png" alt="mostrar dossier"/></a></li>
+                <li><a href="#"><img src="../img/menu-audio.png" alt="silenciar"/></a></li>
+                <li><a href="#"><img id="menu1" src="../img/menu-menu.png" alt="menú"/></a></li>
                 
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
+        
+        <?php include 'menu1.php'; ?>
+        
         <!--Fi capçalera-->
         <div class="col-md-2 col-sm-12">
           <div class="caixa <?=$c?> col-md-12">
@@ -85,8 +88,11 @@
               </form>
           </div>
         </div>
-        
+      
+      <script src="../js/jquery-2.1.4.min.js" type="text/javascript"></script>
+      <script src="../js/funcions.js" type="text/javascript"></script>
       <script>
+        $(document).ready(menu1);
         var password = document.getElementById("contrasenya"), confirm_password = document.getElementById("valida_contrasenya");
 
         function validatePassword(){
