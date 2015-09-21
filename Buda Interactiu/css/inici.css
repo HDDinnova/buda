@@ -8,58 +8,84 @@ img{
     font-weight: 800;
     position: absolute;
     text-transform: uppercase;
-    font-size: 15rem;
+    font-size: 150px;
     margin-left: -0.07em;
     margin-top: 0px;
-/*    animation: buda ease-out .8s .5s both;
-    -moz-animation: buda ease-out .8s .5s both;
-    -webkit-animation: buda ease-out .8s .5s both;
-    -o-animation: buda ease-out .8s .5s both;
-    -ms-animation: buda ease-out .8s .5s both;*/
-    z-index: 10;
+    z-index: 2;
 }
 #tapabuda{
-    width: 300px;
+    width: 500px;
     height:14rem;
     position: absolute;
-    z-index: 11;
+    z-index: 3;
     top: 60px;
     left: 20px;
     background-color: white;
+    transform-origin: right center;
+    animation: buda .8s .5s both;
+    -moz-animation: buda .8s .5s both;
+    -webkit-animation: buda .8s .5s both;
+    -o-animation: buda .8s .5s both;
+    -ms-animation: buda .8s .5s both;
 }
 #t2{
     font-weight: bolder;
     position: absolute;
-    top: 15rem;
+    top: 185px;
     font-size: 3.3rem;
-/*    animation: illa .8s .7s ease-out both;
-    -moz-animation: illa .8s .7s ease-out both;
-    -webkit-animation: illa .8s .7s ease-out both;
-    -o-animation: illa .8s .7s ease-out both;
-    -ms-animation: illa .8s .7s ease-out both;*/
-    z-index: 10;
+    z-index: 3;
     margin-top: 15px;
     margin-bottom: 5px;
+}
+#tapailla{
+    width: 500px;
+    height:30px;
+    position: absolute;
+    z-index: 4;
+    top: 198px;
+    left: 20px;
+    background-color: white;
+    transform-origin: right center;
+    animation: buda .8s .7s both;
+    -moz-animation: buda .8s .7s both;
+    -webkit-animation: buda .8s .7s both;
+    -o-animation: buda .8s .7s both;
+    -ms-animation: buda .8s .7s both;
 }
 #t3{
     font-size: 1.5rem;
     position: absolute;
-    top: 18.3rem;
-/*    animation: delta .8s .9s ease-out both;
-    -moz-animation: delta .8s .9s ease-out both;
-    -webkit-animation: delta .8s .9s ease-out both;
-    -o-animation: delta .8s .9s ease-out both;
-    -ms-animation: delta .8s .9s ease-out both;*/
-    z-index: 10;
+    top: 230px;
+    margin-left: -2px;
+    z-index: 5;
+}
+#tapadocu{
+    width: 500px;
+    height:20px;
+    position: absolute;
+    z-index: 6;
+    top: 230px;
+    left: 20px;
+    background-color: white;
+    transform-origin: right center;
+    animation: buda .8s 1s both;
+    -moz-animation: buda .8s 1s both;
+    -webkit-animation: buda .8s 1s both;
+    -o-animation: buda .8s 1s both;
+    -ms-animation: buda .8s 1s both;
 }
 #fletxa1{
-    position: fixed;
-    top: 150px;
-    animation: fletxa1 1.2s ease-in both;
-    -moz-animation: fletxa1 1.2s ease-in both;
-    -webkit-animation: fletxa1 1.2s ease-in both;
-    -o-animation: fletxa1 1.2s ease-in both;
-    -ms-animation: fletxa1 1.2s ease-in both;
+    position: absolute;
+    top: 100px;
+    width: 40vw;
+    right: 5vw;
+    z-index: 7;
+    transform-origin: left center;
+    animation: fletxa1 1.5s .6s ease-in both;
+    -moz-animation: fletxa1 1.5s .6s ease-in both;
+    -webkit-animation: fletxa1 1.5s .6s ease-in both;
+    -o-animation: fletxa1 1.5s .6s ease-in both;
+    -ms-animation: fletxa1 1.5s .6s ease-in both;
 }
 #fletxa2{
     position: fixed;
@@ -211,44 +237,54 @@ nav{
 }
 /* ------- Animacions -------- */
 @keyframes fletxa1{
-    0% {left:-50%;}
-    100% {left:100%;}
+    0% {transform:scaleX(0);}
+    15% {transform:scaleX(1);}
+    85% {opacity:1;}
+    100% {opacity:0;}
 }
 @-moz-keyframes fletxa1{
-    0% {left:-50%;}
-    100% {left:100%;}
+    0% {transform:scaleX(0);}
+    15% {transform:scaleX(1);}
+    85% {opacity:1;}
+    100% {opacity:0;}
 }
 @-webkit-keyframes fletxa1{
-    0% {left:-50%;}
-    100% {left:100%;}
+    0% {transform:scaleX(0);}
+    15% {transform:scaleX(1);}
+    85% {opacity:1;}
+    100% {opacity:0;}
 }
 @-o-keyframes fletxa1{
-    0% {left:-50%;}
-    100% {left:100%;}
+    0% {opacity:1;transform:scaleX(0);}
+    40% {transform:scaleX(1);}
+    85% {opacity:1;}
+    100% {opacity:0;}
 }
 @-ms-keyframes fletxa1{
-    0% {left:-50%;}
-    100% {left:100%;}
+    0% {transform:scaleX(0);}
+    15% {transform:scaleX(1);}
+    85% {opacity:1;}
+    100% {opacity:0;}
 }
 @keyframes buda{
-    0% {margin-left:-6em;}
-    100% {margin-left:-0.07em;}
+    0% {transform:scaleX(1);}
+    100% {transform:scaleX(0);}
 }
 @-moz-keyframes buda{
-    0% {margin-left:-6em;}
-    100% {margin-left:-0.07em;}
+    0% {transform:scaleX(1);}
+    100% {transform:scaleX(0);}
 }
 @-webkit-keyframes buda{
-    0% {margin-left:-6em;}
-    100% {margin-left:-0.07em;}
+    0% {transform:scaleX(1);}
+    100% {transform:scaleX(0);}
 }
 @-o-keyframes buda{
-    0% {margin-left:-6em;}
-    100% {margin-left:-0.07em;}
+    0% {transform:scaleX(1);}
+    100% {transform:scaleX(0);}
 }
 @-ms-keyframes buda{
-    0% {margin-left:-6em;}
-    100% {margin-left:-0.07em;}
+    0% {transform:scaleX(1);}
+    100% {transform:scaleX(0);}
 }
 @keyframes illa{
     0% {margin-left:-12em;}
