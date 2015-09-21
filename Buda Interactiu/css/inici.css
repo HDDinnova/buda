@@ -1,50 +1,65 @@
 html{
-    overflow: hidden;
+    overflow-x: hidden;
 }
 img{
     display: block;
 }
 #t1{
-    font-weight: bolder;
-    position: relative;
+    font-weight: 800;
+    position: absolute;
     text-transform: uppercase;
     font-size: 15rem;
     margin-left: -0.07em;
-    animation-name: buda;
-    animation-duration: .8s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: both;
-    animation-delay: 0.5s;
+    margin-top: 0px;
+/*    animation: buda ease-out .8s .5s both;
+    -moz-animation: buda ease-out .8s .5s both;
+    -webkit-animation: buda ease-out .8s .5s both;
+    -o-animation: buda ease-out .8s .5s both;
+    -ms-animation: buda ease-out .8s .5s both;*/
     z-index: 10;
+}
+#tapabuda{
+    width: 300px;
+    height:14rem;
+    position: absolute;
+    z-index: 11;
+    top: 60px;
+    left: 20px;
+    background-color: white;
 }
 #t2{
     font-weight: bolder;
+    position: absolute;
+    top: 15rem;
     font-size: 3.3rem;
-    animation-name: illa;
-    animation-duration: .8s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: both;
-    animation-delay: 0.7s;
+/*    animation: illa .8s .7s ease-out both;
+    -moz-animation: illa .8s .7s ease-out both;
+    -webkit-animation: illa .8s .7s ease-out both;
+    -o-animation: illa .8s .7s ease-out both;
+    -ms-animation: illa .8s .7s ease-out both;*/
     z-index: 10;
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
 #t3{
     font-size: 1.5rem;
-    font-weight: bold;
-    animation-name: delta;
-    animation-duration: .8s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: both;
-    animation-delay: 0.9s;
+    position: absolute;
+    top: 18.3rem;
+/*    animation: delta .8s .9s ease-out both;
+    -moz-animation: delta .8s .9s ease-out both;
+    -webkit-animation: delta .8s .9s ease-out both;
+    -o-animation: delta .8s .9s ease-out both;
+    -ms-animation: delta .8s .9s ease-out both;*/
     z-index: 10;
 }
 #fletxa1{
     position: fixed;
     top: 150px;
-    animation-name: fletxa1;
-    animation-duration: 1.2s;
-    animation-timing-function: ease-in;
-    animation-fill-mode: both;
-    
+    animation: fletxa1 1.2s ease-in both;
+    -moz-animation: fletxa1 1.2s ease-in both;
+    -webkit-animation: fletxa1 1.2s ease-in both;
+    -o-animation: fletxa1 1.2s ease-in both;
+    -ms-animation: fletxa1 1.2s ease-in both;
 }
 #fletxa2{
     position: fixed;
@@ -52,20 +67,21 @@ img{
     right: 10%;
     top: 11%;
     transform-origin: center center;
-    animation-name: fletxa2;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-fill-mode: both;
-    animation-delay: .8s;
+    animation: fletxa2 1s .8s ease-in both;
+    -moz-animation: fletxa2 1s .8s ease-in both;
+    -webkit-animation: fletxa2 1s .8s ease-in both;
+    -o-animation: fletxa2 1s .8s ease-in both;
+    -ms-animation: fletxa2 1s .8s ease-in both;
 }
 #fletxa3{
     position: fixed;
     left: 0;
     top: 0;
-    animation-name: fletxa3;
-    animation-duration: .8s;
-    animation-fill-mode: both;
-    animation-delay: 1.5s;
+    animation: fletxa3 .8s 1.5s both;
+    -moz-animation: fletxa3 .8s 1.5s both;
+    -webkit-animation: fletxa3 .8s 1.5s both;
+    -o-animation: fletxa3 .8s 1.5s both;
+    -ms-animation: fletxa3 .8s 1.5s both;
 }
 .pers{
     cursor: pointer;
@@ -75,11 +91,11 @@ img{
     height: 45vh;
     right: 35%;
     top: 6%;
-    animation-name: personatge;
-    animation-duration: .8s;
-    animation-timing-function: ease-in;
-    animation-fill-mode: both;
-    animation-delay: 1.1s;
+    animation: personatge .8s 1.1s ease-in both;
+    -moz-animation: personatge .8s 1.1s ease-in both;
+    -webkit-animation: personatge .8s 1.1s ease-in both;
+    -o-animation: personatge .8s 1.1s ease-in both;
+    -ms-animation: personatge .8s 1.1s ease-in both;
     z-index: 10;
 }
 #cfoto{
@@ -87,10 +103,11 @@ img{
     height: 45vh;
     right: 35%;
     top: 6%;
-    animation-name: personatge;
-    animation-duration: .8s;
-    animation-fill-mode: both;
-    animation-delay: 1.9s;
+    animation: personatge .8s 1.9s both;
+    -moz-animation: personatge .8s 1.9s both;
+    -webkit-animation: personatge .8s 1.9s both;
+    -o-animation: personatge .8s 1.9s both;
+    -ms-animation: personatge .8s 1.9s both;
     z-index: 5;
 }
 #porni{
@@ -98,10 +115,11 @@ img{
     height: 45vh;
     right: 12%;
     top: 6%;
-    animation-name: personatge;
-    animation-duration: .8s;
-    animation-fill-mode: both;
-    animation-delay: 1.3s;
+    animation: personatge .8s 1.3s ease-in both;
+    -moz-animation: personatge .8s 1.3s ease-in both;
+    -webkit-animation: personatge .8s 1.3s ease-in both;
+    -o-animation: personatge .8s 1.3s ease-in both;
+    -ms-animation: personatge .8s 1.3s ease-in both;
     z-index: 10;
 }
 #corni{
@@ -109,10 +127,11 @@ img{
     height: 45vh;
     right: 12%;
     top: 6%;
-    animation-name: personatge;
-    animation-duration: .8s;
-    animation-fill-mode: both;
-    animation-delay: 2.1s;
+    animation: personatge .8s 2.1s both;
+    -moz-animation: personatge .8s 2.1s both;
+    -webkit-animation: personatge .8s 2.1s both;
+    -o-animation: personatge .8s 2.1s both;
+    -ms-animation: personatge .8s 2.1s both;
     z-index: 5;
 }
 #plite{
@@ -120,10 +139,11 @@ img{
     height: 45vh;
     right: 12%;
     top: 50%;
-    animation-name: personatge;
-    animation-duration: .8s;
-    animation-fill-mode: both;
-    animation-delay: 1.5s;
+    animation: personatge .8s 1.5s ease-in both;
+    -moz-animation: personatge .8s 1.5s ease-in both;
+    -webkit-animation: personatge .8s 1.5s ease-in both;
+    -o-animation: personatge .8s 1.5s ease-in both;
+    -ms-animation: personatge .8s 1.5s ease-in both;
     z-index: 10;
 }
 #clite{
@@ -131,10 +151,11 @@ img{
     height: 45vh;
     right: 12%;
     top: 50%;
-    animation-name: personatge;
-    animation-duration: .8s;
-    animation-fill-mode: both;
-    animation-delay: 2.3s;
+    animation: personatge .8s 2.3s  both;
+    -moz-animation: personatge .8s 2.3s both;
+    -webkit-animation: personatge .8s 2.3s both;
+    -o-animation: personatge .8s 2.3s both;
+    -ms-animation: personatge .8s 2.3s both;
     z-index: 5;
 }
 #pcine{
@@ -142,10 +163,11 @@ img{
     height: 45vh;
     right: 35%;
     top: 50%;
-    animation-name: personatge;
-    animation-duration: .8s;
-    animation-fill-mode: both;
-    animation-delay: 1.7s;
+    animation: personatge .8s 1.7s ease-in both;
+    -moz-animation: personatge .8s 1.7s ease-in both;
+    -webkit-animation: personatge .8s 1.7s ease-in both;
+    -o-animation: personatge .8s 1.7s ease-in both;
+    -ms-animation: personatge .8s 1.7s ease-in both;
     z-index: 10;
 }
 #ccine{
@@ -153,19 +175,37 @@ img{
     height: 45vh;
     right: 35%;
     top: 50%;
-    animation-name: personatge;
-    animation-duration: .8s;
-    animation-fill-mode: both;
-    animation-delay: 2.5s;
+    animation: personatge .8s 2.5s both;
+    -moz-animation: personatge .8s 2.5s both;
+    -webkit-animation: personatge .8s 2.5s both;
+    -o-animation: personatge .8s 2.5s both;
+    -ms-animation: personatge .8s 2.5s both;
     z-index: 5;
 }
 nav{
-    animation-name: nav;
-    animation-duration: 0.8s;
-    animation-fill-mode: backwards;
-    animation-delay: 2s;
+    animation: nav .8s 2s backwards;
+    -moz-animation: nav .8s 2s backwards;
+    -webkit-animation: nav .8s 2s backwards;
+    -o-animation: nav .8s 2s backwards;
+    -ms-animation: nav .8s 2s backwards;
 }
 @keyframes nav{
+    from {transform:translateY(-55px);}
+    to {transform:translateY(0px);}
+}
+@-moz-keyframes nav{
+    from {transform:translateY(-55px);}
+    to {transform:translateY(0px);}
+}
+@-webkit-keyframes nav{
+    from {transform:translateY(-55px);}
+    to {transform:translateY(0px);}
+}
+@-o-keyframes nav{
+    from {transform:translateY(-55px);}
+    to {transform:translateY(0px);}
+}
+@-ms-keyframes nav{
     from {transform:translateY(-55px);}
     to {transform:translateY(0px);}
 }
@@ -174,7 +214,39 @@ nav{
     0% {left:-50%;}
     100% {left:100%;}
 }
+@-moz-keyframes fletxa1{
+    0% {left:-50%;}
+    100% {left:100%;}
+}
+@-webkit-keyframes fletxa1{
+    0% {left:-50%;}
+    100% {left:100%;}
+}
+@-o-keyframes fletxa1{
+    0% {left:-50%;}
+    100% {left:100%;}
+}
+@-ms-keyframes fletxa1{
+    0% {left:-50%;}
+    100% {left:100%;}
+}
 @keyframes buda{
+    0% {margin-left:-6em;}
+    100% {margin-left:-0.07em;}
+}
+@-moz-keyframes buda{
+    0% {margin-left:-6em;}
+    100% {margin-left:-0.07em;}
+}
+@-webkit-keyframes buda{
+    0% {margin-left:-6em;}
+    100% {margin-left:-0.07em;}
+}
+@-o-keyframes buda{
+    0% {margin-left:-6em;}
+    100% {margin-left:-0.07em;}
+}
+@-ms-keyframes buda{
     0% {margin-left:-6em;}
     100% {margin-left:-0.07em;}
 }
@@ -182,7 +254,39 @@ nav{
     0% {margin-left:-12em;}
     100% {margin-left:-0.07em;}
 }
+@-moz-keyframes illa{
+    0% {margin-left:-12em;}
+    100% {margin-left:-0.07em;}
+}
+@-webkit-keyframes illa{
+    0% {margin-left:-12em;}
+    100% {margin-left:-0.07em;}
+}
+@-o-keyframes illa{
+    0% {margin-left:-12em;}
+    100% {margin-left:-0.07em;}
+}
+@-ms-keyframes illa{
+    0% {margin-left:-12em;}
+    100% {margin-left:-0.07em;}
+}
 @keyframes delta{
+    0% {margin-left:-25em;}
+    100% {margin-left:-0.07em;}
+}
+@-moz-keyframes delta{
+    0% {margin-left:-25em;}
+    100% {margin-left:-0.07em;}
+}
+@-webkit-keyframes delta{
+    0% {margin-left:-25em;}
+    100% {margin-left:-0.07em;}
+}
+@-o-keyframes delta{
+    0% {margin-left:-25em;}
+    100% {margin-left:-0.07em;}
+}
+@-ms-keyframes delta{
     0% {margin-left:-25em;}
     100% {margin-left:-0.07em;}
 }
@@ -204,12 +308,60 @@ nav{
     85% {opacity:1;}
     100% {-webkit-transform:rotate(100deg);opacity:0;}
 }
+@-o-keyframes fletxa2{
+    0% {-webkit-transform:rotate(-250deg);opacity:0;}
+    15% {opacity:1;}
+    85% {opacity:1;}
+    100% {-webkit-transform:rotate(100deg);opacity:0;}
+}
+@-ms-keyframes fletxa2{
+    0% {-webkit-transform:rotate(-250deg);opacity:0;}
+    15% {opacity:1;}
+    85% {opacity:1;}
+    100% {-webkit-transform:rotate(100deg);opacity:0;}
+}
+@-moz-keyframes personatge{
+    from {opacity:0;}
+    to {opacity:100;}
+}
+@-webkit-keyframes personatge{
+    from {opacity:0;}
+    to {opacity:100;}
+}
+@-o-keyframes personatge{
+    from {opacity:0;}
+    to {opacity:100;}
+}
+@-ms-keyframes personatge{
+    from {opacity:0;}
+    to {opacity:100;}
+}
 @keyframes personatge{
     from {opacity:0;}
     to {opacity:100;}
 }
 @keyframes fletxa3{
-    0% {left:-25%;top:-28%;}
+    0% {left:-25%;top:-40%;}
+    85% {opacity:1;}
+    100% {left:70%;top:100%;opacity:0;}
+}
+@-moz-keyframes fletxa3{
+    0% {left:-25%;top:-40%;}
+    85% {opacity:1;}
+    100% {left:70%;top:100%;opacity:0;}
+}
+@-webkit-keyframes fletxa3{
+    0% {left:-25%;top:-40%;}
+    85% {opacity:1;}
+    100% {left:70%;top:100%;opacity:0;}
+}
+@-o-keyframes fletxa3{
+    0% {left:-25%;top:-40%;}
+    85% {opacity:1;}
+    100% {left:70%;top:100%;opacity:0;}
+}
+@-ms-keyframes fletxa3{
+    0% {left:-25%;top:-40%;}
     85% {opacity:1;}
     100% {left:70%;top:100%;opacity:0;}
 }
@@ -219,21 +371,23 @@ nav{
     width: 350px;
     height: 110px;
     padding: 20px;
-    top: 320px;
-    left: 70px;
+    top: 280px;
     transform-origin: left center;
+    z-index:100;
 }
 .enhorabona{
-    animation-fill-mode: both;
-    animation-duration: 3s; 
-    animation-delay: 1.9s;
-    animation-name: caixa;   
+    animation: caixa 1.9s 3s both;
+    -moz-animation: caixa 1.9s 3s both;
+    -webkit-animation: caixa 1.9s 3s both;
+    -o-animation: caixa 1.9s 3s both;
+    -ms-animation: caixa 1.9s 3s both;
 }
 .ambit{
-    animation-fill-mode: backwards;
-    animation-duration: .4s; 
-    animation-delay: 4.9s;
-    animation-name: caixaf;   
+    animation: caixaf .4s 4.9s backwards;
+    -moz-animation: caixaf .4s 4.9s backwards;
+    -webkit-animation: caixaf .4s 4.9s backwards;
+    -o-animation: caixaf .4s 4.9s backwards;
+    -ms-animation: caixaf .4s 4.9s backwards;
 }
 .mini{
     padding-top: 15px;
@@ -244,40 +398,84 @@ nav{
     background-color: black;
 }
 .literatura{
-    top: 437px;
-    animation-fill-mode: backwards;
-    animation-duration: .4s; 
-    animation-delay: 5.1s;
-    animation-name: caixaf;
+    top: 397px;
+    animation: caixaf .4s 5.1s backwards;
+    -moz-animation: caixaf .4s 5.1s backwards;
+    -webkit-animation: caixaf .4s 5.1s backwards;
+    -o-animation: caixaf .4s 5.1s backwards;
+    -ms-animation: caixaf .4s 5.1s backwards;
 }
 .cinema{
-    top: 492px;
-    animation-fill-mode: backwards;
-    animation-duration: .4s; 
-    animation-delay: 5.3s;
-    animation-name: caixaf;
+    top: 452px;
+    animation: caixaf .4s 5.3s backwards;
+    -moz-animation: caixaf .4s 5.3s backwards;
+    -webkit-animation: caixaf .4s 5.3s backwards;
+    -o-animation: caixaf .4s 5.3s backwards;
+    -ms-animation: caixaf .4s 5.3s backwards;
 }
 .fotografia{
-    top: 547px;
-    animation-fill-mode: backwards;
-    animation-duration: .4s; 
-    animation-delay: 5.5s;
-    animation-name: caixaf;
+    top: 507px;
+    animation: caixaf .4s 5.5s backwards;
+    -moz-animation: caixaf .4s 5.5s backwards;
+    -webkit-animation: caixaf .4s 5.5s backwards;
+    -o-animation: caixaf .4s 5.5s backwards;
+    -ms-animation: caixaf .4s 5.5s backwards;
 }
 .ornitologia{
-    top: 602px;
-    animation-fill-mode: backwards;
-    animation-duration: .4s; 
-    animation-delay: 5.7s;
-    animation-name: caixaf;
+    top: 562px;
+    animation: caixaf .4s 5.7s backwards;
+    -moz-animation: caixaf .4s 5.7s backwards;
+    -webkit-animation: caixaf .4s 5.7s backwards;
+    -o-animation: caixaf .4s 5.7s backwards;
+    -ms-animation: caixaf .4s 5.7s backwards;
 }
 @keyframes caixa{
     0% {transform:scaleX(0);}
     5% {transform:scaleX(1);}
-    85% {opacity:1;}
-    100% {opacity:0;}
+    85% {transform:scaleX(1);}
+    100% {transform:scaleX(0);}
+}
+@-webkit-keyframes caixa{
+    0% {transform:scaleX(0);}
+    5% {transform:scaleX(1);}
+    85% {transform:scaleX(1);}
+    100% {transform:scaleX(0);}
+}
+@-moz-keyframes caixa{
+    0% {transform:scaleX(0);}
+    5% {transform:scaleX(1);}
+    85% {transform:scaleX(1);}
+    100% {transform:scaleX(0);}
+}
+@-o-keyframes caixa{
+    0% {transform:scaleX(0);}
+    5% {transform:scaleX(1);}
+    85% {transform:scaleX(1);}
+    100% {transform:scaleX(0);}
+}
+@-ms-keyframes caixa{
+    0% {transform:scaleX(0);}
+    5% {transform:scaleX(1);}
+    85% {transform:scaleX(1);}
+    100% {transform:scaleX(0);}
 }
 @keyframes caixaf{
+    0% {transform:scaleX(0);}
+    100% {transform:scaleX(1);}
+}
+@-moz-keyframes caixaf{
+    0% {transform:scaleX(0);}
+    100% {transform:scaleX(1);}
+}
+@-webkit-keyframes caixaf{
+    0% {transform:scaleX(0);}
+    100% {transform:scaleX(1);}
+}
+@-o-keyframes caixaf{
+    0% {transform:scaleX(0);}
+    100% {transform:scaleX(1);}
+}
+@-ms-keyframes caixaf{
     0% {transform:scaleX(0);}
     100% {transform:scaleX(1);}
 }
@@ -289,47 +487,68 @@ nav{
     line-height: 0.7;
 }
 #enhp1{
-    animation-name: cp;
-    animation-duration: 0.5s;
-    animation-fill-mode: backwards;
-    animation-delay: 2s;
+    animation: cp .5s 2s backwards;
+    -moz-animation: cp .5s 2s backwards;
+    -webkit-animation: cp .5s 2s backwards;
+    -o-animation: cp .5s 2s backwards;
+    -ms-animation: cp .5s 2s backwards;
     transform-origin: left center;
 }
 #enhp2{
-    animation-name: cp;
-    animation-duration: 0.5s;
-    animation-fill-mode: backwards;
-    animation-delay: 2.1s;
+    animation: cp .5s 2.1s backwards;
+    -moz-animation: cp .5s 2.1s backwards;
+    -webkit-animation: cp .5s 2.1s backwards;
+    -o-animation: cp .5s 2.1s backwards;
+    -ms-animation: cp .5s 2.1s backwards;
     transform-origin: left center;
 }
 #enhp3{
-    animation-name: cp;
-    animation-duration: 0.5s;
-    animation-fill-mode: backwards;
-    animation-delay: 2.2s;
+    animation: cp .5s 2.2s backwards;
+    -moz-animation: cp .5s 2.2s backwards;
+    -webkit-animation: cp .5s 2.2s backwards;
+    -o-animation: cp .5s 2.2s backwards;
+    -ms-animation: cp .5s 2.2s backwards;
     transform-origin: left center;
 }
 #ambp1{
-    animation-name: cp;
-    animation-duration: 0.5s;
-    animation-fill-mode: backwards;
-    animation-delay: 5s;
+    animation: cp .5s 5s backwards;
+    -moz-animation: cp .5s 5s backwards;
+    -webkit-animation: cp .5s 5s backwards;
+    -o-animation: cp .5s 5s backwards;
+    -ms-animation: cp .5s 5s backwards;
     transform-origin: left center;
 }
 #ambp2{
-    animation-name: cp;
-    animation-duration: 0.5s;
-    animation-fill-mode: backwards;
-    animation-delay: 5.2s;
+    animation: cp .5s 5.2s backwards;
+    -moz-animation: cp .5s 5.2s backwards;
+    -webkit-animation: cp .5s 5.2s backwards;
+    -o-animation: cp .5s 5.2s backwards;
+    -ms-animation: cp .5s 5.2s backwards;
     transform-origin: left center;
 }
 @keyframes cp{
     0% {transform:scaleX(0);}
     100% {transform:scaleX(1);}
 }
+@-moz-keyframes cp{
+    0% {transform:scaleX(0);}
+    100% {transform:scaleX(1);}
+}
+@-webkit-keyframes cp{
+    0% {transform:scaleX(0);}
+    100% {transform:scaleX(1);}
+}
+@-o-keyframes cp{
+    0% {transform:scaleX(0);}
+    100% {transform:scaleX(1);}
+}
+@-ms-keyframes cp{
+    0% {transform:scaleX(0);}
+    100% {transform:scaleX(1);}
+}
 .text{
     display: none;
-    top: 657px;
+    top: 617px;
     height: auto;
 }
 .text p{
