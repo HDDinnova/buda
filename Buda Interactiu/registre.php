@@ -54,7 +54,7 @@
         <?php include 'menu1.php'; ?>
         
         <!--Fi capçalera-->
-        <div class="col-md-2 col-sm-12">
+        <div class="col-lg-3 col-md-4 col-sm-12">
           <div class="caixa <?=$c?> col-md-12">
               <h2><strong>Personalitza el<br/>teu dossier<br/></strong></h2>
           </div>
@@ -87,6 +87,9 @@
                   <button type="submit" class="btn btn-sm">REGISTRAR&nbsp;&nbsp;<i class="fa fa-play"></i></button>
               </form>
           </div>
+        </div>
+        <div class="col-lg-9 col-md-8 col-sm-12 text-center">
+            <img id="dossier" src="../img/dossier-tancat.png" alt="image de la carpeta dossier"/>
         </div>
       
       <script src="../js/jquery-2.1.4.min.js" type="text/javascript"></script>

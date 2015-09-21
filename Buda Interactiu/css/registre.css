@@ -1,7 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope);
 .caixa{
+    position: relative;
     margin-bottom: 7px;
     padding: 20px;
     margin-left: 50px;
+    z-index: 9999;
 }
 .caixa img{
     height: 15rem;
@@ -24,4 +27,85 @@ button{
     background-repeat:no-repeat;
     border: black solid 1px !important;
     margin-top: 50px;
+}
+#dossier{
+    position: relative;
+    width: 80%;
+    z-index: 100;
+}
+#mapa{
+    top: 40px;
+    position: absolute;
+    z-index: 2;
+    transform: rotate(-2deg);
+    display: block;
+}
+#mapa img{
+    width: 70%;
+    display: block;
+}
+#mapa h2{
+    font-family: 'Annie Use Your Telescope', cursive;
+    margin-left: 10%;
+    font-size: 60px;
+}
+#botomapa{
+    top: 3.3%;
+    right: 22.85%;
+    background-color: red;
+    position: absolute;
+    -ms-transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+    width: 3.7%;
+    height: 7.2%;
+    z-index: 101
+}
+#botofoto{
+    top: 10.6%;
+    right: 22.75%;
+    background-color: blue;
+    position: absolute;
+    -ms-transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+    width: 3.7%;
+    height: 7.2%;
+    z-index: 101
+}
+#botovideo{
+    top: 18%;
+    right: 22.7%;
+    background-color: green;
+    position: absolute;
+    -ms-transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+    width: 3.7%;
+    height: 7.2%;
+    z-index: 101
+}
+#bototext{
+    top: 25.4%;
+    right: 22.65%;
+    background-color: yellow;
+    position: absolute;
+    -ms-transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+    width: 3.7%;
+    height: 7.2%;
+    z-index: 101
+}
+#botoperfil{
+    top: 32.8%;
+    right: 22.7%;
+    background-color: orange;
+    position: absolute;
+    -ms-transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+    width: 3.7%;
+    height: 7.2%;
+    z-index: 101
 }

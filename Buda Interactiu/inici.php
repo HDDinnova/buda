@@ -56,6 +56,20 @@ switch($per['tipus']){
               <p>Aquí hi trobaràs documentació que de ben segur et serà d’utilitat.</p>
           </div>
         </div>
-        
+        <div class="col-md-10 col-sm-12 dossier">
+            <div id="botomapa"></div>
+            <div id="botofoto"></div>
+            <div id="botovideo"></div>
+            <div id="bototext"></div>
+            <div id="botoperfil"></div>
+            <div id="mapa">
+                <h2>Illa de Buda</h2>
+                <img src="img/mapa-illa.jpg" alt="mapa illa de buda"/>
+            </div>
+            <div id="fotos">
+              
+            </div>
+            <img id="dossier" src="img/dossier-obert.png" alt="Imatge del dossier obert"/>
+        </div>
     </body>
 </html>
