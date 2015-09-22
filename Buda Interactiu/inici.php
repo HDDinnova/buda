@@ -47,7 +47,7 @@ switch($per['tipus']){
           </div><!-- /.container-fluid -->
         </nav>
         <!--Fi capçalera-->
-        <div class="col-md-2 col-sm-12">
+        <div class="col-lg-3 col-md-3 col-sm-12">
           <div class="caixa <?=$c?> col-md-12">
               <h2><strong>Enhorabona <?=$per['nom']?>, el registre s'ha realitzat correctament</strong></h2>
           </div>
@@ -56,20 +56,34 @@ switch($per['tipus']){
               <p>Aquí hi trobaràs documentació que de ben segur et serà d’utilitat.</p>
           </div>
         </div>
-        <div class="col-md-10 col-sm-12 dossier">
-            <div id="botomapa"></div>
-            <div id="botofoto"></div>
-            <div id="botovideo"></div>
-            <div id="bototext"></div>
-            <div id="botoperfil"></div>
-            <div id="mapa">
-                <h2>Illa de Buda</h2>
-                <img src="img/mapa-illa.jpg" alt="mapa illa de buda"/>
-            </div>
-            <div id="fotos">
-              
-            </div>
+        <div class="col-lg-9 col-md-9 col-sm-12 dossier">
+            <div id="botomapa" class="boto"></div>
+            <div id="botofoto" class="boto"></div>
+            <div id="botovideo" class="boto"></div>
+            <div id="bototext" class="boto"></div>
+            <div id="botoperfil" class="boto"></div>
+            <div id="objectes" class="col-md-12">
+                <div id="mapa" class="objecte">
+                    <h2>Illa de Buda</h2>
+                    <img src="img/mapa-illa.jpg" alt="mapa illa de buda"/>
+                </div>
+                <div id="fotos" class="objecte">
+                    
+                </div>
+                <div id="videos" class="objecte">
+
+                </div>
+                <div id="textos" class="objecte">
+
+                </div>
+                <div id="perfil" class="objecte">
+
+                </div>
+            </div>            
             <img id="dossier" src="img/dossier-obert.png" alt="Imatge del dossier obert"/>
         </div>
+        <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/funcions2.js" type="text/javascript"></script>
     </body>
 </html>

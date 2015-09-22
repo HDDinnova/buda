@@ -29,83 +29,71 @@ button{
     margin-top: 50px;
 }
 #dossier{
-    position: relative;
-    width: 80%;
+    position: absolute;
+    width: 95%;
+    right:5px;
     z-index: 100;
 }
+#objectes{
+    padding-left: 5%;
+}
 #mapa{
-    top: 40px;
+    top: 20px;
     position: absolute;
     z-index: 2;
-    transform: rotate(-2deg);
+    transform: rotate(-.7deg);
     display: block;
 }
 #mapa img{
-    width: 70%;
+    margin-top: -5%;
+    width: 90%;
     display: block;
 }
 #mapa h2{
     font-family: 'Annie Use Your Telescope', cursive;
     margin-left: 10%;
-    font-size: 60px;
+    font-size: 6rem;
+}.boto{
+    position: absolute;
+    -ms-transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+    width: 3.4vw;
+    height: 3.5vw;
+    z-index: 101;
+    cursor: pointer;
 }
 #botomapa{
-    top: 3.3%;
-    right: 22.85%;
-    background-color: red;
-    position: absolute;
-    -ms-transform: rotate(-1deg);
-    -webkit-transform: rotate(-1deg);
-    transform: rotate(-1deg);
-    width: 3.7%;
-    height: 7.2%;
-    z-index: 101
+    top: 1.8vw;
+    right: 2.4vw;
 }
 #botofoto{
-    top: 10.6%;
-    right: 22.75%;
-    background-color: blue;
-    position: absolute;
-    -ms-transform: rotate(-1deg);
-    -webkit-transform: rotate(-1deg);
-    transform: rotate(-1deg);
-    width: 3.7%;
-    height: 7.2%;
-    z-index: 101
+    top: 5.55vw;
+    right: 2.4vw;
 }
 #botovideo{
-    top: 18%;
-    right: 22.7%;
-    background-color: green;
-    position: absolute;
-    -ms-transform: rotate(-1deg);
-    -webkit-transform: rotate(-1deg);
-    transform: rotate(-1deg);
-    width: 3.7%;
-    height: 7.2%;
-    z-index: 101
+    top: 9.28vw;
+    right: 2.3vw;
 }
 #bototext{
-    top: 25.4%;
-    right: 22.65%;
-    background-color: yellow;
-    position: absolute;
-    -ms-transform: rotate(-1deg);
-    -webkit-transform: rotate(-1deg);
-    transform: rotate(-1deg);
-    width: 3.7%;
-    height: 7.2%;
-    z-index: 101
+    top: 13.15vw;
+    right: 2.3vw;
 }
 #botoperfil{
-    top: 32.8%;
-    right: 22.7%;
-    background-color: orange;
+    top: 16.9vw;
+    right: 2.3vw;
+}
+.objecte{
+    display: none;
+}
+#fotos{
+    background-color: red;
+    height: 47.5vw;
     position: absolute;
-    -ms-transform: rotate(-1deg);
-    -webkit-transform: rotate(-1deg);
-    transform: rotate(-1deg);
-    width: 3.7%;
-    height: 7.2%;
-    z-index: 101
+    -ms-transform: rotate(-0.5deg);
+    -webkit-transform: rotate(-0.5deg);
+    transform: rotate(-0.5deg);
+    width: 93.2%;
+    margin-left: 0.2vw;
+    margin-top: 2vw;
 }
