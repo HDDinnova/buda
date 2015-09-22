@@ -89,24 +89,24 @@
           </div>
         </div>
         <div class="col-lg-9 col-md-8 col-sm-12 text-center">
-            <img id="dossier" src="../img/dossier-tancat.png" alt="image de la carpeta dossier"/>
+            <img id="dossiertancat" src="../img/dossier-tancat.png" alt="image de la carpeta dossier"/>
         </div>
       
       <script src="../js/jquery-2.1.4.min.js" type="text/javascript"></script>
       <script src="../js/funcions.js" type="text/javascript"></script>
       <script>
         $(document).ready(menu1);
-        var password = document.getElementById("contrasenya"), confirm_password = document.getElementById("valida_contrasenya");
-
-        function validatePassword(){
-          if(password.value != confirm_password.value) {
-            confirm_password.setCustomValidity("Les contrasenyes no coincideixen");
-          } else {
-            confirm_password.setCustomValidity('');
-          }
-        }
-        password.onchange = validatePassword;
-        confirm_password.onkeyup = validatePassword;
+//        var password = document.getElementById("contrasenya"), confirm_password = document.getElementById("valida_contrasenya");
+//
+//        function validatePassword(){
+//          if(password.value !== confirm_password.value) {
+//            confirm_password.setCustomValidity("Les contrasenyes no coincideixen");
+//          } else {
+//            confirm_password.setCustomValidity('');
+//          }
+//        }
+//        password.onchange = validatePassword;
+//        confirm_password.onkeyup = validatePassword;
       </script>
     </body>
 </html>

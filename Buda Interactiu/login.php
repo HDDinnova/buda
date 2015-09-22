@@ -13,6 +13,7 @@ if ($a->num_rows===0){
   echo 'Usuari no existeix, torna a entrar i registra\'t';
 } else {
   if (crypt($usuari['contrasenya']==$contrasenya,$usuari['contrasenya'])){
+    setcookie('personatge[id]',$usuari['id']);
     setcookie('personatge[nom]',$usuari['nom']);
     setcookie('personatge[cognom]',$usuari['cognom']);
     setcookie('personatge[tipus]',$usuari['tipus']);

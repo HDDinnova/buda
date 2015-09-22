@@ -14,6 +14,11 @@ switch($per['tipus']){
     $c='verd';
     break;
 }
+require_once 'class/connexio.php';
+$db=new connexio();
+$f = $db->query('SELECT * FROM fotos WHERE usuari='.$per['id']);
+$v = $db->query('SELECT * FROM videos WHERE usuari='.$per['id']);
+$t = $db->query('SELECT * FROM textos WHERE usuari='.$per['id']);
 ?>
 <!DOCTYPE html>
 <html>
@@ -49,11 +54,11 @@ switch($per['tipus']){
         <!--Fi capçalera-->
         <div class="col-lg-3 col-md-3 col-sm-12">
           <div class="caixa <?=$c?> col-md-12">
-              <h2><strong>Enhorabona <?=$per['nom']?>, el registre s'ha realitzat correctament</strong></h2>
+              <h2><strong>Enhorabona <?=$per['nom']?>,<br/>el registre s'ha<br/>realitzat correctament</strong></h2>
           </div>
           <div class="caixa <?=$c?> col-md-12">
-              <p>Aquest dossier t’acompanyarà durant la teva visita a l’illa.</p>
-              <p>Aquí hi trobaràs documentació que de ben segur et serà d’utilitat.</p>
+              <p>Aquest dossier t’acompanyarà durant<br/>la teva visita a l’illa.</p>
+              <p>Aquí hi trobaràs documentació que<br/>de ben segur et serà d’utilitat.</p>
           </div>
         </div>
         <div class="col-lg-9 col-md-9 col-sm-12 dossier">
@@ -68,10 +73,25 @@ switch($per['tipus']){
                     <img src="img/mapa-illa.jpg" alt="mapa illa de buda"/>
                 </div>
                 <div id="fotos" class="objecte">
-                    
+                    <?php while ($foto = $f->fetch_array(MYSQLI_ASSOC)){ ?>
+                    <div class="col-md-6 col-sm-6 col-xs-6 text-center" portafotos>
+                        <img src="fotos/literatura/<?=$foto['foto']?>" alt="<?=$foto['llegenda']?>"/>
+                        <p><?=$foto['llegenda']?></p>
+                    </div>
+                    <?php } ?>
                 </div>
                 <div id="videos" class="objecte">
-
+                    <?php while ($video = $v->fetch_array(MYSQLI_ASSOC)){ ?>
+                    <div class="col-md-6 col-sm-6 col-xs-6 text-center">
+                        <video controls>
+                            <source src="videos/literatura/<?=$video['video']?>.mp4" type="video/mp4">
+                            <source src="videos/literatura/<?=$video['video']?>.ogv" type="video/ogg">
+                            <source src="videos/literatura/<?=$video['video']?>.webm" type="video/webm">
+                        El teu navegador no suporta aquest tipus de video, si us plau, actualitza'l per a una millor experiència
+                        </video>
+                        <p><?=$foto['llegenda']?></p>
+                    </div>
+                    <?php } ?>
                 </div>
                 <div id="textos" class="objecte">
 
@@ -87,3 +107,5 @@ switch($per['tipus']){
         <script src="js/funcions2.js" type="text/javascript"></script>
     </body>
 </html>
+<?php
+$db->close();
