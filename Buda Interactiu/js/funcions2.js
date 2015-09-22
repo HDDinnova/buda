@@ -50,3 +50,27 @@ $('.boto').on('click',function(){
             break;
     }
 });
+
+$('#fotos img').on('click',function(){
+    $('#fotogran').attr('src',$(this).attr('src'));
+    $('body').css('overflow-y','hidden');
+    $('#imatgegran').fadeIn(400);
+});
+$('#imatgegran').on('click',function(){
+    $('body').css('overflow-y','auto');
+    $(this).fadeOut(400,function(){
+        $('#fotogran').attr('src','');
+    }); 
+});
+$('#textos img').on('click',function(){
+    $('body').css('overflow-y','hidden');
+    $('#text').load($(this).data('url'),function(){
+        $('#textgran').fadeIn(400);
+    });
+});
+$('#textgran').on('click',function(){
+    $('body').css('overflow-y','auto');
+    $(this).fadeOut(400,function(){
+        $('#text').html('');
+    });
+});

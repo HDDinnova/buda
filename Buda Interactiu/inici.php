@@ -89,18 +89,28 @@ $t = $db->query('SELECT * FROM textos WHERE usuari='.$per['id']);
                             <source src="videos/literatura/<?=$video['video']?>.webm" type="video/webm">
                         El teu navegador no suporta aquest tipus de video, si us plau, actualitza'l per a una millor experiència
                         </video>
-                        <p><?=$foto['llegenda']?></p>
+                        <p><?=$video['llegenda']?></p>
                     </div>
                     <?php } ?>
                 </div>
                 <div id="textos" class="objecte">
-
+                    <?php while ($text = $t->fetch_array(MYSQLI_ASSOC)){ ?>
+                    <div class="col-md-3 col-sm-3 col-xs-6 text-center">
+                        <img src="textos/literatura/<?=$text['imatge']?>" alt="" data-url="textos/literatura/<?=$text['url']?>"/>
+                    </div>
+                    <?php } ?>
                 </div>
                 <div id="perfil" class="objecte">
-
+                    
                 </div>
             </div>            
             <img id="dossier" src="img/dossier-obert.png" alt="Imatge del dossier obert"/>
+        </div>
+        <div id="imatgegran" class="fons">
+            <img id="fotogran" src="" alt="">
+        </div>
+        <div id="textgran" class="fons center-block">
+            <div id="text"></div>
         </div>
         <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
         <script src="js/bootstrap.min.js" type="text/javascript"></script>

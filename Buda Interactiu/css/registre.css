@@ -120,4 +120,58 @@ video{
     width: 85%;
     border: white solid 8px;
     box-shadow: 1px 1px 20px black;
+    margin-bottom: 10px;
+}
+#videos p{
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 10%;
+    margin-bottom: 30px;
+}
+.fons{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.5);
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    z-index: 9999;
+}
+#fotogran{
+    max-height: 95vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    margin-top: 2.5vh;
+}
+#textos img{
+    height: 30vh;
+    margin-bottom: 30px;
+    cursor: pointer;
+    border: white solid 8px;
+    box-shadow: 1px 1px 20px black;
+}
+#text{
+    width: 60vw;
+    height: 100vh;
+    background-color: #ffffff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px;
+    padding-top: 40px;
+    text-align: justify;
+    overflow-y: auto;
+}
+#text h3{
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-size: 4.5rem;
+    font-weight: bolder;
+}
+#text p{
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-size: 3.5rem;
 }
