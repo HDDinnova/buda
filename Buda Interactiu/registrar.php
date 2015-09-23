@@ -35,19 +35,48 @@ if ($a->num_rows===0){
                 . "('$iduser','Blade.jpg','Blade.html'),"
                 . "('$iduser','Espinas.jpg','Espinas.html')";
         $db->query($sqltextos);
+        $db->close();
+        header('Location: inici');
         break;
       case 'foto':
+        $sqlfoto = "INSERT INTO fotos (usuari,foto,llegenda) VALUES ('$iduser','_MG_8075.jpg','Foto: Salvador Maluquer.'),"
+              . "('$iduser','Santi155.jpg','Foto: Museu de les Terres de l\'Ebre.'),"
+              . "('$iduser','IMG009PNDE.jpg','Foto: Salvador Maluquer.'),"
+              . "('$iduser','IMG011PNDE.jpg','Foto: Salvador Maluquer.'),"
+              . "('$iduser','IMG029PNDE.jpg','Foto: Salvador Maluquer.'),"
+              . "('$iduser','buda-53.jpg','Foto: Guillermo Barberà.'),"
+              . "('$iduser','buda-61.jpg','Foto: Guillermo Barberà.'),"
+              . "('$iduser','buda-62.jpg','Foto: Guillermo Barberà.')";
+        $db->query($sqlfoto);
+        $sqlvideo = "INSERT INTO videos (usuari,video,llegenda) VALUES "
+                . "('$iduser','Maluquer_LaTorreEiffelAlMigDelMar','El fotògraf Salvador Maluquer explica les seves sensacions en prendre una de les fotografies més icòniques del far.')";
+        $db->query($sqlvideo);
+        $sqltextos = "INSERT INTO textos (usuari,imatge,url) VALUES ('$iduser','text.jpg','foto.html')";
+        $db->query($sqltextos);
+        $db->close();
+        header('Location: inici');
         break;
       case 'cine':
+        $sqlfoto = "INSERT INTO fotos (usuari,foto,llegenda) VALUES ('$iduser','M40A9048.jpg','Foto: Salvador Maluquer.')";
+        $db->query($sqlfoto);
+        $sqlvideo = "INSERT INTO videos (usuari,video,llegenda) VALUES "
+                . "('$iduser','Sarro_Encanyissada','La navegació en barquets de perxar a la llacuna de l’Encayissada va cridar l’atenció all cineasta Artur Sarró en un dels seus primers viatges al Delta.'),"
+                . "('$iduser','ExercitDelta','Un vol d’hidroavions per la badia dels Alfacs a principis de la dècada de 1930 és la primera presa d’imatges aèries del Delta.'),"
+                . "('$iduser','arxiufilmoteca','La Filmoteca de Catalunya atresora una filmació d’origen institucional datada a la dècada de 1950 en què la vida pagesa al Delta emergeix amb gran naturalitat.'),"
+                . "('$iduser','4804','En el marc de la pel·lícula “Buda, l’illa del Delta” (2013), el cineasta Asbel Esteve fou convidat a retratar la vida domèstica dels habitants de l’illa de Buda.'),"
+                . "('$iduser','4805','En el marc de la pel·lícula “Buda, l’illa del Delta” (2013), el cineasta Asbel Esteve fou convidat a retratar la vida domèstica dels habitants de l’illa de Buda.')";
+        $db->query($sqlvideo);
+        $sqltextos = "INSERT INTO textos (usuari,imatge,url) VALUES ('$iduser','sarro.jpg','sarro.html')";
+        $db->query($sqltextos);
+        $db->close();
+        header('Location: inici');
         break;
       case 'orni':
         break;
     }
-    header('Location: inici');
   }else {
     echo $db->error;
   }
-  $db->close();
 } else {
   $db->close();
   header('Location: jaregistrat');
