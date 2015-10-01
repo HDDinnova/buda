@@ -65,40 +65,46 @@ button{
     -ms-transform: rotate(-1deg);
     -webkit-transform: rotate(-1deg);
     transform: rotate(-1deg);
-    width: 3.4vw;
-    height: 3.5vw;
+    width: 3.3vw;
+    height: 3.3vw;
     z-index: 200;
     cursor: pointer;
+    opacity: .6;
+}
+.boto:hover{
+    background-color: gray;
+    opacity: .2;
 }
 #botomapa{
-    top: 1.8vw;
-    right: 2.4vw;
+    top: 3.7vw;
+    right: 2vw;
 }
 #botofoto{
-    top: 5.55vw;
-    right: 2.4vw;
+    top: 7vw;
+    right: 2vw;
 }
 #botovideo{
-    top: 9.28vw;
-    right: 2.3vw;
+    top: 10.25vw;
+    right: 2.1vw;
 }
 #bototext{
-    top: 13.15vw;
-    right: 2.3vw;
+    top: 13.6vw;
+    right: 2.05vw;
 }
 #botoperfil{
-    top: 16.9vw;
-    right: 2.3vw;
+    top: 17.1vw;
+    right: 2vw;
+    height: 3.6vw;
 }
 .objecte{
-    height: 47.1vw;
+    height: 46.8vw;
     position: absolute;
     -ms-transform: rotate(-0.5deg);
     -webkit-transform: rotate(-0.5deg);
     transform: rotate(-0.5deg);
     width: 93.2%;
     margin-left: 0.2vw;
-    margin-top: 2vw;
+    margin-top: 3.6vw;
     padding: 30px;
     display: none;
     z-index: 101;

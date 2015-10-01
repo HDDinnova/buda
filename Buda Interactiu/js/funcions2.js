@@ -12,6 +12,7 @@ var menu1 = function(){
 };
 
 $('.boto').on('click',function(){
+    var color = $('#dossier').data('color');
     switch ($(this).attr('id')){
         case 'botomapa':
             $('#mapa').show();
@@ -19,6 +20,8 @@ $('.boto').on('click',function(){
             $('#videos').hide();
             $('#textos').hide();
             $('#perfil').hide();
+            $('.boto').removeClass(color);
+            $('#botomapa').addClass(color);
             break;
         case 'botofoto':
             $('#fotos').show();
@@ -26,6 +29,8 @@ $('.boto').on('click',function(){
             $('#videos').hide();
             $('#textos').hide();
             $('#perfil').hide();
+            $('.boto').removeClass(color);
+            $('#botofoto').addClass(color);
             break;
         case 'botovideo':
             $('#videos').show();
@@ -33,6 +38,8 @@ $('.boto').on('click',function(){
             $('#mapa').hide();
             $('#textos').hide();
             $('#perfil').hide();
+            $('.boto').removeClass(color);
+            $('#botovideo').addClass(color);
             break;
         case 'bototext':
             $('#textos').show();
@@ -40,6 +47,8 @@ $('.boto').on('click',function(){
             $('#videos').hide();
             $('#mapa').hide();
             $('#perfil').hide();
+            $('.boto').removeClass(color);
+            $('#bototext').addClass(color);
             break;
         case 'botoperfil':
             $('#perfil').show();
@@ -47,6 +56,8 @@ $('.boto').on('click',function(){
             $('#videos').hide();
             $('#textos').hide();
             $('#mapa').hide();
+            $('.boto').removeClass(color);
+            $('#botoperfil').addClass(color);
             break;
     }
 });

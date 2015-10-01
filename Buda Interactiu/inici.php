@@ -62,7 +62,7 @@ $t = $db->query('SELECT * FROM textos WHERE usuari='.$per['id']);
           </div>
         </div>
         <div class="col-lg-9 col-md-9 col-sm-12 dossier">
-            <div id="botomapa" class="boto"></div>
+            <div id="botomapa" class="boto <?=$c?>"></div>
             <div id="botofoto" class="boto"></div>
             <div id="botovideo" class="boto"></div>
             <div id="bototext" class="boto"></div>
@@ -104,7 +104,7 @@ $t = $db->query('SELECT * FROM textos WHERE usuari='.$per['id']);
                     
                 </div>
             </div>            
-            <img id="dossier" src="img/dossier-obert.png" alt="Imatge del dossier obert"/>
+            <img id="dossier" src="img/dossier-obert.png" alt="Imatge del dossier obert" data-color="<?=$c?>"/>
         </div>
         <div id="imatgegran" class="fons">
             <img id="fotogran" src="" alt="">
