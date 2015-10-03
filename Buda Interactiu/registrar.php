@@ -72,6 +72,27 @@ if ($a->num_rows===0){
         header('Location: inici');
         break;
       case 'orni':
+        $sqlfoto = "INSERT INTO fotos (usuari,foto,llegenda) VALUES "
+              . "('$iduser','_MG_8085.jpg','Foto: Salvador Maluquer.'),"
+              . "('$iduser','IMG022PNDE.jpg','Foto: Salvador Maluquer.'),"
+              . "('$iduser','IMG032PNDE.jpg','Foto: Salvador Maluquer.'),"
+              . "('$iduser','M40A8979.jpg','Foto: Salvador Maluquer.'),"
+              . "('$iduser','M40A9035.jpg','Foto: Salvador Maluquer.'),"
+              . "('$iduser','M40A9125.jpg','Foto: Salvador Maluquer.'),"
+              . "('$iduser','M40A9146.jpg','Foto: Salvador Maluquer.')";
+        $db->query($sqlfoto);
+        $sqlvideo = "INSERT INTO videos (usuari,video,llegenda) VALUES "
+                . "('$iduser','RafelBalada_BudaLlocMistic','Rafel Balada comenta la fascinació que suposava l’illa de Buda per a la gent del Delta.'),"
+                . "('$iduser','RafelBalada_GranRiquesaNatural','Rafel Balada explica la gran riquesa natural que caracteritza el delta de l’Ebre.')";
+        $db->query($sqlvideo);
+        $sqltextos = "INSERT INTO textos (usuari,imatge,url) VALUES "
+                . "('$iduser','maluquer.jpg','maluquer.html'),"
+                . "('$iduser','seo.jpg','seo.html'),"
+                . "('$iduser','rafelbalada.jpg','rafelbalada.html')";
+        $db->query($sqltextos);
+        $db->close();
+        header('Location: inici');
+        break;
         break;
     }
   }else {

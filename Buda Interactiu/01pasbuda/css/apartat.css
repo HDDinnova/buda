@@ -1,0 +1,43 @@
+.container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+.titol,.destacat{
+    padding: 3rem;
+    color: white;
+}
+.titol h2{
+    font-size: 10rem;
+    font-weight: 600;
+    margin: 0;
+}
+#apartat1 video{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+}
+#titol1{
+    position: absolute;
+    top: 105%;
+    left: 5%;
+    text-transform: uppercase;
+}
+#destacat1{
+    position: absolute;
+    top: 105%;
+    left: 5%;
+    width: 680px;
+}
+#destacat1 p{
+    margin: 0;
+    font-size: 2.5rem; 
+}

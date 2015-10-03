@@ -454,7 +454,7 @@ h1,
 }
 h2,
 .h2 {
-  font-size: 30px;
+  /* font-size: 30px; */
 }
 h3,
 .h3 {
@@ -3495,6 +3495,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav > li > a > img {
   max-width: none;
+  max-height: 30px;
 }
 .nav-tabs {
   border-bottom: 1px solid #dddddd;
@@ -3646,7 +3647,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar {
   position: relative;
-  min-height: 56px;
+  min-height: 35px;
   margin-bottom: 20px;
   border: 1px solid transparent;
 }
@@ -3743,10 +3744,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  padding: 18px 15px;
-  font-size: 30px;
+  padding: 10px 15px;
+  font-size: 28px;
   line-height: 20px;
-  height: 56px;
+  /* height: 56px; */
   font-weight: bolder;
 }
 .navbar-brand span{
@@ -3830,8 +3831,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     float: left;
   }
   .navbar-nav > li > a {
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
   .navbar-nav.navbar-right:last-child {
     margin-right: -15px;
