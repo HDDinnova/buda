@@ -34,7 +34,6 @@ function controlMouse(e){
                 },1000);
                 break;
         }
-        //console.log('Avall');
     } else if(e.deltaY>0) {
         switch (pos) {
             case 11:
@@ -68,7 +67,6 @@ function controlMouse(e){
                 },1000);
                 break;
         }
-        //console.log('Amunt');
     }
 }
 function diapositiva1(){
