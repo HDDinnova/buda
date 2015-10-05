@@ -102,11 +102,69 @@
     bottom: 150px;
     padding: 15px;
 }
-
 #apartat2 video{
     min-height: 100vh;
     min-width: 100%;
     position: absolute;
-    top: 100;
+    top: 100%;
+    z-index: -10;
+}
+#videotext{
+     position: absolute;
+     bottom: 50px;
+     left: -250px;
+     width: 250px;
+     padding: 7px;
+}
+#tapa2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: -5;
+}
+#text2{
+    position: absolute;
+    z-index: -4;
+    color: white;
+    width: 600px;
+    left: 50px;
+    top: -50%;
+}
+#text2 h2{
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+#play2{
+    position: absolute;
+    z-index: 5;
+    bottom: -70px;
+    left: 50px;
+    background-color: rgba(238,196,27,.6);
+}
+#play2 img:hover{
+    background-color: #EEC41B;
+}
+#apartat3{
+    position: absolute;
+    z-index: -10;
+}
+#apartat4{
+    position: absolute;
+    z-index: -10;
+}
+#apartat5{
+    position: absolute;
+    z-index: -10;
+}
+#apartat6{
+    position: absolute;
+    z-index: -10;
+}
+#apartat7{
+    position: absolute;
     z-index: -10;
 }

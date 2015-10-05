@@ -1,4 +1,76 @@
 var trans = 1200;
+function controlMouse(e){
+    if(e.deltaY<0){                
+        switch (pos) {
+            case 10:
+                $('body').off('mousewheel');
+                diapositiva11();
+                $('#apartat2').load('apartat2.html');
+                setTimeout(function(){
+                    pos=11;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },1000);
+                break;
+            case 11:
+                $('body').off('mousewheel');
+                diapositiva20();
+                setTimeout(function(){
+                    pos=20;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },1000);
+                break;
+            case 20:
+                $('body').off('mousewheel');
+                diapositiva21();
+                setTimeout(function(){
+                    pos=21;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },1000);
+                break;
+        }
+        //console.log('Avall');
+    } else if(e.deltaY>0) {
+        switch (pos) {
+            case 11:
+                $('body').off('mousewheel');
+                diapositiva10();
+                setTimeout(function(){
+                    pos=10;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },1000);
+                break;
+            case 20:
+                $('body').off('mousewheel');
+                diapositiva11b();
+                setTimeout(function(){
+                    pos=11;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },1000);
+                break;
+            case 21:
+                $('body').off('mousewheel');
+                diapositiva20b();
+                setTimeout(function(){
+                    pos=20;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },1000);
+                break;
+        }
+        //console.log('Amunt');
+    }
+}
 function diapositiva1(){
     $('#apartat1 video').animate({
         'opacity': 1
@@ -37,7 +109,7 @@ function diapositiva10(){
 }
 function diapositiva11(){
     $('#apartat1 #tapa').animate({
-        'opacity': 0.8
+        'opacity': 0.5
     },'slow');
     $('#destacat1').animate({
         'top': '-300px'
@@ -55,6 +127,30 @@ function diapositiva11(){
         rotate: '0deg'
     },trans,'swing');
 }
+function diapositiva11b(){
+    $('#apartat1 #tapa').animate({
+        'opacity': 0.8
+    },'slow');
+    $('#destacat2').delay('250').animate({
+        'left': '5%'
+    },trans,'swing');
+    $('#fotobarquesriba').rotate('-45deg');
+    $('#fotobarquesriba').delay('100').show().animate({
+        'top': '90px',
+        'right': '180px',
+        rotate: '0deg'
+    },trans,'swing');   
+    $('#apartat1 video').animate({
+        'bottom': '0%'
+    },trans,'swing');
+    $('#apartat2 video').animate({
+        'top': '100%'
+    },trans,'swing');
+    $('#apartat2 video').get(0).pause();
+    $('#videotext').animate({
+        'left': '-250px'
+    },trans,'swing');
+}
 function diapositiva20(){
     $('#fotobarquesriba').animate({
         'top': '-50%',
@@ -65,12 +161,41 @@ function diapositiva20(){
         'left': '-500px'
     },trans,'swing');    
     $('#apartat1 video').animate({
-        'bottom': '100'
+        'bottom': '100%'
     },trans,'swing');
+    $('#apartat2 video').get(0).play();
     $('#apartat2 video').animate({
-        'top': '0'
+        'top': '0%'
     },trans,'swing');
-    $('#apartat1 #tapa').animate({
-        'opacity': 0
-    },'slow');
+    $('#videotext').delay('300').animate({
+        'left': '50px'
+    },trans,'swing');
+}
+function diapositiva20b(){
+    $('#videotext').delay('600').animate({
+        'left': '50px'
+    },trans,'swing');
+    $('#tapa2').delay('400').animate({
+        'opacity':0.0
+    });
+    $('#text2').delay('200').animate({
+        'top': '-50%'
+    },trans,'swing');
+    $('#play2').animate({
+        'bottom': '-70px'
+    },trans/2,'swing');
+}
+function diapositiva21(){
+    $('#videotext').animate({
+        'left': '-250px'
+    },trans,'swing');
+    $('#tapa2').delay('200').animate({
+        'opacity':0.3
+    });
+    $('#text2').delay('500').animate({
+        'top': '55%'
+    },trans,'swing');
+    $('#play2').delay('600').animate({
+        'bottom': '80px'
+    },trans/2,'swing');
 }

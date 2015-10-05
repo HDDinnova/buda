@@ -77,28 +77,7 @@
             diapositiva1();
         });
         $('body').on('mousewheel',function(e){
-            if(e.deltaY<0){
-                switch (pos) {
-                    case 10:
-                        pos=11;
-                        diapositiva11();
-                        $('#apartat2').load('apartat2.html');
-                        break;
-                    case 11:
-                        pos=20;
-                        diapositiva20();
-                        break;
-                }
-                //console.log('Avall');
-            } else {
-                switch (pos) {
-                    case 11:
-                        pos=10;
-                        diapositiva10();
-                        break;
-                }
-                //console.log('Amunt');
-            }
+            controlMouse(e);
         });
     </script>
     </body>
