@@ -196,4 +196,5 @@ function diapositiva21(){
     $('#play2').delay('600').animate({
         'bottom': '80px'
     },trans/2,'swing');
+    $('#apartat3').load('apartat3.html');
 }
