@@ -332,3 +332,8 @@ function diapositiva31(){
         $('#video3fons').get(0).play();
     });
 }
+function diapositiva32(){
+    $('#tapa3-2').animate({
+        'top': 0
+    },trans,'swing');
+}
