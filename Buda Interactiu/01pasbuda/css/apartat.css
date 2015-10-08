@@ -237,14 +237,14 @@
     min-height: 100vh;
     min-width: 100%;
     position: absolute;
-    bottom: 100%;
+    top: 100%;
     z-index: -10;
 }
 #titul3-2{
     position: absolute;
     z-index: -9;
     top: 120px;
-    right: 500px;
+    right: 100%;
     padding: 20px 70px 20px 20px;
     margin: 0;
     font-size: 2.6rem;
@@ -260,7 +260,7 @@
     padding: 60px;
     vertical-align: bottom;
 }
-#tapa3-1 .col-md-8{
+#tapa3-2 .col-md-8{
     position: absolute;
     bottom: 0;
     margin-bottom: 80px;
