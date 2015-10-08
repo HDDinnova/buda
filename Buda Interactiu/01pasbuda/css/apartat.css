@@ -238,17 +238,18 @@
     min-width: 100%;
     position: absolute;
     top: 100%;
-    z-index: -10;
+    z-index: -8;
 }
 #titul3-2{
     position: absolute;
-    z-index: -9;
+    z-index: -7;
     top: 120px;
     right: 100%;
     padding: 20px 70px 20px 20px;
     margin: 0;
     font-size: 2.6rem;
     font-weight: 600;
+    color: white;
 }
 #tapa3-2{
     position: absolute;
@@ -256,7 +257,7 @@
     left: 0;
     height: 100%;
     width: 50%;
-    z-index: -9;
+    z-index: -7;
     padding: 60px;
     vertical-align: bottom;
 }
@@ -264,6 +265,20 @@
     position: absolute;
     bottom: 0;
     margin-bottom: 80px;
+    color: white;
+}
+#subtitul3-2{
+    background-color: white;
+    color: #F58431;
+    width: 35%;
+    position: absolute;
+    z-index: -7;
+    top: 200px;
+    right: -50%;
+    padding: 20px;
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 400;
 }
 #apartat4{
     position: absolute;
