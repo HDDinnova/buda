@@ -239,11 +239,11 @@ function diapositiva21(){
     $('#apartat3').load('apartat3.html');
 }
 function diapositiva21b(){
-    $('.col-md-8 p').css({
+    $('#tapa3-1 .col-md-8 p').css({
         'transitionDelay': '10ms',
         'transform': 'translateY(1500px)'
     });
-    $('.col-md-8 img').css({
+    $('#tapa3-1 .col-md-8 img').css({
         'transitionDelay': '400ms',
         'transform': 'translateY(1500px)'
     });
@@ -288,11 +288,11 @@ function diapositiva30(){
     $('#titul3-1').delay('600').animate({
         'left': '50px'
     },trans,'swing');
-    $('.col-md-8 img').css({
+    $('#tapa3-1 .col-md-8 img').css({
         'transitionDelay': '800ms',
         'transform': 'translateY(0px)'
     });
-    $('.col-md-8 p').css({
+    $('#tapa3-1 .col-md-8 p').css({
         'transitionDelay': '1s',
         'transform': 'translateY(0px)'
     });
@@ -305,21 +305,21 @@ function diapositiva30b(){
     $('#titul3-1').delay('600').animate({
         'left': '50px'
     },trans,'swing');
-    $('.col-md-8 img').css({
+    $('#tapa3-1 .col-md-8 img').css({
         'transitionDelay': '800ms',
         'transform': 'translateY(0px)'
     });
-    $('.col-md-8 p').css({
+    $('#tapa3-1 .col-md-8 p').css({
         'transitionDelay': '1s',
         'transform': 'translateY(0px)'
     });
 }
 function diapositiva31(){
-    $('.col-md-8 p').css({
+    $('#tapa3-1 .col-md-8 p').css({
         'transitionDelay': '10ms',
         'transform': 'translateY(1500px)'
     });
-    $('.col-md-8 img').css({
+    $('#tapa3-1 .col-md-8 img').css({
         'transitionDelay': '400ms',
         'transform': 'translateY(1500px)'
     });
