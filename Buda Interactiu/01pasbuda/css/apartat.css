@@ -270,7 +270,7 @@
 #subtitul3-2{
     background-color: white;
     color: #F58431;
-    width: 35%;
+    width: 45%;
     position: absolute;
     z-index: -7;
     top: 200px;
@@ -281,18 +281,57 @@
     font-weight: 400;
 }
 #apartat4{
+    display: none;
+}
+#imgbarcassa{    
+    min-height: 100vh;
+    min-width: 100%;
     position: absolute;
     z-index: -10;
+}
+#imgbarcassa img{
+    position: absolute;
+    z-index: -10;
+    top: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+#imgbarcassa p{
+    position: absolute;
+    z-index: -9;
+    bottom: 10px;
+    left: 5%;
+    color: white;
+    margin: 0;
+}
+.titol h3{
+    font-size: 6rem;
+    font-weight: 600;
+    margin: 0;
+}
+#titol4{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    text-transform: uppercase;
+}
+#destacat4{
+    position: absolute;
+    top: 60%;
+    left: 5%;    
+    padding: 1rem;
+}
+#destacat4 p{
+    color: white;
+    font-size: 3.2rem;
+    margin: 0;
 }
 #apartat5{
-    position: absolute;
-    z-index: -10;
+    display: none;
 }
 #apartat6{
-    position: absolute;
-    z-index: -10;
+    display: none;
 }
 #apartat7{
-    position: absolute;
-    z-index: -10;
+    display: none;
 }
