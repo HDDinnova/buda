@@ -1,4 +1,11 @@
 var trans = 1200;
+$('#bso').click(function(){
+    if($('#audio')[0].paused){
+        $('#audio')[0].play();
+    } else {
+        $('#audio')[0].pause();
+    }
+});
 function controlMouse(e){
     if(e.deltaY<0){                
         switch (pos) {
@@ -93,6 +100,36 @@ function controlMouse(e){
                     });
                 },1000);
                 break;
+            case 40:
+                $('body').off('mousewheel');
+                diapositiva41();
+                setTimeout(function(){
+                    pos=41;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },1000);
+                break;
+            case 41:
+                $('body').off('mousewheel');
+                diapositiva42();
+                setTimeout(function(){
+                    pos=42;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },1000);
+                break;
+            case 42:
+                $('body').off('mousewheel');
+                diapositiva50();
+                setTimeout(function(){
+                    pos=50;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },1000);
+                break;
         }
     } else if(e.deltaY>0) {
         switch (pos) {
@@ -171,6 +208,46 @@ function controlMouse(e){
                 diapositiva33b();
                 setTimeout(function(){
                     pos=33;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },1000);
+                break;
+            case 40:
+                $('body').off('mousewheel');
+                diapositiva34b();
+                setTimeout(function(){
+                    pos=34;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },1000);
+                break;
+            case 41:
+                $('body').off('mousewheel');
+                diapositiva40b();
+                setTimeout(function(){
+                    pos=40;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },1000);
+                break;
+            case 42:
+                $('body').off('mousewheel');
+                diapositiva41b();
+                setTimeout(function(){
+                    pos=41;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },1000);
+                break;
+            case 50:
+                $('body').off('mousewheel');
+                diapositiva42b();
+                setTimeout(function(){
+                    pos=42;
                     $('body').on('mousewheel',function(e){
                         controlMouse(e);
                     });
@@ -311,6 +388,10 @@ function diapositiva21(){
     $('#apartat3').load('apartat3.html');
 }
 function diapositiva21b(){
+    $('#apartat2').show();
+    $('#tapa2').css({
+        'opacity':0.3
+    });
     $('#tapa3-1 .col-md-8 p').css({
         'transitionDelay': '10ms',
         'transform': 'translateY(1500px)'
@@ -386,6 +467,7 @@ function diapositiva30b(){
         'transitionDelay': '1s',
         'transform': 'translateY(0px)'
     });
+    $('#apartat2').load('apartat2.html');
 }
 function diapositiva31(){
     $('#tapa3-1 .col-md-8 p').css({
@@ -514,6 +596,25 @@ function diapositiva34(){
     },trans,'swing');
     $('#apartat4').load('apartat4.html');
 }
+function diapositiva34b(){
+    $('#imgbarcassa p').animate({
+        'bottom':'-50px'
+    },trans,'swing');
+    $('#destacat4').delay('100').animate({
+        'top':'100%'
+    },trans,'swing');
+    $('#titol4').delay('400').animate({
+        'top':'100%'
+    },trans,'swing');
+    $('#imgbarcassa img').delay('800').animate({
+        'top':'100%'
+    },trans,'swing');
+    $('#video3-2fons').delay('800').animate({
+        'top': '0%'
+    },trans,'swing',function(){
+        $('#video3-2fons').get(0).play();
+    });    
+}
 function diapositiva40(){
     $('#apartat2').html('').hide();
     $('#apartat4').show();
@@ -523,5 +624,193 @@ function diapositiva40(){
     },trans,'swing');
     $('#imgbarcassa img').animate({
         'top':'0%'
+    },trans,'swing');
+    $('#titol4').delay('600').animate({
+        'top':'45%'
+    },trans,'swing');
+    $('#destacat4').delay('900').animate({
+        'top':'60%'
+    },trans,'swing');
+    $('#imgbarcassa p').delay('1100').animate({
+        'bottom':'10px'
+    },trans,'swing');
+}
+function diapositiva40b(){    
+    $('#text4-1 p').css({
+        'transitionDelay': '10ms',
+        'transform': 'translateY(1500px)'
+    });
+    $('#text4-1 img').css({
+        'transitionDelay': '300ms',
+        'transform': 'translateY(1500px)'
+    });
+    $('#text4-1').delay('600').animate({
+        'top':'100%'
+    },trans,'swing');
+    $('#tapa4-1').delay('800').animate({
+        'opacity':0
+    },trans,'swing');    
+    $('#titol4').delay('1200').animate({
+        'top':'45%'
+    },trans,'swing');
+    $('#destacat4').delay('1000').animate({
+        'top':'60%'
+    },trans,'swing');
+    $('#imgbarcassa p').delay('1100').animate({
+        'bottom':'10px'
+    },trans,'swing');
+}
+function diapositiva41(){
+    $('#imgbarcassa p').animate({
+        'bottom':'-50px'
+    },trans,'swing');
+    $('#destacat4').delay('400').animate({
+        'top':'-30%'
+    },trans,'swing');
+    $('#titol4').delay('100').animate({
+        'top':'-30%'
+    },trans,'swing');
+    $('#tapa4-1').delay('600').animate({
+        'opacity':0.3
+    },trans,'swing');
+    $('#text4-1').delay('700').animate({
+        'top':'40%'
+    },trans,'swing');
+    $('#text4-1 img').css({
+        'transitionDelay': '1s',
+        'transform': 'translateY(0px)'
+    });
+    $('#text4-1 p').css({
+        'transitionDelay': '1300ms',
+        'transform': 'translateY(0px)'
+    });
+}
+function diapositiva41b(){
+    $('#imgbarcassa2 p').animate({
+        'bottom':'-50px'
+    },trans,'swing');
+    $('#play4').delay('100').animate({
+        'bottom':'-70px'
+    },trans,'swing');
+    $('#destacat4-2').delay('300').animate({
+        'top':'100%'
+    },trans,'swing');
+    $('#titol4-2').delay('500').animate({
+        'top':'100%'
+    },trans,'swing');
+    $('#imgbarcassa2 img').delay('600').animate({
+        'top':'100%'
+    },trans,'swing');
+    $('#imgbarcassa img').delay('600').animate({
+        'top':'0%'
+    },trans,'swing');
+    $('#tapa4-1').delay('600').animate({
+        'top':'0%'
+    },trans,'swing');
+    $('#text4-1').delay('700').animate({
+        'top':'40%'
+    },trans,'swing');
+    $('#text4-1 img').css({
+        'transitionDelay': '1.3s',
+        'transform': 'translateY(0px)'
+    });
+    $('#text4-1 p').css({
+        'transitionDelay': '1s',
+        'transform': 'translateY(0px)'
+    });
+}
+function diapositiva42(){
+    $('#text4-1 img').css({
+        'transitionDelay': '1ms',
+        'transform': 'translateY(-1500px)'
+    });
+    $('#text4-1 p').css({
+        'transitionDelay': '200ms',
+        'transform': 'translateY(-1500px)'
+    });
+    $('#text4-1').delay('300').animate({
+        'top':'-100%'
+    },trans,'swing');
+    $('#imgbarcassa img').delay('400').animate({
+        'top':'-100%'
+    },trans,'swing');
+    $('#tapa4-1').delay('400').animate({
+        'top':'-100%'
+    },trans,'swing');
+    $('#imgbarcassa2 img').delay('400').animate({
+        'top':'0%'
+    },trans,'swing');
+    $('#titol4-2').delay('600').animate({
+        'top':'15%'
+    },trans,'swing');
+    $('#destacat4-2').delay('800').animate({
+        'top':'25%'
+    },trans,'swing');
+    $('#play4').delay('1000').animate({
+        'bottom':'25%'
+    },trans,'swing');
+    $('#imgbarcassa2 p').delay('1100').animate({
+        'bottom':'10px'
+    },trans,'swing',function(){
+        $('#apartat5').load('apartat5.html');
+    });
+}
+function diapositiva42b(){
+    $('#imgdelta5 p').animate({
+        'bottom':'-50px'
+    },trans,'swing');
+    $('#destacat5').delay('100').animate({
+        'left':'100%'
+    },trans,'swing');
+    $('#titol5').delay('300').animate({
+        'left':'-50%'
+    },trans,'swing');
+    $('#imgdelta5 img').delay('500').animate({
+        'top':'100%'
+    },trans,'swing');
+    $('#imgbarcassa2 img').delay('500').animate({
+        'top':'0%'
+    },trans,'swing');
+    $('#titol4-2').delay('700').animate({
+        'top':'15%'
+    },trans,'swing');
+    $('#destacat4-2').delay('900').animate({
+        'top':'25%'
+    },trans,'swing');
+    $('#play4').delay('1100').animate({
+        'bottom':'25%'
+    },trans,'swing');   
+    $('#imgbarcassa2 p').delay('1200').animate({
+        'bottom':'10px'
+    },trans,'swing');
+}
+function diapositiva50(){
+    $('#apartat5').show();
+    $('#imgbarcassa2 p').animate({
+        'bottom':'-50px'
+    },trans,'swing');
+    $('#play4').delay('500').animate({
+        'bottom':'100%'
+    },trans,'swing');
+    $('#destacat4-2').delay('300').animate({
+        'top':'-100%'
+    },trans,'swing');
+    $('#titol4-2').delay('100').animate({
+        'top':'-100%'
+    },trans,'swing');
+    $('#imgbarcassa2 img').delay('600').animate({
+        'top':'-100%'
+    },trans,'swing');
+    $('#imgdelta5 img').delay('600').animate({
+        'top':'0%'
+    },trans,'swing');
+    $('#titol5').delay('900').animate({
+        'left':'5%'
+    },trans,'swing');
+    $('#destacat5').delay('1100').animate({
+        'left':'5%'
+    },trans,'swing');
+    $('#imgdelta5 p').delay('1200').animate({
+        'bottom':'10px'
     },trans,'swing');
 }
