@@ -436,7 +436,21 @@
 #apartat5{
     display: none;
 }
-#imgdelta5{
+#apartat5 video{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    bottom: 100%;
+    z-index: -10;
+}
+#apartat5 p{
+    width: 35%;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: -9;
+}
+/* #imgdelta5{
     min-height: 100vh;
     min-width: 100%;
     position: absolute;
@@ -510,4 +524,4 @@
 }
 #apartat7{
     display: none;
-}
+}*/
