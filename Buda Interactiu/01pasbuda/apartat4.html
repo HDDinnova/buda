@@ -33,6 +33,7 @@
 <div class="blau" id="play4">
     <img id="passarro2" src="img/play.png" alt="reproduir video pas sarro">
     <img id="guillermobores" src="img/play.png" alt="reproduir video de Guillermo Borés">
+    <img id="recupllaguts" src="img/play.png" alt="reproduir video sobre la recuperació dels llaguts">
 </div>
 <div class="videopopup">
     <div id="videosapartat4"></div>
@@ -48,6 +49,12 @@
     $('#guillermobores').on('click',function(){
         $('body').off('mousewheel');
         $('#videosapartat4').load('apartat4video2.html',function(){
+            $('.videopopup').show();
+        });
+    });
+    $('#recupllaguts').on('click',function(){
+        $('body').off('mousewheel');
+        $('#videosapartat4').load('apartat4video3.html',function(){
             $('.videopopup').show();
         });
     });

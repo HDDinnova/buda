@@ -119,16 +119,6 @@ function controlMouse(e){
                         controlMouse(e);
                     });
                 },1000);
-                break;                
-            case 42:
-                $('body').off('mousewheel');
-                diapositiva50();
-                setTimeout(function(){
-                    pos=50;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },1000);
                 break;
         }
     } else if(e.deltaY>0) {
@@ -743,26 +733,4 @@ function diapositiva42(){
         'bottom':'10px'
     },trans,'swing');
     $('#apartat5').load('apartat5.html');
-}
-function diapositiva50(){
-    $('#apartat5').show();
-    $('#imgbarcassa2 p').animate({
-        'bottom':'-50px'
-    },trans,'swing');
-    $('#titol4-2').delay('100').animate({
-        'top':'-50%'
-    },trans,'swing');
-    $('#destacat4-2').delay('300').animate({
-        'top':'-50%'
-    },trans,'swing');
-    $('#play4').delay('600').animate({
-        'bottom':'150%'
-    },trans,'swing');
-    $('#apartat5 video').get(0).play();
-    $('#imgbarcassa2 img').delay('800').animate({
-        'top':'100%'
-    },trans,'swing');
-    $('#apartat5 video').delay('800').animate({
-        'bottom':'0%'
-    },trans,'swing');
 }
