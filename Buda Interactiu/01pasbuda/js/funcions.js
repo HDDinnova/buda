@@ -6,6 +6,18 @@ $('#bso').click(function(){
         $('#audio')[0].pause();
     }
 });
+function menu(){
+    $('#menu1').click(function() {
+        $('.menu').animate({
+          right: '0px'
+        }, 200);
+    });
+    $('#tancamenu').click(function() {
+      $('.menu').animate({
+        right: "-285px"
+      }, 200);
+    });
+};
 function controlMouse(e){
     if(e.deltaY<0){                
         switch (pos) {

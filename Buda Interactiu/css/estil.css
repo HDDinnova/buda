@@ -5809,3 +5809,24 @@ button.close {
 .icon-close{
   cursor: pointer;
 }
+.menu .container{
+    width: 100%;
+    display: block;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.menu .container a{
+    text-align: center;
+    text-decoration: inherit;
+}
+.menu .container a img{
+     width: 100%; 
+}
+.menu .container a h3{
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}

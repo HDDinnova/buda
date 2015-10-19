@@ -1,16 +1,15 @@
-var menu1 = function(){
+function menu(){
     $('#menu1').click(function() {
         $('.menu').animate({
           right: '0px'
         }, 200);
     });
-      $('.icon-close').click(function() {
-        $('.menu').animate({
-          right: "-285px"
-        }, 200);
-      });
+    $('#tancamenu').click(function() {
+      $('.menu').animate({
+        right: "-285px"
+      }, 200);
+    });
 };
-
 $('.boto').on('click',function(){
     var color = $('#dossier').data('color');
     switch ($(this).attr('id')){

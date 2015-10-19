@@ -45,13 +45,16 @@ $t = $db->query('SELECT * FROM textos WHERE usuari='.$per['id']);
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="#"><img src="img/menu-llibreta.png" alt=""/></a></li>
                 <li><a href="#"><img src="img/menu-audio.png" alt=""/></a></li>
-                <li><a href="#"><img src="img/menu-menu.png" alt=""/></a></li>
+                <li><a href="#" id="menu1"><img src="img/menu-menu.png" alt=""/></a></li>
                 
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
         <!--Fi capçalera-->
+        <!--Menú lateral-->
+        <div id="m"></div>
+        <!--Fi menú lateral-->
         <div class="col-lg-3 col-md-3 col-sm-12">
           <div class="caixa <?=$c?> col-md-12">
               <h2><strong>Enhorabona <?=$per['nom']?>,<br/>el registre s'ha<br/>realitzat correctament</strong></h2>
@@ -117,6 +120,13 @@ $t = $db->query('SELECT * FROM textos WHERE usuari='.$per['id']);
         <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
         <script src="js/funcions2.js" type="text/javascript"></script>
+        <script>
+          $(window).load(function(){
+            $('#m').load('menu/menuinicial.html',function(){
+                menu();
+            });            
+        });
+        </script>
     </body>
 </html>
 <?php

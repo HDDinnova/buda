@@ -10,6 +10,8 @@
         <link href="../css/estil.css" rel="stylesheet" type="text/css"/>
         <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/apartat.css" rel="stylesheet" type="text/css"/>
+        
+        <script src="../js/jquery-2.1.4.min.js" type="text/javascript"></script>
     </head>
     <body>
         <nav class="navbar navbar-default">
@@ -31,40 +33,57 @@
         </nav>
         <!--Fi capçalera-->
         <audio loop autoplay id="audio">
-            <source src="../musica/Buda Frag 2 de 7.mp3" type="audio/mpeg">
+            <source src="../musica/Buda Frag 1 de 7.mp3" type="audio/mpeg">
         </audio>
+        <!--Menú lateral-->
         <div id="m"></div>
+        <!--Fi menú lateral-->
         <div class="container" id="apartat1">
-            <!-- Apartat 1.1 -->
-            <video poster="video/08_VoraRiu_1.jpg">
-                <source src="video/08_VoraRiu_1.mp4" type="video/mp4">
-                <source src="video/08_VoraRiu_1.ogg" type="video/ogg">
-                <source src="video/08_VoraRiu_1.webm" type="video/webm">
-            </video>
-            <div class="blau titol" id="titol1">
-                <h2>El pas de buda</h2>
+            <div id="imgdelta1">
+                <img src="foto/IMG003PNDE.jpg" alt="Fotografia aèrea del delta de l'ebre"/>
+                <p>Foto: Salvador Maluquer (dècada de 1950 i 1960).<br>Arxiu Parc Natural del Delta de l’Ebre</p>
             </div>
-            <div class="blau destacat" id="destacat1">
-                <p>Buda, avui amb unes 1.100 hectàrees de superfície, és una illa fluvial i marítima, que forma un triangle entre el riu Migjorn, la riba dreta de l’actual desembocadura de l’Ebre i la Mediterrània.</p>
+            <div class="taronga titol" id="titol1">
+                <h2>L'illa de Buda</h2>
             </div>
-            <!-- Apartat 1.2 -->
-            <div class="blau" id="tapa"></div>
-            <div id="destacat2">                
-                <img id="marca" src="img/marca1.png" alt="icona destacat"/>
-                <p>En algunes èpoques de l’any només es pot accedir a l’illa de Buda creuant el riu Migjorn amb un petit transbordador o bé creuant el riu Ebre en barca des de la riba esquerra.</p>
+            <div class="taronga destacat" id="destacat1">
+                <p>Metàfora del Delta de l’Ebre</p>
             </div>
-            <div id="fotobarquesriba">
-                <div class="groc">
-                    Pas de Buda pel riu Ebre.<br>Foto: Salvador Maluquer (dècada de 1950).
+            <div class="taronga" id="tapa1-1"></div>
+            <div id="destacat1-2">
+                <h4>Actualment, Buda forma part de les diverses “figures” de protecció del medi natural: espai PEIN “Delta de l’Ebre”, Parc Natural i Xarxa Natura 2000</h4>
+                <div id="play1">
+                    <img id="francescvidal" src="img/play.png" alt="reproduir video de Francesc Vidal">
                 </div>
-                <img src="foto/_MG_8133.jpg" alt="dos barques amarrades a la riba de buda"/>
+            </div>
+            <div class="videopopup">
+                <div id="videosapartat1"></div>
+            </div>
+            <script>
+                $('#francescvidal').on('click',function(){
+                    $('body').off('mousewheel');
+                    $('#videosapartat1').load('apartat1video.html',function(){
+                        $('.videopopup').show();
+                    });
+
+                });
+                function tancarvideo1(){
+                    $('.videopopup').hide();
+                    $('#videosapartat1').html('');
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                }
+            </script>
+            <div id="destacat1-3">
+                <h4>L’illa de Buda abasta unes 1.100 hectàrees, de les quals unes 250 són arrossars i la resta es reparteixen entre els diferents hàbitats 
+                    o ambients naturals propis del Delta: els canyissars de les àrees i marges fluvials, les jonqueres i els salicornars dels ambients 
+                    salobres, i les llacunes litorals anomenades “Calaixos” (Calaix Gran i Calaix de Mar)</h4>
             </div>
         </div>
         <div class="container" id="apartat2"></div>
         <div class="container" id="apartat3"></div>
-        <div class="container" id="apartat4"></div>
-        <div class="container" id="apartat5"></div>
-    <script src="../js/jquery-2.1.4.min.js" type="text/javascript"></script>
+
     <script src="js/jquery-ui.min.js" type="text/javascript"></script>
     <script src="js/funcions.js" type="text/javascript"></script>
     <script src="js/jquery.mousewheel.min.js" type="text/javascript"></script>
