@@ -246,3 +246,10 @@
     font-weight: 600;
     line-height: inherit;
 }
+#apartat4 #video4fons{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -10;
+}

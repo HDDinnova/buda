@@ -1,4 +1,5 @@
 var trans = 1200;
+var zi=-4;
 $('#bso').click(function(){
     if($('#audio')[0].paused){
         $('#audio')[0].play();
@@ -197,6 +198,20 @@ function controlMouse(e){
         }
     }
 }
+function drop(event){
+    var offset = event.dataTransfer.getData("Text").split(',');
+    var dm = document.getElementById(offset[2]);
+    dm.style.left = (event.clientX + parseInt(offset[0],10)) + 'px';
+    dm.style.top = (event.clientY + parseInt(offset[1],10)) + 'px';
+    dm.style.zIndex = zi;
+    zi++;
+    event.preventDefault();
+    return false;
+}
+function drag_over(event){
+    event.preventDefault();
+    return false;
+}
 function diapositiva1(){
     $('#imgdelta1 img').animate({
         'opacity': 1
@@ -265,31 +280,10 @@ function diapositiva20(){
         'right':'12%'
     },trans,function(){
         $('#apartat2 img').click(function(){
-            $('#apartat2 img').css('z-index',-5);
-            $(this).css('z-index',-4);
-            console.log($(this).css('z-index'));
+            $(this).css('z-index',zi);
+            zi++;
         });
         $('#apartat3').load('apartat3.html');
-//        var im=4;
-//        $('#apartat2').click(function(){
-//            $('#apartat2 img:nth-child('+im+')').animate({
-//                'top':'-80%',
-//                'left':'180%',
-//                rotate: '-40deg'
-//            },trans);
-//            im-=1;
-//            if(im===0){
-//                im=4;
-//                $('#apartat2 .groc').delay('200').animate({
-//                    'right':'-50%'
-//                },trans,function(){
-//                    $('#apartat3').load('apartat3.html',function(){
-//                        pos=30;
-//                        diapositiva30();
-//                    });
-//                });
-//            }
-//        });
     });
 }
 function diapositiva20b(){
@@ -357,24 +351,5 @@ function drag_start(event){
     var str = (parseInt(style.getPropertyValue("left")) - event.clientX) + ',' 
             + (parseInt(style.getPropertyValue("top")) - event.clientY)+ ',' + event.target.id;
     event.dataTransfer.setData("Text",str);
-} 
-
-function drop(event){
-    var offset = event.dataTransfer.getData("Text").split(',');
-    var dm = document.getElementById(offset[2]);
-    var imatges = document.getElementsByClassName('f');
-    //console.log(imatges);
-    for (var i=0;i<imatges.length;i++){
-        imatges[i].style.zIndex = -5;
-    }
-    dm.style.left = (event.clientX + parseInt(offset[0],10)) + 'px';
-    dm.style.top = (event.clientY + parseInt(offset[1],10)) + 'px';
-    dm.style.zIndex = -4;
-    event.preventDefault();
-    return false;
 }
-
-function drag_over(event){
-    event.preventDefault();
-    return false;
-}   
+   

@@ -1,0 +1,37 @@
+<video id="video4fons" poster="video/Delta.jpg" preload>
+    <source src="video/Delta.mp4" type="video/mp4">
+    <source src="video/Delta.ogg" type="video/ogg">
+    <source src="video/Delta.webm" type="video/webm">
+</video>
+<div id="destacat4">
+    <h4 class="roig">El repte més important per a la conservació d’aquest espai és el control 
+        de la regressió general de les platges i la subsidència de tot el Delta.</h4>
+    <div id="play4">
+        <img id="guillermo" src="img/play.png" alt="Video Guillermo Borés">
+        <img id="salvado" src="img/play.png" alt="Video Salvador Maluquer">
+    </div>
+</div>
+<div class="videopopup">
+    <div id="videosapartat4"></div>
+</div>
+<script>
+    $('#buda').on('click',function(){
+        $('body').off('mousewheel');
+        $('#videosapartat4').load('apartat4video1.html',function(){
+            $('.videopopup').show();
+        });
+    });
+    $('#desembocadura').on('click',function(){
+        $('body').off('mousewheel');
+        $('#videosapartat4').load('apartat4video2.html',function(){
+            $('.videopopup').show();
+        });
+    });
+    function tancarvideo3(){
+        $('.videopopup').hide();
+        $('#videosapartat4').html('');
+        $('body').on('mousewheel',function(e){
+            controlMouse(e);
+        });
+    }
+</script>
