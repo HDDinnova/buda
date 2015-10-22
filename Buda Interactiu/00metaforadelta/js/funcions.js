@@ -72,6 +72,16 @@ function controlMouse(e){
                     });
                 },1000);
                 break;
+            case 31:
+                $('body').off('mousewheel');
+                diapositiva40();
+                setTimeout(function(){
+                    pos=40;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },1000);
+                break;
         }
     } else if(e.deltaY>0) {
         switch (pos) {
@@ -197,6 +207,11 @@ function controlMouse(e){
                 break;
         }
     }
+}function drag_start(event){
+    var style = window.getComputedStyle(event.target, null);
+    var str = (parseInt(style.getPropertyValue("left")) - event.clientX) + ',' 
+            + (parseInt(style.getPropertyValue("top")) - event.clientY)+ ',' + event.target.id;
+    event.dataTransfer.setData("Text",str);
 }
 function drop(event){
     var offset = event.dataTransfer.getData("Text").split(',');
@@ -339,17 +354,29 @@ function diapositiva31(){
     },trans);
     $('#destacat3-2').delay('800').animate({
         'bottom': '10%'
-    },trans);    
+    },trans);
+    $('#apartat4').load('apartat4.html');
 }
-
 function diapositiva31b(){
     
 }
-
-function drag_start(event){
-    var style = window.getComputedStyle(event.target, null);
-    var str = (parseInt(style.getPropertyValue("left")) - event.clientX) + ',' 
-            + (parseInt(style.getPropertyValue("top")) - event.clientY)+ ',' + event.target.id;
-    event.dataTransfer.setData("Text",str);
+function diapositiva40(){
+    $('#apartat4').show();
+    $('#destacat3-2').animate({
+        'bottom': '150%'
+    },trans);
+    $('#tapa3-1').delay('200').animate({
+        'top': '-100%'
+    },trans);
+    $('#imgdelta3 img').delay('200').animate({
+        'top':'-100%'
+    },trans);
+    $('#apartat4 #video4fons').delay('200').animate({
+        'top':'0%'
+    },trans,function(){
+        $('#apartat4 #video4fons')[0].play();
+    });
+    $('#destacat4').delay('400').animate({
+        'top':'10%'
+    },trans);
 }
-   

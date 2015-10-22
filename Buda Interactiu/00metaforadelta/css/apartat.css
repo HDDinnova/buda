@@ -246,10 +246,64 @@
     font-weight: 600;
     line-height: inherit;
 }
+#apartat4{
+    display: none;
+}
 #apartat4 #video4fons{
     min-height: 100vh;
     min-width: 100%;
     position: absolute;
-    top: 0;
+    top: 100%;
     z-index: -10;
+}
+#destacat4{
+    position: absolute;
+    top: -50%;
+    left: 50px;
+    width: 45%;
+}
+#destacat4 h4{
+    padding: 1.5rem;
+    color: white;
+    margin: 0;
+    line-height: inherit;
+    font-size: 3.2rem; 
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+#play4{
+    position: absolute;
+    z-index: 5;
+    background-color: rgba(102,168,200,.8);
+}
+#play4 img:hover{
+    background-color: #66A8C8;
+    cursor: pointer;
+}
+.videopopup #videosapartat4{
+    display: block;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 55%;
+}
+#videosapartat4 video{
+    width: 95%;
+}
+#videosapartat4 .groc{
+    position: absolute;
+    margin-left: -200px;
+    margin-top: -100px;
+    width: 240px;
+    padding: 5px;
+}
+#videosapartat4 .blau{
+    padding: 5px;
+    display: block;
+    width: 30px;
+    float: right;
+    cursor: pointer;
+}
+#videosapartat4 .blau img{
+    height: 20px;
 }
