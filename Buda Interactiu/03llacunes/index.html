@@ -10,14 +10,8 @@
         <link href="../css/estil.css" rel="stylesheet" type="text/css"/>
         <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/apartat.css" rel="stylesheet" type="text/css"/>
-        
-        <!--[if IE]>
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-        
-        <script src="../js/jquery-2.1.4.min.js" type="text/javascript"></script>
     </head>
-    <body ondragover="drag_over(event)" ondrop="drop(event)">
+    <body>
         <nav class="navbar navbar-default">
           <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -37,58 +31,46 @@
         </nav>
         <!--Fi capçalera-->
         <audio loop autoplay id="audio">
-            <source src="../musica/Buda Frag 1 de 7.mp3" type="audio/mpeg">
+            <source src="../musica/Buda Frag 3 de 7.mp3" type="audio/mpeg">
         </audio>
-        <!--Menú lateral-->
         <div id="m"></div>
-        <!--Fi menú lateral-->
         <div class="container" id="apartat1">
-            <div id="imgdelta1">
-                <img src="foto/IMG003PNDE.jpg" alt="Fotografia aèrea del delta de l'ebre"/>
-                <p>Foto: Salvador Maluquer (dècada de 1950 i 1960).<br>Arxiu Parc Natural del Delta de l’Ebre</p>
+            <div id="imgcalaixos">
+                <img src="foto/_MG_8140.jpg" alt="Foto amb barquets de perxar als calaixos de buda"/>
+                <p>Foto: Salvador Maluquer (dècada de 1950 i 1960).</p>
             </div>
-            <div class="taronga titol" id="titol1">
-                <h2>L'illa de Buda</h2>
+            <div id="titol1" class="verd">
+                <h1>ELS CALAIXOS</h1>
             </div>
-            <div class="taronga destacat" id="destacat1">
-                <p>Metàfora del Delta de l’Ebre</p>
+            <div id="destacat1" class="verd">
+                <p>La serenitat que desprenen les basses de Buda és assimilable a la catarsi. Les aigües minses, el xiuxiueig suau dels 
+                    canyissars moguts per l’aire, l’olor dolça i penetrant, el cel que s’emmiralla tant si enlluerna el sol com si hi ha 
+                    núvols, esdevenen un regal per als sentits</p>
             </div>
-            <div class="taronga" id="tapa1-1"></div>
-            <div id="destacat1-2">
-                <h4>Actualment, Buda forma part de les diverses “figures” de protecció del medi natural: espai PEIN “Delta de l’Ebre”, Parc Natural i Xarxa Natura 2000</h4>
-                <div id="play1">
-                    <img id="francescvidal" src="img/play.png" alt="reproduir video de Francesc Vidal">
-                </div>
+            <div id="tapa1-1" class="verd"></div>
+            <div id="text1-1">
+                <p>Els típics barquets de perxar són el mètode més eficaç per penetrar-hi. Un seguit de petits canals hi permeten accedir.</p>
+                <img src="img/marca1.png" alt="imatge de decoració"/>
             </div>
-            <div class="videopopup">
-                <div id="videosapartat1"></div>
-            </div>
-            <script>
-                $('#francescvidal').on('click',function(){
-                    $('body').off('mousewheel');
-                    $('#videosapartat1').load('apartat1video.html',function(){
-                        $('.videopopup').show();
-                    });
-
-                });
-                function tancarvideo1(){
-                    $('.videopopup').hide();
-                    $('#videosapartat1').html('');
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                }
-            </script>
-            <div id="destacat1-3">
-                <h4>L’illa de Buda abasta unes 1.100 hectàrees, de les quals unes 250 són arrossars i la resta es reparteixen entre els diferents hàbitats 
-                    o ambients naturals propis del Delta: els canyissars de les àrees i marges fluvials, les jonqueres i els salicornars dels ambients 
-                    salobres, i les llacunes litorals anomenades “Calaixos” (Calaix Gran i Calaix de Mar)</h4>
+            <div class="video1-3">
+                <video poster="video/Sarro_calaixos_2.jpg" preload controls>
+                    <source src="video/Sarro_calaixos_2.mp4" type="video/mp4">
+                    <source src="video/Sarro_calaixos_2.ogg" type="video/ogg">
+                    <source src="video/Sarro_calaixos_2.webm" type="video/webm">
+                </video>
+<div class="blau">
+    <img src="img/tancar.png" alt="icona tancar" onclick="tancarvideo2()"/>
+</div>
+<div class="groc">
+    Pas de Buda pel riu Ebre.<br/>Filmació: Artur Sarró(dècada de 1960
+</div>
             </div>
         </div>
         <div class="container" id="apartat2"></div>
         <div class="container" id="apartat3"></div>
         <div class="container" id="apartat4"></div>
-
+        <div class="container" id="apartat5"></div>
+    <script src="../js/jquery-2.1.4.min.js" type="text/javascript"></script>
     <script src="js/jquery-ui.min.js" type="text/javascript"></script>
     <script src="js/funcions.js" type="text/javascript"></script>
     <script src="js/jquery.mousewheel.min.js" type="text/javascript"></script>
@@ -104,7 +86,6 @@
             });            
         });
         $('body').on('mousewheel',function(e){
-            $('body').off('mousewheel');
             controlMouse(e);
         });
     </script>

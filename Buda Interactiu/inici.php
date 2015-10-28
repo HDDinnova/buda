@@ -63,7 +63,7 @@ $t = $db->query('SELECT * FROM textos WHERE usuari='.$per['id']);
               <p>Aquest dossier t’acompanyarà durant<br/>la teva visita a l’illa.</p>
               <p>Aquí hi trobaràs documentació que<br/>de ben segur et serà d’utilitat.</p>
               <p></p>
-              <a id="start" class="btn btn-sm" href="01pasbuda/">COMENÇAR&nbsp;&nbsp;<i class="fa fa-play"></i></a>
+              <a id="start" class="btn btn-sm" href="00metaforadelta/">COMENÇAR&nbsp;&nbsp;<i class="fa fa-play"></i></a>
           </div>
         </div>
         <div class="col-lg-9 col-md-9 col-sm-12 dossier">

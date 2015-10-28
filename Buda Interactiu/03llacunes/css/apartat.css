@@ -1,0 +1,115 @@
+.container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+.videopopup{
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgba(0,0,0,.7);
+}
+.titol,.destacat{
+    padding: 3rem;
+    color: white;
+}
+.titol h2{
+    font-size: 10rem;
+    font-weight: 600;
+    margin: 0;
+}
+#imgcalaixos img{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    z-index: -10;
+}
+#titol1{
+    position: absolute;
+    top: -50%;
+    left: 50px;
+    text-transform: uppercase;
+    padding: 2rem 4rem 2rem 2rem;
+}
+#titol1 h1{
+    margin: 0;
+    color: white;
+    font-weight: 700;
+    font-size: 9.5rem;
+}
+#destacat1{
+    position: absolute;
+    top: -50%;
+    left: 50px;
+    width: 30%;
+    padding: 2rem 4rem 2rem 2rem;
+}
+#destacat1 p{
+    color: white;
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 500;
+}
+#imgcalaixos p{
+    position: absolute;
+    bottom: -50px;
+    left: 50px;
+    z-index: -9;
+    color: white;
+}
+#tapa1-1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: -8;
+}
+#text1-1 p{
+    position: absolute;
+    z-index: -7;
+    color: white;
+    width: 35%;
+    top: -50%;
+    right: 50px;
+    font-weight: 600;
+    font-size: 3.6rem;
+}
+#text1-1 img{
+    position: absolute;
+    z-index: -7;
+    height: 300px;
+    top: 400px;
+    right: -30%;
+}
+#apartat2{
+    display: none;
+}
+#apartat3{
+    display: none;
+}
+#apartat4{
+    display: none;
+}
+#apartat5{
+    display: none;
+}
+#apartat6{
+    display: none;
+}
+#apartat7{
+    display: none;
+}
