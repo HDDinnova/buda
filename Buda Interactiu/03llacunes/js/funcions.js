@@ -43,6 +43,16 @@ function controlMouse(e){
                     });
                 },4000);
                 break;
+            case 12:
+                $('body').off('mousewheel');
+                diapositiva20();
+                setTimeout(function(){
+                    pos=20;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },4000);
+                break;
         }
     } else if(e.deltaY>0) {
         switch (pos) {
@@ -104,4 +114,18 @@ function diapositiva12(){
     $('#tapa1-1').delay('300').animate({
         backgroundColor: '#000000'
     });
+    $('#video1-3').delay('400').animate({
+        'top':'0px'
+    },trans,'swing',function(){
+        $('#video1-3 video').get(0).play();
+    });
+}
+
+
+
+// Funcions de video
+function tancar1(){
+    $('#video1-3 video').get(0).pause();
+    diapositiva20();
+    pos=20;
 }
