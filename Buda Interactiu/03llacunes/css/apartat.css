@@ -95,6 +95,39 @@
     top: 400px;
     right: -30%;
 }
+#video1-3{
+    display: block;
+    height: 100%;
+    position: relative;
+    top: 100%;
+    left: 0px;
+}
+#video1-3 video{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+}
+#video1-3 .blau{
+    padding: 5px;
+    display: block;
+    width: 30px;
+    float: right;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+}
+#video1-3 .blau img{
+    height: 20px;
+}
+#video1-3 .groc{
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    padding: 5px;
+    width: 250px;
+}
 #apartat2{
     display: none;
 }
