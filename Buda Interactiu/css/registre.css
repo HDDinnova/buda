@@ -31,7 +31,7 @@ button,#start{
 }
 #dossiertancat{
     position: absolute;
-    heigh: 90%;
+    height: 90%;
     right:5px;
     z-index: 100;
 }
@@ -43,7 +43,6 @@ button,#start{
 }
 #objectes{
     padding-left: 5%;
-    //overflow-y: scroll;
 }
 #mapa{
     top: 20px;
