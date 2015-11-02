@@ -18,6 +18,9 @@ function menu(){
       }, 200);
     });
 };
+function tancarvideo1(){
+    
+}
 function controlMouse(e){
     $('body').off('mousewheel');
     if(e.deltaY<0){                
