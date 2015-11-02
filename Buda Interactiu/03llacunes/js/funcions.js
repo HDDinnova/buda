@@ -18,9 +18,6 @@ function menu(){
       }, 200);
     });
 };
-function tancarvideo1(){
-    
-}
 function controlMouse(e){
     $('body').off('mousewheel');
     if(e.deltaY<0){                
@@ -33,7 +30,7 @@ function controlMouse(e){
                     $('body').on('mousewheel',function(e){
                         controlMouse(e);
                     });
-                },4000);
+                },2000);
                 break;
             case 11:
                 $('body').off('mousewheel');
@@ -44,17 +41,18 @@ function controlMouse(e){
                     $('body').on('mousewheel',function(e){
                         controlMouse(e);
                     });
-                },4000);
+                },2000);
                 break;
             case 12:
                 $('body').off('mousewheel');
+                $('#video1-3 video').get(0).pause();
                 diapositiva20();
                 setTimeout(function(){
                     pos=20;
                     $('body').on('mousewheel',function(e){
                         controlMouse(e);
                     });
-                },4000);
+                },2000);
                 break;
         }
     } else if(e.deltaY>0) {
@@ -67,7 +65,7 @@ function controlMouse(e){
                     $('body').on('mousewheel',function(e){
                         controlMouse(e);
                     });
-                },1000);
+                },2000);
                 break;
         }
     }
@@ -123,11 +121,25 @@ function diapositiva12(){
         $('#video1-3 video').get(0).play();
     });
 }
-
+function diapositiva20(){
+    $('#apartat2').show();
+    $('#video1-3').animate({
+        'top': '-100%'
+    },trans,'swing');
+    $('#tapa1-1').delay('200').animate({
+        'top':'-100%'
+    },trans,'swing');
+    $('#imgcalaixos img').delay('200').animate({
+        'top':'-100%'
+    },trans,'swing');
+    $('#foto2guille img').delay('200').animate({
+        'top':'0'
+    },trans,'swing');
+}
 
 
 // Funcions de video
-function tancar1(){
+function tancarvideo1(){
     $('#video1-3 video').get(0).pause();
     diapositiva20();
     pos=20;

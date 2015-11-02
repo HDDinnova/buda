@@ -14,6 +14,12 @@
 .verd{
     background-color: #ABB057;
 }
+.negre{
+    background-color: black;
+}
+.blanc{
+    background-color: white;
+}
 html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   -ms-text-size-adjust: 100%;

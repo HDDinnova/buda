@@ -131,6 +131,32 @@
 #apartat2{
     display: none;
 }
+#foto2guille img{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: 100%;
+    z-index: -10;
+}
+#foto2guille h3{
+    position: absolute;
+    color: white;
+    font-weight: 600;
+    width: 25%;
+    line-height: inherit;
+    font-size: 3rem;
+    left: 50px;
+    top: 55%;
+    z-index: -9;
+}
+#foto2guille p{
+    position: absolute;
+    color: white;
+    font-weight: 500;
+    bottom: 10px;
+    left: 50px;
+    z-index: -9;
+}
 #apartat3{
     display: none;
 }
