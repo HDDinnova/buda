@@ -14,7 +14,16 @@
     </div>
 </div>
 <img id="marcacanyis" src="img/marca2.png" alt="icona de canyís"/>
-
+<div id="text2-2">
+    <div id="play2-2">
+        <img id="calaixos1" src="img/play.png" alt="reproduir video calaix de mar">        
+    </div>
+    <p class="verd">El Calaix de Mar, en canvi, és una llacuna molt més salinitzada, per la seva proximitat 
+        al mar, que fa que rebi aportacions d’aigua marina, sobretot amb els temporals de 
+        llevant, la qual cosa fa que la vegetació que la rodeixa sigui més típica de salobrars, 
+        on predomina la salicòrnia.
+    </p>
+</div>
 
 <div class="videopopup">
     <div id="videosapartat2"></div>
@@ -23,6 +32,13 @@
     $('#calaixos3').on('click',function(){
         $('body').off('mousewheel');
         $('#videosapartat2').load('apartat2video1.html',function(){
+            $('.videopopup').show();
+        });
+
+    });
+    $('#calaixos1').on('click',function(){
+        $('body').off('mousewheel');
+        $('#videosapartat2').load('apartat2video2.html',function(){
             $('.videopopup').show();
         });
 

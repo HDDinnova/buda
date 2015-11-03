@@ -195,6 +195,33 @@
     background-color: #EEC41B;
     cursor: pointer;
 }
+#text2-2{    
+    width: 49%;
+    position: absolute;
+    bottom: -50%;
+    left: 50px;
+    z-index: -8;
+}
+#text2-2 p{    
+    padding: 15px;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    bottom: -200px;
+    position: relative;
+}
+#play2-2{
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 5;    
+}
+#play2-2 img{
+    background-color: rgba(238,196,27,.6);
+}
+#play2-2 img:hover{
+    background-color: #EEC41B;
+    cursor: pointer;
+}
 .videopopup{
     position: absolute;
     z-index: 10;

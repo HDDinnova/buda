@@ -67,6 +67,7 @@ function controlMouse(e){
             case 21:
                 $('body').off('mousewheel');
                 diapositiva22();
+                $('#apartat3').load('apartat3.html');
                 setTimeout(function(){
                     pos=22;
                     $('body').on('mousewheel',function(e){
@@ -192,6 +193,12 @@ function diapositiva22(){
     $('#text2-1').delay('400').animate({
         'top':'-50%'
     },trans,'swing');
+    $('#text2-2').delay('600').animate({
+        'bottom':'50px'
+    },trans,'swing');
+    $('#text2-2 p').delay('800').animate({
+        'bottom':'0px'
+    },trans,'swing');
 }
 
 
@@ -201,7 +208,7 @@ function tancarvideo1(){
     diapositiva20();
     pos=20;
 }
-function tancarvideo21(){
+function tancarvideo2(){
     $('.videopopup').hide();
     $('#videosapartat2').html('');
     $('body').on('mousewheel',function(e){
