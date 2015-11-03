@@ -54,6 +54,26 @@ function controlMouse(e){
                     });
                 },2000);
                 break;
+            case 20:
+                $('body').off('mousewheel');
+                diapositiva21();
+                setTimeout(function(){
+                    pos=21;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },2000);
+                break;
+            case 21:
+                $('body').off('mousewheel');
+                diapositiva22();
+                setTimeout(function(){
+                    pos=22;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },2000);
+                break;
         }
     } else if(e.deltaY>0) {
         switch (pos) {
@@ -135,6 +155,43 @@ function diapositiva20(){
     $('#foto2guille img').delay('200').animate({
         'top':'0'
     },trans,'swing');
+    $('#foto2guille h3').delay('400').animate({
+        'top':'55%'
+    },trans,'swing');
+    $('#foto2guille p').delay('600').animate({
+        'bottom':'10px'
+    },trans,'swing');
+}
+function diapositiva21(){
+    $('#foto2guille p').animate({
+        'bottom':'-50px'
+    },trans,'swing');
+    $('#foto2guille h3').delay('200').animate({
+        'top':'-50%'
+    },trans,'swing');
+    $('#tapa2-1').delay('400').animate({
+        'opacity':'0.6'
+    },trans,'swing');
+    $('#text2-1').delay('600').animate({
+        'top':'100px'
+    },trans,'swing');
+    $('#play2-1').delay('800').animate({
+        'top':'0px'
+    },trans,'swing');
+    $('#marcacanyis').delay('1000').animate({
+        'bottom':'50px'
+    },trans,'swing');
+}
+function diapositiva22(){
+    $('#marcacanyis').animate({
+        'left':'75%'
+    },trans,'swing');
+    $('#play2-1').delay('200').animate({
+        'top':'-200px'
+    },trans,'swing');
+    $('#text2-1').delay('400').animate({
+        'top':'-50%'
+    },trans,'swing');
 }
 
 
@@ -143,4 +200,11 @@ function tancarvideo1(){
     $('#video1-3 video').get(0).pause();
     diapositiva20();
     pos=20;
+}
+function tancarvideo21(){
+    $('.videopopup').hide();
+    $('#videosapartat2').html('');
+    $('body').on('mousewheel',function(e){
+        controlMouse(e);
+    });
 }

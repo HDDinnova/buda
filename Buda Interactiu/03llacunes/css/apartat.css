@@ -146,16 +146,91 @@
     line-height: inherit;
     font-size: 3rem;
     left: 50px;
-    top: 55%;
+    top: -50%;
     z-index: -9;
 }
 #foto2guille p{
     position: absolute;
     color: white;
     font-weight: 500;
-    bottom: 10px;
+    bottom: -50px;
     left: 50px;
     z-index: -9;
+}
+#tapa2-1{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -8;
+}
+#text2-1{
+    width: 49%;
+    position: absolute;
+    top: -50%;
+    left: 50px;
+    z-index: -8;
+}
+#text2-1 p{
+    font-size: 2rem;
+    color: #ABB057;
+    padding: 12px;
+}
+#marcacanyis{
+    position: absolute;
+    bottom: -52%;
+    left: 50px;
+    height: 50%;
+}
+#play2-1{
+    position: absolute;
+    z-index: 5;
+    top: -200px;
+    left: 50vw;
+    background-color: rgba(238,196,27,.6);
+}
+#play2-1 img:hover{
+    background-color: #EEC41B;
+    cursor: pointer;
+}
+.videopopup{
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgba(0,0,0,.7);
+}
+.videopopup #videosapartat2{
+    display: block;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 55%;
+}
+#videosapartat2 video{
+    width: 95%;
+}
+#videosapartat2 .groc{
+    position: absolute;
+    margin-left: -200px;
+    margin-top: -100px;
+    width: 240px;
+    padding: 5px;
+}
+#videosapartat2 .blau{
+    padding: 5px;
+    display: block;
+    width: 30px;
+    float: right;
+    cursor: pointer;
+}
+#videosapartat2 .blau img{
+    height: 20px;
 }
 #apartat3{
     display: none;
