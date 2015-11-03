@@ -262,6 +262,56 @@
 #apartat3{
     display: none;
 }
+#video3fons{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: 100%;
+    z-index: -10;
+}
+#text3-1{
+    position: absolute;
+    top: -60%;
+    left: 100px;
+}
+#text3-1 p{
+    width: 33%;
+    color: white;
+    line-height: inherit;
+    margin-bottom: 15px;
+    padding: 25px;
+    position: relative;
+    font-size: 1.8rem;
+    top: -200px;
+}
+#text3-1 h2{
+    position: relative;
+    color: white;
+    padding: 15px;
+    font-size: 7rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1;
+    width: 45%;
+}
+#text3-2{
+    position: absolute;
+    bottom: -50%;
+    right: 100px;
+    width: 10%;
+}
+#text3-2 p{
+    color: white;
+    line-height: inherit;
+    padding: 10px;
+}
+#video3-2fons{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: 100%;
+    z-index: -10;
+}
 #apartat4{
     display: none;
 }
