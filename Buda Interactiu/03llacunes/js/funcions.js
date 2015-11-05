@@ -4,8 +4,10 @@ var mutexvideo=false;
 $('#bso').click(function(){
     if(sona){
         $('#audio')[0].pause();
+        sona=false;
     } else {
         $('#audio')[0].play();
+        sona=true;
     }
 });
 function menu(){
@@ -111,8 +113,6 @@ function controlMouse(e){
                 $('body').off('mousewheel');
                 if(mutexvideo){
                     $('#audio')[0].play();
-                    pos=40;
-                    diapositiva40();
                 }
                 $('#video3-2fons')[0].pause();
                 diapositiva40();
@@ -151,7 +151,11 @@ function diapositiva1(){
         },trans,'swing');
         $('#imgcalaixos p').delay('600').animate({
             'bottom': '10px'
-        },trans,'swing');
+        },trans,'swing',function(){            
+            $('body').on('mousewheel',function(e){
+                controlMouse(e);
+            });
+        });
     });
 }
 function diapositiva11(){
@@ -302,9 +306,9 @@ function diapositiva32(){
         $('#video3-2fons')[0].onended = function(){
             if(mutexvideo){
                 $('#audio')[0].play();
-                pos=40;
-                diapositiva40();
             }
+            pos=40;
+            diapositiva40();
         };
     });
     $('#text3-3').delay('400').animate({

@@ -329,20 +329,28 @@
 #apartat4{
     display: none;
 }
-#foto2pnde{
+#foto4pnde{
     position: absolute;
     top: 0;
-    position: absolute;
     z-index: -10;
 }
-#foto2pnde .negre{
-    opacity: .4;
+#tapa4-1{
+    position: absolute;
+    top: 0;
+    z-index: -9;
+    opacity: 0;
     min-height: 100vh;
     min-width: 100%;
 }
-#foto2pnde img{
+#foto4pnde img{
     min-height: 100vh;
     min-width: 100%;
+    //filter: url(~"data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    -webkit-filter: grayscale(100%);
+    -moz-filter:    grayscale(100%);
+    -ms-filter:     grayscale(100%);
+    -o-filter:      grayscale(100%);
+    filter: gray;
 }
 #text4-1{
     position: absolute;
@@ -352,20 +360,21 @@
 #text4-1 h2{
     color: white;
     font-weight: 600;
-    width: 55%;
-    line-height: inherit;
-    font-size: 4.5rem;
+    width: 72%;
+    line-height: 1.2;
+    font-size: 6rem;
     z-index: -9;
     padding: 20px;
 }
 #text4-1 p{
     width: 45%;
-    font-size: 2.2rem;
+    font-size: 3rem;
     color: white;
     font-weight: 600;
     z-index: -9;
     margin-bottom: 20px;
     padding: 20px;
+    line-height: 1.2;
 }
 #apartat5{
     display: none;
