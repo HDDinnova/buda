@@ -1,9 +1,11 @@
 var trans = 1200;
+var sona=true;
+var mutexvideo=false;
 $('#bso').click(function(){
-    if($('#audio')[0].paused){
-        $('#audio')[0].play();
-    } else {
+    if(sona){
         $('#audio')[0].pause();
+    } else {
+        $('#audio')[0].play();
     }
 });
 function menu(){
@@ -100,6 +102,22 @@ function controlMouse(e){
                 diapositiva32();
                 setTimeout(function(){
                     pos=32;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },2000);
+                break;
+            case 32:
+                $('body').off('mousewheel');
+                if(mutexvideo){
+                    $('#audio')[0].play();
+                    pos=40;
+                    diapositiva40();
+                }
+                $('#video3-2fons')[0].pause();
+                diapositiva40();
+                setTimeout(function(){
+                    pos=40;
                     $('body').on('mousewheel',function(e){
                         controlMouse(e);
                     });
@@ -256,14 +274,15 @@ function diapositiva31(){
         'top':'-200px'
     },trans,'swing');    
     $('#text3-1').delay('200').animate({
-        'top':'-60%'
+        'top':'-100%'
     },trans,'swing');    
     $('#video3fons').delay('500').get(0).play();      
     $('#text3-2').delay('400').animate({
         'bottom':'100px'
     },trans,'swing');  
 }
-function diapositiva32(){      
+function diapositiva32(){
+    $('#apartat4').load('apartat4.html');
     $('#text3-2').animate({
         'bottom':'-50%'
     },trans,'swing');
@@ -275,9 +294,25 @@ function diapositiva32(){
     $('#video3-2fons').delay('200').animate({
         'top':'0'
     },trans,'swing',function(){
+        if(sona){
+            $('#audio')[0].pause();
+            mutexvideo=true;
+        }
         $('#video3-2fons').delay('300').get(0).play();
+        $('#video3-2fons')[0].onended = function(){
+            if(mutexvideo){
+                $('#audio')[0].play();
+                pos=40;
+                diapositiva40();
+            }
+        };
     });
-    
+    $('#text3-3').delay('400').animate({
+        'bottom':'70%'
+    },trans,'swing');    
+}
+function diapositiva40(){
+    $('#apartat4').show();
 }
 
 

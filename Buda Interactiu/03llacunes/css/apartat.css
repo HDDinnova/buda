@@ -267,11 +267,12 @@
     min-width: 100%;
     position: absolute;
     top: 100%;
+    right: 0;
     z-index: -10;
 }
 #text3-1{
     position: absolute;
-    top: -60%;
+    top: -100%;
     left: 100px;
 }
 #text3-1 p{
@@ -310,10 +311,61 @@
     min-width: 100%;
     position: absolute;
     top: 100%;
+    right: 0;
     z-index: -10;
+}
+
+#text3-3{
+    position: absolute;
+    bottom: -50%;
+    right: 100px;
+    width: 15%;
+}
+#text3-3 p{
+    color: white;
+    line-height: inherit;
+    padding: 10px;
 }
 #apartat4{
     display: none;
+}
+#foto2pnde{
+    position: absolute;
+    top: 0;
+    position: absolute;
+    z-index: -10;
+}
+#foto2pnde .negre{
+    opacity: .4;
+    min-height: 100vh;
+    min-width: 100%;
+}
+#foto2pnde img{
+    min-height: 100vh;
+    min-width: 100%;
+}
+#text4-1{
+    position: absolute;
+    top: 25%;
+    left: 100px;
+}
+#text4-1 h2{
+    color: white;
+    font-weight: 600;
+    width: 55%;
+    line-height: inherit;
+    font-size: 4.5rem;
+    z-index: -9;
+    padding: 20px;
+}
+#text4-1 p{
+    width: 45%;
+    font-size: 2.2rem;
+    color: white;
+    font-weight: 600;
+    z-index: -9;
+    margin-bottom: 20px;
+    padding: 20px;
 }
 #apartat5{
     display: none;
