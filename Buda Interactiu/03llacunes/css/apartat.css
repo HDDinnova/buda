@@ -331,50 +331,113 @@
 }
 #foto4pnde{
     position: absolute;
-    top: 0;
+    top: 100%;
     z-index: -10;
-}
-#tapa4-1{
-    position: absolute;
-    top: 0;
-    z-index: -9;
-    opacity: 0;
-    min-height: 100vh;
-    min-width: 100%;
+    opacity: 1;
 }
 #foto4pnde img{
     min-height: 100vh;
     min-width: 100%;
-    //filter: url(~"data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
-    -webkit-filter: grayscale(100%);
-    -moz-filter:    grayscale(100%);
-    -ms-filter:     grayscale(100%);
-    -o-filter:      grayscale(100%);
-    filter: gray;
+}
+#foto4pnde2{
+    position: absolute;
+    top: 100%;
+    z-index: -10;
+}
+#foto4pnde2 img{
+    min-height: 100vh;
+    min-width: 100%;
 }
 #text4-1{
     position: absolute;
-    top: 25%;
+    top: -100%;
     left: 100px;
 }
 #text4-1 h2{
+    position: relative;
     color: white;
     font-weight: 600;
     width: 72%;
     line-height: 1.2;
     font-size: 6rem;
+    margin-top: 20px;
     z-index: -9;
     padding: 20px;
 }
 #text4-1 p{
+    position: relative;
     width: 45%;
     font-size: 3rem;
     color: white;
     font-weight: 600;
     z-index: -9;
-    margin-bottom: 20px;
     padding: 20px;
     line-height: 1.2;
+    top: -200px;
+}
+#text4-1peu{
+    position: absolute;
+    color: white;
+    z-index: -9;
+    left: 50px;
+    bottom: -50px;
+}
+#text4-2{
+    position: absolute;
+    top: -100%;
+    left: 100px;
+}
+#text4-2 h5{
+    position: relative;
+    color: black;
+    font-size: 1.6rem;
+    margin-top: 20px;
+    z-index: -9;
+    padding: 20px;
+    top: -200px;
+    width: 150px;
+    text-align: center;
+}
+#text4-2 p{
+    position: relative;
+    width: 50%;
+    font-size: 1.6rem;
+    color: white;
+    z-index: -9;
+    padding: 15px;
+    line-height: 1.2;
+}
+#tapa4-3{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -9;
+}
+#plantes1{
+    position: relative;
+    top: 100px;
+    left: 100%;
+    vertical-align: bottom;
+}
+#plantes1 .col-md-3{
+    position: relative;
+    left: 200px;
+}
+.col-md-3 img{
+    height: 70vh;
+    max-width: 100%;
+}
+.col-md-3 p{
+    margin-top: 15px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+    text-transform: uppercase;
+    padding: 10px;
 }
 #apartat5{
     display: none;
