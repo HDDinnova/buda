@@ -480,6 +480,8 @@ h6,
 }
 p {
   margin: 0 0 10px;
+  vertical-align: bottom;
+  display: inline-block;
 }
 .lead {
   margin-bottom: 20px;
