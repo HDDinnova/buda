@@ -507,9 +507,191 @@
 #apartat5{
     display: none;
 }
+#foto5tortugues{
+    position: absolute;
+    top: 100%;
+    z-index: -10;
+    opacity: 1;
+}
+#foto5tortugues img{
+    min-height: 100vh;
+    min-width: 100%;
+}
+#text5-1{
+    position: absolute;
+    top: -100%;
+    left: 100px;
+}
+#text5-1 p{
+    width: 37%;
+    color: white;
+    line-height: inherit;
+    margin-bottom: 15px;
+    padding: 25px;
+    position: relative;
+    font-size: 1.8rem;
+    top: -200px;
+}
+#text5-1 h2{
+    position: relative;
+    color: white;
+    padding: 15px;
+    font-size: 7rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1;
+    width: 75%;
+    top: 0px;
+}
+#tapa5-1{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -9;
+}
+#text5-2{
+    position: absolute;
+    width: 32%;
+    bottom: 100%;
+    left: 50px;
+}
+#text5-2 .negre{
+    position: relative;
+    color: #F58431;
+    font-size: 1.9rem;
+    margin-bottom: 20px;
+    z-index: -9;
+    padding: 20px;
+    width: 237px;
+    text-align: center;
+    top: -300px;
+}
+#text5-2 .taronga{
+    position: relative;
+    font-size: 1.9rem;
+    color: white;
+    z-index: -9;
+    padding: 20px;
+    line-height: 1.2;
+    top: 0px;
+}
+#video5-1fons{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -10;
+    opacity: 0;
+}
+#foto5-2tortugues{
+    position: absolute;
+    top: 100%;
+    z-index: -10;
+    opacity: 1;
+}
+#foto5-2tortugues img{
+    min-height: 100vh;
+    min-width: 100%;
+}
+#text5-3{
+    position: absolute;
+    width: 32%;
+    top: 100%;
+    right: 50px;
+}
+#text5-3 .taronga{
+    position: relative;
+    color: white;
+    font-size: 1.9rem;
+    margin-bottom: 20px;
+    z-index: -9;
+    padding: 7px;
+    width: 185px;
+    text-align: center;
+    top: 0px;
+    text-transform: uppercase;
+}
+#text5-3 .blanc{
+    position: relative;
+    font-size: 1.9rem;
+    color: #F58431;
+    z-index: -9;
+    padding: 20px;
+    line-height: 1.2;
+    top: 300px;
+}
+#video5-2fons{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -10;
+    opacity: 0;
+}
 #apartat6{
     display: none;
 }
-#apartat7{
-    display: none;
+#foto6valor{
+    position: absolute;
+    top: 100%;
+    z-index: -10;
+}
+#foto6valor img{
+    min-height: 100vh;
+    min-width: 100vw;
+}
+#text6-1{
+    position: absolute;
+    top: -100%;
+    left: 50px;
+}
+#text6-1 p{
+    width: 37%;
+    color: white;
+    line-height: inherit;
+    margin-bottom: 15px;
+    padding: 25px;
+    position: relative;
+    font-size: 1.8rem;
+    top: -200px;
+}
+#text6-1 h2{
+    position: relative;
+    color: white;
+    padding: 15px;
+    font-size: 7rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1;
+    width: 58%;
+    top: 0px;
+}
+#text6peu{
+    position: absolute;
+    color: white;
+    z-index: -9;
+    left: 50px;
+    bottom: -50px;
+}
+#video6fons{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: -10;
+}
+#text6video{
+    position: absolute;
+    color: white;
+    z-index: -9;
+    right: -50%;
+    top: 10%;
+    padding: 10px;
+    width: 200px;
 }

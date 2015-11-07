@@ -18,7 +18,7 @@ img{
     height:14rem;
     position: absolute;
     z-index: 3;
-    top: 60px;
+    top: 58px;
     left: 20px;
     background-color: white;
     transform-origin: right center;
@@ -418,12 +418,8 @@ nav{
     -o-animation: caixa 1.9s 3s both;
     -ms-animation: caixa 1.9s 3s both;
 }
-.ambit{
-    animation: caixaf .4s 4.9s backwards;
-    -moz-animation: caixaf .4s 4.9s backwards;
-    -webkit-animation: caixaf .4s 4.9s backwards;
-    -o-animation: caixaf .4s 4.9s backwards;
-    -ms-animation: caixaf .4s 4.9s backwards;
+#ambit,#literatura,#cinema,#fotografia,#ornitologia{
+    display: none;
 }
 .mini{
     padding-top: 15px;
@@ -433,7 +429,7 @@ nav{
 .mini:hover{
     background-color: black;
 }
-.literatura{
+.noregistre{
     top: 397px;
     animation: caixaf .4s 5.1s backwards;
     -moz-animation: caixaf .4s 5.1s backwards;
@@ -441,7 +437,7 @@ nav{
     -o-animation: caixaf .4s 5.1s backwards;
     -ms-animation: caixaf .4s 5.1s backwards;
 }
-.cinema{
+.registre{
     top: 452px;
     animation: caixaf .4s 5.3s backwards;
     -moz-animation: caixaf .4s 5.3s backwards;
@@ -449,21 +445,44 @@ nav{
     -o-animation: caixaf .4s 5.3s backwards;
     -ms-animation: caixaf .4s 5.3s backwards;
 }
+.ambit{
+    animation: caixaf .4s backwards;
+    -moz-animation: caixaf .4s backwards;
+    -webkit-animation: caixaf .4s backwards;
+    -o-animation: caixaf .4s backwards;
+    -ms-animation: caixaf .4s backwards;
+}
+.literatura{
+    top: 397px;
+    animation: caixaf .4s backwards;
+    -moz-animation: caixaf .4s backwards;
+    -webkit-animation: caixaf .4s backwards;
+    -o-animation: caixaf .4s backwards;
+    -ms-animation: caixaf .4s backwards;
+}
+.cinema{
+    top: 452px;
+    animation: caixaf .4s backwards;
+    -moz-animation: caixaf .4s backwards;
+    -webkit-animation: caixaf .4s backwards;
+    -o-animation: caixaf .4s backwards;
+    -ms-animation: caixaf .4s backwards;
+}
 .fotografia{
     top: 507px;
-    animation: caixaf .4s 5.5s backwards;
-    -moz-animation: caixaf .4s 5.5s backwards;
-    -webkit-animation: caixaf .4s 5.5s backwards;
-    -o-animation: caixaf .4s 5.5s backwards;
-    -ms-animation: caixaf .4s 5.5s backwards;
+    animation: caixaf .4s backwards;
+    -moz-animation: caixaf .4s backwards;
+    -webkit-animation: caixaf .4s backwards;
+    -o-animation: caixaf .4s backwards;
+    -ms-animation: caixaf .4s backwards;
 }
 .ornitologia{
     top: 562px;
-    animation: caixaf .4s 5.7s backwards;
-    -moz-animation: caixaf .4s 5.7s backwards;
-    -webkit-animation: caixaf .4s 5.7s backwards;
-    -o-animation: caixaf .4s 5.7s backwards;
-    -ms-animation: caixaf .4s 5.7s backwards;
+    animation: caixaf .4s backwards;
+    -moz-animation: caixaf .4s backwards;
+    -webkit-animation: caixaf .4s backwards;
+    -o-animation: caixaf .4s backwards;
+    -ms-animation: caixaf .4s backwards;
 }
 @keyframes caixa{
     0% {transform:scaleX(0);}
@@ -544,22 +563,6 @@ nav{
     -webkit-animation: cp .5s 2.2s backwards;
     -o-animation: cp .5s 2.2s backwards;
     -ms-animation: cp .5s 2.2s backwards;
-    transform-origin: left center;
-}
-#ambp1{
-    animation: cp .5s 5s backwards;
-    -moz-animation: cp .5s 5s backwards;
-    -webkit-animation: cp .5s 5s backwards;
-    -o-animation: cp .5s 5s backwards;
-    -ms-animation: cp .5s 5s backwards;
-    transform-origin: left center;
-}
-#ambp2{
-    animation: cp .5s 5.2s backwards;
-    -moz-animation: cp .5s 5.2s backwards;
-    -webkit-animation: cp .5s 5.2s backwards;
-    -o-animation: cp .5s 5.2s backwards;
-    -ms-animation: cp .5s 5.2s backwards;
     transform-origin: left center;
 }
 @keyframes cp{

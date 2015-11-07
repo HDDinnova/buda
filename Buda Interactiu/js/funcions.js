@@ -11,7 +11,13 @@ $('.mini').on('click',function(){
             break;
         case 'ornitologia':
             clicaOrni();
-            break;                     
+            break;
+        case 'noreg':
+            window.open('00metaforadelta/','_self');
+            break;
+        case 'reg':
+            activaambits();
+            break;
     }
 });
 
@@ -31,6 +37,34 @@ $('.pers').on('click',function(){
             break;                     
     }
 });
+
+function activaambits(){
+    $('.registre').animate({
+        'scale':'0'
+    },200,function(){
+        $('.registre').hide();
+    });
+    $('.noregistre').delay('200').animate({
+        'scale':'0'
+    },200,function(){
+        $('.noregistre').hide();
+    });
+    setTimeout(function(){
+        $('#ambit').addClass('ambit').show();
+    },400);
+    setTimeout(function(){
+        $('#literatura').addClass('literatura').show();
+    },500);
+    setTimeout(function(){
+        $('#cinema').addClass('cinema').show();
+    },600);
+    setTimeout(function(){
+        $('#fotografia').addClass('fotografia').show();
+    },700);
+    setTimeout(function(){
+        $('#ornitologia').addClass('ornitologia').show();
+    },800);
+}
 
 var menu1 = function(){
     $('#menu1').click(function() {

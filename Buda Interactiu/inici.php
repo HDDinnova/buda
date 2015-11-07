@@ -75,7 +75,18 @@ $t = $db->query('SELECT * FROM textos WHERE usuari='.$per['id']);
             <div id="objectes" class="col-md-12">
                 <div id="mapa" class="objecte">
                     <h2>Illa de Buda</h2>
-                    <img src="img/mapa-illa.jpg" alt="mapa illa de buda"/>
+                    <img class="icomapa" id="barraca" src="img/ico-barraca.png" alt=""/>
+                    <img class="icomapa" id="cacador" src="img/ico-cacador.png" alt=""/>
+                    <img class="icomapa" id="escriptor" src="img/ico-escriptor.png" alt=""/>
+                    <img class="icomapa" id="far" src="img/ico-far.png" alt=""/>
+                    <img class="icomapa" id="flamenc" src="img/ico-flamenc.png" alt=""/>
+                    <img class="icomapa" id="niu" src="img/ico-niu.png" alt=""/>
+                    <img class="icomapa" id="peix" src="img/ico-peix.png" alt=""/>
+                    <img class="icomapa" id="planta" src="img/ico-planta.png" alt=""/>
+                    <img class="icomapa" id="serp" src="img/ico-serp.png" alt=""/>
+                    <img class="icomapa" id="vapor" src="img/ico-vapor.png" alt=""/>
+                    <img class="icomapa" id="vapor2" src="img/ico-vapor2.png" alt=""/>
+                    <img id="imgmapa" src="img/mapa-illa.jpg" alt="mapa illa de buda"/>
                 </div>
                 <div id="fotos" class="objecte">
                     <?php while ($foto = $f->fetch_array(MYSQLI_ASSOC)){ ?>

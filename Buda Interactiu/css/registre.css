@@ -51,7 +51,7 @@ button,#start{
     transform: rotate(-.7deg);
     display: block;
 }
-#mapa img{
+#mapa #imgmapa{
     margin-top: -3%;
     width: 90%;
     display: block;
@@ -60,7 +60,55 @@ button,#start{
     font-family: 'Annie Use Your Telescope', cursive;
     margin-left: 10%;
     font-size: 6rem;
-}.boto{
+}
+.icomapa{
+    position: absolute;
+}
+#barraca{
+    top: 45%;
+    left: 26%;
+}
+#cacador{
+    top: 47%;
+    left: 36%;
+}
+#escriptor{
+    top: 74%;
+    left: 27%;
+}
+#far{
+    top: 40%;
+    left: 70%;
+}
+#flamenc{
+    top: 36%;
+    left: 61%;
+}
+#niu{
+    top: 32%;
+    left: 38%;
+}
+#peix{
+    top: 43%;
+    left: 52%;
+}
+#planta{
+    top: 29%;
+    left: 27%;
+}
+#serp{
+    top: 60%;
+    left: 32%;
+}
+#vapor{
+    top: 22%;
+    left: 30%;
+}
+#vapor2{
+    top: 59%;
+    left: 51%;
+}
+.boto{
     position: absolute;
     -ms-transform: rotate(-1deg);
     -webkit-transform: rotate(-1deg);
