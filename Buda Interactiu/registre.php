@@ -34,21 +34,21 @@
     </head>
     <body>
         <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <a class="navbar-brand">BUDA <span>L'illa del Delta</span></a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><img src="../img/menu-llibreta.png" alt="mostrar dossier"/></a></li>
-                <li><a href="#"><img src="../img/menu-audio.png" alt="silenciar"/></a></li>
-                <li><a href="#"><img id="menu1" src="../img/menu-menu.png" alt="menú"/></a></li>
-                
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a class="navbar-brand">BUDA <span>L'illa del Delta</span></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" id="bmur" class="menutext"><strong>EL MUR</strong></a></li>
+                        <li><a href="#" id="bcredits" class="menutext"><strong>CRÈDITS</strong></a></li>
+                        <li><a href="#" id="bpeli" class="menutext"><strong>LA PEL·LÍCULA</strong></a></li>
+                        <li><a href="#" id="menu1"><img src="../img/menu-menu.png" alt="menú"/></a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
         </nav>
         
         <?php include 'menu1.php'; ?>
@@ -94,19 +94,11 @@
       
       <script src="../js/jquery-2.1.4.min.js" type="text/javascript"></script>
       <script src="../js/funcions.js" type="text/javascript"></script>
+      <script src="../js/menu.js" type="text/javascript"></script>
       <script>
-        $(document).ready(menu1);
-//        var password = document.getElementById("contrasenya"), confirm_password = document.getElementById("valida_contrasenya");
-//
-//        function validatePassword(){
-//          if(password.value !== confirm_password.value) {
-//            confirm_password.setCustomValidity("Les contrasenyes no coincideixen");
-//          } else {
-//            confirm_password.setCustomValidity('');
-//          }
-//        }
-//        password.onchange = validatePassword;
-//        confirm_password.onkeyup = validatePassword;
+        $(document).ready(function(){
+            menu();
+        });
       </script>
     </body>
 </html>

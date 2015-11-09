@@ -36,20 +36,20 @@ $t = $db->query('SELECT * FROM textos WHERE usuari='.$per['id']);
     <body>
         <nav class="navbar navbar-default">
           <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <a class="navbar-brand">BUDA <span>L'illa del Delta</span></a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><img src="img/menu-llibreta.png" alt=""/></a></li>
-                <li><a href="#"><img src="img/menu-audio.png" alt=""/></a></li>
-                <li><a href="#" id="menu1"><img src="img/menu-menu.png" alt=""/></a></li>
-                
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a class="navbar-brand">BUDA <span>L'illa del Delta</span></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" id="bmur" class="menutext"><strong>EL MUR</strong></a></li>
+                        <li><a href="#" id="bcredits" class="menutext"><strong>CRÈDITS</strong></a></li>
+                        <li><a href="#" id="bpeli" class="menutext"><strong>LA PEL·LÍCULA</strong></a></li>
+                        <li><a href="#" id="menu1"><img src="img/menu-menu.png" alt="menú"/></a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
         </nav>
         <!--Fi capçalera-->
         <!--Menú lateral-->
@@ -131,12 +131,11 @@ $t = $db->query('SELECT * FROM textos WHERE usuari='.$per['id']);
         <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
         <script src="js/funcions2.js" type="text/javascript"></script>
+        <script src="js/menu.js" type="text/javascript"></script>
         <script>
-          $(window).load(function(){
-            $('#m').load('menu/menuinicial.html',function(){
-                menu();
-            });            
-        });
+          $('#m').load('menu/menuinicial.html',function(){
+            menu();
+          });
         </script>
     </body>
 </html>

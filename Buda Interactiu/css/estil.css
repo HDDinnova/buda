@@ -1,4 +1,5 @@
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+@import url(https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope);
 .groc{
     background-color: #EEC41B;
 }
@@ -49,6 +50,12 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    background-image: url('../img/background.jpg');
+}
+#contingutpeli h3{
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-weight: 600;
+    font-size: 3rem;
 }
 #zonaactiva{
     height: 100%;
@@ -59,6 +66,47 @@
     z-index: -1;
 }
 /* Fi estil popup película */
+/* Codi d'estil per a popup dels credits */
+
+#credits{
+    position: absolute;
+    z-index: 10000;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+}
+#credits #contingutcredits{
+    width: 80%;
+    height: 80%;
+    margin-top: 80px;
+    background-color: white;
+    overflow-y: scroll;
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('../img/background.jpg');
+}
+#contingutcredits p{
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-size: 2rem;
+    margin-bottom: 0px;
+}
+#contingutcredits h3{
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+#contingutcredits img{
+    height: 120px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+/* Fi estil popup credits */
 html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   -ms-text-size-adjust: 100%;

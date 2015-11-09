@@ -1,7 +1,7 @@
         <div class="menu">
             <!-- Menu icon -->
             <div class="icon-close">
-                <img src="../img/close.png" alt="icona tancar">
+                <img id="tancamenu" src="../img/close.png" alt="icona tancar">
             </div>
 
             <!-- Menu -->
