@@ -20,6 +20,45 @@
 .blanc{
     background-color: white;
 }
+/* Codi d'estil per a popup la película */
+.menutext{
+    margin-top: 5px;
+}
+.menutext:hover{
+    color: white !important;
+}
+.menutext:focus{
+    color: white !important;
+}
+#pelicula{
+    position: absolute;
+    z-index: 10000;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+}
+#pelicula #contingutpeli{
+    width: 80%;
+    height: 80%;
+    margin-top: 80px;
+    background-color: white;
+    overflow-y: scroll;
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#zonaactiva{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/* Fi estil popup película */
 html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   -ms-text-size-adjust: 100%;

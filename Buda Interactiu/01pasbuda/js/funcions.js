@@ -257,7 +257,11 @@ function diapositiva1(){
         },trans,'swing');
         $('#titol1').delay('200').animate({
             'top': '400px'
-        },trans,'swing');
+        },trans,'swing',function(){            
+            $('body').on('mousewheel',function(e){
+                controlMouse(e);
+            });
+        });
     });
     $('#apartat1 video').get(0).play();
 }

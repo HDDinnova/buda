@@ -12,23 +12,7 @@
         <link href="css/apartat.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <a class="navbar-brand">BUDA <span>L'illa del Delta</span></a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><img src="../img/menu-llibreta.png" alt="mostrar dossier"/></a></li>
-                <li><a href="#" id="bso"><img src="../img/menu-audio.png" alt="silenciar"/></a></li>
-                <li><a href="#" id="menu1"><img src="../img/menu-menu.png" alt="menú"/></a></li>
-
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
-        </nav>
+        <nav class="navbar navbar-default"></nav>
         <!--Fi capçalera-->
         <audio loop autoplay id="audio">
             <source src="../musica/Buda Frag 3 de 7.mp3" type="audio/mpeg">
@@ -78,12 +62,15 @@
     <script src="js/jquery-css-transform.js" type="text/javascript"></script>
     <script src="js/jquery.rotate.js" type="text/javascript"></script>
     <script src="../js/jquery.color.js" type="text/javascript"></script>
+    <script src="../js/menu.js" type="text/javascript"></script>
     <script>
         var pos = 10;
         $(window).load(function(){
             diapositiva1();
             $('#m').load('../menu/menu.html',function(){
-                menu();
+                $('nav').load('../menu/menusuperior.html',function(){
+                    menu();
+                });                
             });
         });
     </script>

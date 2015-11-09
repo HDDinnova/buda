@@ -239,7 +239,11 @@ function diapositiva1(){
         },trans);
         $('#imgdelta1 p').delay('400').animate({
             'bottom': '10px'
-        },trans);
+        },trans,function(){            
+            $('body').on('mousewheel',function(e){
+                controlMouse(e);
+            });
+        });
     });
 }
 function diapositiva10(){
