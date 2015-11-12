@@ -65,6 +65,22 @@
     left: 0;
     z-index: -1;
 }
+#contingutpeli hr{
+    margin-top: 0;
+}
+#contingutpeli iframe{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+}
+.imatgespeli{
+    width: 100%;
+}
+.imatgespeli img{
+    width: 12.5%;
+    float: left;
+}
 /* Fi estil popup película */
 /* Codi d'estil per a popup dels credits */
 

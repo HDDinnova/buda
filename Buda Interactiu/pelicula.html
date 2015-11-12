@@ -8,6 +8,21 @@
         borrosa que ha alimentat la fantasia de generacions d’ebrencs: la silueta d’un far menjat per la 
         mar, majestuós i inaprensible.
     </p>
+    <h3>Teaser:</h3>
+    <div class="clearfix"></div>
+    <iframe src="//player.vimeo.com/video/83008745" width="600" height="337.5" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <div class="imatgespeli">
+        <img id="peli01" src="pelicula/buda_1.jpg" alt=""/>
+        <img id="peli02" src="pelicula/buda_3.jpg" alt=""/>
+        <img id="peli03" src="pelicula/buda_4.jpg" alt=""/>
+        <img id="peli04" src="pelicula/buda_6.jpg" alt=""/>
+        <img id="peli05" src="pelicula/buda_7.jpg" alt=""/>
+        <img id="peli06" src="pelicula/buda_8.jpg" alt=""/>
+        <img id="peli07" src="pelicula/buda_9.jpg" alt=""/>
+        <img id="peli08" src="pelicula/buda_10.jpg" alt=""/>
+    </div>
+    <div class="clearfix"></div>
+    <hr>
     <h3>FITXA TÈCNICA</h3>
     <ul>
         <li>Durada: 55’</li>
@@ -33,11 +48,281 @@
             <strong>COLUMBIA GORGE INTERNATIONAL FILM FESTIVAL</strong><br>Vancouver, WA, Estats Units<br>Agost 2014.<br>Premi del Jurat i del Públic al Millor Documental Estranger
         </li>
     </ul>
+    <div class="imatgespeli">
+        <img id="peli09" src="pelicula/buda_11.jpg" alt=""/>
+        <img id="peli10" src="pelicula/buda_12.jpg" alt=""/>
+        <img id="peli11" src="pelicula/buda_13.jpg" alt=""/>
+        <img id="peli12" src="pelicula/buda_14.jpg" alt=""/>
+        <img id="peli13" src="pelicula/buda_15.jpg" alt=""/>
+        <img id="peli14" src="pelicula/buda_16.jpg" alt=""/>
+        <img id="peli15" src="pelicula/buda_17.jpg" alt=""/>
+        <img id="peli16" src="pelicula/buda_18.jpg" alt=""/>
+    </div>
+    <div class="clearfix"></div>
     <hr>
-    <p>Teaser: <a href="https://vimeo.com/83008745" target="_blank">https://vimeo.com/83008745</a></p>
     <h3>VEURE LA PEL·LÍCULA</h3>
     <p>Versió 55’: <a href="http://www.tv3.cat/videos/5255292/Buda-lilla-del-Delta" target="_blank">http://www.tv3.cat/videos/5255292/Buda-lilla-del-Delta</a></p>
     <h3>ENTREVISTA AMB EL DIRECTOR</h3>
     <p><a href="http://www.ccma.cat/tv3/alacarta/sala-33/buda-lilla-del-delta-cap-1/video/5440953/" target="_blank">http://www.ccma.cat/tv3/alacarta/sala-33/buda-lilla-del-delta-cap-1/video/5440953/</a></p>
 </div>
 <div id="zonaactiva"></div>
+<script>
+    $.ajax({
+        url:'pelicula/buda_1.jpg',
+        type:'HEAD',
+        error: function()
+        {
+            document.getElementById("peli01").src="../pelicula/buda_1.jpg";
+        },
+        success: function()
+        {
+            if(url.split('/')[2]!=='registre'){
+                document.getElementById("peli01").src="pelicula/buda_1.jpg";
+            } else {
+                document.getElementById("peli01").src="../pelicula/buda_1.jpg";
+            }
+        }
+    });
+    $.ajax({
+        url:'pelicula/buda_3.jpg',
+        type:'HEAD',
+        error: function()
+        {
+            document.getElementById("peli02").src="../pelicula/buda_3.jpg";
+        },
+        success: function()
+        {            
+            if(url.split('/')[2]!=='registre'){
+                document.getElementById("peli02").src="pelicula/buda_3.jpg";
+            } else {
+                document.getElementById("peli02").src="../pelicula/buda_3.jpg";
+            }
+        }
+    });
+    $.ajax({
+        url:'pelicula/buda_4.jpg',
+        type:'HEAD',
+        error: function()
+        {
+            document.getElementById("peli03").src="../pelicula/buda_4.jpg";
+        },
+        success: function()
+        {
+            if(url.split('/')[2]!=='registre'){
+                document.getElementById("peli03").src="pelicula/buda_4.jpg";
+            } else {
+                document.getElementById("peli03").src="../pelicula/buda_4.jpg";
+            }
+        }
+    });
+    $.ajax({
+        url:'pelicula/buda_6.jpg',
+        type:'HEAD',
+        error: function()
+        {
+            document.getElementById("peli04").src="../pelicula/buda_6.jpg";
+        },
+        success: function()
+        {
+            if(url.split('/')[2]!=='registre'){
+                document.getElementById("peli04").src="pelicula/buda_6.jpg";
+            } else {
+                document.getElementById("peli04").src="../pelicula/buda_6.jpg";
+            }
+        }
+    });
+    $.ajax({
+        url:'pelicula/buda_7.jpg',
+        type:'HEAD',
+        error: function()
+        {
+            document.getElementById("peli05").src="../pelicula/buda_7.jpg";
+        },
+        success: function()
+        {
+            if(url.split('/')[2]!=='registre'){
+                document.getElementById("peli05").src="pelicula/buda_7.jpg";
+            } else {
+                document.getElementById("peli05").src="../pelicula/buda_7.jpg";
+            }
+        }
+    });
+    $.ajax({
+        url:'pelicula/buda_8.jpg',
+        type:'HEAD',
+        error: function()
+        {
+            document.getElementById("peli06").src="../pelicula/buda_8.jpg";
+        },
+        success: function()
+        {
+            if(url.split('/')[2]!=='registre'){
+                document.getElementById("peli06").src="pelicula/buda_8.jpg";
+            } else {
+                document.getElementById("peli06").src="../pelicula/buda_8.jpg";
+            }
+        }
+    });
+    $.ajax({
+        url:'pelicula/buda_9.jpg',
+        type:'HEAD',
+        error: function()
+        {
+            document.getElementById("peli07").src="../pelicula/buda_9.jpg";
+        },
+        success: function()
+        {
+            if(url.split('/')[2]!=='registre'){
+                document.getElementById("peli07").src="pelicula/buda_9.jpg";
+            } else {
+                document.getElementById("peli07").src="../pelicula/buda_9.jpg";
+            }
+        }
+    });
+    $.ajax({
+        url:'pelicula/buda_10.jpg',
+        type:'HEAD',
+        error: function()
+        {
+            document.getElementById("peli08").src="../pelicula/buda_10.jpg";
+        },
+        success: function()
+        {
+            if(url.split('/')[2]!=='registre'){
+                document.getElementById("peli08").src="pelicula/buda_10.jpg";
+            } else {
+                document.getElementById("peli08").src="../pelicula/buda_10.jpg";
+            }
+        }
+    });
+    $.ajax({
+        url:'pelicula/buda_11.jpg',
+        type:'HEAD',
+        error: function()
+        {
+            document.getElementById("peli09").src="../pelicula/buda_11.jpg";
+        },
+        success: function()
+        {
+            if(url.split('/')[2]!=='registre'){
+                document.getElementById("peli09").src="pelicula/buda_11.jpg";
+            } else {
+                document.getElementById("peli09").src="../pelicula/buda_11.jpg";
+            }
+        }
+    });
+    $.ajax({
+        url:'pelicula/buda_12.jpg',
+        type:'HEAD',
+        error: function()
+        {
+            document.getElementById("peli10").src="../pelicula/buda_12.jpg";
+        },
+        success: function()
+        {
+            if(url.split('/')[2]!=='registre'){
+                document.getElementById("peli10").src="pelicula/buda_12.jpg";
+            } else {
+                document.getElementById("peli10").src="../pelicula/buda_12.jpg";
+            }
+        }
+    });
+    $.ajax({
+        url:'pelicula/buda_13.jpg',
+        type:'HEAD',
+        error: function()
+        {
+            document.getElementById("peli11").src="../pelicula/buda_13.jpg";
+        },
+        success: function()
+        {
+            if(url.split('/')[2]!=='registre'){
+                document.getElementById("peli11").src="pelicula/buda_13.jpg";
+            } else {
+                document.getElementById("peli11").src="../pelicula/buda_13.jpg";
+            }
+        }
+    });
+    $.ajax({
+        url:'pelicula/buda_14.jpg',
+        type:'HEAD',
+        error: function()
+        {
+            document.getElementById("peli12").src="../pelicula/buda_14.jpg";
+        },
+        success: function()
+        {
+            if(url.split('/')[2]!=='registre'){
+                document.getElementById("peli12").src="pelicula/buda_14.jpg";
+            } else {
+                document.getElementById("peli12").src="../pelicula/buda_14.jpg";
+            }
+        }
+    });
+    $.ajax({
+        url:'pelicula/buda_15.jpg',
+        type:'HEAD',
+        error: function()
+        {
+            document.getElementById("peli13").src="../pelicula/buda_15.jpg";
+        },
+        success: function()
+        {
+            if(url.split('/')[2]!=='registre'){
+                document.getElementById("peli13").src="pelicula/buda_15.jpg";
+            } else {
+                document.getElementById("peli13").src="../pelicula/buda_15.jpg";
+            }
+        }
+    });
+    $.ajax({
+        url:'pelicula/buda_16.jpg',
+        type:'HEAD',
+        error: function()
+        {
+            document.getElementById("peli14").src="../pelicula/buda_16.jpg";
+        },
+        success: function()
+        {
+            if(url.split('/')[2]!=='registre'){
+                document.getElementById("peli14").src="pelicula/buda_16.jpg";
+            } else {
+                document.getElementById("peli14").src="../pelicula/buda_16.jpg";
+            }
+        }
+    });
+    $.ajax({
+        url:'pelicula/buda_17.jpg',
+        type:'HEAD',
+        error: function()
+        {
+            document.getElementById("peli15").src="../pelicula/buda_17.jpg";
+        },
+        success: function()
+        {
+            if(url.split('/')[2]!=='registre'){
+                document.getElementById("peli15").src="pelicula/buda_17.jpg";
+            } else {
+                document.getElementById("peli15").src="../pelicula/buda_17.jpg";
+            }
+        }
+    });
+    $.ajax({
+        url:'pelicula/buda_18.jpg',
+        type:'HEAD',
+        error: function()
+        {
+            document.getElementById("peli16").src="../pelicula/buda_18.jpg";
+        },
+        success: function()
+        {
+            if(url.split('/')[2]!=='registre'){
+                document.getElementById("peli16").src="pelicula/buda_18.jpg";
+            } else {
+                document.getElementById("peli16").src="../pelicula/buda_18.jpg";
+            }
+        }
+    });
+    var url=window.location.pathname;
+    console.log(url.split('/')[2]);
+</script>
