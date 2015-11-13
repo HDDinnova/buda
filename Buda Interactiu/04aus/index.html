@@ -11,7 +11,7 @@
         <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/apartat.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body>
+    <body ondragover="drag_over(event)" ondrop="drop(event)">
         <nav class="navbar navbar-default"></nav>
         <!--Fi capçalera-->
         <audio loop autoplay id="audio">
@@ -19,9 +19,7 @@
         </audio>
         <div id="m"></div>
         <div class="container" id="apartat1">
-            <div id="foto1-1aus">
-                <img src="foto/_MG_8098.jpg" alt="foto antiga flamencs"/>
-            </div>
+            <div id="foto1-1aus"></div>
             <div id="text1-1">
                 <h2 class="verd">LES AUS DE BUDA</h2>
             </div>
@@ -29,30 +27,71 @@
                 <img src="img/scroll.png" alt="Fes scroll per continuar"/>
             </div>
             <div id="foto1-2aus">
-                <img src="foto/_MG_8076.jpg" alt="foto antiga pollet"/>
                 <p>Foto: Salvador Maluquer</p>
             </div>
             <div id="text1-2">
                 <h3 class="verd">ELS CALAIXOS DE BUDA</h3>
                 <p class="verd">Un hàbitat únic per a les aus</p>
             </div>
-            <div id="foto1-3aus">
-                <img src="foto/IMG024PNDE.jpg" alt=""/>
-            </div>
+            <div id="foto1-3aus"></div>
             <div id="text1-3" class="verd">
                 <p>Foto: Salvador Maluquer (dècada de 1950 i 1960).<br>Arxiu Parc Natural del Delta de l’Ebre.</p>
             </div>
             <div id="tapa1-4" class="verd"></div>
             <div id="text1-4">
                 <img src="img/marca1.png" alt=""/>
-                <p>Una manera d’avaluar la sostenibilitat d’un hàbitat és mesurar la seua biodiversitat d’organismes vius i ecosistemes que el formen. 
-                    I Buda és un d’aquests hàbitats, especialment per als ocells.</p>
+                <p>
+                    Una manera d’avaluar la sostenibilitat d’un hàbitat és mesurar la seua biodiversitat d’organismes vius i ecosistemes que el formen. 
+                    I Buda és un d’aquests hàbitats, especialment per als ocells.
+                </p>
             </div>
-            <div id="foto1-5aus">
-                <img src="foto/IMG025PNDE.jpg" alt=""/>
-            </div>
+            <div id="foto1-5aus"></div>
             <div id="text1-5" class="verd">
                 <p>Foto: Salvador Maluquer (dècada de 1950 i 1960).<br>Arxiu Parc Natural del Delta de l’Ebre.</p>
+            </div>
+            <div id="tapa1-5" class="verd"></div>
+            <div id="text1-6">
+                <p>
+                    És sobretot a les llacunes dels Calaixos on no és gens difícil veure-hi sobrevolar flamencs, ànecs ó rapinyaires i observar moltes 
+                    altres aus aquàtiques: limícoles, gavines i xatracs, corbs marins... 
+                </p>
+                <div id="play1-6">
+                    <img id="sarroaus1" src="img/play.png" alt="reproduir video calaix gran">
+                </div>
+            </div>
+            <div id="foto1-7aus"></div>
+            <div id="text1-7" class="verd">
+                <p>Foto: Salvador Maluquer (dècada de 1950 i 1960).<br>Arxiu Parc Natural del Delta de l’Ebre.</p>
+            </div>
+            <div id="tapa1-7" class="verd"></div>
+            <div id="text1-8" class="blanc">
+                <p>
+                    Els Calaixos de Buda són les basses més privilegiades del delta de l’Ebre: aquí nidifiquen, hivernen o són lloc de parada 
+                    en les migracions d’aquestes aus.
+                </p>
+            </div>
+            <div id="foto1-9aus"></div>
+            <div id="text1-9" class="verd">
+                <p>Foto: Salvador Maluquer (dècada de 1950 i 1960).<br>Arxiu Parc Natural del Delta de l’Ebre.</p>
+            </div>
+            <div id="tapa1-9" class="verd"></div>
+            <div id="text1-10" class="blanc">
+                <p>
+                    Aquí s’hi concentra una bona part de tots els ocells que habiten el Delta, cridats per la riquesa i qualitat de les aigües i la vegetació 
+                    que les envolta. Aquest fet va veure’s reconegut el febrer de 1994, quan es va declarar per la Generalitat de Catalunya la reserva natural 
+                    de fauna silvestre de la part meridional de l’illa de Buda i les llacunes dels Calaixos.
+                </p>
+            </div>
+            <div id="fotosaus1">
+                <img id="sarroimg1" class="f" src="foto/IMG021PNDE.jpg" alt="Foto històrica 1 del Delta" draggable="true" ondragstart="drag_start(event)"/>
+                <img id="sarroimg2" class="f" src="foto/IMG026PNDE.jpg" alt="Foto històrica 2 del Delta" draggable="true" ondragstart="drag_start(event)"/>
+                <img id="sarroimg3" class="f" src="foto/IMG027PNDE.jpg" alt="Foto històrica 3 del Delta" draggable="true" ondragstart="drag_start(event)"/>
+                <img id="sarroimg4" class="f" src="foto/IMG029PNDE.jpg" alt="Foto històrica 4 del Delta" draggable="true" ondragstart="drag_start(event)"/>
+                <img id="sarroimg5" class="f" src="foto/IMG034PNDE.jpg" alt="Foto històrica 5 del Delta" draggable="true" ondragstart="drag_start(event)"/>
+            </div>
+
+            <div class="videopopup">
+                <div id="videosapartat1"></div>
             </div>
         </div>
         <div class="container" id="apartat2"></div>

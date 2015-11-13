@@ -31,13 +31,15 @@
     margin-right: auto;
     margin-bottom: auto;
 }
-#foto1-1aus img{
+#foto1-1aus{
     min-height: 100vh;
     min-width: 100%;
     position: absolute;
     top: 0;
     left: 100%;
     z-index: -10;
+    background-image: url('../foto/_MG_8098.jpg');
+    background-size: cover;
 }
 #text1-1{
     position: absolute;
@@ -52,13 +54,15 @@
     text-transform: uppercase;
     font-weight: 600;
 }
-#foto1-2aus img{
+#foto1-2aus{
     min-height: 100vh;
     min-width: 100%;
     position: absolute;
     top: 100%;
     left: 0;
     z-index: -10;
+    background-image: url('../foto/_MG_8076.jpg');
+    background-size: cover;
 }
 #foto1-2aus p{
     position: absolute;
@@ -91,13 +95,15 @@
     font-size: 4rem;
     font-weight: 600;
 }
-#foto1-3aus img{
+#foto1-3aus{
     min-height: 100vh;
     min-width: 100%;
     position: absolute;
     top: 100%;
     left: 0;
     z-index: -10;
+    background-image: url('../foto/IMG024PNDE.jpg');
+    background-size: cover;
 }
 #text1-3{
     position: absolute;
@@ -141,13 +147,15 @@
     line-height: inherit;
     font-size: 3.5rem;
 }
-#foto1-5aus img{
+#foto1-5aus{
     min-height: 100vh;
     min-width: 100%;
     position: absolute;
     top: 100%;
     left: 0;
     z-index: -10;
+    background-image: url('../foto/IMG025PNDE.jpg');
+    background-size: cover;
 }
 #text1-5{
     position: absolute;
@@ -162,8 +170,221 @@
     width: 90%;
     line-height: inherit;
 }
+#tapa1-5{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: -9;
+}
+#text1-6{
+    position: absolute;
+    z-index: -8;
+    width: 33%;
+    padding: 15px;
+    top: 100%;
+    right: 50px;
+}
+#text1-6 p{
+    position: relative;
+    font-weight: 600;
+    color: white;
+    line-height: inherit;
+    font-size: 3.5rem;
+    margin-bottom: 25px;
+    top: 0px;
+}
+#play1-6{
+    position: relative;
+    top: 200px;
+}
+#play1-6 img{
+    background-color: rgba(238,196,27,.6);
+}
+#play1-6 img:hover{
+    background-color: #EEC41B;
+    cursor: pointer;
+}
+.videopopup{
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgba(0,0,0,.7);
+}
+.videopopup #videosapartat1{
+    display: block;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 55%;
+}
+#videosapartat1 video{
+    width: 95%;
+}
+#videosapartat1 .groc{
+    position: absolute;
+    margin-left: -200px;
+    margin-top: -100px;
+    width: 240px;
+    padding: 5px;
+}
+#videosapartat1 .blau{
+    padding: 5px;
+    display: block;
+    width: 30px;
+    float: right;
+    cursor: pointer;
+}
+#videosapartat1 .blau img{
+    height: 20px;
+}
+#foto1-7aus{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: -10;
+    background-image: url('../foto/IMG022PNDE.jpg');
+    background-size: cover;
+}
+#text1-7{
+    position: absolute;
+    z-index: -9;
+    width: 22%;
+    padding: 15px;
+    bottom: 10%;
+    right: -50%;
+}
+#text1-7 p{
+    color: white;
+    line-height: inherit;
+}
+#tapa1-7{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: -9;
+}
+#text1-8{
+    position: absolute;
+    z-index: -8;
+    width: 25%;
+    padding: 25px;
+    bottom: 100%;
+    right: 50px;
+}
+#text1-8 p{
+    position: relative;
+    color: #ABB057;
+    line-height: inherit;
+}
+#foto1-9aus{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: -10;
+    background-image: url('../foto/IMG016PNDE.jpg');
+    background-size: cover;
+}
+#text1-9{
+    position: absolute;
+    z-index: -9;
+    width: 22%;
+    padding: 15px;
+    bottom: 5%;
+    left: -50%;
+}
+#text1-9 p{
+    color: white;
+    line-height: inherit;
+}
+#tapa1-9{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: -9;
+}
+#text1-10{
+    position: absolute;
+    z-index: -8;
+    width: 33%;
+    padding: 25px;
+    bottom: 100%;
+    left: 50px;
+}
+#text1-10 p{
+    color: #ABB057;
+    line-height: inherit;
+}
+#fotosaus1 img{
+    position: absolute;
+    z-index: -5;
+    width: 40%;
+    transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+    -o-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    top: -80%;
+    left: -80%;
+    cursor: pointer;
+}
 #apartat2{display: none;}
+
+
+
 #apartat3{display: none;}
+#foto3-1aus{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: -10;
+    background-image: url('../foto/_MG_8085.jpg');
+    background-size: cover;
+}
+#text3-1{
+    position: absolute;
+    z-index: -9;
+    top: -100%;
+    left: 50px;
+}
+#text3-1 p{
+    position: relative;
+    width: 25%;
+    font-size: 1.6rem;
+    line-height: inherit;
+    padding: 25px;
+    margin-bottom: 25px;
+    color: white;
+    top: -300px;
+}
+#text3-1 h2{
+    font-size: 6rem;
+    font-weight: 600;
+    padding: 25px;
+    width: 50rem;
+    color: white;
+}
+
+
+
 #apartat4{display: none;}
 #apartat5{display: none;}
 #apartat6{display: none;}
