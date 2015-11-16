@@ -6,9 +6,11 @@ $('#bso').click(function(){
     if(sona){
         $('#audio')[0].pause();
         sona=false;
+        console.log('sona: '+sona);
     } else {
         $('#audio')[0].play();
         sona=true;
+        console.log('sona: '+sona);
     }
 });
 function controlMouse(e){
@@ -120,6 +122,51 @@ function controlMouse(e){
                 diapositiva30();
                 setTimeout(function(){
                     pos=30;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },2000);
+                break;
+            case 30:
+                $('body').off('mousewheel');
+                diapositiva31();
+                setTimeout(function(){
+                    pos=31;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },2000);
+                break;
+            case 31:
+                $('body').off('mousewheel');
+                $('#video3-1 video')[0].pause();
+                diapositiva32();
+                setTimeout(function(){
+                    pos=32;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },2000);
+                break;
+            case 32:
+                $('body').off('mousewheel');
+                diapositiva33();
+                setTimeout(function(){
+                    pos=33;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },2000);
+                break;
+            case 33:
+                $('body').off('mousewheel');
+                $('#video3-2 video')[0].pause();
+                if(mutexvideo){
+                    $('#audio')[0].play();
+                }
+                diapositiva34();
+                setTimeout(function(){
+                    pos=34;
                     $('body').on('mousewheel',function(e){
                         controlMouse(e);
                     });
@@ -354,8 +401,96 @@ function diapositiva30(){
     $('#text3-1').delay('800').animate({
         'top': '20%'
     },trans,'swing');
-    $('#text3-1 p').delay('1000').animate({
+    $('#text3-1 p').delay('1200').animate({
+        'top': '0'
+    },trans,'swing');
+}
+function diapositiva31(){
+    $('#text3-1 h2').animate({
+        'top': '300px'
+    },trans,'swing');
+    $('#text3-1').delay('200').animate({
+        'top': '100%'
+    },trans,'swing');
+    $('#tapa3-1').delay('400').animate({
+        'opacity': '0.8'
+    },trans,'swing');
+    $('#video3-1').delay('600').animate({
         'top': '0%'
+    },trans,'swing');
+    $('#video3-1 .groc').delay('900').animate({
+        'left': '50px'
+    },trans,'swing',function(){
+        $('#video3-1 video')[0].play();
+    });
+}
+function diapositiva32(){
+    $('#video3-1 .groc').animate({
+        'left': '-50%'
+    },trans,'swing');
+    $('#video3-1').delay('200').animate({
+        'top': '-100%'
+    },trans,'swing');
+    $('#tapa3-1').delay('200').animate({
+        'top': '-100%'
+    },trans,'swing');
+    $('#foto3-1aus').delay('600').animate({
+        'top': '-100%'
+    },trans,'swing');
+    $('#foto3-2aus').delay('600').animate({
+        'top': '0%'
+    },trans,'swing');
+    $('#text3-2').delay('800').animate({
+        'top': '10%'
+    },trans,'swing');
+    $('#foto3-2aus p').delay('1000').animate({
+        'bottom': '10px'
+    },trans,'swing');
+}
+function diapositiva33(){
+    $('#foto3-2aus p').animate({
+        'bottom': '-50px'
+    },trans,'swing');
+    $('#text3-2').delay('200').animate({
+        'top': '-50%'
+    },trans,'swing');
+    $('#tapa3-2').delay('400').animate({
+        'opacity': '0.8'
+    },trans,'swing');
+    $('#video3-2').delay('600').animate({
+        'top': '0%'
+    },trans,'swing');
+    $('#video3-2 .groc').delay('1000').animate({
+        'left': '50px'
+    },trans,'swing',function(){
+        console.log('mute: '+mutexvideo);
+        console.log('sona: '+sona);
+        if(sona){
+            $('#audio')[0].pause();
+            mutexvideo=true;
+        }
+        $('#video3-2 video')[0].play();
+        console.log('mute: '+mutexvideo);
+    });
+}
+function diapositiva34(){
+    $('#video3-2 .groc').animate({
+        'left': '-50%'
+    },trans,'swing');
+    $('#video3-2').delay('200').animate({
+        'top': '-100%'
+    },trans,'swing');
+    $('#tapa3-2').delay('200').animate({
+        'top': '-100%'
+    },trans,'swing');
+    $('#foto3-2aus').delay('600').animate({
+        'top': '-100%'
+    },trans,'swing');
+    $('#foto3-3aus').delay('600').animate({
+        'top': '0%'
+    },trans,'swing');
+    $('#foto3-3aus p').delay('1000').animate({
+        'bottom': '10px'
     },trans,'swing');
 }
 // Funcions de video
@@ -371,6 +506,19 @@ function tancarvideo1(){
     $('body').on('mousewheel',function(e){
         controlMouse(e);
     });
+}
+function tancarvideo31(){
+    if(mutexvideo){
+        $('#audio')[0].play();
+    }
+    $('#video3-1 video')[0].pause();
+    diapositiva32();
+    pos=32;
+}
+function tancarvideo32(){
+    $('#video3-2 video')[0].pause();
+    diapositiva34();
+    pos=34;
 }
 // Funcions fotos
 function drag_start(event){

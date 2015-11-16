@@ -376,11 +376,144 @@
     top: -300px;
 }
 #text3-1 h2{
-    font-size: 6rem;
+    position: relative;
+    top: 0px;
+    font-size: 6.5rem;
     font-weight: 600;
     padding: 25px;
     width: 50rem;
     color: white;
+}
+#tapa3-1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: -9;
+}
+#video3-1{
+    display: block;
+    height: 100%;
+    position: relative;
+    top: 100%;
+    left: 0px;
+}
+#video3-1 video{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+}
+#video3-1 .blau{
+    padding: 5px;
+    display: block;
+    width: 30px;
+    float: right;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+}
+#video3-1 .blau img{
+    height: 20px;
+}
+#video3-1 .groc{
+    position: absolute;
+    bottom: 100px;
+    left: -200px;
+    padding: 5px;
+    width: 250px;
+}
+#foto3-2aus{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: -10;
+    background-image: url('../foto/_MG_8104.jpg');
+    background-size: cover;
+}
+#foto3-2aus p{
+    position: absolute;
+    color: white;
+    font-weight: 500;
+    bottom: -50px;
+    left: 50px;
+}
+#text3-2{
+    position: absolute;
+    z-index: -8;
+    width: 30%;
+    padding: 25px;
+    top: -50%;
+    right: 50px;
+}
+#text3-2 p{
+    color: white;
+    line-height: inherit;
+    font-size: 2rem;
+}
+#tapa3-2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: -9;
+}
+#video3-2{
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+}
+#video3-2 video{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+}
+#video3-2 .blau{
+    padding: 5px;
+    display: block;
+    width: 30px;
+    float: right;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+}
+#video3-2 .blau img{
+    height: 20px;
+}
+#video3-2 .groc{
+    position: absolute;
+    bottom: 100px;
+    left: -200px;
+    padding: 5px;
+    width: 250px;
+}
+#foto3-3aus{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: -10;
+    background-image: url('../foto/_MG_8090.jpg');
+    background-size: cover;
+}
+#foto3-3aus p{
+    position: absolute;
+    color: white;
+    font-weight: 500;
+    bottom: -50px;
+    left: 50px;
 }
 
 
