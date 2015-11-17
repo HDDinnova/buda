@@ -396,11 +396,12 @@
     top: 100%;
     left: 0px;
     align-items: center;
+    align-content: center;
 }
 #video2-1 video{
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
+    display: flex;
+    /* margin-right: auto; */
+    /* margin-left: auto; */
     max-height: 100%;
     max-width: 100%;
 }
@@ -411,7 +412,7 @@
     float: right;
     cursor: pointer;
     position: absolute;
-    right: 10px;
+    margin-left: 10px;
     top: 50px;
 }
 #video2-1 .blau img{
@@ -438,17 +439,71 @@
     position: absolute;
     z-index: -8;
     width: 30%;
-    padding: 25px;
     top: -50%;
-    right: 50px;
+    left: 50px;
 }
 #text2-2 p{
+    padding: 25px;
     color: white;
     line-height: inherit;
     font-size: 2rem;
+    margin-bottom: 10px;
+    position: relative;
+    top: -300px;
+    bottom: 0px;
 }
-
-
+#play2-2{
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 5;    
+}
+#play2-2 img{
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+    background-color: rgba(245,132,49,.6);
+}
+#play2-2 img:hover{
+    background-color: #F58431;
+    cursor: pointer;
+}
+.videopopup{
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgba(0,0,0,.7);
+}
+.videopopup #videosapartat2{
+    display: block;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 55%;
+}
+#videosapartat2 video{
+    width: 95%;
+}
+#videosapartat2 .groc{
+    position: absolute;
+    margin-left: -200px;
+    margin-top: -100px;
+    width: 240px;
+    padding: 5px;
+}
+#videosapartat2 .blau{
+    padding: 5px;
+    display: block;
+    width: 30px;
+    float: right;
+    cursor: pointer;
+}
+#videosapartat2 .blau img{
+    height: 20px;
+}
 #apartat3{display: none;}
 #foto3-1aus{
     height: 100vh;
@@ -613,8 +668,61 @@
     position: absolute;
     color: white;
     font-weight: 500;
-    bottom: -50px;
+    bottom: 10px;
+    left: -50px;
+}
+#text3-3{
+    position: absolute;
+    z-index: -8;
+    width: 25%;
+    top: -45%;
     left: 50px;
+}
+#text3-3 p{
+    padding: 25px;
+    color: white;
+    line-height: inherit;
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+#play3{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    height: 100%;
+}
+#play3 img{
+    background-color: rgba(241,93,66,.6)
+}
+#play3 img:hover{
+    background-color: #F15D42;
+    cursor: pointer;
+}
+#video31{
+    position: absolute;
+    top: 24%;
+    left: 53%;
+}
+#video32{
+    position: absolute;
+    top: 36%;
+    left: 62%;
+}
+#video33{
+    position: absolute;
+    top: 54%;
+    left: 66%;
+}
+#video34{
+    position: absolute;
+    top: 73%;
+    left: 62%;
+}
+#video35{
+    position: absolute;
+    top: 88%;
+    left: 56%;
 }
 
 
