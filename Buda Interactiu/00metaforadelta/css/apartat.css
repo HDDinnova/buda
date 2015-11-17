@@ -28,6 +28,18 @@
     font-weight: 600;
     margin: 0;
 }
+.scroll{
+    position: absolute;
+    width: 100vw;
+    bottom: -10%;
+    left: 43%;
+    z-index: 0;
+}
+.scroll img{
+    display: block;
+    margin-right: auto;
+    margin-bottom: auto;
+}
 #imgdelta1 img{
     min-height: 100vh;
     min-width: 100%;

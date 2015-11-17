@@ -262,6 +262,9 @@ function diapositiva1(){
                 controlMouse(e);
             });
         });
+        $('.scroll').delay('400').animate({
+            'bottom': '10px'
+        },trans);
     });
     $('#apartat1 video').get(0).play();
 }
@@ -289,6 +292,9 @@ function diapositiva10(){
     },trans,'swing');
 }
 function diapositiva11(){
+    $('.scroll').animate({
+        'bottom': '-10%'
+    },trans);
     $('#apartat1 #tapa').animate({
         'opacity': 0.5
     },'slow');

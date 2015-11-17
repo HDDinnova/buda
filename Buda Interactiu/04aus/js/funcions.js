@@ -119,6 +119,37 @@ function controlMouse(e){
                 break;
             case 110:
                 $('body').off('mousewheel');
+                diapositiva20();
+                setTimeout(function(){
+                    pos=20;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },2000);
+                break;
+            case 20:
+                $('body').off('mousewheel');
+                diapositiva21();
+                setTimeout(function(){
+                    pos=21;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },2000);
+                break;
+            case 21:
+                $('body').off('mousewheel');
+                $('#video2-1 video')[0].pause();
+                diapositiva22();
+                setTimeout(function(){
+                    pos=22;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },2000);
+                break;
+            case 22:
+                $('body').off('mousewheel');
                 diapositiva30();
                 setTimeout(function(){
                     pos=30;
@@ -195,7 +226,7 @@ function diapositiva1(){
         $('#text1-1').animate({
             'top': '10%'
         },trans,'swing');
-        $('.scroll').delay('100').animate({
+        $('.scroll').delay('300').animate({
             'bottom': '1.5%'
         },trans,'swing',function(){            
             $('body').on('mousewheel',function(e){
@@ -355,7 +386,7 @@ function diapositiva19(){
     },trans,'swing');
 }
 function diapositiva110(){
-    $('#apartat3').load('apartat3.html');
+    $('#apartat2').load('apartat2.html');
     var angle=5;
     var posi=50;
     var pausa=0;
@@ -374,6 +405,69 @@ function diapositiva110(){
         $(this).css('z-index',zi);
         zi++;
     });
+}
+function diapositiva20(){
+    $('#apartat2').show();
+    var pausa=0;
+    $('#fotosaus1 img').each(function(){
+        $(this).delay(pausa).animate({
+            'top':'-50%',
+            'left':'200%'
+        },trans);
+        pausa+=100;
+    });
+    $('#fotosaus1 img').off('click');
+    $('#text1-10').delay('400').animate({
+        'bottom': '-100%'
+    },trans,'swing');
+    $('#tapa1-9').delay('600').animate({
+        'top': '-100%'
+    },trans,'swing');
+    $('#foto1-9aus').delay('600').animate({
+        'top': '-100%'
+    },trans,'swing');
+    $('#foto2-1aus').delay('600').animate({
+        'top': '0%'
+    },trans,'swing');
+    $('#text2-1').delay('800').animate({
+        'top': '20%'
+    },trans,'swing');
+    $('#text2-1 p').delay('1200').animate({
+        'top': '0'
+    },trans,'swing');
+}
+function diapositiva21(){
+    $('#text2-1 h2').animate({
+        'top': '300px'
+    },trans,'swing');
+    $('#text2-1').delay('200').animate({
+        'top': '100%'
+    },trans,'swing');
+    $('#tapa2-1').delay('400').animate({
+        'opacity': '0.8'
+    },trans,'swing');
+    $('#video2-1').delay('600').animate({
+        'top': '0%'
+    },trans,'swing');
+    $('#video2-1 .groc').delay('1000').animate({
+        'left': '50px'
+    },trans,'swing',function(){
+        $('#video2-1 video')[0].play();
+    });
+}
+function diapositiva22(){
+    $('#tapa2-1').animate({
+        'top': '-100%'
+    },trans,'swing');
+    $('#video2-1').animate({
+        'top': '-100%'
+    },trans,'swing');
+    $('#foto2-1aus').animate({
+        'top': '-100%'
+    },trans,'swing');
+    $('#foto2-2aus').animate({
+        'top': '0%'
+    },trans,'swing');
 }
 function diapositiva30(){
     $('#apartat3').show();
@@ -506,6 +600,14 @@ function tancarvideo1(){
     $('body').on('mousewheel',function(e){
         controlMouse(e);
     });
+}
+function tancarvideo21(){
+    if(mutexvideo){
+        $('#audio')[0].play();
+    }
+    $('#video2-1 video')[0].pause();
+    diapositiva22();
+    pos=22;
 }
 function tancarvideo31(){
     if(mutexvideo){

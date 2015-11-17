@@ -244,12 +244,18 @@ function diapositiva1(){
                 controlMouse(e);
             });
         });
+        $('.scroll').delay('600').animate({
+            'bottom': '10px'
+        },trans);
     });
 }
 function diapositiva10(){
     
 }
 function diapositiva11(){
+    $('.scroll').animate({
+        'bottom': '-10%'
+    },trans);
     $('#imgdelta1 p').animate({
         'bottom': '-50px'
     },trans);
