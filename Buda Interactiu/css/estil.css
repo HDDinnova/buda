@@ -1,19 +1,19 @@
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 @import url(https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope);
 .groc{
-    background-color: #EEC41B; //rgba(238,196,27,1)
+    background-color: #EEC41B; /*rgba(238,196,27,.6)*/
 }
 .taronga{
-    background-color: #F58431; //rgba(245,132,49,1)
+    background-color: #F58431; /*rgba(245,132,49,.6)*/
 }
 .blau{
-    background-color: #66A8C8; //rgba(102,168,200,1)
+    background-color: #66A8C8; /*rgba(102,168,200,.6)*/
 }
 .roig{
-    background-color: #F15D42; //rgba(241,93,66,1)
+    background-color: #F15D42; /*rgba(241,93,66,.6)*/
 }
 .verd{
-    background-color: #ABB057; //rgba(171,176,87,1)
+    background-color: #ABB057; /*rgba(171,176,87,.6)*/
 }
 .negre{
     background-color: black;
