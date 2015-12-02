@@ -67,6 +67,16 @@ function controlMouse(e){
                     });
                 },2000);
                 break;
+            case 15:
+                $('body').off('mousewheel');
+                diapositiva16();
+                setTimeout(function(){
+                    pos=16;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },2000);
+                break;
         }
     } else if(e.deltaY>0) {
         switch (pos) {
@@ -191,7 +201,61 @@ function diapositiva15(){
     $('#tapa1-4').delay('200').animate({
         'opacity': '0.4'
     },trans,'swing');
+    $('#fartet img').delay('400').animate({
+        'left': '0'
+    },trans,'swing');
+    $('#fartet p').delay('600').animate({
+        'left': '0'
+    },trans,'swing');
+    $('#barb img').delay('800').animate({
+        'right': '0'
+    },trans,'swing');
+    $('#barb p').delay('1000').animate({
+        'right': '0'
+    },trans,'swing');
 }
+function diapositiva16(){
+    $('#barb p').animate({
+        'right': '-100%'
+    },trans,'swing');
+    $('#barb img').delay('200').animate({
+        'right': '-100%'
+    },trans,'swing');
+    $('#fartet p').delay('400').animate({
+        'left': '-100%'
+    },trans,'swing');
+    $('#fartet img').delay('600').animate({
+        'left': '-100%'
+    },trans,'swing',function(){
+        $('#peixos1').hide();
+    });
+    $('#tapa1-4').delay('800').animate({
+        'top': '-100%'
+    },trans,'swing');
+    $('#foto1-4').delay('800').animate({
+        'top': '-100%'
+    },trans,'swing');
+    $('#foto1-5').delay('800').animate({
+        'top': '0%'
+    },trans,'swing');
+    $('#foto1-5 p').delay('1000').animate({
+        'right': '50px'
+    },trans,'swing');
+    $('#foto1-5text').delay('1200').animate({
+        'top': '35%'
+    },trans,'swing');
+    $('#foto1-5text img').delay('1400').animate({
+        'left': '0%'
+    },trans,'swing');
+}
+
+// Funcions de video
+$('#sarroaus1').on('click',function(){
+    $('body').off('mousewheel');
+    $('#videosapartat1').load('apartat1video1.html',function(){
+        $('.videopopup').show();
+    });
+});
 
 // Funcions de video
 $('#sarroaus1').on('click',function(){
