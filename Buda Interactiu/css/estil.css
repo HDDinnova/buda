@@ -5925,6 +5925,10 @@ button.close {
     display: block;
     margin-right: 5px;
     margin-left: 5px;
+    overflow-y: scroll;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .menu .container a{
     text-align: center;

@@ -204,7 +204,8 @@
 #fartet img{
     position: relative;
     margin-bottom: 15px;
-    left: -100%;
+    left: -150%;
+    width: 100%;
 }
 #fartet p{
     position: relative;
@@ -218,7 +219,8 @@
 #barb img{
     position: relative;
     margin-bottom: 15px;
-    right: -100%;
+    right: -150%;
+    width: 100%;
 }
 #barb p{
     position: relative;
@@ -269,8 +271,86 @@
 #foto1-5text img{
     position: relative;
     top: 0;
-    left: -50%;
+    left: -100%;
     width: 60%;
+}
+#foto1-6{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: -10;
+    background-image: url('../foto/Santi096.jpg');
+    background-size: cover;
+    background-position: center bottom;
+}
+#foto1-6peu{
+    position: absolute;
+    padding: 15px;
+    color: white;
+    top: -150%;
+    right: 10px;
+    width: 15%;
+    font-size: 1rem;
+    z-index: -9;
+}
+#foto1-6text p{
+    position: absolute;
+    padding: 15px;
+    color: white;
+    top: -150%;
+    left: 50px;
+    width: 30%;
+    z-index: -9;
+}
+#foto1-7{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: -10;
+    background-image: url('../foto/Santi105.jpg');
+    background-size: cover;
+    background-position: center bottom;
+}
+#tapa1-7{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: -8;
+    opacity: 0.8;
+}
+#foto1-7text{
+    position: absolute;
+    padding: 15px;
+    top: -150%;
+    right: 10%;
+    width: 30%;
+    z-index: -7;
+}
+#foto1-7text img{
+    position: relative;
+    top: -300px;
+    width: 33%;
+    margin-bottom: 25px;
+}
+#foto1-7text p{
+    position: relative;
+    padding: 15px;
+    top: 0;
+    color: #ABB057;
+}
+#foto1-7peu{
+    position: absolute;
+    color: white;
+    bottom: -50%;
+    left: 50px;
+    width: 27%;
+    z-index: -7;
 }
 
 

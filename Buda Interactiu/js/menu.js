@@ -3,11 +3,15 @@ function menu(){
         $('.menu').animate({
           right: '0px'
         }, 200);
+        $('body').off('mousewheel');
     });
     $('#tancamenu').click(function() {
       $('.menu').animate({
         right: "-285px"
       }, 200);
+      $('body').on('mousewheel',function(e){
+          controlMouse(e);
+      });
     });
     $('#bso').click(function(){
         if($('#audio')[0].paused){

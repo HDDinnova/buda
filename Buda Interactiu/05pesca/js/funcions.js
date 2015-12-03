@@ -77,6 +77,26 @@ function controlMouse(e){
                     });
                 },2000);
                 break;
+            case 16:
+                $('body').off('mousewheel');
+                diapositiva17();
+                setTimeout(function(){
+                    pos=17;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },2000);
+                break;
+            case 17:
+                $('body').off('mousewheel');
+                diapositiva18();
+                setTimeout(function(){
+                    pos=18;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },2000);
+                break;
         }
     } else if(e.deltaY>0) {
         switch (pos) {
@@ -247,6 +267,56 @@ function diapositiva16(){
     $('#foto1-5text img').delay('1400').animate({
         'left': '0%'
     },trans,'swing');
+}
+function diapositiva17(){
+    $('#foto1-5text img').animate({
+        'left': '-100%'
+    },trans,'swing');
+    $('#foto1-5text').delay('200').animate({
+        'top': '135%'
+    },trans,'swing');
+    $('#foto1-5 p').delay('400').animate({
+        'right': '-50%'
+    },trans,'swing');
+    $('#foto1-5').delay('600').animate({
+        'top': '-100%'
+    },trans,'swing');
+    $('#foto1-6').delay('600').animate({
+        'top': '0%'
+    },trans,'swing');
+    $('#foto1-6text p').delay('800').animate({
+        'top': '60%'
+    },trans,'swing');
+    $('#foto1-6peu').delay('1000').animate({
+        'top': '10%'
+    },trans,'swing');
+}
+function diapositiva18(){
+    $('#foto1-6peu').animate({
+        'top': '-50%'
+    },trans,'swing');
+    $('#foto1-6text p').delay('200').animate({
+        'top': '260%'
+    },trans,'swing');
+    $('#foto1-6').delay('400').animate({
+        'top': '-100%'
+    },trans,'swing');
+    $('#foto1-7').delay('400').animate({
+        'top': '0%'
+    },trans,'swing');
+    $('#tapa1-7').delay('400').animate({
+        'top': '0%'
+    },trans,'swing');
+    $('#foto1-7text').delay('800').animate({
+        'top': '30%'
+    },trans,'swing');
+    $('#foto1-7text img').delay('1000').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto1-7peu').delay('1200').animate({
+        'bottom': '10px'
+    },trans,'swing');
+    $('#apartat2').load('apartat2.html');
 }
 
 // Funcions de video
