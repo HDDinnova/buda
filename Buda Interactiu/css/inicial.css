@@ -1,0 +1,88 @@
+body{
+    overflow: hidden
+}
+.container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+.container a{
+    position: absolute;
+    color: white;
+    z-index: 10;
+    top: 20px;
+    right: 20px;
+    padding: 5px 15px;
+    border: white solid thin;
+    border-radius: 25px;
+    text-decoration: none;
+}
+.container a:hover{
+    border: white solid 2px;
+}
+video{
+    min-height: 100vh;
+    min-width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+h1{
+    color: white;
+    margin-bottom: 35vh
+}
+h4,h5{
+    color: white;
+    margin-bottom: 3rem;
+}
+h4 img{
+    height: 7rem;
+}
+ul{
+    margin-left: -50px;
+}
+li{
+    display: inline;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    transition: font 0.3s ease;
+}
+li a:hover{
+    text-decoration: none;
+    color: white;
+}
+li a:active{
+    text-decoration: none;
+    color: white;
+}
+li.active{
+    font-size: 4rem;
+}
+li.active:hover{
+    font-size: 5rem;
+}
+li:not(.active):hover{
+    font-size: 2.5rem;
+}
+.credits{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
+}
+.credits .right{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
