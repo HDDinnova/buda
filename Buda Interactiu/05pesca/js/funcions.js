@@ -97,6 +97,16 @@ function controlMouse(e){
                     });
                 },2000);
                 break;
+            case 18:
+                $('body').off('mousewheel');
+                diapositiva20();
+                setTimeout(function(){
+                    pos=18;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },2000);
+                break;
         }
     } else if(e.deltaY>0) {
         switch (pos) {
@@ -317,6 +327,30 @@ function diapositiva18(){
         'bottom': '10px'
     },trans,'swing');
     $('#apartat2').load('apartat2.html');
+}
+function diapositiva20(){
+    $('#apartat2').show();
+    $('#foto1-7peu').animate({
+        'bottom': '-50%'
+    },trans,'swing');
+    $('#foto1-7text img').delay('200').animate({
+        'top': '-300px'
+    },trans,'swing');
+    $('#foto1-7text').delay('400').animate({
+        'top': '-30%'
+    },trans,'swing');
+    $('#foto1-7').delay('600').animate({
+        'top': '-100%'
+    },trans,'swing');
+    $('#foto2-1').delay('600').animate({
+        'top': '0%'
+    },trans,'swing');
+    $('#foto2-1text').delay('800').animate({
+        'top': '45%'
+    },trans,'swing');
+    $('#foto2-1text p').delay('1000').animate({
+        'top': '0'
+    },trans,'swing');
 }
 
 // Funcions de video
