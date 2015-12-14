@@ -351,6 +351,9 @@ function diapositiva20(){
     $('#foto2-1text p').delay('1000').animate({
         'top': '0'
     },trans,'swing');
+    $('#foto2-1peu').delay('1200').animate({
+        'bottom': '10px'
+    },trans,'swing');
 }
 
 // Funcions de video

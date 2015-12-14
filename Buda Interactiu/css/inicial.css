@@ -12,7 +12,7 @@ body{
     overflow: hidden;
     z-index: -1;
 }
-.container a{
+#saltar{
     position: absolute;
     color: white;
     z-index: 10;
@@ -22,6 +22,7 @@ body{
     border: white solid thin;
     border-radius: 25px;
     text-decoration: none;
+    opacity: 0;
 }
 .container a:hover{
     border: white solid 2px;
@@ -34,15 +35,29 @@ video{
     left: 0;
     z-index: 0;
 }
+#pantalla{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    z-index: 1;
+    opacity: 1;
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+}
 h1{
-    color: white;
     margin-bottom: 35vh
 }
 h4,h5{
-    color: white;
+    position: relative;
     margin-bottom: 3rem;
 }
 h4 img{
+    position: relative;
     height: 7rem;
 }
 ul{
@@ -55,16 +70,20 @@ li{
 }
 li a{
     text-decoration: none;
-    color: white;
     transition: font 0.3s ease;
+    color: black;
 }
 li a:hover{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 li a:active{
     text-decoration: none;
-    color: white;
+    color: black;
+}
+li a:visited{
+    text-decoration: none;
+    color: black;
 }
 li.active{
     font-size: 4rem;
