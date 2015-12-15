@@ -101,6 +101,16 @@ function controlMouse(e){
                 $('body').off('mousewheel');
                 diapositiva20();
                 setTimeout(function(){
+                    pos=20;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },2000);
+                break;
+            case 20:
+                $('body').off('mousewheel');
+                diapositiva21();
+                setTimeout(function(){
                     pos=18;
                     $('body').on('mousewheel',function(e){
                         controlMouse(e);
@@ -353,6 +363,29 @@ function diapositiva20(){
     },trans,'swing');
     $('#foto2-1peu').delay('1200').animate({
         'bottom': '10px'
+    },trans,'swing');
+}
+function diapositiva21(){
+    $('#foto2-1peu').animate({
+        'bottom': '-10%'
+    },trans,'swing');
+    $('#foto2-1text h2').delay('200').animate({
+        'top': '300px'
+    },trans,'swing');
+    $('#foto2-1text').delay('400').animate({
+        'top': '145%'
+    },trans,'swing');
+    $('#foto2-1').delay('600').animate({
+        'top': '-100%'
+    },trans,'swing');
+    $('#foto2-2').delay('600').animate({
+        'top': '0%'
+    },trans,'swing');
+    $('#foto2-2text').delay('800').animate({
+        'top': '55%'
+    },trans,'swing');
+    $('#foto2-2peu').delay('1000').animate({
+        'top': '100px'
     },trans,'swing');
 }
 

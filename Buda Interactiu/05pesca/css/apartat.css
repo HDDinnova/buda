@@ -390,6 +390,37 @@
     left: 50px;
     bottom: -10%;
 }
+#foto2-2{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: -10;
+    background-image: url('../foto/Santi110.jpg');
+    background-size: cover;
+}
+#foto2-2text{
+    position: absolute;
+    top: -150%;
+    left: 50px;
+}
+#foto2-2text p{
+    color: #CBA01A;
+    padding: 30px;
+    position: relative;
+    width: 33%;
+}
+#foto2-2peu{
+    position: absolute;
+    width: 20%;
+    right: 50px;
+    top: -150%;
+}
+#foto2-2peu p{
+    padding: 15px;
+    color: white;
+}
 
 
 
