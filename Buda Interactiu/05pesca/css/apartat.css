@@ -38,7 +38,7 @@
     bottom: -100%;
     left: 0;
     z-index: -10;
-    background-image: url('../foto/buda-85-bn.jpg');
+    background-image: url('../foto/Santi050.jpg');
     background-size: cover;
     background-position: bottom;
 }
@@ -421,11 +421,345 @@
     padding: 15px;
     color: white;
 }
-
-
-
-
+#foto2-2tapa{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    z-index: -8;
+    opacity: 0;
+    top: 0;
+    left: 0;
+}
+#foto2-2text2{
+    width: 33%;
+    padding: 30px;
+    position: absolute;
+    top:-70%;
+    left: 100px;
+    display: none;
+}
+#foto2-2text2 p{
+    color: white;
+    font-size: 2.2rem;
+}
+#foto2-2 img{
+    position: absolute;
+    z-index: -5;
+    height: 80%;
+    top: -80%;
+    right: -80%;
+    cursor: pointer;
+}
+#foto2-3{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: -10;
+    background-image: url('../foto/Santi107.jpg');
+    background-size: cover;
+    background-position: center top;
+}
+#foto2-3peu{
+    position: absolute;
+    padding: 15px;
+    color: white;
+    bottom: 10px;
+    left: -50%;
+    font-size: 1.6rem;
+    z-index: -9;
+}
+#foto2-3text p{
+    position: absolute;
+    padding: 15px;
+    font-size: 2rem;
+    color: white;
+    top: -90%;
+    right: 5%;
+    width: 30%;
+    z-index: -9;
+    display: none;
+}
+#foto2-3tapa{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    z-index: -8;
+    opacity: 0;
+    top: 0;
+    left: 0;
+}
+#foto2-3text2{
+    width: 33%;
+    padding: 15px;
+    position: absolute;
+    top:-70%;
+    right: 100px;
+    display: none;
+}
+#foto2-3text2 p{
+    color: white;
+    font-size: 3.3rem;
+}
+#foto2-4{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: -10;
+    background-image: url('../foto/Santi109.jpg');
+    background-size: cover;
+    background-position: center top;
+}
+#foto2-4tapa{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    z-index: -8;
+    opacity: .6;
+    top: 0;
+    left: 0;
+}
+#foto2-4text{
+    width: 40%;
+    position: absolute;
+    top:140%;
+    right: 100px;
+}
+#play2-1{
+    right: -300px;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 5;
+    text-align: right;
+}
+#play2-1 img{
+    background-color: rgba(245,132,49,.6);
+}
+#play2-1 img:hover{
+    background-color: #F58431;;
+    cursor: pointer;
+}
+#foto2-4text .blanc{
+    position: relative;
+    right: 0px;
+    padding: 15px;
+}
+#foto2-4text p{
+    color: #CBA01A;
+    font-size: 2.5rem;
+}
+#foto2-4peu{
+    position: absolute;
+    padding: 15px;
+    color: white;
+    bottom: 10px;
+    left: -50%;
+    font-size: 1.6rem;
+    z-index: -7;
+}
+.videopopup #videosapartat2{
+    display: block;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 55%;
+}
+#videosapartat2 video{
+    width: 95%;
+}
+#videosapartat2 .groc{
+    position: absolute;
+    margin-left: -200px;
+    margin-top: -100px;
+    width: 240px;
+    padding: 5px;
+}
+#videosapartat2 .blau{
+    padding: 5px;
+    display: block;
+    width: 30px;
+    float: right;
+    cursor: pointer;
+}
+#videosapartat2 .blau img{
+    height: 20px;
+}
+#foto2-5{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: -10;
+    background-image: url('../foto/Santi178.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+#foto2-5peu{
+    position: absolute;
+    padding: 15px;
+    color: white;
+    bottom: 10px;
+    left: -50%;
+    font-size: 1.6rem;
+    z-index: -7;
+}
+#foto2-5text{
+    width: 35%;
+    padding: 15px;
+    position: absolute;
+    top:-170%;
+    left: 100px;
+    display: none;
+}
+#foto2-5text p{
+    color: white;
+    font-size: 2rem;
+}
+#foto2-5tapa{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    z-index: -8;
+    opacity: 0;
+    top: 0;
+    left: 0;
+}
+#foto2-5text2{
+    width: 33%;
+    position: absolute;
+    top:140%;
+    left: 100px;
+}
+#foto2-5text2 .groc{
+    position: relative;
+    left: 0px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+#foto2-5text2 .groc p{
+    color: white;
+    font-size: 2rem;
+}
+#play2-2{
+    top: 300px;
+    left: 0;
+    position: relative;
+    z-index: 5;
+}
+#play2-2 img{
+    background-color: rgba(238,196,27,.6);
+}
+#play2-2 img:hover{
+    background-color: #EEC41B;
+    cursor: pointer;
+}
+#foto2-6{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: -10;
+    background-image: url('../foto/buda-6-.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+#foto2-6peu{
+    position: absolute;
+    padding: 15px;
+    color: white;
+    bottom: 10px;
+    left: -50%;
+    font-size: 1.6rem;
+    z-index: -7;
+}
+#foto2-6text{
+    width: 30%;
+    font-weight: 600;
+    padding: 15px;
+    position: absolute;
+    top:110%;
+    left: 100px;
+    display: none;
+}
+#foto2-6text p{
+    position: relative;
+    top: 0;
+    left: 0;
+    color: #CBA01A;
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+#foto2-6text img{
+    position: relative;
+    top: -800px;
+    left: 100vw;
+    width: 75%;
+}
+#foto2-6tapa{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    z-index: -8;
+    opacity: 0;
+    top: 0;
+    left: 0;
+}
+#foto2-6text2{
+    width: 33%;
+    padding: 30px;
+    position: absolute;
+    top:140%;
+    left: 100px;
+}
+#foto2-6text2 p{
+    font-size: 2.5rem;
+}
+#foto2-7{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: -10;
+    background-image: url('../foto/buda-95.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+#foto2-7peu{
+    position: absolute;
+    padding: 15px;
+    color: white;
+    bottom: 10px;
+    left: -50%;
+    font-size: 1.6rem;
+    z-index: -7;
+}
+#foto2-7text{
+    width: 30%;
+    font-weight: 600;
+    padding: 15px;
+    position: absolute;
+    top:110%;
+    left: 100px;
+}
+#foto2-7text p{
+    position: relative;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
 #apartat3{display: none;}
+
+
+
 #apartat4{display: none;}
 #apartat5{display: none;}
 #apartat6{display: none;}
