@@ -757,6 +757,199 @@
     font-weight: normal;
 }
 #apartat3{display: none;}
+#foto3-1{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    z-index: -10;
+    background-image: url('../foto/_MG_8135.jpg');
+    background-size: cover;
+}
+#foto3-1text{
+    position: absolute;
+    top: -150%;
+    left: 100px;
+}
+#foto3-1text h2{
+    color: white;
+    padding: 30px;
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 46rem;
+}
+#foto3-1peu{
+    position: absolute;
+    color: white;
+    width: 15%;
+    left: 50px;
+    bottom: -110%;
+}
+#foto3-1tapa{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    z-index: -8;
+    opacity: 0;
+    top: 0;
+    left: 0;
+}
+#foto3-1text2{
+    position: absolute;
+    top: -80%;
+    left: 100px;
+    width: 33%;
+}
+#foto3-1text2 .blanc{
+    position: relative;
+    top: 0;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+#foto3-1text2 .blanc p{
+    color: #F58431;
+    font-size: 1.8rem;
+}
+.play3-1{
+    top: 0;
+    position: relative;
+    z-index: 5;
+    margin-right: 15px;
+}
+.play3-1 img{
+    background-color: rgba(102,168,200,.6);
+}
+.play3-1 img:hover{
+    background-color: #66A8C8;
+    cursor: pointer;
+}
+.videopopup #videosapartat3{
+    display: block;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 55%;
+}
+#videosapartat3 video{
+    width: 95%;
+}
+#videosapartat3 .groc{
+    position: absolute;
+    margin-left: -200px;
+    margin-top: -100px;
+    width: 240px;
+    padding: 5px;
+}
+#videosapartat3 .blau{
+    padding: 5px;
+    display: block;
+    width: 30px;
+    float: right;
+    cursor: pointer;
+}
+#videosapartat3 .blau img{
+    height: 20px;
+}
+#foto3-2{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    z-index: -10;
+    background-image: url('../foto/buda-5-bn.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+#foto3-2text{
+    position: absolute;
+    top: -80%;
+    left: 100px;
+    width: 35%;
+}
+#foto3-2text p{
+    position: relative;
+    top: -300px;
+    color: white;
+    padding: 30px;
+    font-size: 2.2rem;    
+}
+#play3-3{
+    top: 0;
+    position: relative;
+    z-index: 5;
+    margin-right: 15px;
+}
+#play3-3 img{
+    background-color: rgba(238,196,27,.6);
+}
+#play3-3 img:hover{
+    background-color: #EEC41B;
+    cursor: pointer;
+}
+#foto3-2tapa{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    z-index: -8;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    background-image: url('../foto/buda-5-.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+#foto3-2text2{
+    position: absolute;
+    top: -80%;
+    left: 100px;
+    width: 30%;
+}
+#foto3-2text2 p{
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: white;
+}
+#foto3-2peu{
+    position: absolute;
+    color: white;
+    width: 15%;
+    left: 50px;
+    bottom: -110%;
+}
+#foto3-3{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: inherit;
+    bottom: 100%;
+    left: 0;
+    z-index: -10;
+}
+#foto3-3img{
+    width: 100%;
+    position: relative;
+    top: auto;
+    bottom: 0;
+}
+#foto3-3text{
+    position: absolute;
+    top: 120%;
+    right: 100px;
+    width: 33%;
+}
+#foto3-3text .taronga{
+    position: relative;
+    top: 0;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+#foto3-3text .taronga p{
+    color: white;
+    font-size: 1.8rem;
+}
 
 
 

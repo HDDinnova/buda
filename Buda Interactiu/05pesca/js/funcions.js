@@ -207,6 +207,66 @@ function controlMouse(e){
                     });
                 },2000);
                 break;
+            case 210:
+                $('body').off('mousewheel');
+                diapositiva30();
+                setTimeout(function(){
+                    pos=30;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },2000);
+                break;
+            case 30:
+                $('body').off('mousewheel');
+                diapositiva31();
+                setTimeout(function(){
+                    pos=31;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },2000);
+                break;
+            case 31:
+                $('body').off('mousewheel');
+                diapositiva32();
+                setTimeout(function(){
+                    pos=32;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },2000);
+                break;
+            case 32:
+                $('body').off('mousewheel');
+                diapositiva33();
+                setTimeout(function(){
+                    pos=33;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },2000);
+                break;
+            case 33:
+                $('body').off('mousewheel');
+                diapositiva34();
+                setTimeout(function(){
+                    pos=34;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },2000);
+                break;
+            case 34:
+                $('body').off('mousewheel');
+                diapositiva35();
+                setTimeout(function(){
+                    pos=35;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },2000);
+                break;
         }
     } else if(e.deltaY>0) {
         switch (pos) {
@@ -680,13 +740,137 @@ function diapositiva210(){
     $('#foto2-7').delay('200').animate({
         'top': '-0%'
     },trans,'swing');
-    $('#foto2-7text').delay('200').animate({
+    $('#foto2-7text').delay('400').animate({
         'top': '100px'
     },trans,'swing');
-    $('#foto2-7peu').delay('1000').animate({
+    $('#foto2-7peu').delay('600').animate({
         'left': '50px'
     },trans,'swing');    
     $('#apartat3').load('apartat3.html');
+}
+function diapositiva30(){    
+    $('#apartat3').show();
+    $('#foto2-7peu').animate({
+        'left': '-50%'
+    },trans,'swing');
+    $('#foto2-7text').delay('200').animate({
+        'top': '-200%'
+    },trans,'swing');
+    $('#foto2-7').delay('400').animate({
+        'top': '100%'
+    },trans,'swing');
+    $('#foto3-1').delay('400').animate({
+        'top': '0%'
+    },trans,'swing');
+    $('#foto3-1text').delay('600').animate({
+        'top': '40%'
+    },trans,'swing');
+    $('#foto3-1peu').delay('600').animate({
+        'bottom': '10px'
+    },trans,'swing');
+}
+function diapositiva31(){
+    $('#foto3-1peu').animate({
+        'bottom': '-50%'
+    },trans,'swing');
+    $('#foto3-1text').delay('200').animate({
+        'top': '140%'
+    },trans,'swing');
+    $('#foto3-1tapa').delay('400').animate({
+        'opacity': '.6'
+    },trans,'swing');
+    $('#foto3-1text2').delay('600').animate({
+        'top': '35%'
+    },trans,'swing');
+    $('#foto3-1play1').click(function(){
+        $('body').off('mousewheel');
+        $('#videosapartat3').load('apartat3video1.html',function(){
+            $('.videopopup').show();
+        });
+    });
+    $('#foto3-1play2').click(function(){
+        $('body').off('mousewheel');
+        $('#videosapartat3').load('apartat3video2.html',function(){
+            $('.videopopup').show();
+        });
+    });
+}
+function diapositiva32(){
+    $('#foto3-1text2').animate({
+        'top': '-100%'
+    },trans,'swing');
+    $('#foto3-1').delay('200').animate({
+        'top': '100%'
+    },trans,'swing');
+    $('#foto3-2').delay('200').animate({
+        'top': '0%'
+    },trans,'swing');
+    $('#foto3-2text').delay('400').animate({
+        'top': '100px'
+    },trans,'swing');
+    $('#foto3-2text p').delay('600').animate({
+        'top': '0'
+    },trans,'swing');    
+    $('#foto3-2play').click(function(){
+        $('body').off('mousewheel');
+        $('#videosapartat3').load('apartat3video3.html',function(){
+            $('.videopopup').show();
+        });
+    });
+}
+function diapositiva33(){
+    $('#foto3-2play').animate({
+        'top': '300px'
+    },trans,'swing');
+    $('#foto3-2text').delay('200').animate({
+        'top': '100%'
+    },trans,'swing');
+    $('#foto3-2tapa').delay('400').animate({
+        'opacity': '1'
+    },trans,'swing');
+    $('#foto3-2text2').delay('600').animate({
+        'top': '100px'
+    },trans,'swing');
+    $('#foto3-2peu').delay('800').animate({
+        'bottom': '10px'
+    },trans,'swing');
+}
+function diapositiva34(){
+    $('#foto3-2peu').animate({
+        'bottom': '-50%'
+    },trans,'swing');
+    $('#foto3-2text2').delay('200').animate({
+        'top': '110%'
+    },trans,'swing');
+    $('#foto3-2').delay('400').animate({
+        'top': '100%'
+    },trans,'swing');
+    $('#foto3-3').delay('400').animate({
+        'bottom': '0'
+    },trans,'swing');
+    $('#foto3-3text').delay('600').animate({
+        'top': '110px'
+    },trans,'swing');
+    $('#foto3-3play1').click(function(){
+        $('body').off('mousewheel');
+        $('#videosapartat3').load('apartat3video4.html',function(){
+            $('.videopopup').show();
+        });
+    });
+    $('#foto3-3play2').click(function(){
+        $('body').off('mousewheel');
+        $('#videosapartat3').load('apartat3video5.html',function(){
+            $('.videopopup').show();
+        });
+    });
+}
+function diapositiva35(){
+    $('#foto3-3text').animate({
+        'top': '-100%'
+    },trans,'swing');
+    $('#foto3-3').delay('200').animate({
+        'top': '0'
+    },trans,'swing');
 }
 
 // Funcions de video
@@ -694,46 +878,20 @@ function diapositiva210(){
 function tancarvideo1(){
     $('.videopopup').hide();
     $('#videosapartat2').html('');
-    $('#foto2-4play').off('click');
     $('body').on('mousewheel',function(e){
         controlMouse(e);
     });
 }
 function tancarvideo2(){
     $('.videopopup').hide();
-    $('#videosapartat2').html('');
-    $('#foto2-5play').off('click');
+    $('#videosapartat3').html('');
     $('body').on('mousewheel',function(e){
         controlMouse(e);
     });
 }
-function tancarvideo222(){
-    mutexvideo && $('#audio')[0].play();
-    $('.videopopup').hide();
-    $('#videosapartat2').html('');
-    $('body').on('mousewheel',function(e){
-        controlMouse(e);
-    });
-}
-function tancarvideo21(){
-    mutexvideo && $('#audio')[0].play();
-    $('#video2-1 video')[0].pause();
-    diapositiva22();
-    pos=22;
-}
-function tancarvideo31(){
-    if(mutexvideo){
-        $('#audio')[0].play();
-    }
-    $('#video3-1 video')[0].pause();
-    diapositiva32();
-    pos=32;
-}
-function tancarvideo32(){
-    $('#video3-2 video')[0].pause();
-    diapositiva34();
-    pos=34;
-}
+
+
+
 // Funcions fotos
 function drag_start(event){
     var style = window.getComputedStyle(event.target, null);
