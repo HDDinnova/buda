@@ -923,7 +923,6 @@
     min-height: 100vh;
     min-width: 100%;
     position: absolute;
-    top: inherit;
     bottom: 100%;
     left: 0;
     z-index: -10;
@@ -931,7 +930,6 @@
 #foto3-3img{
     width: 100%;
     position: relative;
-    top: auto;
     bottom: 0;
 }
 #foto3-3text{
@@ -950,9 +948,128 @@
     color: white;
     font-size: 1.8rem;
 }
-
-
-
+#foto3-3tapa{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    z-index: -8;
+    opacity: 0;
+    top: 0;
+    left: 0;
+}
+#foto3-3text2{
+    position: absolute;
+    top: 120%;
+    right: 100px;
+    width: 25%;
+    padding: 15px;
+}
+#foto3-3text2 p{
+    color: #F58431;
+    font-size: 1.8rem;
+}
+#foto3-4 video{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    z-index: -10;
+    object-fit: inherit;
+}
+#foto3-4peu{
+    position: absolute;
+    color: white;
+    width: 15%;
+    left: 50px;
+    bottom: -110%;
+    padding: 10px;
+}
+#foto3-5{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    z-index: -10;
+    background-image: url('../foto/Santi111.jpg');
+    background-size: cover;
+    background-position: center top;
+}
+#foto3-5tapa{
+    min-height: 100vh;
+    min-width: 100%;
+    position: relative;
+    z-index: -8;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+}
+#foto3-5text{
+    position: absolute;
+    top: 220%;
+    right: 100px;
+    width: 25%;
+}
+#foto3-5text p{
+    position: relative;
+    top: 0;
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+#foto3-5text img{
+    position: relative;
+    top: 300px;
+    margin-left: 50px;
+    height: 40%;
+}
 #apartat4{display: none;}
+#foto4-1{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    z-index: -10;
+    background-image: url('../foto/buda-96-bn.jpg');
+    background-size: cover;
+}
+#foto4-1text{
+    position: absolute;
+    top: 250%;
+    left: 100px;
+}
+#foto4-1text p{
+    position: relative;
+    top: 0;
+    margin-bottom: 15px;
+    color: white;
+    padding: 30px;
+    font-size: 2rem;
+    width: 28%;
+}
+#foto4-1text h2{
+    position: relative;
+    top: 300px;
+    color: white;
+    padding: 30px;
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 35rem;
+}
+#foto4-1peu{
+    position: absolute;
+    color: white;
+    width: 15%;
+    left: 50px;
+    bottom: -110%;
+}
+
+
+
+
 #apartat5{display: none;}
 #apartat6{display: none;}
