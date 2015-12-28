@@ -691,7 +691,7 @@
     top: 0;
     left: 0;
     color: #CBA01A;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 15px;
 }
 #foto2-6text img{
@@ -710,7 +710,7 @@
     left: 0;
 }
 #foto2-6text2{
-    width: 33%;
+    width: 40%;
     padding: 30px;
     position: absolute;
     top:140%;
@@ -1047,8 +1047,8 @@
     margin-bottom: 15px;
     color: white;
     padding: 30px;
-    font-size: 2rem;
-    width: 28%;
+    font-size: 1.8rem;
+    width: 35%;
 }
 #foto4-1text h2{
     position: relative;
@@ -1063,11 +1063,184 @@
 #foto4-1peu{
     position: absolute;
     color: white;
-    width: 15%;
     left: 50px;
     bottom: -110%;
 }
-
+#foto4-2{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    z-index: -10;
+    background-image: url('../foto/buda-96.jpg');
+    background-size: cover;
+}
+#foto4-2text{
+    position: absolute;
+    top: 110%;
+    left: 100px;
+}
+#foto4-2text p{
+    color: white;
+    padding: 30px;
+    width: 45%;
+}
+#foto4-3{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: -10;
+    background-image: url('../foto/Santi014.jpg');
+    background-size: cover;
+    background-position: center top;
+}
+#foto4-3text{
+    position: absolute;
+    top: 250%;
+    left: 100px;
+}
+#foto4-3text p{
+    position: relative;
+    top: 0;
+    margin-bottom: 15px;
+    color: white;
+    padding: 30px;
+    width: 35%;
+}
+#foto4-3peu{
+    position: absolute;
+    color: white;
+    left: 50px;
+    bottom: -110%;
+}
+#play4-3{
+    top: 100vh;
+    position: relative;
+    z-index: 5;
+}
+#play4-3 img{
+    background-color: rgba(238,196,27,.6);
+}
+#play4-3 img:hover{
+    background-color: #EEC41B;
+    cursor: pointer;
+}
+#foto4-4{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: -10;
+    background-image: url('../foto/Santi121.jpg');
+    background-size: cover;
+    background-position: center bottom;
+}
+.videopopup #videosapartat4{
+    display: block;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 55%;
+}
+#videosapartat4 video{
+    width: 95%;
+}
+#videosapartat4 .groc{
+    position: absolute;
+    margin-left: -200px;
+    margin-top: -100px;
+    width: 240px;
+    padding: 5px;
+}
+#videosapartat4 .blau{
+    padding: 5px;
+    display: block;
+    width: 30px;
+    float: right;
+    cursor: pointer;
+}
+#videosapartat4 .blau img{
+    height: 20px;
+}
+#foto4-5{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: -10;
+    background-image: url('../foto/SaP_584_06-1.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+#foto4-5text{
+    position: absolute;
+    top: 250%;
+    right: 100px;
+    width: 35%;
+}
+#foto4-5text p{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #888D57;
+    padding: 30px;
+}
+#foto4-5peu{
+    padding: 10px;
+    position: absolute;
+    color: white;
+    left: 50px;
+    bottom: -110%;
+}
+#foto4-6{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -10;
+    background-image: url('../foto/SaP_584_06-2.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+#foto4-6text{
+    position: absolute;
+    top: 250%;
+    right: 100px;
+    width: 35%;
+}
+#foto4-6text p{
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #888D57;
+    padding: 30px;
+}
+#foto4-6peu{
+    padding: 10px;
+    position: absolute;
+    color: white;
+    left: 50px;
+    bottom: -110%;
+}
+#foto4-6 img{
+    position: absolute;
+    z-index: -5;
+    width: 50%;
+    transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+    -o-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    top: -80%;
+    left: -80%;
+    cursor: pointer;
+}
 
 
 
