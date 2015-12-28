@@ -1108,9 +1108,6 @@ function diapositiva45(){
     $('#foto4-5text').delay('200').animate({
         'top': '-100%'
     },trans,'swing');
-    $('#foto4-5').delay('400').animate({
-        'top': '-100%'
-    },trans,'swing');
     $('#foto4-6').delay('400').animate({
         'opacity': '1'
     },trans,'swing');
@@ -1118,13 +1115,13 @@ function diapositiva45(){
         'top': '10%'
     },trans,'swing');
     var angle=5;
-    var posi=18;
+    var posi=10;
     var pausa=0;
     z1=-4;
     $('#foto4-6 img').rotate('40deg');
     $('#foto4-6 img').each(function(){
         $(this).delay(pausa).animate({
-            'top':'15%',
+            'top':'10%',
             'left':posi+'%',
             rotate: angle+'deg'
         },trans);
@@ -1140,6 +1137,7 @@ function diapositiva45(){
             zi++;
         });
     });
+    $('#apartat5').load('apartat5.html');
 }
 
 // Funcions de video

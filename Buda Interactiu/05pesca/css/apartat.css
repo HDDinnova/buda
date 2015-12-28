@@ -1231,7 +1231,8 @@
 #foto4-6 img{
     position: absolute;
     z-index: -5;
-    width: 50%;
+    max-width: 40%;
+    max-height: 85%;
     transform: rotate(40deg);
     -webkit-transform: rotate(40deg);
     -moz-transform: rotate(40deg);
@@ -1241,8 +1242,48 @@
     left: -80%;
     cursor: pointer;
 }
-
-
-
 #apartat5{display: none;}
+#foto5-1{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    z-index: -10;
+    background-image: url('../foto/Santi115.jpg');
+    background-size: cover;
+}
+#foto5-1text{
+    position: absolute;
+    top: 250%;
+    left: 100px;
+}
+#foto5-1text p{
+    position: relative;
+    top: 0;
+    margin-bottom: 15px;
+    color: white;
+    padding: 30px;
+    font-size: 1.8rem;
+    width: 35%;
+}
+#foto5-1text h2{
+    position: relative;
+    top: 300px;
+    color: white;
+    padding: 30px;
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 35rem;
+}
+#foto5-1peu{
+    position: absolute;
+    color: white;
+    left: 50px;
+    bottom: -110%;
+}
+
+
+
 #apartat6{display: none;}
