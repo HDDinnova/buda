@@ -1247,7 +1247,7 @@
     min-height: 100vh;
     min-width: 100%;
     position: absolute;
-    top: -100%;
+    top: 100%;
     left: 0;
     z-index: -10;
     background-image: url('../foto/Santi115.jpg');
@@ -1260,28 +1260,103 @@
 }
 #foto5-1text p{
     position: relative;
-    top: 0;
-    margin-bottom: 15px;
+    top: 600px;
+    margin-bottom: 10px;
     color: white;
     padding: 30px;
     font-size: 1.8rem;
-    width: 35%;
+    width: 43%;
 }
 #foto5-1text h2{
     position: relative;
-    top: 300px;
+    top: 600px;
     color: white;
     padding: 30px;
     font-size: 6rem;
     text-transform: uppercase;
     font-weight: 600;
-    width: 35rem;
+    width: 61rem;
 }
 #foto5-1peu{
     position: absolute;
     color: white;
     left: 50px;
     bottom: -110%;
+}
+#play5-1{
+    position: relative;
+    top: 0;
+    z-index: 5;
+    margin-bottom: 10px;
+}
+#play5-1 img{
+    background-color: rgba(238,196,27,.6);
+}
+#play5-1 img:hover{
+    background-color: #EEC41B;
+    cursor: pointer;
+}
+.videopopup #videosapartat5{
+    display: block;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 55%;
+}
+#videosapartat5 video{
+    width: 95%;
+}
+#videosapartat5 .groc{
+    position: absolute;
+    margin-left: -200px;
+    margin-top: -100px;
+    width: 240px;
+    padding: 5px;
+}
+#videosapartat5 .blau{
+    padding: 5px;
+    display: block;
+    width: 30px;
+    float: right;
+    cursor: pointer;
+}
+#videosapartat5 .blau img{
+    height: 20px;
+}
+#foto5-1tapa{
+    min-height: 100vh;
+    min-width: 100%;
+    position: relative;
+    z-index: -8;
+    opacity: 0;
+    top: 0;
+    left: 0;
+}
+#foto5-1text2{
+    position: absolute;
+    top: -240%;
+    left: 100px;
+}
+#foto5-1text2 p{
+    position: relative;
+    top: -300px;
+    margin-bottom: 10px;
+    color: #CD5D42;
+    padding: 15px;
+    font-size: 1.6rem;
+    width: 45%;
+}
+#play5-2{
+    position: relative;
+    top: 0;
+    z-index: 5;
+}
+#play5-2 img{
+    background-color: rgba(102,168,200,.6);
+}
+#play5-2 img:hover{
+    background-color: #66A8C8;
+    cursor: pointer;
 }
 
 
