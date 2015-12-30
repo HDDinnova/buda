@@ -450,20 +450,6 @@
     right: -80%;
     cursor: pointer;
 }
-.revista{
-    min-height: 100vh;
-    min-width: 100%;
-    position: absolute;
-    background-color: rgba(0,0,0,.8);
-    z-index: 1000;
-    opacity: 0;
-}
-.revista img{
-    max-height: 80vh;
-    max-width: 80%;
-    display: block;
-    margin: 15% auto auto auto;    
-}
 #foto2-3{
     min-height: 100vh;
     min-width: 100%;
@@ -1360,130 +1346,19 @@
     font-size: 1.6rem;
     width: 45%;
 }
-.play5{
+#play5-2{
     position: relative;
+    top: 0;
     z-index: 5;
-    margin-right: 10px;
 }
-.play5 img{
+#play5-2 img{
     background-color: rgba(102,168,200,.6);
 }
-.play5 img:hover{
+#play5-2 img:hover{
     background-color: #66A8C8;
     cursor: pointer;
 }
-#play5-2{
-    top: -300px;
-}
-#play5-3{
-    top: 0;
-}
+
+
+
 #apartat6{display: none;}
-#foto6-1{
-    min-height: 100vh;
-    min-width: 100%;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: -10;
-    background-image: url('../foto/Santi096.jpg');
-    background-size: cover;
-}
-#foto6-1text{
-    position: absolute;
-    top: 150%;
-    left: 100px;
-}
-#foto6-1text p{
-    position: relative;
-    top: 0;
-    margin-bottom: 10px;
-    color: white;
-    padding: 30px;
-    font-size: 1.4rem;
-    width: 43%;
-}
-#foto6-1text h2{
-    position: relative;
-    top: 600px;
-    color: white;
-    padding: 30px;
-    font-size: 5.5rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    width: 89rem;
-}
-#foto6-1peu{
-    position: absolute;
-    color: white;
-    left: 50px;
-    bottom: -110%;
-}
-.play6{
-    position: relative;
-    z-index: 5;
-    margin-right: 10px;
-}
-.play6 img{
-    background-color: rgba(238,196,27,.6);
-}
-.play6 img:hover{
-    background-color: #EEC41B;
-    cursor: pointer;
-}
-#play6-1{
-    top: 600px;
-}
-#play6-2{
-    top: 600px;
-}
-.videopopup #videosapartat6{
-    display: block;
-    margin-top: 100px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 55%;
-}
-#videosapartat6 video{
-    width: 95%;
-}
-#videosapartat6 .groc{
-    position: absolute;
-    margin-left: -200px;
-    margin-top: -100px;
-    width: 240px;
-    padding: 5px;
-}
-#videosapartat6 .blau{
-    padding: 5px;
-    display: block;
-    width: 30px;
-    float: right;
-    cursor: pointer;
-}
-#videosapartat6 .blau img{
-    height: 20px;
-}
-#foto6-1text2{
-    position: absolute;
-    top: 150%;
-    left: 100px;
-}
-#foto6-1text2 p{
-    position: relative;
-    top: 0;
-    margin-bottom: 10px;
-    color: white;
-    padding: 15px;
-    font-size: 1.3rem;
-    width: 35%;
-}
-.foto6-1img{
-    min-height: 100vh;
-    min-width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -9;
-    opacity: 0;
-}
