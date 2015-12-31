@@ -201,6 +201,7 @@
     left: 0;
     z-index: -5;
 }
+
 #fartet img{
     position: relative;
     margin-bottom: 15px;
@@ -231,6 +232,77 @@
 #barb p strong{
     text-transform: uppercase;
 }
+#llisa img{
+    position: relative;
+    margin-bottom: 15px;
+    left: -150%;
+    width: 100%;
+    /*display: none;*/
+}
+#llisa p{
+    position: relative;
+    width: 20rem;
+    padding: 15px;
+    left: -100%;
+    /*display: none;*/
+}
+#llisa p strong{
+    text-transform: uppercase;
+}
+#llobarro img{
+    position: relative;
+    margin-bottom: 15px;
+    right: -150%;
+    width: 100%;
+    /*display: none;*/
+}
+#llobarro p{
+    position: relative;
+    width: 20rem;
+    padding: 15px;
+    right: -100%;
+    /*display: none;*/
+}
+#llobarro p strong{
+    text-transform: uppercase;
+}
+#anguila img{
+    position: relative;
+    margin-bottom: 15px;
+    left: -150%;
+    width: 100%;
+    /*display: none;*/
+    top: -150px;
+}
+#anguila p{
+    position: relative;
+    width: 20rem;
+    padding: 15px;
+    left: -100%;
+    /*display: none;*/
+    top: -150px;
+}
+#anguila p strong{
+    text-transform: uppercase;
+}
+#orada img{
+    position: relative;
+    margin-bottom: 15px;
+    right: -150%;
+    width: 100%;
+    /*display: none;*/
+}
+#orada p{
+    position: relative;
+    width: 20rem;
+    padding: 15px;
+    right: -100%;
+    /*display: none;*/
+}
+#orada p strong{
+    text-transform: uppercase;
+}
+
 #foto1-5{
     min-height: 100vh;
     min-width: 100%;
@@ -457,12 +529,13 @@
     background-color: rgba(0,0,0,.8);
     z-index: 1000;
     opacity: 0;
+    display: none;
 }
 .revista img{
     max-height: 80vh;
     max-width: 80%;
     display: block;
-    margin: 15% auto auto auto;    
+    margin: 100px auto auto auto;
 }
 #foto2-3{
     min-height: 100vh;

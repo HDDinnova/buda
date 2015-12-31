@@ -5914,8 +5914,8 @@ button.close {
 .menu {
   background-color: #333333;
   top: 0px;
-  right: -285px;  /* start off behind the scenes */
-  height: 100vh;
+  right: -285px;/* start off behind the scenes */
+  height: 100%;
   position: fixed;
   width: 285px;
   z-index: 9999;
@@ -5938,7 +5938,7 @@ button.close {
     margin-right: 5px;
     margin-left: 5px;
     overflow-y: scroll;
-    padding-bottom: 15px;
+    padding-bottom: 50px;
     padding-left: 5px;
     padding-right: 5px;
 }
