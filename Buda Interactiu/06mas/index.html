@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible">
+        <title>Buda, l'illa del Delta</title>
+        <meta name="description" content="Documental interactiu sobre Buda, la illa del Delta">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="../css/estil.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/apartat.css" rel="stylesheet" type="text/css"/>
+        
+        <script src="../js/jquery-2.1.4.min.js" type="text/javascript"></script>
+    </head>
+    <body ondragover="drag_over(event)" ondrop="drop(event)">
+        <nav class="navbar navbar-default"></nav>
+        <!--Fi capçalera-->
+        <audio loop id="audio">
+            <source src="../musica/Buda Frag 6 de 7.mp3" type="audio/mpeg">
+        </audio>
+        <div id="m"></div>
+        <script>
+            $('#m').load('../menu/menu.html',function(){
+                $('nav').load('../menu/menusuperior.html',function(){
+                    menu();
+                });                
+            });
+        </script>
+        <div class="container" id="apartat1">
+            <div id="foto1-1">
+                <div id="foto1-1text">
+                    <h2 class="taronga">El Mas de Buda</h2>                
+                </div>
+                <p id="foto1-1peu">Foto: Salvador Maluquer</p>
+                <div class="scroll">
+                    <img src="img/scroll_taronga.png" alt="Fes scroll per continuar"/>
+                </div>
+            </div>
+            <div id="foto1-2">
+                <div id="foto1-2text">
+                    <p class="taronga">
+                        Tothom que ha viscut o ha penetrat algun cop dins l’illa recorda de manera especial el Mas. És d’aquelles construccions que generen una atracció particular, per la 
+                        seva blancor, per la seva senzillesa i puresa en les formes, i pel seu entorn.
+                    </p>                
+                </div>
+                <p id="foto1-2peu">Foto: Guillermo Barberà</p>
+            </div>
+            <div id="foto1-3text">
+                <div class="col-md-3">
+                    <img src="img/marca1.png" alt="icona gràfica"/>
+                </div>
+                <div class="col-md-9">
+                    <p>
+                        La fesomia del gran mas de Buda i les seves parets emblanquinades són mediterrànies, però la construcció d’alguns elements annexes, com la capella, i l’entorn del 
+                        palmerar que l’abraça, li donen un toc colonial, d’illa més aviat tropical que mediterrània. 
+                    </p>
+                </div>                                    
+            </div>
+            <p id="foto1-3peu">Arxiu família Borés<br>(gentilesa Museu de les Terres de l’Ebre).</p>
+            <div id="foto1-3"></div>
+            <div id="foto1-3b"></div>
+            <div id="foto1-4text">
+                <p>
+                    Ubicat a 100 m del llit del riu, està envoltat per arrossars. S’hi arriba després d’un màgic camí de terra, coronat per eucaliptus i palmeres. El caràcter exòtic que 
+                    pren tot aquest entorn reforça el sentiment d’evasió que hom sent en endinsar-se cap al mas.
+                </p>                                  
+            </div>
+            <p id="foto1-4peu">Arxiu família Borés<br>(gentilesa Museu de les Terres de l’Ebre).</p>
+            <div id="foto1-4"></div>
+            <div id="foto1-4b"></div>
+            <div id="foto1-4c"></div>
+            <div id="foto1-5text">
+                <p class="blanc">
+                    Segurament hi va haver una primera construcció originària del mas actual des que tenim notícies dels primers propietaris de l’illa, a partir de l’últim terç del segle 
+                    XVIII. La seva situació privilegiada prop de les lleres del riu Ebre, des del braç de Migjorn (un dels braços que rodeixaven l’illa en segles anteriors, avui ja inactiu) 
+                    i des del braç del nord, fa pensar que a partir d'aquesta construcció originària es farien posteriors arranjaments i ampliacions per part dels propietaris que ha 
+                    vingut tenint l’illa.
+                </p>                                  
+            </div>
+            <p id="foto1-5peu">Arxiu família Borés<br>(gentilesa Museu de les Terres de l’Ebre).</p>
+            <div id="foto1-5"></div>
+            <div id="foto1-5b"></div>
+        </div>
+        <div class="videopopup">
+            <div id="videos"></div>
+        </div>
+    
+    <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js/funcions.js" type="text/javascript"></script>
+    <script src="js/jquery.mousewheel.min.js" type="text/javascript"></script>
+    <script src="js/jquery-css-transform.js" type="text/javascript"></script>
+    <script src="js/jquery.rotate.js" type="text/javascript"></script>
+    <script src="../js/jquery.color.js" type="text/javascript"></script>
+    <script src="../js/menu.js" type="text/javascript"></script>
+    <script>
+        var pos = 10;
+        $(window).load(function(){
+            diapositiva1();
+        });
+    </script>
+    </body>
+</html>

@@ -1,0 +1,265 @@
+.container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+.videopopup{
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgba(0,0,0,.7);
+}
+.videopopup #videos{
+    display: block;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 55%;
+}
+#videos video{
+    width: 95%;
+}
+#videos .groc{
+    position: absolute;
+    margin-left: -200px;
+    margin-top: -100px;
+    width: 240px;
+    padding: 5px;
+}
+#videos .blau{
+    padding: 5px;
+    display: block;
+    width: 30px;
+    float: right;
+    cursor: pointer;
+}
+#videos .blau img{
+    height: 20px;
+}
+.scroll{
+    position: absolute;
+    width: 100vw;
+    bottom: -10%;
+    left: 43%;
+    z-index: 0;
+}
+.scroll img{
+    display: block;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+#foto1-1{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    z-index: -10;
+    background-image: url('../foto/_MG_8112.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+#foto1-1text{
+    position: absolute;
+    bottom: 150%;
+    left: 100px;
+    display: none;
+}
+#foto1-1text h2{
+    position: relative;
+    color: white;
+    padding: 30px;
+    font-size: 9rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 86rem;
+}
+#foto1-1peu{
+    position: absolute;
+    color: white;
+    width: 15%;
+    left: 100px;
+    bottom: -50%;
+}
+#foto1-2{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    z-index: -10;
+    background-image: url('../foto/buda-2-.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+#foto1-2text{
+    position: absolute;
+    top: -150%;
+    left: 100px;
+    width: 35%;
+}
+#foto1-2text p{
+    position: relative;
+    color: white;
+    padding: 30px;
+    font-size: 2rem;
+}
+#foto1-2peu{
+    position: absolute;
+    color: white;
+    width: 15%;
+    left: -50%;
+    bottom: 10px;
+}
+#foto1-3{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    z-index: -10;
+    background-image: url('../foto/Santi087.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+#foto1-3text{
+    position: absolute;
+    top: -150%;
+    right: 100px;
+    width: 50%;
+}
+#foto1-3text img{
+    width: 100%;
+}
+#foto1-3text p{
+    color: #F58431;
+    padding: 30px;
+    font-size: 3rem;
+    font-weight: 600;
+}
+#foto1-3peu{
+    position: absolute;
+    color: white;
+    width: 15%;
+    left: -50%;
+    bottom: 10px;
+}
+#foto1-3b{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    bottom:0;
+    left: -100%;
+    z-index: -10;
+    background-image: url('../foto/Santi141.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+#foto1-4{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    z-index: -10;
+    background-image: url('../foto/Santi228.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+#foto1-4text{
+    position: absolute;
+    top: -150%;
+    right: 100px;
+    width: 35%;
+}
+#foto1-4text p{
+    color: #F58431;
+    padding: 30px;
+    font-size: 3rem;
+    font-weight: 600;
+}
+#foto1-4peu{
+    position: absolute;
+    color: white;
+    width: 15%;
+    left: -50%;
+    bottom: 10px;
+}
+#foto1-4b{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    bottom:0;
+    left: -100%;
+    z-index: -10;
+    background-image: url('../foto/Santi148.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+#foto1-4c{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    bottom:0;
+    left: -100%;
+    z-index: -10;
+    background-image: url('../foto/Santi156.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+#foto1-5{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    z-index: -10;
+    background-image: url('../foto/Santi163_taronga.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+#foto1-5text{
+    position: absolute;
+    top: -150%;
+    right: 100px;
+    width: 35%;
+}
+#foto1-5text p{
+    color: #F58431;
+    padding: 30px;
+    font-size: 1.8rem;
+}
+#foto1-5peu{
+    position: absolute;
+    color: #F58431;
+    width: 15%;
+    left: -50%;
+    bottom: 10px;
+}
+#foto1-5b{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    bottom:0;
+    left: -100%;
+    z-index: -10;
+    background-image: url('../foto/Santi065.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+#apartat2{display: none;}
+#apartat3{display: none;}
+#apartat4{display: none;}
