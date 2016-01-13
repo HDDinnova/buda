@@ -529,6 +529,13 @@ function diapositiva20(){
     $('#foto1-7peu p').delay('800').animate({
         'left': '0'
     },trans,'swing');
+    $('#foto1-7recull').click(function(){
+        $("#recull1-7fotozoom").elevateZoom({scrollZoom : true});
+        $("#recull1-7foto").show();
+    });
+    $("#recull1-7foto").click(function(){
+        $("#recull1-7foto").hide();
+    });
 }
 
 // Funcions de video

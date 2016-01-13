@@ -301,26 +301,44 @@
     position: absolute;
     left: -50%;
     bottom: 10px;
+    width: 250px;
 }
 #recull1-7{
     position: relative;
     margin-bottom: 10px;
-    margin-left: 15%;
+    margin-left: 255px;
     z-index: 5;
     left: 0;
 }
 #recull1-7 img{
-    background-color: rgba(245,132,49,.6);
+    background-color: rgba(102,168,200,.6);
 }
 #recull1-7 img:hover{
-    background-color: #F58431;;
+    background-color: #66A8C8;
     cursor: pointer;
 }
 #foto1-7peu p{
     position: relative;
     color: white;
-    width: 15%;
     left: -300px;
+    padding: 5px;
+}
+#recull1-7foto{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(0,0,0,.7);
+    display: none;
+}
+#recull1-7fotozoom{
+    display: block;
+    height: 80vh;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
