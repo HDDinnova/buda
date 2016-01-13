@@ -257,6 +257,71 @@
     background-size: cover;
     background-position: center center;
 }
+#foto1-6{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    z-index: -10;
+    background-image: url('../foto/Santi130.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+#foto1-6text{
+    position: absolute;
+    top: -150%;
+    right: 100px;
+    width: 35%;
+}
+#foto1-6text p{
+    color: white;
+    padding: 30px;
+    font-size: 1.8rem;
+}
+#foto1-6peu{
+    position: absolute;
+    color: white;
+    width: 15%;
+    left: -50%;
+    bottom: 10px;
+}
+#foto1-7{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    z-index: -10;
+    background-image: url('../foto/Santi064_taronga.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+#foto1-7peu{
+    position: absolute;
+    left: -50%;
+    bottom: 10px;
+}
+#recull1-7{
+    position: relative;
+    margin-bottom: 10px;
+    margin-left: 15%;
+    z-index: 5;
+    left: 0;
+}
+#recull1-7 img{
+    background-color: rgba(245,132,49,.6);
+}
+#recull1-7 img:hover{
+    background-color: #F58431;;
+    cursor: pointer;
+}
+#foto1-7peu p{
+    position: relative;
+    color: white;
+    width: 15%;
+    left: -300px;
+}
 
 
 
