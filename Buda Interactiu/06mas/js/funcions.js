@@ -116,6 +116,16 @@ function controlMouse(e){
                     });
                 },2000);
                 break;
+            case 20:
+                $('body').off('mousewheel');
+                diapositiva21();
+                setTimeout(function(){
+                    pos=21;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },2000);
+                break;
             default :
                 $('body').on('mousewheel',function(e){
                     controlMouse(e);
@@ -560,6 +570,7 @@ function diapositiva20(){
         'left': '0'
     },trans,'swing');
     $('#foto1-7recull').click(function(){
+        $('body').off('mousewheel');
         $("#recull1-7fotozoom").elevateZoom({
             scrollZoom : true,
             zoomType: "lens",
@@ -570,6 +581,44 @@ function diapositiva20(){
     });
     $("#recull1-7foto").click(function(){
         $("#recull1-7foto").hide();
+        $('body').on('mousewheel',function(e){
+            controlMouse(e);
+        });
+    });
+}
+function diapositiva21(){
+    $('#foto1-7peu p').animate({
+        'left': '-300px'
+    },trans,'swing');
+    $('#foto1-7peu').delay('200').animate({
+        'left': '-50%'
+    },trans,'swing');
+    $('#foto1-7').delay('400').animate({
+        'bottom': '-100%'
+    },trans,'swing');
+    $('#foto1-8').delay('400').animate({
+        'bottom': '0'
+    },trans,'swing');
+    $('#foto1-8text').delay('600').animate({
+        'top': '30%'
+    },trans,'swing');
+    $('#video1-8').delay('800').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#fotos1-8').delay('1000').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#recull1-8').delay('1200').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto1-8peu').delay('1400').animate({
+        'left': '100px'
+    },trans,'swing');
+    $('#video1-8').click(function(){
+        $('body').off('mousewheel');
+        $('#videos').load('apartat1video1.html',function(){
+            $('.videopopup').show();
+        });        
     });
 }
 
