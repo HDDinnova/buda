@@ -620,6 +620,17 @@ function diapositiva21(){
             $('.videopopup').show();
         });        
     });
+    $('#fotos1-8').click(function(){
+        $('body').off('mousewheel');
+        $('#fotos1-8fotos').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            adaptiveHeight: true
+        });
+        $('#fotos1-8fotos').show();
+    });
 }
 
 // Funcions de video
