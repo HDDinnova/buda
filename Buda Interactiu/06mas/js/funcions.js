@@ -587,6 +587,8 @@ function diapositiva20(){
     });
 }
 function diapositiva21(){
+    $('#fotos1-8slider').slick();
+    $('.slick-track img:first').css('width','90vw');
     $('#foto1-7peu p').animate({
         'left': '-300px'
     },trans,'swing');
@@ -622,14 +624,10 @@ function diapositiva21(){
     });
     $('#fotos1-8').click(function(){
         $('body').off('mousewheel');
-        $('#fotos1-8fotos').slick({
-            dots: true,
-            infinite: true,
-            speed: 300,
-            slidesToShow: 1,
-            adaptiveHeight: true
-        });
         $('#fotos1-8fotos').show();
+        $('#fotos1-8fotos .blau').click(function(){
+            $('#fotos1-8fotos').hide();
+        });
     });
 }
 
