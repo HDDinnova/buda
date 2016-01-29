@@ -451,6 +451,53 @@
     margin-left: auto;
     margin-right: auto;
 }
+#foto1-9{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    z-index: -10;
+    background-image: url('../foto/Santi161.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+#foto1-9text{
+    position: absolute;
+    top: -150%;
+    right: 100px;
+    width: 40%;
+}
+#foto1-9text p{
+    color: white;
+    padding: 30px;
+    font-size: 1.8rem;
+}
+#foto1-9peu{
+    position: absolute;
+    color: white;
+    width: 15%;
+    left: -50%;
+    bottom: 10px;
+}
+#foto1-9tapa{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -10;
+    opacity: 0;
+}
+#foto1-9 .f{
+    position: absolute;
+    z-index: -5;
+    max-width: 45vw;
+    max-height: 75vh;
+    top: -80%;
+    left: -80%;
+    cursor: pointer;
+}
 
 
 
