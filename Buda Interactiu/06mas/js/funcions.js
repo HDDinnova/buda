@@ -2,7 +2,7 @@ var trans = 1200;
 var sona=true;
 var slider1=false;
 var mutexvideo=false;
-var zi=-4;
+var zi=4;
 $('#bso').click(function(){
     if(sona){
         $('#audio')[0].pause();
@@ -270,6 +270,16 @@ function controlMouse(e){
                 diapositiva21b();
                 setTimeout(function(){
                     pos=21;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },2000);
+                break;
+            case 23:
+                $('body').off('mousewheel');
+                diapositiva22b();
+                setTimeout(function(){
+                    pos=22;
                     $('body').on('mousewheel',function(e){
                         controlMouse(e);
                     });
@@ -778,6 +788,23 @@ function diapositiva22(){
         'top': '55%'
     },trans,'swing');
     $('#foto1-9peu').delay('1400').animate({
+        'left': '100px'
+    },trans,'swing');
+}
+function diapositiva22b(){
+    var pausa=0;
+    $('#foto1-9 .f').each(function(){
+        $(this).delay(pausa).animate({
+            'top':'-80%',
+            'left':'-80%',
+            rotate: '40deg'
+        },trans);
+        pausa+=150;
+    });
+    $('#foto1-9tapa').delay('800').animate({
+        'opacity': '0'
+    },trans,'swing');
+    $('#foto1-9peu').delay('1000').animate({
         'left': '100px'
     },trans,'swing');
 }
