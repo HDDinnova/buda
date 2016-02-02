@@ -498,6 +498,88 @@
     left: -80%;
     cursor: pointer;
 }
+#foto1-10{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    z-index: -10;
+    background-image: url('../foto/buda-46.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+#foto1-10text{
+    position: absolute;
+    top: -50%;
+    right: 100px;
+    width: 35%;
+}
+#foto1-10text p{
+    color: #F58431;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+#foto1-10peu{
+    position: absolute;
+    color: white;
+    width: 15%;
+    left: -50%;
+    bottom: 10px;
+}
+#foto1-11{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    z-index: -10;
+    background-image: url('../foto/Santi032.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+#foto1-11text{
+    position: absolute;
+    top: -50%;
+    left: 100px;
+    width: 35%;
+}
+#foto1-11text p{
+    position: relative;
+    top: -300px;
+    color: white;
+    font-size: 2rem;
+    padding: 20px;
+}
+#foto1-11peu{
+    position: absolute;
+    color: white;
+    width: 15%;
+    left: -50%;
+    bottom: 10px;
+}
+#foto1-11play{
+    position: relative;
+    margin-left: 100%;
+    z-index: 5;
+}
+#foto1-11play img{
+    background-color: rgba(238,196,27,.6);
+    margin-right: 15px;
+}
+#foto1-11play img:hover{
+    background-color: #EEC41B;
+    cursor: pointer;
+}
+#video1-11-1{
+    position: relative;
+    top: -300px;
+    float: left;
+}
+#video1-11-2{
+    position: relative;
+    top: 0;
+}
 
 
 
