@@ -542,8 +542,8 @@
     min-height: 100vh;
     min-width: 100%;
     position: absolute;
-    bottom: 100%;
-    left: 0;
+    bottom: 0;
+    left: -100%;
     z-index: -10;
     background-image: url('../foto/Santi030.jpg');
     background-size: cover;
@@ -610,7 +610,7 @@
 }
 #foto1-12text p{
     position: relative;
-    top: -300px;
+    top: 0px;
     color: white;
     font-size: 2rem;
     padding: 20px;
@@ -641,6 +641,82 @@
 }
 #foto1-12play2{
     top: -300px;
+}
+#foto1-12-2{
+    top: -300px;
+    margin-right: 95px;
+}
+#fotos1-12fotos{
+    display: none;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,.6);
+    z-index: 5;
+}
+#fotos1-12fotos .blau{
+    position: absolute;
+    top: 10vh;
+    right: 2.5vw;
+    display: block;
+    width: 30px;
+    float: right;
+    cursor: pointer;
+    padding: 5px;
+}
+#fotos1-12fotos .blau img{
+    height: 20px;
+}
+#fotos1-12fotos .groc{
+    position: absolute;
+    left: 3vw;
+    top: 85vh;
+    width: 240px;
+    padding: 5px;
+}
+#fotos1-12slider{
+    height: 80vh;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-top: 10vh;
+}
+#foto1-13{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    z-index: -10;
+    background-image: url('../foto/Santi124.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+#foto1-13peu{
+    position: absolute;
+    color: white;
+    width: 15%;
+    left: -50%;
+    bottom: 10px;
+}
+#foto1-13tapa{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -10;
+    opacity: 0;
+}
+#foto1-13text{
+    position: absolute;
+    top: 210%;
+    left: 100px;
+    width: 35%;
+}
+#foto1-13text p{
+    color: white;
+    font-size: 3.2rem;
+    font-weight: 600;
 }
 
 

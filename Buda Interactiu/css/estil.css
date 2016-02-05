@@ -134,6 +134,9 @@
     margin-right: auto;
     margin-bottom: 30px;
 }
+#s{
+    height: 170px !important;
+}
 /* Fi estil popup credits */
 html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
