@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible">
+        <title>Buda, l'illa del Delta</title>
+        <meta name="description" content="Documental interactiu sobre Buda, la illa del Delta">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="../css/estil.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/apartat.css" rel="stylesheet" type="text/css"/>
+        
+        <link href="css/slick.css" rel="stylesheet" type="text/css"/>
+        <link href="css/slick-theme.css" rel="stylesheet" type="text/css"/>
+        
+        <script src="../js/jquery-2.1.4.min.js" type="text/javascript"></script>
+    </head>
+    <body ondragover="drag_over(event)" ondrop="drop(event)">
+        <nav class="navbar navbar-default"></nav>
+        <!--Fi capçalera-->
+        <audio loop id="audio">
+            <source src="../musica/Buda Frag 7 de 7.mp3" type="audio/mpeg">
+        </audio>
+        <div id="m"></div>
+        <script>
+            $('#m').load('../menu/menu.html',function(){
+                $('nav').load('../menu/menusuperior.html',function(){
+                    menu();
+                });                
+            });
+        </script>
+        <div class="container" id="apartat1">
+            <div id="foto1-1">
+                <div id="foto1-1text">
+                    <h2 class="taronga">El Mas de Buda</h2>                
+                </div>
+                <p id="foto1-1peu">Foto: Salvador Maluquer</p>
+                <div class="scroll">
+                    <img src="img/scroll_taronga.png" alt="Fes scroll per continuar"/>
+                </div>
+            </div>
+        </div>
+            
+            
+            
+        <div class="videopopup">
+            <div id="videos"></div>
+        </div>
+    
+    <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js/funcions.js" type="text/javascript"></script>
+    <script src="js/jquery.mousewheel.min.js" type="text/javascript"></script>
+    <script src="js/jquery-css-transform.js" type="text/javascript"></script>
+    <script src="js/jquery.rotate.js" type="text/javascript"></script>
+    <script src="../js/jquery.color.js" type="text/javascript"></script>
+    <script src="js/jquery.elevateZoom-3.0.8.min.js" type="text/javascript"></script>
+    <script src="js/slick.min.js" type="text/javascript"></script>
+    <script src="../js/menu.js" type="text/javascript"></script>
+    <script>
+        var pos = 10;
+        $(window).load(function(){
+            diapositiva1();
+        });
+    </script>
+    </body>
+</html>
