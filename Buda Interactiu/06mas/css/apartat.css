@@ -1021,6 +1021,93 @@
     margin-left: auto;
     margin-right: auto;
 }
+#foto1-17video{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    top: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+#foto1-17video video{
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: inherit;
+}
+#foto1-17videopeu{
+    position: absolute;
+    color: white;
+    width: 15%;
+    left: 50px;
+    bottom: -110%;
+    padding: 10px;
+}
+#foto1-18{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: -10;
+    background-image: url('../foto/Santi155.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+#foto1-18text{
+    position: absolute;
+    top: -190%;
+    left: 100px;
+    width: 35%;
+}
+#foto1-18text div{
+    color: white;
+    font-size: 1.8rem;
+    padding: 15px;
+}
+#foto1-18text blockquote p{
+    font-size: 1.6rem;
+}
+#foto1-18text blockquote footer{
+    font-size: 1.4rem;
+    color: white
+}
+#foto1-18peu{
+    position: absolute;
+    color: white;
+    width: 15%;
+    left: -50%;
+    bottom: 10px;
+}
+#foto1-19{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: -10;
+    background-image: url('../foto/buda-70.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+#foto1-19text{
+    position: absolute;
+    top: -190%;
+    right: 100px;
+    width: 35%;
+}
+#foto1-19text p{
+    color: white;
+    font-size: 1.8rem;
+    padding: 15px;
+}
+#foto1-19peu{
+    position: absolute;
+    color: white;
+    width: 15%;
+    left: -50%;
+    bottom: 10px;
+}
 
 
 
