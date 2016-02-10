@@ -58,6 +58,57 @@
     margin-right: auto;
     margin-bottom: auto;
 }
+.boto{    
+    position: relative;
+    margin-bottom: 10px;
+    z-index: 5;
+}
+.boto img{
+    opacity: .8;
+}
+.boto img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.slider{
+    display: none;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,.6);
+    z-index: 5;
+}
+.slider .blau{
+    position: absolute;
+    top: 10vh;
+    right: 2.5vw;
+    display: block;
+    width: 30px;
+    float: right;
+    cursor: pointer;
+    padding: 5px;
+}
+.slider .blau img{
+    height: 20px;
+}
+.slider .groc{
+    position: absolute;
+    left: 3vw;
+    top: 85vh;
+    width: 240px;
+    padding: 5px;
+}
+.sliderfotos{
+    height: 80vh;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-top: 10vh;
+}
+.sliderfotos div img{
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
 #foto1-1{
     min-height: 100vh;
     min-width: 100%;
@@ -65,7 +116,7 @@
     bottom: -100%;
     left: 0;
     z-index: -10;
-    background-image: url('../foto/_MG_8112.jpg');
+    background-image: url('../foto/buda-34.jpg');
     background-size: cover;
     background-position: center center;
 }
@@ -79,10 +130,10 @@
     position: relative;
     color: white;
     padding: 30px;
-    font-size: 9rem;
+    font-size: 8rem;
     text-transform: uppercase;
     font-weight: 600;
-    width: 86rem;
+    width: 89rem;
 }
 #foto1-1peu{
     position: absolute;
@@ -90,6 +141,47 @@
     width: 15%;
     left: 100px;
     bottom: -50%;
+}
+#foto1-2{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: -10;
+    background-image: url('../foto/Santi077.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+#foto1-2text{
+    position: absolute;
+    top: -190%;
+    right: 100px;
+    width: 33%;
+}
+#foto1-2text p{
+    position: relative;
+    color: white;
+    font-size: 3.2rem;
+    top: -300px;
+}
+#foto1-2peu{
+    position: absolute;
+    color: white;
+    width: 15%;
+    left: -50%;
+    bottom: 10px;
+}
+#foto1-2b1{
+    top: -300px;
+}
+#foto1-2b2{
+    top: -300px;
+    left: 95px;
+}
+#foto1-2b3{
+    top: 0;
+    left: 190px;
 }
 
 

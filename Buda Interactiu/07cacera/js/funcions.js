@@ -1,6 +1,7 @@
 var trans = 1200;
 var sona=true;
 var mutexvideo=false;
+var slider1=false;
 var zi=4;
 $('#bso').click(function(){
     if(sona){
@@ -577,7 +578,7 @@ function diapositiva1(){
     },trans,'swing',function(){
         $('#foto1-1text').show();
         $('#foto1-1text').animate({
-            'bottom': '15%'
+            'bottom': '40%'
         },trans,'swing');
         $('#foto1-1peu').delay('300').animate({
             'bottom': '10px'
@@ -592,27 +593,59 @@ function diapositiva1(){
     });
 }
 function diapositiva10(){
-    $('#foto1-2peu').animate({
-        'left': '-50%'
+    
+}
+function diapositiva11(){
+    $('.scroll').animate({
+        'bottom': '-10%'
     },trans,'swing');
-    $('#foto1-2text').delay('200').animate({
-        'top': '-150%'
+    $('#foto1-1peu').delay('200').animate({
+        'bottom': '-50%'
     },trans,'swing');
-    $('#foto1-2').delay('400').animate({
-        'bottom': '-100%'
+    $('#foto1-1text').delay('400').animate({
+        'bottom': '-40%'
     },trans,'swing');
-    $('#foto1-1').delay('400').animate({
-        'bottom': '0'
+    $('#foto1-1').delay('600').animate({
+        'bottom': '100%'
     },trans,'swing');
-    $('#foto1-1text').delay('600').animate({
-        'bottom': '15%'
+    $('#foto1-2').delay('600').animate({
+        'top': '0'
     },trans,'swing');
-    $('#foto1-1peu').delay('800').animate({
-        'bottom': '10px'
+    $('#foto1-2text').delay('800').animate({
+        'top': '10%'
     },trans,'swing');
-    $('.scroll').delay('1000').animate({
-        'bottom': '1.5%'
+    $('#foto1-2b2').delay('1000').animate({
+        'top': '0'
     },trans,'swing');
+    $('#foto1-2b1').delay('1200').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto1-2text p').delay('1400').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto1-2peu').delay('1600').animate({
+        'left': '100px'
+    },trans,'swing');    
+    $('#foto1-2b1').click(function(){
+        $('body').off('mousewheel');
+        $('#fotos1-2fotos').show();
+        if(!slider1){
+            $('#fotos1-2fotos .sliderfotos').slick();
+            slider1=true;
+        }
+        $('#fotos1-2fotos .blau').click(function(){
+            $('#fotos1-2fotos').hide();
+            $('body').on('mousewheel',function(e){
+                controlMouse(e);
+            });
+        });
+    });
+    $('#foto1-2i3').click(function(){
+        $('body').off('mousewheel');
+        $('#videos').load('apartat1video1.html',function(){
+            $('.videopopup').show();
+        });        
+    });
 }
 
 // Funcions de video
