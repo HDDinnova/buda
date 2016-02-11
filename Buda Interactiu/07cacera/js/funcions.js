@@ -906,6 +906,86 @@ function diapositiva15(){
         'left': '100px'
     },trans,'swing');
 }
+function diapositiva15b(){
+    $('#foto1-7peu').animate({
+        'left': '-50%'
+    },trans,'swing');
+    $('#foto1-7text').delay('200').animate({
+        'bottom': '290%'
+    },trans,'swing');
+    $('#foto1-7').delay('400').animate({
+        'top': '100%'
+    },trans,'swing');
+    $('#foto1-6').delay('400').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto1-6text').delay('600').animate({
+        'bottom': '10%'
+    },trans,'swing');
+    $('#foto1-6peu').delay('800').animate({
+        'left': '100px'
+    },trans,'swing');
+}
+function diapositiva16(){
+    $('#foto1-6peu').animate({
+        'left': '-50%'
+    },trans,'swing');
+    $('#foto1-6text').delay('200').animate({
+        'bottom': '-110%'
+    },trans,'swing');
+    $('#foto1-6').delay('400').animate({
+        'top': '-100%'
+    },trans,'swing');
+    $('#foto1-7').delay('400').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto1-7text').delay('600').animate({
+        'bottom': '10%'
+    },trans,'swing');
+    $('#foto1-7peu').delay('800').animate({
+        'left': '100px'
+    },trans,'swing');
+}
+function diapositiva16b(){
+    $('#foto1-8peu').animate({
+        'left': '-50%'
+    },trans,'swing');
+    $('#foto1-8text').delay('200').animate({
+        'top': '-190%'
+    },trans,'swing');
+    $('#foto1-8').delay('400').animate({
+        'top': '100%'
+    },trans,'swing');
+    $('#foto1-7').delay('400').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto1-7text').delay('600').animate({
+        'bottom': '10%'
+    },trans,'swing');
+    $('#foto1-7peu').delay('800').animate({
+        'left': '100px'
+    },trans,'swing');
+}
+function diapositiva17(){
+    $('#foto1-7peu').animate({
+        'left': '-50%'
+    },trans,'swing');
+    $('#foto1-7text').delay('200').animate({
+        'bottom': '-110%'
+    },trans,'swing');
+    $('#foto1-7').delay('400').animate({
+        'top': '-100%'
+    },trans,'swing');
+    $('#foto1-8').delay('400').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto1-8text').delay('600').animate({
+        'top': '10%'
+    },trans,'swing');
+    $('#foto1-8peu').delay('800').animate({
+        'left': '100px'
+    },trans,'swing');
+}
 
 // Funcions de video
 
