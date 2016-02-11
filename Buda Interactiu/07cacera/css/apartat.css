@@ -147,7 +147,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: -9;
     opacity: 0;
 }
 .f{
@@ -158,6 +158,30 @@
     top: -80%;
     left: -80%;
     cursor: pointer;
+}
+.videofull{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    top: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+.videofull video{
+    display: block;
+    max-height: 100vh;
+    min-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.videofull .videopeu{
+    position: absolute;
+    color: white;
+    width: 15%;
+    left: 100px;
+    bottom: -110%;
+    padding: 10px;
 }
 #foto1-1{
     bottom: -100%;
@@ -334,12 +358,37 @@
     position: absolute;
     top: -190%;
     right: 100px;
-    width: 35%;
+    width: 30%;
 }
 #foto1-8text p{
     position: relative;
     color: black;
     padding: 15px;
+}
+#foto1-9{
+    top: 100%;
+    background-image: url('../foto/Santi210.jpg');
+    z-index: 500;
+}
+#foto1-9text{
+    position: absolute;
+    top: 115%;
+    left: 100px;
+    width: 30%;
+}
+#foto1-9text p{
+    position: relative;
+    color: white;
+    font-weight: 600;
+    font-size: 3rem;
+    top: 0;
+}
+#foto1-9b1{
+    top: 300px;
+}
+#foto1-9b2{
+    top: 300px;
+    margin-right: -95px;
 }
 
 
