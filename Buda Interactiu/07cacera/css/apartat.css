@@ -390,6 +390,68 @@
     top: 300px;
     margin-right: -95px;
 }
+#foto1-10{
+    top: -100%;
+    background-image: url('../foto/buda-28-.jpg');
+}
+#foto1-10text{
+    position: absolute;
+    top: 215%;
+    left: 100px;
+    width: 30%;
+}
+#foto1-10text p{
+    color: white;
+    font-size: 3.3rem;
+}
+#foto1-10 .tapa{
+    opacity: .6;
+}
+#foto1-10text2{
+    position: absolute;
+    top: 215%;
+    left: 100px;
+    width: 30%;
+}
+#foto1-10text2 p{
+    color: white;
+    font-size: 3.3rem;
+}
+#foto1-11{
+    top: -100%;
+    background-image: url('../foto/buda-36.jpg');
+}
+#foto1-11text{
+    position: absolute;
+    top: 210%;
+    right: 100px;
+    width: 30%;
+}
+#foto1-11text p{
+    top: 0;
+    color: white;
+    font-size: 1.8rem;
+    padding: 20px;
+}
+#foto1-11b{
+    top: 300px;
+}
+#foto1-12{
+    top: -100%;
+    background-image: url('../foto/buda-40.jpg');
+    background-position: left bottom;
+}
+#foto1-12text{
+    position: absolute;
+    top: 210%;
+    right: 100px;
+    width: 30%;
+}
+#foto1-12text p{
+    color: white;
+    font-size: 1.8rem;
+    padding: 20px;
+}
 
 
 

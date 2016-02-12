@@ -168,126 +168,6 @@ function controlMouse(e){
                     });
                 },2000);
                 break;
-            case 25:
-                $('body').off('mousewheel');
-                diapositiva26();
-                setTimeout(function(){
-                    pos=26;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            case 26:
-                $('body').off('mousewheel');
-                diapositiva27();
-                setTimeout(function(){
-                    pos=27;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            case 27:
-                $('body').off('mousewheel');
-                diapositiva28();
-                setTimeout(function(){
-                    pos=28;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            case 28:
-                $('body').off('mousewheel');
-                diapositiva29();
-                setTimeout(function(){
-                    pos=29;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            case 29:
-                $('body').off('mousewheel');
-                diapositiva30();
-                setTimeout(function(){
-                    pos=30;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            case 30:
-                $('body').off('mousewheel');
-                diapositiva31();
-                setTimeout(function(){
-                    pos=31;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            case 31:
-                $('body').off('mousewheel');
-                diapositiva32();
-                setTimeout(function(){
-                    pos=32;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            case 32:
-                $('body').off('mousewheel');
-                diapositiva33();
-                setTimeout(function(){
-                    pos=33;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            case 33:
-                $('body').off('mousewheel');
-                diapositiva34();
-                setTimeout(function(){
-                    pos=34;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            case 34:
-                $('body').off('mousewheel');
-                diapositiva35();
-                setTimeout(function(){
-                    pos=35;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            case 35:
-                $('body').off('mousewheel');
-                diapositiva36();
-                setTimeout(function(){
-                    pos=36;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            case 36:
-                $('body').off('mousewheel');
-                diapositiva37();
-                setTimeout(function(){
-                    pos=37;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
             default :
                 $('body').on('mousewheel',function(e){
                     controlMouse(e);
@@ -440,126 +320,6 @@ function controlMouse(e){
                 diapositiva24b();
                 setTimeout(function(){
                     pos=24;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            case 26:
-                $('body').off('mousewheel');
-                diapositiva25b();
-                setTimeout(function(){
-                    pos=25;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            case 27:
-                $('body').off('mousewheel');
-                diapositiva26b();
-                setTimeout(function(){
-                    pos=26;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            case 28:
-                $('body').off('mousewheel');
-                diapositiva27b();
-                setTimeout(function(){
-                    pos=27;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            case 29:
-                $('body').off('mousewheel');
-                diapositiva28b();
-                setTimeout(function(){
-                    pos=28;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            case 30:
-                $('body').off('mousewheel');
-                diapositiva29b();
-                setTimeout(function(){
-                    pos=29;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            case 31:
-                $('body').off('mousewheel');
-                diapositiva30b();
-                setTimeout(function(){
-                    pos=30;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            case 32:
-                $('body').off('mousewheel');
-                diapositiva31b();
-                setTimeout(function(){
-                    pos=31;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            case 33:
-                $('body').off('mousewheel');
-                diapositiva32b();
-                setTimeout(function(){
-                    pos=32;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            case 34:
-                $('body').off('mousewheel');
-                diapositiva33b();
-                setTimeout(function(){
-                    pos=33;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            case 35:
-                $('body').off('mousewheel');
-                diapositiva34b();
-                setTimeout(function(){
-                    pos=34;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            case 36:
-                $('body').off('mousewheel');
-                diapositiva35b();
-                setTimeout(function(){
-                    pos=35;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            case 37:
-                $('body').off('mousewheel');
-                diapositiva36b();
-                setTimeout(function(){
-                    pos=36;
                     $('body').on('mousewheel',function(e){
                         controlMouse(e);
                     });
@@ -1110,7 +870,7 @@ function diapositiva19b(){
 function diapositiva20(){
     $('#foto1-8 .videofull video')[0].pause();
     $('#foto1-8 .videofull .videopeu').animate({
-        'bottom': '-210%'
+        'bottom': '-290%'
     },trans,'swing');
     $('#foto1-8 .videofull').delay('200').animate({
         'top': '-200%'
@@ -1141,6 +901,33 @@ function diapositiva20(){
     $('#foto1-9 .f').click(function(){
         $(this).css('z-index',zi);
         zi++;
+    });
+}
+function diapositiva20b(){
+    $('#foto1-9b2').animate({
+        'top': '300px'
+    },trans,'swing');
+    $('#foto1-9b1').delay('200').animate({
+        'top': '300px'
+    },trans,'swing');
+    $('#foto1-9text').delay('400').animate({
+        'top': '115%'
+    },trans,'swing');
+    $('#foto1-9 .tapa').delay('600').animate({
+        'opacity': '0'
+    },trans,'swing');
+    $('#foto1-9peu').delay('800').animate({
+        'left': '100px'
+    },trans,'swing');
+    var pausa=1000;
+    var posi=5;
+    $('#foto1-9 .f').each(function(){
+        $(this).delay(pausa).animate({
+            'top':'10vh',
+            'left':posi+'%'
+        },trans);
+        pausa+=50;
+        posi+=2;
     });
 }
 function diapositiva21(){
@@ -1183,6 +970,166 @@ function diapositiva21(){
             $('.videopopup').show();
         });        
     });
+}
+function diapositiva21b(){
+    $('#foto1-10text').animate({
+        'top': '215%'
+    },trans,'swing');
+    $('#foto1-10').delay('200').animate({
+        'top': '-100%'
+    },trans,'swing');
+    $('#foto1-9').delay('200').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto1-9text').delay('400').animate({
+        'top': '15%'
+    },trans,'swing');
+    $('#foto1-9b1').delay('600').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto1-9text p').delay('800').animate({
+        'top': '0'
+    },trans,'swing');
+}
+function diapositiva22(){
+    $('#foto1-9text p').animate({
+        'top': '-300px'
+    },trans,'swing');
+    $('#foto1-9b1').delay('200').animate({
+        'top': '-300px'
+    },trans,'swing');
+    $('#foto1-9text').delay('400').animate({
+        'top': '-285%'
+    },trans,'swing');
+    $('#foto1-9').delay('600').animate({
+        'top': '100%'
+    },trans,'swing');
+    $('#foto1-10').delay('600').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto1-10text').delay('800').animate({
+        'top': '15%'
+    },trans,'swing');
+}
+function diapositiva22b(){
+    $('#foto1-10peu').animate({
+        'left': '-50%'
+    },trans,'swing');
+    $('#foto1-10text2').delay('200').animate({
+        'top': '215%'
+    },trans,'swing');
+    $('#foto1-10text').delay('400').animate({
+        'top': '15%'
+    },trans,'swing');
+    $('#foto1-10 .tapa').delay('600').animate({
+        'opacity': '.6'
+    },trans,'swing');
+}
+function diapositiva23(){
+    $('#foto1-10 .tapa').animate({
+        'opacity': '0'
+    },trans,'swing');
+    $('#foto1-10text').delay('200').animate({
+        'top': '-85%'
+    },trans,'swing');
+    $('#foto1-10text2').delay('400').animate({
+        'top': '10%'
+    },trans,'swing');
+    $('#foto1-10peu').delay('600').animate({
+        'left': '100px'
+    },trans,'swing');
+}
+function diapositiva23b(){
+    $('#foto1-11b').animate({
+        'top': '300px'
+    },trans,'swing');
+    $('#foto1-11text').delay('200').animate({
+        'top': '210%'
+    },trans,'swing');
+    $('#foto1-11').delay('400').animate({
+        'top': '-100%'
+    },trans,'swing');
+    $('#foto1-10').delay('400').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto1-10text2').delay('600').animate({
+        'top': '10%'
+    },trans,'swing');
+    $('#foto1-10peu').delay('800').animate({
+        'left': '100px'
+    },trans,'swing');
+}
+function diapositiva24(){
+    $('#foto1-10peu').animate({
+        'left': '-50%'
+    },trans,'swing');
+    $('#foto1-10text2').delay('200').animate({
+        'top': '-190%'
+    },trans,'swing');
+    $('#foto1-10').delay('400').animate({
+        'top': '100%'
+    },trans,'swing');
+    $('#foto1-11').delay('400').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto1-11text').delay('600').animate({
+        'top': '10%'
+    },trans,'swing');
+    $('#foto1-11b').delay('800').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto1-11i').click(function(){
+        $('body').off('mousewheel');
+        $('#videos').load('apartat1video4.html',function(){
+            $('.videopopup').show();
+        });        
+    });
+}
+function diapositiva24b(){
+    $('#foto1-12peu').animate({
+        'left': '-50%'
+    },trans,'swing');
+    $('#foto1-12text').delay('200').animate({
+        'top': '210%'
+    },trans,'swing');
+    $('#foto1-12').delay('400').animate({
+        'top': '-100%'
+    },trans,'swing');
+    $('#foto1-11').delay('400').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto1-11text').delay('600').animate({
+        'top': '10%'
+    },trans,'swing');
+    $('#foto1-11text p').delay('800').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto1-11peu').delay('1000').animate({
+        'left': '100px'
+    },trans,'swing');
+}
+function diapositiva25(){
+    $('#foto1-11peu').animate({
+        'left': '-50%'
+    },trans,'swing');
+    $('#foto1-11text p').delay('200').animate({
+        'top': '-300px'
+    },trans,'swing');
+    $('#foto1-11text').delay('400').animate({
+        'top': '-190%'
+    },trans,'swing');
+    $('#foto1-11').delay('600').animate({
+        'top': '100%'
+    },trans,'swing');
+    $('#foto1-12').delay('600').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto1-12text').delay('800').animate({
+        'top': '10%'
+    },trans,'swing');
+    $('#foto1-12peu').delay('1000').animate({
+        'left': '100px'
+    },trans,'swing');
 }
 
 // Funcions de video
