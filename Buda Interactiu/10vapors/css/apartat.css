@@ -49,7 +49,7 @@
 .scroll{
     position: absolute;
     width: 100vw;
-    bottom: -10%;
+    bottom: -110%;
     left: 43%;
     z-index: 0;
 }
@@ -134,6 +134,15 @@
     background-size: cover;
     background-position: center center;
 }
+.videofons{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: -10;
+    /* background-size: cover; */
+    /* background-position: center bottom; */
+}
 .peu{
     position: absolute;
     color: white;
@@ -183,14 +192,19 @@
     bottom: -110%;
     padding: 10px;
 }
+.videofons video{
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: initial;
+}
 #foto1-1{
-    bottom: -100%;
-    background-image: url('../foto/buda-34.jpg');
+    top: -100%;
+    background-image: url('../foto/BORRELL_0568.jpg');
     background-position: center bottom;
 }
 #foto1-1text{
     position: absolute;
-    bottom: 150%;
+    top: 150%;
     left: 100px;
     display: none;
 }
@@ -201,260 +215,135 @@
     font-size: 8rem;
     text-transform: uppercase;
     font-weight: 600;
-    width: 89rem;
-}
-#foto1-1peu{
-    position: absolute;
-    color: white;
-    width: 15%;
-    left: 100px;
-    bottom: -50%;
+    width: 100rem;
+    line-height: initial;
 }
 #foto1-2{
-    top: 100%;
-    background-image: url('../foto/Santi077.jpg');
+    top: -100%;
+    background-image: url('../foto/Santi082.jpg');
 }
 #foto1-2text{
     position: absolute;
-    top: -190%;
+    top: 110%;
     right: 100px;
     width: 33%;
+    display: none;
 }
 #foto1-2text p{
-    position: relative;
     color: white;
     font-size: 3.2rem;
-    top: -300px;
     font-weight: 600;
 }
-#foto1-2b1{
-    top: -300px;
-}
-#foto1-2b2{
-    top: -300px;
-    left: 95px;
-}
-#foto1-2b3{
-    top: 0;
-    left: 190px;
-}
-#foto1-2foto{
-    min-height: 100vh;
-    min-width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    display: none;
-    background-color: rgba(0,0,0,.6);
-    text-align: center;
-}
-#foto1-2foto img{
-    max-height: 90vh;
-    max-width: 95vw;
-    margin-top: 5vh;
-}
 #foto1-3{
-    top: 100%;
-    background-image: url('../foto/Santi214.jpg');
+    top: -100%;
+    background-image: url('../foto/Foto_Tarraconense.jpg');
 }
 #foto1-3text{
     position: absolute;
-    top: -190%;
-    left: 100px;
+    top: 220%;
+    right: 100px;
     width: 30%;
 }
 #foto1-3text p{
-    position: relative;
     color: white;
-    font-size: 2.2rem;
-    top: -300px;
-    padding: 15px;
+    font-size: 2.1rem;
+    padding: 25px;
 }
-#foto1-3b1{
-    top: -300px;
-}
-#foto1-3b2{
-    top: 0;
-    left: 95px;
-}
-#foto1-4{
-    top: 100%;
-    background-image: url('../foto/Santi194groc.jpg');
-}
-#foto1-4text{
-    position: absolute;
-    top: -190%;
-    left: 100px;
-    width: 25%;
-}
-#foto1-4text p{
-    position: relative;
-    color: white;
-    font-size: 3rem;
-    font-weight: 600;
-}
-#foto1-5{
-    top: 100%;
-    background-image: url('../foto/SaP_584_08.jpg');
-    background-position: right bottom;
-}
-#foto1-5text{
-    position: absolute;
-    top: -190%;
-    left: 100px;
-    width: 25%;
-}
-#foto1-5text p{
-    position: relative;
-    color: #EEC41B;
-    font-size: 3rem;
-    font-weight: 600;
-}
-#foto1-5peu{
-    color: black;
-    width: 20%;
-}
-#foto1-6{
-    top: 100%;
-    background-image: url('../foto/Diario-de-Tortosa.jpg');
-    background-position: center top;
-}
-#foto1-6text{
-    position: absolute;
-    bottom: 290%;
-    right: 100px;
-    width: 25%;
-}
-#foto1-6text p{
-    position: relative;
-    color: white;
-    font-size: 3rem;
-    font-weight: 600;
-}
-#foto1-6peu{
-    font-weight: 600;
-}
-#foto1-7{
-    top: 100%;
-    background-image: url('../foto/Santi216.jpg');
-}
-#foto1-7text{
-    position: absolute;
-    bottom: 290%;
-    right: 100px;
-    width: 35%;
-}
-#foto1-7text p{
-    position: relative;
-    color: black;
-    padding: 15px;
-}
-#foto1-8{
-    top: 100%;
-    background-image: url('../foto/Santi215.jpg');
-}
-#foto1-8text{
-    position: absolute;
-    top: -190%;
-    right: 100px;
-    width: 30%;
-}
-#foto1-8text p{
-    position: relative;
-    color: black;
-    padding: 15px;
-}
-#foto1-9{
-    top: 100%;
-    background-image: url('../foto/Santi210.jpg');
-    z-index: 500;
-}
-#foto1-9text{
-    position: absolute;
-    top: 115%;
-    left: 100px;
-    width: 30%;
-}
-#foto1-9text p{
-    position: relative;
-    color: white;
-    font-weight: 600;
-    font-size: 3rem;
-    top: 0;
-}
-#foto1-9b1{
-    top: 300px;
-}
-#foto1-9b2{
-    top: 300px;
-    margin-right: -95px;
-}
-#foto1-10{
-    top: -100%;
-    background-image: url('../foto/buda-28-.jpg');
-}
-#foto1-10text{
-    position: absolute;
-    top: 215%;
-    left: 100px;
-    width: 30%;
-}
-#foto1-10text p{
-    color: white;
-    font-size: 3.3rem;
-}
-#foto1-10 .tapa{
-    opacity: .6;
-}
-#foto1-10text2{
-    position: absolute;
-    top: 215%;
-    left: 100px;
-    width: 30%;
-}
-#foto1-10text2 p{
-    color: white;
-    font-size: 3.3rem;
-}
-#foto1-11{
-    top: -100%;
-    background-image: url('../foto/buda-36.jpg');
-}
-#foto1-11text{
-    position: absolute;
-    top: 210%;
-    right: 100px;
-    width: 30%;
-}
-#foto1-11text p{
-    top: 0;
-    color: white;
-    font-size: 1.8rem;
-    padding: 20px;
-}
-#foto1-11b{
-    top: 300px;
-}
-#foto1-12{
-    top: -100%;
-    background-image: url('../foto/buda-40.jpg');
-    background-position: left bottom;
-}
-#foto1-12text{
-    position: absolute;
-    top: 210%;
-    right: 100px;
-    width: 30%;
-}
-#foto1-12text p{
-    color: white;
-    font-size: 1.8rem;
-    padding: 20px;
-}
-
-
-
 #apartat2{display: none;}
+#foto2-1{
+    top: 0;
+    left: 100%;
+}
+#foto2-1text{
+    position: absolute;
+    top: 110%;
+    right: 100px;
+}
+#foto2-1text p{
+    position: relative;
+    top: 0;
+    color: white;
+    font-size: 1.8rem;
+    padding: 15px;
+    width: 33%;
+}
+#foto2-1text h2{
+    position: relative;
+    top: 300px;
+    color: white;
+    font-size: 7rem;
+    padding: 15px;
+    width: 90rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#foto2-2{
+    top: -100%;
+    background-image: url('../foto/550p.jpg');
+}
+#foto2-2text{
+    position: absolute;
+    top: 230%;
+    right: 100px;
+    width: 30%;
+}
+#foto2-2text p{
+    position: relative;
+    color: white;
+    font-size: 1.8rem;
+    padding: 25px;
+}
+#foto2-2b{
+    position: relative;
+    top: 300px;
+}
 #apartat3{display: none;}
+#foto3-1{
+    top: -100%;
+    background-image: url('../foto/BORRELL_0558.jpg');
+}
+#foto3-1text{
+    position: absolute;
+    top: -50%;
+    left: 100px;
+}
+#foto3-1text p{
+    position: relative;
+    top: -300px;
+    color: white;
+    font-size: 1.8rem;
+    padding: 20px;
+    width: 42%;
+}
+#foto3-1text h2{
+    position: relative;
+    top: 0;
+    color: white;
+    font-size: 7rem;
+    padding: 25px;
+    width: 82rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#foto3-2{
+    bottom: 100%;
+    left: 0;
+}
+#foto3-2text{
+    position: absolute;
+    top: -50%;
+    left: 100px;
+}
+#foto3-2text p{
+    color: #EEC41B;
+    font-size: 2.5rem;
+    font-weight: 600;
+    width: 30%;
+}
+
+
+
+
+
+
 #apartat4{display: none;}

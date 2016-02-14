@@ -32,7 +32,7 @@ video{
     min-width: 100vw;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 0;
 }
 #pantalla{
@@ -46,8 +46,6 @@ video{
     overflow: hidden;
     z-index: 1;
     opacity: 1;
-    background-image: url('../img/background.jpg');
-    background-size: cover;
 }
 h1{
     margin-bottom: 35vh
@@ -59,6 +57,14 @@ h4,h5{
 h4 img{
     position: relative;
     height: 7rem;
+}
+.logo{
+    position: absolute;
+    z-index: 10;
+}
+.logo img{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 ul{
     margin-left: -50px;
