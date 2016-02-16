@@ -27,54 +27,36 @@
         <div id="m"></div>
         <!--Fi menú lateral-->
         <div class="container" id="apartat1">
-            <div id="imgdelta1">
-                <img src="foto/IMG003PNDE.jpg" alt="Fotografia aèrea del delta de l'ebre"/>
-                <p>Foto: Salvador Maluquer (dècada de 1950 i 1960).<br>Arxiu Parc Natural del Delta de l’Ebre</p>
-            </div>
-            <div class="taronga titol" id="titol1">
-                <h2>L'illa de Buda</h2>
-            </div>
-            <div class="taronga destacat" id="destacat1">
-                <p>Metonímia del Delta de l’Ebre</p>
-            </div>
-            <div class="scroll">
-                <img src="img/scroll_taronga.png" alt="Fes scroll per continuar"/>
-            </div>
-            <div class="taronga" id="tapa1-1"></div>
-            <div id="destacat1-2">
-                <h4>Actualment, Buda forma part de les diverses “figures” de protecció del medi natural: espai PEIN “Delta de l’Ebre”, Parc Natural i Xarxa Natura 2000</h4>
-                <div id="play1">
-                    <img id="francescvidal" src="img/play.png" alt="reproduir video de Francesc Vidal">
+            <div id="foto1-1" class="fotofons">
+                <div id="foto1-1text">
+                    <h2 class="taronga">L'illa de Buda</h2>
+                    <p class="taronga">Metonímia del Delta de l’Ebre</p>
                 </div>
-            </div>
-            <div class="videopopup">
-                <div id="videosapartat1"></div>
-            </div>
-            <script>
-                $('#francescvidal').on('click',function(){
-                    $('body').off('mousewheel');
-                    $('#videosapartat1').load('apartat1video.html',function(){
-                        $('.videopopup').show();
-                    });
-
-                });
-                function tancarvideo1(){
-                    $('.videopopup').hide();
-                    $('#videosapartat1').html('');
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                }
-            </script>
-            <div id="destacat1-3">
-                <h4>L’illa de Buda abasta unes 1.100 hectàrees, de les quals unes 250 són arrossars i la resta es reparteixen entre els diferents hàbitats 
+                <p id="foto1-1peu" class="peu">Foto: Salvador Maluquer (dècada de 1950 i 1960).<br>Arxiu Parc Natural del Delta de l’Ebre</p>
+                <div class="scroll">
+                    <img src="img/scroll_taronga.png" alt="Fes scroll per continuar"/>
+                </div>
+                <div class="tapa taronga"></div>
+                <div id="foto1-1text2">
+                    <p>Actualment, Buda forma part de les diverses “figures” de protecció del medi natural: espai PEIN “Delta de l’Ebre”, Parc Natural i Xarxa Natura 2000</p>
+                    <div class="boto" id="foto1-1b">
+                        <img class="blau" id="foto1-1i" src="img/play.png" alt="reproduir video de Francesc Vidal">
+                    </div>
+                </div>
+                <div id="foto1-1text3">
+                    <p>L’illa de Buda abasta unes 1.100 hectàrees, de les quals unes 250 són arrossars i la resta es reparteixen entre els diferents hàbitats 
                     o ambients naturals propis del Delta: els canyissars de les àrees i marges fluvials, les jonqueres i els salicornars dels ambients 
-                    salobres, i les llacunes litorals anomenades “Calaixos” (Calaix Gran i Calaix de Mar)</h4>
+                    salobres, i les llacunes litorals anomenades “Calaixos” (Calaix Gran i Calaix de Mar)</p>
+                </div>
             </div>
         </div>
         <div class="container" id="apartat2"></div>
         <div class="container" id="apartat3"></div>
         <div class="container" id="apartat4"></div>
+        
+        <div class="videopopup">
+            <div id="videos"></div>
+        </div>
 
     <script src="js/jquery-ui.min.js" type="text/javascript"></script>
     <script src="js/funcions.js" type="text/javascript"></script>

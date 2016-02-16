@@ -1,24 +1,20 @@
 var trans = 1200;
-var zi=-4;
+var sona=true;
+var mutexvideo=false;
+var diari1=false;
+var diari2=false;
+var zi=4;
 $('#bso').click(function(){
-    if($('#audio')[0].paused){
-        $('#audio')[0].play();
-    } else {
+    if(sona){
         $('#audio')[0].pause();
+        sona=false;
+        console.log('sona: '+sona);
+    } else {
+        $('#audio')[0].play();
+        sona=true;
+        console.log('sona: '+sona);
     }
 });
-function menu(){
-    $('#menu1').click(function() {
-        $('.menu').animate({
-          right: '0px'
-        }, 200);
-    });
-    $('#tancamenu').click(function() {
-      $('.menu').animate({
-        right: "-285px"
-      }, 200);
-    });
-};
 function controlMouse(e){
     if(e.deltaY<0){                
         switch (pos) {
@@ -90,6 +86,16 @@ function controlMouse(e){
                 diapositiva10();
                 setTimeout(function(){
                     pos=10;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },1000);
+                break;
+            case 12:
+                $('body').off('mousewheel');
+                diapositiva11b();
+                setTimeout(function(){
+                    pos=11;
                     $('body').on('mousewheel',function(e){
                         controlMouse(e);
                     });
@@ -207,38 +213,20 @@ function controlMouse(e){
                 break;
         }
     }
-}function drag_start(event){
-    var style = window.getComputedStyle(event.target, null);
-    var str = (parseInt(style.getPropertyValue("left")) - event.clientX) + ',' 
-            + (parseInt(style.getPropertyValue("top")) - event.clientY)+ ',' + event.target.id;
-    event.dataTransfer.setData("Text",str);
 }
-function drop(event){
-    var offset = event.dataTransfer.getData("Text").split(',');
-    var dm = document.getElementById(offset[2]);
-    dm.style.left = (event.clientX + parseInt(offset[0],10)) + 'px';
-    dm.style.top = (event.clientY + parseInt(offset[1],10)) + 'px';
-    dm.style.zIndex = zi;
-    zi++;
-    event.preventDefault();
-    return false;
-}
-function drag_over(event){
-    event.preventDefault();
-    return false;
-}
+
 function diapositiva1(){
-    $('#imgdelta1 img').animate({
+    $('#foto1-1').animate({
         'opacity': 1
     },trans,function(){
-        $('#titol1').animate({
+        $('#foto1-1text').animate({
             'top': '30%'
         },trans);
-        $('#destacat1').delay('200').animate({
-            'top': '45%'
+        $('#foto1-1text h2').delay('200').animate({
+            'top': '0'
         },trans);
-        $('#imgdelta1 p').delay('400').animate({
-            'bottom': '10px'
+        $('#foto1-1peu').delay('400').animate({
+            'left': '100px'
         },trans,function(){            
             $('body').on('mousewheel',function(e){
                 controlMouse(e);
@@ -250,37 +238,78 @@ function diapositiva1(){
     });
 }
 function diapositiva10(){
-    
+    $('#foto1-1text2 p').animate({
+        'top': '-300px'
+    },trans);
+    $('#foto1-1text2').delay('200').animate({
+        'top': '-50%'
+    },trans);
+    $('#foto1-1 .tapa').delay('400').animate({
+        'opacity': '0'
+    },trans);
+    $('#foto1-1text').delay('600').animate({
+        'top': '50%'
+    },trans);
+    $('#foto1-1text p').delay('800').animate({
+        'top': '0'
+    },trans);
+    $('#foto1-1peu').delay('1000').animate({
+        'left': '100px'
+    },trans);
+    $('.scroll').delay('1200').animate({
+        'bottom': '10px'
+    },trans);
 }
 function diapositiva11(){
     $('.scroll').animate({
-        'bottom': '-10%'
+        'bottom': '-50%'
     },trans);
-    $('#imgdelta1 p').animate({
-        'bottom': '-50px'
+    $('#foto1-1peu').delay('200').animate({
+        'left': '-50%'
     },trans);
-    $('#destacat1').delay('200').animate({
-        'top': '105%'
+    $('#foto1-1text p').delay('400').animate({
+        'top': '300px'
     },trans);
-    $('#titol1').delay('400').animate({
-        'top': '105%'
+    $('#foto1-1text').delay('600').animate({
+        'top': '150%'
     },trans);
-    $('#tapa1-1').delay('500').animate({
-        'opacity':0.8
+    $('#foto1-1 .tapa').delay('800').animate({
+        'opacity': '.6'
     },trans);
-    $('#destacat1-2').delay('700').animate({
+    $('#foto1-1text2').delay('1000').animate({
         'top': '10%'
+    },trans);
+    $('#foto1-1text2 p').delay('1200').animate({
+        'top': '0'
+    },trans);
+    $('#foto1-1i').click(function(){
+        $('body').off('mousewheel');
+        $('#videos').load('apartat1video.html',function(){
+            $('.videopopup').show();
+        });        
+    });
+}
+function diapositiva11b(){
+    $('#foto1-1text3').animate({
+        'bottom': '110%'
+    },trans);
+    $('#foto1-1text2').delay('200').animate({
+        'top': '10%'
+    },trans);
+    $('#foto1-1b').delay('400').animate({
+        'top': '0'
     },trans);
 }
 function diapositiva12(){
-    $('#destacat1-2').animate({
-        'top': '100%'
+    $('#foto1-1b').animate({
+        'top': '300px'
     },trans);
-    $('#destacat1-3').delay('300').animate({
-        'top': '45%'
-    },trans,function(){
-        $('#apartat2').load('apartat2.html');
-    });
+    $('#foto1-1text2').delay('200').animate({
+        'top': '150%'
+    },trans);
+    $('#foto1-1text3').delay('400').animate({
+        'bottom': '10%'
+    },trans);
 }
 function diapositiva20(){
     $('#apartat2').show();
@@ -389,4 +418,36 @@ function diapositiva40(){
     $('#destacat4').delay('400').animate({
         'top':'10%'
     },trans);
+}
+
+// Funcions de video
+
+function tancarvideo(){
+    $('.videopopup').hide();
+    $('#videos').html('');
+    $('body').on('mousewheel',function(e){
+        controlMouse(e);
+    });
+}
+
+// Funcions fotos
+function drag_start(event){
+    var style = window.getComputedStyle(event.target, null);
+    var str = (parseInt(style.getPropertyValue("left")) - event.clientX) + ',' 
+            + (parseInt(style.getPropertyValue("top")) - event.clientY)+ ',' + event.target.id;
+    event.dataTransfer.setData("Text",str);
+}
+function drop(event){
+    var offset = event.dataTransfer.getData("Text").split(',');
+    var dm = document.getElementById(offset[2]);
+    dm.style.left = (event.clientX + parseInt(offset[0],10)) + 'px';
+    dm.style.top = (event.clientY + parseInt(offset[1],10)) + 'px';
+    dm.style.zIndex = zi;
+    zi++;
+    event.preventDefault();
+    return false;
+}
+function drag_over(event){
+    event.preventDefault();
+    return false;
 }
