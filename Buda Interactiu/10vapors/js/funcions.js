@@ -1063,6 +1063,7 @@ function diapositiva23(){
     $('#foto3-8text').delay('400').animate({
         'top': '60%'
     },trans,'swing');
+    $('#apartat4').load('apartat4.html');
 }
 
 // Funcions de video
