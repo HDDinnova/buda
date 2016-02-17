@@ -178,8 +178,8 @@
 }
 .videofull video{
     display: block;
-    max-height: 100vh;
-    min-width: 100%;
+    height: 100vh;
+    min-width: 100vw;
     margin-right: auto;
     margin-left: auto;
 }
@@ -255,328 +255,79 @@
     color: white;
     font-size: 2.5rem;
 }
+#foto1-1peufotos{
+    padding: 10px;
+}
+#foto1-2{
+    top: 100%;
+    background-image: url('../foto/IMG007PNDE.jpg');
+    background-position: center center;
+}
+#foto1-2text{
+    position: absolute;
+    top: 150%;
+    left: 100px;
+}
+#foto1-2text h2{
+    position: relative;
+    top: 0;
+    color: white;
+    padding: 30px;
+    font-size: 8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 73rem;
+}
+#foto1-2text p{
+    position: relative;
+    top: 300px;
+    color: white;
+    padding: 10px;
+    font-size: 3.2rem;
+    font-weight: 600;
+    width: 51rem;
+}
+#foto1-2text2{
+    position: absolute;
+    bottom: -90%;
+    left: 100px;
+    width: 40%;
+}
+#foto1-2text2 p{
+    position: relative;
+    top: 0;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+#foto1-2b1{
+    top: 300px;
+    margin-right: 5px;
+}
+#foto1-2b2{
+    top: 300px;
+}
+#foto1-3text{
+    position: absolute;
+    top: 110%;
+    left: 100px;
+    width: 40%;
+}
+#foto1-3text p{
+    position: relative;
+    padding: 10px;
+    top: 0;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+#foto1-3b1{
+    top: 300px;
+    margin-right: 5px;
+}
+#foto1-3b2{
+    top: 300px;
+}
 
 
 #apartat2,#apartat3,#apartat4{display: none;}
-/*Antic CSS
-.container{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    z-index: -1;
-}
-.videopopup{
-    position: absolute;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-    background-color: rgba(0,0,0,.7);
-}
-.titol,.destacat{
-    padding: 3rem;
-    color: white;
-}
-.titol h2{
-    font-size: 10rem;
-    font-weight: 600;
-    margin: 0;
-}
-.scroll{
-    position: absolute;
-    width: 100vw;
-    bottom: -10%;
-    left: 43%;
-    z-index: 0;
-}
-.scroll img{
-    display: block;
-    margin-right: auto;
-    margin-bottom: auto;
-}
-#imgdelta1 img{
-    min-height: 100vh;
-    min-width: 100%;
-    position: absolute;
-    bottom: 0;
-    opacity: 0;
-    z-index: -10;
-}
-#titol1{
-    position: absolute;
-    top: 105%;
-    left: 50px;
-    text-transform: uppercase;
-}
-#destacat1{
-    position: absolute;
-    top: 105%;
-    left: 50px;
-    width: 520px;
-    padding: 1.5rem;
-}
-#destacat1 p{
-    margin: 0;
-    font-size: 3.2rem; 
-    font-weight: 700;
-}
-#imgdelta1 p{
-    position: absolute;
-    bottom: -50px;
-    left: 50px;
-    z-index: -9;
-    color: white;
-}
-#tapa1-1{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    z-index: -8;
-}
-#play1{
-    position: absolute;
-    z-index: 5;
-    background-color: rgba(102,168,200,.8);
-}
-#play1 img:hover{
-    background-color: #66A8C8;
-    cursor: pointer;
-}
-.videopopup #videosapartat1{
-    display: block;
-    margin-top: 100px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 55%;
-}
-#videosapartat1 video{
-    width: 95%;
-}
-#videosapartat1 .groc{
-    position: absolute;
-    margin-left: -200px;
-    margin-top: -100px;
-    width: 240px;
-    padding: 5px;
-}
-#videosapartat1 .blau{
-    padding: 5px;
-    display: block;
-    width: 30px;
-    float: right;
-    cursor: pointer;
-}
-#videosapartat1 .blau img{
-    height: 20px;
-}
-#destacat1-2{
-    position: absolute;
-    z-index: -7;
-    top: -50%;
-    left: 50px;
-    width: 35%;
-}
-#destacat1-2 h4{
-    color: white;
-    font-size: 3.5rem;
-    font-weight: 600;
-    line-height: inherit;
-}
-#destacat1-3{
-    position: absolute;
-    z-index: -7;
-    top: -150%;
-    left: 50px;
-    width: 35%;
-}
-#destacat1-3 h4{
-    color: white;
-    font-size: 3.2rem;
-    line-height: inherit;
-}
-#apartat2{
-    display: none;
-}
-#apartat2 img{
-    position: absolute;
-    z-index: -5;
-    width: 50%;
-    transform: rotate(40deg);
-    -webkit-transform: rotate(40deg);
-    -moz-transform: rotate(40deg);
-    -o-transform: rotate(40deg);
-    -ms-transform: rotate(40deg);
-    top: -80%;
-    left: -80%;
-    cursor: pointer;
-}
-#apartat2 .groc{
-    position: absolute;
-    z-index: -4;
-    bottom: 20%;
-    right: -50%;
-}
-#apartat3{
-    display: none;
-}
-#imgdelta3 img{
-    min-height: 100vh;
-    min-width: 100%;
-    position: absolute;
-    top: 100%;
-    z-index: -10;
-}
-#titol3{
-    position: absolute;
-    top: 105%;
-    left: 50px;
-    text-transform: uppercase;
-}
-#destacat3{
-    position: absolute;
-    top: 105%;
-    left: 50px;
-    width: 520px;
-    padding: 1.5rem;
-}
-#destacat3 p{
-    margin: 0;
-    font-size: 3.2rem; 
-    font-weight: 700;
-}
-#imgdelta3 p{
-    position: absolute;
-    bottom: -50px;
-    left: 50px;
-    z-index: -9;
-    color: white;
-}
-#tapa3-1{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    z-index: -8;
-}
-#play3{
-    position: absolute;
-    z-index: 5;
-    background-color: rgba(102,168,200,.8);
-}
-#play3 img:hover{
-    background-color: #66A8C8;
-    cursor: pointer;
-}
-.videopopup #videosapartat3{
-    display: block;
-    margin-top: 100px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 55%;
-}
-#videosapartat3 video{
-    width: 95%;
-}
-#videosapartat3 .groc{
-    position: absolute;
-    margin-left: -200px;
-    margin-top: -100px;
-    width: 240px;
-    padding: 5px;
-}
-#videosapartat3 .blau{
-    padding: 5px;
-    display: block;
-    width: 30px;
-    float: right;
-    cursor: pointer;
-}
-#videosapartat3 .blau img{
-    height: 20px;
-}
-#destacat3-2{
-    position: absolute;
-    z-index: -7;
-    bottom: 150%;
-    left: 50px;
-    width: 35%;
-}
-#destacat3-2 h4{
-    color: white;
-    font-size: 3.5rem;
-    font-weight: 600;
-    line-height: inherit;
-}
-#apartat4{
-    display: none;
-}
-#apartat4 #video4fons{
-    min-height: 100vh;
-    min-width: 100%;
-    position: absolute;
-    top: 100%;
-    z-index: -10;
-}
-#destacat4{
-    position: absolute;
-    top: -50%;
-    left: 50px;
-    width: 45%;
-}
-#destacat4 h4{
-    padding: 1.5rem;
-    color: white;
-    margin: 0;
-    line-height: inherit;
-    font-size: 3.2rem; 
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-#play4{
-    position: absolute;
-    z-index: 5;
-    background-color: rgba(102,168,200,.8);
-}
-#play4 img:hover{
-    background-color: #66A8C8;
-    cursor: pointer;
-}
-.videopopup #videosapartat4{
-    display: block;
-    margin-top: 100px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 55%;
-}
-#videosapartat4 video{
-    width: 95%;
-}
-#videosapartat4 .groc{
-    position: absolute;
-    margin-left: -200px;
-    margin-top: -100px;
-    width: 240px;
-    padding: 5px;
-}
-#videosapartat4 .blau{
-    padding: 5px;
-    display: block;
-    width: 30px;
-    float: right;
-    cursor: pointer;
-}
-#videosapartat4 .blau img{
-    height: 20px;
-}*/
