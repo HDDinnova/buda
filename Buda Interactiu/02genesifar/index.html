@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible">
+        <title>Buda, l'illa del Delta</title>
+        <meta name="description" content="Documental interactiu sobre Buda, la illa del Delta">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="../css/estil.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/apartat.css" rel="stylesheet" type="text/css"/>
+        
+        <link href="css/slick.css" rel="stylesheet" type="text/css"/>
+        <link href="css/slick-theme.css" rel="stylesheet" type="text/css"/>
+        
+        <script src="../js/jquery-2.1.4.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-default"></nav>
+        <!--Fi capçalera-->
+        <audio loop id="audio">
+            <source src="../musica/Buda Frag 7 de 7.mp3" type="audio/mpeg">
+        </audio>
+        <div id="m"></div>
+        <script>
+            $('#m').load('../menu/menu.html',function(){
+                $('nav').load('../menu/menusuperior.html',function(){
+                    menu();
+                });                
+            });
+        </script>
+        <div class="container" id="apartat1">
+            <div id="foto1-1" class="fotofons">
+                <div id="foto1-1text">
+                    <h2 class="marro col-md-offset-1">LA GÈNESI DEL FAR DE BUDA</h2>                
+                </div>
+                <p id="foto1-1peu" class="peu">Fotografia del far de Buda des de la platja de l’illa. Setembre de 1961.<br>Autor: Josep M. Espinàs.<br>Font: Edicions la Campana.</p>
+                <div class="scroll">
+                    <img src="img/scroll_marro.png" alt="Fes scroll per continuar"/>
+                </div>
+            </div>
+            <div id="foto1-2" class="fotofons">
+                <div id="foto1-2text" class="col-md-offset-1">
+                    <p class="marro">
+                        On neix la vida d’aquest Far? Tot arrenca en una costa perillosa a la Mediterrània occidental: les goles de l’Ebre. Una gran superfície de sorra i llots al·luvials en constant transformació, formant braços, goles i bancs de sorra, a causa de les avingudes i els canvis en la desembocadura del riu més cabalós de la Península ibèrica
+                    </p>
+                    <h2 class="marro">
+                        La mar de l’Ebre,<br>la costa de la mort
+                    </h2>
+                </div>
+                <div class="tapa marro"></div>
+                <div id="foto1-2text2" class="col-md-offset-1">
+                    <p>La costa de l’Ebre esdevingué durant segles el litoral de la mort, un veritable cementiri de vaixells i homes, que durant segles la sorra i el fang van absorbir i fer desaparéixer</p>
+                </div>
+                <p id="foto1-2peu" class="peu">Carta Nàutica de 1883 de les Goles de l’Ebre. Plànol ordenat per la Comissió Hidrogràfica al capità de fragata D. Rafael Pardo de Figueroa.<br>Font: Biblioteca Nacional de España</p>
+                <div id="foto1-2text3" class="col-md-offset-1">
+                    <p>Naufragis i varades al llarg de la història són mostra d’aquest perillós litoral del sud de Catalunya, referenciats en documents històrics i en descripcions d’alguns autors i estudiosos de la navegació marítima</p>
+                </div>
+            </div>
+            <div id="foto1-3" class="fotofons">
+                <div id="foto1-3text" class="col-md-offset-1 col-md-4">
+                    <p class="marro col-md-11">
+                        José Huertas Morión, Los últimos veleros del Mediterráneo: “...En los barcos de cabotaje…se decía que cuando quedaban atras las luces de Vinaroz a media tripulación comenzaban a temblarle las rodillas y el temblor no se les quitaba hasta tener las luces de Tarragona y el Cabo de Salou por la popa...”.<br>
+                        “…Y era verdad que a muchos marineros y a muchos patrones, al navegar por este pedazo de costa, se les iba el sueño y no lo recuperaban hasta haberlo pasado (…) era un verdadero cementerio de barcos y de hombres que yacían tragados por sus absorbentes arenas”.
+
+                    </p>
+                    <div class="clearfix"></div>
+                    <div id="play1-3" class="col-md-offset-11">
+                        <img id="foto1-3play" src="img/play.png" alt="reproduir video">
+                    </div>
+                </div>
+                <p id="foto1-3peu" class="peu">Plànol de la província de Tarragona. Datat l’any 1953. Gravat per R. Alabern i E. Mabón.<br>Font: Biblioteca Nacional de España</p>
+            </div>
+        </div>
+        <div class="container" id="apartat2"></div>
+        <div class="container" id="apartat3"></div>
+        <div class="container" id="apartat4"></div>
+            
+            
+            
+        <div class="videopopup">
+            <div id="videos"></div>
+        </div>
+    
+    <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js/funcions.js" type="text/javascript"></script>
+    <script src="js/jquery.mousewheel.min.js" type="text/javascript"></script>
+    <script src="js/jquery-css-transform.js" type="text/javascript"></script>
+    <script src="js/jquery.rotate.js" type="text/javascript"></script>
+    <script src="../js/jquery.color.js" type="text/javascript"></script>
+    <script src="js/jquery.elevateZoom-3.0.8.min.js" type="text/javascript"></script>
+    <script src="js/slick.min.js" type="text/javascript"></script>
+    <script src="../js/menu.js" type="text/javascript"></script>
+    <script>
+        var pos = 10;
+        $(window).load(function(){
+            diapositiva1();
+        });
+    </script>
+    </body>
+</html>

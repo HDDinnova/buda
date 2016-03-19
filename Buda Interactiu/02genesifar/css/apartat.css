@@ -178,8 +178,8 @@
 }
 .videofull video{
     display: block;
-    height: 100vh;
-    min-width: 100vw;
+    max-height: 100vh;
+    min-width: 100%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -199,159 +199,107 @@
     min-width: 100vw;
     /* object-fit: fill; */
 }
-.final{
-    min-height: 100vh;
-    min-width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    background-color: rgba(0,0,0,.9);
-    opacity: 0;
-    padding-top: 8rem;
-}
-.final h2{
-    color: white;
-    font-size: 6rem;
-    margin-bottom: 6rem;
-}
-.final h3{
-    color: white;
-    font-size: 4rem;
-    margin-bottom: 3rem;
-}
-.desenfocat{
-    filter: blur(5px);
-}
 #foto1-1{
-    top: 0;
-    opacity: 0;
-    background-image: url('../foto/IMG003PNDE.jpg');
-    background-position: center bottom;
+    top: 100%;
+    background-image: url('../foto/3Foto_Seguint-tot-lEbre.jpg');
+    background-position: center center;
 }
 #foto1-1text{
     position: absolute;
     top: -50%;
-    left: 100px;
+    display: none;
 }
 #foto1-1text h2{
     position: relative;
-    top: -300px;
     color: white;
     padding: 30px;
     font-size: 8rem;
     text-transform: uppercase;
     font-weight: 600;
-    width: 73rem;
-}
-#foto1-1text p{
-    position: relative;
-    top: 0;
-    color: white;
-    padding: 10px;
-    font-size: 3.2rem;
-    font-weight: 600;
-    width: 51rem;
-}
-#foto1-1text2{
-    position: absolute;
-    top: -50%;
-    left: 100px;
-    width: 37%;
-}
-#foto1-1text2 p{
-    position: relative;
-    top: -300px;
-    color: white;
-    font-size: 3rem;
-    font-weight: 600;
-}
-#foto1-1b{
-    top: 0;
-}
-#foto1-1text3{
-    position: absolute;
-    bottom: 110%;
-    left: 100px;
-    width: 30%;
-}
-#foto1-1text3 p{
-    color: white;
-    font-size: 2.5rem;
-}
-#foto1-1peufotos{
-    padding: 10px;
+    width: 125rem;
+    line-height: initial;
 }
 #foto1-2{
     top: 100%;
-    background-image: url('../foto/IMG007PNDE.jpg');
-    background-position: center center;
+    background-image: url('../foto/PLANOL_GOLAS_DEL_EBRO_1883_BNE.jpg');
 }
 #foto1-2text{
     position: absolute;
-    top: 150%;
-    left: 100px;
+    top: -185%;
+}
+#foto1-2text p{
+    position: relative;
+    top: -300px;
+    color: white;
+    font-size: 1.8rem;
+    width: 35%;
+    padding: 15px;
 }
 #foto1-2text h2{
     position: relative;
     top: 0;
     color: white;
-    padding: 30px;
-    font-size: 8rem;
+    font-size: 6.5rem;
+    width: 50%;
+    padding: 15px;
     text-transform: uppercase;
     font-weight: 600;
-    width: 73rem;
-}
-#foto1-2text p{
-    position: relative;
-    top: 300px;
-    color: white;
-    padding: 10px;
-    font-size: 3.2rem;
-    font-weight: 600;
-    width: 51rem;
+    line-height: initial;
 }
 #foto1-2text2{
     position: absolute;
-    bottom: -90%;
-    left: 100px;
-    width: 40%;
+    top: -185%;
 }
 #foto1-2text2 p{
-    position: relative;
-    top: 0;
     color: white;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+    width: 30%;
     font-weight: 600;
+    line-height: initial;
 }
-#foto1-2b1{
-    top: 300px;
-    margin-right: 5px;
+#foto1-2text3{
+    position: absolute;
+    top: -185%;
 }
-#foto1-2b2{
-    top: 300px;
+#foto1-2text3 p{
+    color: black;
+    font-size: 3.5rem;
+    width: 30%;
+    font-weight: 600;
+    line-height: initial;
+}
+#foto1-3{
+    top: 100%;
+    background-image: url('../foto/PLANOL-PROV-TARRAGONA_1853_BNE.jpg');
 }
 #foto1-3text{
     position: absolute;
-    top: 110%;
-    left: 100px;
-    width: 40%;
+    top: -178%;
 }
 #foto1-3text p{
     position: relative;
-    padding: 10px;
-    top: 0;
+    top: -300px;
     color: white;
-    font-size: 2.5rem;
-    font-weight: 600;
+    font-size: 1.8rem;
+    padding: 15px;
 }
-#foto1-3b1{
-    top: 300px;
-    margin-right: 5px;
+#foto1-3peu{
+    color: black;
 }
-#foto1-3b2{
-    top: 300px;
+#play1-3{
+    margin-top: 15px;
+    position: relative;
+    top: 0px;
+    z-index: 5;
+}
+#play1-3 img{
+    background-color: rgba(203,160,26,.6);
+}
+#play1-3 img:hover{
+    background-color: #CBA01A;
+    cursor: pointer;
 }
 
-
-#apartat2,#apartat3,#apartat4{display: none;}
+#apartat2{display: none;}
+#apartat3{display: none;}
+#apartat4{display: none;}

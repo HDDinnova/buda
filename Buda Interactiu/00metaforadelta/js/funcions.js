@@ -78,6 +78,16 @@ function controlMouse(e){
                     });
                 },1000);
                 break;
+            case 16:
+                $('body').off('mousewheel');
+                diapositiva17();
+                setTimeout(function(){
+                    pos=17;
+                    $('body').on('mousewheel',function(e){
+                        controlMouse(e);
+                    });
+                },1000);
+                break;
             default :
                 $('body').on('mousewheel',function(e){
                     controlMouse(e);
@@ -137,9 +147,9 @@ function controlMouse(e){
                 break;
             case 16:
                 $('body').off('mousewheel');
-                diapositiva17b();
+                diapositiva15b();
                 setTimeout(function(){
-                    pos=17;
+                    pos=15;
                     $('body').on('mousewheel',function(e){
                         controlMouse(e);
                     });
@@ -408,6 +418,33 @@ function diapositiva15(){
         });        
     });
 }
+function diapositiva15b(){
+    $('#foto1-3 video')[0].pause();
+    $('#foto1-3b2').animate({
+        'top': '300px'
+    },trans);
+    $('#foto1-3b1').delay(200).animate({
+        'top': '300px'
+    },trans);
+    $('#foto1-3text').delay(400).animate({
+        'top': '110%'
+    },trans);
+    $('#foto1-3').delay(600).animate({
+        'top': '100%'
+    },trans);
+    $('#foto1-2').delay(600).animate({
+        'top': '0'
+    },trans);
+    $('#foto1-2text2').delay(800).animate({
+        'bottom': '10%'
+    },trans);
+    $('#foto1-2b1').delay(1000).animate({
+        'top': '0'
+    },trans);
+    $('#foto1-2text2 p').delay(1200).animate({
+        'top': '0'
+    },trans);
+}
 function diapositiva16(){
     $('#foto1-2text2 p').animate({
         'top': '-300px'
@@ -447,6 +484,11 @@ function diapositiva16(){
             $('.videopopup').show();
         });        
     });
+}
+function diapositiva17(){
+    $('.final').animate({
+        'opacity': '1'
+    },3000);
 }
 
 // Funcions de video
