@@ -714,6 +714,26 @@ function diapositiva18(){
         'left': '0'
     },trans,'swing');
 }
+function diapositiva18b(){
+    $('#foto2-5peu').animate({
+        'left': '-50%'
+    },trans,'swing');
+    $('#foto2-5text').delay('200').animate({
+        'top': '-70%'
+    },trans,'swing');
+    $('#foto2-5').delay('400').animate({
+        'top': '-100%'
+    },trans,'swing');
+    $('#foto2-4').delay('400').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto2-4text').delay('600').animate({
+        'top': '30%'
+    },trans,'swing');
+    $('#foto2-4peu').delay('800').animate({
+        'left': '0'
+    },trans,'swing');
+}
 function diapositiva19(){
     $('#foto2-4peu').animate({
         'left': '-50%'
@@ -732,6 +752,50 @@ function diapositiva19(){
     },trans,'swing');
     $('#foto2-5peu').delay('800').animate({
         'left': '0'
+    },trans,'swing');
+    $('#apartat3').load('apartat3.html');
+}
+function diapositiva19b(){
+    $('#foto3-1peu').animate({
+        'bottom': '-50%'
+    },trans,'swing');
+    $('#foto3-1text').delay('200').animate({
+        'top': '155%'
+    },trans,'swing');
+    $('#foto3-1').delay('400').animate({
+        'left': '-100%'
+    },trans,'swing',function(){
+        $('#apartat3').hide();
+    });
+    $('#foto2-5').delay('400').animate({
+        'left': '0'
+    },trans,'swing');
+    $('#foto2-5text').delay('600').animate({
+        'top': '30%'
+    },trans,'swing');
+    $('#foto2-5peu').delay('800').animate({
+        'left': '0'
+    },trans,'swing');
+}
+function diapositiva20(){
+    $('#apartat3').show();
+    $('#foto2-5peu').animate({
+        'left': '-50%'
+    },trans,'swing');
+    $('#foto2-5text').delay('200').animate({
+        'top': '130%'
+    },trans,'swing');
+    $('#foto2-5').delay('400').animate({
+        'left': '100%'
+    },trans,'swing');
+    $('#foto3-1').delay('400').animate({
+        'left': '0'
+    },trans,'swing');
+    $('#foto3-1text').delay('600').animate({
+        'top': '55%'
+    },trans,'swing');
+    $('#foto3-1peu').delay('800').animate({
+        'bottom': '10px'
     },trans,'swing');
 }
 

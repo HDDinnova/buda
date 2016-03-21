@@ -202,13 +202,16 @@
     /* object-fit: fill; */
 }
 h2{
-    font-size: 3.4vw;    
+    font-size: 3.4vw;
+    line-height: initial;
 }
 h3{
     font-size: 1.8vw;
+    line-height: initial;
 }
 p{
     font-size: 1vw;
+    line-height: initial;
 }
 #foto1-1{
     top: 100%;
@@ -364,6 +367,7 @@ p{
 }
 #foto2-5{
     top: -100%;
+    left: 0;
     background-image: url('../foto/Diario_de_Tarragona-12-01-1861.jpg');
     background-position: center center;
 }
@@ -379,10 +383,32 @@ p{
 #foto2-5peu{
     color: #6684A4;
 }
-
-
-
-
-
 #apartat3{display: none;}
+#foto3-1{
+    top: 0;
+    left: -100%;
+    background-image: url('../foto/Planol_01X.jpg');
+    background-position: center center;
+}
+#foto3-1text{
+    position: absolute;
+    top: 155%;
+}
+#foto3-1text h2{
+    color: white;
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#foto3-1peu{
+    left: 0;
+    bottom: -50%;
+    color: #F58431;
+}
+
+
+
+
+
+
 #apartat4{display: none;}
