@@ -405,6 +405,30 @@ p{
     bottom: -50%;
     color: #F58431;
 }
+#foto3-2{
+    top: 100%;
+    background-image: url('../foto/Planol_02X.jpg');
+    background-position: center center;
+}
+#foto3-2text{
+    position: absolute;
+    top: -180%;
+}
+#foto3-2text h3{
+    color: #F58431;
+    font-size: 1.4vw;
+}
+#foto3-2peu #play3-2{
+    position: relative;
+    left: 0;
+}
+#foto3-2peu p{
+    position: relative;
+    left: -300px;
+    color: #F58431;
+    font-size: 0.85vw;
+}
+
 
 
 
