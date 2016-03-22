@@ -428,11 +428,85 @@ p{
     color: #F58431;
     font-size: 0.85vw;
 }
-
-
-
-
-
-
-
+#foto3-4{
+    top: 100%;
+    background-image: url('../foto/_MG_9174.jpg');
+    background-position: center center;
+}
+#foto3-4text{
+    position: absolute;
+    top: -185%;
+}
+#foto3-4text h3{
+    position: relative;
+    top: -300px;
+    color: #F58431;
+}
+#play3-4{
+    position: relative;
+    top: 0;
+}
+#foto3-5{
+    top: 100%;
+    left: 0;
+}
+#foto3-5text{
+    position: absolute;
+    top: -185%;
+}
+#foto3-5text h3{
+    color: white;
+}
+#foto3-5 img{
+    position: absolute;
+    top: -180%;
+    left: -180%;
+    height: 70vh;
+}
 #apartat4{display: none;}
+#foto4-1{
+    top: 0;
+    left: 100%;
+}
+#foto4-1text{
+    position: absolute;
+    top: 120%;
+}
+#foto4-1text h2{
+    color: white;
+    font-size: 5vw;
+}
+#foto4-1 img{
+    margin-top: 15vh;
+    margin-right: 5vw;
+    height: 70vh;
+    opacity: 1;
+}
+#foto4-2text{
+    position: absolute;
+    top: 115%;
+}
+#foto4-2text h2{
+    position: relative;
+    top: 0;
+    color: #F15D42;
+    padding: 15px;
+    text-transform: uppercase;
+}
+#foto4-2text p{
+    position: relative;
+    top: 300px;
+    color: #F15D42;
+    padding: 15px;
+    font-size: 1.5vw;
+}
+#play4-2{
+    position: relative;
+    top: 300px;
+}
+#foto4-2foto{
+    position: absolute;
+    top: -100%;
+    left: 200%;
+    height: 70vh;
+}
