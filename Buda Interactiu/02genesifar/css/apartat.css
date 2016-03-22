@@ -498,7 +498,8 @@ p{
     top: 300px;
     color: #F15D42;
     padding: 15px;
-    font-size: 1.5vw;
+    font-size: 1.1vw;
+    margin-top: 10px;
 }
 #play4-2{
     position: relative;
@@ -509,4 +510,17 @@ p{
     top: -100%;
     left: 200%;
     height: 70vh;
+}
+#foto4-3{
+    top: -100%;
+    background-image: url('../foto/Reforma-Puerta-del-Sol-Madrid-1862.jpg');
+    background-position: center center;
+}
+#foto4-3text{
+    position: absolute;
+    bottom: -215%;
+}
+#foto4-3text p{
+    color: white;
+    padding: 15px;
 }
