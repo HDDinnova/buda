@@ -524,3 +524,97 @@ p{
     color: white;
     padding: 15px;
 }
+#foto4-4{
+    top: -100%;
+    background-image: url('../foto/DSC_0989.jpg');
+    background-position: center center;
+}
+#foto4-4text{
+    position: absolute;
+    top: 215%;
+}
+#foto4-4text p{
+    position: relative;
+    top: 0;
+    color: #F15D42;
+    padding: 15px;
+}
+.play4{    
+    position: relative;
+    top: 300px;
+}
+#foto4-4text span{
+    cursor: pointer;
+}
+#mesinfo{
+    position: absolute;
+    z-index: 10000;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+}
+#mesinfo #contingutmesinfo{
+    width: 80%;
+    height: 80%;
+    margin-top: 80px;
+    background-color: white;
+    overflow-y: scroll;
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('../img/background.jpg');
+}
+#contingutmesinfo h3{
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-weight: 600;
+    font-size: 3rem;
+}
+#apartat5{display: none;}
+#foto5-1{
+    top: -100%;
+    background-image: url('../foto/Canal-de-Isabel-II-370x185.jpg');
+    background-position: center center;
+}
+#foto5-1text{
+    position: absolute;
+    top: 225%;
+}
+#foto5-1text p{
+    position: relative;
+    top: 0;
+    color: white;
+    padding: 25px;
+}
+#foto5-1text h2{
+    position: relative;
+    top: 300px;
+    color: white;
+    padding: 25px;
+    text-transform: uppercase;
+}
+#foto5-2{
+    top: -100%;
+    background-image: url('../foto/planols_fars.jpg');
+    background-position: center center;
+}
+#foto5-2text{
+    position: absolute;
+    top: 240%;
+}
+#foto5-2text p{
+    position: relative;
+    top: 0;
+    color: white;
+    padding: 25px;
+}
+#foto5-2peu{
+    color: black;
+}
+
+
+#apartat6{display: none;}
+#apartat7{display: none;}
+#apartat8{display: none;}

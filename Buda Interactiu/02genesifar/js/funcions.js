@@ -1328,6 +1328,216 @@ function diapositiva27(){
         'left': '0'
     },trans,'swing');
 }
+function diapositiva27b(){
+    $('#foto4-4peu').animate({
+        'left': '-50%'
+    },trans,'swing');
+    $('#play4-43').delay('200').animate({
+        'top': '300px'
+    },trans,'swing');
+    $('#play4-42').delay('300').animate({
+        'top': '300px'
+    },trans,'swing');
+    $('#play4-41').delay('400').animate({
+        'top': '300px'
+    },trans,'swing');
+    $('#foto4-4text').delay('500').animate({
+        'top': '215%'
+    },trans,'swing');
+    $('#foto4-4').delay('700').animate({
+        'top': '-100%'
+    },trans,'swing');
+    $('#foto4-3').delay('700').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto4-3text').delay('900').animate({
+        'bottom': '15%'
+    },trans,'swing');
+    $('#foto4-3peu').delay('1100').animate({
+        'left': '0'
+    },trans,'swing');
+}
+function diapositiva28(){
+    $('#foto4-3peu').animate({
+        'left': '-50%'
+    },trans,'swing');
+    $('#foto4-3text').delay('200').animate({
+        'bottom': '215%'
+    },trans,'swing');
+    $('#foto4-3').delay('400').animate({
+        'top': '100%'
+    },trans,'swing');
+    $('#foto4-4').delay('400').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto4-4text').delay('600').animate({
+        'top': '15%'
+    },trans,'swing');
+    $('#play4-41').delay('700').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#play4-42').delay('800').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#play4-43').delay('900').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto4-4peu').delay('1100').animate({
+        'left': '0'
+    },trans,'swing');
+    $('#foto4-41play').click(function(){
+        $('body').off('mousewheel');
+        $('#videos').load('apartat4video2.html',function(){
+            $('.videopopup').show();
+        });
+    });
+    $('#foto4-42play').click(function(){
+        $('body').off('mousewheel');
+        $('#videos').load('apartat4video3.html',function(){
+            $('.videopopup').show();
+        });
+    });
+    $('#foto4-43play').click(function(){
+        $('body').off('mousewheel');
+        $('#videos').load('apartat4video4.html',function(){
+            $('.videopopup').show();
+        });
+    });
+    $('#foto4-4text span').click(function(){
+        $('body').append("<div id='mesinfo'><div>");
+        $('body').off('mousewheel');
+        $.ajax({
+            url: "mesinfo.html",
+            context: document.body
+        }).done(function(data) {
+            $('#mesinfo').html(data);
+            $('#zonaactiva').click(function(){
+                console.log('Tancar');
+                $('#zonaactiva').off('click');
+                $('#mesinfo').remove();
+                $('body').on('mousewheel',function(e){
+                    controlMouse(e);
+                });
+            });
+        }).error(function(e){
+            console.log(e);
+        });
+    });
+    $('#apartat5').load('apartat5.html');
+}
+function diapositiva28b(){
+    $('#foto5-1peu').animate({
+        'left': '-50%'
+    },trans,'swing');
+    $('#foto5-1text h2').delay('200').animate({
+        'top': '300px'
+    },trans,'swing');
+    $('#foto5-1text').delay('400').animate({
+        'top': '225%'
+    },trans,'swing');
+    $('#foto5-1').delay('600').animate({
+        'top': '-100%'
+    },trans,'swing',function(){
+        $('#apartat5').hide();
+    });
+    $('#foto4-4').delay('600').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto4-4text').delay('800').animate({
+        'top': '15%'
+    },trans,'swing');
+    $('#play4-42').delay('900').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#play4-41').delay('1000').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto4-4text p').delay('1100').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto4-4peu').delay('1200').animate({
+        'left': '0'
+    },trans,'swing');
+}
+function diapositiva29(){
+    $('#apartat5').show();
+    $('#foto4-4peu').animate({
+        'left': '-50%'
+    },trans,'swing');
+    $('#foto4-4text p').delay('200').animate({
+        'top': '-300px'
+    },trans,'swing');
+    $('#play4-41').delay('300').animate({
+        'top': '-300px'
+    },trans,'swing');
+    $('#play4-42').delay('400').animate({
+        'top': '-300px'
+    },trans,'swing');
+    $('#foto4-4text').delay('500').animate({
+        'top': '-215%'
+    },trans,'swing');
+    $('#foto4-4').delay('600').animate({
+        'top': '100%'
+    },trans,'swing');
+    $('#foto5-1').delay('600').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto5-1text').delay('800').animate({
+        'top': '25%'
+    },trans,'swing');
+    $('#foto5-1text h2').delay('1000').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto5-1peu').delay('1200').animate({
+        'left': '0'
+    },trans,'swing');
+}
+function diapositiva29b(){
+    $('#foto5-2peu').animate({
+        'left': '-50%'
+    },trans,'swing');
+    $('#foto5-2text').delay('200').animate({
+        'top': '240%'
+    },trans,'swing');
+    $('#foto5-2').delay('400').animate({
+        'top': '-100%'
+    },trans,'swing');
+    $('#foto5-1').delay('400').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto5-1text').delay('600').animate({
+        'top': '25%'
+    },trans,'swing');
+    $('#foto5-1text p').delay('800').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto5-1peu').delay('1000').animate({
+        'left': '0'
+    },trans,'swing');
+}
+function diapositiva30(){
+    $('#foto5-1peu').animate({
+        'left': '-50%'
+    },trans,'swing');
+    $('#foto5-1text p').delay('200').animate({
+        'top': '-300px'
+    },trans,'swing');
+    $('#foto5-1text').delay('400').animate({
+        'top': '-275%'
+    },trans,'swing');
+    $('#foto5-1').delay('600').animate({
+        'top': '100%'
+    },trans,'swing');
+    $('#foto5-2').delay('600').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto5-2text').delay('800').animate({
+        'top': '40%'
+    },trans,'swing');
+    $('#foto5-2peu').delay('1000').animate({
+        'left': '0'
+    },trans,'swing');
+}
 
 
 // Funcions de video
