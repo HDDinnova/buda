@@ -1537,6 +1537,15 @@ function diapositiva30(){
     $('#foto5-2peu').delay('1000').animate({
         'left': '0'
     },trans,'swing');
+    $('#foto5-2boto').click(function(){
+        var mySwiper = new Swiper ('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev'
+        });  
+        $('.swiper-container').show();
+    });
 }
 
 

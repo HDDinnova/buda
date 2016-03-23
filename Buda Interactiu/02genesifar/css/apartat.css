@@ -613,7 +613,17 @@ p{
 #foto5-2peu{
     color: black;
 }
-
+.swiper-container{
+    z-index: 10 !important;
+    position: absolute;
+    width: 80vw;
+    height: 80vh;
+    top: 10vh;
+    display: none;
+}
+.swiper-slide img{
+    width: 100%;
+}
 
 #apartat6{display: none;}
 #apartat7{display: none;}
