@@ -1666,6 +1666,12 @@ function diapositiva32(){
     $('#foto5-4peu').delay('1400').animate({
         'left': '0'
     },trans,'swing');
+    $('#foto5-4boto2').click(function(){
+        $('body').off('mousewheel');
+        $('#videos').load('apartat5video1.html',function(){
+            $('.videopopup').show();
+        });
+    });
 }
 
 
