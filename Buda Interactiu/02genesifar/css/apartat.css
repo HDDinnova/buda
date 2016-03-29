@@ -660,7 +660,42 @@ p{
 #foto5-4peu{
     color: #888D57;
 }
-
+#foto5-5{
+    top: 0;
+    background-image: url('../foto/foto_apartat_5-5.jpg');
+    background-position: center center;
+    opacity: 0;
+    display: none;
+}
+#foto5-5text{
+    position: absolute;
+    top: 115%;
+}
+#foto5-5text p{
+    position: relative;
+    top: 0;
+    color: #888D57;
+    padding: 20px;
+}
+#foto5-5boto{
+    position: relative;
+    top: 300px;
+}
 #apartat6{display: none;}
+#foto6-1{
+    top: 0;
+    background-image: url('../foto/Europa-finals-segle-XIX.jpg');
+    background-position: center center;
+    left: 100%;
+}
+#foto6-1text{
+    position: absolute;
+    top: -80%;
+}
+#foto6-1text h2{
+    color: white;
+    padding: 20px;
+}
+
 #apartat7{display: none;}
 #apartat8{display: none;}
