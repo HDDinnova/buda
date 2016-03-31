@@ -429,6 +429,9 @@ p{
     color: #F58431;
     font-size: 0.85vw;
 }
+#foto3-3{
+    top: 100%;
+}
 #foto3-4{
     top: 100%;
     background-image: url('../foto/_MG_9174.jpg');
@@ -749,6 +752,22 @@ p{
 #foto6-5peu{
     color: #CBA01A;
 }
+#foto6-6{
+    /* background-image: url('../foto/ROP_1897_tomoI_1124_02_Textos-Lucio-a-Londres-1.jpg'); */
+    background-position: center center;
+    top: 100%;
+}
+#foto6-6text{
+    position: absolute;
+    top: -185%;
+}
+#foto6-6text h3{
+    padding: 25px;
+    color: white;
+}
+/* #foto6-6peu{
+    color: #CBA01A;
+} */
 
 #apartat7{display: none;}
 #apartat8{display: none;}

@@ -1987,6 +1987,40 @@ function diapositiva38(){
         'left': '0'
     },trans,'swing');
 }
+function diapositiva38b(){
+    $('#foto6-6text').animate({
+        'top': '-185%'
+    },trans,'swing');
+    $('#foto6-6').delay('200').animate({
+        'top': '100%'
+    },trans,'swing');
+    $('#foto6-5').delay('200').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto6-5text').delay('400').animate({
+        'top': '20%'
+    },trans,'swing');
+    $('#foto6-5peu').delay('600').animate({
+        'left': '0'
+    },trans,'swing');
+}
+function diapositiva39(){
+    $('#foto6-5peu').animate({
+        'left': '-50%'
+    },trans,'swing');
+    $('#foto6-5text').delay('200').animate({
+        'top': '220%'
+    },trans,'swing');
+    $('#foto6-5').delay('400').animate({
+        'top': '-100%'
+    },trans,'swing');
+    $('#foto6-6').delay('400').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto6-6text').delay('600').animate({
+        'top': '15%'
+    },trans,'swing');
+}
 
 
 // Funcions de video
