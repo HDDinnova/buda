@@ -177,10 +177,11 @@
     top: 100%;
     display: table-cell;
     vertical-align: middle;
+    overflow: hidden;
 }
 .videofull video{
     display: block;
-    max-height: 100vh;
+    /* max-height: 100vh; */
     min-width: 100%;
     margin-right: auto;
     margin-left: auto;
@@ -695,6 +696,58 @@ p{
 #foto6-1text h2{
     color: white;
     padding: 20px;
+}
+#foto6-2{
+    background-image: url('../foto/Europa-finals-segle-XIX-groc.jpg');
+    background-position: center center;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+#foto6-2text{
+    position: absolute;
+    top: -80%;
+}
+#foto6-2text p{
+    color: #CBA01A;
+    padding: 20px;
+    font-size: 1.3vw;
+}
+#foto6-3{
+    background-image: url('../foto/Birmingham_in_1886.jpg');
+    background-position: center center;
+    top: 100%;
+}
+#foto6-3text{
+    position: absolute;
+    top: -190%;
+}
+#foto6-3text h3{
+    color: white;
+    font-size: 2vw;
+}
+#foto6-4{
+    top: 100%;
+}
+#foto6-4peu{
+    padding: 15px;
+}
+#foto6-5{
+    background-image: url('../foto/ROP_1897_tomoI_1124_02_Textos-Lucio-a-Londres-1.jpg');
+    background-position: center center;
+    top: 100%;
+}
+#foto6-5text{
+    position: absolute;
+    top: -180%;
+}
+#foto6-5text p{
+    padding: 25px;
+    color: white;
+    font-size: 1.3vw;
+}
+#foto6-5peu{
+    color: #CBA01A;
 }
 
 #apartat7{display: none;}
