@@ -768,6 +768,89 @@ p{
 /* #foto6-6peu{
     color: #CBA01A;
 } */
+#foto6-7{
+    top: 100%;
+}
+#foto6-71{
+    background-image: url('../foto/Planol_05.jpg');
+    background-position: center center;
+}
+#foto6-72{
+    background-image: url('../foto/Planol_05.jpg');
+    background-position: center center;
+    left: 100%;
+}
+#foto6-7text{
+    position: absolute;
+    top: -170%;
+}
+#foto6-7text p{
+    padding: 25px;
+    color: white;
+}
+#foto6-7peu{
+    color: #CBA01A;
+    left: 105%;
+}
+#foto6-8{
+    background-image: url('../foto/foto_apartat_6_8.jpg');
+    background-position: center center;
+    top: 100%;
+}
+#foto6-8text{
+    position: absolute;
+    top: -180%;
+}
+#foto6-8text h3{
+    position: relative;
+    top: -300px;
+    color: white;
+}
+#foto6-8boto1{
+    position: relative;
+    top: -300px;
+}
+#foto6-8boto2{
+    position: relative;
+    top: -300px;
+}
+#foto6-8boto3{
+    position: relative;
+    top: 0;
+}
+#foto6-8peu{
+    color: white;
+    left: 105%;
+}
+.vertical div img{
+    width: auto !important;
+}
+.foto img{
+    height: 90vh;
+}
+#foto6-9{
+    background-image: url('../foto/foto_apartat_6_9.jpg');
+    background-position: center center;
+    top: 100%;
+}
+#foto6-9text{
+    position: absolute;
+    top: -175%;
+}
+#foto6-9text p{
+    position: relative;
+    padding: 25px;
+    top: -300px;
+    color: white;
+}
+#foto6-9boto{
+    position: relative;
+    top: 0;
+}
+#foto6-9peu{
+    color: white;
+    left: 105%;
+}
 
 #apartat7{display: none;}
 #apartat8{display: none;}
