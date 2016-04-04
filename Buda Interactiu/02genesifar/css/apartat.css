@@ -851,6 +851,71 @@ p{
     color: white;
     left: 105%;
 }
-
 #apartat7{display: none;}
-#apartat8{display: none;}
+#foto7-1{
+    top: 0;
+    left: -100%;
+    background-image: url('../foto/Europa_segle-XIX.jpg');
+    background-position: center center;
+}
+#foto7-1text{
+    position: absolute;
+    top: -180%;
+}
+#foto7-1text p{
+    position: relative;
+    top: -300px;
+    color: white;
+    padding: 25px;
+}
+#foto7-1text h2{
+    position: relative;
+    top: 0;
+    color: white;
+    padding: 25px;
+    text-transform: uppercase;
+}
+#foto7-2{
+    top: -100%;
+    /* background-image: url('../foto/Europa_segle-XIX.jpg'); */
+    background-position: center center;
+}
+#foto7-2text{
+    position: absolute;
+    top: -80%;
+}
+#foto7-2text p{
+    color: white;
+    padding: 25px;
+}
+#foto7-3{
+    top: -100%;
+    /* background-image: url('../foto/Europa_segle-XIX.jpg'); */
+    background-position: center center;
+}
+#foto7-3 img{
+    margin-top: 10vh;
+    max-height: 80vh;
+}
+#foto7-3text{
+    position: absolute;
+    top: -70%;
+}
+#foto7-3text p{
+    color: white;
+    font-size: xx-large;
+}
+#foto7-4{
+    top: -100%;
+    background-image: url('../foto/foto_apartat_7_4.jpg');
+    background-position: center center;
+}
+#foto7-4text{
+    position: absolute;
+    top: -80%;
+}
+#foto7-4text p{
+    color: #6684A4;
+    padding: 25px;
+    font-size: 1.3vw;
+}

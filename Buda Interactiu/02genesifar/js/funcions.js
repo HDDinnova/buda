@@ -2353,6 +2353,38 @@ function diapositiva42(){
         });
     });
 }
+function diapositiva42b(){
+    $('#foto6-9peu').animate({
+        'left': '105%'
+    },trans,'swing');
+    $('#foto6-9text p').delay('200').animate({
+        'top': '-300px'
+    },trans,'swing');
+    $('#foto6-9text').delay('400').animate({
+        'top': '-175%'
+    },trans,'swing');
+    $('#foto6-9').delay('600').animate({
+        'top': '100%'
+    },trans,'swing');
+    $('#foto6-8').delay('600').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto6-8text').delay('800').animate({
+        'top': '20%'
+    },trans,'swing');
+    $('#foto6-8boto1').delay('1000').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto6-8boto2').delay('1200').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto6-8boto3').delay('1400').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto6-8peu').delay('1600').animate({
+        'left': '105%'
+    },trans,'swing');
+}
 function diapositiva43(){
     $('#foto6-8peu').animate({
         'left': '105%'
@@ -2398,6 +2430,146 @@ function diapositiva43(){
             });
         });
     });
+    $('#apartat7').load('apartat7.html');
+}
+function diapositiva43b(){
+    $('#foto7-1text p').animate({
+        'top': '-300px'
+    },trans,'swing');
+    $('#foto7-1text').delay('200').animate({
+        'top': '-80%'
+    },trans,'swing');
+    $('#foto7-1').delay('400').animate({
+        'left': '-100%'
+    },trans,'swing',function(){
+        $('#apartat7').hide();
+    });
+    $('#foto6-9').delay('400').animate({
+        'left': '0'
+    },trans,'swing');
+    $('#foto6-9text').delay('600').animate({
+        'top': '25%'
+    },trans,'swing');
+    $('#foto6-9boto').delay('800').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto6-9peu').delay('1000').animate({
+        'left': '0'
+    },trans,'swing');
+}
+function diapositiva44(){
+    $('#apartat7').show();
+    $('#foto6-9peu').animate({
+        'left': '105%'
+    },trans,'swing');
+    $('#foto6-9boto').delay('200').animate({
+        'top': '300px'
+    },trans,'swing');
+    $('#foto6-9text').delay('400').animate({
+        'top': '125%'
+    },trans,'swing');
+    $('#foto6-9').delay('600').animate({
+        'left': '100%'
+    },trans,'swing');
+    $('#foto7-1').delay('600').animate({
+        'left': '0'
+    },trans,'swing');
+    $('#foto7-1text').delay('800').animate({
+        'top': '20%'
+    },trans,'swing');
+    $('#foto7-1text p').delay('1000').animate({
+        'top': '0'
+    },trans,'swing');
+}
+function diapositiva44b(){
+    $('#foto7-2text').animate({
+        'top': '-80%'
+    },trans,'swing');
+    $('#foto7-2').delay('200').animate({
+        'top': '-100%'
+    },trans,'swing');
+    $('#foto7-1').delay('200').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto7-1text').delay('400').animate({
+        'top': '20%'
+    },trans,'swing');
+    $('#foto7-1text h2').delay('600').animate({
+        'top': '0'
+    },trans,'swing');
+}
+function diapositiva45(){
+    $('#foto7-1text h2').animate({
+        'top': '300px'
+    },trans,'swing');
+    $('#foto7-1text').delay('200').animate({
+        'top': '120%'
+    },trans,'swing');
+    $('#foto7-1').delay('400').animate({
+        'top': '100%'
+    },trans,'swing');
+    $('#foto7-2').delay('400').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto7-2text').delay('600').animate({
+        'top': '20%'
+    },trans,'swing');
+}
+function diapositiva45b(){
+    $('#foto7-3text').animate({
+        'top': '-70%'
+    },trans,'swing');
+    $('#foto7-3').delay('200').animate({
+        'top': '-100%'
+    },trans,'swing');
+    $('#foto7-2').delay('200').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto7-2text').delay('400').animate({
+        'top': '20%'
+    },trans,'swing');
+}
+function diapositiva46(){
+    $('#foto7-2text').animate({
+        'top': '120%'
+    },trans,'swing');
+    $('#foto7-2').delay('200').animate({
+        'top': '100%'
+    },trans,'swing');
+    $('#foto7-3').delay('200').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto7-3text').delay('400').animate({
+        'top': '30%'
+    },trans,'swing');
+}
+function diapositiva46b(){
+    $('#foto7-4text').animate({
+        'top': '-80%'
+    },trans,'swing');
+    $('#foto7-4').delay('200').animate({
+        'top': '-100%'
+    },trans,'swing');
+    $('#foto7-3').delay('200').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto7-3text').delay('400').animate({
+        'top': '30%'
+    },trans,'swing');
+}
+function diapositiva47(){
+    $('#foto7-3text').animate({
+        'top': '130%'
+    },trans,'swing');
+    $('#foto7-3').delay('200').animate({
+        'top': '100%'
+    },trans,'swing');
+    $('#foto7-4').delay('200').animate({
+        'top': '0'
+    },trans,'swing');
+    $('#foto7-4text').delay('400').animate({
+        'top': '20%'
+    },trans,'swing');
 }
 
 
