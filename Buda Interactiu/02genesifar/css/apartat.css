@@ -919,3 +919,91 @@ p{
     padding: 25px;
     font-size: 1.3vw;
 }
+#foto7-5{
+    top: -100%;
+    background-image: url('../foto/foto_apartat_7_5.jpg');
+    background-position: center center;
+}
+#foto7-5text{
+    position: absolute;
+    top: -80%;
+}
+#foto7-5text p{
+    position: relative;
+    top: -300px;
+    color: white;
+    padding: 25px;
+    font-size: 1.5vw;
+}
+#foto7-5boto{
+    position: relative;
+    top: 0;
+}
+#foto7-6{
+    top: -100%;
+    background-image: url('../foto/foto_apartat_7_6.jpg');
+    background-position: center center;
+}
+#foto7-6text{
+    position: absolute;
+    top: -80%;
+}
+#foto7-6text p{
+    position: relative;
+    top: -300px;
+    color: white;
+    padding: 25px;
+}
+#foto7-6text h2{
+    position: relative;
+    top: 0;
+    color: white;
+    padding: 25px;
+    text-transform: uppercase;
+}
+#foto7-7{
+    opacity: 0;
+    background-image: url('../foto/foto_apartat_7_7.jpg');
+    background-position: center center;
+}
+#foto7-7text{
+    position: absolute;
+    top: -90%;
+}
+#foto7-7text p{
+    position: relative;
+    top: -300px;
+    color: white;
+    font-size: 1.6vw;
+}
+#foto7-7text i{
+    position: relative;
+    top: -300px;
+    color: white;
+    font-size: 1vw;
+    line-height: 1.3;
+}
+#foto7-7boto{
+    position: relative;
+    top: 0;
+}
+#foto7-8{
+    opacity: 0;
+    background-image: url('../foto/foto_apartat_7_8.jpg');
+    background-position: center center;
+}
+#foto7-8text{
+    position: absolute;
+    top: -70%;
+}
+#foto7-8text p{
+    position: relative;
+    top: -300px;
+    color: white;
+    padding: 25px;
+    font-size: 1.2vw;
+}
+#foto7-8boto{
+    position: relative;
+    top: 0;
+}
