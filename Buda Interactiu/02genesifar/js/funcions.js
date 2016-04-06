@@ -291,12 +291,8 @@ function diapositiva(id){
                 'top': '0'
             },trans,'swing',function(){
                 $('#foto1-1text').show();
-                $('#foto1-1text').animate({
-                    'top': '12%'
-                },trans,'swing');
-                $('#foto1-1peu').delay('300').animate({
-                    'left': '0'
-                },trans,'swing');
+                animat('#foto1-1text','0','12%');
+                animal('#foto1-1peu','300','0');
                 $('.scroll').delay('500').animate({
                     'bottom': '1.5%'
                 },trans,'swing',function(){            
@@ -307,493 +303,211 @@ function diapositiva(id){
             });
             break;
         case 10:
-            $('#foto1-2text p').animate({
-                'top': '-300px'
-            },trans,'swing');
-            $('#foto1-2text').delay('200').animate({
-                'top': '-185%'
-            },trans,'swing');
-            $('#foto1-2').delay('400').animate({
-                'top': '100%'
-            },trans,'swing');
-            $('#foto1-1').delay('400').animate({
-                'top': '0'
-            },trans,'swing');
-            $('#foto1-1text').delay('600').animate({
-                'top': '15%'
-            },trans,'swing');
-            $('#foto1-1peu').delay('800').animate({
-                'left': '0'
-            },trans,'swing');
-            $('.scroll').delay('1000').animate({
-                'bottom': '1.5%'
-            },trans,'swing');
+            animat('#foto1-2text p','0','-300px');
+            animat('#foto1-2text','200','-185%');
+            animat('#foto1-2','400','100%');
+            animat('#foto1-1','400','0');
+            animat('#foto1-1text','600','15%');
+            animal('#foto1-1peu','800','0');
+            animab('.scroll','1000','1.5%');
             break;
         case 11:
-            $('.scroll').animate({
-                'bottom': '-10%'
-            },trans,'swing');
-            $('#foto1-1peu').delay('200').animate({
-                'left': '-50%'
-            },trans,'swing');
-            $('#foto1-1text').delay('400').animate({
-                'top': '-212%'
-            },trans,'swing');
-            $('#foto1-1').delay('600').animate({
-                'top': '-100%'
-            },trans,'swing');
-            $('#foto1-2').delay('600').animate({
-                'top': '0'
-            },trans,'swing');
-            $('#foto1-2text').delay('800').animate({
-                'top': '15%'
-            },trans,'swing');
-            $('#foto1-2text p').delay('1000').animate({
-                'top': '0'
-            },trans,'swing');
+            animab('.scroll','0','-10%');
+            animal('#foto1-1peu','200','-50%');
+            animat('#foto1-1text','400','-212%');
+            animat('#foto1-1','600','-100%');
+            animat('#foto1-2','600','0');
+            animat('#foto1-2text','800','15%');
+            animat('#foto1-2text p','1000','0');
             break;
         case 110:
-            $('#foto1-2peu').animate({
-                'left': '-50%'
-            },trans,'swing');
-            $('#foto1-2text2').delay('200').animate({
-                'top': '-185%'
-            },trans,'swing');
-            $('#foto1-2 .tapa').delay('400').animate({
-                'opacity': '0'
-            },trans,'swing');
-            $('#foto1-2text').delay('600').animate({
-                'top': '15%'
-            },trans,'swing');
-            $('#foto1-2text h2').delay('800').animate({
-                'top': '0'
-            },trans,'swing');
+            animal('#foto1-2peu','0','-50%');
+            animat('#foto1-2text2','200','-185%');
+            animao('#foto1-2 .tapa','400','0');
+            animat('#foto1-2text','600','15%');
+            animat('#foto1-2text h2','800','0');
             break;
         case 12:
-            $('#foto1-2text h2').animate({
-                'top': '300px'
-            },trans,'swing');
-            $('#foto1-2text').delay('200').animate({
-                'top': '215%'
-            },trans,'swing');
-            $('#foto1-2 .tapa').delay('400').animate({
-                'opacity': '.7'
-            },trans,'swing');
-            $('#foto1-2text2').delay('600').animate({
-                'top': '15%'
-            },trans,'swing');
-            $('#foto1-2peu').delay('800').animate({
-                'left': '0'
-            },trans,'swing');
+            animat('#foto1-2text h2','0','300px');
+            animat('#foto1-2text','200','215%');
+            animao('#foto1-2 .tapa','400','.7');
+            animat('#foto1-2text2','600','15%');
+            animal('#foto1-2peu','800','0');
             break;
         case 120:
-            $('#foto1-2peu').animate({
-                'color': 'white'
-            },trans,'swing');
-            $('#foto1-2text3').delay('200').animate({
-                'top': '-185%'
-            },trans,'swing');
-            $('#foto1-2 .tapa').delay('400').animate({
-                'opacity': '.7'
-            },trans,'swing');
-            $('#foto1-2text2').delay('600').animate({
-                'top': '15%'
-            },trans,'swing');
+            animacol('#foto1-2peu','0','white');
+            animat('#foto1-2text3','200','-185%');
+            animao('#foto1-2 .tapa','400','.7');
+            animat('#foto1-2text2','600','15%');
             break;
         case 13:
-            $('#foto1-2text2').animate({
-                'top': '215%'
-            },trans,'swing');
-            $('#foto1-2 .tapa').delay('200').animate({
-                'opacity': '.5'
-            },trans,'swing');
-            $('#foto1-2text3').delay('400').animate({
-                'top': '15%'
-            },trans,'swing');
-            $('#foto1-2peu').delay('600').animate({
-                'color': 'black'
-            },trans,'swing');
+            animat('#foto1-2text2','0','215%');
+            animao('#foto1-2 .tapa','200','.5');
+            animat('#foto1-2text3','400','15%');
+            animacol('#foto1-2peu','600','black');
             break;
         case 130:
-            $('#foto1-3peu').animate({
-                'left': '-50%'
-            },trans,'swing');
-            $('#foto1-3text p').delay('200').animate({
-                'top': '-300px'
-            },trans,'swing');
-            $('#foto1-3text').delay('400').animate({
-                'top': '-178%'
-            },trans,'swing');
-            $('#foto1-3').delay('600').animate({
-                'top': '100%'
-            },trans,'swing');
-            $('#foto1-2').delay('600').animate({
-                'top': '0'
-            },trans,'swing');
-            $('#foto1-2text3').delay('800').animate({
-                'top': '15%'
-            },trans,'swing');
-            $('#foto1-2peu').delay('1000').animate({
-                'left': '0'
-            },trans,'swing');
+            animal('#foto1-3peu','0','-50%');
+            animat('#foto1-3text p','200','-300px');
+            animat('#foto1-3text','400','-178%');
+            animat('#foto1-3','600','100%');
+            animat('#foto1-2','600','0');
+            animat('#foto1-2text3','800','15%');
+            animal('#foto1-2peu','1000','0');
             break;
         case 14:
-            $('#foto1-2peu').animate({
-                'left': '-50%'
-            },trans,'swing');
-            $('#foto1-2text3').delay('200').animate({
-                'top': '215%'
-            },trans,'swing');
-            $('#foto1-2').delay('400').animate({
-                'top': '-100%'
-            },trans,'swing');
-            $('#foto1-3').delay('400').animate({
-                'top': '0'
-            },trans,'swing');
-            $('#foto1-3text').delay('600').animate({
-                'top': '22%'
-            },trans,'swing');
-            $('#foto1-3text p').delay('800').animate({
-                'top': '0'
-            },trans,'swing');
-            $('#foto1-3peu').delay('1000').animate({
-                'left': '0'
-            },trans,'swing');
-            $('#foto1-3play').click(function(){
-                $('body').off('mousewheel');
-                $('#videos').load('apartat1video1.html',function(){
-                    $('.videopopup').show();
-                });
-            });
+            animal('#foto1-2peu','0','-50%');
+            animat('#foto1-2text3','200','215%');
+            animat('#foto1-2','400','-100%');
+            animat('#foto1-3','400','0');
+            animat('#foto1-3text','600','22%');
+            animat('#foto1-3text p','800','0');
+            animal('#foto1-3peu','1000','0');
+            video('#foto1-3play','apartat1video1.html');
             $('#apartat2').load('apartat2.html');
             break;
         case 140:
-            $('#foto2-1peu').animate({
-                'left': '-50%'
-            },trans,'swing');
-            $('#foto2-1text').delay('200').animate({
-                'top': '-60%'
-            },trans,'swing');
+            animal('#foto2-1peu','0','-50%');
+            animat('#foto2-1text','200','-60%');
             $('#foto2-1').delay('400').animate({
                 'top': '-100%'
             },trans,'swing',function(){
                 $('#apartat2').hide();
             });
-            $('#foto1-3').delay('400').animate({
-                'top': '0'
-            },trans,'swing');
-            $('#foto1-3text').delay('600').animate({
-                'top': '22%'
-            },trans,'swing');
-            $('#play1-3').delay('800').animate({
-                'top': '0'
-            },trans,'swing');
-            $('#foto1-3peu').delay('1000').animate({
-                'left': '0'
-            },trans,'swing');
+            animat('#foto1-3','400','0');
+            animat('#foto1-3text','600','22%');
+            animat('#play1-3','800','0');
+            animal('#foto1-3peu','1000','0');
             break;
         case 15:
             $('#apartat2').show();
-            $('#foto1-3peu').animate({
-                'left': '-50%'
-            },trans,'swing');
-            $('#play1-3').delay('200').animate({
-                'top': '300px'
-            },trans,'swing');
-            $('#foto1-3text').delay('400').animate({
-                'top': '222%'
-            },trans,'swing');
-            $('#foto1-3').delay('600').animate({
-                'top': '100%'
-            },trans,'swing');
-            $('#foto2-1').delay('600').animate({
-                'top': '0'
-            },trans,'swing');
-            $('#foto2-1text').delay('800').animate({
-                'top': '40%'
-            },trans,'swing');
-            $('#foto2-1peu').delay('1000').animate({
-                'left': '0'
-            },trans,'swing');
+            animal('#foto1-3peu','0','-50%');
+            animat('#play1-3','200','300px');
+            animat('#foto1-3text','400','222%');
+            animat('#foto1-3','600','100%');
+            animat('#foto2-1','600','0');
+            animat('#foto2-1text','800','40%');
+            animal('#foto2-1peu','1000','0')
             break;
         case 150:
             $('#foto2-1').show();
-            $('#foto2-2text').animate({
-                'bottom': '108%'
-            },trans,'swing');
-            $('#foto2-2peu').delay('200').animate({
-                'opacity': '0'
-            },trans,'swing');
-            $('#foto2-2').delay('400').animate({
-                'opacity': '0'
-            },trans,'swing');
-            $('#foto2-1text').delay('600').animate({
-                'top': '40%'
-            },trans,'swing');
+            animab('#foto2-2text','0','108%');
+            animao('#foto2-2peu','200','0');
+            animao('#foto2-2','400','0');
+            animat('#foto2-1text','600','40%');
             break;
         case 16:
-            $('#foto2-1text').animate({
-                'top': '140%'
-            },trans,'swing');
-            $('#foto2-2').delay('200').animate({
-                'opacity': '1'
-            },trans,'swing');
+            animat('#foto2-1text','0','140%');
+            animao('#foto2-2','200','1');
             $('#foto2-2peu').delay('400').animate({
                 'opacity': '1'
             },trans,'swing',function(){
                 $('#foto2-1').hide();
             });
-            $('#foto2-2text').delay('600').animate({
-                'bottom': '8%'
-            },trans,'swing');
+            animab('#foto2-2text','600','8%');
             break;
         case  160:
-            $('#foto2-3peu').animate({
-                'left': '-50%'
-            },trans,'swing');
-            $('#foto2-3text').delay('200').animate({
-                'bottom': '108%'
-            },trans,'swing');
-            $('#foto2-3').delay('400').animate({
-                'top': '-100%'
-            },trans,'swing');
-            $('#foto2-2').delay('400').animate({
-                'top': '0'
-            },trans,'swing');
-            $('#foto2-2text').delay('600').animate({
-                'bottom': '8%'
-            },trans,'swing');
-            $('#foto2-2peu').delay('800').animate({
-                'left': '0'
-            },trans,'swing');
+            animal('#foto2-3peu','0','-50%');
+            animab('#foto2-3text','200','108%');
+            animat('#foto2-3','400','-100%');
+            animat('#foto2-2','400','0');
+            animab('#foto2-2text','600','8%');
+            animal('#foto2-2peu','800','0');
             break;
         case 17:
-            $('#foto2-2text').animate({
-                'bottom': '-92%'
-            },trans,'swing');
-            $('#foto2-2peu').delay('200').animate({
-                'left': '-50%'
-            },trans,'swing');
-            $('#foto2-2').delay('400').animate({
-                'top': '100%'
-            },trans,'swing');
-            $('#foto2-3').delay('400').animate({
-                'top': '0'
-            },trans,'swing');
-            $('#foto2-3text').delay('600').animate({
-                'bottom': '8%'
-            },trans,'swing');
-            $('#foto2-3peu').delay('800').animate({
-                'left': '0'
-            },trans,'swing');
+            animab('#foto2-2text','0','-92%');
+            animal('#foto2-2peu','200','-50%');
+            animat('#foto2-2','400','100%');
+            animat('#foto2-3','400','0');
+            animab('#foto2-3text','600','8%');
+            animal('#foto2-3peu','800','0');
             break;
         case 170:
-            $('#foto2-4peu').animate({
-                'left': '-50%'
-            },trans,'swing');
-            $('#foto2-4text').delay('200').animate({
-                'top': '-70%'
-            },trans,'swing');
-            $('#foto2-4').delay('400').animate({
-                'top': '-100%'
-            },trans,'swing');
-            $('#foto2-3').delay('400').animate({
-                'top': '0'
-            },trans,'swing');
-            $('#foto2-3text').delay('600').animate({
-                'bottom': '8%'
-            },trans,'swing');
-            $('#foto2-3peu').delay('800').animate({
-                'left': '0'
-            },trans,'swing');
+            animal('#foto2-4peu','0','-50%');
+            animat('#foto2-4text','200','-70%');
+            animat('#foto2-4','400','-100%');
+            animat('#foto2-3','400','0');
+            animab('#foto2-3text','600','8%');
+            animal('#foto2-3peu','800','0');
             break;
         case 18:
-            $('#foto2-3peu').animate({
-                'left': '-50%'
-            },trans,'swing');
-            $('#foto2-3text').delay('200').animate({
-                'bottom': '-92%'
-            },trans,'swing');
-            $('#foto2-3').delay('400').animate({
-                'top': '100%'
-            },trans,'swing');
-            $('#foto2-4').delay('400').animate({
-                'top': '0'
-            },trans,'swing');
-            $('#foto2-4text').delay('600').animate({
-                'top': '30%'
-            },trans,'swing');
-            $('#foto2-4peu').delay('800').animate({
-                'left': '0'
-            },trans,'swing');
+            animal('#foto2-3peu','0','-50%');
+            animab('#foto2-3text','200','-92%');
+            animat('#foto2-3','400','100%');
+            animat('#foto2-4','400','0');
+            animat('#foto2-4text','600','30%');
+            animal('#foto2-4peu','800','0');
             break;
         case 180:
-            $('#foto2-5peu').animate({
-                'left': '-50%'
-            },trans,'swing');
-            $('#foto2-5text').delay('200').animate({
-                'top': '-70%'
-            },trans,'swing');
-            $('#foto2-5').delay('400').animate({
-                'top': '-100%'
-            },trans,'swing');
-            $('#foto2-4').delay('400').animate({
-                'top': '0'
-            },trans,'swing');
-            $('#foto2-4text').delay('600').animate({
-                'top': '30%'
-            },trans,'swing');
-            $('#foto2-4peu').delay('800').animate({
-                'left': '0'
-            },trans,'swing');
+            animal('#foto2-5peu','0','-50%');
+            animat('#foto2-5text','200','-70%');
+            animat('#foto2-5','400','-100%');
+            animat('#foto2-4','400','0');
+            animat('#foto2-4text','600','30%');
+            animal('#foto2-4peu','800','0');
             break;
         case 19:
-            $('#foto2-4peu').animate({
-                'left': '-50%'
-            },trans,'swing');
-            $('#foto2-4text').delay('200').animate({
-                'top': '130%'
-            },trans,'swing');
-            $('#foto2-4').delay('400').animate({
-                'top': '100%'
-            },trans,'swing');
-            $('#foto2-5').delay('400').animate({
-                'top': '0'
-            },trans,'swing');
-            $('#foto2-5text').delay('600').animate({
-                'top': '30%'
-            },trans,'swing');
-            $('#foto2-5peu').delay('800').animate({
-                'left': '0'
-            },trans,'swing');
+            animal('#foto2-4peu','0','-50%');
+            animat('#foto2-4text','200','130%');
+            animat('#foto2-4','400','100%');
+            animat('#foto2-5','400','0');
+            animat('#foto2-5text','600','30%');
+            animal('#foto2-5peu','800','0');
             $('#apartat3').load('apartat3.html');
             break;
         case 190:
-            $('#foto3-1peu').animate({
-                'bottom': '-50%'
-            },trans,'swing');
-            $('#foto3-1text').delay('200').animate({
-                'top': '155%'
-            },trans,'swing');
+            animab('#foto3-1peu','0','-50%');
+            animat('#foto3-1text','200','155%');
             $('#foto3-1').delay('400').animate({
                 'left': '-100%'
             },trans,'swing',function(){
                 $('#apartat3').hide();
             });
-            $('#foto2-5').delay('400').animate({
-                'left': '0'
-            },trans,'swing');
-            $('#foto2-5text').delay('600').animate({
-                'top': '30%'
-            },trans,'swing');
-            $('#foto2-5peu').delay('800').animate({
-                'left': '0'
-            },trans,'swing');
+            animal('#foto2-5','400','0');
+            animat('#foto2-5text','600','30%');
+            animal('#foto2-5peu','800','0');
             break;
         case 20:
             $('#apartat3').show();
-            $('#foto2-5peu').animate({
-                'left': '-50%'
-            },trans,'swing');
-            $('#foto2-5text').delay('200').animate({
-                'top': '130%'
-            },trans,'swing');
-            $('#foto2-5').delay('400').animate({
-                'left': '100%'
-            },trans,'swing');
-            $('#foto3-1').delay('400').animate({
-                'left': '0'
-            },trans,'swing');
-            $('#foto3-1text').delay('600').animate({
-                'top': '55%'
-            },trans,'swing');
-            $('#foto3-1peu').delay('800').animate({
-                'bottom': '10px'
-            },trans,'swing');
+            animal('#foto2-5peu','0','-50%');
+            animat('#foto2-5text','200','130%');
+            animal('#foto2-5','400','100%');
+            animal('#foto3-1','400','0');
+            animat('#foto3-1text','600','55%');
+            animab('#foto3-1peu','800','10px');
             break;
         case 200:
-            $('#foto3-2peu p').animate({
-                'left': '-300px'
-            },trans,'swing');
-            $('#foto3-2peu').delay('200').animate({
-                'left': '-50%'
-            },trans,'swing');
-            $('#foto3-2text').delay('400').animate({
-                'top': '-180%'
-            },trans,'swing');
-            $('#foto3-2').delay('600').animate({
-                'top': '100%'
-            },trans,'swing');
-            $('#foto3-1').delay('600').animate({
-                'top': '0'
-            },trans,'swing');
-            $('#foto3-1text').delay('800').animate({
-                'top': '55%'
-            },trans,'swing');
-            $('#foto3-1peu').delay('1000').animate({
-                'bottom': '10px'
-            },trans,'swing');
+            animal('#foto3-2peu p','0','-300px');
+            animal('#foto3-2peu','200','-50%');
+            animat('#foto3-2text','400','-180%');
+            animat('#foto3-2','600','100%');
+            animat('#foto3-1','600','0');
+            animat('#foto3-1text','800','55%');
+            animab('#foto3-1peu','1000','10px');
             break;
         case 21:
-            $('#foto3-1peu').animate({
-                'bottom': '-150%'
-            },trans,'swing');
-            $('#foto3-1text').delay('200').animate({
-                'top': '-45%'
-            },trans,'swing');
-            $('#foto3-1').delay('400').animate({
-                'top': '-100%'
-            },trans,'swing');
-            $('#foto3-2').delay('400').animate({
-                'top': '0'
-            },trans,'swing');
-            $('#foto3-2text').delay('600').animate({
-                'top': '20%'
-            },trans,'swing');
-            $('#foto3-2peu').delay('800').animate({
-                'left': '0'
-            },trans,'swing');
-            $('#foto3-2peu p').delay('1000').animate({
-                'left': '0'
-            },trans,'swing');
-            $('#foto3-2play').click(function(){
-                $('body').off('mousewheel');
-                $('#videos').load('apartat3video1.html',function(){
-                    $('.videopopup').show();
-                });
-            });
+            animab('#foto3-1peu','0','-150%');
+            animat('#foto3-1text','200','-45%');
+            animat('#foto3-1','400','-100%');
+            animat('#foto3-2','400','0');
+            animat('#foto3-2text','600','20%');
+            animal('#foto3-2peu','800','0');
+            animal('#foto3-2peu p','1000','0');
+            video('#foto3-2play','apartat3video1.html');
             break;
         case 210:
             $('#foto3-3 video')[0].pause();
-            $('#foto3-3').animate({
-                'top': '100%'
-            },trans,'swing');
-            $('#foto3-2').animate({
-                'top': '0'
-            },trans,'swing');
-            $('#foto3-2text').delay('200').animate({
-                'top': '20%'
-            },trans,'swing');
-            $('#foto3-2peu').delay('400').animate({
-                'left': '0'
-            },trans,'swing');
-            $('#foto3-2peu p').delay('600').animate({
-                'left': '0'
-            },trans,'swing');
+            animat('#foto3-3','0','100%');
+            animat('#foto3-2','0','0');
+            animat('#foto3-2text','200','20%');
+            animal('#foto3-2peu','400','0');
+            animal('#foto3-2peu p','600','0');
             break;
         case 22:
-            $('#foto3-2peu p').animate({
-                'left': '-300px'
-            },trans,'swing');
-            $('#foto3-2peu').delay('200').animate({
-                'left': '-50%'
-            },trans,'swing');
-            $('#foto3-2text').delay('400').animate({
-                'top': '220%'
-            },trans,'swing');
-            $('#foto3-2').delay('600').animate({
-                'top': '-100%'
-            },trans,'swing');
+            animal('#foto3-2peu p','0','-300px');
+            animal('#foto3-2peu','200','-50%');
+            animat('#foto3-2text','400','220%');
+            animat('#foto3-2','600','-100%');
             $('#foto3-3').delay('600').animate({
                 'top': '0'
             },trans,'swing',function(){
@@ -805,18 +519,10 @@ function diapositiva(id){
             });
             break;
         case 220:
-            $('#foto3-4peu').animate({
-                'left': '-50%'
-            },trans,'swing');
-            $('#foto3-4text h3').delay('200').animate({
-                'top': '-300px'
-            },trans,'swing');
-            $('#foto3-4text').delay('400').animate({
-                'top': '-185%'
-            },trans,'swing');
-            $('#foto3-4').delay('600').animate({
-                'top': '100%'
-            },trans,'swing');
+            animal('#foto3-4peu','0','-50%');
+            animat('#foto3-4text h3','200','-300px');
+            animat('#foto3-4text','400','-185%');
+            animat('#foto3-4','600','100%');
             $('#foto3-3').delay('600').animate({
                 'top': '0'
             },trans,'swing',function(){
@@ -825,27 +531,12 @@ function diapositiva(id){
             break;
         case 23:
             $('#foto3-3 video')[0].pause();
-            $('#foto3-3').animate({
-                'top': '-100%'
-            },trans,'swing');
-            $('#foto3-4').animate({
-                'top': '0'
-            },trans,'swing');
-            $('#foto3-4text').delay('200').animate({
-                'top': '15%'
-            },trans,'swing');
-            $('#foto3-4text h3').delay('400').animate({
-                'top': '0'
-            },trans,'swing');
-            $('#foto3-4peu').delay('600').animate({
-                'left': '0'
-            },trans,'swing');
-            $('#foto3-4play').click(function(){
-                $('body').off('mousewheel');
-                $('#videos').load('apartat3video2.html',function(){
-                    $('.videopopup').show();
-                });
-            });
+            animat('#foto3-3','0','-100%');
+            animat('#foto3-4','0','0');
+            animat('#foto3-4text','200','15%');
+            animat('#foto3-4text h3','400','0');
+            animal('#foto3-4peu','600','0');
+            video('#foto3-4play','apartat3video2.html');
             break;
         case 230:
             $('#foto3-5 img').animate({
@@ -853,50 +544,22 @@ function diapositiva(id){
                 'left': '-180%',
                 rotate: '90deg'
             },trans,'swing');
-            $('#foto3-5peu').delay('200').animate({
-                'left': '-50%'
-            },trans,'swing');
-            $('#foto3-5text').delay('400').animate({
-                'top': '-185%'
-            },trans,'swing');
-            $('#foto3-5').delay('600').animate({
-                'top': '100%'
-            },trans,'swing');
-            $('#foto3-4').delay('600').animate({
-                'top': '0'
-            },trans,'swing');
-            $('#foto3-4text').delay('800').animate({
-                'top': '15%'
-            },trans,'swing');
-            $('#play3-4').delay('1000').animate({
-                'top': '0'
-            },trans,'swing');
-            $('#foto3-4peu').delay('1100').animate({
-                'left': '0'
-            },trans,'swing');
+            animal('#foto3-5peu','200','-50%');
+            animat('#foto3-5text','400','-185%');
+            animat('#foto3-5','600','100%');
+            animat('#foto3-4','600','0');
+            animat('#foto3-4text','800','15%');
+            animat('#play3-4','1000','0');
+            animal('#foto3-4peu','1100','0');
             break;
         case 24:
-            $('#foto3-4peu').animate({
-                'left': '-50%'
-            },trans,'swing');
-            $('#play3-4').delay('200').animate({
-                'top': '300px'
-            },trans,'swing');
-            $('#foto3-4text').delay('400').animate({
-                'top': '215%'
-            },trans,'swing');
-            $('#foto3-4').delay('600').animate({
-                'top': '-100%'
-            },trans,'swing');
-            $('#foto3-5').delay('600').animate({
-                'top': '0'
-            },trans,'swing');
-            $('#foto3-5text').delay('800').animate({
-                'top': '15%'
-            },trans,'swing');
-            $('#foto3-5peu').delay('1000').animate({
-                'left': '0'
-            },trans,'swing');
+            animal('#foto3-4peu','0','-50%');
+            animat('#play3-4','200','300px');
+            animat('#foto3-4text','400','215%');
+            animat('#foto3-4','600','-100%');
+            animat('#foto3-5','600','0');
+            animat('#foto3-5text','800','15%');
+            animal('#foto3-5peu','1000','0');
             $('#foto3-5 img').rotate('90deg');
             $('#foto3-5 img').delay('1100').animate({
                 'top': '15%',
@@ -906,1367 +569,583 @@ function diapositiva(id){
             $('#apartat4').load('apartat4.html');
             break;
         case 240:
-            $('#foto4-1text').animate({
-                'top': '120%'
-            },trans,'swing');
+            animat('#foto4-1text','0','120%');            
             $('#foto4-1').delay('200').animate({
                 'left': '100%'
             },trans,'swing',function(){
                 $('#apartat4').hide();
             });
-            $('#foto3-5').delay('200').animate({
-                'left': '0'
-            },trans,'swing');
-            $('#foto3-5text').delay('400').animate({
-                'top': '15%'
-            },trans,'swing');
-            $('#foto3-5peu').delay('600').animate({
-                'left': '0'
-            },trans,'swing');
+            animal('#foto3-5','200','0');
+            animat('#foto3-5text','400','15%');
+            animal('#foto3-5peu','600','0');
             $('#foto3-5 img').delay('800').animate({
                 'top': '15%',
                 'left': '0',
                 rotate: '10deg'
             },trans,'swing');
             break;
-    }
-}
-function diapositiva25(){
-    $('#apartat4').show();
-    $('#foto3-5 img').animate({
-        'top': '115%',
-        'left': '180%',
-        rotate: '-40deg'
-    },trans,'swing');
-    $('#foto3-5peu').delay('200').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto3-5text').delay('400').animate({
-        'top': '115%'
-    },trans,'swing');
-    $('#foto3-5').delay('600').animate({
-        'left': '-100%'
-    },trans,'swing');
-    $('#foto4-1').delay('600').animate({
-        'left': '0'
-    },trans,'swing');
-    $('#foto4-1text').delay('800').animate({
-        'top': '20%'
-    },trans,'swing');
-}
-function diapositiva25b(){
-    $('#foto4-2peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto4-2foto').delay('200').animate({
-        'top': '-100%',
-        'left': '200%',
-        rotate: '-90deg'
-    },trans,'swing');
-    $('#play4-2').delay('400').animate({
-        'top': '300px'
-    },trans,'swing');
-    $('#foto4-2text p').delay('600').animate({
-        'top': '300px'
-    },trans,'swing');
-    $('#foto4-2text').delay('800').animate({
-        'top': '115%'
-    },trans,'swing');
-    $('#foto4-1 img').delay('1000').animate({
-        'opacity': '1'
-    },trans,'swing');
-    $('#foto4-1text').delay('1200').animate({
-        'top': '20%'
-    },trans,'swing');
-}
-function diapositiva26(){
-    $('#foto4-1text').animate({
-        'top': '-180%'
-    },trans,'swing');
-    $('#foto4-1 img').delay('200').animate({
-        'opacity': '.5'
-    },trans,'swing');
-    $('#foto4-2text').delay('400').animate({
-        'top': '15%'
-    },trans,'swing');
-    $('#foto4-2text p').delay('600').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#play4-2').delay('800').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto4-2foto').rotate('-90deg');
-    $('#foto4-2foto').delay('1000').animate({
-        'top': '15%',
-        'left': '0',
-        rotate: '10deg'
-    },trans,'swing');
-    $('#foto4-2peu').delay('1200').animate({
-        'left': '0'
-    },trans,'swing');
-    $('#foto4-2play').click(function(){
-        $('body').off('mousewheel');
-        $('#videos').load('apartat4video1.html',function(){
-            $('.videopopup').show();
-        });
-    });
-}
-function diapositiva26b(){
-    $('#foto4-3peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto4-3text').delay('200').animate({
-        'bottom': '-215%'
-    },trans,'swing');
-    $('#foto4-3').delay('400').animate({
-        'top': '-100%'
-    },trans,'swing');
-    $('#foto4-1').delay('400').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto4-2text').delay('600').animate({
-        'top': '15%'
-    },trans,'swing');
-    $('#foto4-2text p').delay('800').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto4-2text h2').delay('1000').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto4-2foto').delay('2200').animate({
-        'top': '15%',
-        'left': '0',
-        rotate: '10deg'
-    },trans,'swing');
-    $('#foto4-2peu').delay('1400').animate({
-        'left': '0'
-    },trans,'swing');
-}
-function diapositiva27(){
-    $('#foto4-2peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto4-2foto').delay('200').animate({
-        'top': '180%',
-        'left': '180%',
-        rotate: '-90deg'
-    },trans,'swing');
-    $('#foto4-2text h2').delay('400').animate({
-        'top': '-300px'
-    },trans,'swing');
-    $('#foto4-2text p').delay('600').animate({
-        'top': '-300px'
-    },trans,'swing');
-    $('#foto4-2text').delay('800').animate({
-        'top': '-185%'
-    },trans,'swing');
-    $('#foto4-1').delay('1000').animate({
-        'top': '100%'
-    },trans,'swing');
-    $('#foto4-3').delay('1000').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto4-3text').delay('1200').animate({
-        'bottom': '15%'
-    },trans,'swing');
-    $('#foto4-3peu').delay('1400').animate({
-        'left': '0'
-    },trans,'swing');
-}
-function diapositiva27b(){
-    $('#foto4-4peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#play4-43').delay('200').animate({
-        'top': '300px'
-    },trans,'swing');
-    $('#play4-42').delay('300').animate({
-        'top': '300px'
-    },trans,'swing');
-    $('#play4-41').delay('400').animate({
-        'top': '300px'
-    },trans,'swing');
-    $('#foto4-4text').delay('500').animate({
-        'top': '215%'
-    },trans,'swing');
-    $('#foto4-4').delay('700').animate({
-        'top': '-100%'
-    },trans,'swing');
-    $('#foto4-3').delay('700').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto4-3text').delay('900').animate({
-        'bottom': '15%'
-    },trans,'swing');
-    $('#foto4-3peu').delay('1100').animate({
-        'left': '0'
-    },trans,'swing');
-}
-function diapositiva28(){
-    $('#foto4-3peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto4-3text').delay('200').animate({
-        'bottom': '215%'
-    },trans,'swing');
-    $('#foto4-3').delay('400').animate({
-        'top': '100%'
-    },trans,'swing');
-    $('#foto4-4').delay('400').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto4-4text').delay('600').animate({
-        'top': '15%'
-    },trans,'swing');
-    $('#play4-41').delay('700').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#play4-42').delay('800').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#play4-43').delay('900').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto4-4peu').delay('1100').animate({
-        'left': '0'
-    },trans,'swing');
-    $('#foto4-41play').click(function(){
-        $('body').off('mousewheel');
-        $('#videos').load('apartat4video2.html',function(){
-            $('.videopopup').show();
-        });
-    });
-    $('#foto4-42play').click(function(){
-        $('body').off('mousewheel');
-        $('#videos').load('apartat4video3.html',function(){
-            $('.videopopup').show();
-        });
-    });
-    $('#foto4-43play').click(function(){
-        $('body').off('mousewheel');
-        $('#videos').load('apartat4video4.html',function(){
-            $('.videopopup').show();
-        });
-    });
-    $('#foto4-4text span').click(function(){
-        $('body').append("<div id='mesinfo'><div>");
-        $('body').off('mousewheel');
-        $.ajax({
-            url: "mesinfo.html",
-            context: document.body
-        }).done(function(data) {
-            $('#mesinfo').html(data);
-            $('#zonaactiva').click(function(){
-                console.log('Tancar');
-                $('#zonaactiva').off('click');
-                $('#mesinfo').remove();
-                $('body').on('mousewheel',function(e){
-                    controlMouse(e);
+        case 25:
+            $('#apartat4').show();
+            $('#foto3-5 img').animate({
+                'top': '115%',
+                'left': '180%',
+                rotate: '-40deg'
+            },trans,'swing');
+            animal('#foto3-5peu','200','-50%');
+            animat('#foto3-5text','400','115%');
+            animal('#foto3-5','600','-100%');
+            animal('#foto4-1','600','0');
+            animat('#foto4-1text','800','20%');
+            break;
+        case 250:
+            animal('#foto4-2peu','0','-50%');
+            $('#foto4-2foto').delay('200').animate({
+                'top': '-100%',
+                'left': '200%',
+                rotate: '-90deg'
+            },trans,'swing');
+            animat('#play4-2','400','300px');
+            animat('#foto4-2text p','600','300px');
+            animat('#foto4-2text','800','115%');
+            animao('#foto4-1 img','1000','1');
+            animat('#foto4-1text','1200','20%');
+            break;
+        case 26:
+            animat('#foto4-1text','0','-180%');
+            animao('#foto4-1 img','200','.5');
+            animat('#foto4-2text','400','15%');
+            animat('#foto4-2text p','600','0');
+            animat('#play4-2','800','0');
+            $('#foto4-2foto').rotate('-90deg');
+            $('#foto4-2foto').delay('1000').animate({
+                'top': '15%',
+                'left': '0',
+                rotate: '10deg'
+            },trans,'swing');
+            animal('#foto4-2peu','1200','0');
+            video('#foto4-2play','apartat4video1.html');
+            break;
+        case 260:
+            animal('#foto4-3peu','0','-50%');
+            animab('#foto4-3text','200','-215%');
+            animat('#foto4-3','400','-100%');
+            animat('#foto4-1','400','0');
+            animat('#foto4-2text','600','15%');
+            animat('#foto4-2text p','800','0');
+            animat('#foto4-2text h2','1000','0');
+            $('#foto4-2foto').delay('2200').animate({
+                'top': '15%',
+                'left': '0',
+                rotate: '10deg'
+            },trans,'swing');
+            animal('#foto4-2peu','1400','0');
+            break;
+        case 27:
+            animal('#foto4-2peu','0','-50%');
+            $('#foto4-2foto').delay('200').animate({
+                'top': '180%',
+                'left': '180%',
+                rotate: '-90deg'
+            },trans,'swing');
+            animat('#foto4-2text h2','400','-300px');
+            animat('#foto4-2text p','600','-300px');
+            animat('#foto4-2text','800','-185%');
+            animat('#foto4-1','1000','100%');
+            animat('#foto4-3','1000','0');
+            animab('#foto4-3text','1200','15%');
+            animal('#foto4-3peu','1400','0');
+            break;
+        case 270:
+            animal('#foto4-4peu','0','-50%');
+            animat('#play4-43','200','300px');
+            animat('#play4-42','300','300px');
+            animat('#play4-41','400','300px');
+            animat('#foto4-4text','500','215%');
+            animat('#foto4-4','700','-100%');
+            animat('#foto4-3','700','0');
+            animab('#foto4-3text','900','15%');
+            animal('#foto4-3peu','1100','0');
+            break;
+        case 28:
+            animal('#foto4-3peu','0','-50%');
+            animab('#foto4-3text','200','215%');
+            animat('#foto4-3','400','100%');
+            animat('#foto4-4','400','0');
+            animat('#foto4-4text','600','15%');
+            animat('#play4-41','700','0');
+            animat('#play4-42','800','0');
+            animat('#play4-43','900','0');
+            animal('#foto4-4peu','1100','0');
+            video('#foto4-41play','apartat4video2.html');
+            video('#foto4-42play','apartat4video3.html');
+            video('#foto4-43play','apartat4video4.html');
+            $('#foto4-4text span').click(function(){
+                $('body').append("<div id='mesinfo'><div>");
+                $('body').off('mousewheel');
+                $.ajax({
+                    url: "mesinfo.html",
+                    context: document.body
+                }).done(function(data) {
+                    $('#mesinfo').html(data);
+                    $('#zonaactiva').click(function(){
+                        $('#zonaactiva').off('click');
+                        $('#mesinfo').remove();
+                        $('body').on('mousewheel',function(e){
+                            controlMouse(e);
+                        });
+                    });
+                }).error(function(e){
+                    console.log(e);
                 });
             });
-        }).error(function(e){
-            console.log(e);
-        });
-    });
-    $('#apartat5').load('apartat5.html');
-}
-function diapositiva28b(){
-    $('#foto5-1peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto5-1text h2').delay('200').animate({
-        'top': '300px'
-    },trans,'swing');
-    $('#foto5-1text').delay('400').animate({
-        'top': '225%'
-    },trans,'swing');
-    $('#foto5-1').delay('600').animate({
-        'top': '-100%'
-    },trans,'swing',function(){
-        $('#apartat5').hide();
-    });
-    $('#foto4-4').delay('600').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto4-4text').delay('800').animate({
-        'top': '15%'
-    },trans,'swing');
-    $('#play4-42').delay('900').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#play4-41').delay('1000').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto4-4text p').delay('1100').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto4-4peu').delay('1200').animate({
-        'left': '0'
-    },trans,'swing');
-}
-function diapositiva29(){
-    $('#apartat5').show();
-    $('#foto4-4peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto4-4text p').delay('200').animate({
-        'top': '-300px'
-    },trans,'swing');
-    $('#play4-41').delay('300').animate({
-        'top': '-300px'
-    },trans,'swing');
-    $('#play4-42').delay('400').animate({
-        'top': '-300px'
-    },trans,'swing');
-    $('#foto4-4text').delay('500').animate({
-        'top': '-215%'
-    },trans,'swing');
-    $('#foto4-4').delay('600').animate({
-        'top': '100%'
-    },trans,'swing');
-    $('#foto5-1').delay('600').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto5-1text').delay('800').animate({
-        'top': '25%'
-    },trans,'swing');
-    $('#foto5-1text h2').delay('1000').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto5-1peu').delay('1200').animate({
-        'left': '0'
-    },trans,'swing');
-}
-function diapositiva29b(){
-    $('#foto5-2peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto5-2boto').delay('200').animate({
-        'top': '300px'
-    },trans,'swing');
-    $('#foto5-2text').delay('400').animate({
-        'top': '240%'
-    },trans,'swing');
-    $('#foto5-2').delay('600').animate({
-        'top': '-100%'
-    },trans,'swing');
-    $('#foto5-1').delay('600').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto5-1text').delay('800').animate({
-        'top': '25%'
-    },trans,'swing');
-    $('#foto5-1text p').delay('1000').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto5-1peu').delay('1200').animate({
-        'left': '0'
-    },trans,'swing');
-}
-function diapositiva30(){
-    $('#foto5-1peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto5-1text p').delay('200').animate({
-        'top': '-300px'
-    },trans,'swing');
-    $('#foto5-1text').delay('400').animate({
-        'top': '-275%'
-    },trans,'swing');
-    $('#foto5-1').delay('600').animate({
-        'top': '100%'
-    },trans,'swing');
-    $('#foto5-2').delay('600').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto5-2text').delay('800').animate({
-        'top': '40%'
-    },trans,'swing');
-    $('#foto5-2boto').delay('1000').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto5-2peu').delay('1200').animate({
-        'left': '0'
-    },trans,'swing');
-    $('#foto5-2boto').click(function(){
-        $('body').off('mousewheel');
-        $('#foto5-2fotos').show();
-        if(!slider1){
-            $('#foto5-2fotos .sliderfotos').slick();
-            slider1=true;
-        }
-        $('#foto5-2fotos .blau').click(function(){
-            $('#foto5-2fotos').hide();
-            $('body').on('mousewheel',function(e){
-                controlMouse(e);
+            $('#apartat5').load('apartat5.html');
+            break;
+        case 280:
+            animal('#foto5-1peu','0','-50%');
+            animat('#foto5-1text h2','200','300px');
+            animat('#foto5-1text','400','225%');
+            $('#foto5-1').delay('600').animate({
+                'top': '-100%'
+            },trans,'swing',function(){
+                $('#apartat5').hide();
             });
-        });
-    });
-}
-function diapositiva30b(){
-    $('#foto5-3peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto5-3boto').delay('200').animate({
-        'top': '300px'
-    },trans,'swing');
-    $('#foto5-3text').delay('400').animate({
-        'top': '210%'
-    },trans,'swing');
-    $('#foto5-3').delay('600').animate({
-        'top': '-100%'
-    },trans,'swing');
-    $('#foto5-2').delay('600').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto5-2text').delay('800').animate({
-        'top': '40%'
-    },trans,'swing');
-    $('#foto5-2text p').delay('1000').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto5-2peu').delay('1200').animate({
-        'left': '0'
-    },trans,'swing');
-}
-function diapositiva31(){
-    $('#foto5-2peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto5-2text p').delay('200').animate({
-        'top': '-300px'
-    },trans,'swing');
-    $('#foto5-2text').delay('400').animate({
-        'top': '-260%'
-    },trans,'swing');
-    $('#foto5-2').delay('600').animate({
-        'top': '100%'
-    },trans,'swing');
-    $('#foto5-3').delay('600').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto5-3text').delay('800').animate({
-        'top': '10%'
-    },trans,'swing');
-    $('#foto5-3boto').delay('1000').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto5-3peu').delay('1200').animate({
-        'left': '0'
-    },trans,'swing');
-}
-function diapositiva31b(){
-    $('#foto5-4peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto5-4boto2').delay('200').animate({
-        'top': '300px'
-    },trans,'swing');
-    $('#foto5-4boto1').delay('400').animate({
-        'top': '300px'
-    },trans,'swing');
-    $('#foto5-4text').delay('600').animate({
-        'top': '215%'
-    },trans,'swing');
-    $('#foto5-4').delay('800').animate({
-        'top': '-100%'
-    },trans,'swing');
-    $('#foto5-3').delay('800').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto5-3text').delay('1000').animate({
-        'top': '10%'
-    },trans,'swing');
-    $('#foto5-3text h3').delay('1200').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto5-3peu').delay('1400').animate({
-        'left': '0'
-    },trans,'swing');
-}
-function diapositiva32(){
-    $('#foto5-3peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto5-3text h3').delay('200').animate({
-        'top': '-300px'
-    },trans,'swing');
-    $('#foto5-3text').delay('400').animate({
-        'top': '-290%'
-    },trans,'swing');
-    $('#foto5-3').delay('600').animate({
-        'top': '100%'
-    },trans,'swing');
-    $('#foto5-4').delay('600').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto5-4text').delay('800').animate({
-        'top': '15%'
-    },trans,'swing');
-    $('#foto5-4boto1').delay('1000').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto5-4boto2').delay('1200').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto5-4peu').delay('1400').animate({
-        'left': '0'
-    },trans,'swing');
-    $('#foto5-4boto2').click(function(){
-        $('body').off('mousewheel');
-        $('#videos').load('apartat5video1.html',function(){
-            $('.videopopup').show();
-        });
-    });
-}
-function diapositiva32b(){
-    $('#foto5-5boto').animate({
-        'top': '300px'
-    },trans,'swing');
-    $('#foto5-5text').delay('200').animate({
-        'top': '115%'
-    },trans,'swing');
-    $('#foto5-5').delay('400').animate({
-        'opacity': '0'
-    },trans,'swing',function(){
-        $('#foto5-5').hide();
-    });
-    $('#foto5-4text').delay('600').animate({
-        'top': '15%'
-    },trans,'swing');
-    $('#foto5-4boto1').delay('800').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto5-4text h3').delay('1000').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto5-4peu').delay('1200').animate({
-        'left': '0'
-    },trans,'swing');
-}
-function diapositiva33(){
-    $('#foto5-5').show();
-    $('#foto5-4peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto5-4text h3').delay('200').animate({
-        'top': '-300px'
-    },trans,'swing');
-    $('#foto5-4boto1').delay('400').animate({
-        'top': '-300px'
-    },trans,'swing');
-    $('#foto5-4text').delay('600').animate({
-        'top': '-85%'
-    },trans,'swing');
-    $('#foto5-5').delay('800').animate({
-        'opacity': '1'
-    },trans,'swing');
-    $('#foto5-5text').delay('1000').animate({
-        'top': '15%'
-    },trans,'swing');
-    $('#foto5-5boto').delay('1200').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto5-5boto').click(function(){
-        $('body').off('mousewheel');
-        $('#videos').load('apartat5video2.html',function(){
-            $('.videopopup').show();
-        });
-    });
-    $('#apartat6').load('apartat6.html');
-}
-function diapositiva33b(){
-    $('#foto6-1text').animate({
-        'top': '-80%'
-    },trans,'swing');
-    $('#foto6-1').delay('200').animate({
-        'left': '100%'
-    },trans,'swing',function(){
-        $('#apartat6').hide();
-    });
-    $('#foto5-5').delay('200').animate({
-        'left': '0'
-    },trans,'swing');
-    $('#foto5-5text').delay('400').animate({
-        'top': '15%'
-    },trans,'swing');
-    $('#foto5-5text p').delay('600').animate({
-        'top': '0'
-    },trans,'swing');
-}
-function diapositiva34(){
-    $('#apartat6').show();
-    $('#foto5-5text p').animate({
-        'top': '-300px'
-    },trans,'swing');
-    $('#foto5-5text').delay('200').animate({
-        'top': '-85%'
-    },trans,'swing');
-    $('#foto5-5').delay('400').animate({
-        'left': '-100%'
-    },trans,'swing');
-    $('#foto6-1').delay('400').animate({
-        'left': '0'
-    },trans,'swing');
-    $('#foto6-1text').delay('600').animate({
-        'top': '20%'
-    },trans,'swing');
-}
-function diapositiva34b(){
-    $('#foto6-2text').animate({
-        'top': '-80%'
-    },trans,'swing');
-    $('#foto6-2').delay('200').animate({
-        'opacity': '0'
-    },trans,'swing');
-    $('#foto6-1text').delay('400').animate({
-        'top': '20%'
-    },trans,'swing');
-}
-function diapositiva35(){
-    $('#foto6-1text').animate({
-        'top': '120%'
-    },trans,'swing');
-    $('#foto6-2').delay('200').animate({
-        'opacity': '1'
-    },trans,'swing');
-    $('#foto6-2text').delay('400').animate({
-        'top': '20%'
-    },trans,'swing');
-}
-function diapositiva35b(){
-    $('#foto6-3text').animate({
-        'top': '-190%'
-    },trans,'swing');
-    $('#foto6-3').delay('200').animate({
-        'top': '100%'
-    },trans,'swing');
-    $('#foto6-2').delay('200').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto6-2text').delay('400').animate({
-        'top': '20%'
-    },trans,'swing');
-}
-function diapositiva36(){
-    $('#foto6-2text').animate({
-        'top': '220%'
-    },trans,'swing');
-    $('#foto6-2').delay('200').animate({
-        'top': '-100%'
-    },trans,'swing');
-    $('#foto6-3').delay('200').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto6-3text').delay('400').animate({
-        'top': '10%'
-    },trans,'swing');
-    $('#foto6-3peu').delay('600').animate({
-        'left': '0'
-    },trans,'swing');
-}
-function diapositiva36b(){
-    $('#foto6-4 video')[0].pause();
-    $('#foto6-4peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto6-4').delay('200').animate({
-        'top': '100%'
-    },trans,'swing');
-    $('#foto6-3').delay('200').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto6-3text').delay('400').animate({
-        'top': '10%'
-    },trans,'swing');
-    $('#foto6-3peu').delay('600').animate({
-        'left': '0'
-    },trans,'swing');
-}
-function diapositiva37(){
-    $('#foto6-3peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto6-3text').delay('200').animate({
-        'top': '210%'
-    },trans,'swing');
-    $('#foto6-3').delay('400').animate({
-        'top': '-100%'
-    },trans,'swing');
-    $('#foto6-4').delay('400').animate({
-        'top': '0'
-    },trans,'swing',function(){
-        $('#foto6-4 video')[0].play();
-    });
-    $('#foto6-4peu').delay('600').animate({
-        'left': '0'
-    },trans,'swing');
-    $('#foto6-4 video').on('ended',function(){
-        pos=38;
-        diapositiva38();
-    });
-}
-function diapositiva37b(){
-    $('#foto6-5peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto6-5text').delay('200').animate({
-        'top': '-180%'
-    },trans,'swing');
-    $('#foto6-5').delay('400').animate({
-        'top': '100%'
-    },trans,'swing');
-    $('#foto6-4').delay('400').animate({
-        'top': '0'
-    },trans,'swing',function(){
-        $('#foto6-4 video')[0].play();
-    });
-    $('#foto6-4peu').delay('600').animate({
-        'left': '0'
-    },trans,'swing');
-}
-function diapositiva38(){
-    $('#foto6-4 video')[0].pause();
-    $('#foto6-4peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto6-4').delay('200').animate({
-        'top': '-100%'
-    },trans,'swing');
-    $('#foto6-5').delay('200').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto6-5text').delay('400').animate({
-        'top': '20%'
-    },trans,'swing');
-    $('#foto6-5peu').delay('600').animate({
-        'left': '0'
-    },trans,'swing');
-}
-function diapositiva38b(){
-    $('#foto6-6text').animate({
-        'top': '-185%'
-    },trans,'swing');
-    $('#foto6-6').delay('200').animate({
-        'top': '100%'
-    },trans,'swing');
-    $('#foto6-5').delay('200').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto6-5text').delay('400').animate({
-        'top': '20%'
-    },trans,'swing');
-    $('#foto6-5peu').delay('600').animate({
-        'left': '0'
-    },trans,'swing');
-}
-function diapositiva39(){
-    $('#foto6-5peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto6-5text').delay('200').animate({
-        'top': '220%'
-    },trans,'swing');
-    $('#foto6-5').delay('400').animate({
-        'top': '-100%'
-    },trans,'swing');
-    $('#foto6-6').delay('400').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto6-6text').delay('600').animate({
-        'top': '15%'
-    },trans,'swing');
-}
-function diapositiva39b(){
-    $('#foto6-7peu').animate({
-        'left': '105%'
-    },trans,'swing');
-    $('#foto6-7text').delay('200').animate({
-        'top': '-170%'
-    },trans,'swing');
-    $('#foto6-7').delay('400').animate({
-        'top': '100%'
-    },trans,'swing');
-    $('#foto6-6').delay('400').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto6-6text').delay('600').animate({
-        'top': '15%'
-    },trans,'swing');
-}
-function diapositiva40(){
-    $('#foto6-6text').animate({
-        'top': '115%'
-    },trans,'swing');
-    $('#foto6-6').delay('200').animate({
-        'top': '-100%'
-    },trans,'swing');
-    $('#foto6-7').delay('200').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto6-7text').delay('400').animate({
-        'top': '30%'
-    },trans,'swing');
-    $('#foto6-7peu').delay('600').animate({
-        'left': '0'
-    },trans,'swing');
-}
-function diapositiva40b(){
-    $('#foto6-71').animate({
-        'left': '0'
-    },trans,'swing');
-    $('#foto6-72').animate({
-        'left': '100%'
-    },trans,'swing');
-}
-function diapositiva41(){
-    $('#foto6-71').animate({
-        'left': '-100%'
-    },trans,'swing');
-    $('#foto6-72').animate({
-        'left': '0'
-    },trans,'swing');
-}
-function diapositiva41b(){
-    $('#foto6-8peu').animate({
-        'left': '105%'
-    },trans,'swing');
-    $('#foto6-8text h3').delay('200').animate({
-        'top': '-300px'
-    },trans,'swing');
-    $('#foto6-8boto1').delay('400').animate({
-        'top': '-300px'
-    },trans,'swing');
-    $('#foto6-8boto2').delay('600').animate({
-        'top': '-300px'
-    },trans,'swing');
-    $('#foto6-8text').delay('800').animate({
-        'top': '-180%'
-    },trans,'swing');
-    $('#foto6-8').delay('1000').animate({
-        'top': '100%'
-    },trans,'swing');
-    $('#foto6-7').delay('1000').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto6-7text').delay('1200').animate({
-        'top': '30%'
-    },trans,'swing');
-    $('#foto6-7peu').delay('1400').animate({
-        'left': '0'
-    },trans,'swing');
-}
-function diapositiva42(){
-    $('#foto6-7peu').animate({
-        'left': '105%'
-    },trans,'swing');
-    $('#foto6-7text').delay('200').animate({
-        'top': '130%'
-    },trans,'swing');
-    $('#foto6-7').delay('400').animate({
-        'top': '-100%'
-    },trans,'swing');
-    $('#foto6-8').delay('400').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto6-8text').delay('600').animate({
-        'top': '20%'
-    },trans,'swing');
-    $('#foto6-8boto2').delay('800').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto6-8boto1').delay('1000').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto6-8text h3').delay('1200').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto6-8peu').delay('1400').animate({
-        'left': '0'
-    },trans,'swing');
-    $('#foto6-8boto1').click(function(){
-        $('body').off('mousewheel');
-        $('#foto6-8fotos').show();
-        if(!slider2){
-            $('#foto6-8fotos .sliderfotos').slick();
-            slider2=true;
-        }
-        $('#foto6-8fotos .blau').click(function(){
-            $('#foto6-8fotos').hide();
-            $('body').on('mousewheel',function(e){
-                controlMouse(e);
+            animat('#foto4-4','600','0');
+            animat('#foto4-4text','800','15%');
+            animat('#play4-42','900','0');
+            animat('#play4-41','1000','0');
+            animat('#foto4-4text p','1100','0');
+            animal('#foto4-4peu','1200','0');
+            break;
+        case 29:
+            $('#apartat5').show();
+            animal('#foto4-4peu','0','-50%');
+            animat('#foto4-4text p','200','-300px');
+            animat('#play4-41','300','-300px');
+            animat('#play4-42','400','-300px');
+            animat('#foto4-4text','500','-215%');
+            animat('#foto4-4','600','100%');
+            animat('#foto5-1','600','0');
+            animat('#foto5-1text','800','25%');
+            animat('#foto5-1text h2','1000','0');
+            animal('#foto5-1peu','1200','0');
+            break;
+        case 290:
+            animal('#foto5-2peu','0','-50%');
+            animat('#foto5-2boto','200','300px');
+            animat('#foto5-2text','400','240%');
+            animat('#foto5-2','600','-100%');
+            animat('#foto5-1','600','0');
+            animat('#foto5-1text','800','25%');
+            animat('#foto5-1text p','1000','0');
+            animal('#foto5-1peu','1200','0');
+            break;
+        case 30:
+            animal('#foto5-1peu','0','-50%');
+            animat('#foto5-1text p','200','-300px');
+            animat('#foto5-1text','400','-275%');
+            animat('#foto5-1','600','100%');
+            animat('#foto5-2','600','0');
+            animat('#foto5-2text','800','40%');
+            animat('#foto5-2boto','1000','0');
+            animal('#foto5-2peu','1200','0');
+            slider('#foto5-2boto','#foto5-2fotos',slider1);
+            break;
+        case 300:
+            animal('#foto5-3peu','0','-50%');
+            animat('#foto5-3boto','200','300px');
+            animat('#foto5-3text','400','210%');
+            animat('#foto5-3','600','-100%');
+            animat('#foto5-2','600','0');
+            animat('#foto5-2text','800','40%');
+            animat('#foto5-2text p','1000','0');
+            animal('#foto5-2peu','1200','0');
+            break;
+        case 31:
+            animal('#foto5-2peu','0','-50%');
+            animat('#foto5-2text p','200','-300px');
+            animat('#foto5-2text','400','-260%');
+            animat('#foto5-2','600','100%');
+            animat('#foto5-3','600','0');
+            animat('#foto5-3text','800','10%');
+            animat('#foto5-3boto','1000','0');
+            animal('#foto5-3peu','1200','0');
+            break;
+        case 310:
+            animal('#foto5-4peu','0','-50%');
+            animat('#foto5-4boto2','200','300px');
+            animat('#foto5-4boto1','400','300px');
+            animat('#foto5-4text','600','215%');
+            animat('#foto5-4','800','-100%');
+            animat('#foto5-3','800','0');
+            animat('#foto5-3text','1000','10%');
+            animat('#foto5-3text h3','1200','0');
+            animal('#foto5-3peu','1400','0');
+            break;
+        case 32:
+            animal('#foto5-3peu','0','-50%');
+            animat('#foto5-3text h3','200','-300px');
+            animat('#foto5-3text','400','-290%');
+            animat('#foto5-3','600','100%');
+            animat('#foto5-4','600','0');
+            animat('#foto5-4text','800','15%');
+            animat('#foto5-4boto1','1000','0');
+            animat('#foto5-4boto2','1200','0');
+            animal('#foto5-4peu','1400','0');
+            video('#foto5-4boto2','apartat5video1.html');
+            break;
+        case 320:
+            animat('#foto5-5boto','0','300px');
+            animat('#foto5-5text','200','115%');
+            $('#foto5-5').delay('400').animate({
+                'opacity': '0'
+            },trans,'swing',function(){
+                $('#foto5-5').hide();
             });
-        });
-    });
-    $('#foto6-8boto3').click(function(){
-        $('body').off('mousewheel');
-        $('#foto6-8foto').show();
-        $('#foto6-8foto').click(function(){
-            $('#foto6-8foto').hide();
-            $('body').on('mousewheel',function(e){
-                controlMouse(e);
+            animat('#foto5-4text','600','15%');
+            animat('#foto5-4boto1','800','0');
+            animat('#foto5-4text h3','1000','0');
+            animal('#foto5-4peu','1200','0');
+            break;
+        case 33:
+            $('#foto5-5').show();
+            animal('#foto5-4peu','0','-50%');
+            animat('#foto5-4text h3','200','-300px');
+            animat('#foto5-4boto1','400','-300px');
+            animat('#foto5-4text','600','-85%');
+            animao('#foto5-5','800','1');
+            animat('#foto5-5text','1000','15%');
+            animat('#foto5-5boto','1200','0');
+            video('#foto5-5boto','apartat5video2.html');
+            $('#apartat6').load('apartat6.html');
+            break;
+        case 330:
+            animat('#foto6-1text','0','-80%');
+            $('#foto6-1').delay('200').animate({
+                'left': '100%'
+            },trans,'swing',function(){
+                $('#apartat6').hide();
             });
-        });
-    });
-}
-function diapositiva42b(){
-    $('#foto6-9peu').animate({
-        'left': '105%'
-    },trans,'swing');
-    $('#foto6-9text p').delay('200').animate({
-        'top': '-300px'
-    },trans,'swing');
-    $('#foto6-9text').delay('400').animate({
-        'top': '-175%'
-    },trans,'swing');
-    $('#foto6-9').delay('600').animate({
-        'top': '100%'
-    },trans,'swing');
-    $('#foto6-8').delay('600').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto6-8text').delay('800').animate({
-        'top': '20%'
-    },trans,'swing');
-    $('#foto6-8boto1').delay('1000').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto6-8boto2').delay('1200').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto6-8boto3').delay('1400').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto6-8peu').delay('1600').animate({
-        'left': '105%'
-    },trans,'swing');
-}
-function diapositiva43(){
-    $('#foto6-8peu').animate({
-        'left': '105%'
-    },trans,'swing');
-    $('#foto6-8boto3').delay('200').animate({
-        'top': '300px'
-    },trans,'swing');
-    $('#foto6-8boto2').delay('400').animate({
-        'top': '300px'
-    },trans,'swing');
-    $('#foto6-8boto1').delay('600').animate({
-        'top': '300px'
-    },trans,'swing');
-    $('#foto6-8text').delay('800').animate({
-        'top': '120%'
-    },trans,'swing');
-    $('#foto6-8').delay('1000').animate({
-        'top': '-100%'
-    },trans,'swing');
-    $('#foto6-9').delay('1000').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto6-9text').delay('1200').animate({
-        'top': '25%'
-    },trans,'swing');
-    $('#foto6-9text p').delay('1400').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto6-9peu').delay('1600').animate({
-        'left': '0'
-    },trans,'swing');
-    $('#foto6-9boto').click(function(){
-        $('body').off('mousewheel');
-        $('#foto6-9fotos').show();
-        if(!slider3){
-            $('#foto6-9fotos .sliderfotos').slick();
-            slider3=true;
-        }
-        $('#foto6-9fotos .blau').click(function(){
-            $('#foto6-9fotos').hide();
-            $('body').on('mousewheel',function(e){
-                controlMouse(e);
+            animal('#foto5-5','200','0');
+            animat('#foto5-5text','400','15%');
+            animat('#foto5-5text p','600','0');
+            break;
+        case 34:
+            $('#apartat6').show();
+            animat('#foto5-5text p','0','-300px');
+            animat('#foto5-5text','200','-85%');
+            animal('#foto5-5','400','-100%');
+            animal('#foto6-1','400','0');
+            animat('#foto6-1text','600','20%');
+            break;
+        case 340:
+            animat('#foto6-2text','0','-80%');
+            animao('#foto6-2','200','0');
+            animat('#foto6-1text','400','20%');
+            break;
+        case 35:
+            animat('#foto6-1text','0','120%');
+            animao('#foto6-2','200','1');
+            animat('#foto6-2text','400','20%');
+            break;
+        case 350:
+            animat('#foto6-3text','0','-190%');
+            animat('#foto6-3','200','100%');
+            animat('#foto6-2','200','0');
+            animat('#foto6-2text','400','20%');
+            break;
+        case 36:
+            animat('#foto6-2text','0','220%');
+            animat('#foto6-2','200','-100%');
+            animat('#foto6-3','200','0');
+            animat('#foto6-3text','400','10%');
+            animal('#foto6-3peu','600','0');
+            break;
+        case 360:
+            $('#foto6-4 video')[0].pause();
+            animal('#foto6-4peu','0','-50%');
+            animat('#foto6-4','200','100%');
+            animat('#foto6-3','200','0');
+            animat('#foto6-3text','400','10%');
+            animal('#foto6-3peu','600','0');
+            break;
+        case 37:
+            animal('#foto6-3peu','0','-50%');
+            animat('#foto6-3text','200','210%');
+            animat('#foto6-3','400','-100%');
+            $('#foto6-4').delay('400').animate({
+                'top': '0'
+            },trans,'swing',function(){
+                $('#foto6-4 video')[0].play();
             });
-        });
-    });
-    $('#apartat7').load('apartat7.html');
-}
-function diapositiva43b(){
-    $('#foto7-1text p').animate({
-        'top': '-300px'
-    },trans,'swing');
-    $('#foto7-1text').delay('200').animate({
-        'top': '-80%'
-    },trans,'swing');
-    $('#foto7-1').delay('400').animate({
-        'left': '-100%'
-    },trans,'swing',function(){
-        $('#apartat7').hide();
-    });
-    $('#foto6-9').delay('400').animate({
-        'left': '0'
-    },trans,'swing');
-    $('#foto6-9text').delay('600').animate({
-        'top': '25%'
-    },trans,'swing');
-    $('#foto6-9boto').delay('800').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto6-9peu').delay('1000').animate({
-        'left': '0'
-    },trans,'swing');
-}
-function diapositiva44(){
-    $('#apartat7').show();
-    $('#foto6-9peu').animate({
-        'left': '105%'
-    },trans,'swing');
-    $('#foto6-9boto').delay('200').animate({
-        'top': '300px'
-    },trans,'swing');
-    $('#foto6-9text').delay('400').animate({
-        'top': '125%'
-    },trans,'swing');
-    $('#foto6-9').delay('600').animate({
-        'left': '100%'
-    },trans,'swing');
-    $('#foto7-1').delay('600').animate({
-        'left': '0'
-    },trans,'swing');
-    $('#foto7-1text').delay('800').animate({
-        'top': '20%'
-    },trans,'swing');
-    $('#foto7-1text p').delay('1000').animate({
-        'top': '0'
-    },trans,'swing');
-}
-function diapositiva44b(){
-    $('#foto7-2text').animate({
-        'top': '-80%'
-    },trans,'swing');
-    $('#foto7-2').delay('200').animate({
-        'top': '-100%'
-    },trans,'swing');
-    $('#foto7-1').delay('200').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto7-1text').delay('400').animate({
-        'top': '20%'
-    },trans,'swing');
-    $('#foto7-1text h2').delay('600').animate({
-        'top': '0'
-    },trans,'swing');
-}
-function diapositiva45(){
-    $('#foto7-1text h2').animate({
-        'top': '300px'
-    },trans,'swing');
-    $('#foto7-1text').delay('200').animate({
-        'top': '120%'
-    },trans,'swing');
-    $('#foto7-1').delay('400').animate({
-        'top': '100%'
-    },trans,'swing');
-    $('#foto7-2').delay('400').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto7-2text').delay('600').animate({
-        'top': '20%'
-    },trans,'swing');
-}
-function diapositiva45b(){
-    $('#foto7-3text').animate({
-        'top': '-70%'
-    },trans,'swing');
-    $('#foto7-3').delay('200').animate({
-        'top': '-100%'
-    },trans,'swing');
-    $('#foto7-2').delay('200').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto7-2text').delay('400').animate({
-        'top': '20%'
-    },trans,'swing');
-}
-function diapositiva46(){
-    $('#foto7-2text').animate({
-        'top': '120%'
-    },trans,'swing');
-    $('#foto7-2').delay('200').animate({
-        'top': '100%'
-    },trans,'swing');
-    $('#foto7-3').delay('200').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto7-3text').delay('400').animate({
-        'top': '30%'
-    },trans,'swing');
-}
-function diapositiva46b(){
-    $('#foto7-4text').animate({
-        'top': '-80%'
-    },trans,'swing');
-    $('#foto7-4').delay('200').animate({
-        'top': '-100%'
-    },trans,'swing');
-    $('#foto7-3').delay('200').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto7-3text').delay('400').animate({
-        'top': '30%'
-    },trans,'swing');
-}
-function diapositiva47(){
-    $('#foto7-3text').animate({
-        'top': '130%'
-    },trans,'swing');
-    $('#foto7-3').delay('200').animate({
-        'top': '100%'
-    },trans,'swing');
-    $('#foto7-4').delay('200').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto7-4text').delay('400').animate({
-        'top': '20%'
-    },trans,'swing');
-}
-function diapositiva47b(){
-    $('#foto7-5text p').animate({
-        'top': '-300px'
-    },trans,'swing');
-    $('#foto7-5text').delay('200').animate({
-        'top': '-80%'
-    },trans,'swing');
-    $('#foto7-5').delay('400').animate({
-        'top': '-100%'
-    },trans,'swing');
-    $('#foto7-4').delay('400').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto7-4text').delay('600').animate({
-        'top': '20%'
-    },trans,'swing');
-}
-function diapositiva48(){
-    $('#foto7-4text').animate({
-        'top': '120%'
-    },trans,'swing');
-    $('#foto7-4').delay('200').animate({
-        'top': '100%'
-    },trans,'swing');
-    $('#foto7-5').delay('200').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto7-5text').delay('400').animate({
-        'top': '20%'
-    },trans,'swing');
-    $('#foto7-5text p').delay('600').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto7-5boto').click(function(){
-        $('body').off('mousewheel');
-        $('#foto7-5fotos').show();
-        if(!slider4){
-            $('#foto7-5fotos .sliderfotos').slick();
-            slider4=true;
-        }
-        $('#foto7-5fotos .blau').click(function(){
-            $('#foto7-5fotos').hide();
-            $('body').on('mousewheel',function(e){
-                controlMouse(e);
+            animal('#foto6-4peu','600','0');
+            $('#foto6-4 video').on('ended',function(){
+                pos=38;
+                diapositiva(38);
             });
-        });
-    });
+            break;
+        case 370:
+            animal('#foto6-5peu','0','-50%');
+            animat('#foto6-5text','200','-180%');
+            animat('#foto6-5','400','100%');
+            $('#foto6-4').delay('400').animate({
+                'top': '0'
+            },trans,'swing',function(){
+                $('#foto6-4 video')[0].play();
+            });
+            animal('#foto6-4peu','600','0');
+            break;
+        case 38:
+            $('#foto6-4 video')[0].pause();
+            animal('#foto6-4peu','0','-50%');
+            animat('#foto6-4','200','-100%');
+            animat('#foto6-5','200','0');
+            animat('#foto6-5text','400','20%');
+            animal('#foto6-5peu','600','0');
+            break;
+        case 380:
+            animat('#foto6-6text','0','-185%');
+            animat('#foto6-6','200','100%');
+            animat('#foto6-5','200','0');
+            animat('#foto6-5text','400','20%');
+            animal('#foto6-5peu','600','0');
+            break;
+        case 39:
+            animal('#foto6-5peu','0','-50%');
+            animat('#foto6-5text','200','220%');
+            animat('#foto6-5','400','-100%');
+            animat('#foto6-6','400','0');
+            animat('#foto6-6text','600','15%');
+            break;
+        case 390:
+            animal('#foto6-7peu','0','105%');
+            animat('#foto6-7text','200','-170%');
+            animat('#foto6-7','400','100%');
+            animat('#foto6-6','400','0');
+            animat('#foto6-6text','600','15%');
+            break;
+        case 40:
+            animat('#foto6-6text','0','115%');
+            animat('#foto6-6','200','-100%');
+            animat('#foto6-7','200','0');
+            animat('#foto6-7text','400','30%');
+            animal('#foto6-7peu','600','0');
+            break;
+        case 400:
+            animal('#foto6-71','0','0');
+            animal('#foto6-72','0','0');
+            break;
+        case 41:
+            animal('#foto6-71','0','-100%');
+            animal('#foto6-72','0','0');
+            break;
+        case 410:
+            animal('#foto6-8peu','0','105%');
+            animat('#foto6-8text h3','200','-300px');
+            animat('#foto6-8boto1','400','-300px');
+            animat('#foto6-8boto2','600','-300px');
+            animat('#foto6-8text','800','-180%');
+            animat('#foto6-8','1000','100%');
+            animat('#foto6-7','1000','0');
+            animat('#foto6-7text','1200','30%');
+            animal('#foto6-7peu','1400','0');
+            break;
+        case 42:
+            animal('#foto6-7peu','0','105%');
+            animat('#foto6-7text','200','130%');
+            animat('#foto6-7','400','-100%');
+            animat('#foto6-8','400','0');
+            animat('#foto6-8text','600','20%');
+            animat('#foto6-8boto2','800','0');
+            animat('#foto6-8boto1','1000','0');
+            animat('#foto6-8text h3','1200','0');
+            animal('#foto6-8peu','1400','0');
+            slider('#foto6-8boto1','#foto6-8fotos',slider2);
+            foto('#foto6-8boto3','#foto6-8foto');
+            break;
+        case 420:
+            animal('#foto6-9peu','0','105%');
+            animat('#foto6-9text p','200','-300px');
+            animat('#foto6-9text','400','-175%');
+            animat('#foto6-9','600','100%');
+            animat('#foto6-8','600','0');
+            animat('#foto6-8text','800','20%');
+            animat('#foto6-8boto1','1000','0');
+            animat('#foto6-8boto2','1200','0');
+            animat('#foto6-8boto3','1400','0');
+            animal('#foto6-8peu','1600','105%');
+            break;
+        case 43:
+            animal('#foto6-8peu','0','105%');
+            animat('#foto6-8boto3','200','300px');
+            animat('#foto6-8boto2','400','300px');
+            animat('#foto6-8boto1','600','300px');
+            animat('#foto6-8text','800','120%');
+            animat('#foto6-8','1000','-100%');
+            animat('#foto6-9','1000','0');
+            animat('#foto6-9text','1200','25%');
+            animat('#foto6-9text p','1400','0');
+            animal('#foto6-9peu','1600','0');
+            slider('#foto6-9boto','#foto6-9fotos',slider3);
+            $('#apartat7').load('apartat7.html');
+            break;
+        case 430:
+            animat('#foto7-1text p','0','-300px');
+            animat('#foto7-1text','200','-80%');
+            $('#foto7-1').delay('400').animate({
+                'left': '-100%'
+            },trans,'swing',function(){
+                $('#apartat7').hide();
+            });
+            animal('#foto6-9','400','0');
+            animat('#foto6-9text','600','25%');
+            animat('#foto6-9boto','800','0');
+            animal('#foto6-9peu','1000','0');
+            break;
+        case 44:
+            $('#apartat7').show();
+            animal('#foto6-9peu','0','105%');
+            animat('#foto6-9boto','200','300px');
+            animat('#foto6-9text','400','125%');
+            animal('#foto6-9','600','100%');
+            animal('#foto7-1','600','0');
+            animat('#foto7-1text','800','20%');
+            animat('#foto7-1text p','1000','0');
+            break;
+        case 440:
+            animat('#foto7-2text','0','-80%');
+            animat('#foto7-2','200','-100%');
+            animat('#foto7-1','200','0');
+            animat('#foto7-1text','400','20%');
+            animat('#foto7-1text h2','600','0');
+            break;
+        case 45:
+            animat('#foto7-1text h2','0','300px');
+            animat('#foto7-1text','200','120%');
+            animat('#foto7-1','400','100%');
+            animat('#foto7-2','400','0');
+            animat('#foto7-2text','600','20%');
+            break;
+        case 450:
+            animat('#foto7-3text','0','-70%');
+            animat('#foto7-3','200','-100%');
+            animat('#foto7-2','200','0');
+            animat('#foto7-2text','400','20%');
+            break;
+        case 46:
+            animat('#foto7-2text','0','120%');
+            animat('#foto7-2','200','100%');
+            animat('#foto7-3','200','0');
+            animat('#foto7-3text','400','30%');
+            break;
+        case 460:
+            animat('#foto7-4text','0','-80%');
+            animat('#foto7-4','200','-100%');
+            animat('#foto7-3','200','0');
+            animat('#foto7-3text','400','30%');
+            break;
+        case 47:
+            animat('#foto7-3text','0','130%');
+            animat('#foto7-3','200','100%');
+            animat('#foto7-4','200','0');
+            animat('#foto7-4text','400','20%');
+            break;
+        case 470:
+            animat('#foto7-5text p','0','-300px');
+            animat('#foto7-5text','200','-80%');
+            animat('#foto7-5','400','-100%');
+            animat('#foto7-4','400','0');
+            animat('#foto7-4text','600','20%');
+            break;
+        case 48:
+            animat('#foto7-4text','0','120%');
+            animat('#foto7-4','200','100%');
+            animat('#foto7-5','200','0');
+            animat('#foto7-5text','400','20%');
+            animat('#foto7-5text p','600','0');
+            slider('#foto7-5boto','#foto7-5fotos',slider4);
+            break;
+        case 480:
+            animat('#foto7-6text p','0','-300px');
+            animat('#foto7-6text','200','-80%');
+            animat('#foto7-6','400','-100%');
+            animat('#foto7-5','400','0');
+            animat('#foto7-5text','600','20%');
+            animat('#foto7-5boto','800','0');
+            break;
+        case 49:
+            animat('#foto7-5boto','0','300px');
+            animat('#foto7-5text','200','120%');
+            animat('#foto7-5','400','100%');
+            animat('#foto7-6','400','0');
+            animat('#foto7-6text','600','20%');
+            animat('#foto7-6text p','800','0');
+            break;
+        case 490:
+            animat('#foto7-7text p','0','-300px');
+            animat('#foto7-7text i','200','-300px');
+            animat('#foto7-7text','400','-90%');
+            $('#foto7-7').delay('600').animate({
+                'opacity': '0'
+            },trans,'swing',function(){
+                $('#foto7-7').hide();
+            });
+            animat('#foto7-6text','800','20%');
+            animat('#foto7-6text h2','1000','0');
+            break;
+        case 50:
+            $('#foto7-7').show();
+            animat('#foto7-6text h2','0','300px');
+            animat('#foto7-6text','200','120%');
+            animao('#foto7-7','400','1');
+            animat('#foto7-7text','600','10%');
+            animat('#foto7-7text i','800','0');
+            animat('#foto7-7text p','1000','0');
+            break;
+        case 500:
+            animat('#foto7-8text p','0','-300px');
+            animat('#foto7-8text','200','-70%'); 
+            $('#foto7-8').delay('400').animate({
+                'opacity': '0'
+            },trans,'swing',function(){
+                $('#foto7-8').hide();
+            });
+            animat('#foto7-7text','600','10%');
+            animat('#foto7-7text i','800','0');
+            animat('#foto7-7boto','1000','0');
+            break;
+        case 51:
+            $('#foto7-8').show();
+            animat('#foto7-7boto','0','300px');
+            animat('#foto7-7text i','200','300px');
+            animat('#foto7-7text','400','110%');
+            animao('#foto7-8','600','1');
+            animat('#foto7-8text','800','30%');
+            animat('#foto7-8text p','1000','0');
+            video('#foto7-8boto','apartat7video1.html');
+            break;
+        case 510:
+            animat('#foto7-9text p:first','0','-300px');
+            animat('#foto7-9text p:last','200','-300px');
+            animat('#foto7-9boto1','400','-300px');
+            animat('#foto7-9text','600','-75%');
+            animat('#foto7-9','800','-100%');
+            animat('#foto7-8','800','0');
+            animat('#foto7-8text','1000','30%');
+            animat('#foto7-8boto','1200','0');
+            break;
+        case 52:
+            animat('#foto7-8boto','0','300px');
+            animat('#foto7-8text','200','130%');
+            animat('#foto7-8','400','100%');
+            animat('#foto7-9','400','0');
+            animat('#foto7-9text','600','25%');
+            animat('#foto7-9boto1','800','0');
+            animat('#foto7-9text p:last','1000','0');
+            animat('#foto7-9text p:first','1200','0');
+            video('#foto7-9boto1','apartat7video2.html');
+            break;
+    }
 }
-function diapositiva48b(){
-    $('#foto7-6text p').animate({
-        'top': '-300px'
-    },trans,'swing');
-    $('#foto7-6text').delay('200').animate({
-        'top': '-80%'
-    },trans,'swing');
-    $('#foto7-6').delay('400').animate({
-        'top': '-100%'
-    },trans,'swing');
-    $('#foto7-5').delay('400').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto7-5text').delay('600').animate({
-        'top': '20%'
-    },trans,'swing');
-    $('#foto7-5boto').delay('800').animate({
-        'top': '0'
-    },trans,'swing');
-}
-function diapositiva49(){
-    $('#foto7-5boto').animate({
-        'top': '300px'
-    },trans,'swing');
-    $('#foto7-5text').delay('200').animate({
-        'top': '120%'
-    },trans,'swing');
-    $('#foto7-5').delay('400').animate({
-        'top': '100%'
-    },trans,'swing');
-    $('#foto7-6').delay('400').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto7-6text').delay('600').animate({
-        'top': '20%'
-    },trans,'swing');
-    $('#foto7-6text p').delay('800').animate({
-        'top': '0'
-    },trans,'swing');
-}
-function diapositiva49b(){
-    $('#foto7-7text p').animate({
-        'top': '-300px'
-    },trans,'swing');
-    $('#foto7-7text i').delay('200').animate({
-        'top': '-300px'
-    },trans,'swing');
-    $('#foto7-7text').delay('400').animate({
-        'top': '-90%'
-    },trans,'swing');
-    $('#foto7-7').delay('600').animate({
-        'opacity': '0'
-    },trans,'swing',function(){
-        $('#foto7-7').hide();
-    });
-    $('#foto7-6text').delay('800').animate({
-        'top': '20%'
-    },trans,'swing');
-    $('#foto7-6text h2').delay('1000').animate({
-        'top': '0'
-    },trans,'swing');
-}
-function diapositiva50(){
-    $('#foto7-7').show();
-    $('#foto7-6text h2').animate({
-        'top': '300px'
-    },trans,'swing');
-    $('#foto7-6text').delay('200').animate({
-        'top': '120%'
-    },trans,'swing');
-    $('#foto7-7').delay('400').animate({
-        'opacity': '1'
-    },trans,'swing');
-    $('#foto7-7text').delay('600').animate({
-        'top': '10%'
-    },trans,'swing');
-    $('#foto7-7text i').delay('800').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto7-7text p').delay('1000').animate({
-        'top': '0'
-    },trans,'swing');
-}
-function diapositiva50b(){
-    $('#foto7-8text p').animate({
-        'top': '-300px'
-    },trans,'swing');
-    $('#foto7-8text').delay('200').animate({
-        'top': '-70%'
-    },trans,'swing');
-    $('#foto7-8').delay('400').animate({
-        'opacity': '0'
-    },trans,'swing',function(){
-        $('#foto7-8').hide();
-    });
-    $('#foto7-7text').delay('600').animate({
-        'top': '10%'
-    },trans,'swing');
-    $('#foto7-7text i').delay('800').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto7-7boto').delay('1000').animate({
-        'top': '0'
-    },trans,'swing');
-}
-function diapositiva51(){
-    $('#foto7-8').show();
-    $('#foto7-7boto').animate({
-        'top': '300px'
-    },trans,'swing');
-    $('#foto7-7text i').delay('200').animate({
-        'top': '300px'
-    },trans,'swing');
-    $('#foto7-7text').delay('400').animate({
-        'top': '110%'
-    },trans,'swing');
-    $('#foto7-8').delay('600').animate({
-        'opacity': '1'
-    },trans,'swing');
-    $('#foto7-8text').delay('800').animate({
-        'top': '30%'
-    },trans,'swing');
-    $('#foto7-8text p').delay('1000').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto7-8boto').click(function(){
-        $('body').off('mousewheel');
-        $('#videos').load('apartat7video1.html',function(){
-            $('.videopopup').show();
-        });
-    });
-}
-function diapositiva51b(){
-    $('#foto7-9text p:first').animate({
-        'top': '-300px'
-    },trans,'swing');
-    $('#foto7-9text p:last').delay('200').animate({
-        'top': '-300px'
-    },trans,'swing');
-    $('#foto7-9boto1').delay('400').animate({
-        'top': '-300px'
-    },trans,'swing');
-    $('#foto7-9text').delay('600').animate({
-        'top': '-75%'
-    },trans,'swing');
-    $('#foto7-9').delay('800').animate({
-        'top': '-100%'
-    },trans,'swing');
-    $('#foto7-8').delay('800').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto7-8text').delay('1000').animate({
-        'top': '30%'
-    },trans,'swing');
-    $('#foto7-8boto').delay('1200').animate({
-        'top': '0'
-    },trans,'swing');
-}
-function diapositiva52(){
-    $('#foto7-8boto').animate({
-        'top': '300px'
-    },trans,'swing');
-    $('#foto7-8text').delay('200').animate({
-        'top': '130%'
-    },trans,'swing');
-    $('#foto7-8').delay('400').animate({
-        'top': '100%'
-    },trans,'swing');
-    $('#foto7-9').delay('400').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto7-9text').delay('600').animate({
-        'top': '25%'
-    },trans,'swing');
-    $('#foto7-9boto1').delay('800').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto7-9text p:last').delay('1000').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto7-9text p:first').delay('1200').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto7-9boto1').click(function(){
-        $('body').off('mousewheel');
-        $('#videos').load('apartat7video2.html',function(){
-            $('.videopopup').show();
-        });
-    });
-}
-
-
 // Funcions de video
 
 function tancarvideo(){
@@ -2274,6 +1153,15 @@ function tancarvideo(){
     $('#videos').html('');
     $('body').on('mousewheel',function(e){
         controlMouse(e);
+    });
+}
+
+function video(boto,video){
+    $(boto).click(function(){
+        $('body').off('mousewheel');
+        $('#videos').load(video,function(){
+            $('.videopopup').show();
+        });
     });
 }
 
@@ -2290,4 +1178,63 @@ function passar(id){
             controlMouse(e);
         });
     },2000);
+}
+
+function animat(element,delay,pos) {
+    $(element).delay(delay).animate({
+        'top' : pos
+    },trans,'swing');
+}
+function animab(element,delay,pos) {
+    $(element).delay(delay).animate({
+        'bottom' : pos
+    },trans,'swing');
+}
+function animal(element,delay,pos) {
+    $(element).delay(delay).animate({
+        'left' : pos
+    },trans,'swing');
+}
+function animar(element,delay,pos) {
+    $(element).delay(delay).animate({
+        'right' : pos
+    },trans,'swing');
+}
+function animao(element,delay,pos) {
+    $(element).delay(delay).animate({
+        'opacity' : pos
+    },trans,'swing');
+}
+function animacol(element,delay,pos) {
+    $(element).delay(delay).animate({
+        'color' : pos
+    },trans,'swing');
+}
+function slider(boto,div,boolea){
+    $(boto).click(function(){
+        $('body').off('mousewheel');
+        $(div).show();
+        if(!boolea){
+            $(div+' .sliderfotos').slick();
+            boolea=true;
+        }
+        $(div+' .blau').click(function(){
+            $(div).hide();
+            $('body').on('mousewheel',function(e){
+                controlMouse(e);
+            });
+        });
+    });
+}
+function foto(boto,div){
+    $(boto).click(function(){
+        $('body').off('mousewheel');
+        $(div).show();
+        $(div).click(function(){
+            $(div).hide();
+            $('body').on('mousewheel',function(e){
+                controlMouse(e);
+            });
+        });
+    });
 }
