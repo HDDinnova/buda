@@ -736,7 +736,7 @@ p{
     padding: 15px;
 }
 #foto6-5{
-    background-image: url('../foto/ROP_1897_tomoI_1124_02_Textos-Lucio-a-Londres-1.jpg');
+    background-image: url('../foto/_MG_9756.jpg');
     background-position: center center;
     top: 100%;
 }
@@ -745,15 +745,22 @@ p{
     top: -180%;
 }
 #foto6-5text p{
+    position: relative;
+    top: -300px;
     padding: 25px;
     color: white;
     font-size: 1.3vw;
 }
+#foto6-5boto{
+    position: relative;
+    top: 0;
+}
 #foto6-5peu{
-    color: #CBA01A;
+    color: white;
+    padding: 10px;
 }
 #foto6-6{
-    /* background-image: url('../foto/ROP_1897_tomoI_1124_02_Textos-Lucio-a-Londres-1.jpg'); */
+    background-image: url('../foto/_MG_9797.jpg');
     background-position: center center;
     top: 100%;
 }
@@ -765,9 +772,6 @@ p{
     padding: 25px;
     color: white;
 }
-/* #foto6-6peu{
-    color: #CBA01A;
-} */
 #foto6-7{
     top: 100%;
 }
@@ -855,7 +859,7 @@ p{
 #foto7-1{
     top: 0;
     left: -100%;
-    background-image: url('../foto/Europa_segle-XIX.jpg');
+    background-image: url('../video/Recorregut_Far.jpg');
     background-position: center center;
 }
 #foto7-1text{
@@ -876,9 +880,8 @@ p{
     text-transform: uppercase;
 }
 #foto7-2{
-    top: -100%;
-    /* background-image: url('../foto/Europa_segle-XIX.jpg'); */
-    background-position: center center;
+    top: 0;
+    display: none;
 }
 #foto7-2text{
     position: absolute;
