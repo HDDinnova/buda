@@ -378,8 +378,14 @@ p{
     top: -70%;
 }
 #foto2-5text h3{
+    position: relative;
+    top: -300px;
     color: #6684A4;
     line-height: initial;
+}
+#foto2-5boto{
+    position: relative;
+    top: 0;
 }
 #foto2-5peu{
     color: #6684A4;
@@ -859,8 +865,6 @@ p{
 #foto7-1{
     top: 0;
     left: -100%;
-    background-image: url('../video/Recorregut_Far.jpg');
-    background-position: center center;
 }
 #foto7-1text{
     position: absolute;
@@ -881,7 +885,6 @@ p{
 }
 #foto7-2{
     top: 0;
-    display: none;
 }
 #foto7-2text{
     position: absolute;

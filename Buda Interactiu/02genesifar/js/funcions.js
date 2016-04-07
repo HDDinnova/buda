@@ -440,11 +440,12 @@ function diapositiva(id){
             break;
         case 180:
             animal('#foto2-5peu','0','-50%');
-            animat('#foto2-5text','200','-70%');
-            animat('#foto2-5','400','-100%');
-            animat('#foto2-4','400','0');
-            animat('#foto2-4text','600','30%');
-            animal('#foto2-4peu','800','0');
+            animat('#foto2-5text h3','200','-300px');
+            animat('#foto2-5text','400','-70%');
+            animat('#foto2-5','600','-100%');
+            animat('#foto2-4','600','0');
+            animat('#foto2-4text','800','30%');
+            animal('#foto2-4peu','1000','0');
             break;
         case 19:
             animal('#foto2-4peu','0','-50%');
@@ -452,7 +453,8 @@ function diapositiva(id){
             animat('#foto2-4','400','100%');
             animat('#foto2-5','400','0');
             animat('#foto2-5text','600','30%');
-            animal('#foto2-5peu','800','0');
+            animat('#foto2-5text h3','800','0');
+            animal('#foto2-5peu','1000','0');
             $('#apartat3').load('apartat3.html');
             break;
         case 190:
@@ -465,16 +467,18 @@ function diapositiva(id){
             });
             animal('#foto2-5','400','0');
             animat('#foto2-5text','600','30%');
-            animal('#foto2-5peu','800','0');
+            animat('#foto2-5boto','800','0');
+            animal('#foto2-5peu','1000','0');
             break;
         case 20:
             $('#apartat3').show();
             animal('#foto2-5peu','0','-50%');
-            animat('#foto2-5text','200','130%');
-            animal('#foto2-5','400','100%');
-            animal('#foto3-1','400','0');
-            animat('#foto3-1text','600','55%');
-            animab('#foto3-1peu','800','10px');
+            animat('#foto2-5boto','200','300px');
+            animat('#foto2-5text','400','130%');
+            animal('#foto2-5','600','100%');
+            animal('#foto3-1','600','0');
+            animat('#foto3-1text','800','55%');
+            animab('#foto3-1peu','1000','10px');
             break;
         case 200:
             animal('#foto3-2peu p','0','-300px');
@@ -993,6 +997,7 @@ function diapositiva(id){
             $('#apartat7').load('apartat7.html');
             break;
         case 430:
+            $('#foto7-1 video')[0].pause();
             animat('#foto7-1text p','0','-300px');
             animat('#foto7-1text','200','-80%');
             $('#foto7-1').delay('400').animate({
@@ -1023,20 +1028,18 @@ function diapositiva(id){
         case 45:
             animat('#foto7-1text h2','0','300px');
             animat('#foto7-1text','200','120%');
-             $('#foto7-2text').delay('400').animate({
-                'top': '20%'
-            },trans,'swing',function(){
-                $('#foto7-2').show();
-                $('#foto7-2 video')[0].play();
-            });
+            animat('#foto7-2text','400','20%');
+            $('#foto7-1 video')[0].play();
             break;
         case 450:
             animat('#foto7-3text','0','-70%');
             animat('#foto7-3','200','-100%');
             animat('#foto7-1','200','0');
             animat('#foto7-2text','400','20%');
+            $('#foto7-1 video')[0].play();
             break;
         case 46:
+            $('#foto7-1 video')[0].pause();
             animat('#foto7-2text','0','120%');
             animat('#foto7-1','200','100%');
             animat('#foto7-3','200','0');
