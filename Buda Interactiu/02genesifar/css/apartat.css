@@ -1130,6 +1130,7 @@ p{
     background-image: url('../foto/tarragona2.jpg');
     background-position: center center;
     opacity: 0;
+    display: none;
 }
 #foto20-4text{
     position: absolute;
