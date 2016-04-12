@@ -1040,3 +1040,103 @@ p{
     position: relative;
     top: 0;
 }
+#apartat20{display: none;}
+#foto20-1{
+    top: 0;
+    background-image: url('../foto/PLANOL-PROV-TARRAGONA_1853_BNE_verd.jpg');
+    background-position: center center;
+    opacity: 0;
+}
+#foto20-1text{
+    position: absolute;
+    top: -70%;
+}
+#foto20-1text h2{
+    position: relative;
+    top: 0;
+    color: white;
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#foto20-1text p{
+    position: relative;
+    top: -300px;
+    color: white;
+    padding: 20px;
+    font-size: 1.4vw;
+}
+#foto20-1peu{
+    color: black;
+}
+#foto20-2{
+    top: 0;
+    background-image: url('../foto/PLANOL-PROV-TARRAGONA_1853_BNE_verd2.jpg');
+    background-position: center center;
+    opacity: 0;
+}
+#foto20-2text{
+    position: absolute;
+    top: -75%;
+}
+#foto20-2text p{
+    position: relative;
+    top: -300px;
+    color: white;
+    padding: 20px;
+}
+#foto20-2boto{
+    position: relative;
+    top: 0;
+}
+#foto20-2text2{
+    position: absolute;
+    top: -75%;
+}
+#foto20-2text2 p{
+    color: white;
+    padding: 20px;
+    font-size: 1.4vw;
+}
+#foto20-3{
+    top: -100%;
+    background-image: url('../foto/tarragona.jpg');
+    background-position: center center;
+}
+#foto20-3text{
+    position: absolute;
+    top: -60%;
+}
+#foto20-3text h2{
+    position: relative;
+    top: 0;
+    color: white;
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#foto20-3text p{
+    position: relative;
+    top: -300px;
+    color: white;
+    padding: 20px;
+    font-size: 1.3vw;
+}
+#foto20-3peu{
+    color: white;
+}
+#foto20-4{
+    top: 0;
+    background-image: url('../foto/tarragona2.jpg');
+    background-position: center center;
+    opacity: 0;
+}
+#foto20-4text{
+    position: absolute;
+    top: -60%;
+}
+#foto20-4text p{
+    color: white;
+    padding: 20px;
+    font-size: 1.3vw;
+}
