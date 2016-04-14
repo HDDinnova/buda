@@ -77,13 +77,13 @@ $t = $db->query('SELECT * FROM textos WHERE usuari='.$per['id']);
                     <h2>Illa de Buda</h2>
                     <a href="06mas/"><img class="icomapa" id="barraca" src="img/ico-barraca.png" alt=""/></a>
                     <a href="07cacera/"><img class="icomapa" id="cacador" src="img/ico-cacador.png" alt=""/></a>
-                    <a href="01pasbuda/"><img class="icomapa" id="escriptor" src="img/ico-escriptor.png" alt=""/></a>
+                    <a href="00metaforadelta/"><img class="icomapa" id="escriptor" src="img/ico-escriptor.png" alt=""/></a>
                     <a href="02genesifar/"><img class="icomapa" id="far" src="img/ico-far.png" alt=""/></a>
                     <a href="04aus/"><img class="icomapa" id="flamenc" src="img/ico-flamenc.png" alt=""/></a>
                     <a href="03llacunes/"><img class="icomapa" id="niu" src="img/ico-niu.png" alt=""/></a>
                     <a href="05pesca/"><img class="icomapa" id="peix" src="img/ico-peix.png" alt=""/></a>
                     <a href="08arros/"><img class="icomapa" id="planta" src="img/ico-planta.png" alt=""/></a>
-                    <a><img class="icomapa" id="serp" src="img/ico-serp.png" alt=""/></a>
+                    <a href="01pasbuda/"><img class="icomapa" id="serp" src="img/ico-serp.png" alt=""/></a>
                     <a href="10vapors/"><img class="icomapa" id="vapor" src="img/ico-vapor.png" alt=""/></a>
                     <a><img class="icomapa" id="vapor2" src="img/ico-vapor2.png" alt=""/></a>
                     <img id="imgmapa" src="img/mapa-illa.png" alt="mapa illa de buda"/>

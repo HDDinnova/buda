@@ -174,7 +174,7 @@ function diapositiva1(){
             'top': '0'
         },trans);
         $('#foto1-1peu').delay('400').animate({
-            'left': '100px'
+            'left': '0'
         },trans,function(){            
             $('body').on('mousewheel',function(e){
                 controlMouse(e);
@@ -202,7 +202,7 @@ function diapositiva10(){
         'top': '0'
     },trans);
     $('#foto1-1peu').delay('1000').animate({
-        'left': '100px'
+        'left': '0'
     },trans);
     $('.scroll').delay('1200').animate({
         'bottom': '10px'
