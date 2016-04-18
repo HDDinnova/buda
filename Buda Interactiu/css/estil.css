@@ -333,6 +333,7 @@
     display: block;
     /* max-height: 100vh; */
     min-width: 100%;
+    min-height: 100vh;
     margin-right: auto;
     margin-left: auto;
 }
@@ -6182,7 +6183,7 @@ button.close {
     text-decoration: inherit;
 }
 .menu .container a img{
-     width: 100%; 
+     width: 100% !important; 
 }
 .menu .container a h3{
     color: white;
@@ -6192,6 +6193,17 @@ button.close {
     margin-top: 10px;
     margin-bottom: 15px;
     line-height: initial;
+}
+.container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    z-index: -1;
 }
 
 /* Reparació offsets */

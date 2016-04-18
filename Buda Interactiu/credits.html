@@ -1,0 +1,77 @@
+<div id="contingutcredits" class="text-center">
+    <p>Direcció</p>
+    <h3>Santi Valldepérez</h3>
+    <p>Documentació</p>
+    <h3>Maite Subirats</h3>
+    <p>Guió</p>
+    <h3>Maite Subirats, Santi Valldepérez</h3>
+    <p>Direcció de fotografia</p>
+    <h3>Guillermo Barberà</h3>
+    <p>Disseny</p>
+    <h3>Jaume Martínez</h3>
+    <p>Programació</p>
+    <h3>Jordi Ruiz</h3>
+    <p>VFX</p>
+    <h3>Jaume Moya</h3>
+    <p>Il·lustracions</p>
+    <h3>Vlad Pop</h3>
+    <p>Una producció de</p>
+    <img id="p" src="" alt=""/>
+    <p>Amb el suport de</p>
+    <img id="s" src="" alt=""/>
+    <p>Amb la col·laboració de</p>
+    <img id="c" src="" alt=""/>
+</div>
+<div id="zonaactiva"></div>
+<script>
+    $.ajax({
+        url:'img/produccio.png',
+        type:'HEAD',
+        error: function()
+        {
+            document.getElementById("p").src="../img/produccio.png";
+        },
+        success: function()
+        {
+            if(url.split('/')[2]!=='registre'){
+                document.getElementById("p").src="img/produccio.png";
+            } else {
+                document.getElementById("p").src="../img/produccio.png";
+            }
+        }
+    });
+    $.ajax({
+        url:'img/suport.png',
+        type:'HEAD',
+        error: function()
+        {
+            document.getElementById("s").src="../img/suport.png";
+        },
+        success: function()
+        {            
+            if(url.split('/')[2]!=='registre'){
+                document.getElementById("s").src="img/suport.png";
+            } else {
+                document.getElementById("s").src="../img/suport.png";
+            }
+        }
+    });
+    $.ajax({
+        url:'img/colaboren.png',
+        type:'HEAD',
+        error: function()
+        {
+            document.getElementById("c").src="../img/colaboren.png";
+        },
+        success: function()
+        {
+            if(url.split('/')[2]!=='registre'){
+                document.getElementById("c").src="img/colaboren.png";
+            } else {
+                document.getElementById("c").src="../img/colaboren.png";
+            }
+        }
+    });
+    var url=window.location.pathname;
+    console.log(url.split('/')[2]);
+</script>

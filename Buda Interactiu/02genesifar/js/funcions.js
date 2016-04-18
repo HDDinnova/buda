@@ -19,7 +19,7 @@ $('#bso').click(function(){
 function controlMouse(e){
     $('body').off('mousewheel');
     $(document).off( "keydown" );
-    if(e.deltaY<0 || e==40){                
+    if(e.deltaY<0 || e==40){
         switch (pos) {
             case 10:
                 passar(11);
