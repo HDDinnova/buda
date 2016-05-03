@@ -931,3 +931,15 @@
     background-image: url('../foto/SaP_584_08.jpg');
     background-position: center center;
 }
+#foto8-1text{
+    position: absolute;
+    top: -65%;
+}
+#foto8-1text h2{
+    position: relative;
+    top: -300px;
+    color: white;
+    padding: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
