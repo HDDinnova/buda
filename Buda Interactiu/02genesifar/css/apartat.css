@@ -925,3 +925,9 @@
     padding: 20px;
     font-size: 1.3vw;
 }
+#apartat8{display: none;}
+#foto8-1{
+    top: -100%;
+    background-image: url('../foto/SaP_584_08.jpg');
+    background-position: center center;
+}
