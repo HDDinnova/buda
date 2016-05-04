@@ -943,3 +943,41 @@
     font-weight: 600;
     text-transform: uppercase;
 }
+#foto8-2{
+    top: 100%;
+    background-image: url('../foto/foto_apartat_8_2.jpg');
+    background-position: center center;
+}
+#foto8-2text{
+    position: absolute;
+    top: -180%;
+}
+#foto8-2text p{
+    position: relative;
+    top: -300px;
+    color: white;
+    font-weight: 600;
+    font-size: 2vw;
+}
+#foto8-2boto1{
+    position: relative;
+    top: -300px;
+}
+#foto8-2boto2{
+    position: relative;
+    top: 0;
+}
+#foto8-3{
+    top: 0;
+    opacity: 0;
+    display: none;
+}
+#foto8-3text{
+    position: absolute;
+    top: -180%;
+}
+#foto8-3text p{
+    color: white;
+    font-weight: 600;
+    font-size: 2vw;
+}

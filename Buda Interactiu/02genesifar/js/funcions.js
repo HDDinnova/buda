@@ -165,6 +165,39 @@ function controlMouse(e){
             case 52:
                 passar(53);
                 break;
+            case 53:
+                passar(54);
+                break;
+            case 54:
+                passar(55);
+                break;
+            case 55:
+                passar(56);
+                break;
+            case 56:
+                passar(57);
+                break;
+            case 57:
+                passar(58);
+                break;
+            case 58:
+                passar(59);
+                break;
+            case 59:
+                passar(60);
+                break;
+            case 60:
+                passar(61);
+                break;
+            case 61:
+                passar(62);
+                break;
+            case 62:
+                passar(63);
+                break;
+            case 63:
+                passar(64);
+                break;
             default :
                 $('body').on('mousewheel',function(e){
                     controlMouse(e);
@@ -319,6 +352,36 @@ function controlMouse(e){
                 break;
             case 53:
                 passar(520);
+                break;
+            case 54:
+                passar(530);
+                break;
+            case 55:
+                passar(540);
+                break;
+            case 56:
+                passar(550);
+                break;
+            case 57:
+                passar(560);
+                break;
+            case 58:
+                passar(570);
+                break;
+            case 59:
+                passar(580);
+                break;
+            case 60:
+                passar(590);
+                break;
+            case 61:
+                passar(600);
+                break;
+            case 62:
+                passar(610);
+                break;
+            case 63:
+                passar(620);
                 break;
             default :
                 $('body').on('mousewheel',function(e){
@@ -1292,7 +1355,22 @@ function diapositiva(id){
                 $('#apartat2').hide();
             });
             animat('#foto20-4text','600','40%');
-            break;            
+            break;
+        case 520:
+            animal('#foto8-1peu','0','-50%');
+            animat('#foto8-1text h2','200','-300px');
+            animat('#foto8-1text','400','-65%');
+            animat('#foto8-1','600','-100%');
+            animat('#foto7-9','600','0');
+            animat('#foto7-9text','800','25%');
+            animat('#foto7-9text p:last','1000','0');
+            animat('#foto7-9boto1','1200','0');
+            $('#foto7-9boto2').delay('1400').animate({
+                'top': '0'
+            },trans,'swing',function(){
+                $('#apartat8').hide();
+            });
+            break;
         case 53:
             $('#apartat8').show();
             animat('#foto7-9boto2','0','300px');
@@ -1303,6 +1381,57 @@ function diapositiva(id){
             animat('#foto8-1','800','0');
             animat('#foto8-1text','1000','35%');
             animat('#foto8-1text h2','1200','0');
+            animal('#foto8-1peu','1400','0');
+            video('#foto8-1boto','apartat8video1.html');
+            break;
+        case 530:
+            animal('#foto8-2peu','0','-50%');
+            animat('#foto8-2text p','200','-300px');
+            animat('#foto8-2boto1','400','-300px');
+            animat('#foto8-2text','600','-180%');
+            animat('#foto8-2','800','100%');
+            animat('#foto8-1','800','0');
+            animat('#foto8-1text','1000','35%');
+            animat('#foto8-1boto','1200','0');
+            animal('#foto8-1peu','1400','0');
+            break;
+        case 54:
+            animal('#foto8-1peu','0','-50%');
+            animat('#foto8-1boto','200','300px');
+            animat('#foto8-1text','400','235%');
+            animat('#foto8-1','600','-100%');
+            animat('#foto8-2','600','0');
+            animat('#foto8-2text','800','20%');
+            animat('#foto8-2boto1','1000','0');
+            animat('#foto8-2text p','1200','0');
+            animal('#foto8-2peu','1400','0');
+            foto('#foto8-2boto2','#foto8-2foto');
+            break;
+        case 55:
+            $('#foto8-3').show();
+            animal('#foto8-2peu','0','-50%');
+            animat('#foto8-2boto2','200','300px');
+            animat('#foto8-2boto1','400','300px');
+            animat('#foto8-2text','800','120%');
+            animao('#foto8-3','1000','1');
+            animat('#foto8-3text','1200','20%');
+            var angle=5;
+            var posi=45;
+            var pausa=1400;
+            $('#foto8-3 .f').rotate('40deg');
+            $('#foto8-3 .f').each(function(){
+                $(this).delay(pausa).animate({
+                    'top':'15%',
+                    'left':posi+'%',
+                    rotate: angle+'deg'
+                },trans);
+                angle-=3;
+                posi+=5;
+                pausa+=150;
+            });
+            $('#foto1-1 .f').click(function(){
+                $(this).css('z-index',zi);
+            });
             break;
     }
 }
@@ -1422,4 +1551,25 @@ function foto(boto,div){
             });
         });
     });
+}
+// Funcions Drag$Drop
+function drag_start(event){
+    var style = window.getComputedStyle(event.target, null);
+    var str = (parseInt(style.getPropertyValue("left")) - event.clientX) + ',' 
+            + (parseInt(style.getPropertyValue("top")) - event.clientY)+ ',' + event.target.id;
+    event.dataTransfer.setData("Text",str);
+}
+function drop(event){
+    var offset = event.dataTransfer.getData("Text").split(',');
+    var dm = document.getElementById(offset[2]);
+    dm.style.left = (event.clientX + parseInt(offset[0],10)) + 'px';
+    dm.style.top = (event.clientY + parseInt(offset[1],10)) + 'px';
+    dm.style.zIndex = zi;
+    zi++;
+    event.preventDefault();
+    return false;
+}
+function drag_over(event){
+    event.preventDefault();
+    return false;
 }
