@@ -1407,8 +1407,30 @@ function diapositiva(id){
             animal('#foto8-2peu','1400','0');
             foto('#foto8-2boto2','#foto8-2foto');
             break;
+        case 540:
+            var pausa=0;
+            $('#foto8-3fotos .f').each(function(){
+                $(this).delay(pausa).animate({
+                    'top':'-80%',
+                    'left':'-80%'
+                },trans);
+                pausa+=150;
+            });
+            animat('#foto8-3text','600','-80%');
+            animao('#foto8-3','800','0');
+            animat('#foto8-2text','1000','20%');
+            animat('#foto8-2boto1','1200','0');
+            animat('#foto8-2boto2','1400','0');
+            $('#foto8-2peu').delay('1600').animate({
+                'left': '0'
+            },trans,'swing',function(){
+                $('#foto8-3').hide();
+                $('#foto8-3fotos').hide();
+            });
+            break;
         case 55:
             $('#foto8-3').show();
+            $('#foto8-3fotos').show();
             animal('#foto8-2peu','0','-50%');
             animat('#foto8-2boto2','200','300px');
             animat('#foto8-2boto1','400','300px');
@@ -1418,8 +1440,8 @@ function diapositiva(id){
             var angle=5;
             var posi=45;
             var pausa=1400;
-            $('#foto8-3 .f').rotate('40deg');
-            $('#foto8-3 .f').each(function(){
+            $('#foto8-3fotos .f').rotate('40deg');
+            $('#foto8-3fotos .f').each(function(){
                 $(this).delay(pausa).animate({
                     'top':'15%',
                     'left':posi+'%',
@@ -1429,7 +1451,7 @@ function diapositiva(id){
                 posi+=5;
                 pausa+=150;
             });
-            $('#foto1-1 .f').click(function(){
+            $('#foto8-3fotos .f').click(function(){
                 $(this).css('z-index',zi);
             });
             break;

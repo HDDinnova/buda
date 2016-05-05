@@ -981,3 +981,12 @@
     font-weight: 600;
     font-size: 2vw;
 }
+#foto8-3fotos{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    z-index: -5;
+}
