@@ -1455,6 +1455,85 @@ function diapositiva(id){
                 $(this).css('z-index',zi);
             });
             break;
+        case 550:
+            $('#foto8-3').show();
+            $('#foto8-3fotos').show();
+            animal('#foto8-4peu','0','-50%');
+            animat('#foto8-4text p','200','-300px');
+            animat('#foto8-4text','400','-180%');
+            animat('#foto8-4','600','100%');
+            animat('#foto8-3text','800','20%');
+            var angle=5;
+            var posi=45;
+            var pausa=1000;
+            $('#foto8-3fotos .f').rotate('40deg');
+            $('#foto8-3fotos .f').each(function(){
+                $(this).delay(pausa).animate({
+                    'top':'15%',
+                    'left':posi+'%',
+                    rotate: angle+'deg'
+                },trans);
+                angle-=3;
+                posi+=5;
+                pausa+=150;
+            });
+            break;
+        case 56:
+            var pausa=0;
+            $('#foto8-3fotos .f').each(function(){
+                $(this).delay(pausa).animate({
+                    'top':'-80%',
+                    'left':'180%'
+                },trans);
+                pausa+=150;
+            });
+            animat('#foto8-3text','600','220%');
+            animat('#foto8-4','800','0');
+            animat('#foto8-4text','1000','20%');
+            animat('#foto8-4text p','1200','0');
+            $('#foto8-4peu').delay('1400').animate({
+                'left': '0'
+            },trans,'swing',function(){
+                $('#foto8-3').hide();
+                $('#foto8-3fotos').hide();
+            });
+            break;
+        case 560:
+            animal('#foto8-5','0','100%');
+            animal('#foto8-4','0','0');
+            animat('#foto8-4text','200','20%');
+            animat('#foto8-4boto','400','0');
+            break;
+        case 57:
+            animat('#foto8-4boto','0','300px');
+            animat('#foto8-4text','200','120%');
+            animal('#foto8-4','400','-100%');
+            animal('#foto8-5','400','0');
+            break;
+        case 570:
+            animal('#foto8-5','0','0');
+            animal('#foto8-6','0','100%');
+            break;
+        case 58:
+            animal('#foto8-5','0','-100%');
+            animal('#foto8-6','0','0');
+            break;
+        case 580:
+            animal('#foto8-6','0','0');
+            animal('#foto8-7','0','100%');
+            break;
+        case 59:
+            animal('#foto8-6','0','-100%');
+            animal('#foto8-7','0','0');
+            break;
+        case 590:
+            animal('#foto8-7','0','0');
+            animal('#foto8-8','0','100%');
+            break;
+        case 60:
+            animal('#foto8-7','0','-100%');
+            animal('#foto8-8','0','0');
+            break;
     }
 }
 // Funcions de video
