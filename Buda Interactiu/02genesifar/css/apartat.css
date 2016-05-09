@@ -1041,3 +1041,10 @@
     background-image: url('../foto/foto_apartat_8_8.jpg');
     background-position: center center;
 }
+#foto8-9{
+    top: 100%;
+}
+#foto8-9text{
+    top: 120%;
+    padding: 15px;
+}
