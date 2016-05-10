@@ -1045,6 +1045,24 @@
     top: 100%;
 }
 #foto8-9text{
+    position: absolute;
     top: 120%;
+}
+#foto8-9text p{
+    position: relative;
+    top: 0;
+    color: white;
     padding: 15px;
+}
+#foto8-9boto1{
+    top: 300px;
+    position: relative;
+}
+#foto8-9boto2{
+    top: 300px;
+    position: relative;
+}
+#foto8-9foto1 img{
+    margin-top: 15vh;
+    height: auto !important;
 }

@@ -1534,6 +1534,20 @@ function diapositiva(id){
             animal('#foto8-7','0','-100%');
             animal('#foto8-8','0','0');
             break;
+        case 61:
+            animal('#foto8-4peu','0','-50%');
+            animat('#foto8-8','200','-100%');
+            animat('#foto8-9','200','0');
+            animat('#foto8-9text','400','20%');
+            animat('#foto8-9boto1','600','0');
+            $('#foto8-9boto2').delay('800').animate({
+                'top': '0'
+            },trans,'swing',function(){
+                $('#foto8-9 video')[0].play();
+            });
+            foto('#foto8-9boto1','#foto8-9foto1');
+            foto('#foto8-9boto2','#foto8-9foto2');
+            break;
     }
 }
 // Funcions de video
