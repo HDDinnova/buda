@@ -1006,11 +1006,11 @@
     font-size: 1.15vw;
     padding: 25px;
 }
-#foto8-4boto{
+#foto8-4boto1{
     position: relative;
-    top: 0;
+    top: -300px;
 }
-#foto8-4boto{
+#foto8-4boto2{
     position: relative;
     top: 0;
 }
@@ -1065,4 +1065,50 @@
 #foto8-9foto1 img{
     margin-top: 15vh;
     height: auto !important;
+}
+#foto8-10{
+    top: 100%;
+}
+#foto8-10text{
+    position: absolute;
+    top: 120%;
+}
+#foto8-10text p{
+    position: relative;
+    top: 0;
+    color: white;
+    padding: 15px;
+}
+#foto8-10boto1{
+    top: 300px;
+    position: relative;
+}
+#foto8-10boto2{
+    top: 300px;
+    position: relative;
+}
+#foto8-10boto3{
+    top: 300px;
+    position: relative;
+}
+#foto8-11{
+    top: 100%;
+}
+#foto8-11text{
+    position: absolute;
+    top: 135%;
+}
+#foto8-11text p{
+    position: relative;
+    top: 0;
+    color: white;
+    padding: 15px;
+}
+#foto8-11boto1{
+    top: 300px;
+    position: relative;
+}
+#foto8-11boto2{
+    top: 300px;
+    position: relative;
 }
