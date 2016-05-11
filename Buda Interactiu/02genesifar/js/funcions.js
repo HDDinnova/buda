@@ -198,6 +198,15 @@ function controlMouse(e){
             case 63:
                 passar(64);
                 break;
+            case 64:
+                passar(65);
+                break;
+            case 65:
+                passar(66);
+                break;
+            case 66:
+                passar(67);
+                break;
             default :
                 $('body').on('mousewheel',function(e){
                     controlMouse(e);
@@ -382,6 +391,18 @@ function controlMouse(e){
                 break;
             case 63:
                 passar(620);
+                break;
+            case 64:
+                passar(630);
+                break;
+            case 65:
+                passar(640);
+                break;
+            case 66:
+                passar(650);
+                break;
+            case 67:
+                passar(660);
                 break;
             default :
                 $('body').on('mousewheel',function(e){
@@ -1590,6 +1611,17 @@ function diapositiva(id){
             foto('#foto8-10boto2','#foto8-10foto2');
             video('#foto8-10boto3','apartat8video3.html');
             break;
+        case 620:
+            animat('#foto8-11boto2','0','300px');
+            animat('#foto8-11boto1','200','300px');
+            animat('#foto8-11text','400','135%');
+            animat('#foto8-11','600','100%');
+            animat('#foto8-10','600','0');
+            animat('#foto8-10text','800','20%');
+            animat('#foto8-10boto2','1000','0');
+            animat('#foto8-10boto1','1200','0');
+            animat('#foto8-10text p','1400','0');
+            break;
         case 63:
             animat('#foto8-10text p','0','-300px');
             animat('#foto8-10boto1','200','-300px');
@@ -1598,7 +1630,7 @@ function diapositiva(id){
             animat('#foto8-10','800','-100%');
             animat('#foto8-11','800','0');
             animat('#foto8-11text','1000','35%');
-            animat('#foto8-10boto1','1000','0');
+            animat('#foto8-11boto1','1200','0');
             $('#foto8-11boto2').delay('1400').animate({
                 'top': '0'
             },trans,'swing',function(){
@@ -1606,6 +1638,86 @@ function diapositiva(id){
             });
             foto('#foto8-11boto1','#foto8-11foto1');
             video('#foto8-11boto2','apartat8video4.html');
+            break;
+        case 630:
+            animal('#foto8-12peu','0','-50%');
+            animat('#foto8-12text p','200','-300px');
+            animat('#foto8-12text','400','-190%');
+            animat('#foto8-12','600','100%');
+            animat('#foto8-11','600','0');
+            animat('#foto8-11text','800','35%');
+            animat('#foto8-11boto1','1000','0');
+            animat('#foto8-11text p','1200','0');
+            break;
+        case 64:
+            animat('#foto8-11text p','0','-300px');
+            animat('#foto8-11boto1','200','-300px');
+            animat('#foto8-11text','400','-65%');
+            animat('#foto8-11','600','-100%');
+            animat('#foto8-12','600','0');
+            animat('#foto8-12text','800','10%');
+            animat('#foto8-12text p','1000','0');
+            animal('#foto8-12peu','1200','0');
+            foto('#foto8-12boto','#foto8-12foto');
+            break;
+        case 640:
+            animal('#foto8-13peu','0','-50%');
+            animat('#foto8-13text','200','-190%');
+            animat('#foto8-13','400','100%');
+            animat('#foto8-12','400','0');
+            animat('#foto8-12text','600','10%');
+            animat('#foto8-12boto','800','0');
+            animal('#foto8-12peu','1000','0');
+            break;
+        case 65:
+            animal('#foto8-12peu','0','-50%');
+            animat('#foto8-12boto','200','300px');
+            animat('#foto8-12text','400','210%');
+            animat('#foto8-12','600','-100%');
+            animat('#foto8-13','600','0');
+            animat('#foto8-13text','800','10%');
+            animal('#foto8-13peu','1000','0');
+            break;
+        case 650:
+            animal('#foto8-14peu','0','-50%');
+            animat('#foto8-14boto','200','-300px');
+            animat('#foto8-14text','400','-180%');
+            animat('#foto8-14','600','100%');
+            animat('#foto8-13','600','0');
+            animat('#foto8-13text','800','10%');
+            animal('#foto8-13peu','1000','0');
+            break;
+        case 66:
+            animal('#foto8-13peu','0','-50%');
+            animat('#foto8-13text','200','210%');
+            animat('#foto8-13','400','-100%');
+            animat('#foto8-14','400','0');
+            animat('#foto8-14text','600','20%');
+            animat('#foto8-14boto','800','0');
+            animal('#foto8-14peu','1000','0');
+            break;
+        case 660:
+            animat('#foto8-15boto','0','300px');
+            animat('#foto8-15text','200','130%');
+            animat('#foto8-15','400','100%');
+            animat('#foto8-14','400','0');
+            animat('#foto8-14text','600','20%');
+            animat('#foto8-14text p','800','0');
+            animal('#foto8-14peu','1000','0');
+            break;
+        case 67:
+            animal('#foto8-14peu','0','-50%');
+            animat('#foto8-14text p','200','300px');
+            animat('#foto8-14text','400','220%');
+            animat('#foto8-14','600','-100%');
+            animat('#foto8-15','600','0');
+            animat('#foto8-15text','800','30%');
+            $('#foto8-15boto').delay('1000').animate({
+                'top': '0'
+            },trans,'swing',function(){
+               $('#foto8-15 video')[0].play();
+            });
+            video('#foto8-15boto','apartat8video5.html');
             break;
     }
 }
