@@ -1178,6 +1178,7 @@
 }
 #foto8-15{
     top: 100%;
+    left: 0;
 }
 #foto8-15text{
     position: absolute;
@@ -1192,4 +1193,106 @@
 #foto8-15boto{
     top: 300px;
     position: relative;
+}
+#apartat9{display: none;}
+#foto9-1{
+    top: 0;
+    left: -100%;
+    background-image: url('../foto/foto_apartat_9_1.jpg');
+    background-position: center center;
+}
+#foto9-1text{
+    position: absolute;
+    top: -85%;
+}
+#foto9-1text h2{
+    color: white;
+    padding: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#foto9-2{
+    top: -100%;
+    background-image: url('../foto/foto_apartat_9_2.jpg');
+    background-position: center center;
+}
+#foto9-2text{
+    position: absolute;
+    top: 215%;
+}
+#foto9-2text p{
+    color: white;
+    padding: 25px;
+    font-size: 1.3vw;
+}
+#foto9-2 .tapa{
+    opacity: 0;
+}
+#foto9-2fotos{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -5;
+}
+#foto9-3{
+    top: -100%;
+    background-image: url('../foto/foto_apartat_9_3.jpg');
+    background-position: center center;
+}
+#foto9-3text1{
+    position: absolute;
+    top: 215%;
+}
+#foto9-3text1 p{
+    color: #888D57;
+    padding: 25px;
+    font-size: 1.3vw;
+}
+#foto9-3text2{
+    position: absolute;
+    top: 215%;
+}
+#foto9-3text2 p{
+    color: #888D57;
+    padding: 25px;
+    font-size: 1.3vw;
+}
+#foto9-3text3{
+    position: absolute;
+    top: 230%;
+}
+#foto9-3text3 p{
+    color: white;
+    padding: 25px;
+    font-size: 1.3vw;
+}
+#foto9-4{
+    top: -100%;
+    background-image: url('../foto/foto_apartat_9_4.jpg');
+    background-position: center center;
+}
+#foto9-4text{
+    position: absolute;
+    top: 215%;
+}
+#foto9-4text p{
+    color: white;
+    font-size: 1.8vw;
+    font-weight: 600;
+}
+#foto9-5{
+    top: -100%;
+    background-image: url('../foto/foto_apartat_9_5.jpg');
+    background-position: center center;
+}
+#foto9-5text{
+    position: absolute;
+    top: 215%;
+}
+#foto9-5text p{
+    color: white;
+    padding: 25px;
+    font-size: 1.3vw;
 }

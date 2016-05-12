@@ -207,6 +207,42 @@ function controlMouse(e){
             case 66:
                 passar(67);
                 break;
+            case 67:
+                passar(68);
+                break;
+            case 68:
+                passar(69);
+                break;
+            case 69:
+                passar(70);
+                break;
+            case 70:
+                passar(71);
+                break;
+            case 71:
+                passar(72);
+                break;
+            case 72:
+                passar(73);
+                break;
+            case 73:
+                passar(74);
+                break;
+            case 74:
+                passar(75);
+                break;
+            case 75:
+                passar(76);
+                break;
+            case 76:
+                passar(77);
+                break;
+            case 77:
+                passar(78);
+                break;
+            case 78:
+                passar(79);
+                break;
             default :
                 $('body').on('mousewheel',function(e){
                     controlMouse(e);
@@ -403,6 +439,66 @@ function controlMouse(e){
                 break;
             case 67:
                 passar(660);
+                break;
+            case 68:
+                passar(670);
+                break;
+            case 69:
+                passar(680);
+                break;
+            case 70:
+                passar(690);
+                break;
+            case 71:
+                passar(700);
+                break;
+            case 72:
+                passar(710);
+                break;
+            case 73:
+                passar(720);
+                break;
+            case 74:
+                passar(730);
+                break;
+            case 75:
+                passar(740);
+                break;
+            case 76:
+                passar(750);
+                break;
+            case 77:
+                passar(760);
+                break;
+            case 78:
+                passar(770);
+                break;
+            case 79:
+                passar(780);
+                break;
+            case 80:
+                passar(790);
+                break;
+            case 81:
+                passar(800);
+                break;
+            case 82:
+                passar(810);
+                break;
+            case 83:
+                passar(820);
+                break;
+            case 84:
+                passar(830);
+                break;
+            case 85:
+                passar(840);
+                break;
+            case 86:
+                passar(850);
+                break;
+            case 87:
+                passar(860);
                 break;
             default :
                 $('body').on('mousewheel',function(e){
@@ -1718,6 +1814,118 @@ function diapositiva(id){
                $('#foto8-15 video')[0].play();
             });
             video('#foto8-15boto','apartat8video5.html');
+            $('#apartat9').load('apartat9.html');
+            break;
+        case 670:
+            animat('#foto9-1text','0','-85%');
+            animal('#foto9-1','200','-100%');
+            animal('#foto8-15','200','0');
+            animat('#foto8-15text','400','30%');
+            $('#foto8-15boto').delay('600').animate({
+                'top': '0'
+            },trans,'swing',function(){
+               $('#apartat9').hide();
+            });
+            break;
+        case 68:
+            $('#apartat9').show();
+            animat('#foto8-15boto','0','300px');
+            animat('#foto8-15text','200','130%');
+            animal('#foto8-15','400','100%');
+            animal('#foto9-1','400','0');
+            animat('#foto9-1text','600','15%');
+            break;
+        case 680:
+            animat('#foto9-2text','0','215%');
+            animat('#foto9-2','200','-100%');
+            animat('#foto9-1','200','0');
+            animat('#foto9-1text','400','15%');
+            break;
+        case 69:
+            animat('#foto9-1text','0','115%');
+            animat('#foto9-1','200','100%');
+            animat('#foto9-2','200','0');
+            animat('#foto9-2text','400','15%');
+            break;
+        case 690:
+            var pausa=0;
+            $('#foto9-2fotos .f').each(function(){
+                $(this).delay(pausa).animate({
+                    'top':'-85%',
+                    'left':'-85%'
+                },trans);
+                pausa+=150;
+            });
+            animao('#foto9-2 .tapa','200','0');
+            break;
+        case 70:
+            animao('#foto9-2 .tapa','0','.6');
+            var pausa=200;
+            $('#foto9-2fotos .f').rotate('40deg');
+            $('#foto9-2fotos .f').each(function(){
+                $(this).delay(pausa).animate({
+                    'top':'15%',
+                    'left':'15%',
+                    rotate: '5deg'
+                },trans);
+                pausa+=150;
+            });
+            break;
+        case 700:
+            animat('#foto9-3text1','0','215%');
+            animat('#foto9-3','200','-100%');
+            animat('#foto9-2','200','0');
+            animat('#foto9-2text','400','15%');
+            var pausa=600;
+            $('#foto9-2fotos .f').each(function(){
+                $(this).delay(pausa).animate({
+                    'top':'15%',
+                    'left':'15%'
+                },trans);
+                pausa+=150;
+            });
+            break;
+        case 71:
+            var pausa=0;
+            $('#foto9-2fotos .f').each(function(){
+                $(this).delay(pausa).animate({
+                    'top':'185%',
+                    'left':'185%'
+                },trans);
+                pausa+=150;
+            });
+            animat('#foto9-2text','200','-85%');
+            animat('#foto9-2','400','100%');
+            animat('#foto9-3','400','0');
+            animat('#foto9-3text1','600','15%');
+            break;
+        case 710:
+            animat('#foto9-3text1','0','15%');
+            animat('#foto9-3text2','0','215%');
+            break;
+        case 72:
+            animat('#foto9-3text1','0','-85%');
+            animat('#foto9-3text2','0','15%');
+            break;
+        case 720:
+            animat('#foto9-3text3','0','230%');
+            animat('#foto9-3text2','0','15%');
+            break;
+        case 73:
+            animat('#foto9-3text2','0','-85%');
+            animat('#foto9-3text3','0','30%');
+            break;
+        case 730:
+            animat('#foto9-4text','0','215%');
+            animat('#foto9-4','200','-100%');
+            animat('#foto9-3','200','0');
+            animat('#foto9-3text3','400','30%');
+            break;
+        case 74:
+            animat('#foto9-3text3','0','-170%');
+            animat('#foto9-3','200','100%');
+            animat('#foto9-4','200','0');
+            animat('#foto9-4text','400','15%');
             break;
     }
 }
