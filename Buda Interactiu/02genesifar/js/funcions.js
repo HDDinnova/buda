@@ -1927,6 +1927,121 @@ function diapositiva(id){
             animat('#foto9-4','200','0');
             animat('#foto9-4text','400','15%');
             break;
+        case 740:
+            animat('#foto9-5boto','0','300px');
+            animat('#foto9-5text','200','210%');
+            animat('#foto9-5','400','-100%');
+            animat('#foto9-4','400','0');
+            animat('#foto9-4text','600','15%');
+            break;
+        case 75:
+            animat('#foto9-4text','0','-185%');
+            animat('#foto9-4','200','100%');
+            animat('#foto9-5','200','0');
+            animat('#foto9-5text','400','10%');
+            animat('#foto9-5boto','600','0');
+            break;
+        case 750:
+            var pausa=0;
+            $('#foto9-6fotos .f').each(function(){
+                $(this).delay(pausa).animate({
+                    'top':'-85%',
+                    'left':'-85%'
+                },trans);
+                pausa+=150;
+            });
+            animat('#foto9-6text','400','235%');
+            animat('#foto9-6','600','-100%');
+            animat('#foto9-5','600','0');
+            animat('#foto9-5text','800','10%');
+            animat('#foto9-5textos','1000','0');
+            break;
+        case 76:
+            animat('#foto9-5textos','0','-300px');
+            animat('#foto9-5text','200','-190%');
+            animat('#foto9-5','400','100%');
+            animat('#foto9-6','400','0');
+            animat('#foto9-6text','600','35%');
+            var angle=5;
+            var posi=15;
+            var pausa=800;
+            $('#foto9-6fotos .f').rotate('40deg');
+            $('#foto9-6fotos .f').each(function(){
+                $(this).delay(pausa).animate({
+                    'top':'15%',
+                    'left':posi+'%',
+                    rotate: angle+'deg'
+                },trans);
+                angle-=3;
+                posi+=5;
+                pausa+=150;
+            });
+            break;
+        case 760:
+            $('#foto9-7foto1').delay('0').animate({
+                'top':'-85%',
+                'left':'-85%'
+            },trans);
+            animat('#foto9-7text','200','220%');
+            animat('#foto9-7','400','-100%');
+            animat('#foto9-6','400','0');
+            animat('#foto9-6text','600','35%');
+            var posi=15;
+            var pausa=800;
+            $('#foto9-6fotos .f').each(function(){
+                $(this).delay(pausa).animate({
+                    'top':'15%',
+                    'left':posi+'%'
+                },trans);
+                pausa+=150;
+                posi+=5;
+            });
+            break;
+        case 77:
+            var pausa=0;
+            $('#foto9-6fotos .f').each(function(){
+                $(this).delay(pausa).animate({
+                    'top':'185%',
+                    'left':'185%'
+                },trans);
+                pausa+=150;
+            });
+            animat('#foto9-6text','400','135%');
+            animat('#foto9-6','600','100%');
+            animat('#foto9-7','600','0');
+            animat('#foto9-7text','800','20%');
+            $('#foto9-7fotos .f').rotate('3deg');
+            $('#foto9-7foto1').delay('1000').animate({
+                'top':'15%',
+                'left':'20%'
+            },trans);
+            break;
+        case 770:
+            $('#foto9-7foto2').delay('0').animate({
+                'top':'-85%',
+                'left':'-85%'
+            },trans);
+            animat('#foto9-7text2','200','220%');
+            animao('#foto9-7 .tapa','400','0');
+            animat('#foto9-7text','600','20%');
+            $('#foto9-7foto1').delay('800').animate({
+                'top':'15%',
+                'left':'20%'
+            },trans);
+            break;
+        case 78:
+            $('#foto9-7foto1').delay('0').animate({
+                'top':'185%',
+                'left':'185%'
+            },trans);
+            animat('#foto9-7text','200','-80%');
+            animao('#foto9-7 .tapa','400','.5');
+            animat('#foto9-7text2','600','20%');
+            $('#foto9-7foto2').delay('800').animate({
+                'top':'15%',
+                'left':'10%'
+            },trans);
+            break;
     }
 }
 // Funcions de video

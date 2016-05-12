@@ -1289,10 +1289,71 @@
 }
 #foto9-5text{
     position: absolute;
-    top: 215%;
+    top: 210%;
+}
+#foto9-5textos{
+    position: relative;
+    top: 0;
 }
 #foto9-5text p{
     color: white;
+    padding: 25px;
+    font-size: 1.2vw;
+}
+#foto9-5boto{
+    position: relative;
+    top: 300px;
+}
+#foto9-6{
+    top: -100%;
+}
+#foto9-6text{
+    position: absolute;
+    top: 235%;
+}
+#foto9-6text p{
+    color: white;
+    font-size: 1.8vw;
+}
+#foto9-6fotos{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -5;
+}
+#foto9-7{
+    top: -100%;
+    background-image: url('../foto/foto_apartat_9_7.jpg');
+    background-position: center center;
+}
+#foto9-7text{
+    position: absolute;
+    top: 220%;
+}
+#foto9-7text p{
+    color: white;
+    padding: 25px;
+    font-size: 1.3vw;
+}
+#foto9-7 .tapa{
+    opacity: 0;
+}
+#foto9-7fotos{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -5;
+}
+#foto9-7text2{
+    position: absolute;
+    top: 220%;
+}
+#foto9-7text2 p{
+    color: #888D57;
     padding: 25px;
     font-size: 1.3vw;
 }
