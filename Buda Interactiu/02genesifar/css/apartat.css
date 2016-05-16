@@ -224,6 +224,7 @@
 }
 #foto3-4{
     top: 100%;
+    left: 0;
     background-image: url('../foto/_MG_9174.jpg');
     background-position: center center;
 }
@@ -239,23 +240,6 @@
 #play3-4{
     position: relative;
     top: 0;
-}
-#foto3-5{
-    top: 100%;
-    left: 0;
-}
-#foto3-5text{
-    position: absolute;
-    top: -185%;
-}
-#foto3-5text h3{
-    color: white;
-}
-#foto3-5 img{
-    position: absolute;
-    top: -180%;
-    left: -180%;
-    height: 70vh;
 }
 #apartat4{display: none;}
 #foto4-1{
@@ -601,10 +585,6 @@
     color: white;
 }
 #foto6-8boto1{
-    position: relative;
-    top: -300px;
-}
-#foto6-8boto2{
     position: relative;
     top: -300px;
 }
@@ -1356,4 +1336,338 @@
     color: #888D57;
     padding: 25px;
     font-size: 1.3vw;
+}
+#apartat10{display: none;}
+#foto10-1{
+    top: 100%;
+    background-image: url('../foto/3Foto_Seguint-tot-lEbre.jpg');
+    background-position: center center;
+}
+#foto10-1text{
+    position: absolute;
+    top: -170%;
+}
+#foto10-1text h2{
+    color: white;
+    padding: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#foto10-1 .tapa{
+    opacity: 0;
+}
+#foto10-1peu{
+    padding: 10px;
+    color: black;
+}
+#foto10-1video{
+    position: absolute;
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    top: -200%;
+}
+#foto10-1video video{
+    display: block;
+    height: 100vh;
+    margin-right: auto;
+    margin-left: auto;
+}
+#foto10-2{
+    top: 100%;
+    background-image: url('../foto/far_ferro_enfonsat_Parra.jpg');
+    background-position: center center;
+}
+#foto10-2text{
+    position: absolute;
+    top: -170%;
+}
+#foto10-2text p{
+    color: #CBA01A;
+    font-size: 1.6vw;
+}
+#foto10-2peu{
+    left: 50%;
+}
+#foto10-3{
+    top: 100%;
+    background-image: url('../foto/IMG009PNDE.jpg');
+    background-position: center center;
+}
+#foto10-3text{
+    position: absolute;
+    top: -185%;
+}
+#foto10-3text p{
+    position: relative;
+    top: -300px;
+    color: white;
+    padding: 25px;
+}
+#foto10-3boto1{
+    position: relative;
+    top: -300px;
+    left: -5vw
+}
+#foto10-3boto2{
+    position: relative;
+    top: 0;
+}
+#foto10-3peu{
+    left: 50%;
+}
+#foto10-4{
+    top: 100%;
+    background-image: url('../foto/_MG_9257-gran.jpg');
+    background-position: center center;
+}
+#foto10-4text{
+    position: absolute;
+    top: -185%;
+}
+#foto10-4text p{
+    position: relative;
+    top: -300px;
+    color: white;
+    padding: 25px;
+}
+#foto10-4boto{
+    position: relative;
+    top: 0;
+    left: -5vw
+}
+#foto10-4peu{
+    left: 50%;
+}
+#foto10-5{
+    top: 100%;
+    background-image: url('../foto/Foto-excursio-al-Far_llibre-fotos-Amposta-1996.jpg');
+    background-position: center center;
+}
+#foto10-5text{
+    position: absolute;
+    top: -170%;
+}
+#foto10-5text p{
+    color: white;
+    padding: 25px;
+}
+#foto10-6{
+    top: 100%;
+    background-image: url('../foto/DIAPO.jpg');
+    background-position: center center;
+}
+#foto10-6 .tapa{
+    top: 0;
+    left: 0;
+    opacity: .5;
+}
+#foto10-6text{
+    position: absolute;
+    top: -165%;
+}
+#foto10-6text p{
+    position: relative;
+    top: -300px;
+    color: #CBA01A;
+    padding: 25px;
+}
+#foto10-6boto{
+    position: relative;
+    top: 0;
+    left: -5vw
+}
+#foto10-6peu{
+    left: 50%;
+    color: black;
+}
+#foto10-6video{
+    position: absolute;
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    top: -200%;
+}
+#foto10-6video video{
+    display: block;
+    height: 100vh;
+    margin-right: auto;
+    margin-left: auto;
+}
+#foto10-6videopeu{
+    padding: 10px;
+    color: black;
+}
+#apartat11{display: none;}
+#foto11-1{
+    top: -100%;
+    background-image: url('../foto/far_ferro_enfonsat_Parra.jpg');
+    background-position: center center;
+}
+#foto11-1text{
+    position: absolute;
+    top: 245%;
+}
+#foto11-1text h2{
+    color: white;
+    padding: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#foto11-2{
+    top: -100%;
+    background-image: url('../foto/IMG_4147.jpg');
+    background-position: center center;
+}
+#foto11-2text{
+    position: absolute;
+    top: 210%;
+}
+#foto11-2text p{
+    position: relative;
+    top: 0;
+    color: #668080;
+    padding: 25px;
+}
+#foto11-2boto1{
+    position: relative;
+    top: 300px;
+}
+#foto11-2boto2{
+    position: relative;
+    top: 300px;
+}
+#foto11-2boto3{
+    position: relative;
+    top: 300px;
+}
+#foto11-2boto4{
+    position: relative;
+    top: 300px;
+}
+#foto11-2 .tapa{
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+#foto11-2video{
+    position: absolute;
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    top: 200%;
+}
+#foto11-2video video{
+    display: block;
+    height: 100vh;
+    margin-right: auto;
+    margin-left: auto;
+}
+#foto11-2videopeu{
+    padding: 10px;
+    color: black;
+    z-index: 11;
+}
+#foto11-3{
+    top: -100%;
+    background-image: url('../foto/IMG_4167.jpg');
+    background-position: center center;
+}
+#foto11-3text{
+    position: absolute;
+    top: 215%;
+}
+#foto11-3text p{
+    color: white;
+}
+#foto11-3text p i{
+    font-size: 1.6vw;
+}
+#foto11-4{
+    top: -100%;
+    background-image: url('../foto/LVG19620114-009_ElegiaFarodeBuda_SJ Arbo.jpg');
+    background-position: center center;
+}
+#foto11-4text{
+    position: absolute;
+    top: 220%;
+}
+#foto11-4text p{
+    color: white;
+    padding: 25px;
+}
+#foto11-5{
+    top: -100%;
+    background-image: url('../foto/RestesferroFaralfonsdelmar3.jpg');
+    background-position: center center;
+}
+#foto11-5text{
+    position: absolute;
+    top: 215%;
+}
+#foto11-5text p{
+    position: relative;
+    top: 0;
+    color: white;
+    padding: 25px;
+}
+#foto11-5boto{
+    position: relative;
+    top: 300px;
+    left: -5vw;
+}
+#foto11-5fotos .slick-slide img{
+    height: 100%;
+    width: auto !important;
+}
+#foto11-6{
+    top: -100%;
+    background-image: url('../foto/Fotosub624.jpg');
+    background-position: center center;
+}
+#foto11-6text{
+    position: absolute;
+    top: 215%;
+}
+#foto11-6text p{
+    position: relative;
+    top: 0;
+    color: #668080;
+    padding: 25px;
+}
+#foto11-6boto{
+    position: relative;
+    top: 300px;
+    left: -5vw;
+}
+#foto11-6fotos .slick-slide img{
+    height: 100%;
+    width: auto !important;
+}
+#foto11-7{
+    top: -100%;
+    background-image: url('../foto/foto_apartat_11_7.jpg');
+    background-position: center center;
+}
+#foto11-7text{
+    position: absolute;
+    top: 215%;
+}
+#foto11-7text p{
+    position: relative;
+    top: 0;
+    color: white;
+    padding: 25px;
+}
+#foto11-7boto{
+    position: relative;
+    top: 300px;
+    left: -5vw;
+}
+#foto11-7fotos .slick-slide img{
+    height: 100%;
+    width: auto !important;
 }
