@@ -1359,6 +1359,7 @@
 #foto10-1peu{
     padding: 10px;
     color: black;
+    z-index: 11;
 }
 #foto10-1video{
     position: absolute;
@@ -1499,6 +1500,7 @@
 #foto10-6videopeu{
     padding: 10px;
     color: black;
+    z-index: 11;
 }
 #apartat11{display: none;}
 #foto11-1{
