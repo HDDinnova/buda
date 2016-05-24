@@ -405,13 +405,7 @@
     top: 215%;
 }
 #foto5-3text h3{
-    position: relative;
-    top: 0;
     color: white;
-}
-#foto5-3boto{
-    position: relative;
-    top: 300px;
 }
 #foto5-4{
     top: -100%;
@@ -747,13 +741,6 @@
     color: white;
     font-size: 1.6vw;
 }
-#foto7-7text i{
-    position: relative;
-    top: -300px;
-    color: white;
-    font-size: 1vw;
-    line-height: 1.3;
-}
 #foto7-7boto{
     position: relative;
     top: 0;
@@ -957,9 +944,15 @@
     top: -180%;
 }
 #foto8-3text p{
+    position: relative;
+    top: -300px;
     color: white;
     font-weight: 600;
     font-size: 2vw;
+}
+#foto8-3boto{
+    position: relative;
+    top: 0;
 }
 #foto8-3fotos{
     position: absolute;
@@ -985,10 +978,6 @@
     color: #B55E43;
     font-size: 1.15vw;
     padding: 25px;
-}
-#foto8-4boto1{
-    position: relative;
-    top: -300px;
 }
 #foto8-4boto2{
     position: relative;
@@ -1453,6 +1442,9 @@
 #foto10-5text p{
     color: white;
     padding: 25px;
+}
+#foto10-5peu{
+    padding: 10px;
 }
 #foto10-6{
     top: 100%;
