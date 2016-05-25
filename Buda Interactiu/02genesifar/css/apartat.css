@@ -1593,6 +1593,7 @@
     color: white;
     padding: 25px;
 }
+#apartat12{display: none;}
 #foto11-5{
     top: -100%;
     background-image: url('../foto/RestesferroFaralfonsdelmar3.jpg');
@@ -1602,16 +1603,21 @@
     position: absolute;
     top: 215%;
 }
-#foto11-5text p{
+#foto11-5text h2{
     position: relative;
     top: 0;
+    color: white;
+    padding: 25px;
+}
+#foto11-5text p{
+    position: relative;
+    top: 300px;
     color: white;
     padding: 25px;
 }
 #foto11-5boto{
     position: relative;
     top: 300px;
-    left: -5vw;
 }
 #foto11-5fotos .slick-slide img{
     height: 100%;
@@ -1664,4 +1670,64 @@
 #foto11-7fotos .slick-slide img{
     height: 100%;
     width: auto !important;
+}
+#foto11-8{
+    top: -100%;
+}
+#apartat13{display: none;}
+#foto13-1{
+    top: -100%;
+    background-image: url('../foto/RFSACE.9339.jpg');
+    background-position: center center;
+}
+#foto13-1text{
+    position: absolute;
+    top: 220%;
+}
+#foto13-1text h2{
+    color: white;
+    padding: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#foto13-2{
+    top: -100%;
+    background-image: url('../foto/muntatge_far_obra_Parra_02-copia.jpg');
+    background-position: center center;
+}
+#foto13-2text{
+    position: absolute;
+    top: 215%;
+}
+#foto13-2text p{
+    color: white;
+    font-weight: 600;
+    font-size: 2.1vw;
+}
+#foto13-2peu{
+    left: 150%;
+}
+#foto13-2 .tapa{
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+#foto13-2video{
+    position: absolute;
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    top: 200%;
+}
+#foto13-2video video{
+    display: block;
+    height: 100vh;
+    margin-right: auto;
+    margin-left: auto;
+}
+#foto13-2videopeu{
+    padding: 10px;
+    color: white;
+    z-index: 11;
 }
