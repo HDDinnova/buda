@@ -1731,3 +1731,91 @@
     color: white;
     z-index: 11;
 }
+#foto13-3{
+    top: -100%;
+    background-image: url('../foto/muntatge_far_obra_Parra_01-copia.jpg');
+    background-position: center center;
+}
+#foto13-3text{
+    position: absolute;
+    top: 220%;
+}
+#foto13-3text p{
+    position: relative;
+    color: white;
+    padding: 15px;
+    font-size: 1.6vw;
+}
+#foto13-3text p:first{
+    top: 0;
+}
+#foto13-3text p:last{
+    top: 300px;
+}
+#foto13-3boto{
+    position: relative;
+    top: 300px;
+    margin-right: -5vw;
+}
+#foto13-3boto img{
+    position: relative;
+    left: -5vw;
+}
+#foto13-3peu{
+    left: 150%;
+}
+#foto13-4{
+    top: -100%;
+    background-image: url('../foto/_MG_8118-gran.jpg');
+    background-position: center center;
+}
+#foto13-4text{
+    position: absolute;
+    top: 215%;
+}
+#foto13-4text p{
+    position: relative;
+    top: 0;
+    color: #B98031;
+    font-size: 2.1vw;
+}
+#foto13-4boto{
+    position: relative;
+    top: 300px;
+    margin-right: -5vw;
+}
+#foto13-4boto img{
+    position: relative;
+    left: -5vw;
+}
+#foto13-4peu{
+    left: 150%;
+    color: black;
+}
+#foto13-5{
+    top: -100%;
+    background-image: url('../foto/_MG_8122.jpg');
+    background-position: center center;
+}
+#foto13-5text{
+    position: absolute;
+    top: 245%;
+}
+#foto13-5text p{
+    position: relative;
+    top: 0;
+    color: white;
+    font-size: 2.3vw;
+}
+#foto13-5boto{
+    position: relative;
+    top: 300px;
+    margin-right: -5vw;
+}
+#foto13-5boto img{
+    position: relative;
+    left: -5vw;
+}
+#foto13-5peu{
+    left: 150%;
+}
