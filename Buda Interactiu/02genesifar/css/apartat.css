@@ -1819,3 +1819,44 @@
 #foto13-5peu{
     left: 150%;
 }
+#foto13-6{
+    top: -100%;
+    background-image: url('../foto/RFSACE.9338.jpg');
+    background-position: center center;
+}
+#foto13-6peu{
+    left: 150%;
+}
+#foto13-6peu div{
+    position: relative;
+    left: 0;
+}
+#foto13-6peu p{
+    position: relative;
+    left: 300px;
+}
+#foto13-7{
+    top: -100%;
+    background-image: url('../foto/_MG_8148.jpg');
+    background-position: center center;
+}
+#foto13-7text{
+    position: absolute;
+    top: 235%;
+}
+#foto13-7text p{
+    padding: 15px;
+    color: white;
+    font-size: 1.3vw;
+}
+#foto13-7peu{
+    left: 150%;
+}
+#foto13-7text2{
+    position: absolute;
+    top: 235%;
+}
+#foto13-7text2 p{
+    color: white;
+    font-size: 2.1vw;
+}

@@ -306,6 +306,33 @@ function controlMouse(e){
             case 99:
                 passar(100);
                 break;
+            case 100:
+                passar(101);
+                break;
+            case 101:
+                passar(102);
+                break;
+            case 102:
+                passar(103);
+                break;
+            case 103:
+                passar(104);
+                break;
+            case 104:
+                passar(105);
+                break;
+            case 105:
+                passar(106);
+                break;
+            case 106:
+                passar(107);
+                break;
+            case 107:
+                passar(108);
+                break;
+            case 108:
+                passar(109);
+                break;
             default :
                 $('body').on('mousewheel',function(e){
                     controlMouse(e);
@@ -598,6 +625,36 @@ function controlMouse(e){
                 break;
             case 99:
                 passar(980);
+                break;
+            case 100:
+                passar(990);
+                break;
+            case 101:
+                passar(1000);
+                break;
+            case 102:
+                passar(1010);
+                break;
+            case 103:
+                passar(1020);
+                break;
+            case 104:
+                passar(1030);
+                break;
+            case 105:
+                passar(1040);
+                break;
+            case 106:
+                passar(1050);
+                break;
+            case 107:
+                passar(1060);
+                break;
+            case 108:
+                passar(1070);
+                break;
+            case 109:
+                passar(1080);
                 break;
             default :
                 $('body').on('mousewheel',function(e){
@@ -2572,6 +2629,48 @@ function diapositiva(id){
             animat('#foto13-5text','800','45%');
             animat('#foto13-5boto','1000','0');
             animal('#foto13-5peu','1200','0');
+            foto('#foto13-5boto','#foto13-5foto');
+            break;
+        case 990:
+            animal('#foto13-6peu p','0','300px');
+            animal('#foto13-6peu','200','150%');
+            animat('#foto13-6','400','-100%');
+            animat('#foto13-5','400','0');
+            animat('#foto13-5text','600','45%');
+            animat('#foto13-5boto','800','0');
+            animal('#foto13-5peu','1000','0');
+            break;
+        case 100:
+            animal('#foto13-5peu','0','150%');
+            animat('#foto13-5boto','200','-300px');
+            animat('#foto13-5text','400','-155%');
+            animat('#foto13-5','600','100%');
+            animat('#foto13-6','600','0');
+            animal('#foto13-6peu','800','0');
+            animal('#foto13-6peu p','1000','0');
+            video('#foto13-6boto','apartat13video2.html');
+            break;
+        case 1000:
+            animal('#foto13-7peu','0','150%');
+            animat('#foto13-7text','200','235%');
+            animat('#foto13-7','400','-100%');
+            animat('#foto13-6','400','0');
+            animal('#foto13-6peu','600','0');
+            animal('#foto13-6peu p','800','0');
+            break;
+        case 101:
+            animal('#foto13-6peu p','0','300px');
+            animal('#foto13-6peu','200','150%');
+            animat('#foto13-6','400','100%');
+            animat('#foto13-7','400','0');
+            animat('#foto13-7text','600','35%');
+            animal('#foto13-7peu','800','0');
+            break;
+        case 102:
+            animal('#foto13-7peu','0','150%');
+            animat('#foto13-7text','200','-165%');
+            animao('#foto13-7 .tapa','400','.6');
+            animat('#foto13-7text2','600','35%');
             break;
     }
 }
@@ -2604,7 +2703,7 @@ function passar(id){
     $(document).off( "keydown" );
     diapositiva(id);
     setTimeout(function(){
-        if (id < 100 || id >=2000){
+        if (id < 110 || id >=2000){
             if (id >= 20000) {
                 pos = id/10;
             } else {
