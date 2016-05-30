@@ -1860,3 +1860,36 @@
     color: white;
     font-size: 2.1vw;
 }
+#foto13-8{
+    top: -100%;
+    background-image: url('../foto/IMG011PNDE.jpg');
+    background-position: center center;
+}
+#foto13-8text{
+    position: absolute;
+    bottom: -180%;
+}
+#foto13-8text p{
+    padding: 15px;
+    color: white;
+    font-size: 1.3vw;
+}
+#foto13-8peu{
+    left: 150%;
+}
+#foto13-8botons{
+    position: absolute;
+    bottom: -185%;
+}
+#foto13-8boto1{
+    position: relative;
+    top: 0;
+}
+#foto13-8boto2{
+    position: relative;
+    top: 300px;
+}
+#foto13-8boto3{
+    position: relative;
+    top: 300px;
+}

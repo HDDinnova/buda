@@ -1,7 +1,7 @@
 var trans = 1200;
 var sona=true;
 var mutexvideo=false;
-var slider1=slider2=slider3=slider4=slider5=slider6=slider7=slider8=slider9=false;
+var slider1=slider2=slider3=slider4=slider5=slider6=slider7=slider8=slider9=slider10=slider11=slider12=slider13=slider14=slider15=slider16=slider17=slider18=slider19=slider20=false;
 var zi=4;
 var tecla;
 
@@ -2666,11 +2666,39 @@ function diapositiva(id){
             animat('#foto13-7text','600','35%');
             animal('#foto13-7peu','800','0');
             break;
+        case 1010:
+            animat('#foto13-7text2','0','135%');
+            animao('#foto13-7 .tapa','200','0');
+            animat('#foto13-7text','400','35%');
+            animal('#foto13-7peu','600','0');
+            break;
         case 102:
             animal('#foto13-7peu','0','150%');
             animat('#foto13-7text','200','-165%');
             animao('#foto13-7 .tapa','400','.6');
             animat('#foto13-7text2','600','35%');
+            break;
+        case 1020:
+            animal('#foto13-8peu','0','150%');
+            animat('#foto13-8boto3','200','300px');
+            animat('#foto13-8boto2','400','300px');
+            animab('#foto13-8botons','600','-185%');
+            animab('#foto13-8text','800','-180%');
+            animat('#foto13-8','1000','-100%');
+            animat('#foto13-7','1000','0');
+            animat('#foto13-7text2','1200','35%');
+            break;
+        case 103:
+            animat('#foto13-7text2','0','-165%');
+            animat('#foto13-7','200','100%');
+            animat('#foto13-8','200','0');
+            animab('#foto13-8text','400','20%');
+            animab('#foto13-8botons','600','15%');
+            animat('#foto13-8boto2','800','0');
+            animat('#foto13-8boto3','1000','0');
+            animal('#foto13-8peu','1200','0');
+            slider('#foto13-8boto1','#foto13-8fotos1',slider10);
+            slider('#foto13-8boto2','#foto13-8fotos2',slider11);
             break;
     }
 }
