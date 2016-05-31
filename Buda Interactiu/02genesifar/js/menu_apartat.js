@@ -1,3 +1,13 @@
+$('#mi a').click(function(){
+    saltar($(this).attr('id'));
+    $('#mi').animate({
+        bottom: '-160px'
+    }, 200);
+    $('body').on('mousewheel',function(e){
+        controlMouse(e);
+    });
+});
+
 function saltar(id){
     switch (parseInt(id)) {
         case 1:            
@@ -33,10 +43,12 @@ function saltar(id){
             $('#apartat11').hide();
             $('#apartat12').hide();
             $('#apartat13').hide();
-            animao('#foto20-1','0','1');
-            animat('#foto20-1text','200','30%');
-            animat('#foto20-1text p','400','0');
-            pos = 2000;
+            $('#apartat20').load('apartat20.html',function(){
+                animao('#foto20-1','0','1');
+                animat('#foto20-1text','200','30%');
+                animat('#foto20-1text p','400','0');
+                pos = 2000;
+            });
             break;
         case 3:
             $('#apartat1').hide();
@@ -53,10 +65,12 @@ function saltar(id){
             $('#apartat11').hide();
             $('#apartat12').hide();
             $('#apartat13').hide();
-            animat('#foto2-1','0','0');
-            animat('#foto2-1text','200','40%');
-            animal('#foto2-1peu','400','0');
-            pos=15;
+            $('#apartat2').load('apartat2.html',function(){
+                animat('#foto2-1','0','0');
+                animat('#foto2-1text','200','40%');
+                animal('#foto2-1peu','400','0');
+                pos=15;
+            });
             break;
         case 4:
             $('#apartat1').hide();
@@ -254,10 +268,12 @@ function saltar(id){
             $('#apartat11').hide();
             $('#apartat12').hide();
             $('#apartat13').show();
-            animat('#foto13-1','400','0');
-            animat('#foto13-1text','600','20%');
-            animal('#foto13-1peu','800','0');
-            pos=94;
+            $('#apartat13').load('apartat13.html',function(){
+                animat('#foto13-1','400','0');
+                animat('#foto13-1text','600','20%');
+                animal('#foto13-1peu','800','0');
+                pos=94;
+            });
             break;
     }
 }

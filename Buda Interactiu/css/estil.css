@@ -6221,3 +6221,15 @@ button.close {
         margin-left: 6% !important;
     }
 }
+
+#mi{
+  background-color: #333333;
+  bottom: -160px;
+  left: 0;
+  height: 160px;
+  position: fixed;
+  width: 100vw;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  z-index: 9999;
+}
