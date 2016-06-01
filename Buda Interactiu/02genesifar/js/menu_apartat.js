@@ -10,7 +10,8 @@ $('#mi a').click(function(){
 
 function saltar(id){
     switch (parseInt(id)) {
-        case 1:            
+        case 1:
+            posiciona1();
             $('#apartat1').show();
             $('#apartat20').hide();
             $('#apartat2').hide();
@@ -87,10 +88,12 @@ function saltar(id){
             $('#apartat11').hide();
             $('#apartat12').hide();
             $('#apartat13').hide();
-            animal('#foto3-1','0','0');
-            animat('#foto3-1text','200','55%');
-            animab('#foto3-1peu','400','10px');
-            pos=20;
+            $('#apartat3').load('apartat3.html',function(){
+                animal('#foto3-1','0','0');
+                animat('#foto3-1text','200','55%');
+                animab('#foto3-1peu','400','10px');
+                pos=20;
+            });
             break;
         case 5:
             $('#apartat1').hide();
@@ -107,9 +110,11 @@ function saltar(id){
             $('#apartat11').hide();
             $('#apartat12').hide();
             $('#apartat13').hide();
-            animal('#foto4-1','0','0');
-            animat('#foto4-1text','200','20%');
-            pos=24;
+            $('#apartat4').load('apartat4.html',function(){
+                animal('#foto4-1','0','0');
+                animat('#foto4-1text','200','20%');
+                pos=24;
+            });
             break;
         case 6:
             $('#apartat1').hide();
@@ -126,9 +131,11 @@ function saltar(id){
             $('#apartat11').hide();
             $('#apartat12').hide();
             $('#apartat13').hide();
-            animal('#foto6-1','0','0');
-            animat('#foto6-1text','200','20%');
-            pos=33;
+            $('#apartat6').load('apartat6.html',function(){
+                animal('#foto6-1','0','0');
+                animat('#foto6-1text','200','20%');
+                pos=33;
+            });
             break;
         case 7:
             $('#apartat1').hide();
@@ -145,10 +152,12 @@ function saltar(id){
             $('#apartat11').hide();
             $('#apartat12').hide();
             $('#apartat13').hide();
-            animal('#foto7-1','0','0');
-            animat('#foto7-1text','200','20%');
-            animat('#foto7-1text p','400','0');
-            pos=43;
+            $('#apartat7').load('apartat7.html',function(){
+                animal('#foto7-1','0','0');
+                animat('#foto7-1text','200','20%');
+                animat('#foto7-1text p','400','0');
+                pos=43;
+            });
             break;
         case 8:
             $('#apartat1').hide();
@@ -165,12 +174,14 @@ function saltar(id){
             $('#apartat11').hide();
             $('#apartat12').hide();
             $('#apartat13').hide();
-            animat('#foto8-1','0','0');
-            animat('#foto8-1text','200','35%');
-            animat('#foto8-1text h2','400','0');
-            animal('#foto8-1peu','600','0');
-            video('#foto8-1boto','#apartat8video1');
-            pos=52;
+            $('#apartat8').load('apartat8.html',function(){
+                animat('#foto8-1','0','0');
+                animat('#foto8-1text','200','35%');
+                animat('#foto8-1text h2','400','0');
+                animal('#foto8-1peu','600','0');
+                video('#foto8-1boto','#apartat8video1');
+                pos=52;
+            });
             break;
         case 9:
             $('#apartat1').hide();
@@ -187,9 +198,11 @@ function saltar(id){
             $('#apartat11').hide();
             $('#apartat12').hide();
             $('#apartat13').hide();
-            animal('#foto9-1','0','0');
-            animat('#foto9-1text','200','15%');
-            pos=67;
+            $('#apartat9').load('apartat9.html',function(){
+                animal('#foto9-1','0','0');
+                animat('#foto9-1text','200','15%');
+                pos=67;
+            });
             break;
         case 10:
             $('#apartat1').hide();
@@ -206,10 +219,12 @@ function saltar(id){
             $('#apartat11').hide();
             $('#apartat12').hide();
             $('#apartat13').hide();
-            animat('#foto10-1','0','0');
-            animat('#foto10-1text','200','45%');
-            animal('#foto10-1peu0','400','0');
-            pos=78;
+            $('#apartat10').load('apartat10.html',function(){
+                animat('#foto10-1','0','0');
+                animat('#foto10-1text','200','45%');
+                animal('#foto10-1peu0','400','0');
+                pos=78;
+            });
             break;
         case 11:
             $('#apartat1').hide();
@@ -226,10 +241,12 @@ function saltar(id){
             $('#apartat11').show();
             $('#apartat12').hide();
             $('#apartat13').hide();
-            animat('#foto11-1','0','0');
-            animat('#foto11-1text','200','45%');
-            animal('#foto11-1peu','400','0');
-            pos=86;
+            $('#apartat11').load('apartat11.html',function(){
+                animat('#foto11-1','0','0');
+                animat('#foto11-1text','200','45%');
+                animal('#foto11-1peu','400','0');
+                pos=86;
+            });
             break;
         case 12:
             $('#apartat1').hide();
@@ -246,12 +263,14 @@ function saltar(id){
             $('#apartat11').hide();
             $('#apartat12').show();
             $('#apartat13').hide();
-            animat('#foto11-5','0','0');
-            animat('#foto11-5text','200','15%');
-            animat('#foto11-5text p','400','0');
-            animat('#foto11-5boto','600','0');
-            slider('#foto11-5boto','#foto11-5fotos',slider7);
-            pos=91;
+            $('#apartat12').load('apartat12.html',function(){
+                animat('#foto11-5','0','0');
+                animat('#foto11-5text','200','15%');
+                animat('#foto11-5text p','400','0');
+                animat('#foto11-5boto','600','0');
+                slider('#foto11-5boto','#foto11-5fotos',slider7);
+                pos=91;
+            });
             break;
         case 13:
             $('#apartat1').hide();
@@ -276,4 +295,124 @@ function saltar(id){
             });
             break;
     }
+}
+function posiciona1(){
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1text').css('top','-150%');
+    $('#foto1-1peu').css('left','-50%');
+    $('.scroll').css('bottom','-110%');
+    $('#foto1-2').css('top','100%');
+    $('#foto1-2text').css('top','-185%');
+    $('#foto1-2text p').css('top','-300px');
+    $('#foto1-2text h2').css('top','0');
+    $('#foto1-2 .tapa').css('opacity','0');
+    $('#foto1-2text2').css('top','-185%');
+    $('#foto1-2peu').css('left','-50%');
+    $('#foto1-2text3').css('top','-185%');
+    $('#foto1-2peu').css('color','white');
+    $('#foto1-3').css('top','100%');
+    $('#foto1-3text').css('top','-178%');
+    $('#foto1-3text p').css('top','-300px');
+    $('#play1-3').css('top','0');
+    $('#foto1-3peu').css('left','-50%');
+    $('#foto20-1').css('opacity','0');
+    $('#foto20-1text').css('top','-70%');
+    $('#foto20-1text p').css('top','-300px');
+    $('#foto20-1text h2').css('top','0');
+    $('#foto20-2').css('opacity','0');
+    $('#foto20-2text').css('top','-75%');
+    $('#foto20-2text p').css('top','-300px');
+    $('#foto20-2boto').css('top','0');
+    $('#foto20-2text2').css('top','-75%');
+    $('#foto20-3').css('top','-100%');
+    $('#foto20-3text').css('top','-60%');
+    $('#foto20-3text h2').css('top','0');
+    $('#foto20-3text p').css('top','-300px');
+    $('#foto20-3peu').css('left','-50%');
+    $('#foto20-4').css('opacity','0');
+    $('#foto20-4text').css('top','-60%');
+    $('#foto2-1').css('top','-100%');
+    $('#foto2-1text').css('top','-50%');
+    $('#foto2-1peu').css('left','-50%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
+    $('#foto1-1').css('top','100%');
 }
