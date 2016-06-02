@@ -22,62 +22,6 @@
             <source src="../musica/Buda Frag 7 de 7.mp3" type="audio/mpeg">
         </audio>
         <div id="m"></div>
-        <div id="mi">
-            <div class="menuinf">
-                <a id="1" href="#">
-                    <img src="menu/01genesi.jpg" alt="thumbnail apartat metafora">
-                    <h3>LA GÈNESI DEL FAR DE BUDA</h3>
-                </a>
-                <a id="2" href="#">
-                    <img src="menu/02vaixell.jpg" alt="thumbnail apartat metafora">
-                    <h3>EL VAIXELL DELTEBRE I LES RECERQUES DEL THETIS</h3>
-                </a>
-                <a id="3" href="#">
-                    <img src="menu/03primerfar.jpg" alt="thumbnail apartat metafora">
-                    <h3>El primer Far de Buda</h3>
-                </a>
-                <a id="4" href="#">
-                    <img src="menu/04projecte.jpg" alt="thumbnail apartat metafora">
-                    <h3>El projecte del gran Far de Buda</h3>
-                </a>
-                <a id="5" href="#">
-                    <img src="menu/05lucio.jpg" alt="thumbnail apartat metafora">
-                    <h3>LUCIO DEL VALLE, L’ARTÍFEX DEL FAR DE BUDA</h3>
-                </a>
-                <a id="6" href="#">
-                    <img src="menu/06construccio.jpg" alt="thumbnail apartat metafora">
-                    <h3>LA CONSTRUCCIÓ DEL FAR: ELS TALLERS HENDERSON PORTER DE BIRMINGHAM</h3>
-                </a>
-                <a id="7" href="#">
-                    <img src="menu/07viatge.jpg" alt="thumbnail apartat metafora">
-                    <h3>EL VIATGE PEL MAR DES D’ANGLATERRA FINS A L’EBRE</h3>
-                </a>
-                <a id="8" href="#">
-                    <img src="menu/08primersanys.jpg" alt="thumbnail apartat metafora">
-                    <h3>ELS PRIMERS ANYS DEL FAR DE BUDA</h3>
-                </a>
-                <a id="9" href="#">
-                    <img src="menu/09paris.jpg" alt="thumbnail apartat metafora">
-                    <h3>EL FAR DE BUDA A PARÍS</h3>
-                </a>
-                <a id="10" href="#">
-                    <img src="menu/10naufragi.jpg" alt="thumbnail apartat metafora">
-                    <h3>EL NAUFRAGI DEL FAR</h3>
-                </a>
-                <a id="11" href="#">
-                    <img src="menu/11tombat.jpg" alt="thumbnail apartat metafora">
-                    <h3>EL GEGANT TOMBAT</h3>
-                </a>
-                <a id="12" href="#">
-                    <img src="menu/12vida.jpg" alt="thumbnail apartat metafora">
-                    <h3>LA MORT DEL FAR DÓNA VIDA AL MAR</h3>
-                </a>
-                <a id="13" href="#">
-                    <img src="menu/13altres.jpg" alt="thumbnail apartat metafora">
-                    <h3>ELS ALTRES FARS DE BUDA</h3>
-                </a>
-            </div>
-        </div>
         <script>
             $('#m').load('../menu/menu.html',function(){
                 $('nav').load('../menu/menusuperior.html',function(){
@@ -114,22 +58,7 @@
                     <h3>Naufragis i varades al llarg de la història són mostra d’aquest perillós litoral del sud de Catalunya, referenciats en documents històrics i en descripcions d’alguns autors i estudiosos de la navegació marítima</h3>
                 </div>
             </div>
-            <div id="foto1-3" class="fotofons">
-                <div id="foto1-3text" class="col-md-offset-1 col-lg-offset-1 col-lg-4 col-md-6 col-sm-8 col-xs-12">
-                    <p class="marro col-md-11">
-                        José Huertas Morión, Los últimos veleros del Mediterráneo: “...En los barcos de cabotaje…se decía que cuando quedaban atras las luces de Vinaroz a media tripulación comenzaban a temblarle las rodillas y el temblor no se les quitaba hasta tener las luces de Tarragona y el Cabo de Salou por la popa...”.<br>
-                        “…Y era verdad que a muchos marineros y a muchos patrones, al navegar por este pedazo de costa, se les iba el sueño y no lo recuperaban hasta haberlo pasado (…) era un verdadero cementerio de barcos y de hombres que yacían tragados por sus absorbentes arenas”.
-
-                    </p>
-                    <div class="clearfix"></div>
-                    <div id="play1-3" class="col-md-offset-11 boto">
-                        <img id="foto1-3play" class="marro" src="img/play.png" alt="reproduir video">
-                    </div>
-                </div>
-                <p id="foto1-3peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Plànol de la província de Tarragona. Datat l’any 1953. Gravat per R. Alabern i E. Mabón.<br>Font: Biblioteca Nacional de España</p>
-            </div>
         </div>
-        <div class="containerapartat" id="apartat20"></div>
         <div class="containerapartat" id="apartat2"></div>
         <div class="containerapartat" id="apartat3"></div>
         <div class="containerapartat" id="apartat4"></div>
@@ -138,10 +67,6 @@
         <div class="containerapartat" id="apartat7"></div>
         <div class="containerapartat" id="apartat8"></div>
         <div class="containerapartat" id="apartat9"></div>
-        <div class="containerapartat" id="apartat10"></div>
-        <div class="containerapartat" id="apartat11"></div>
-        <div class="containerapartat" id="apartat12"></div>
-        <div class="containerapartat" id="apartat13"></div>
         <div class="videopopup">
             <div id="videos"></div>
         </div>
@@ -159,12 +84,6 @@
     <script>
         var pos = 10;
         $(window).load(function(){
-            $('#menu2').click(function(){
-                $('#mi').animate({
-                    bottom: '0'
-                }, 200);
-                $('body').off('mousewheel');
-            });
             diapositiva(1);
         });
     </script>
