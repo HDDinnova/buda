@@ -286,6 +286,14 @@
     max-width: 95vw;
     margin-top: 5vh;
 }
+.foto .groc{
+    position: absolute;
+    left: 3vw;
+    top: 85vh;
+    width: 240px;
+    padding: 10px;
+    text-align: left;
+}
 .fotofons{
     min-height: 100vh;
     min-width: 100%;

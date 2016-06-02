@@ -25,13 +25,13 @@
     line-height: initial;
 }
 #foto1-1{
-    top: 100%;
-    background-image: url('../foto/3Foto_Seguint-tot-lEbre.jpg');
-    background-position: center center;
+    top: -100%;
+    background-image: url('../foto/ramon_fabra/IMG3.jpg');
+    background-position: center top;
 }
 #foto1-1text{
     position: absolute;
-    top: -50%;
+    top: 110%;
     display: none;
 }
 #foto1-1text h2{
@@ -42,47 +42,135 @@
     font-weight: 600;
     line-height: initial;
 }
+#foto1-1text2{
+    position: absolute;
+    bottom: -190%;
+}
+#foto1-1text2 p{
+    position: relative;
+    top: 300px;
+    color: white;
+    font-weight: 600;
+    font-size: 1.6vw;
+}
+#foto1-1boto{
+    position: relative;
+    top: 0;
+}
 #foto1-2{
-    top: 100%;
-    background-image: url('../foto/PLANOL_GOLAS_DEL_EBRO_1883_BNE.jpg');
+    top: -100%;
+    background-image: url('../foto/AFCEC_EMC_X_4734.jpg');
+    background-position: center center;
 }
 #foto1-2text{
     position: absolute;
-    top: -185%;
-}
-#foto1-2text p{
-    position: relative;
-    top: -300px;
-    color: white;
-    padding: 15px;
+    top: 220%;
 }
 #foto1-2text h2{
-    position: relative;
-    top: 0;
     color: white;
-    padding: 15px;
+    padding: 20px;
+    font-size: 3vw;
     text-transform: uppercase;
     font-weight: 600;
     line-height: initial;
 }
 #foto1-2text2{
     position: absolute;
-    top: -185%;
+    top: 230%;
 }
-#foto1-2text2 h3{
+#foto1-2text2 p{
+    color: #F15D42;
+    padding: 30px;
+}
+#foto1-3{
+    top: -100%;
+    background-image: url('../foto/_MG_8116.jpg');
+    background-position: center top;
+}
+#foto1-3text{
+    position: absolute;
+    top: 220%;
+}
+#foto1-3text p{
+    position: relative;
+    top: 0;
+    color: white;
+    padding: 20px;
+}
+#foto1-3boto{
+    position: relative;
+    top: 300px;
+}
+#foto1-4{
+    top: -100%;
+    background-image: url('../foto/_MG_8130.jpg');
+    background-position: center center;
+}
+#foto1-4text{
+    position: absolute;
+    bottom: -188%;
+}
+#foto1-4text p{
+    position: relative;
+    top: 300px;
+    color: white;
+    padding: 20px;
+}
+#foto1-4boto1{
+    position: relative;
+    top: 0;
+}
+#foto1-4boto2{
+    position: relative;
+    top: 300px;
+}
+#foto1-4boto3{
+    position: relative;
+    top: 300px;
+}
+#foto1-5{
+    top: -100%;
+    left: 0;
+    background-image: url('../foto/apartat1foto5.jpg');
+    background-position: center center;
+}
+#foto1-5text{
+    position: absolute;
+    top: 215%;
+}
+#foto1-5text p{
     color: white;
     font-weight: 600;
-    line-height: initial;
+    font-size: 1.6vw;
 }
-#foto1-2text3{
+#foto1-6{
+    top: 0;
+    left: 100%;
+    background-image: url('../foto/apartat1foto6.jpg');
+    background-position: center center;
+}
+#foto1-6text{
     position: absolute;
-    top: -185%;
+    bottom: -190%;
 }
-#foto1-2text3 h3{
-    color: black;
+#foto1-6text p{
+    position: relative;
+    top: 300px;
+    color: white;
     font-weight: 600;
-    line-height: initial;
+    font-size: 1.6vw;
 }
+#foto1-6boto{
+    position: relative;
+    top: 0;
+}
+#foto1-6fotos div div img{
+    height: 100%;
+    width: auto;
+}
+
+
+
 #apartat2{display: none;}
 #apartat3{display: none;}
 #apartat4{display: none;}
