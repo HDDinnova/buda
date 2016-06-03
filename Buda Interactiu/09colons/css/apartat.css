@@ -92,14 +92,8 @@
     top: 220%;
 }
 #foto1-3text p{
-    position: relative;
-    top: 0;
     color: white;
     padding: 20px;
-}
-#foto1-3boto{
-    position: relative;
-    top: 300px;
 }
 #foto1-4{
     top: -100%;
@@ -164,9 +158,115 @@
     position: relative;
     top: 0;
 }
-#foto1-6fotos div div img{
+.sliderfotos div img{
     height: 100%;
     width: auto;
+}
+#foto1-7{
+    top: -100%;
+    background-image: url('../foto/apartat1foto7.jpg');
+    background-position: center center;
+}
+#foto1-7text{
+    position: absolute;
+    bottom: -197%;
+}
+#foto1-7text p{
+    position: relative;
+    top: 0;
+    color: #F15D42;
+    padding: 20px;
+}
+#foto1-7boto1{
+    position: relative;
+    top: 300px;
+}
+#foto1-7boto2{
+    position: relative;
+    top: 300px;
+    left: 5vw;
+}
+#foto1-8{
+    top: -100%;
+    left: 0;
+    background-image: url('../foto/Santi150.jpg');
+    background-position: center center;
+}
+#foto1-8text{
+    position: absolute;
+    top: 215%;
+}
+#foto1-8text p{
+    position: relative;
+    top: 0;
+    color: white;
+    padding: 20px;
+}
+#foto1-8boto{
+    position: relative;
+    top: 300px;
+}
+#foto1-9{
+    top: 0;
+    left: -100%;
+    background-image: url('../foto/Santi188.jpg');
+    background-position: center center;
+}
+#foto1-9text{
+    position: absolute;
+    bottom: -93%;
+}
+#foto1-9boto1{
+    position: relative;
+    top: 0;
+}
+#foto1-9boto2{
+    position: relative;
+    top: 300px;
+}
+#foto1-10{
+    top: -100%;
+    background-image: url('../foto/AFCEC_EMC_X_4735.jpg');
+    background-position: center center;
+}
+#foto1-10text{
+    position: absolute;
+    top: 215%;
+}
+#foto1-10text p{
+    position: relative;
+    top: 0;
+    color: white;
+    padding: 20px;
+}
+#foto1-10boto{
+    position: relative;
+    top: 300px;
+}
+#foto1-11{
+    top: -100%;
+    background-image: url('../foto/buda-77.jpg');
+    background-position: center center;
+}
+#foto1-11text{
+    position: absolute;
+    top: 210%;
+}
+#foto1-11text p{
+    position: relative;
+    top: 0;
+    color: white;
+    font-weight: 600;
+    font-size: 1.6vw;
+}
+#foto1-11boto1{
+    position: relative;
+    top: 300px;
+    left: -7vw;
+}
+#foto1-11boto2{
+    position: relative;
+    top: 300px;
 }
 
 

@@ -2848,7 +2848,7 @@ function passar(id){
             tecla = e.which;
             controlMouse(tecla);
         });
-    },3000);
+    },2000);
     
 }
 

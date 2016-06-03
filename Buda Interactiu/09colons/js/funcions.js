@@ -711,20 +711,17 @@ function diapositiva(id){
             break;
         case 130:
             animal('#foto1-3peu','0','-50%');
-            animat('#foto1-3boto','200','300px');
-            animat('#foto1-3text','400','220%');
-            animat('#foto1-3','600','-100%');
-            animat('#foto1-2','600','0');
-            animat('#foto1-2text2','800','30%');
+            animat('#foto1-3text','200','220%');
+            animat('#foto1-3','400','-100%');
+            animat('#foto1-2','400','0');
+            animat('#foto1-2text2','600','30%');
             break;
         case 14:
             animat('#foto1-2text2','0','-170%');
             animat('#foto1-2','200','100%');
             animat('#foto1-3','200','0');
             animat('#foto1-3text','400','20%');
-            animat('#foto1-3boto','600','0');
-            animal('#foto1-3peu','800','0');
-            video('#foto1-3boto','apartat1video1.html');
+            animal('#foto1-3peu','600','0');
             break;
         case 140:
             animal('#foto1-4peu','0','-50%');
@@ -735,20 +732,18 @@ function diapositiva(id){
             animat('#foto1-4','1000','-100%');
             animat('#foto1-3','1000','0');
             animat('#foto1-3text','1200','20%');
-            animat('#foto1-3text p','1400','0');
-            animal('#foto1-3peu','1600','0');
+            animal('#foto1-3peu','1400','0');
             break;
         case 15:
             animal('#foto1-3peu','0','-50%');
-            animat('#foto1-3text p','200','-300px');
-            animat('#foto1-3text','400','-180%');
-            animat('#foto1-3','600','100%');
-            animat('#foto1-4','600','0');
-            animab('#foto1-4text','800','12%');
-            animat('#foto1-4boto2','1000','0');
-            animat('#foto1-4boto3','1200','0');
-            animat('#foto1-4text p','1400','0');
-            animal('#foto1-4peu','1600','0');
+            animat('#foto1-3text','200','-180%');
+            animat('#foto1-3','400','100%');
+            animat('#foto1-4','400','0');
+            animab('#foto1-4text','600','12%');
+            animat('#foto1-4boto2','800','0');
+            animat('#foto1-4boto3','1000','0');
+            animat('#foto1-4text p','1200','0');
+            animal('#foto1-4peu','1400','0');
             foto('#foto1-4boto1','#foto1-4foto');
             video('#foto1-4boto2','apartat1video2.html');
             video('#foto1-4boto3','apartat1video3.html');
@@ -791,6 +786,103 @@ function diapositiva(id){
             animab('#foto1-6text','600','10%');
             animat('#foto1-6text p','800','0');
             slider('#foto1-6boto','#foto1-6fotos');
+            break;
+        case 170:
+            animat('#foto1-7boto2','0','300px');
+            animat('#foto1-7boto1','200','300px');
+            animab('#foto1-7text','400','-197%');
+            animat('#foto1-7','600','-100%');
+            animat('#foto1-6','600','0');
+            animab('#foto1-6text','800','10%');
+            animat('#foto1-6boto','1000','0');
+            break;
+        case 18:
+            animat('#foto1-6boto','0','-300px');
+            animab('#foto1-6text','200','210%');
+            animat('#foto1-6','400','100%');
+            animat('#foto1-7','400','0');
+            animab('#foto1-7text','600','3%');
+            animat('#foto1-7boto1','800','0');
+            animat('#foto1-7boto2','1000','0');
+            slider('#foto1-7boto1','#foto1-7fotos');
+            video('#foto1-7boto2','apartat1video4.html');
+            break;
+        case 180:
+            animal('#foto1-8peu','0','-50%');
+            animat('#foto1-8boto','200','300px');
+            animat('#foto1-8text','400','215%');
+            animat('#foto1-8','600','-100%');
+            animat('#foto1-7','600','0');
+            animab('#foto1-7text','800','3%');
+            animat('#foto1-7boto1','1000','0');
+            animat('#foto1-7text p','1200','0');
+            break;
+        case 19:
+            animat('#foto1-7text p','0','-300px');
+            animat('#foto1-7boto1','200','-300px');
+            animab('#foto1-7text','400','203%');
+            animat('#foto1-7','600','100%');
+            animat('#foto1-8','600','0');
+            animat('#foto1-8text','800','15%');
+            animat('#foto1-8boto','1000','0');
+            animal('#foto1-8peu','1200','0');
+            slider('#foto1-8boto','#foto1-8fotos');
+            break;
+        case 190:
+            animal('#foto1-9peu','0','-50%');
+            animat('#foto1-9boto2','200','300px');
+            animab('#foto1-9text','400','-93%');
+            animal('#foto1-9','600','-100%');
+            animal('#foto1-8','600','0');
+            animat('#foto1-8text','800','15%');
+            animat('#foto1-8text p','1000','0');
+            animal('#foto1-8peu','1200','0');
+            break;
+        case 20:
+            animal('#foto1-8peu','0','-50%');
+            animat('#foto1-8text p','200','-300px');
+            animat('#foto1-8text','400','-85%');
+            animal('#foto1-8','600','100%');
+            animal('#foto1-9','600','0');
+            animab('#foto1-9text','800','7%');
+            animat('#foto1-9boto2','1000','0');
+            animal('#foto1-9peu','1200','0');
+            video('#foto1-9boto1','apartat1video5.html');
+            video('#foto1-9boto2','apartat1video6.html');
+            break;
+        case 200:
+            animal('#foto1-10peu','0','-50%');
+            animat('#foto1-10boto','200','300px');
+            animat('#foto1-10text','400','215%');
+            animat('#foto1-10','600','-100%');
+            animat('#foto1-9','600','0');
+            animab('#foto1-9text','800','7%');
+            animat('#foto1-9boto1','1000','0');
+            animal('#foto1-9peu','1200','0');
+            break;
+        case 21:
+            animal('#foto1-9peu','0','-50%');
+            animat('#foto1-9boto1','200','-300px');
+            animab('#foto1-9text','400','207%');
+            animat('#foto1-9','600','100%');
+            animat('#foto1-10','600','0');
+            animat('#foto1-10text','800','15%');
+            animat('#foto1-10boto','1000','0');
+            animal('#foto1-10peu','1200','0');
+            foto('#foto1-10boto','#foto1-10foto');
+            break;
+        case 22:
+            animal('#foto1-10peu','0','-50%');
+            animat('#foto1-10text p','200','-300px');
+            animat('#foto1-10text','400','-185%');
+            animat('#foto1-10','600','100%');
+            animat('#foto1-11','600','0');
+            animat('#foto1-11text','800','10%');
+            animat('#foto1-11boto1','1000','0');
+            animat('#foto1-11boto2','1200','0');
+            animal('#foto1-11peu','1400','0');
+            foto('#foto1-11boto1','#foto1-11foto1');
+            foto('#foto1-11boto2','#foto1-11foto2');
             break;
     }
 }
@@ -839,7 +931,7 @@ function passar(id){
             tecla = e.which;
             controlMouse(tecla);
         });
-    },3000);
+    },2000);
     
 }
 
