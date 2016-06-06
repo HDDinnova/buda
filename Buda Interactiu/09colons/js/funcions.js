@@ -871,6 +871,17 @@ function diapositiva(id){
             animal('#foto1-10peu','1200','0');
             foto('#foto1-10boto','#foto1-10foto');
             break;
+        case 210:
+            animal('#foto1-11peu','0','-50%');
+            animat('#foto1-11boto2','200','300px');
+            animat('#foto1-11boto1','400','300px');
+            animat('#foto1-11text','600','210%');
+            animat('#foto1-11','800','-100%');
+            animat('#foto1-10','800','0');
+            animat('#foto1-10text','1000','15%');
+            animat('#foto1-10text p','1200','0');
+            animal('#foto1-10peu','1400','0');
+            break;
         case 22:
             animal('#foto1-10peu','0','-50%');
             animat('#foto1-10text p','200','-300px');
@@ -883,6 +894,152 @@ function diapositiva(id){
             animal('#foto1-11peu','1400','0');
             foto('#foto1-11boto1','#foto1-11foto1');
             foto('#foto1-11boto2','#foto1-11foto2');
+            $('#apartat2').load('apartat2.html');
+            break;
+        case 220:
+            animat('#foto2-1text h2','0','-300px');
+            animat('#foto2-1text','200','-190%');
+            animat('#foto2-1','400','100%');
+            animat('#foto1-11','400','0');
+            animat('#foto1-11text','600','10%');
+            animat('#foto1-11boto1','800','0');
+            animat('#foto1-11text p','1000','0');
+            $('#foto1-11peu').delay('1200').animate({
+                'left': '0'
+            },trans,'swing',function(){            
+                $('#apartat2').hide();
+            });
+            break;
+        case 23:
+            $('#apartat2').show();
+            animal('#foto1-11peu','0','-50%');
+            animat('#foto1-11text p','200','-300px');
+            animat('#foto1-11boto1','400','-300px');
+            animat('#foto1-11text','600','-90%');
+            animat('#foto1-11','800','-100%');
+            animat('#foto2-1','800','0');
+            animat('#foto2-1text','1000','10%');
+            animat('#foto2-1text h2','1200','0');
+            break;
+        case 230:
+            $('#foto2-1video video')[0].pause();
+            animab('#foto2-1video .videopeu','0','-110%');
+            animat('#foto2-1video','200','-200%');
+            animao('#foto2-1 .tapa','400','0');
+            animat('#foto2-1text','600','10%');
+            animat('#foto2-1text p','800','0');
+            break;
+        case 24:
+            animat('#foto2-1text p','0','300px');
+            animat('#foto2-1text','200','210%');
+            animao('#foto2-1 .tapa','400','.8');
+            $('#foto2-1video').delay('600').animate({
+                'top': '0'
+            },trans,'swing',function(){            
+                $('#foto2-1video video')[0].play();
+            });
+            animab('#foto2-1video .videopeu','800','3%');
+            break;
+        case 240:
+            animal('#foto2-2peu','0','-50%');
+            animat('#foto2-2text','200','-190%');
+            animat('#foto2-2','400','100%');
+            animat('#foto2-1','400','0');
+            $('#foto2-1video').delay('600').animate({
+                'top': '0'
+            },trans,'swing',function(){            
+                $('#foto2-1video video')[0].play();
+            });
+            animab('#foto2-1video .videopeu','800','3%');
+            break;
+        case 25:
+            $('#foto2-1video video')[0].pause();
+            animab('#foto2-1video .videopeu','0','-110%');
+            animat('#foto2-1video','200','200%');
+            animat('#foto2-1','400','-100%');
+            animat('#foto2-2','400','0');
+            animat('#foto2-2text','600','10%');
+            animal('#foto2-2peu','800','0');
+            $('#apartat3').load('apartat3.html');
+            break;
+        case 250:
+            animal('#foto3-1peu','0','-50%');
+            animat('#foto3-1text','200','-150%');
+            animat('#foto3-1','400','100%');
+            animat('#foto2-2','400','0');
+            animat('#foto2-2text','600','10%');
+            $('#foto2-2peu').delay('1200').animate({
+                'left': '0'
+            },trans,'swing',function(){            
+                $('#apartat3').hide();
+            });
+            break;
+        case 26:
+            $('#apartat3').show();
+            animal('#foto2-2peu','0','-50%');
+            animat('#foto2-2text','200','210%');
+            animat('#foto2-2','400','-100%');
+            animat('#foto3-1','400','0');
+            animat('#foto3-1text','600','50%');
+            animal('#foto3-1peu','800','0');
+            break;
+        case 260:
+            animat('#foto3-1video1','0','-300px');
+            animat('#foto3-1video2','100','-300px');
+            animat('#foto3-1video3','200','-300px');
+            animat('#foto3-1video4','300','-300px');
+            animat('#foto3-1video5','400','-300px');
+            animat('#foto3-1videos','500','-180%');
+            animao('#foto3-1 .tapa','600','0');
+            animat('#foto3-1text','800','50%');
+            animal('#foto3-1peu','1000','0');
+            break;
+        case 27:
+            animal('#foto3-1peu','0','-50%');
+            animat('#foto3-1text','200','250%');
+            animao('#foto3-1 .tapa','400','.6');
+            animat('#foto3-1videos','600','20%');
+            animat('#foto3-1video5','700','0');
+            animat('#foto3-1video4','800','0');
+            animat('#foto3-1video3','900','0');
+            animat('#foto3-1video2','1000','0');
+            animat('#foto3-1video1','1100','0');
+            video('#foto3-1video1','apartat3video1.html');
+            video('#foto3-1video2','apartat3video2.html');
+            video('#foto3-1video3','apartat3video3.html');
+            video('#foto3-1video4','apartat3video4.html');
+            video('#foto3-1video5','apartat3video5.html');
+            video('#foto3-1video6','apartat3video6.html');
+            break;
+        case 270:
+            animal('#foto3-2peu','0','-50%');
+            animat('#foto3-2text p','200','-300px');
+            animat('#foto3-2boto1','400','-300px');
+            animat('#foto3-2text','600','-190%');
+            animat('#foto3-2','800','100%');
+            animat('#foto3-1','800','0');
+            animat('#foto3-1videos','1000','20%');
+            animat('#foto3-1video2','1100','0');
+            animat('#foto3-1video3','1200','0');
+            animat('#foto3-1video4','1300','0');
+            animat('#foto3-1video5','1400','0');
+            animat('#foto3-1video6','1500','0');
+            break;
+        case 28:
+            animat('#foto3-1video6','0','300px');
+            animat('#foto3-1video5','100','300px');
+            animat('#foto3-1video4','200','300px');
+            animat('#foto3-1video3','300','300px');
+            animat('#foto3-1video2','400','300px');
+            animat('#foto3-1videos','500','220%');
+            animat('#foto3-1','600','-100%');
+            animat('#foto3-2','600','0');
+            animat('#foto3-2text','800','10%');
+            animat('#foto3-2boto1','1000','0');
+            animat('#foto3-2text p','1200','0');
+            animal('#foto3-2peu','1400','0');
+            foto('#foto3-2boto2','#foto3-2foto');
+            video('#foto3-2boto1','apartat3video7.html');
             break;
     }
 }

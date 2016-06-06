@@ -268,11 +268,118 @@
     position: relative;
     top: 300px;
 }
-
-
-
 #apartat2{display: none;}
+#foto2-1{
+    top: 100%;
+    background-image: url('../foto/apartat2foto1.jpg');
+    background-position: center center;
+}
+#foto2-1text{
+    position: absolute;
+    top: -190%;
+}
+#foto2-1text h2{
+    position: relative;
+    top: -300px;
+    color: white;
+    padding: 30px;
+    font-size: 3.5vw;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#foto2-1text p{
+    position: relative;
+    top: 0;
+    color: white;
+    padding: 30px;
+}
+#foto2-1video{
+    position: absolute;
+    top: -200%;
+}
+#foto2-2{
+    top: 100%;
+    background-image: url('../foto/apartat2foto2.jpg');
+    background-position: center center;
+}
+#foto2-2text{
+    position: absolute;
+    top: -190%;
+}
+#foto2-2text p{
+    color: white;
+}
+#foto2-2text p i{
+    font-size: 1.15vw;
+}
 #apartat3{display: none;}
+#foto3-1{
+    top: 100%;
+    background-image: url('../foto/Arxiu_Joan_Franch/horts_buda_01.jpg');
+    background-position: center bottom;
+}
+#foto3-1text{
+    position: absolute;
+    top: -150%;
+}
+#foto3-1text h2{
+    color: white;
+    padding: 30px;
+    font-size: 3.5vw;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#foto3-1videos{
+    position: absolute;
+    top: -180%;
+}
+#foto3-1videos div{
+    position: relative;
+    top: -300px;
+    margin-bottom: 15px;
+    opacity: .85;
+    cursor: pointer;
+}
+#foto3-1videos div:hover{
+    opacity: 1;
+}
+#foto3-1videos .play{
+    position: absolute;
+    top: 25%;
+    left: 40%;
+}
+#foto3-1video6{
+    top: 0 !important;
+}
+#foto3-2{
+    top: 100%;
+    background-image: url('../foto/Santi204.jpg');
+    background-position: center center;
+}
+#foto3-2text{
+    position: absolute;
+    top: -190%;
+}
+#foto3-2text p{
+    position: relative;
+    top: -300px;
+    color: white;
+    padding: 30px;
+}
+#foto3-2boto1{
+    position: relative;
+    top: -300px;
+    left: -5vw;
+}
+#foto3-2boto2{
+    position: relative;
+    top: 0;
+}
+
+
+
+
+
 #apartat4{display: none;}
 #apartat5{display: none;}
 #apartat6{display: none;}
