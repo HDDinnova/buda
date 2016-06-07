@@ -1040,6 +1040,197 @@ function diapositiva(id){
             animal('#foto3-2peu','1400','0');
             foto('#foto3-2boto2','#foto3-2foto');
             video('#foto3-2boto1','apartat3video7.html');
+            $('#apartat4').load('apartat4.html');
+            break;
+        case 280:
+            animal('#foto4-1peu','0','-50%');
+            animat('#foto4-1text p','200','-300px');
+            animab('#foto4-1text','400','210%');
+            animat('#foto4-1','600','100%');
+            animat('#foto3-2','600','0');
+            animat('#foto3-2text','800','10%');
+            animat('#foto3-2boto1','1000','0');
+            animat('#foto3-2boto2','1200','0');
+            $('#foto3-2peu').delay('1400').animate({
+                'left': '0'
+            },trans,'swing',function(){            
+                $('#apartat4').hide();
+            });
+            break;
+        case 29:
+            $('#apartat4').show();
+            animal('#foto3-2peu','0','-50%');
+            animat('#foto3-2boto2','200','300px');
+            animat('#foto3-2boto1','400','300px');
+            animat('#foto3-2text','600','210%');
+            animat('#foto3-2','800','-100%');
+            animat('#foto4-1','800','0');
+            animab('#foto4-1text','1000','10%');
+            animat('#foto4-1text p','1200','0');
+            animal('#foto4-1peu','1400','0');
+            break;
+        case 290:
+            animat('#foto4-1text2 p','0','-300px');
+            animat('#foto4-1text2','200','-210%');
+            animao('#foto4-1 .tapa','400','0');
+            animab('#foto4-1text','600','10%');
+            animat('#foto4-1text h2','800','0');
+            animal('#foto4-1peu','1000','0');
+            break;
+        case 30:
+            animal('#foto4-1peu','0','-50%');
+            animat('#foto4-1text h2','200','300px');
+            animab('#foto4-1text','400','-190%');
+            animao('#foto4-1 .tapa','600','.6');
+            animat('#foto4-1text2','800','10%');
+            animat('#foto4-1text2 p','1000','0');
+            video('#foto4-1boto','apartat4video1.html');
+            break;
+        case 300:
+            animal('#foto4-2peu','0','-50%');
+            animat('#foto4-2text p','200','-300px');
+            animat('#foto4-2text','400','-210%');
+            animat('#foto4-2','600','100%');
+            animat('#foto4-1','600','0');
+            animat('#foto4-1text2','800','10%');
+            animat('#foto4-1boto','1000','0');
+            break;
+        case 31:
+            animat('#foto4-1boto','0','300px');
+            animat('#foto4-1text2','200','210%');
+            animat('#foto4-1','400','-100%');
+            animat('#foto4-2','400','0');
+            animat('#foto4-2text','600','10%');
+            animat('#foto4-2text p','800','0');
+            animal('#foto4-2peu','1000','0');
+            video('#foto4-2boto','apartat4video2.html');
+            break;
+        case 310:
+            animal('#foto4-3peu','0','-50%');
+            animat('#foto4-3text p','200','-300px');
+            animat('#foto4-3boto1-1','400','-300px');
+            animat('#foto4-3boto1-2','600','-300px');
+            animab('#foto4-3text','800','210%');
+            animat('#foto4-3','1000','100%');
+            animat('#foto4-2','1000','0');
+            animat('#foto4-2text','1200','10%');
+            animat('#foto4-2boto','1400','0');
+            animal('#foto4-2peu','1600','0');
+            break;
+        case 32:
+            animal('#foto4-2peu','0','-50%');
+            animat('#foto4-2boto','200','300px');
+            animat('#foto4-2text','400','210%');
+            animat('#foto4-2','600','-100%');
+            animat('#foto4-3','600','0');
+            animab('#foto4-3text','800','10%');
+            animat('#foto4-3boto1-2','1000','0');
+            animat('#foto4-3boto1-1','1200','0');
+            animat('#foto4-3text p','1400','0');
+            animal('#foto4-3peu','1600','0');
+            video('#foto4-3boto1-1','apartat4video3.html');
+            video('#foto4-3boto1-2','apartat4video4.html');
+            video('#foto4-3boto2','apartat4video5.html');
+            $('#apartat5').load('apartat5.html');
+            break;
+        case 320:
+            animal('#foto5-1peu','0','-50%');
+            animat('#foto5-1text','200','-210%');
+            animat('#foto5-1','400','100%');
+            animat('#foto4-3','400','0');
+            animab('#foto4-3text','600','10%');
+            animat('#foto4-3boto1-1','800','0');
+            animat('#foto4-3boto1-2','1000','0');
+            animat('#foto4-3boto2','1200','0');
+            $('#foto4-3peu').delay('1400').animate({
+                'left': '0'
+            },trans,'swing',function(){            
+                $('#apartat5').hide();
+            });
+            break;
+        case 33:
+            $('#apartat5').show();
+            animal('#foto4-3peu','0','-50%');
+            animat('#foto4-3boto2','200','300px');
+            animat('#foto4-3boto1-2','400','300px');
+            animat('#foto4-3boto1-1','600','300px');
+            animab('#foto4-3text','800','-210%');
+            animat('#foto4-3','1000','-100%');
+            animat('#foto5-1','1000','0');
+            animat('#foto5-1text','1200','10%');
+            animal('#foto5-1peu','1400','0');
+            break;
+        case 330:
+            animal('#foto5-2peu','0','-50%');
+            animat('#foto5-2text','200','-260%');
+            animat('#foto5-2','400','100%');
+            animat('#foto5-1','400','0');
+            animat('#foto5-1text','600','10%');
+            animal('#foto5-1peu','800','0');
+            break;
+        case 34:
+            animal('#foto5-1peu','0','-50%');
+            animat('#foto5-1text','200','210%');
+            animat('#foto5-1','400','-100%');
+            animat('#foto5-2','400','0');
+            animat('#foto5-2text','600','60%');
+            animal('#foto5-2peu','800','0');
+            break;
+        case 340:
+            animal('#foto5-3peu','0','-50%');
+            animat('#foto5-3text p','200','-300px');
+            animat('#foto5-3text','400','-210%');
+            animat('#foto5-3','600','100%');
+            animat('#foto5-2','600','0');
+            animat('#foto5-2text','800','60%');
+            animal('#foto5-2peu','1000','0');
+            break;
+        case 35:
+            animal('#foto5-2peu','0','-50%');
+            animat('#foto5-2text','200','260%');
+            animat('#foto5-2','400','-100%');
+            animat('#foto5-3','400','0');
+            animat('#foto5-3text','600','10%');
+            animat('#foto5-3text p','800','0');
+            animal('#foto5-3peu','1000','0');
+            foto('#foto5-3boto','#foto5-3foto');
+            break;
+        case 350:
+            animal('#foto5-4peu','0','-50%');
+            animat('#foto5-4text','200','-225%');
+            animat('#foto5-4','400','100%');
+            animat('#foto5-3','400','0');
+            animat('#foto5-3text','600','10%');
+            animat('#foto5-3boto','800','0');
+            animal('#foto5-3peu','1000','0');
+            break;
+        case 36:
+            animal('#foto5-3peu','0','-50%');
+            animat('#foto5-3boto','200','300px');
+            animat('#foto5-3text','400','210%');
+            animat('#foto5-3','600','-100%');
+            animat('#foto5-4','600','0');
+            animat('#foto5-4text','800','25%');
+            animal('#foto5-4peu','1000','0');
+            break;
+        case 360:
+            animal('#foto5-5peu','0','-50%');
+            animat('#foto5-5text p','200','-300px');
+            animat('#foto5-5text','400','-240%');
+            animat('#foto5-5','600','100%');
+            animat('#foto5-4','600','0');
+            animat('#foto5-4text','800','25%');
+            animal('#foto5-4peu','1000','0');
+            break;
+        case 37:
+            animal('#foto5-4peu','0','-50%');
+            animat('#foto5-4text','200','225%');
+            animat('#foto5-4','400','-100%');
+            animat('#foto5-5','400','0');
+            animat('#foto5-5text','600','40%');
+            animat('#foto5-5text p','800','0');
+            animal('#foto5-5peu','1000','0');
+            video('#foto5-5boto','apartat5video1.html');
             break;
     }
 }

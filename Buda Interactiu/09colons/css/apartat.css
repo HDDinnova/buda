@@ -375,13 +375,192 @@
     position: relative;
     top: 0;
 }
-
-
-
-
-
 #apartat4{display: none;}
+#foto4-1{
+    top: 100%;
+    background-image: url('../foto/ramon_fabra/IMG4.jpg');
+    background-position: center center;
+}
+#foto4-1text{
+    position: absolute;
+    bottom: 210%;
+}
+#foto4-1text p{
+    position: relative;
+    top: -300px;
+    color: white;
+    padding: 30px;
+    font-size: 1.3vw;
+}
+#foto4-1text h2{
+    position: relative;
+    top: 0;
+    color: white;
+    padding: 30px;
+    font-size: 3.5vw;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#foto4-1peu{
+    color: black;
+}
+#foto4-1text2{
+    position: absolute;
+    top: -210%;
+}
+#foto4-1text2 p{
+    position: relative;
+    top: -300px;
+    color: #6684A4;
+    padding: 30px;
+    font-size: 1.3vw;
+}
+#foto4-1boto{
+    position: relative;
+    top: 0;
+}
+#foto4-2{
+    top: 100%;
+    background-image: url('../foto/Arxiu_Joan_Franch/casa_buda_01.jpg');
+    background-position: center center;
+}
+#foto4-2text{
+    position: absolute;
+    top: -210%;
+}
+#foto4-2text p{
+    position: relative;
+    top: -300px;
+    color: #6684A4;
+    padding: 30px;
+    font-size: 1.3vw;
+}
+#foto4-2boto{
+    position: relative;
+    top: 0;
+}
+#foto4-3{
+    top: 100%;
+    background-image: url('../foto/ramon_fabra/IMG5.jpg');
+    background-position: center center;
+}
+#foto4-3text{
+    position: absolute;
+    bottom: 210%;
+}
+#foto4-3text p{
+    position: relative;
+    top: -300px;
+    color: white;
+    padding: 30px;
+    font-size: 1.3vw;
+}
+#foto4-3boto1-1{
+    position: relative;
+    top: -300px;
+}
+#foto4-3boto1-2{
+    position: relative;
+    top: -300px;
+    margin-left: 10vw;
+}
+#foto4-3boto2{
+    position: relative;
+    top: 0;
+}
 #apartat5{display: none;}
+#foto5-1{
+    top: 100%;
+    background-image: url('../foto/Santi138.jpg');
+    background-position: center center;
+}
+#foto5-1text{
+    position: absolute;
+    top: -210%;
+}
+#foto5-1text h2{
+    color: white;
+    padding: 30px;
+    font-size: 3.5vw;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#foto5-2{
+    top: 100%;
+    background-image: url('../foto/Arxiu_Joan_Franch/pas_de_barca_01.jpg');
+    background-position: center center;
+}
+#foto5-2text{
+    position: absolute;
+    top: -260%;
+}
+#foto5-2text p{
+    color: white;
+    padding: 30px;
+    font-size: 1.4vw;
+}
+#foto5-3{
+    top: 100%;
+    background-image: url('../foto/Santi218.jpg');
+    background-position: center center;
+}
+#foto5-3text{
+    position: absolute;
+    top: -210%;
+}
+#foto5-3text p{
+    position: relative;
+    top: -300px;
+    color: white;
+    padding: 30px;
+    font-size: 1.4vw;
+}
+#foto5-3boto{
+    position: relative;
+    top: 0;
+}
+#foto5-4{
+    top: 100%;
+    background-image: url('../foto/apartat5foto4.jpg');
+    background-position: center center;
+}
+#foto5-4text{
+    position: absolute;
+    top: -225%;
+}
+#foto5-4text p{
+    color: white;
+    padding: 30px;
+    font-size: 2vw;
+}
+#foto5-5{
+    top: 100%;
+    background-image: url('../foto/apartat5foto5.jpg');
+    background-position: center center;
+}
+#foto5-5text{
+    position: absolute;
+    top: -240%;
+}
+#foto5-5text p{
+    position: relative;
+    top: -300px;
+    color: #888D57;
+    padding: 30px;
+    font-size: 1.4vw;
+}
+#foto5-5boto{
+    position: relative;
+    top: 0;
+}
+#foto5-5peu{
+    color: black;
+}
+
+
+
+
+
 #apartat6{display: none;}
 #apartat7{display: none;}
 #apartat8{display: none;}
