@@ -556,12 +556,122 @@
 #foto5-5peu{
     color: black;
 }
-
-
-
-
-
+#foto5-6{
+    top: -100%;
+}
+#foto5-6 .videofull{
+    top: 0;
+}
+#foto5-6 p{
+    padding: 15px;
+}
 #apartat6{display: none;}
+#foto6-1{
+    top: 100%;
+    background-image: url('../foto/Arxiu_Joan_Franch/festes_de_buda_03.jpg');
+    background-position: center center;
+}
+#foto6-1text{
+    position: absolute;
+    top: -210%;
+}
+#foto6-1text h2{
+    color: white;
+    padding: 30px;
+    font-size: 3.5vw;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#foto6-1text2{
+    position: absolute;
+    top: -230%;
+}
+#foto6-1text2 p{
+    position: relative;
+    top: -300px;
+    color: #F58431;
+    padding: 30px;
+    font-size: 1.3vw;
+}
+#foto6-1boto{
+    position: relative;
+    top: 0;
+}
+#foto6-1video{
+    top: -200%;
+}
+#foto6-1video p{
+    padding: 15px;
+}
+#foto6-2{
+    top: 100%;
+    background-image: url('../foto/apartat6foto2.jpg');
+    background-position: center center;
+}
+#foto6-2text{
+    position: absolute;
+    top: -240%;
+}
+#foto6-2text p{
+    position: relative;
+    top: -300px;
+    color: white;
+    padding: 30px;
+}
+#foto6-2boto1{
+    position: relative;
+    top: -300px;
+}
+#foto6-2boto2{
+    position: relative;
+    top: 0;
+}
+#foto6-3{
+    top: 100%;
+    background-image: url('../foto/Arxiu_Joan_Franch/futbol_buda_03.jpg');
+    background-position: center center;
+}
+#foto6-3text{
+    position: absolute;
+    top: -250%;
+}
+#foto6-3text p{
+    position: relative;
+    top: -300px;
+    color: white;
+    padding: 30px;
+}
+#foto6-3boto{
+    position: relative;
+    top: 0;
+}
+#foto6-4{
+    top: 100%;
+    background-image: url('../foto/apartat6foto4.jpg');
+    background-position: center center;
+}
+#foto6-4text{
+    position: absolute;
+    top: -245%;
+}
+#foto6-4text p{
+    position: relative;
+    top: 0;
+    color: #F58431;
+    padding: 30px;
+}
+#foto6-4boto{
+    position: relative;
+    top: -300px;
+}
+#foto6-4peu{
+    color: black;
+}
+
+
+
+
+
 #apartat7{display: none;}
 #apartat8{display: none;}
 #apartat9{display: none;}
