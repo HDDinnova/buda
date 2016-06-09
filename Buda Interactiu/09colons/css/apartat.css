@@ -659,6 +659,7 @@
     top: 0;
     color: #F58431;
     padding: 30px;
+    font-size: 1.3vw;
 }
 #foto6-4boto{
     position: relative;
@@ -667,11 +668,102 @@
 #foto6-4peu{
     color: black;
 }
-
-
-
-
-
+#foto6-5{
+    top: 100%;
+    background-image: url('../foto/Arxiu_Joan_Franch/festes_de_buda_06.jpg');
+    background-position: center center;
+}
+#foto6-5text{
+    position: absolute;
+    top: -220%;
+}
+#foto6-5text p{
+    color: white;
+    padding: 30px;
+    font-size: 1.3vw;
+}
+#foto6-6{
+    top: 100%;
+    background-image: url('../foto/Arxiu_Joan_Franch/futbol_buda_01.jpg');
+    background-position: center center;
+}
+#foto6-6 .tapa{
+    opacity: .6;
+}
+#foto6-6text{
+    position: absolute;
+    top: -230%;
+}
+#foto6-6text p{
+    position: relative;
+    top: 0;
+    color: white;
+    font-size: 2vw;
+}
+#foto6-6boto1{
+    position: relative;
+    top: -300px;
+    left: -5vw;
+}
+#foto6-6boto2{
+    position: relative;
+    top: 0;
+}
+#foto6-6text2{
+    position: absolute;
+    top: -240%;
+}
+#foto6-6text2 p{
+    color: white;
+    padding: 30px;
+    font-size: 1.3vw;
+}
 #apartat7{display: none;}
-#apartat8{display: none;}
-#apartat9{display: none;}
+#foto7-1{
+    top: 100%;
+    background-image: url('../foto/apartat7foto1.jpg');
+    background-position: center center;
+}
+#foto7-1text{
+    position: absolute;
+    top: -240%;
+}
+#foto7-1text h2{
+    position: relative;
+    top: -300px;
+    color: white;
+    padding: 30px;
+    font-size: 3.5vw;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#foto7-1boto{
+    position: relative;
+    top: 0;
+}
+#foto7-2{
+    top: 100%;
+    background-image: url('../foto/apartat7foto2.jpg');
+    background-position: center center;
+}
+#foto7-2text{
+    position: absolute;
+    top: -210%;
+}
+#foto7-2text p{
+    color: white;
+    font-size: 1.4vw;
+}
+#foto7-2boto1{
+    position: relative;
+    top: -300px;
+}
+#foto7-2boto2{
+    position: relative;
+    left: 5vw;
+    top: -300px;
+}
+#foto7-2boto3{
+    position: relative;
+    top: -300px;
+}

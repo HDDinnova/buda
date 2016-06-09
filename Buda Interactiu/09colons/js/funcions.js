@@ -140,183 +140,6 @@ function controlMouse(e){
             case 49:
                 passar(50);
                 break;
-            case 50:
-                passar(51);
-                break;
-            case 51:
-                passar(52);
-                break;
-            case 52:
-                passar(53);
-                break;
-            case 53:
-                passar(54);
-                break;
-            case 54:
-                passar(55);
-                break;
-            case 55:
-                passar(56);
-                break;
-            case 56:
-                passar(57);
-                break;
-            case 57:
-                passar(58);
-                break;
-            case 58:
-                passar(59);
-                break;
-            case 59:
-                passar(60);
-                break;
-            case 60:
-                passar(61);
-                break;
-            case 61:
-                passar(62);
-                break;
-            case 62:
-                passar(63);
-                break;
-            case 63:
-                passar(64);
-                break;
-            case 64:
-                passar(65);
-                break;
-            case 65:
-                passar(66);
-                break;
-            case 66:
-                passar(67);
-                break;
-            case 67:
-                passar(68);
-                break;
-            case 68:
-                passar(69);
-                break;
-            case 69:
-                passar(70);
-                break;
-            case 70:
-                passar(71);
-                break;
-            case 71:
-                passar(72);
-                break;
-            case 72:
-                passar(73);
-                break;
-            case 73:
-                passar(74);
-                break;
-            case 74:
-                passar(75);
-                break;
-            case 75:
-                passar(76);
-                break;
-            case 76:
-                passar(77);
-                break;
-            case 77:
-                passar(78);
-                break;
-            case 78:
-                passar(79);
-                break;
-            case 79:
-                passar(80);
-                break;
-            case 80:
-                passar(81);
-                break;
-            case 81:
-                passar(82);
-                break;
-            case 82:
-                passar(83);
-                break;
-            case 83:
-                passar(84);
-                break;
-            case 84:
-                passar(85);
-                break;
-            case 85:
-                passar(86);
-                break;
-            case 86:
-                passar(87);
-                break;
-            case 87:
-                passar(88);
-                break;
-            case 88:
-                passar(89);
-                break;
-            case 89:
-                passar(90);
-                break;
-            case 90:
-                passar(91);
-                break;
-            case 91:
-                passar(92);
-                break;
-            case 92:
-                passar(93);
-                break;
-            case 93:
-                passar(94);
-                break;
-            case 94:
-                passar(95);
-                break;
-            case 95:
-                passar(96);
-                break;
-            case 96:
-                passar(97);
-                break;
-            case 97:
-                passar(98);
-                break;
-            case 98:
-                passar(99);
-                break;
-            case 99:
-                passar(100);
-                break;
-            case 100:
-                passar(101);
-                break;
-            case 101:
-                passar(102);
-                break;
-            case 102:
-                passar(103);
-                break;
-            case 103:
-                passar(104);
-                break;
-            case 104:
-                passar(105);
-                break;
-            case 105:
-                passar(106);
-                break;
-            case 106:
-                passar(107);
-                break;
-            case 107:
-                passar(108);
-                break;
-            case 108:
-                passar(109);
-                break;
             default :
                 $('body').on('mousewheel',function(e){
                     controlMouse(e);
@@ -447,183 +270,6 @@ function controlMouse(e){
                 break;
             case 50:
                 passar(490);
-                break;
-            case 51:
-                passar(500);
-                break;
-            case 52:
-                passar(510);
-                break;
-            case 53:
-                passar(520);
-                break;
-            case 54:
-                passar(530);
-                break;
-            case 55:
-                passar(540);
-                break;
-            case 56:
-                passar(550);
-                break;
-            case 57:
-                passar(560);
-                break;
-            case 58:
-                passar(570);
-                break;
-            case 59:
-                passar(580);
-                break;
-            case 60:
-                passar(590);
-                break;
-            case 61:
-                passar(600);
-                break;
-            case 62:
-                passar(610);
-                break;
-            case 63:
-                passar(620);
-                break;
-            case 64:
-                passar(630);
-                break;
-            case 65:
-                passar(640);
-                break;
-            case 66:
-                passar(650);
-                break;
-            case 67:
-                passar(660);
-                break;
-            case 68:
-                passar(670);
-                break;
-            case 69:
-                passar(680);
-                break;
-            case 70:
-                passar(690);
-                break;
-            case 71:
-                passar(700);
-                break;
-            case 72:
-                passar(710);
-                break;
-            case 73:
-                passar(720);
-                break;
-            case 74:
-                passar(730);
-                break;
-            case 75:
-                passar(740);
-                break;
-            case 76:
-                passar(750);
-                break;
-            case 77:
-                passar(760);
-                break;
-            case 78:
-                passar(770);
-                break;
-            case 79:
-                passar(780);
-                break;
-            case 80:
-                passar(790);
-                break;
-            case 81:
-                passar(800);
-                break;
-            case 82:
-                passar(810);
-                break;
-            case 83:
-                passar(820);
-                break;
-            case 84:
-                passar(830);
-                break;
-            case 85:
-                passar(840);
-                break;
-            case 86:
-                passar(850);
-                break;
-            case 87:
-                passar(860);
-                break;
-            case 88:
-                passar(870);
-                break;
-            case 89:
-                passar(880);
-                break;
-            case 90:
-                passar(890);
-                break;
-            case 91:
-                passar(900);
-                break;
-            case 92:
-                passar(910);
-                break;
-            case 93:
-                passar(920);
-                break;
-            case 94:
-                passar(930);
-                break;
-            case 95:
-                passar(940);
-                break;
-            case 96:
-                passar(950);
-                break;
-            case 97:
-                passar(960);
-                break;
-            case 98:
-                passar(970);
-                break;
-            case 99:
-                passar(980);
-                break;
-            case 100:
-                passar(990);
-                break;
-            case 101:
-                passar(1000);
-                break;
-            case 102:
-                passar(1010);
-                break;
-            case 103:
-                passar(1020);
-                break;
-            case 104:
-                passar(1030);
-                break;
-            case 105:
-                passar(1040);
-                break;
-            case 106:
-                passar(1050);
-                break;
-            case 107:
-                passar(1060);
-                break;
-            case 108:
-                passar(1070);
-                break;
-            case 109:
-                passar(1080);
                 break;
             default :
                 $('body').on('mousewheel',function(e){
@@ -1375,6 +1021,131 @@ function diapositiva(id){
             animat('#foto6-4boto','1000','0');
             animal('#foto6-4peu','1200','0');
             video('#foto6-4boto','apartat6video2.html');
+            break;
+        case 440:
+            animal('#foto6-5peu','0','-50%');
+            animat('#foto6-5text','200','-220%');
+            animat('#foto6-5','400','100%');
+            animat('#foto6-4','400','0');
+            animat('#foto6-4text','600','45%');
+            animat('#foto6-4text p','800','0');
+            animal('#foto6-4peu','1000','0');
+            break;
+        case 45:
+            animal('#foto6-4peu','0','-50%');
+            animat('#foto6-4text p','200','300px');
+            animat('#foto6-4text','400','245%');
+            animat('#foto6-4','600','-100%');
+            animat('#foto6-5','600','0');
+            animat('#foto6-5text','800','20%');
+            animal('#foto6-5peu','1000','0');
+            break;
+        case 450:
+            animal('#foto6-6peu','0','-50%');
+            animat('#foto6-6text p','200','-300px');
+            animat('#foto6-6boto1','400','-300px');
+            animat('#foto6-6text','600','-230%');
+            animat('#foto6-6','800','100%');
+            animat('#foto6-5','800','0');
+            animat('#foto6-5text','1000','20%');
+            animal('#foto6-5peu','1200','0');
+            break;
+        case 46:
+            animal('#foto6-5peu','0','-50%');
+            animat('#foto6-5text','200','220%');
+            animat('#foto6-5','400','-100%');
+            animat('#foto6-6','400','0');
+            animat('#foto6-6text','600','30%');
+            animat('#foto6-6boto1','800','0');
+            animat('#foto6-6text p','1000','0');
+            animal('#foto6-6peu','1200','0');
+            foto('#foto6-6boto1','#foto6-6foto1');
+            foto('#foto6-6boto2','#foto6-6foto2');
+            break;
+        case 460:
+            animat('#foto6-6text2','0','-240%');
+            animao('#foto6-6 .tapa','200','.6');
+            animat('#foto6-6text','400','30%');
+            animat('#foto6-6boto1','600','0');
+            animat('#foto6-6boto2','800','0');
+            animal('#foto6-6peu','1000','0');
+            break;
+        case 47:
+            animal('#foto6-6peu','0','-50%');
+            animat('#foto6-6boto2','200','300px');
+            animat('#foto6-6boto1','400','300px');
+            animat('#foto6-6text','600','230%');
+            animao('#foto6-6 .tapa','800','0');
+            animat('#foto6-6text2','1000','40%');
+            $('#apartat7').load('apartat7.html');
+            break;
+        case 470:
+            animal('#foto7-1peu','0','-50%');
+            animat('#foto7-1text h2','200','-300px');
+            animat('#foto7-1text','400','-240%');
+            animat('#foto7-1','600','100%');
+            animat('#foto6-6','600','0');
+            $('#foto6-6text2').delay('800').animate({
+                'top': '40%'
+            },trans,'swing',function(){            
+                $('#apartat7').hide();
+            });
+            break;
+        case 48:
+            $('#apartat7').show();
+            animat('#foto6-6text2','0','240%');
+            animat('#foto6-6','200','-100%');
+            animat('#foto7-1','200','0');
+            animat('#foto7-1text','400','40%');
+            animat('#foto7-1text h2','600','0');
+            animal('#foto7-1peu','800','0');
+            video('#foto7-1boto','apartat7video1.html');
+            break;
+        case 480:
+            animat('#foto7-2boto1','0','-300px');
+            animat('#foto7-2boto2','200','-300px');
+            animat('#foto7-2boto3','400','-300px');
+            animat('#foto7-2text','600','-210%');
+            animat('#foto7-2','800','100%');
+            animat('#foto7-1','800','0');
+            animat('#foto7-1text','1000','40%');
+            animat('#foto7-1boto','1200','0');
+            animal('#foto7-1peu','1400','0');
+            break;
+        case 49:
+            animal('#foto7-1peu','0','-50%');
+            animat('#foto7-1boto','200','300px');
+            animat('#foto7-1text','400','240%');
+            animat('#foto7-1','600','-100%');
+            animat('#foto7-2','600','0');
+            animat('#foto7-2text','800','10%');
+            animat('#foto7-2boto3','1000','0');
+            animat('#foto7-2boto2','1200','0');
+            animat('#foto7-2boto1','1400','0');
+            slider('#foto7-2boto1','#foto7-2fotos1');
+            slider('#foto7-2boto2','#foto7-2fotos2');
+            slider('#foto7-2boto3','#foto7-2fotos3');
+            break;
+        case 490:
+            $('#foto7-3 video')[0].pause();
+            animat('#foto7-3','0','100%');
+            animat('#foto7-2','0','0');
+            animat('#foto7-2text','200','10%');
+            animat('#foto7-2boto2','400','0');
+            animat('#foto7-2boto3','600','0');
+            animat('#foto7-2text p','800','0');
+            break;
+        case 50:
+            animat('#foto7-2text p','0','300px');
+            animat('#foto7-2boto3','200','300px');
+            animat('#foto7-2boto2','400','300px');
+            animat('#foto7-2text','600','210%');
+            animat('#foto7-2','800','-100%');
+            $('#foto7-3').delay('800').animate({
+                'top': '0'
+            },trans,'swing',function(){            
+                $('#foto7-3 video')[0].play();
+            });
             break;
     }
 }
