@@ -16,6 +16,22 @@ $('#bso').click(function(){
         console.log('sona: '+sona);
     }
 });
+$('#mi a').click(function(){
+    var d = parseInt($(this).attr('id'));
+    if (d==14){
+        passar(1);
+        passar(11);
+        passar(12);
+        passar(13);
+        passar(14);
+    }
+    $('#mi').animate({
+        bottom: '-160px'
+    }, 200);
+    $('body').on('mousewheel',function(e){
+        controlMouse(e);
+    });
+});
 function controlMouse(e){
     $('body').off('mousewheel');
     $(document).off( "keydown" );
@@ -87,7 +103,7 @@ function diapositiva(id){
     switch (id) {
         case 1:
             var diapo1 = new TimelineMax();
-            diapo1.fromTo($('#foto1-1'),2,{opacity:0},{opacity:1})
+            diapo1.fromTo($('#foto1-1'),2,{autoAlpha:0},{autoAlpha:1})
                 .fromTo($('#foto1-1text'),2,{top:'-50%'},{top:'30%',ease:Power3.easeInOut},1)
                 .fromTo($('#foto1-1text h2'),2,{top:'-300px'},{top:'0',ease:Power3.easeInOut},'-=1.8')
                 .fromTo($('#foto1-1peu'),2,{left:'-50%'},{left:'0',ease:Power3.easeInOut},'-=1.8')
@@ -97,7 +113,7 @@ function diapositiva(id){
             var diapo10 = new TimelineMax();
             diapo10.fromTo($('#foto1-1text2 p'),2,{top:'0'},{top:'-300px',ease:Power3.easeInOut})
                 .fromTo($('#foto1-1text2'),2,{top:'10%'},{top:'-50%',ease:Power3.easeInOut},'-=1.8')
-                .fromTo($('#foto1-1 .tapa'),2,{opacity:'.6'},{opacity:'0',ease:Power3.easeInOut},'-=1.8')
+                .fromTo($('#foto1-1 .tapa'),2,{autoAlpha:'.6'},{autoAlpha:'0',ease:Power3.easeInOut},'-=1.8')
                 .fromTo($('#foto1-1text'),2,{top:'150%'},{top:'30%',ease:Power3.easeInOut},'-=1.8')
                 .fromTo($('#foto1-1text p'),2,{top:'300px'},{top:'0',ease:Power3.easeInOut},'-=1.8')
                 .fromTo($('#foto1-1peu'),2,{left:'-50%'},{left:'0',ease:Power3.easeInOut},'-=1.8')
@@ -109,7 +125,7 @@ function diapositiva(id){
                 .fromTo($('#foto1-1peu'),2,{left:'0'},{left:'-50%',ease:Power3.easeInOut},'-=1.8')
                 .fromTo($('#foto1-1text p'),2,{top:'0'},{top:'300px',ease:Power3.easeInOut},'-=1.8')
                 .fromTo($('#foto1-1text'),2,{top:'30%'},{top:'150%',ease:Power3.easeInOut},'-=1.8')
-                .fromTo($('#foto1-1 .tapa'),2,{opacity:'0'},{opacity:'.6',ease:Power3.easeInOut},'-=1.8')
+                .fromTo($('#foto1-1 .tapa'),2,{autoAlpha:'0'},{autoAlpha:'.6',ease:Power3.easeInOut},'-=1.8')
                 .fromTo($('#foto1-1text2'),2,{top:'-50%'},{top:'10%',ease:Power3.easeInOut},'-=1.8')
                 .fromTo($('#foto1-1text2 p'),2,{top:'-300px'},{top:'0',ease:Power3.easeInOut},'-=1.8');
             video('#foto1-1i','apartat1video.html');
@@ -121,13 +137,15 @@ function diapositiva(id){
                     .fromTo($('#foto1-1b'),2,{top:'300px'},{top:'0',ease:Power3.easeInOut},'-=1.8');
             break;
         case 12:        
-            var diapo110 = new TimelineMax();
-            diapo110.fromTo($('#foto1-1b'),2,{top:'0'},{top:'300px',ease:Power3.easeInOut})
+            var diapo12 = new TimelineMax();
+            diapo12.fromTo($('#foto1-1b'),2,{top:'0'},{top:'300px',ease:Power3.easeInOut})
                     .fromTo($('#foto1-1text2'),2,{top:'10%'},{top:'150%',ease:Power3.easeInOut},'-=1.8')
                     .fromTo($('#foto1-1text3'),2,{bottom:'110%'},{bottom:'10%',ease:Power3.easeInOut},'-=1.8');
             break;
-        case 120:
-            animal('#foto1-1peufotos','0','-50%');
+        case 120:       
+            var diapo120 = new TimelineMax();
+            diapo120.fromTo($('#foto1-1peufotos'),2,{left:'0'},{left:'-50%',ease:Power3.easeInOut})
+                    .fromTo($('#foto1-1text3'),2,{bottom:'-90%'},{bottom:'10%',ease:Power3.easeInOut},'-=1.2');
             var pausa=200;
             $('#foto1-1 .f').each(function(){
                 $(this).delay(pausa).animate({
@@ -136,26 +154,35 @@ function diapositiva(id){
                 },trans);
                 pausa+=150;
             });
-            animab('#foto1-1text3','.8','10%');
             break;
         case 13:
             var diapo13 = new TimelineMax();
-            var angle=5;
             diapo13.fromTo($('#foto1-1text3'),2,{bottom:'10%'},{bottom:'-90%',ease:Power3.easeInOut})
-                    .staggerFromTo($('#foto1-1 .f'),.8,{rotation:90,top:'-80%',left:'-80%'},{rotation:'angle-=5',top:'15%',left:'5%'},0.2)
-                    .fromTo($('#foto1-1peufotos'),2,{left:'-50%'},{left:'100px',ease:Power3.easeInOut},'-=1.8');
-            $('#foto1-1 .f').click(function(){
-                $(this).css('z-index',zi);
+                    .fromTo($('#foto1-1peufotos'),2,{left:'-50%'},{left:'0',ease:Power3.easeInOut},'-=1.8');
+            var angle=5;
+            var posi=18;
+            var pausa=200;
+            $('#foto1-1 .f').rotate('40deg');
+            $('#foto1-1 .f').each(function(){
+                $(this).delay(pausa).animate({
+                    'top':'15%',
+                    'left':posi+'%',
+                    rotate: angle+'deg'
+                },trans);
+                angle-=3;
+                posi+=5;
+                pausa+=150;
             });
             $('#apartat2').load('apartat2.html');
             break;
         case 130:
-            animal('#foto1-2peu','0','-50%');
-            animat('#foto1-2text p','.2','0');
-            animat('#foto1-2text','.4','140%');
-            animat('#foto1-2','.6','100%');
-            animat('#foto1-1','.6','0');
-            animal('#foto1-1peufotos','1000','100px');
+            var diapo130 = new TimelineMax();
+            diapo130.fromTo($('#foto1-2peu'),2,{left:'0'},{left:'-50%',ease:Power3.easeInOut})
+                    .fromTo($('#foto1-2text p'),2,{top:'0'},{top:'300px',ease:Power3.easeInOut},'-=1.8')
+                    .fromTo($('#foto1-2text'),2,{top:'40%'},{top:'150%',ease:Power3.easeInOut},'-=1.8')
+                    .fromTo($('#foto1-2'),2,{top:'0'},{top:'100%',ease:Power3.easeInOut},'-=1.8')
+                    .fromTo($('#foto1-1'),2,{top:'-100%'},{top:'0',ease:Power3.easeInOut},'-=2')
+                    .fromTo($('#foto1-1peufotos'),2,{left:'-50%'},{left:'0',ease:Power3.easeInOut},'-=1.8');
             var pausa=800;
             var posi=18;
             $('#foto1-1 .f').each(function(){
@@ -177,35 +204,48 @@ function diapositiva(id){
                 },trans);
                 pausa+=150;
             });
-            animal('#foto1-1peufotos','.5','-50%');
-            animat('#foto1-1','.8','-100%');
-            animat('#foto1-2','.8','0');
-            animat('#foto1-2text','1','40%');
-            animat('#foto1-2text p','1.2','0');
-            animal('#foto1-2peu','1.4','100px');
+            var diapo14 = new TimelineMax();
+            diapo14.fromTo($('#foto1-1peufotos'),2,{left:'0'},{left:'-50%',ease:Power3.easeInOut},0.5)
+                    .fromTo($('#foto1-1'),2,{top:'0'},{top:'-100%',ease:Power3.easeInOut},'-=1.8')
+                    .fromTo($('#foto1-2'),2,{top:'100%'},{top:'0',ease:Power3.easeInOut},'-=2')
+                    .fromTo($('#foto1-2text'),2,{top:'150%'},{top:'40%',ease:Power3.easeInOut},'-=1.8')
+                    .fromTo($('#foto1-2text p'),2,{top:'300px'},{top:'0',ease:Power3.easeInOut},'-=1.8')
+                    .fromTo($('#foto1-2peu'),2,{left:'-50%'},{left:'0',ease:Power3.easeInOut},'-=1.8');
             break;
         case 140:
-            animat('#foto1-2b2','0','300px');
-            animat('#foto1-2b1','.2','300px');
-            animab('#foto1-2text2','.4','-90%');
-            animao('#foto1-2 .tapa','.6','0');
-            animat('#foto1-2text','.8','40%');
-            animat('#foto1-2text h2','1','0');
-            animal('#foto1-2peu','1.2','100px');
+            var diapo140 = new TimelineMax();
+            diapo140.fromTo($('#foto1-2b2'),2,{top:'0'},{top:'300px',ease:Power3.easeInOut})
+                    .fromTo($('#foto1-2b1'),2,{top:'0'},{top:'300px',ease:Power3.easeInOut},'-=1.8')
+                    .fromTo($('#foto1-2text2'),2,{bottom:'10%'},{bottom:'-90%',ease:Power3.easeInOut},'-=1.8')
+                    .fromTo($('#foto1-2 .tapa'),2,{autoAlpha:0.6},{autoAlpha:0,ease:Power3.easeInOut},'-=1.8')
+                    .fromTo($('#foto1-2text'),2,{top:'-60%'},{top:'40%',ease:Power3.easeInOut},'-=1.8')
+                    .fromTo($('#foto1-2text h2'),2,{top:'-300px'},{top:'0',ease:Power3.easeInOut},'-=1.8')
+                    .fromTo($('#foto1-2peu'),2,{left:'-50%'},{left:'0',ease:Power3.easeInOut},'-=1.8');
             break;
         case 15:
-            animal('#foto1-2peu','0','-50%');
-            animat('#foto1-2text h2','.2','-300px');
-            animat('#foto1-2text','.4','-60%');
-            animao('#foto1-2 .tapa','.6','.6');
-            animab('#foto1-2text2','.8','10%');
-            animat('#foto1-2b1','1','0');
-            animat('#foto1-2b2','1.2','0');
+            var diapo15 = new TimelineMax();
+            diapo15.fromTo($('#foto1-2peu'),2,{left:'0'},{left:'-50%',ease:Power3.easeInOut})
+                    .fromTo($('#foto1-2text h2'),2,{top:'0'},{top:'-300px',ease:Power3.easeInOut},'-=1.8')
+                    .fromTo($('#foto1-2text'),2,{top:'40%'},{top:'-60%',ease:Power3.easeInOut},'-=1.8')
+                    .fromTo($('#foto1-2 .tapa'),2,{autoAlpha:0},{autoAlpha:0.6,ease:Power3.easeInOut},'-=1.8')
+                    .fromTo($('#foto1-2text2'),2,{bottom:'-90%'},{bottom:'10%',ease:Power3.easeInOut},'-=1.8')
+                    .fromTo($('#foto1-2b1'),2,{top:'300px'},{top:'0',ease:Power3.easeInOut},'-=1.8')
+                    .fromTo($('#foto1-2b2'),2,{top:'300px'},{top:'0',ease:Power3.easeInOut},'-=1.8');
             video('#foto1-2i1','apartat2video1.html');
             video('#foto1-2i2','apartat2video2.html');
             break;
         case 150:
             $('#foto1-3 video')[0].pause();
+            var diapo150 = new TimelineMax();
+            diapo150.fromTo($('#foto1-3b2'),2,{top:'0'},{top:'300px',ease:Power3.easeInOut})
+                    .fromTo($('#foto1-3b1'),2,{top:'0'},{top:'300px',ease:Power3.easeInOut},'-=1.8')
+                    .fromTo($('#foto1-3text'),2,{top:'10%'},{top:'110%',ease:Power3.easeInOut},'-=1.8')
+                    .fromTo($('#foto1-3'),2,{top:'0'},{top:'100%',ease:Power3.easeInOut},'-=1.8')
+                    .fromTo($('#foto1-2'),2,{top:'-100%'},{top:'0',ease:Power3.easeInOut},'-=2')
+                    .fromTo($('#foto1-2text2'),2,{bottom:'110%'},{bottom:'10%',ease:Power3.easeInOut},'-=1.8')
+                    .fromTo($('#foto1-2b1'),2,{top:'-300px'},{top:'0',ease:Power3.easeInOut},'-=1.8')
+                    .fromTo($('#foto1-2text2 p'),2,{top:'-300px'},{top:'0',ease:Power3.easeInOut},'-=1.8');
+            
             animat('#foto1-3b2','0','300px');
             animat('#foto1-3b1','.2','300px');
             animat('#foto1-3text','.4','110%');
@@ -216,21 +256,21 @@ function diapositiva(id){
             animat('#foto1-2text2 p','1.2','0');
             break;
         case 16:
-            animat('#foto1-2text2 p','0','-300px');
-            animat('#foto1-2b1','.2','-300px');
-            animab('#foto1-2text2','.4','110%');
-            animat('#foto1-2','.6','-100%');
-            animat('#foto1-3','.6','0');
-            animat('#foto1-3text','.8','10%');
-            animat('#foto1-3b1','1','0');
-            $('#foto1-3b2').delay(1200).animate({
-                'top': '0'
-            },trans,function(){
+            var diapo16 = new TimelineMax();
+            diapo16.fromTo($('#foto1-2text2 p'),2,{top:'0'},{top:'-300px',ease:Power3.easeInOut})
+                    .fromTo($('#foto1-2b1'),2,{top:'0'},{top:'-300px',ease:Power3.easeInOut},'-=1.8')
+                    .fromTo($('#foto1-2text2'),2,{bottom:'10%'},{bottom:'110%',ease:Power3.easeInOut},'-=1.8')
+                    .fromTo($('#foto1-2'),2,{top:'0'},{top:'-100%',ease:Power3.easeInOut},'-=1.8')
+                    .fromTo($('#foto1-3'),2,{top:'100%'},{top:'0',ease:Power3.easeInOut},'-=2')
+                    .fromTo($('#foto1-3text'),2,{top:'110%'},{top:'10%',ease:Power3.easeInOut},'-=1.8')
+                    .fromTo($('#foto1-3b1'),2,{top:'300px'},{top:'0',ease:Power3.easeInOut},'-=1.8')
+                    .fromTo($('#foto1-3b2'),2,{top:'300px'},{top:'0',onComplete:foto13play(),ease:Power3.easeInOut},'-=1.8');
+            function foto13play(){
                 $('#foto1-3 video')[0].play();
                 $('body').on('mousewheel',function(e){
                     controlMouse(e);
                 });
-            });
+            }
             video('#foto1-3i1','apartat2video3.html');
             video('#foto1-3i2','apartat2video4.html');
             break;
@@ -289,24 +329,6 @@ function passar(id){
         });
     },2000);
 }
-function animat(element,delay,pos) {
-    TweenMax.to(element,2,{top:pos,delay:delay,ease:Power3.easeInOut});
-}
-function animab(element,delay,pos) {
-    TweenMax.to(element,2,{bottom:pos,delay:delay,ease:Power3.easeInOut});
-}
-function animal(element,delay,pos) {
-    TweenMax.to(element,2,{left:pos,delay:delay,ease:Power3.easeInOut});
-}
-function animar(element,delay,pos) {
-    TweenMax.to(element,2,{right:pos,delay:delay,ease:Power3.easeInOut});
-}
-function animao(element,delay,pos) {
-    TweenMax.to(element,2,{opacity:pos,delay:delay,ease:Power3.easeInOut});
-}
-function animacol(element,delay,pos) {
-    TweenMax.to(element,2,{color:pos,delay:delay,ease:Power3.easeInOut});
-}
 function slider(boto,div,boolea){
     $(boto).click(function(){
         $('body').off('mousewheel');
@@ -344,26 +366,4 @@ function foto(boto,div){
             });
         });
     });
-}
-
-// Funcions fotos
-function drag_start(event){
-    var style = window.getComputedStyle(event.target, null);
-    var str = (parseInt(style.getPropertyValue("left")) - event.clientX) + ',' 
-            + (parseInt(style.getPropertyValue("top")) - event.clientY)+ ',' + event.target.id;
-    event.dataTransfer.setData("Text",str);
-}
-function drop(event){
-    var offset = event.dataTransfer.getData("Text").split(',');
-    var dm = document.getElementById(offset[2]);
-    dm.style.left = (event.clientX + parseInt(offset[0],10)) + 'px';
-    dm.style.top = (event.clientY + parseInt(offset[1],10)) + 'px';
-    dm.style.zIndex = zi;
-    zi++;
-    event.preventDefault();
-    return false;
-}
-function drag_over(event){
-    event.preventDefault();
-    return false;
 }

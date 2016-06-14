@@ -1,28 +1,3 @@
-.final{
-    min-height: 100vh;
-    min-width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    background-color: rgba(0,0,0,.9);
-    opacity: 0;
-    padding-top: 8rem;
-    display: none;
-}
-.final h2{
-    color: white;
-    font-size: 6rem;
-    margin-bottom: 6rem;
-}
-.final h3{
-    color: white;
-    font-size: 4rem;
-    margin-bottom: 3rem;
-}
-.desenfocat{
-    filter: blur(5px);
-}
 #foto1-1{
     top: 0;
     opacity: 0;

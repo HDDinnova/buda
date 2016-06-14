@@ -168,6 +168,11 @@
                 $('body').off('mousewheel');
             });
             diapositiva(1);
+            $('#m').load('../menu/menu.html',function(){
+                $('nav').load('../menu/menusuperior.html',function(){
+                    menu();
+                });                
+            });
         });
     </script>
     </body>
