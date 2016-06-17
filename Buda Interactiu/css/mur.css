@@ -32,8 +32,8 @@ form{
     border: 1px solid #ccc;
     border-radius: 3px;
     margin-top: 7px;
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
 }
 .cropit-preview-image-container {
     cursor: move;
@@ -46,6 +46,7 @@ input {
     position: relative;
     height: 25px;
     margin-top: 20px;
+    margin-bottom: 10px;
     background-color: rgb(245, 245, 245);
     border-radius: 4px;
     -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -105,4 +106,84 @@ input {
 }
 .range.range-primary input[type="range"] {
     outline-color: rgb(66, 139, 202);
+}
+.cropit-preview-background{
+    opacity: .2;
+}
+.image-editor{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+input[type="file"]{
+    margin-bottom: 10px;
+}
+.fotomur{
+    width: 300px;
+    overflow: hidden;
+    /*height: 100%;*/
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.polaroid{
+    width: 100%;
+    /*height: 100%;*/
+}
+.fotomur .fotom{
+    position: absolute;
+    top: 0;
+    width: 300px;
+    margin-top: 55px;
+    z-index: -9999;
+}
+.fotomur .peufoto{
+    margin-top: -55px;
+}
+.peufoto cite{
+    font-size: 2rem;
+    font-family: 'Annie Use Your Telescope', cursive;
+}
+.round-button {
+	width:4em;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+}
+.round-button-circle {
+    width: 100%;
+    height:0;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    overflow:hidden;
+    
+    background: #4679BD; 
+    box-shadow: 0 0 3px gray;
+}
+.round-button-circle:hover {
+	background:#30588e;
+}
+.round-button a {
+    display:block;
+    float:left;
+    width:100%;
+    padding-top:47%;
+    padding-bottom:50%;
+    line-height:1em;
+    margin-top:-0.5em;
+
+    text-align:center;
+    color:#e2eaf3;
+    font-family:Verdana;
+    font-size:1.6em;
+    font-weight:bold;
+    text-decoration:none;
+}
+.boto-dreta{
+    position: fixed;
+    top: 49%;
+    right: -40px;
+    opacity: .8;
+}
+.boto-dreta:hover{
+    opacity: 1;
 }

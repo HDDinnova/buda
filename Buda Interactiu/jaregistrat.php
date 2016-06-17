@@ -34,7 +34,7 @@
             <h2>Benvingut de nou!</h2>
                 <div class="caixa groc col-md-2">
                     <p>Introdueix les teves dades</p>
-                    <form class="col-md-10" method="post" action="../login">
+                    <form class="col-md-10" method="post" action="../login.php">
                         <div class="form-group">
                           <input class="form-control" id="correu" name="correu" type="email" placeholder="Correu" required>
                         </div>

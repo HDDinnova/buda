@@ -43,7 +43,7 @@ $t = $db->query('SELECT * FROM textos WHERE usuari='.$per['id']);
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#" id="bmur" class="menutext"><strong>EL MUR</strong></a></li>
+                        <li><a href="./mur.php" id="bmur" class="menutext"><strong>EL MUR</strong></a></li>
                         <li><a href="#" id="bcredits" class="menutext"><strong>CRÈDITS</strong></a></li>
                         <li><a href="#" id="bpeli" class="menutext"><strong>LA PEL·LÍCULA</strong></a></li>
                         <li><a href="#" id="menu1"><img src="img/menu-menu.png" alt="menú"/></a></li>

@@ -18,7 +18,7 @@ if ($a->num_rows===0){
     setcookie('personatge[cognom]',$usuari['cognom']);
     setcookie('personatge[tipus]',$usuari['tipus']);
     setcookie('personatge[sexe]',$usuari['sexe']);
-    header('Location: inici');
+    header('Location: inici.php');
   } else {
     echo 'Contrasenya incorrecta';
   }

@@ -100,5 +100,5 @@ if ($a->num_rows===0){
   }
 } else {
   $db->close();
-  header('Location: jaregistrat');
+  header('Location: jaregistrat.php');
 }

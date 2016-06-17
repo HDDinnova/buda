@@ -41,7 +41,7 @@ if (isset($_COOKIE['personatge'])){
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#" id="bmur" class="menutext"><strong>EL MUR</strong></a></li>
+                        <li><a href="./mur.php" id="bmur" class="menutext"><strong>EL MUR</strong></a></li>
                         <li><a href="#" id="bcredits" class="menutext"><strong>CRÈDITS</strong></a></li>
                         <li><a href="#" id="bpeli" class="menutext"><strong>LA PEL·LÍCULA</strong></a></li>
                         <li><a href="#" id="menu1"><img src="img/menu-menu.png" alt="menú"/></a></li>
@@ -55,7 +55,7 @@ if (isset($_COOKIE['personatge'])){
         <!--Fi menú lateral-->
         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
             <div class="caixa <?=$c?> col-lg-12 col-md-12 col-sm-12 col-xs-12 pull-left">
-                <h2><?php if($per['sexe']=='h'){echo 'Benvingut';}else{echo 'Benvinguda';}?> <strong><?=$per['nom']; ?>,</strong></h2>
+                <h2><?php if($per['sexe']=='h'){echo 'Benvingut';}else{echo 'Benvinguda';}?> <strong><?=$per['nom']; ?></strong></h2>
             </div>
             <div class="caixa <?=$c?> col-lg-12 col-md-12 col-sm-12 col-xs-12 pull-left">
                 <p>Aquí podràs deixar el teu missatge al mur de <strong>Buda, l'illa del delta</strong></p>
@@ -70,15 +70,14 @@ if (isset($_COOKIE['personatge'])){
                     </div>
                     <div class="clearfix"></div>
                     <div class="image-editor">
+                        <label>Escull una fotografia per al missatge</label>
                         <div class="cropit-preview"></div>
                         <div class="range range-success">
                             <input type="range" class="cropit-image-zoom-input">
                         </div>
                         <input type="file" class="cropit-image-input">
-                        <input type="hidden" name="image-data" class="hidden-image-data" />
+                        <input type="hidden" name="fotografia" class="hidden-image-data" />
                     </div>
-                    
-                    
                     <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
             </div>
@@ -94,14 +93,10 @@ if (isset($_COOKIE['personatge'])){
                     imageBackgroundBorderWidth: 15 // Width of background border
                 });
                 $('form').submit(function() {
-                    // Move cropped image data to hidden input
                     var imageData = $('.image-editor').cropit('export');
                     $('.hidden-image-data').val(imageData);
-                    // Print HTTP request params
                     var formValue = $(this).serialize();
                     $('#result-data').text(formValue);
-                    // Prevent the form from actually submitting
-                    return false;
                 });
             });
             $('#m').load('menu/menuinicial.html',function(){

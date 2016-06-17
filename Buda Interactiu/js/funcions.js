@@ -87,7 +87,7 @@ function clicaLite(){
     } else {
         lite1();
     }
-    $('#go').attr('href','registre/lite');
+    $('#go').attr('href','registre.php?a=lite');
 }
 function clicaCine(){
      if($('.cinema').hasClass('negre')){
@@ -97,7 +97,7 @@ function clicaCine(){
     } else {
         cine1();
     }
-    $('#go').attr('href','registre/cine');
+    $('#go').attr('href','registre.php?a=cine');
 }
 function clicaFoto(){
      if($('.fotografia').hasClass('negre')){
@@ -107,7 +107,7 @@ function clicaFoto(){
     } else {
         foto1();
     } 
-    $('#go').attr('href','registre/foto');
+    $('#go').attr('href','registre.php?a=foto');
 }
 function clicaOrni(){
      if($('.ornitologia').hasClass('negre')){
@@ -117,7 +117,7 @@ function clicaOrni(){
     } else {
         orni1();
     }
-    $('#go').attr('href','registre/orni');
+    $('#go').attr('href','registre.php?a=orni');
 }
 
 function lite1(){
