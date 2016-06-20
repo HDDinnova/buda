@@ -1,4 +1,6 @@
 <?php
+session_start();
+if (isset($_COOKIE['personatge'])){
 $per=$_COOKIE['personatge'];
 switch($per['tipus']){
   case 'lite':
@@ -46,6 +48,15 @@ $t = $db->query('SELECT * FROM textos WHERE usuari='.$per['id']);
                         <li><a href="./mur.php" id="bmur" class="menutext"><strong>EL MUR</strong></a></li>
                         <li><a href="#" id="bcredits" class="menutext"><strong>CRÈDITS</strong></a></li>
                         <li><a href="#" id="bpeli" class="menutext"><strong>LA PEL·LÍCULA</strong></a></li>
+                        <?php if (isset($_COOKIE['personatge'])){ ?>
+                        <li><a href="#" id="buser" class="menutext dropdown-toggle" data-toggle="dropdown" role="button"><img src="img/menu-user.png" alt="menú"/>  <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a id="bmodificar" href="#">Modificar dades</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a id="bsortir" href="#">Sortir</a></li>
+                            </ul>
+                        </li>
+                        <?php } ?>
                         <li><a href="#" id="menu1"><img src="img/menu-menu.png" alt="menú"/></a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
@@ -141,3 +152,6 @@ $t = $db->query('SELECT * FROM textos WHERE usuari='.$per['id']);
 </html>
 <?php
 $db->close();
+ } else {
+     header('Location: index2.html');
+ }

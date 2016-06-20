@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 if (isset($_COOKIE['personatge'])){
     
     // Agafa les dades de l'usuari

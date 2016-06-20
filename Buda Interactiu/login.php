@@ -1,4 +1,8 @@
 <?php
+session_start();
+
+$url = $_GET['url'];
+
 $correu=filter_input(INPUT_POST,'correu');
 $contrasenya=filter_input(INPUT_POST,'contrasenya');
 
@@ -18,7 +22,11 @@ if ($a->num_rows===0){
     setcookie('personatge[cognom]',$usuari['cognom']);
     setcookie('personatge[tipus]',$usuari['tipus']);
     setcookie('personatge[sexe]',$usuari['sexe']);
-    header('Location: inici.php');
+    if (isset($url)){
+        header('Location: '.$url);
+    } else {
+        header('Location: inici.php');
+    }
   } else {
     echo 'Contrasenya incorrecta';
   }

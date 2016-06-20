@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 // Recollida de dades
 $msg=filter_input(INPUT_POST,'missatge');

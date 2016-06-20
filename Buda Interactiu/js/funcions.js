@@ -413,3 +413,5 @@ function orni2(){
       $('.text').show('slow');
     });
 }
+$('.registre').tooltip();
+$('.noregistre').tooltip();

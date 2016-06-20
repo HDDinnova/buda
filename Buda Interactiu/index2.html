@@ -39,7 +39,7 @@
             <div class="col-md-12">
                 <h3>Benvingut a <strong>Buda</strong></h3>
                 <p>Introdueix les teves dades per continuar</p>
-                <form method="post" action="login">
+                <form method="post" action="login.php">
                     <div class="form-group">
                         <input class="form-control" id="correu" name="correu" type="email" placeholder="Correu" required>
                     </div>
@@ -78,10 +78,10 @@
                 <p id="enhp2">Tens l'autorització per</p>
                 <p id="enhp3">entrar a l'illa de Buda</p>
             </div>
-            <div class="caixa mini noregistre roig" data-ambit="noreg">
+            <div class="caixa mini noregistre roig" data-ambit="noreg" data-toggle="tooltip" data-placement="top" title="Accedeix sense registre">
                 <p>EXPLORA</p>
             </div>
-            <div class="caixa mini registre blau" data-ambit="reg">
+            <div class="caixa mini registre blau" data-ambit="reg" data-toggle="tooltip" data-placement="bottom" title="Registra't">
                 <p>INVESTIGA</p>
             </div>
             <div id="ambit" class="caixa taronga">
@@ -106,6 +106,7 @@
             </div>
         </div>
     <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
     <script src="js/jquery.color.js" type="text/javascript"></script>
     <script src="js/jquery-css-transform.js" type="text/javascript"></script>
     <script src="js/jquery-animate-css-rotate-scale.js" type="text/javascript"></script>

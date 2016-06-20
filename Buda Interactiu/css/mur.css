@@ -181,9 +181,18 @@ input[type="file"]{
 .boto-dreta{
     position: fixed;
     top: 49%;
-    right: -40px;
+    right: 5px;
     opacity: .8;
 }
 .boto-dreta:hover{
+    opacity: 1;
+}
+.boto-esquerra{
+    position: fixed;
+    top: 49%;
+    left: 5px;
+    opacity: .8;
+}
+.boto-esquerra:hover{
     opacity: 1;
 }

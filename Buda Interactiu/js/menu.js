@@ -79,4 +79,12 @@ function menu(){
             });
         });
     });
+    $('#bsortir').click(function(){
+        var url = (window.location.href).toString();
+        window.location.replace('./logout.php?url='+url);
+    });
+    $('#bsortirmenu').click(function(){
+        var url = (window.location.href).toString();
+        window.location.replace('../logout.php?url='+url);
+    });
 }

@@ -9,3 +9,10 @@
 <div class="groc">
     Francesc Vidal. Director del Parc Natural del Delta de l'Ebre
 </div>
+<?php
+    if (isset($_COOKIE['personatge'])){ ?>
+<div class="guardar">
+    <img src="../img/save.png" alt="icona guardar" data-video="SiscoVidal_BudaMetaforaDelta" onclick="tancarvideo()"/>
+</div>
+    <?php }
+?>

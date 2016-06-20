@@ -1,4 +1,6 @@
 <?php
+session_start();
+
   $a=$_GET['a'];
   switch($a){
     case 'lite':

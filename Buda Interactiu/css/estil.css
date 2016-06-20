@@ -433,6 +433,13 @@
     margin-top: 10px;
     line-height: initial;
 }
+.dropdown-menu li form{
+    width: 300px;
+    padding: 10px;
+}
+.dropdown-menu li label{
+    padding-left: 10px;
+}
 /************************************************************
 *************************************************************
 **               FI ESTIL COMÚ DIAPOSITIVES                **

@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 $nom=utf8_decode(filter_input(INPUT_POST,'nom'));
 $cognom=utf8_decode(filter_input(INPUT_POST,'cognom'));
 $edat=filter_input(INPUT_POST,'edat');

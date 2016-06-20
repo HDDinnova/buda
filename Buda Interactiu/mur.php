@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 if (isset($_COOKIE['personatge'])){
 }
 $p=$_GET['p'];
@@ -23,7 +25,6 @@ if ($numrows!=0){
         $resto=1;
     }
     $numpags = intval($numpags)+$resto;
-    echo '<script>console.log('.$numpags.');console.log('.$p.')</script>';
 }
 ?>
  
@@ -50,9 +51,18 @@ if ($numrows!=0){
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="./mur" id="bmur" class="menutext"><strong>EL MUR</strong></a></li>
+                        <li><a href="./mur.php" id="bmur" class="menutext"><strong>EL MUR</strong></a></li>
                         <li><a href="#" id="bcredits" class="menutext"><strong>CRÈDITS</strong></a></li>
                         <li><a href="#" id="bpeli" class="menutext"><strong>LA PEL·LÍCULA</strong></a></li>
+                        <?php if (isset($_COOKIE['personatge'])){ ?>
+                        <li><a href="#" id="buser" class="menutext dropdown-toggle" data-toggle="dropdown" role="button"><img src="img/menu-user.png" alt="menú"/>  <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a id="bmodificar" href="#">Modificar dades</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a id="bsortir" href="#">Sortir</a></li>
+                            </ul>
+                        </li>
+                        <?php } ?>
                         <li><a href="#" id="menu1"><img src="img/menu-menu.png" alt="menú"/></a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
@@ -198,6 +208,21 @@ if ($numrows!=0){
         </div>
                 <?php }
             }
+        }
+        if ($p>1){
+            if ($p==2){ ?>
+            <div class="boto-esquerra">
+                <a href="./mur.php">
+                    <img src="img/esquerra.png" alt="passar a la pàgina anterior del mur"/>
+                </a>
+            </div>    
+            <?php } else { ?>
+            <div class="boto-esquerra">
+                <a href="./mur.php?p=<?php echo $p-1; ?>">
+                    <img src="img/esquerra.png" alt="passar a la pàgina anterior del mur"/>
+                </a>
+            </div>
+            <?php }
         }
     ?>
             
