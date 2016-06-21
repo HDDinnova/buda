@@ -128,7 +128,7 @@ function diapositiva(id){
                 .fromTo($('#foto1-1 .tapa'),2,{autoAlpha:'0'},{autoAlpha:'.6',ease:Power3.easeInOut},'-=1.8')
                 .fromTo($('#foto1-1text2'),2,{top:'-50%'},{top:'10%',ease:Power3.easeInOut},'-=1.8')
                 .fromTo($('#foto1-1text2 p'),2,{top:'-300px'},{top:'0',ease:Power3.easeInOut},'-=1.8');
-            video('#foto1-1i','apartat1video.html');
+            video('#foto1-1i','apartat1video.php');
             break;
         case 110:            
             var diapo110 = new TimelineMax();
@@ -173,7 +173,7 @@ function diapositiva(id){
                 posi+=5;
                 pausa+=150;
             });
-            $('#apartat2').load('apartat2.html');
+            $('#apartat2').load('apartat2.php');
             break;
         case 130:
             var diapo130 = new TimelineMax();
@@ -231,8 +231,8 @@ function diapositiva(id){
                     .fromTo($('#foto1-2text2'),2,{bottom:'-90%'},{bottom:'10%',ease:Power3.easeInOut},'-=1.8')
                     .fromTo($('#foto1-2b1'),2,{top:'300px'},{top:'0',ease:Power3.easeInOut},'-=1.8')
                     .fromTo($('#foto1-2b2'),2,{top:'300px'},{top:'0',ease:Power3.easeInOut},'-=1.8');
-            video('#foto1-2i1','apartat2video1.html');
-            video('#foto1-2i2','apartat2video2.html');
+            video('#foto1-2i1','apartat2video1.php');
+            video('#foto1-2i2','apartat2video2.php');
             break;
         case 150:
             $('#foto1-3 video')[0].pause();
@@ -271,8 +271,8 @@ function diapositiva(id){
                     controlMouse(e);
                 });
             }
-            video('#foto1-3i1','apartat2video3.html');
-            video('#foto1-3i2','apartat2video4.html');
+            video('#foto1-3i1','apartat2video3.php');
+            video('#foto1-3i2','apartat2video4.php');
             break;
         case 17:
             $('.final').show();
@@ -365,5 +365,29 @@ function foto(boto,div){
                 controlMouse(tecla);
             });
         });
+    });
+}
+function guardarVideo(obj){
+    var video = $(obj).data('video');
+    var desc = $(obj).data('descripcio');
+    var user = document.cookie.split(';')[0].split('=')[1];
+    
+    var url = '{"user":"'+user+'","video":"'+video+'","desc":"'+desc+'"}';
+    url = JSON.parse(url);
+    
+    $.post('../api/savevideo',url,function(data){
+        console.log(data);
+    });
+}
+function guardarFoto(obj){
+    var foto = $(obj).data('foto');
+    var desc = $(obj).data('descripcio');
+    var user = document.cookie.split(';')[0].split('=')[1];
+    
+    var url = '{"user":"'+user+'","foto":"'+foto+'","desc":"'+desc+'"}';
+    url = JSON.parse(url);
+    
+    $.post('../api/savefoto',url,function(data){
+        console.log(data);
     });
 }

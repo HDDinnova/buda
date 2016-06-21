@@ -205,6 +205,21 @@
 #videos .blau img{
     height: 20px;
 }
+#videos .guardar{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-top: -3%;
+    left: 93%;
+    opacity: .6;
+}
+#videos .guardar:hover{
+    opacity: 1;
+}
+#videos .guardar img{
+    width: 100%;
+    height: 100%;
+}
 .scroll{
     position: absolute;
     width: 100vw;
@@ -335,6 +350,25 @@
     top: -80%;
     left: -80%;
     cursor: pointer;
+}
+.f img{
+    height: 100%;
+    width: 100%;
+}
+.f .guardar{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-top: -4%;
+    left: 96%;
+    opacity: .6;
+}
+.f .guardar:hover{
+    opacity: 1;
+}
+.f .guardar img{
+    width: 100%;
+    height: 100%;
 }
 .videofull{
     height: 100vh;

@@ -10,3 +10,10 @@
     El vídeo permet observar la regressió que ha experimentat l’illa de Buda al llarg de la 2a meitat del segle XX i la primera dècada del XXI. 
     En concret, els mapes que han servit de base a les animacions corresponen als anys 1945 i 2015.<br>Font: Institut Cartogràfic i Geològic de Catalunya
 </div>
+<?php
+    if (isset($_COOKIE['personatge'])){ ?>
+<div class="guardar">
+    <img src="../img/save.png" alt="icona guardar" data-video="00metaforadelta/video/Buda" data-descripcio="El vídeo permet observar la regressió que ha experimentat l’illa de Buda al llarg de la 2a meitat del segle XX i la primera dècada del XXI. En concret, els mapes que han servit de base a les animacions corresponen als anys 1945 i 2015.<br>Font: Institut Cartogràfic i Geològic de Catalunya" onclick="guardarVideo(this)"/>
+</div>
+    <?php }
+?>

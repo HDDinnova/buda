@@ -10,3 +10,10 @@
     Salvador Maluquer explica quines poden ser les causes de la regressió de 
     l’illa de Buda i, en general, del Delta.
 </div>
+<?php
+    if (isset($_COOKIE['personatge'])){ ?>
+<div class="guardar">
+    <img src="../img/save.png" alt="icona guardar" data-video="00metaforadelta/video/SalvadoMaluquer_Regressio" data-descripcio="Salvador Maluquer explica quines poden ser les causes de la regressió de l’illa de Buda i, en general, del Delta" onclick="guardarVideo(this)"/>
+</div>
+    <?php }
+?>

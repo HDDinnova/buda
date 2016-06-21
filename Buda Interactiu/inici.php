@@ -102,7 +102,7 @@ $t = $db->query('SELECT * FROM textos WHERE usuari='.$per['id']);
                 <div id="fotos" class="objecte">
                     <?php while ($foto = $f->fetch_array(MYSQLI_ASSOC)){ ?>
                     <div class="col-md-6 col-sm-6 col-xs-6 text-center" portafotos>
-                        <img src="fotos/<?=$per['tipus']?>/<?=$foto['foto']?>" alt="<?=$foto['llegenda']?>"/>
+                        <img src="<?=$foto['foto']?>" alt="<?=$foto['llegenda']?>"/>
                         <p><?=$foto['llegenda']?></p>
                     </div>
                     <?php } ?>
@@ -110,10 +110,10 @@ $t = $db->query('SELECT * FROM textos WHERE usuari='.$per['id']);
                 <div id="videos" class="objecte">
                     <?php while ($video = $v->fetch_array(MYSQLI_ASSOC)){ ?>
                     <div class="col-md-6 col-sm-6 col-xs-6 text-center">
-                        <video controls poster="videos/<?=$per['tipus']?>/<?=$video['video']?>.jpg">
-                            <source src="videos/<?=$per['tipus']?>/<?=$video['video']?>.mp4" type="video/mp4">
-                            <source src="videos/<?=$per['tipus']?>/<?=$video['video']?>.ogv" type="video/ogg">
-                            <source src="videos/<?=$per['tipus']?>/<?=$video['video']?>.webm" type="video/webm">
+                        <video controls poster="<?=$video['video']?>.jpg">
+                            <source src="<?=$video['video']?>.mp4" type="video/mp4">
+                            <source src="<?=$video['video']?>.ogv" type="video/ogg">
+                            <source src="<?=$video['video']?>.webm" type="video/webm">
                         El teu navegador no suporta aquest tipus de video, si us plau, actualitza'l per a una millor experiència
                         </video>
                         <p><?=$video['llegenda']?></p>
@@ -123,7 +123,7 @@ $t = $db->query('SELECT * FROM textos WHERE usuari='.$per['id']);
                 <div id="textos" class="objecte">
                     <?php while ($text = $t->fetch_array(MYSQLI_ASSOC)){ ?>
                     <div class="col-md-3 col-sm-3 col-xs-6 text-center">
-                        <img src="textos/<?=$per['tipus']?>/<?=$text['imatge']?>" alt="" data-url="textos/<?=$per['tipus']?>/<?=$text['url']?>"/>
+                        <img src="<?=$text['imatge']?>" alt="" data-url="textos/<?=$per['tipus']?>/<?=$text['url']?>"/>
                     </div>
                     <?php } ?>
                 </div>

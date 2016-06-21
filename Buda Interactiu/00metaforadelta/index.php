@@ -62,10 +62,46 @@
                     o ambients naturals propis del Delta: els canyissars de les àrees i marges fluvials, les jonqueres i els salicornars dels ambients 
                     salobres, i les llacunes litorals anomenades “Calaixos” (Calaix Gran i Calaix de Mar)</p>
                 </div>
-                <img id="pnde1" class="f" src="foto/IMG001PNDE.jpg" alt="Foto històrica 1 del Delta"/>
-                <img id="pnde2" class="f" src="foto/IMG002PNDE.jpg" alt="Foto històrica 2 del Delta"/>
-                <img id="pnde3" class="f" src="foto/IMG004PNDE.jpg" alt="Foto històrica 3 del Delta"/>
-                <img id="pnde4" class="f" src="foto/IMG010PNDE.jpg" alt="Foto històrica 4 del Delta"/>
+                <div class="f">
+                    <img id="pnde1" src="foto/IMG001PNDE.jpg" alt="Foto històrica 1 del Delta"/>
+                    <?php
+                        if (isset($_COOKIE['personatge'])){ ?>
+                    <div class="guardar">
+                        <img src="../img/save.png" alt="icona guardar" data-foto="00metaforadelta/foto/IMG001PNDE.jpg" data-descripcio="Foto històrica 1 del Delta" onclick="guardarFoto(this)"/>
+                    </div>
+                        <?php }
+                    ?>
+                </div>
+                <div class="f">
+                    <img id="pnde2" src="foto/IMG002PNDE.jpg" alt="Foto històrica 2 del Delta"/>
+                    <?php
+                        if (isset($_COOKIE['personatge'])){ ?>
+                    <div class="guardar">
+                        <img src="../img/save.png" alt="icona guardar" data-foto="00metaforadelta/foto/IMG002PNDE.jpg" data-descripcio="Foto històrica 2 del Delta" onclick="guardarFoto(this)"/>
+                    </div>
+                        <?php }
+                    ?>
+                </div>
+                <div class="f">
+                    <img id="pnde3" src="foto/IMG004PNDE.jpg" alt="Foto històrica 3 del Delta"/>
+                    <?php
+                        if (isset($_COOKIE['personatge'])){ ?>
+                    <div class="guardar">
+                        <img src="../img/save.png" alt="icona guardar" data-foto="00metaforadelta/foto/IMG004PNDE.jpg" data-descripcio="Foto històrica 3 del Delta" onclick="guardarFoto(this)"/>
+                    </div>
+                        <?php }
+                    ?>
+                </div>
+                <div class="f">
+                    <img id="pnde4" src="foto/IMG010PNDE.jpg" alt="Foto històrica 4 del Delta"/>
+                    <?php
+                        if (isset($_COOKIE['personatge'])){ ?>
+                    <div class="guardar">
+                        <img src="../img/save.png" alt="icona guardar" data-foto="00metaforadelta/foto/IMG010PNDE.jpg" data-descripcio="Foto històrica 4 del Delta" onclick="guardarFoto(this)"/>
+                    </div>
+                        <?php }
+                    ?>
+                </div>
                 <div id="foto1-1peufotos" class="peu groc col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">
                     Fotos: Salvador Maluquer (dècada de 1950 i 1960).<br>Arxiu Parc Natural del Delta de l’Ebre
                 </div>
