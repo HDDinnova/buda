@@ -10,7 +10,7 @@ Flight::route('POST /savevideo', function(){
     $db=Flight::db();
     
     $savevideo = $db->prepare("INSERT INTO videos (usuari,video,llegenda) VALUES (:user, :video, :desc)");
-    $savevideo->bindParam(':user', $_POST['user']);
+    $savevideo->bindParam(':user', $_POST['user'], PDO::PARAM_INT);
     $savevideo->bindParam(':video', $_POST['video']);
     $savevideo->bindParam(':desc', $_POST['desc']);
     
@@ -28,7 +28,7 @@ Flight::route('POST /savefoto', function(){
     $db=Flight::db();
     
     $savefoto = $db->prepare("INSERT INTO fotos (usuari,foto,llegenda) VALUES (:user, :foto, :desc)");
-    $savefoto->bindParam(':user', $_POST['user']);
+    $savefoto->bindParam(':user', $_POST['user'], PDO::PARAM_INT);
     $savefoto->bindParam(':foto', $_POST['foto']);
     $savefoto->bindParam(':desc', $_POST['desc']);
     

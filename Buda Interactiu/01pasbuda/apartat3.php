@@ -1,4 +1,22 @@
-<video id="video3fons" poster="video/pas_de_barca_ebre.jpg" loop preload>
+<div id="foto3-1" class="videofull">
+    <video id="video3fons" poster="video/pas_de_barca_ebre.jpg" loop preload>
+        <source src="video/pas_de_barca_ebre.mp4" type="video/mp4">
+        <source src="video/pas_de_barca_ebre.ogg" type="video/ogg">
+        <source src="video/pas_de_barca_ebre.webm" type="video/webm">
+    </video>
+    <p class="groc col-lg-offset-1 col-md-offset-1 col-lg-3 col-md-3" id="foto3-1text1">
+        <strong>PAS DEL RIU EBRE</strong>
+    </p>
+    <div class="tapa groc">
+        <div class="col-lg-offset-1 col-md-offset-1 col-lg-8 col-md-8" id="foto3-1text2">
+            <img src="img/marca2.png" alt="icona disseny"/>
+            <p>Al llarg de la seva existència, els diversos propietaris de l’illa han hagut de salvar l’obstacle dels braços del riu Ebre que separen a l’illa de la resta del Delta.<br>El pas, de caràcter privat, era el darrer pas de barca que creuava l’Ebre, i va permetre un important moviment de persones i càrregues arran de la transformació d’erms de l’illa en camps d’arròs. Durant els mesos en quèhi havia més feina als arrossars els jornalers vivien en la mateixa illa, molts d’ells procedents de Deltebre.</p>
+        </div>
+    </div>
+</div>
+
+
+<!--<video id="video3fons" poster="video/pas_de_barca_ebre.jpg" loop preload>
     <source src="video/pas_de_barca_ebre.mp4" type="video/mp4">
     <source src="video/pas_de_barca_ebre.ogg" type="video/ogg">
     <source src="video/pas_de_barca_ebre.webm" type="video/webm">
@@ -53,4 +71,4 @@
             controlMouse(e);
         });
     }
-</script>
+</script>-->

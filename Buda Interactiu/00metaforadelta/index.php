@@ -12,6 +12,7 @@
         
         <link href="../css/estil.css" rel="stylesheet" type="text/css"/>
         <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/toastr.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/apartat.css" rel="stylesheet" type="text/css"/>
         
         <script src="../js/jquery-2.1.4.min.js" type="text/javascript"></script>
@@ -117,6 +118,8 @@
     <script src="../js/bootstrap.min.js" type="text/javascript"></script>
     <script src="js/TweenMax.min.js" type="text/javascript"></script>
     <script src="js/Draggable.min.js" type="text/javascript"></script>
+    <script src="../js/toastr.min.js" type="text/javascript"></script>
+    <script src="../js/apartats.js" type="text/javascript"></script>
     <script src="js/funcions.js" type="text/javascript"></script>
     <script src="js/jquery.mousewheel.min.js" type="text/javascript"></script>
     <script src="js/jquery.rotate.js" type="text/javascript"></script>
