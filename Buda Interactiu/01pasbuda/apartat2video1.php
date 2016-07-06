@@ -4,7 +4,7 @@
     <source src="video/Sarro_PasBarca_1.webm" type="video/webm">
 </video>
 <div class="blau">
-    <img src="img/tancar.png" alt="icona tancar" onclick="tancarvideo2()"/>
+    <img src="img/tancar.png" alt="icona tancar" onclick="tancarvideo()"/>
 </div>
 <div class="groc">
     Pas de Buda pel riu Ebre.<br/>Filmació: Artur Sarró(dècada de 1960)

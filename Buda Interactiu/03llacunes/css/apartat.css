@@ -1,489 +1,321 @@
-.container{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    z-index: -1;
-}
-.videopopup{
-    position: absolute;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-    background-color: rgba(0,0,0,.7);
-}
-.titol,.destacat{
-    padding: 3rem;
-    color: white;
-}
-.titol h2{
-    font-size: 10rem;
-    font-weight: 600;
-    margin: 0;
-}
-.scroll{
-    position: absolute;
-    width: 100vw;
-    bottom: -10%;
-    left: 43%;
-    z-index: 0;
-}
-.scroll img{
-    display: block;
-    margin-right: auto;
-    margin-bottom: auto;
-}
-#imgcalaixos img{
-    min-height: 100vh;
-    min-width: 100%;
-    position: absolute;
+#foto1-1{
     top: 0;
     opacity: 0;
-    z-index: -10;
+    background-image: url('../foto/_MG_8140.jpg');
+    background-position: center bottom;
 }
-#titol1{
+#foto1-1text{
     position: absolute;
-    top: -50%;
-    left: 50px;
-    text-transform: uppercase;
-    padding: 2rem 4rem 2rem 2rem;
+    top: -125%;
 }
-#titol1 h1{
-    margin: 0;
-    color: white;
-    font-weight: 700;
-    font-size: 9.5rem;
-}
-#destacat1{
-    position: absolute;
-    top: -50%;
-    left: 50px;
-    width: 30%;
-    padding: 2rem 4rem 2rem 2rem;
-}
-#destacat1 p{
-    color: white;
-    margin: 0;
-    font-size: 2rem;
-    font-weight: 500;
-}
-#imgcalaixos p{
-    position: absolute;
-    bottom: -50px;
-    left: 50px;
-    z-index: -9;
-    color: white;
-}
-#tapa1-1{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    z-index: -8;
-}
-#text1-1 p{
-    position: absolute;
-    z-index: -7;
-    color: white;
-    width: 35%;
-    top: -50%;
-    right: 50px;
-    font-weight: 600;
-    font-size: 3.6rem;
-}
-#text1-1 img{
-    position: absolute;
-    z-index: -7;
-    height: 300px;
-    top: 400px;
-    right: -30%;
-}
-#video1-3{
-    display: block;
-    height: 100%;
+#foto1-1text h2{
     position: relative;
-    top: 100%;
-    left: 0px;
-}
-#video1-3 video{
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    height: 100%;
-}
-#video1-3 .blau{
-    padding: 5px;
-    display: block;
-    width: 30px;
-    float: right;
-    cursor: pointer;
-    position: absolute;
-    right: 10px;
-    top: 50px;
-}
-#video1-3 .blau img{
-    height: 20px;
-}
-#video1-3 .groc{
-    position: absolute;
-    bottom: 100px;
-    left: 50px;
-    padding: 5px;
-    width: 250px;
-}
-#apartat2{
-    display: none;
-}
-#foto2guille img{
-    min-height: 100vh;
-    min-width: 100%;
-    position: absolute;
-    top: 100%;
-    z-index: -10;
-}
-#foto2guille h3{
-    position: absolute;
-    color: white;
-    font-weight: 600;
-    width: 25%;
-    line-height: inherit;
-    font-size: 3rem;
-    left: 50px;
-    top: -50%;
-    z-index: -9;
-}
-#foto2guille p{
-    position: absolute;
-    color: white;
-    font-weight: 500;
-    bottom: -50px;
-    left: 50px;
-    z-index: -9;
-}
-#tapa2-1{
-    opacity: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
     top: 0;
-    left: 0;
-    z-index: -8;
+    color: white;
+    padding: 30px;
+    font-size: 6vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 0.8 !important;
 }
-#text2-1{
-    width: 49%;
+#foto1-1text p{
+    position: relative;
+    top: -300px;
+    color: white;
+    padding: 30px;
+    font-size: 1.3vw;
+}
+#foto1-1text2{
     position: absolute;
-    top: -50%;
-    left: 50px;
-    z-index: -8;
+    top: -125%;
 }
-#text2-1 p{
-    font-size: 2rem;
+#foto1-1text2 p{
+    color: white;
+    font-size: 1.5vw;
+}
+#foto1-1text2 img{
+    position: relative;
+    top: 0;
+    left: 100vw;
+    height: 300px;
+}
+#foto1-1video{
+    position: absolute;
+    top: 100%;
+}
+#foto1-1video video{
+    min-width: inherit !important;
+    max-height: 100vh !important;
+}
+#foto1-1video .peu{
+    padding: 15px;
+    color: black;
+}
+#apartat2{display: none;}
+#foto2-1{
+    top: 100%;
+    background-image: url('../foto/buda-4.jpg');
+    background-position: center bottom;
+}
+#foto2-1text{
+    position: absolute;
+    bottom: 210%;
+}
+#foto2-1text p{
+    color: white;
+    padding: 30px;
+    font-size: 1.5vw;
+}
+#foto2-1text2{
+    position: absolute;
+    top: -190%;
+}
+#foto2-1text2 p{
+    position: relative;
+    top: 0;
     color: #ABB057;
-    padding: 12px;
+    padding: 30px;
+    margin-right: 10px;
+}
+#foto2-1boto{
+    position: relative;
+    top: -300px;
 }
 #marcacanyis{
     position: absolute;
-    bottom: -52%;
-    left: 50px;
+    bottom: -110%;
+    left: 0;
     height: 50%;
 }
-#play2-1{
+#foto2-1text3{
     position: absolute;
-    z-index: 5;
-    top: -200px;
-    left: 50vw;
-    background-color: rgba(238,196,27,.6);
+    bottom: 210%;
 }
-#play2-1 img:hover{
-    background-color: #EEC41B;
-    cursor: pointer;
-}
-#text2-2{    
-    width: 49%;
-    position: absolute;
-    bottom: -50%;
-    left: 50px;
-    z-index: -8;
-}
-#text2-2 p{    
-    padding: 15px;
-    color: white;
-    font-size: 2rem;
-    font-weight: 600;
-    bottom: -200px;
+#foto2-1text3 p{
     position: relative;
-}
-#play2-2{
-    margin-bottom: 15px;
-    position: relative;
-    z-index: 5;    
-}
-#play2-2 img{
-    background-color: rgba(238,196,27,.6);
-}
-#play2-2 img:hover{
-    background-color: #EEC41B;
-    cursor: pointer;
-}
-.videopopup{
-    position: absolute;
-    z-index: 10;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-    background-color: rgba(0,0,0,.7);
-}
-.videopopup #videosapartat2{
-    display: block;
-    margin-top: 100px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 55%;
-}
-#videosapartat2 video{
-    width: 95%;
-}
-#videosapartat2 .groc{
-    position: absolute;
-    margin-left: -200px;
-    margin-top: -100px;
-    width: 240px;
-    padding: 5px;
-}
-#videosapartat2 .blau{
-    padding: 5px;
-    display: block;
-    width: 30px;
-    float: right;
-    cursor: pointer;
-}
-#videosapartat2 .blau img{
-    height: 20px;
-}
-#apartat3{
-    display: none;
-}
-#video3fons{
-    min-height: 100vh;
-    min-width: 100%;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    z-index: -10;
-}
-#text3-1{
-    position: absolute;
-    top: -100%;
-    left: 100px;
-}
-#text3-1 p{
-    width: 33%;
     color: white;
-    line-height: inherit;
-    margin-bottom: 15px;
-    padding: 25px;
-    position: relative;
-    font-size: 1.8rem;
-    top: -200px;
+    padding: 30px;
+    margin-right: 10px;
 }
-#text3-1 h2{
+#foto2-1boto2{
     position: relative;
+    top: -300px;
+}
+#apartat3{display: none;}
+#foto3-1{
+    position: absolute;
+    top: 100%
+}
+#foto3-1video{
+    position: absolute;
+    top: 0;
+}
+#foto3-1text{
+    position: absolute;
+    top: -210%;
+}
+#foto3-1text h2{
+    position: relative;
+    top: 0;
     color: white;
-    padding: 15px;
-    font-size: 7rem;
+    padding: 30px;
+    font-size: 4vw;
     text-transform: uppercase;
     font-weight: 600;
+    line-height: 1 !important;
+}
+#foto3-1text p{
+    position: relative;
+    top: -300px;
+    color: white;
+    padding: 30px;
     line-height: 1;
-    width: 45%;
 }
-#text3-2{
+#foto3-1text2{
     position: absolute;
-    bottom: -50%;
-    right: 100px;
-    width: 10%;
+    bottom: -110%;
 }
-#text3-2 p{
+#foto3-1text2 p{
     color: white;
-    line-height: inherit;
-    padding: 10px;
+    padding: 30px;
 }
-#video3-2fons{
-    min-height: 100vh;
-    min-width: 100%;
+#foto3-1video2{
     position: absolute;
     top: 100%;
-    right: 0;
-    z-index: -10;
 }
-
-#text3-3{
+#foto3-1text3{
     position: absolute;
-    bottom: -50%;
-    right: 100px;
-    width: 15%;
+    top: 110%;
 }
-#text3-3 p{
+#foto3-1text3 p{
     color: white;
-    line-height: inherit;
-    padding: 10px;
+    padding: 30px;
 }
-#apartat4{
-    display: none;
-}
-#foto4pnde{
-    position: absolute;
+#apartat4{display: none;}
+#foto4-1{
     top: 100%;
-    z-index: -10;
-    opacity: 1;
+    background-image: url('../foto/IMG000PNDE_bn.jpg');
+    background-position: center center;
 }
-#foto4pnde img{
-    min-height: 100vh;
-    min-width: 100%;
-}
-#foto4pnde2{
+#foto4-1text{
     position: absolute;
-    top: 100%;
-    z-index: -10;
+    top: -230%;
 }
-#foto4pnde2 img{
-    min-height: 100vh;
-    min-width: 100%;
-}
-#text4-1{
-    position: absolute;
-    top: -100%;
-    left: 100px;
-}
-#text4-1 h2{
+#foto4-1text h2{
     position: relative;
-    color: white;
-    font-weight: 600;
-    width: 72%;
-    line-height: 1.2;
-    font-size: 6rem;
-    margin-top: 20px;
-    z-index: -9;
-    padding: 20px;
-}
-#text4-1 p{
-    position: relative;
-    width: 45%;
-    font-size: 3rem;
-    color: white;
-    font-weight: 600;
-    z-index: -9;
-    padding: 20px;
-    line-height: 1.2;
-    top: -200px;
-}
-#text4-1peu{
-    position: absolute;
-    color: white;
-    z-index: -9;
-    left: 50px;
-    bottom: -50px;
-}
-#text4-2{
-    position: absolute;
-    top: -100%;
-    left: 100px;
-}
-#text4-2 h5{
-    position: relative;
-    color: black;
-    font-size: 1.9rem;
-    margin-top: 20px;
-    z-index: -9;
-    padding: 20px;
-    top: -200px;
-    width: 150px;
-    text-align: center;
-}
-#text4-2 p{
-    position: relative;
-    width: 50%;
-    font-size: 1.9rem;
-    color: white;
-    z-index: -9;
-    padding: 15px;
-    line-height: 1.2;
-}
-#tapa4-3{
-    opacity: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
     top: 0;
-    left: 0;
-    z-index: -9;
+    color: white;
+    padding: 30px;
+    font-size: 3.5vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1 !important;
 }
-#plantes1{
+#foto4-1text p{
     position: relative;
-    top: 100px;
+    top: -300px;
+    color: white;
+    padding: 30px;
+    font-size: 1.8vw;
+}
+#foto4-2{
+    top: 0;
+    opacity: 0;
+    background-image: url('../foto/IMG000PNDE.jpg');
+    background-position: center center;
+}
+#foto4-2text{
+    position: absolute;
+    top: -210%;
+}
+#foto4-2text p:first-child{
+    position: relative;
+    top: -300px;
+    color: black;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#foto4-2text p:last-child{
+    position: relative;
+    top: 0;
+    color: white;
+    padding: 30px;
+}
+.foto4-2plantes{
+    position: absolute;
+    top: 10%;
     left: 100%;
-    vertical-align: bottom;
 }
-.col-md-3{
-    position: relative;
-    left: 600px;
-}
-.col-md-3 img{
-    height: 70vh;
+.foto4-2plantes img{
+    height: 75vh;
     max-width: 100%;
+    top: 10%;
 }
-.col-md-3 p{
+.foto4-2plantes p{
     margin-top: 15px;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    width: 70%;
     text-transform: uppercase;
     padding: 10px;
     font-size: 1.8rem;
-}
-#plantes2{
-    position: absolute;
-    top: 100px;
-    left: 100%;
-    vertical-align: bottom;
-}
-#text4-3{
-    position: absolute;
-    width: 35%;
-    bottom: 100px;
-    right: -50%;
-}
-#text4-3 .negre{
-    position: relative;
-    color: #EEC41B;
-    font-size: 1.9rem;
-    margin-bottom: 20px;
-    z-index: -9;
-    padding: 20px;
-    width: 150px;
-    text-align: center;
-    right: 0px;
-}
-#text4-3 .blanc{
-    position: relative;
-    font-size: 1.9rem;
     color: black;
-    z-index: -9;
-    padding: 20px;
-    line-height: 1.2;
-    right: -300px;
 }
+.foto4-2plantes div{
+    position: relative;
+    left: 300px;
+}
+.foto4-2plantes div:first-child{
+    position: relative;
+    left: 0;
+}
+#foto4-2text2{
+    position: absolute;
+    bottom: -110%;
+}
+#foto4-2text2 p:first-child{
+    position: relative;
+    top: 0;
+    color: #EEC41B;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#foto4-2text2 p:last-child{
+    position: relative;
+    top: 300px;
+    color: black;
+    padding: 30px;
+}
+.foto4-2animals{
+    position: absolute;
+    top: 10%;
+    left: 100%;
+}
+.foto4-2animals img{
+    max-height: 100%;
+    top: 10%;
+}
+.foto4-2animals p{
+    margin-top: 15px;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 1.8rem;
+    color: black;
+}
+.foto4-2animals div{
+    height: 35vh;
+    position: relative;
+    left: 300px;
+}
+.foto4-2animals div:first-child{
+    position: relative;
+    left: 0;
+}
+#apartat5{display: none;}
+#foto5-1{
+    top: 100%;
+    background-image: url('../video/Dia_1_Tortugues_bn.jpg');
+    background-position: center center;
+}
+#foto5-1text{
+    position: absolute;
+    top: -220%;
+}
+#foto5-1text h2{
+    position: relative;
+    top: 0;
+    color: white;
+    padding: 20px;
+    font-size: 3.5vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1 !important;
+}
+#foto5-1text p{
+    position: relative;
+    top: -300px;
+    color: white;
+    padding: 30px;
+}
+#foto5-1text2{
+    position: absolute;
+    bottom: 210%;
+}
+#foto5-1text2 p:first-child{
+    position: relative;
+    top: -300px;
+    color: #F58431;
+    padding: 10px;
+    text-transform: uppercase;
+}
+#foto5-1text2 p:last-child{
+    position: relative;
+    top: 0;
+    color: white;
+    padding: 30px;
+}
+#apartat6{display: none;}
+/* 
 #animals1{
     position: absolute;
     top: 100px;
@@ -706,4 +538,4 @@
     top: 10%;
     padding: 10px;
     width: 200px;
-}
+} */

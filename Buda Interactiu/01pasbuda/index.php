@@ -62,14 +62,12 @@
         <div class="containerapartat" id="apartat2"></div>
         <div class="containerapartat" id="apartat3"></div>
         <div class="containerapartat" id="apartat4"></div>
-        <div class="containerapartat" id="apartat5"></div>
         
         <div class="videopopup">
             <div id="videos"></div>
         </div>
 
     <script src="js/jquery-ui.min.js" type="text/javascript"></script>
-    <!--<script src="js/jquery.mousewheel.min.js" type="text/javascript"></script>-->
     <script src="../js/bootstrap.min.js" type="text/javascript"></script>
     <script src="js/TweenMax.min.js" type="text/javascript"></script>
     <script src="../js/toastr.min.js" type="text/javascript"></script>

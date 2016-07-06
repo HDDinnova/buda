@@ -4,7 +4,7 @@
     <source src="video/CeciliaPrats_PasdeBarca.webm" type="video/webm">
 </video>
 <div class="blau">
-    <img src="img/tancar.png" alt="icona tancar" onclick="tancarvideo2()"/>
+    <img src="img/tancar.png" alt="icona tancar" onclick="tancarvideo()"/>
 </div>
 <div class="groc">
     Cecília Prats, esposa de l’ornitòleg Salvador Maluquer, recorda el primer cop que va creuar el pas de Buda per l’Ebre.

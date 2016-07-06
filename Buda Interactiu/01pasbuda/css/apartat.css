@@ -132,9 +132,144 @@
     top: 300px;
     color: black;
 }
-
-
-
-
+#foto3-2{
+    position: absolute;
+    top: -100%
+}
+#foto3-2text1{
+    position: absolute;
+    top: 10%;
+    right: -50%;
+}
+#foto3-2text1 strong{
+    color: black;
+    font-size: 1.6vw;
+}
+#foto3-2text1 strong{
+    color: black;
+    padding: 30px;
+    font-size: 1.6vw;
+}
+#foto3-2text1 div{
+    position: relative;
+    top: 0;
+    right: -200%;
+    padding: 30px;
+}
+#foto3-2text1 div p{
+    position: relative;
+    top: 0;
+    right: 0;
+    color: #F58431;
+    font-size: 1.2vw;
+}
+#foto3-2 .tapa{
+    opacity: 1;
+    top: 200%;
+    min-width: 50vw;
+    width: 50vw;
+    left: 0;
+    z-index: 0;
+}
+#foto3-2text2{
+    position: absolute;
+    bottom: -110%;
+    left: 0;
+}
+#foto3-2text2 img{
+    position: relative;
+    top: 0;
+    width: 60%;
+    margin-bottom: 5%;
+}
+#foto3-2text2 p{
+    position: relative;
+    top: 300px;
+    color: black;
+}
+#foto3-2boto{
+    position: relative;
+    left: 300px;
+    padding: 0 !important;
+}
 #apartat4{display:none;}
-#apartat5{display:none;}
+#foto4-1{
+    top: 100%;
+    background-image: url('../foto/Diapositiva151.jpg');
+    background-position: center top;
+}
+#foto4-1text{
+    position: absolute;
+    top: 140%;
+}
+#foto4-1text h2{
+    position: relative;
+    top: 0;
+    color: white;
+    padding: 30px;
+    font-size: 3.6vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 0.8 !important;
+}
+#foto4-1text p{
+    position: relative;
+    top: 300px;
+    color: white;
+    padding: 10px;
+    font-size: 1.9vw;
+    font-weight: 600;
+}
+#foto4-1text2{
+    position: absolute;
+    bottom: -85%;
+    padding: 30px;
+}
+#foto4-1text2 img{
+    width: 40%;
+    margin-bottom: 10px;
+}
+#foto4-1text2 p{
+    color: #66A8C8;
+}
+#foto4-2{
+    top: 100%;
+    background-image: url('../foto/Diapositiva152.jpg');
+    background-position: center top;
+}
+#foto4-2text{
+    position: absolute;
+    top: 125%;
+}
+#foto4-2text h2{
+    position: relative;
+    top: 0;
+    color: white;
+    padding: 30px;
+    font-size: 2.4vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 0.8 !important;
+}
+#foto4-2text p{
+    position: relative;
+    top: 300px;
+    color: white;
+    padding: 30px;
+}
+#foto4-2botons{
+    position: relative;
+    top: 300px;
+}
+#foto4-2boto1{
+    position: relative;
+    top: 0;
+}
+#foto4-2boto2{
+    position: relative;
+    top: 300px;
+}
+#foto4-2boto3{
+    position: relative;
+    top: 300px;
+}

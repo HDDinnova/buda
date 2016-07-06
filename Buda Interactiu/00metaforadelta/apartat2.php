@@ -40,5 +40,4 @@
     <h2>Moltes felicitats!, has acabat aquesta investigació.</h2>
     <h3>Vols continuar explorant l’illa de Buda?</h3>
     <a href="../01pasbuda"><img src="../menu/01pasbuda.jpg" alt=""/><br><br>EL PAS DE BUDA</a>
-    
 </div>

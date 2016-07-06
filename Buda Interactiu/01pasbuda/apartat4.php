@@ -1,68 +1,40 @@
-<div id="imgbarcassa">
-    <img src="foto/Diapositiva151.jpg" alt="gent passant amb la barcassa"/>
-    <p>Foto: Arxiu Museu de les Terres de l’Ebre</p>
-</div>
-<div class="blau titol" id="titol4">
-    <h3>Els mitjans de transport</h3>
-</div>
-<div class="blau" id="destacat4">
-    <p>La barcassa Isla de Buda</p>
-</div>
-<div class="blau" id="tapa4-1"></div>
-<div id="text4-1">
-    <img src="img/marca3.png" alt=""/>
-    <p>Les embarcacions utilitzades en el pas han estat diverses, segons els diferents usos. 
+<div id="foto4-1" class="fotofons">
+    <div id="foto4-1text" class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h2 class="blau col-lg-7 col-md-7 col-sm-9 col-xs-10">ELS MITJANS DE TRANSPORT</h2>
+        <div class="clearfix"></div>
+        <p class="blau col-lg-3 col-md-3 col-sm-9 col-xs-10">La barcassa Isla de Buda</p>
+    </div>
+    <p id="foto4-1peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Foto: Arxiu Museu de les Terres de l’Ebre</p>
+    <div class="tapa blau"></div>
+    <div id="foto4-1text2" class="blanc col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-4 col-md-4 col-sm-10 col-xs-10">
+        <img class="col-lg-1 col-md-1" src="img/marca3.png" alt="marca gràfica"/>
+        <p>Les embarcacions utilitzades en el pas han estat diverses, segons els diferents usos. 
         Així, consta la documentació de la canoa “Coto Isla de Buda”, propietat de la societat de caçadors del mateix nom, que es va inscriure a Marina a principis de 1921. 
         D’altra banda, una de les barques que va funcionar els anys cinquanta i seixanta del segle passat va ser la llanxa motora “Correo de Buda”, propietat de Pedro Franch 
         Piñana, administrador de l’illa. Aquesta embarcació no només es va utilitzar al pas, sinó també per navegar des de la Cava a Buda.<br>
         Fins a mitjans del segle XX s’empraria també una barca petita per passar persones o càrregues de poc pes.</p>
+    </div>
 </div>
-<div id="imgbarcassa2">
-    <img src="foto/Diapositiva152.jpg" alt="foto de la barcassa 'isla de buda'"/>
-    <p>Foto: Arxiu Museu de les Terres de l’Ebre</p>
-</div>
-<div class="blau titol" id="titol4-2">
-    <h3>"Isla de Buda"</h3>
-</div>
-<div class="blau" id="destacat4-2">
-    <p>Els anys 50, la societat “Explotaciones Agrícolas Pedro Franch Casanova, S.A.”, administradora de Buda, adquereix tres llaüts construïts a Tortosa pel conegut 
+<div id="foto4-2" class="fotofons">
+    <div id="foto4-2text" class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h2 class="blau col-lg-3 col-md-3 col-sm-10 col-xs-10">"Isla de Buda"</h2>
+        <div class="clearfix"></div>
+        <p class="blau col-lg-4 col-md-4 col-sm-10 col-xs-10">Els anys 50, la societat “Explotaciones Agrícolas Pedro Franch Casanova, S.A.”, administradora de Buda, adquereix tres llaüts construïts a Tortosa pel conegut 
         calafat Isaïes Vilàs Panisello: la “Pinta”, la “Niña” i la “Santa Maria”. Amb aquestes tres embarcacions es construiria la barcassa “Isla de Buda”, inscrita com 
         a plataforma flotante para tráfico del río Ebro, ja motoritzada. Va funcionar fins a mitjans dels anys 90, per creuar transversalment el riu des de la zona de 
         Riumar, on actualment es troben els vaixells turístics, fins a l’illa.</p>
+        <div class="clearfix"></div>
+        <div id="foto4-2botons" class="boto">
+            <img id="foto4-2boto1" class="blau" src="img/play.png" alt="reproduir video">
+            <img id="foto4-2boto2" class="blau" src="img/play.png" alt="reproduir video">
+            <img id="foto4-2boto3" class="blau" src="img/play.png" alt="reproduir video">
+        </div>
+    </div>
+    <p id="foto4-2peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Foto: Arxiu Museu de les Terres de l’Ebre</p>
 </div>
-<div class="blau" id="play4">
-    <img id="passarro2" src="img/play.png" alt="reproduir video pas sarro">
-    <img id="guillermobores" src="img/play.png" alt="reproduir video de Guillermo Borés">
-    <img id="recupllaguts" src="img/play.png" alt="reproduir video sobre la recuperació dels llaguts">
+
+<div class="final text-center">
+    <h2>Moltes felicitats!, has acabat aquesta investigació.</h2>
+    <h3>Vols continuar explorant l’illa de Buda?</h3>
+    <a href="../02genesifar"><img src="../menu/02genesifar.jpg" alt=""/><br><br>LA GÈNESI DEL FAR DE BUDA</a>
 </div>
-<div class="videopopup">
-    <div id="videosapartat4"></div>
-</div>
-<script>
-    $('#passarro2').on('click',function(){
-        $('body').off('mousewheel');
-        $('#videosapartat4').load('apartat4video1.html',function(){
-            $('.videopopup').show();
-        });
-        
-    });
-    $('#guillermobores').on('click',function(){
-        $('body').off('mousewheel');
-        $('#videosapartat4').load('apartat4video2.html',function(){
-            $('.videopopup').show();
-        });
-    });
-    $('#recupllaguts').on('click',function(){
-        $('body').off('mousewheel');
-        $('#videosapartat4').load('apartat4video3.html',function(){
-            $('.videopopup').show();
-        });
-    });
-    function tancarvideo4(){
-        $('.videopopup').hide();
-        $('#videosapartat4').html('');
-        $('body').on('mousewheel',function(e){
-            controlMouse(e);
-        });
-    }
-</script>

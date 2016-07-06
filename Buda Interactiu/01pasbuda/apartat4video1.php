@@ -4,8 +4,15 @@
     <source src="video/Sarro_PasBarca_2.webm" type="video/webm">
 </video>
 <div class="blau">
-    <img src="img/tancar.png" alt="icona tancar" onclick="tancarvideo4()"/>
+    <img src="img/tancar.png" alt="icona tancar" onclick="tancarvideo()"/>
 </div>
 <div class="groc">
-    Pas de Buda pel riu Ebre.<br/>Filmació: Artur Sarró(dècada de 1960
+    Pas de Buda pel riu Ebre.<br/>Filmació: Artur Sarró(dècada de 1960)
 </div>
+<?php
+    if (isset($_COOKIE['personatge'])){ ?>
+<div class="guardar">
+    <img src="../img/save.png" alt="icona guardar" data-video="01pasbuda/video/Sarro_PasBarca_2" data-descripcio="Pas de Buda pel riu Ebre.<br/>Filmació: Artur Sarró(dècada de 1960)" onclick="guardarVideo(this)"/>
+</div>
+    <?php }
+?>

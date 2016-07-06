@@ -16,7 +16,7 @@ toastr.options = {
   "hideMethod": "fadeOut"
 };
 
-var delay = 500;
+var delay = 300;
 var timeout = null;
 $(window).bind('wheel',function(e){
     clearTimeout(timeout);
