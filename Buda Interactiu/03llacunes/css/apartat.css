@@ -275,7 +275,7 @@
 #foto5-1{
     top: 100%;
     background-image: url('../video/Dia_1_Tortugues_bn.jpg');
-    background-position: center center;
+    background-position: center top;
 }
 #foto5-1text{
     position: absolute;
@@ -314,172 +314,74 @@
     color: white;
     padding: 30px;
 }
-#apartat6{display: none;}
-/* 
-#animals1{
-    position: absolute;
-    top: 100px;
-    left: 100%;
+#foto5-1video{
+    top: 0;
+    opacity: 0;
 }
-.col-md-4{
-    position: relative;
-    height: 40vh;
-    display: inline-block;
-    vertical-align: bottom;
-    left: 600px;
-}
-.col-md-4 img{
-    max-width: 100%;
-    max-height: 100%;
-    vertical-align: bottom;
-}
-.col-md-4 p{
-    margin-top: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 70%;
-    text-transform: uppercase;
-    padding: 10px;
-    font-size: 1.8rem;
-}
-#animals2{
-    position: absolute;
-    top: 100px;
-    left: 100%;
-    vertical-align: bottom;
-}
-#apartat5{
-    display: none;
-}
-#foto5tortugues{
-    position: absolute;
+#foto5-2{
     top: 100%;
-    z-index: -10;
-    opacity: 1;
+    background-image: url('../video/Dia_2_Tortugues_bn.jpg');
+    background-position: center top;
 }
-#foto5tortugues img{
-    min-height: 100vh;
-    min-width: 100%;
-}
-#text5-1{
+#foto5-2text{
     position: absolute;
-    top: -100%;
-    left: 100px;
+    top: 210%;
 }
-#text5-1 p{
-    width: 37%;
-    color: white;
-    line-height: inherit;
-    margin-bottom: 15px;
-    padding: 25px;
+#foto5-2text p:first-child{
     position: relative;
-    font-size: 1.8rem;
-    top: -200px;
+    top: 0;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
 }
-#text5-1 h2{
+#foto5-2text p:last-child{
     position: relative;
+    top: 300px;
+    color: #F58431;
+    padding: 30px;
+}
+#foto5-2video{
+    top: 0;
+    opacity: 0;
+}
+#apartat6{display: none;}
+#foto6-1{
+    top: 100%;
+    background-image: url('../foto/_MG_8146.jpg');
+    background-position: center center;
+}
+#foto6-1text{
+    position: absolute;
+    top: -220%;
+}
+#foto6-1text h2{
+    position: relative;
+    top: 0;
     color: white;
-    padding: 15px;
-    font-size: 7rem;
+    padding: 20px;
+    font-size: 3.5vw;
     text-transform: uppercase;
     font-weight: 600;
-    line-height: 1;
-    width: 75%;
-    top: 0px;
+    line-height: 1 !important;
 }
-#tapa5-1{
-    opacity: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -9;
-}
-#text5-2{
-    position: absolute;
-    width: 32%;
-    bottom: 100%;
-    left: 50px;
-}
-#text5-2 .negre{
+#foto6-1text p{
     position: relative;
-    color: #F58431;
-    font-size: 1.9rem;
-    margin-bottom: 20px;
-    z-index: -9;
-    padding: 20px;
-    width: 237px;
-    text-align: center;
     top: -300px;
-}
-#text5-2 .taronga{
-    position: relative;
-    font-size: 1.9rem;
     color: white;
-    z-index: -9;
-    padding: 20px;
-    line-height: 1.2;
-    top: 0px;
+    padding: 30px;
 }
-#video5-1fons{
-    min-height: 100vh;
-    min-width: 100%;
+#foto6-1text2{
     position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -10;
-    opacity: 0;
+    top: 15%;
+    left: 150%;
+    z-index: 10;
 }
-#foto5-2tortugues{
-    position: absolute;
-    top: 100%;
-    z-index: -10;
-    opacity: 1;
-}
-#foto5-2tortugues img{
-    min-height: 100vh;
-    min-width: 100%;
-}
-#text5-3{
-    position: absolute;
-    width: 32%;
-    top: 100%;
-    right: 50px;
-}
-#text5-3 .taronga{
-    position: relative;
+#foto6-1text2 p{
     color: white;
-    font-size: 1.9rem;
-    margin-bottom: 20px;
-    z-index: -9;
-    padding: 7px;
-    width: 185px;
-    text-align: center;
-    top: 0px;
-    text-transform: uppercase;
+    padding: 30px;
 }
-#text5-3 .blanc{
-    position: relative;
-    font-size: 1.9rem;
-    color: #F58431;
-    z-index: -9;
-    padding: 20px;
-    line-height: 1.2;
-    top: 300px;
-}
-#video5-2fons{
-    min-height: 100vh;
-    min-width: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -10;
-    opacity: 0;
-}
-#apartat6{
-    display: none;
-}
+
+/*
 #foto6valor{
     position: absolute;
     top: 100%;
