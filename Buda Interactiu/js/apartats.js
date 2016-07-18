@@ -16,14 +16,15 @@ toastr.options = {
   "hideMethod": "fadeOut"
 };
 
-var delay = 300;
-var timeout = null;
-$(window).bind('wheel',function(e){
-    clearTimeout(timeout);
-    timeout = setTimeout(function(){
+function ratoli(){
+    $(window).bind('wheel',function(e){
         controlMouse(e.originalEvent);
-    },delay);
-});
+    });
+    $(document).keydown(function(e){
+        tecla = e.which;
+        controlMouse(tecla);
+    });
+}
 
 function passar(id){
     diapositiva(id);
@@ -37,12 +38,12 @@ function passar(id){
 function tancarvideo(){
     $('.videopopup').hide();
     $('#videos').html('');
-    activaEvents();
+    ratoli();
 }
 
 function video(boto,video){
     $(boto).click(function(){
-        $('body').off('mousewheel');
+        $(window).unbind('wheel');
         $(document).off( "keydown" );
         $('#videos').load(video,function(){
             $('.videopopup').show();
@@ -51,7 +52,7 @@ function video(boto,video){
 }
 function slider(boto,div){
     $(boto).click(function(){
-        $('body').off('mousewheel');
+        $(window).unbind('wheel');
         $(document).off( "keydown" );
         $(div).show();
         $(div+' .sliderfotos').slick({
@@ -66,7 +67,7 @@ function slider(boto,div){
 }
 function foto(boto,div){
     $(boto).click(function(){
-        $('body').off('mousewheel');
+        $(window).unbind('wheel');
         $(document).off( "keydown" );
         $(div).show();
         $(div).click(function(){

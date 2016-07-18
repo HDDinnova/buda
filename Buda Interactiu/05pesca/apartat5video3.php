@@ -4,8 +4,15 @@
     <source src="video/Josepet_PerduaPesca.webm" type="video/webm">
 </video>
 <div class="blau">
-    <img src="img/tancar.png" alt="icona tancar" onclick="tancarvideo4()"/>
+    <img src="img/tancar.png" alt="icona tancar" onclick="tancarvideo()"/>
 </div>
 <div class="groc">
     Josepet explica com a canviat la pesca a Buda 
 </div>
+<?php
+    if (isset($_COOKIE['personatge'])){ ?>
+<div class="guardar">
+    <img src="../img/save.png" alt="icona guardar" data-video="05pesca/video/Josepet_PerduaPesca" data-descripcio="Josepet explica com a canviat la pesca a Buda" onclick="guardarVideo(this)"/>
+</div>
+    <?php }
+?>

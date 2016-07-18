@@ -84,7 +84,8 @@
                         $('#mi').animate({
                             bottom: '0'
                         }, 200);
-                        $('body').off('mousewheel');
+                        $(window).unbind('wheel');
+                        $(document).off( "keydown" );
                     });
                 });
             });

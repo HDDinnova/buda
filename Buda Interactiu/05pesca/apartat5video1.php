@@ -4,8 +4,15 @@
     <source src="video/PepeSapinya_MoltPeixABuda.webm" type="video/webm">
 </video>
 <div class="blau">
-    <img src="img/tancar.png" alt="icona tancar" onclick="tancarvideo4()"/>
+    <img src="img/tancar.png" alt="icona tancar" onclick="tancarvideo()"/>
 </div>
 <div class="groc">
     Pepe Sapiña, navegant històric de l’Ebre comenta l’abundància de peix que hi havia als entorns de l’illa de Buda.
 </div>
+<?php
+    if (isset($_COOKIE['personatge'])){ ?>
+<div class="guardar">
+    <img src="../img/save.png" alt="icona guardar" data-video="05pesca/video/PepeSapinya_MoltPeixABuda" data-descripcio="Pepe Sapiña, navegant històric de l’Ebre comenta l’abundància de peix que hi havia als entorns de l’illa de Buda." onclick="guardarVideo(this)"/>
+</div>
+    <?php }
+?>

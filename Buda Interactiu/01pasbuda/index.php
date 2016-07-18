@@ -30,7 +30,7 @@
         </div>
         <!--Fi menú lateral-->
         <div class="containerapartat" id="apartat1">
-            <div id="foto1-1" class="videofons">
+            <div id="foto1-1" class="videofull">
                 <video poster="video/08_VoraRiu_1.jpg">
                     <source src="video/08_VoraRiu_1.mp4" type="video/mp4">
                     <source src="video/08_VoraRiu_1.ogg" type="video/ogg">
@@ -84,7 +84,8 @@
                     $('#mi').animate({
                         bottom: '0'
                     }, 200);
-                    $('body').off('mousewheel');
+                    $(window).unbind('wheel');
+                    $(document).off( "keydown" );
                 });
             });
         });

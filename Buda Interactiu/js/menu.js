@@ -3,15 +3,14 @@ function menu(){
         $('.menu').animate({
           right: '0px'
         }, 200);
-        $('body').off('mousewheel');
+        $(window).unbind('wheel');
+        $(document).off( "keydown" );
     });
     $('#tancamenu').click(function() {
       $('.menu').animate({
         right: "-285px"
       }, 200);
-      $('body').on('mousewheel',function(e){
-          controlMouse(e);
-      });
+      ratoli()
     });
     $('#bso').click(function(){
         if($('#audio')[0].paused){
@@ -23,7 +22,8 @@ function menu(){
     });
     $('#bpeli').click(function(){
         $('body').append("<div id='pelicula'><div>");
-        $('body').off('mousewheel');
+        $(window).unbind('wheel');
+        $(document).off( "keydown" );
         $.ajax({
             url: "../pelicula.html",
             context: document.body
@@ -33,9 +33,7 @@ function menu(){
                 console.log('Tancar');
                 $('#zonaactiva').off('click');
                 $('#pelicula').remove();
-                $('body').on('mousewheel',function(e){
-                    controlMouse(e);
-                });
+                ratoli();
             });
         }).error(function(){
             $('#pelicula').load('pelicula.html',function(){
@@ -43,16 +41,15 @@ function menu(){
                     console.log('Tancar');
                     $('#zonaactiva').off('click');
                     $('#pelicula').remove();
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
+                    ratoli();
                 });
             });
         });
     });
     $('#bcredits').click(function(){
         $('body').append("<div id='credits'><div>");
-        $('body').off('mousewheel');
+        $(window).unbind('wheel');
+        $(document).off( "keydown" );
         $.ajax({
             url: "../credits.html",
             context: document.body
@@ -62,9 +59,7 @@ function menu(){
                 console.log('Tancar');
                 $('#zonaactiva').off('click');
                 $('#credits').remove();
-                $('body').on('mousewheel',function(e){
-                    controlMouse(e);
-                });
+                ratoli();
             });
         }).error(function(){
             $('#credits').load('credits.html',function(){
@@ -72,9 +67,7 @@ function menu(){
                     console.log('Tancar');
                     $('#zonaactiva').off('click');
                     $('#credits').remove();
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
+                    ratoli()
                 });
             });
         });

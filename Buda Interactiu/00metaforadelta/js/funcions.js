@@ -32,7 +32,8 @@ $('#mi a').click(function(){
     });
 });
 function controlMouse(e){
-    console.log(e);
+    $(window).unbind('wheel');
+    $(document).off( "keydown" );
     if(e.deltaY>0 || e==40){
         switch (pos) {
             case 10:
@@ -57,7 +58,7 @@ function controlMouse(e){
                 passar(17);
                 break;
         }
-    } else if(e.deltaY<0) {
+    } else if(e.deltaY<0 || e==38) {
         switch (pos) {
             case 11:
                 passar(10);
@@ -89,9 +90,10 @@ function diapositiva(id){
                 .fromTo($('#foto1-1text h2'),2,{top:'-300px'},{top:'0',ease:Power3.easeInOut},'-=1.8')
                 .fromTo($('#foto1-1peu'),2,{left:'-50%'},{left:'0',ease:Power3.easeInOut},'-=1.8')
                 .fromTo($('.scroll'),2,{bottom:'-50%'},{bottom:'1.5%',ease:Power3.easeInOut},'-=1.8');
+            diapo1.addCallback(ratoli);
             break;
         case 10:
-            diapo2.reverse(0);
+            diapo2.tweenTo(0, {onComplete:ratoli});
             break;
         case 11:
             diapo2 = new TimelineMax();
@@ -102,19 +104,21 @@ function diapositiva(id){
                 .fromTo($('#foto1-1 .tapa'),2,{autoAlpha:'0'},{autoAlpha:'.6',ease:Power3.easeInOut},'-=1.8')
                 .fromTo($('#foto1-1text2'),2,{top:'-50%'},{top:'10%',ease:Power3.easeInOut},'-=1.8')
                 .fromTo($('#foto1-1text2 p'),2,{top:'-300px'},{top:'0',ease:Power3.easeInOut},'-=1.8');
+            diapo2.addCallback(ratoli);
             video('#foto1-1i','apartat1video.php');
             break;
         case 110:
-            diapo12.reverse(0);
+            diapo12.tweenTo(0, {onComplete:ratoli});
             break;
         case 12:        
             diapo12 = new TimelineMax();
             diapo12.fromTo($('#foto1-1b'),2,{top:'0'},{top:'300px',ease:Power3.easeInOut})
                     .fromTo($('#foto1-1text2'),2,{top:'10%'},{top:'150%',ease:Power3.easeInOut},'-=1.8')
                     .fromTo($('#foto1-1text3'),2,{bottom:'110%'},{bottom:'10%',ease:Power3.easeInOut},'-=1.8');
+            diapo12.addCallback(ratoli);
             break;
         case 120:     
-            diapo13.reverse(0);  
+            diapo13.tweenTo(0, {onComplete:ratoli});
             $('#foto1-1 .f').each(function(){
                 $(this).delay(pausa).animate({
                     'top':'-80%',
@@ -127,6 +131,7 @@ function diapositiva(id){
             diapo13 = new TimelineMax();
             diapo13.fromTo($('#foto1-1text3'),2,{bottom:'10%'},{bottom:'-90%',ease:Power3.easeInOut})
                     .fromTo($('#foto1-1peufotos'),2,{left:'-50%'},{left:'0',ease:Power3.easeInOut},'-=1.8');
+            diapo13.addCallback(ratoli);
             var angle=5;
             var posi=18;
             var pausa=200;
@@ -144,7 +149,7 @@ function diapositiva(id){
             $('#apartat2').load('apartat2.php');
             break;
         case 130:
-            diapo14.reverse(0);
+            diapo14.tweenTo(0, {onComplete:ratoli});
             var pausa=800;
             var posi=18;
             $('#foto1-1 .f').each(function(){
@@ -173,9 +178,10 @@ function diapositiva(id){
                     .fromTo($('#foto1-2text'),2,{top:'150%'},{top:'40%',ease:Power3.easeInOut},'-=1.8')
                     .fromTo($('#foto1-2text p'),2,{top:'300px'},{top:'0',ease:Power3.easeInOut},'-=1.8')
                     .fromTo($('#foto1-2peu'),2,{left:'-50%'},{left:'0',ease:Power3.easeInOut},'-=1.8');
+            diapo14.addCallback(ratoli);
             break;
         case 140:
-            diapo15.reverse(0);
+            diapo15.tweenTo(0, {onComplete:ratoli});
             break;
         case 15:
             diapo15 = new TimelineMax();
@@ -186,12 +192,13 @@ function diapositiva(id){
                     .fromTo($('#foto1-2text2'),2,{bottom:'-90%'},{bottom:'10%',ease:Power3.easeInOut},'-=1.8')
                     .fromTo($('#foto1-2b1'),2,{top:'300px'},{top:'0',ease:Power3.easeInOut},'-=1.8')
                     .fromTo($('#foto1-2b2'),2,{top:'300px'},{top:'0',ease:Power3.easeInOut},'-=1.8');
+            diapo15.addCallback(ratoli);
             video('#foto1-2i1','apartat2video1.php');
             video('#foto1-2i2','apartat2video2.php');
             break;
         case 150:
             $('#foto1-3 video')[0].pause();
-            diapo16.reverse(0);
+            diapo16.tweenTo(0, {onComplete:ratoli});
             break;
         case 16:
             diapo16 = new TimelineMax();
@@ -203,6 +210,7 @@ function diapositiva(id){
                     .fromTo($('#foto1-3text'),2,{top:'110%'},{top:'10%',ease:Power3.easeInOut},'-=1.8')
                     .fromTo($('#foto1-3b1'),2,{top:'300px'},{top:'0',ease:Power3.easeInOut},'-=1.8')
                     .fromTo($('#foto1-3b2'),2,{top:'300px'},{top:'0',onComplete:foto13play(),ease:Power3.easeInOut},'-=1.8');
+            diapo16.addCallback(ratoli);
             function foto13play(){
                 $('#foto1-3 video')[0].play();
             }
