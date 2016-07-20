@@ -9,3 +9,10 @@
 <div class="groc">
     Animació del vapor Anita al pont de fusta.
 </div>
+<?php
+    if (isset($_COOKIE['personatge'])){ ?>
+<div class="guardar">
+    <img src="../img/save.png" alt="icona guardar" data-video="06mas/video/0558_PontFusta_Vaixell" data-descripcio="Animació del vapor Anita al pont de fusta." onclick="guardarVideo(this)"/>
+</div>
+    <?php }
+?>

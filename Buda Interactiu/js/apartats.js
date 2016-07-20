@@ -61,7 +61,7 @@ function slider(boto,div){
         $(div+' .blau').click(function(){
             $(div).hide();
             $(div+' .sliderfotos').slick('unslick');
-            activaEvents();
+            ratoli();
         });
     });
 }
@@ -72,7 +72,26 @@ function foto(boto,div){
         $(div).show();
         $(div).click(function(){
             $(div).hide();
-            activaEvents();
+            ratoli();
+        });
+    });
+}
+function fotozoom(boto,div,imatge){
+    $(boto || imatge).click(function(){
+        $(window).unbind('wheel');
+        $(document).off( "keydown" );
+        $(div).show();
+        $(imatge).elevateZoom({
+            scrollZoom : true,
+            zoomType: "lens",
+            lensShape: "square",
+            loadingIcon: "true",
+            lensSize: 400
+        });
+        $(div).click(function(){
+            $(this).hide();
+            $('.zoomContainer').remove();
+            ratoli();
         });
     });
 }

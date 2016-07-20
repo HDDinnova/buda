@@ -1,461 +1,202 @@
-.container{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    z-index: -1;
-}
-.videopopup{
-    position: absolute;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-    background-color: rgba(0,0,0,.7);
-}
-.videopopup #videos{
-    display: block;
-    margin-top: 100px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 55%;
-}
-#videos video{
-    width: 95%;
-}
-#videos .groc{
-    position: absolute;
-    margin-left: -200px;
-    margin-top: -100px;
-    width: 240px;
-    padding: 5px;
-}
-#videos .blau{
-    padding: 5px;
-    display: block;
-    width: 30px;
-    float: right;
-    cursor: pointer;
-}
-#videos .blau img{
-    height: 20px;
-}
-.scroll{
-    position: absolute;
-    width: 100vw;
-    bottom: -10%;
-    left: 43%;
-    z-index: 0;
-}
-.scroll img{
-    display: block;
-    margin-right: auto;
-    margin-bottom: auto;
-}
 #foto1-1{
-    min-height: 100vh;
-    min-width: 100%;
-    position: absolute;
-    bottom: -100%;
+    top: 100%;
     left: 0;
-    z-index: -10;
     background-image: url('../foto/_MG_8112.jpg');
-    background-size: cover;
     background-position: center center;
 }
 #foto1-1text{
     position: absolute;
-    bottom: 150%;
-    left: 100px;
-    display: none;
+    bottom: 215%;
 }
 #foto1-1text h2{
-    position: relative;
     color: white;
-    padding: 30px;
-    font-size: 9rem;
+    padding: 15px;
+    font-size: 6vw;
     text-transform: uppercase;
     font-weight: 600;
-    width: 86rem;
-}
-#foto1-1peu{
-    position: absolute;
-    color: white;
-    width: 15%;
-    left: 100px;
-    bottom: -50%;
 }
 #foto1-2{
-    min-height: 100vh;
-    min-width: 100%;
-    position: absolute;
-    bottom: -100%;
+    top: 100%;
     left: 0;
-    z-index: -10;
     background-image: url('../foto/buda-2-.jpg');
-    background-size: cover;
     background-position: center center;
 }
 #foto1-2text{
     position: absolute;
-    top: -150%;
-    left: 100px;
-    width: 35%;
+    bottom: 215%;
 }
 #foto1-2text p{
-    position: relative;
     color: white;
-    padding: 30px;
-    font-size: 2rem;
-}
-#foto1-2peu{
-    position: absolute;
-    color: white;
-    width: 15%;
-    left: -50%;
-    bottom: 10px;
+    padding: 20px;
 }
 #foto1-3{
-    min-height: 100vh;
-    min-width: 100%;
-    position: absolute;
-    bottom: -100%;
+    top: 100%;
     left: 0;
-    z-index: -10;
+}
+#foto1-3a{
+    top: 0;
+    left: 0;
     background-image: url('../foto/Santi087.jpg');
-    background-size: cover;
+    background-position: center center;
+}
+#foto1-3b{
+    top: 0;
+    left: 100%;
+    background-image: url('../foto/Santi141.jpg');
     background-position: center center;
 }
 #foto1-3text{
     position: absolute;
-    top: -150%;
-    right: 100px;
-    width: 50%;
-}
-#foto1-3text img{
-    width: 100%;
+    top: -210%;
 }
 #foto1-3text p{
     color: #F58431;
-    padding: 30px;
-    font-size: 3rem;
-    font-weight: 600;
+    font-size: 1.8vw;
+    position: relative;
+    top: 0
 }
-#foto1-3peu{
-    position: absolute;
-    color: white;
-    width: 15%;
-    left: -50%;
-    bottom: 10px;
-}
-#foto1-3b{
-    min-height: 100vh;
-    min-width: 100%;
-    position: absolute;
-    bottom:0;
-    left: -100%;
-    z-index: -10;
-    background-image: url('../foto/Santi141.jpg');
-    background-size: cover;
-    background-position: center center;
+#foto1-3text img{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    top: -300px;
 }
 #foto1-4{
-    min-height: 100vh;
-    min-width: 100%;
-    position: absolute;
-    bottom: -100%;
+    top: -100%;
     left: 0;
-    z-index: -10;
+}
+#foto1-4a{
+    top: 0;
+    left: 0;
     background-image: url('../foto/Santi228.jpg');
-    background-size: cover;
+    background-position: center center;
+}
+#foto1-4b{
+    top: 0;
+    left: 100%;
+    background-image: url('../foto/Santi148.jpg');
+    background-position: center center;
+}
+#foto1-4c{
+    top: 0;
+    left: 100%;
+    background-image: url('../foto/Santi156.jpg');
     background-position: center center;
 }
 #foto1-4text{
     position: absolute;
-    top: -150%;
-    right: 100px;
-    width: 35%;
+    top: -210%;
 }
 #foto1-4text p{
     color: #F58431;
-    padding: 30px;
-    font-size: 3rem;
-    font-weight: 600;
-}
-#foto1-4peu{
-    position: absolute;
-    color: white;
-    width: 15%;
-    left: -50%;
-    bottom: 10px;
-}
-#foto1-4b{
-    min-height: 100vh;
-    min-width: 100%;
-    position: absolute;
-    bottom:0;
-    left: -100%;
-    z-index: -10;
-    background-image: url('../foto/Santi148.jpg');
-    background-size: cover;
-    background-position: center center;
-}
-#foto1-4c{
-    min-height: 100vh;
-    min-width: 100%;
-    position: absolute;
-    bottom:0;
-    left: -100%;
-    z-index: -10;
-    background-image: url('../foto/Santi156.jpg');
-    background-size: cover;
-    background-position: center center;
+    font-size: 1.8vw;
 }
 #foto1-5{
-    min-height: 100vh;
-    min-width: 100%;
-    position: absolute;
-    bottom: 100%;
+    top: -100%;
     left: 0;
-    z-index: -10;
+}
+#foto1-5a{
+    top: 0;
+    left: 0;
     background-image: url('../foto/Santi163_taronga.jpg');
-    background-size: cover;
+    background-position: center center;
+}
+#foto1-5b{
+    top: 0;
+    left: 100%;
+    background-image: url('../foto/Santi065.jpg');
     background-position: center center;
 }
 #foto1-5text{
     position: absolute;
-    top: -150%;
-    right: 100px;
-    width: 35%;
+    top: -240%;
 }
 #foto1-5text p{
     color: #F58431;
-    padding: 30px;
-    font-size: 1.8rem;
+    padding: 20px;
 }
 #foto1-5peu{
-    position: absolute;
     color: #F58431;
-    width: 15%;
-    left: -50%;
-    bottom: 10px;
-}
-#foto1-5b{
-    min-height: 100vh;
-    min-width: 100%;
-    position: absolute;
-    bottom:0;
-    left: -100%;
-    z-index: -10;
-    background-image: url('../foto/Santi065.jpg');
-    background-size: cover;
-    background-position: center center;
 }
 #foto1-6{
-    min-height: 100vh;
-    min-width: 100%;
-    position: absolute;
-    bottom: 100%;
+    top: -100%;
     left: 0;
-    z-index: -10;
     background-image: url('../foto/Santi130.jpg');
-    background-size: cover;
     background-position: center center;
 }
 #foto1-6text{
     position: absolute;
-    top: -150%;
-    right: 100px;
-    width: 35%;
+    top: -215%;
 }
 #foto1-6text p{
     color: white;
-    padding: 30px;
-    font-size: 1.8rem;
+    padding: 20px;
 }
-#foto1-6peu{
-    position: absolute;
-    color: white;
-    width: 15%;
-    left: -50%;
-    bottom: 10px;
-}
-#foto1-7{
-    min-height: 100vh;
-    min-width: 100%;
-    position: absolute;
-    bottom: 0;
+#apartat2{display: none;}
+#foto2-1{
+    top: 0;
     left: -100%;
-    z-index: -10;
     background-image: url('../foto/Santi064_taronga.jpg');
-    background-size: cover;
     background-position: center center;
 }
-#foto1-7peu{
-    position: absolute;
-    left: -50%;
-    bottom: 10px;
-    width: 250px;
-}
-#recull1-7{
+#foto2-1peu img{
     position: relative;
-    margin-bottom: 10px;
-    margin-left: 255px;
-    z-index: 5;
     left: 0;
 }
-#recull1-7 img{
-    background-color: rgba(102,168,200,.6);
-}
-#recull1-7 img:hover{
-    background-color: #66A8C8;
-    cursor: pointer;
-}
-#foto1-7peu p{
+#foto2-1peu p{
     position: relative;
-    color: white;
     left: -300px;
-    padding: 5px;
+    padding: 10px;
 }
-#recull1-7foto{
-    min-height: 100vh;
-    min-width: 100%;
-    position: absolute;
-    bottom: 0;
+#foto2-2{
+    top: -100%;
     left: 0;
-    z-index: 10;
-    background-color: rgba(0,0,0,.7);
-    display: none;
-}
-#recull1-7fotozoom{
-    display: block;
-    height: 80vh;
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-}
-#foto1-8{
-    min-height: 100vh;
-    min-width: 100%;
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    z-index: -10;
     background-image: url('../foto/Santi081.jpg');
-    background-size: cover;
     background-position: center center;
 }
-#foto1-8text{
+#foto2-2text{
     position: absolute;
-    top: -150%;
-    right: 100px;
-    width: 35%;
+    bottom: -210%;
 }
-#foto1-8text p{
+#foto2-2text p{
+    color: white;
+    font-size: 1.8vw;
+    position: relative;
+    top: 300px
+}
+#foto2-2boto1{
     position: relative;
     top: 0;
+}
+#foto2-2boto2{
+    position: relative;
+    top: 300px;
+}
+#foto2-2boto3{
+    position: relative;
+    top: 300px;
+}
+#foto2-3{
+    top: -100%;
+    left: 0;
+    background-image: url('../foto/Santi161.jpg');
+    background-position: center center;
+}
+#foto2-3text{
+    position: absolute;
+    bottom: 215%;
+}
+#foto2-3text p{
     color: white;
-    font-weight: 600;
-    font-size: 2.6rem;
+    padding: 20px;
 }
-#foto1-8peu{
-    position: absolute;
-    left: -50%;
-    bottom: 10px;
-    color: white;
-}
-#recull1-8{
-    position: relative;
-    margin-bottom: 10px;
-    margin-left: 190px;
-    z-index: 5;
-    left: 0;
-    top: -300px;
-}
-#fotos1-8{
-    position: relative;
-    margin-bottom: 10px;
-    margin-left: 95px;
-    z-index: 5;
-    left: 0;
-    top: -300px;
-}
-#fotos1-8fotos{
-    display: none;
-    height: 100vh;
-    width: 100%;
-    position: absolute;
-    background-color: rgba(0,0,0,.6);
-    z-index: 5;
-}
-#fotos1-8fotos .blau{
-    position: absolute;
-    top: 10vh;
-    right: 2.5vw;
-    display: block;
-    width: 30px;
-    float: right;
-    cursor: pointer;
-    padding: 5px;
-}
-#fotos1-8fotos .blau img{
-    height: 20px;
-}
-#fotos1-8fotos .groc{
-    position: absolute;
-    left: 3vw;
-    top: 85vh;
-    width: 240px;
-    padding: 5px;
-}
-#fotos1-8slider{
-    height: 80vh;
-    width: 90vw;
-    margin-left: 5vw;
-    margin-top: 10vh;
-}
-#fotos1-8slider div img{
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-#video1-8{
-    position: relative;
-    margin-bottom: 30px;
-    z-index: 5;
-    left: 0;
-    top: -300px;
-}
-#foto1-8text img{
-    background-color: rgba(245,132,49,.6);
-}
-#foto1-8text img:hover{
-    background-color: #F58431;
-    cursor: pointer;
-}
-#recull1-8foto{
-    min-height: 100vh;
-    min-width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 10;
-    background-color: rgba(0,0,0,.7);
-    display: none;
-}
-#recull1-8fotozoom{
-    display: block;
-    height: 80vh;
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
+
+#apartat3{display: none;}
+#apartat4{display: none;}
+/*
 #foto1-9{
     min-height: 100vh;
     min-width: 100%;
@@ -1113,4 +854,4 @@
 
 #apartat2{display: none;}
 #apartat3{display: none;}
-#apartat4{display: none;}
+#apartat4{display: none;}*/

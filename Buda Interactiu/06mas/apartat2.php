@@ -1,161 +1,127 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible">
-        <title>Buda, l'illa del Delta</title>
-        <meta name="description" content="Documental interactiu sobre Buda, la illa del Delta">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<div id="foto2-1" class="fotofons">
+    <div id="foto2-1peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-3 col-md-3 col-sm-4 col-xs-4">
+        <div id="foto2-1boto" class="boto col-lg-offset-10 col-md-offset-10">
+            <img class="blau" src="img/foto.png" alt="mostrar recull diari">
+        </div>
+        <div class="clearfix"></div>
+        <p class="taronga col-lg-10 col-md-10">Arxiu família Borés<br>(gentilesa Museu de les Terres de l’Ebre).</p>
+    </div>
+    <div id="foto2-1foto" class="foto">
+        <img id="foto2-1fotozoom" src="foto/Diario-de-Tortosa_small.jpg" data-zoom-image="foto/Diario-de-Tortosa_large.jpg" alt="noticia"/>
+    </div>
+</div>
+<div id="foto2-2" class="fotofons">
+    <div id="foto2-2text" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-lg-offset-7 col-md-offset-7 col-sm-offset-1 col-xs-offset-1">
+        <div id="foto2-2boto1" class="boto col-lg-offset-4 col-md-offset-4">
+            <img class="taronga" src="img/text.png" alt="mostrar recull diari">
+        </div>
+        <div class="clearfix"></div>
+        <div id="foto2-2boto2" class="boto col-lg-offset-2 col-md-offset-2">
+            <img class="taronga" src="img/foto.png" alt="mostrar foto">
+        </div>
+        <div class="clearfix"></div>
+        <div id="foto2-2boto3" class="boto">
+            <img class="taronga" src="img/play.png" alt="mostrar video">
+        </div>
+        <div class="clearfix"></div>
+        <p><strong>Des de la Casa de Buda, els Pons organitzaven trobades amb convidats vinguts de Tortosa i d’altres llocs, als quals mostraven les seves propietats. Sovint aprofitaven aquestes visites de treball o d’oci per anar des de Tortosa fins a l’illa amb el vapor “Anita”, propietat també de D. Lluís Pons, qui el va fer construir.</strong></p>
+    </div>
+    <p id="foto2-2peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Foto: Guillermo Barberà</p>
+    <div id="foto2-2foto1" class="foto">
+        <img id="foto2-2fotozoom" src="foto/LVG19140729-002_small.jpg" data-zoom-image="foto/LVG19140729-002.jpg" alt="noticia"/>
+    </div>
+    <div id="foto2-2foto2" class="slider">
+        <div class="sliderfotos">
+            <div>
+                <img src="foto/Santi080.jpg" alt="Convidats a buda a bord d'un vapor"/>
+            </div>
+            <div>
+                <img src="foto/Santi082.jpg" alt="Convidats a buda a bord d'un vapor"/>
+            </div>
+            <div>
+                <img src="foto/Santi086.jpg" alt="Convidats a buda a bord d'un vapor"/>
+            </div>
+        </div>
+        <div class="blau">
+            <img src="img/tancar.png" alt="icona tancar"/>
+        </div>
+        <div class="groc">
+            Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre).
+        </div>
+    </div>
+</div>
+<div id="foto2-3" class="fotofons">
+    <div id="foto2-3text" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-lg-offset-7 col-md-offset-7 col-sm-offset-1 col-xs-offset-1">
+        <p class="taronga">Va ser també en aquests anys quan Lluís Pons, mogut pel seu interès per la caça d’aus a l’illa, organitzava tirades amb amics i coneguts, i de les quals aparéixen fins i tot referenciades en diaris de primers de segle XX. És en aquells anys quan es va constituir una societat anomenada “Coto Isla de Buda”, de la que formaven part distingides personalitats de la ciutat de Barcelona i rodalies, i que el 1917 va fer construir un edifici amb habitacions i tot tipus de comoditats per a pernoctar-hi durant les expedicions de caça.</p>
+    </div>
+    <p id="foto2-3peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Arxiu família Borés<br>(gentilesa Museu de les Terres de l’Ebre).</p>
+    <div class="tapa taronga"></div>
+    <div class="f">
+        <img id="foto1-9foto1" src="foto/Santi091.jpg" alt="Foto històrica 1 del Delta"/>
+        <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardar">
+            <img src="../img/save.png" alt="icona guardar" data-foto="06mas/foto/Santi091.jpg" data-descripcio="Foto històrica 1 del Delta" onclick="guardarFoto(this)"/>
+        </div>
+            <?php }
+        ?>
+    </div>
+    <div class="f">
+        <img id="foto1-9foto2" src="foto/Santi092.jpg" alt="Foto històrica 1 del Delta"/>
+        <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardar">
+            <img src="../img/save.png" alt="icona guardar" data-foto="06mas/foto/Santi092.jpg" data-descripcio="Foto històrica 2 del Delta" onclick="guardarFoto(this)"/>
+        </div>
+            <?php }
+        ?>
+    </div>
+    <div class="f">
+        <img id="foto1-9foto3" src="foto/Santi098.jpg" alt="Foto històrica 1 del Delta"/>
+        <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardar">
+            <img src="../img/save.png" alt="icona guardar" data-foto="06mas/foto/Santi098.jpg" data-descripcio="Foto històrica 3 del Delta" onclick="guardarFoto(this)"/>
+        </div>
+            <?php }
+        ?>
+    </div>
+    <div class="f">
+        <img id="foto1-9foto4" src="foto/Santi099.jpg" alt="Foto històrica 1 del Delta"/>
+        <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardar">
+            <img src="../img/save.png" alt="icona guardar" data-foto="06mas/foto/Santi099.jpg" data-descripcio="Foto històrica 4 del Delta" onclick="guardarFoto(this)"/>
+        </div>
+            <?php }
+        ?>
+    </div>
+    <div class="f">
+        <img id="foto1-9foto5" src="foto/Santi162.jpg" alt="Foto històrica 1 del Delta"/>
+        <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardar">
+            <img src="../img/save.png" alt="icona guardar" data-foto="06mas/foto/Santi162.jpg" data-descripcio="Foto històrica 5 del Delta" onclick="guardarFoto(this)"/>
+        </div>
+            <?php }
+        ?>
+    </div>
+    <div class="f">
+        <img id="foto1-9foto6" src="foto/Santi220.jpg" alt="Foto històrica 1 del Delta"/>
+        <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardar">
+            <img src="../img/save.png" alt="icona guardar" data-foto="06mas/foto/Santi220.jpg" data-descripcio="Foto històrica 6 del Delta" onclick="guardarFoto(this)"/>
+        </div>
+            <?php }
+        ?>
+    </div>
+</div>
 
-        <link href="../css/estil.css" rel="stylesheet" type="text/css"/>
-        <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-        <link href="css/apartat.css" rel="stylesheet" type="text/css"/>
-        
-        <link href="css/slick.css" rel="stylesheet" type="text/css"/>
-        <link href="css/slick-theme.css" rel="stylesheet" type="text/css"/>
-        
-        <script src="../js/jquery-2.1.4.min.js" type="text/javascript"></script>
-    </head>
-    <body ondragover="drag_over(event)" ondrop="drop(event)">
-        <nav class="navbar navbar-default"></nav>
-        <!--Fi capçalera-->
-        <audio loop id="audio">
-            <source src="../musica/Buda Frag 6 de 7.mp3" type="audio/mpeg">
-        </audio>
-        <div id="m"></div>
-        <script>
-            $('#m').load('../menu/menu.html',function(){
-                $('nav').load('../menu/menusuperior.html',function(){
-                    menu();
-                });                
-            });
-        </script>
-        <div class="container" id="apartat1">
-            <div id="foto1-1">
-                <div id="foto1-1text">
-                    <h2 class="taronga">El Mas de Buda</h2>                
-                </div>
-                <p id="foto1-1peu">Foto: Salvador Maluquer</p>
-                <div class="scroll">
-                    <img src="img/scroll_taronga.png" alt="Fes scroll per continuar"/>
-                </div>
-            </div>
-            <div id="foto1-2">
-                <div id="foto1-2text">
-                    <p class="taronga">
-                        Tothom que ha viscut o ha penetrat algun cop dins l’illa recorda de manera especial el Mas. És d’aquelles construccions que generen una atracció particular, per la 
-                        seva blancor, per la seva senzillesa i puresa en les formes, i pel seu entorn.
-                    </p>                
-                </div>
-                <p id="foto1-2peu">Foto: Guillermo Barberà</p>
-            </div>
-            <div id="foto1-3text">
-                <div class="col-md-3">
-                    <img src="img/marca1.png" alt="icona gràfica"/>
-                </div>
-                <div class="col-md-9">
-                    <p>
-                        La fesomia del gran mas de Buda i les seves parets emblanquinades són mediterrànies, però la construcció d’alguns elements annexes, com la capella, i l’entorn del 
-                        palmerar que l’abraça, li donen un toc colonial, d’illa més aviat tropical que mediterrània. 
-                    </p>
-                </div>                                    
-            </div>
-            <p id="foto1-3peu">Arxiu família Borés<br>(gentilesa Museu de les Terres de l’Ebre).</p>
-            <div id="foto1-3"></div>
-            <div id="foto1-3b"></div>
-            <div id="foto1-4text">
-                <p>
-                    Ubicat a 100 m del llit del riu, està envoltat per arrossars. S’hi arriba després d’un màgic camí de terra, coronat per eucaliptus i palmeres. El caràcter exòtic que 
-                    pren tot aquest entorn reforça el sentiment d’evasió que hom sent en endinsar-se cap al mas.
-                </p>                                  
-            </div>
-            <p id="foto1-4peu">Arxiu família Borés<br>(gentilesa Museu de les Terres de l’Ebre).</p>
-            <div id="foto1-4"></div>
-            <div id="foto1-4b"></div>
-            <div id="foto1-4c"></div>
-            <div id="foto1-5text">
-                <p class="blanc">
-                    Segurament hi va haver una primera construcció originària del mas actual des que tenim notícies dels primers propietaris de l’illa, a partir de l’últim terç del segle 
-                    XVIII. La seva situació privilegiada prop de les lleres del riu Ebre, des del braç de Migjorn (un dels braços que rodeixaven l’illa en segles anteriors, avui ja inactiu) 
-                    i des del braç del nord, fa pensar que a partir d'aquesta construcció originària es farien posteriors arranjaments i ampliacions per part dels propietaris que ha 
-                    vingut tenint l’illa.
-                </p>                                  
-            </div>
-            <p id="foto1-5peu">Arxiu família Borés<br>(gentilesa Museu de les Terres de l’Ebre).</p>
-            <div id="foto1-5"></div>
-            <div id="foto1-5b"></div>
-            <div id="foto1-6">
-                <div id="foto1-6text">
-                    <p class="taronga">
-                        El mas que coneixem avui es va fer construir per Lluís G. Pons i Enrich, industrial i polític destacat a la Catalunya de primers de segle XX. Aquest influent diputat 
-                        a Corts pel districte de Berga, era alhora un gran empresari i inversor en negocis i propietats diverses, entre aquestes a la zona de l’Ebre. Va adquirir Buda l’any 
-                        1896 i en va ser el seu propietari fins l’any 1919. Allí hi va fer edificar una austera i espaiosa casa i també una ermita, que va ser inaugurada el febrer de 1903, en 
-                        presència del bisbe de Solsona. Un gran mas, enmig d’una illa amb barraques on vivien els jornalers, pescadors i caçadors de l’illa.
-                    </p>                                  
-                </div>
-                <p id="foto1-6peu">Arxiu família Borés<br>(gentilesa Museu de les Terres de l’Ebre).</p>
-            </div>
-            <div id="foto1-7">
-                <div id="foto1-7peu">
-                    <div id="recull1-7">
-                        <img id="foto1-7recull" src="img/foto.png" alt="veure foto recull diari">
-                    </div>
-                    <p class="taronga">Arxiu família Borés<br>(gentilesa Museu de les Terres de l’Ebre).</p>
-                </div>
-                <div id="recull1-7foto">
-                    <img id="recull1-7fotozoom" src="foto/Diario-de-Tortosa_small.jpg" data-zoom-image="foto/Diario-de-Tortosa_large.jpg" alt="noticia"/>
-                </div>
-            </div>
-            <div id="foto1-8">
-                <div id="foto1-8text">
-                    <div id="recull1-8">
-                        <img id="foto1-8recull" src="img/text.png" alt="veure foto recull diari">
-                    </div>
-                    <div id="fotos1-8">
-                        <img id="foto1-8fotos" src="img/foto.png" alt="veure fotos del vapor anita">
-                    </div>
-                    <div id="video1-8">
-                        <img id="foto1-8video" src="img/play.png" alt="veure foto recull diari">
-                    </div>
-                    <p>
-                        Des de la Casa de Buda, els Pons organitzaven trobades amb convidats vinguts de Tortosa i d’altres llocs, als quals mostraven les seves propietats. Sovint aprofitaven aquestes 
-                        visites de treball o d’oci per anar des de Tortosa fins a l’illa amb el vapor “Anita”, propietat també de D. Lluís Pons, qui el va fer construir.
-                    </p>
-                </div>
-                <p id="foto1-8peu">Arxiu família Borés<br>(gentilesa Museu de les Terres de l’Ebre).</p>
-                <div id="recull1-8foto">
-                    <img id="recull1-8fotozoom" src="foto/LVG19140729-002_small.jpg" data-zoom-image="foto/LVG19140729-002.jpg" alt="noticia"/>
-                </div>
-                <div id="fotos1-8fotos">
-                    <div id="fotos1-8slider">
-                        <div>
-                            <img src="foto/Santi080.jpg" alt="Convidats a buda a bord d'un vapor"/>
-                        </div>
-                        <div>
-                            <img src="foto/Santi082.jpg" alt="Convidats a buda a bord d'un vapor"/>
-                        </div>
-                        <div>
-                            <img src="foto/Santi086.jpg" alt="Convidats a buda a bord d'un vapor"/>
-                        </div>                        
-                    </div>
-                    <div class="blau">
-                        <img src="img/tancar.png" alt="icona tancar"/>
-                    </div>
-                    <div class="groc">
-                        Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre).
-                    </div>
-                </div>
-            </div>
-            <div id="foto1-9">
-                <div id="foto1-9text">
-                    <p class="taronga">
-                        Va ser també en aquests anys quan Lluís Pons, mogut pel seu interès per la caça d’aus a l’illa, organitzava tirades amb amics i coneguts, i de les quals aparéixen fins i tot 
-                        referenciades en diaris de primers de segle XX. És en aquells anys quan es va constituir una societat anomenada “Coto Isla de Buda”, de la que formaven part distingides 
-                        personalitats de la ciutat de Barcelona i rodalies, i que el 1917 va fer construir un edifici amb habitacions i tot tipus de comoditats per a pernoctar-hi durant les expedicions 
-                        de caça.
-                    </p>                                  
-                </div>
-                <p id="foto1-9peu">Arxiu família Borés<br>(gentilesa Museu de les Terres de l’Ebre).</p>
+
+
+<!--
+
                 <div id="foto1-9tapa" class="taronga"></div>
                 <img id="foto1-9foto1" class="f" src="foto/Santi091.jpg" alt="Foto històrica 1 del Delta" draggable="true" ondragstart="drag_start(event)"/>
                 <img id="foto1-9foto2" class="f" src="foto/Santi092.jpg" alt="Foto històrica 2 del Delta" draggable="true" ondragstart="drag_start(event)"/>
@@ -376,22 +342,4 @@
         </div>
         <div class="videopopup">
             <div id="videos"></div>
-        </div>
-    
-    <script src="js/jquery-ui.min.js" type="text/javascript"></script>
-    <script src="js/funcions.js" type="text/javascript"></script>
-    <script src="js/jquery.mousewheel.min.js" type="text/javascript"></script>
-    <script src="js/jquery-css-transform.js" type="text/javascript"></script>
-    <script src="js/jquery.rotate.js" type="text/javascript"></script>
-    <script src="../js/jquery.color.js" type="text/javascript"></script>
-    <script src="js/jquery.elevateZoom-3.0.8.min.js" type="text/javascript"></script>
-    <script src="js/slick.min.js" type="text/javascript"></script>
-    <script src="../js/menu.js" type="text/javascript"></script>
-    <script>
-        var pos = 10;
-        $(window).load(function(){
-            diapositiva1();
-        });
-    </script>
-    </body>
-</html>
+        </div>-->
