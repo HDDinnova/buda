@@ -9,3 +9,10 @@
 <div class="groc">
     Juanito i Lourdes, habitants de l’illa, recorden antics fragments de vida.
 </div>
+<?php
+    if (isset($_COOKIE['personatge'])){ ?>
+<div class="guardar">
+    <img src="../img/save.png" alt="icona guardar" data-video="06mas/video/Lourdes_Juanito_NiRadio" data-descripcio="Juanito i Lourdes, habitants de l’illa, recorden antics fragments de vida." onclick="guardarVideo(this)"/>
+</div>
+    <?php }
+?>

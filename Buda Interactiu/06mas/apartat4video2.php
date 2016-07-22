@@ -9,3 +9,10 @@
 <div class="groc">
     Romeria tradicional a l’illa de Buda per la festivitat de Sant Pere. Seqüència de la pel·lícula “Buda, l’illa del Delta”.
 </div>
+<?php
+    if (isset($_COOKIE['personatge'])){ ?>
+<div class="guardar">
+    <img src="../img/save.png" alt="icona guardar" data-video="06mas/video/Sant_Pere_missa" data-descripcio="Romeria tradicional a l’illa de Buda per la festivitat de Sant Pere. Seqüència de la pel·lícula “Buda, l’illa del Delta”." onclick="guardarVideo(this)"/>
+</div>
+    <?php }
+?>
