@@ -9,3 +9,10 @@
 <div class="groc">
     Rosa Merino explica com eren els dies de cacera a l’illa de Buda quan ella exercia de mestra dels fills dels colons.
 </div>
+<?php
+    if (isset($_COOKIE['personatge'])){ ?>
+<div class="guardar">
+    <img src="../img/save.png" alt="icona guardar" data-video="07cacera/video/Mestra_FeiaBonic-laCacera" data-descripcio="Rosa Merino explica com eren els dies de cacera a l’illa de Buda quan ella exercia de mestra dels fills dels colons." onclick="guardarVideo(this)"/>
+</div>
+    <?php }
+?>

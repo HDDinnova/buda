@@ -9,3 +9,10 @@
 <div class="groc">
     Rafel Balada explica la importància de compatibilitzar la cacera amb la conservació
 </div>
+<?php
+    if (isset($_COOKIE['personatge'])){ ?>
+<div class="guardar">
+    <img src="../img/save.png" alt="icona guardar" data-video="07cacera/video/RafelBalada_Cacera-PNatural" data-descripcio="Rafel Balada explica la importància de compatibilitzar la cacera amb la conservació" onclick="guardarVideo(this)"/>
+</div>
+    <?php }
+?>

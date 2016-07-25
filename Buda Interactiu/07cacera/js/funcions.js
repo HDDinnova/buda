@@ -1,1165 +1,434 @@
-var trans = 1200;
-var sona=true;
-var mutexvideo=false;
-var slider1=false;
-var zi=4;
 $('#bso').click(function(){
-    if(sona){
-        $('#audio')[0].pause();
-        sona=false;
-        console.log('sona: '+sona);
-    } else {
+    if($('#audio')[0].paused){
         $('#audio')[0].play();
-        sona=true;
-        console.log('sona: '+sona);
+    } else {
+        $('#audio')[0].pause();
     }
 });
+
 function controlMouse(e){
-    $('body').off('mousewheel');
-    if(e.deltaY<0){                
+    $(window).unbind('wheel');
+    $(document).off( "keydown" );
+    if(e.deltaY>0 || e==40){
         switch (pos) {
             case 10:
-                $('body').off('mousewheel');
-                diapositiva11();
-                setTimeout(function(){
-                    pos=11;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
+                passar(11);
                 break;
             case 11:
-                $('body').off('mousewheel');
-                diapositiva12();
-                setTimeout(function(){
-                    pos=12;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
+                passar(12);
                 break;
             case 12:
-                $('body').off('mousewheel');
-                diapositiva13();
-                setTimeout(function(){
-                    pos=13;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
+                passar(13);
                 break;
             case 13:
-                $('body').off('mousewheel');
-                diapositiva14();
-                setTimeout(function(){
-                    pos=14;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
+                passar(14);
                 break;
             case 14:
-                $('body').off('mousewheel');
-                diapositiva15();
-                setTimeout(function(){
-                    pos=15;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
+                passar(15);
                 break;
             case 15:
-                $('body').off('mousewheel');
-                diapositiva16();
-                setTimeout(function(){
-                    pos=16;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
+                passar(16);
                 break;
             case 16:
-                $('body').off('mousewheel');
-                diapositiva17();
-                setTimeout(function(){
-                    pos=17;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
+                passar(17);
                 break;
             case 17:
-                $('body').off('mousewheel');
-                diapositiva18();
-                setTimeout(function(){
-                    pos=18;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
+                passar(18);
                 break;
             case 18:
-                $('body').off('mousewheel');
-                diapositiva19();
-                setTimeout(function(){
-                    pos=19;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
+                passar(19);
                 break;
             case 19:
-                $('body').off('mousewheel');
-                diapositiva20();
-                setTimeout(function(){
-                    pos=20;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
+                passar(20);
                 break;
             case 20:
-                $('body').off('mousewheel');
-                diapositiva21();
-                setTimeout(function(){
-                    pos=21;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
+                passar(21);
                 break;
             case 21:
-                $('body').off('mousewheel');
-                diapositiva22();
-                setTimeout(function(){
-                    pos=22;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
+                passar(22);
                 break;
             case 22:
-                $('body').off('mousewheel');
-                diapositiva23();
-                setTimeout(function(){
-                    pos=23;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
+                passar(23);
                 break;
             case 23:
-                $('body').off('mousewheel');
-                diapositiva24();
-                setTimeout(function(){
-                    pos=24;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
+                passar(24);
                 break;
             case 24:
-                $('body').off('mousewheel');
-                diapositiva25();
-                setTimeout(function(){
-                    pos=25;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            default :
-                $('body').on('mousewheel',function(e){
-                    controlMouse(e);
-                });
-        }
-    } else if(e.deltaY>0) {
-        switch (pos) {
-            case 11:
-                $('body').off('mousewheel');
-                diapositiva10();
-                setTimeout(function(){
-                    pos=10;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            case 12:
-                $('body').off('mousewheel');
-                diapositiva11b();
-                setTimeout(function(){
-                    pos=11;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            case 13:
-                $('body').off('mousewheel');
-                diapositiva12b();
-                setTimeout(function(){
-                    pos=12;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            case 14:
-                $('body').off('mousewheel');
-                diapositiva13b();
-                setTimeout(function(){
-                    pos=13;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            case 15:
-                $('body').off('mousewheel');
-                diapositiva14b();
-                setTimeout(function(){
-                    pos=14;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            case 16:
-                $('body').off('mousewheel');
-                diapositiva15b();
-                setTimeout(function(){
-                    pos=15;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            case 17:
-                $('body').off('mousewheel');
-                diapositiva16b();
-                setTimeout(function(){
-                    pos=16;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            case 18:
-                $('body').off('mousewheel');
-                diapositiva17b();
-                setTimeout(function(){
-                    pos=17;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            case 19:
-                $('body').off('mousewheel');
-                diapositiva18b();
-                setTimeout(function(){
-                    pos=18;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            case 20:
-                $('body').off('mousewheel');
-                diapositiva19b();
-                setTimeout(function(){
-                    pos=19;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            case 21:
-                $('body').off('mousewheel');
-                diapositiva20b();
-                setTimeout(function(){
-                    pos=20;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            case 22:
-                $('body').off('mousewheel');
-                diapositiva21b();
-                setTimeout(function(){
-                    pos=21;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            case 23:
-                $('body').off('mousewheel');
-                diapositiva22b();
-                setTimeout(function(){
-                    pos=22;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
-                break;
-            case 24:
-                $('body').off('mousewheel');
-                diapositiva23b();
-                setTimeout(function(){
-                    pos=23;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
+                passar(25);
                 break;
             case 25:
-                $('body').off('mousewheel');
-                diapositiva24b();
-                setTimeout(function(){
-                    pos=24;
-                    $('body').on('mousewheel',function(e){
-                        controlMouse(e);
-                    });
-                },2000);
+                passar(26);
                 break;
-            default :
-                $('body').on('mousewheel',function(e){
-                    controlMouse(e);
-                });
+        }
+    } else if(e.deltaY<0 || e==38) {
+        switch (pos) {
+            case 11:
+                passar(10);
+                break;
+            case 12:
+                passar(110);
+                break;
+            case 13:
+                passar(120);
+                break;
+            case 14:
+                passar(130);
+                break;
+            case 15:
+                passar(140);
+                break;
+            case 16:
+                passar(150);
+                break;
+            case 17:
+                passar(160);
+                break;
+            case 18:
+                passar(170);
+                break;
+            case 19:
+                passar(180);
+                break;
+            case 20:
+                passar(190);
+                break;
+            case 21:
+                passar(200);
+                break;
+            case 22:
+                passar(210);
+                break;
+            case 23:
+                passar(220);
+                break;
+            case 24:
+                passar(230);
+                break;
+            case 25:
+                passar(240);
+                break;
         }
     }
 }
-function diapositiva1(){
-    $('#foto1-1').animate({
-        'bottom': '0'
-    },trans,'swing',function(){
-        $('#foto1-1text').show();
-        $('#foto1-1text').animate({
-            'bottom': '40%'
-        },trans,'swing');
-        $('#foto1-1peu').delay('300').animate({
-            'bottom': '10px'
-        },trans,'swing');
-        $('.scroll').delay('500').animate({
-            'bottom': '1.5%'
-        },trans,'swing',function(){            
-            $('body').on('mousewheel',function(e){
-                controlMouse(e);
+function diapositiva(id){
+    switch (id) {
+        case 1:
+            diapo1 = new TimelineMax();
+            diapo1.to($('#foto1-1'),2,{top:0,ease:Power3.easeInOut})
+                .to($('#foto1-1text'),2,{top:'40%',ease:Power3.easeInOut},'-=1.5')
+                .to($('#foto1-1peu'),2,{left:'0',ease:Power3.easeInOut},'-=1.8')
+                .to($('.scroll'),2,{bottom:'1.5%',ease:Power3.easeInOut},'-=1.8');
+            diapo1.addCallback(ratoli);
+            break;
+        case 10:
+            diapo11.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 11:
+            diapo11 = new TimelineMax();
+            diapo11.to($('.scroll'),2,{bottom:'-150%',ease:Power3.easeInOut})
+                .to($('#foto1-1peu'),2,{left:'-50%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-1text'),2,{top:'-250%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-1'),2,{top:'-100%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-2'),2,{top:'0',ease:Power3.easeInOut},'-=2')
+                .to($('#foto1-2text'),2,{top:'15%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-2boto2'),2,{top:'0',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-2boto1'),2,{top:'0',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-2text p'),2,{top:'0',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-2peu'),2,{left:'0',ease:Power3.easeInOut},'-=1.8');
+            diapo11.addCallback(ratoli);
+            slider('#foto1-2boto1','#fotos1-2fotos');
+            foto('#foto1-2boto2','#foto1-2foto');
+            video('#foto1-2boto3','apartat1video1.php');
+            break;
+        case 110:
+            diapo12.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 12:
+            diapo12 = new TimelineMax();
+            diapo12.to($('#foto1-2peu'),2,{left:'-50%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-2boto3'),2,{top:'300px',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-2boto2'),2,{top:'300px',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-2boto1'),2,{top:'300px',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-2text'),2,{top:'215%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-2'),2,{top:'-100%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-3'),2,{top:'0',ease:Power3.easeInOut},'-=2')
+                .to($('#foto1-3text'),2,{top:'10%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-3boto1'),2,{top:'0',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-3text p'),2,{top:'0',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-3peu'),2,{left:'0',ease:Power3.easeInOut},'-=1.8');
+            diapo12.addCallback(ratoli);
+            foto('#foto1-3boto2','#foto1-3foto');
+            video('#foto1-3boto1','apartat1video2.php');
+            break;
+        case 120:
+            diapo13.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 13:
+            diapo13 = new TimelineMax();
+            diapo13.to($('#foto1-3peu'),2,{left:'-50%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-3boto2'),2,{top:'300px',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-3boto1'),2,{top:'300px',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-3text'),2,{top:'210%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-3'),2,{top:'-100%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-4'),2,{top:'0',ease:Power3.easeInOut},'-=2')
+                .to($('#foto1-4text'),2,{top:'10%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-4peu'),2,{left:'0',ease:Power3.easeInOut},'-=1.8');
+            diapo13.addCallback(ratoli);
+            break;
+        case 130:
+            diapo14.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 14:
+            diapo14 = new TimelineMax();
+            diapo14.to($('#foto1-4peu'),2,{left:'-50%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-4text'),2,{top:'210%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-4'),2,{top:'-100%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-5'),2,{top:'0',ease:Power3.easeInOut},'-=2')
+                .to($('#foto1-5text'),2,{top:'10%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-5peu'),2,{left:'0',ease:Power3.easeInOut},'-=1.8');
+            diapo14.addCallback(ratoli);
+            break;
+        case 140:
+            diapo15.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 15:
+            diapo15 = new TimelineMax();
+            diapo15.to($('#foto1-5peu'),2,{left:'-50%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-5text'),2,{top:'210%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-5'),2,{top:'-100%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-6'),2,{top:'0',ease:Power3.easeInOut},'-=2')
+                .to($('#foto1-6text'),2,{bottom:'10%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-6peu'),2,{left:'0',ease:Power3.easeInOut},'-=1.8');
+            diapo15.addCallback(ratoli);
+            break;
+        case 150:
+            diapo16.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 16:
+            diapo16 = new TimelineMax();
+            diapo16.to($('#foto1-6peu'),2,{left:'-50%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-6text'),2,{bottom:'-210%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-6'),2,{top:'-100%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-7'),2,{top:'0',ease:Power3.easeInOut},'-=2')
+                .to($('#foto1-7text'),2,{bottom:'10%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-7peu'),2,{left:'0',ease:Power3.easeInOut},'-=1.8');
+            diapo16.addCallback(ratoli);
+            break;
+        case 160:
+            diapo17.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 17:
+            diapo17 = new TimelineMax();
+            diapo17.to($('#foto1-7peu'),2,{left:'-50%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-7text'),2,{bottom:'-210%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-7'),2,{top:'-100%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-8'),2,{top:'0',ease:Power3.easeInOut},'-=2')
+                .to($('#foto1-8text'),2,{top:'10%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-8peu'),2,{left:'0',ease:Power3.easeInOut},'-=1.8');
+            diapo17.addCallback(ratoli);
+            break;
+        case 170:
+            var pausa=0;
+            $('#foto1-8 .f').each(function(){
+                $(this).delay(pausa).animate({
+                    'top':'-80vh',
+                    'left':'-80vw'
+                },1000);
+                pausa+=200;
             });
-        });
-    });
-}
-function diapositiva10(){
-    $('#foto1-2peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto1-2text p').delay('200').animate({
-        'top': '-300px'
-    },trans,'swing');
-    $('#foto1-2b1').delay('400').animate({
-        'top': '-300px'
-    },trans,'swing');
-    $('#foto1-2b2').delay('600').animate({
-        'top': '-300px'
-    },trans,'swing');
-    $('#foto1-2text').delay('800').animate({
-        'top': '-190%'
-    },trans,'swing');
-    $('#foto1-2').delay('1000').animate({
-        'top': '100%'
-    },trans,'swing');
-    $('#foto1-1').delay('1000').animate({
-        'bottom': '0'
-    },trans,'swing');
-    $('#foto1-1text').delay('1200').animate({
-        'bottom': '40%'
-    },trans,'swing');
-    $('#foto1-1peu').delay('1400').animate({
-        'bottom': '10px'
-    },trans,'swing');
-    $('.scroll').delay('1600').animate({
-        'bottom': '1.5%'
-    },trans,'swing');
-}
-function diapositiva11(){
-    $('.scroll').animate({
-        'bottom': '-10%'
-    },trans,'swing');
-    $('#foto1-1peu').delay('200').animate({
-        'bottom': '-50%'
-    },trans,'swing');
-    $('#foto1-1text').delay('400').animate({
-        'bottom': '-40%'
-    },trans,'swing');
-    $('#foto1-1').delay('600').animate({
-        'bottom': '100%'
-    },trans,'swing');
-    $('#foto1-2').delay('600').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto1-2text').delay('800').animate({
-        'top': '10%'
-    },trans,'swing');
-    $('#foto1-2b2').delay('1000').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto1-2b1').delay('1200').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto1-2text p').delay('1400').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto1-2peu').delay('1600').animate({
-        'left': '100px'
-    },trans,'swing');    
-    $('#foto1-2b1').click(function(){
-        $('body').off('mousewheel');
-        $('#fotos1-2fotos').show();
-        if(!slider1){
-            $('#fotos1-2fotos .sliderfotos').slick();
-            slider1=true;
-        }
-        $('#fotos1-2fotos .blau').click(function(){
-            $('#fotos1-2fotos').hide();
-            $('body').on('mousewheel',function(e){
-                controlMouse(e);
+            diapo18.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 18:
+            diapo18 = new TimelineMax();
+            diapo18.to($('#foto1-8peu'),2,{left:'-50%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-8text p'),2,{color:'#EEC41B',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-8text p'),2,{backgroundColor:'white',ease:Power3.easeInOut},'-=2')
+                .to($('#foto1-8 .tapa'),2,{autoAlpha:'.6',ease:Power3.easeInOut},'-=1.8');
+            diapo18.addCallback(ratoli);
+            var angle=5;
+            var posi=10;
+            var pausa=600;
+            $('#foto1-8 .f').rotate('40deg');
+            $('#foto1-8 .f').each(function(){
+                $(this).delay(pausa).animate({
+                    'top':'10vh',
+                    'left':posi+'vw',
+                    rotate: angle+'deg'
+                },1000);
+                angle-=3;
+                posi+=1;
+                pausa+=200;
             });
-        });
-    });
-    $('#foto1-2i2').click(function(){
-        $('body').off('mousewheel');
-        $('#foto1-2foto').show();
-        $('#foto1-2foto').click(function(){
-            $('#foto1-2foto').hide();
-            $('body').on('mousewheel',function(e){
-                controlMouse(e);
+            break;
+        case 180:
+            var angle=5;
+            var posi=10;
+            var pausa=400;
+            $('#foto1-8 .f').rotate('40deg');
+            $('#foto1-8 .f').each(function(){
+                $(this).delay(pausa).animate({
+                    'top':'10vh',
+                    'left':posi+'vw',
+                    rotate: angle+'deg'
+                },1000);
+                angle-=3;
+                posi+=1;
+                pausa+=200;
             });
-        });
-        
-    });
-    $('#foto1-2i3').click(function(){
-        $('body').off('mousewheel');
-        $('#videos').load('apartat1video1.html',function(){
-            $('.videopopup').show();
-        });        
-    });
-}
-function diapositiva11b(){
-    $('#foto1-3peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto1-3text p').delay('200').animate({
-        'top': '-300px'
-    },trans,'swing');
-    $('#foto1-3b1').delay('400').animate({
-        'top': '-300px'
-    },trans,'swing');
-    $('#foto1-3text').delay('600').animate({
-        'top': '-190%'
-    },trans,'swing');
-    $('#foto1-3').delay('800').animate({
-        'top': '100%'
-    },trans,'swing');
-    $('#foto1-2').delay('800').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto1-2text').delay('1000').animate({
-        'top': '10%'
-    },trans,'swing');
-    $('#foto1-2b1').delay('1200').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto1-2b2').delay('1400').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto1-2b3').delay('1600').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto1-2peu').delay('1800').animate({
-        'left': '100px'
-    },trans,'swing');
-}
-function diapositiva12(){
-    $('#foto1-2peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto1-2b3').delay('200').animate({
-        'top': '300px'
-    },trans,'swing');
-    $('#foto1-2b2').delay('400').animate({
-        'top': '300px'
-    },trans,'swing');
-    $('#foto1-2b1').delay('600').animate({
-        'top': '300px'
-    },trans,'swing');
-    $('#foto1-2text').delay('800').animate({
-        'top': '110%'
-    },trans,'swing');
-    $('#foto1-2').delay('1000').animate({
-        'top': '-100%'
-    },trans,'swing');
-    $('#foto1-3').delay('1000').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto1-3text').delay('1200').animate({
-        'top': '10%'
-    },trans,'swing');
-    $('#foto1-3b1').delay('1600').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto1-3text p').delay('1800').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto1-3peu').delay('2000').animate({
-        'left': '100px'
-    },trans,'swing');
-    $('#foto1-3i1').click(function(){
-        $('body').off('mousewheel');
-        $('#videos').load('apartat1video2.html',function(){
-            $('.videopopup').show();
-        });        
-    });
-    $('#foto1-3i2').click(function(){
-        $('body').off('mousewheel');
-        $('#foto1-3foto').show();
-        $('#foto1-3foto').click(function(){
-            $('#foto1-3foto').hide();
-            $('body').on('mousewheel',function(e){
-                controlMouse(e);
+            $('#foto1-8 .videofons video')[0].pause();
+            diapo19.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 19:
+            var pausa=0;
+            $('#foto1-8 .f').each(function(){
+                $(this).delay(pausa).animate({
+                    'top':'-80vh',
+                    'left':'180vw'
+                },1000);
+                pausa+=200;
             });
-        });
-        
-    });
-}
-function diapositiva12b(){
-    $('#foto1-4peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto1-4text').delay('200').animate({
-        'top': '-190%'
-    },trans,'swing');
-    $('#foto1-4').delay('400').animate({
-        'top': '100%'
-    },trans,'swing');
-    $('#foto1-3').delay('400').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto1-3text').delay('600').animate({
-        'top': '10%'
-    },trans,'swing');
-    $('#foto1-3b1').delay('800').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto1-3b2').delay('1000').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto1-3peu').delay('1200').animate({
-        'left': '100px'
-    },trans,'swing');
-}
-function diapositiva13(){
-    $('#foto1-3peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto1-3b2').delay('200').animate({
-        'top': '300px'
-    },trans,'swing');
-    $('#foto1-3b1').delay('400').animate({
-        'top': '300px'
-    },trans,'swing');
-    $('#foto1-3text').delay('600').animate({
-        'top': '110%'
-    },trans,'swing');
-    $('#foto1-3').delay('800').animate({
-        'top': '-100%'
-    },trans,'swing');
-    $('#foto1-4').delay('800').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto1-4text').delay('1000').animate({
-        'top': '10%'
-    },trans,'swing');
-    $('#foto1-4peu').delay('1200').animate({
-        'left': '100px'
-    },trans,'swing');
-}
-function diapositiva13b(){
-    $('#foto1-5peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto1-5text').delay('200').animate({
-        'top': '-190%'
-    },trans,'swing');
-    $('#foto1-5').delay('400').animate({
-        'top': '100%'
-    },trans,'swing');
-    $('#foto1-4').delay('400').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto1-4text').delay('600').animate({
-        'top': '10%'
-    },trans,'swing');
-    $('#foto1-4peu').delay('800').animate({
-        'left': '100px'
-    },trans,'swing');
-}
-function diapositiva14(){
-    $('#foto1-4peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto1-4text').delay('200').animate({
-        'top': '110%'
-    },trans,'swing');
-    $('#foto1-4').delay('400').animate({
-        'top': '-100%'
-    },trans,'swing');
-    $('#foto1-5').delay('400').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto1-5text').delay('600').animate({
-        'top': '10%'
-    },trans,'swing');
-    $('#foto1-5peu').delay('800').animate({
-        'left': '100px'
-    },trans,'swing');
-}
-function diapositiva14b(){
-    $('#foto1-6peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto1-6text').delay('200').animate({
-        'bottom': '290%'
-    },trans,'swing');
-    $('#foto1-6').delay('400').animate({
-        'top': '100%'
-    },trans,'swing');
-    $('#foto1-5').delay('400').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto1-5text').delay('600').animate({
-        'top': '10%'
-    },trans,'swing');
-    $('#foto1-5peu').delay('800').animate({
-        'left': '100px'
-    },trans,'swing');
-}
-function diapositiva15(){
-    $('#foto1-5peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto1-5text').delay('200').animate({
-        'top': '110%'
-    },trans,'swing');
-    $('#foto1-5').delay('400').animate({
-        'top': '-100%'
-    },trans,'swing');
-    $('#foto1-6').delay('400').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto1-6text').delay('600').animate({
-        'bottom': '10%'
-    },trans,'swing');
-    $('#foto1-6peu').delay('800').animate({
-        'left': '100px'
-    },trans,'swing');
-}
-function diapositiva15b(){
-    $('#foto1-7peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto1-7text').delay('200').animate({
-        'bottom': '290%'
-    },trans,'swing');
-    $('#foto1-7').delay('400').animate({
-        'top': '100%'
-    },trans,'swing');
-    $('#foto1-6').delay('400').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto1-6text').delay('600').animate({
-        'bottom': '10%'
-    },trans,'swing');
-    $('#foto1-6peu').delay('800').animate({
-        'left': '100px'
-    },trans,'swing');
-}
-function diapositiva16(){
-    $('#foto1-6peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto1-6text').delay('200').animate({
-        'bottom': '-110%'
-    },trans,'swing');
-    $('#foto1-6').delay('400').animate({
-        'top': '-100%'
-    },trans,'swing');
-    $('#foto1-7').delay('400').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto1-7text').delay('600').animate({
-        'bottom': '10%'
-    },trans,'swing');
-    $('#foto1-7peu').delay('800').animate({
-        'left': '100px'
-    },trans,'swing');
-}
-function diapositiva16b(){
-    $('#foto1-8peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto1-8text').delay('200').animate({
-        'top': '-190%'
-    },trans,'swing');
-    $('#foto1-8').delay('400').animate({
-        'top': '100%'
-    },trans,'swing');
-    $('#foto1-7').delay('400').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto1-7text').delay('600').animate({
-        'bottom': '10%'
-    },trans,'swing');
-    $('#foto1-7peu').delay('800').animate({
-        'left': '100px'
-    },trans,'swing');
-}
-function diapositiva17(){
-    $('#foto1-7peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto1-7text').delay('200').animate({
-        'bottom': '-110%'
-    },trans,'swing');
-    $('#foto1-7').delay('400').animate({
-        'top': '-100%'
-    },trans,'swing');
-    $('#foto1-8').delay('400').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto1-8text').delay('600').animate({
-        'top': '10%'
-    },trans,'swing');
-    $('#foto1-8peu').delay('800').animate({
-        'left': '100px'
-    },trans,'swing');
-}
-function diapositiva17b(){
-    var pausa=0;
-    $('#foto1-8 .f').each(function(){
-        $(this).delay(pausa).animate({
-            'top':'-80%',
-            'left':'-80%'
-        },trans);
-        pausa+=150;
-    });
-    $('#foto1-8text p').delay('200').animate({
-        backgroundColor: '#EEC41B',
-        'color': 'black'
-    },trans,'swing');
-    $('#foto1-8 .tapa').delay('400').animate({
-        'opacity': '0'
-    },trans,'swing');
-    $('#foto1-8peu').delay('600').animate({
-        'left': '100px'
-    },trans,'swing');
-}
-function diapositiva18(){
-    $('#foto1-8peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto1-8 .tapa').delay('200').animate({
-        'opacity': '.7'
-    },trans,'swing');
-    $('#foto1-8text p').delay('400').animate({
-        backgroundColor: 'white',
-        'color': '#EEC41B'
-    },trans,'swing');
-    var angle=5;
-    var posi=5;
-    var pausa=600;
-    $('#foto1-8 .f').rotate('40deg');
-    $('#foto1-8 .f').each(function(){
-        $(this).delay(pausa).animate({
-            'top':'10vh',
-            'left':posi+'%',
-            rotate: angle+'deg'
-        },trans);
-        angle-=3;
-        posi+=5;
-        pausa+=150;
-    });
-    $('#foto1-8 .f').click(function(){
-        $(this).css('z-index',zi);
-        zi++;
-    });
-}
-function diapositiva18b(){
-    $('#foto1-8 .videofull video')[0].pause();
-    $('#foto1-8 .videofull').animate({
-        'top': '100%'
-    },trans,'swing');
-    $('#foto1-8 .tapa').delay('200').animate({
-        backgroundColor: 'black'
-    },trans,'swing');
-    $('#foto1-8text').delay('400').animate({
-        'top': '10%'
-    },trans,'swing');
-    var pausa=600;
-    $('#foto1-8 .f').each(function(){
-        $(this).delay(pausa).animate({
-            'top':'10vh',
-            'left':'5%'
-        },trans);
-        pausa+=150;
-    });
-}
-function diapositiva19(){
-    var pausa=0;
-    $('#foto1-8 .f').each(function(){
-        $(this).delay(pausa).animate({
-            'top':'-80%',
-            'left':'180%'
-        },trans);
-        pausa+=150;
-    });
-    $('#foto1-8text').delay('200').animate({
-        'top': '110%'
-    },trans,'swing');
-    $('#foto1-8 .tapa').delay('400').animate({
-        backgroundColor: 'black'
-    },trans,'swing');
-    $('#foto1-8 .videofull').delay('600').animate({
-        'top': '0'
-    },trans,'swing',function(){
-        $('#foto1-8 .videofull video')[0].play();
-    });
-    $('#foto1-8 .videofull .videopeu').delay('600').animate({
-        'bottom': '10px'
-    },trans,'swing');
-}
-function diapositiva19b(){
-    var pausa=0;
-    $('#foto1-9 .f').each(function(){
-        $(this).delay(pausa).animate({
-            'top':'-80%',
-            'left':'-80%'
-        },trans);
-        pausa+=150;
-    });
-    $('#foto1-9peu').delay('1800').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto1-9').delay('2000').animate({
-        'top': '100%'
-    },trans,'swing');
-    $('#foto1-8').delay('2000').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto1-8 .videofull').delay('2200').animate({
-        'top': '0'
-    },trans,'swing',function(){
-        $('#foto1-8 .videofull video')[0].play();
-    });
-    $('#foto1-8 .videofull .videopeu').delay('2400').animate({
-        'bottom': '10px'
-    },trans,'swing');
-}
-function diapositiva20(){
-    $('#foto1-8 .videofull video')[0].pause();
-    $('#foto1-8 .videofull .videopeu').animate({
-        'bottom': '-290%'
-    },trans,'swing');
-    $('#foto1-8 .videofull').delay('200').animate({
-        'top': '-200%'
-    },trans,'swing');
-    $('#foto1-8').delay('400').animate({
-        'top': '-100%'
-    },trans,'swing');
-    $('#foto1-9').delay('400').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto1-9peu').delay('400').animate({
-        'left': '100px'
-    },trans,'swing');
-    var angle=5;
-    var posi=5;
-    var pausa=600;
-    $('#foto1-9 .f').rotate('40deg');
-    $('#foto1-9 .f').each(function(){
-        $(this).delay(pausa).animate({
-            'top':'10vh',
-            'left':posi+'%',
-            rotate: angle+'deg'
-        },trans);
-        angle-=1.5;
-        posi+=2;
-        pausa+=150;
-    });
-    $('#foto1-9 .f').click(function(){
-        $(this).css('z-index',zi);
-        zi++;
-    });
-}
-function diapositiva20b(){
-    $('#foto1-9b2').animate({
-        'top': '300px'
-    },trans,'swing');
-    $('#foto1-9b1').delay('200').animate({
-        'top': '300px'
-    },trans,'swing');
-    $('#foto1-9text').delay('400').animate({
-        'top': '115%'
-    },trans,'swing');
-    $('#foto1-9 .tapa').delay('600').animate({
-        'opacity': '0'
-    },trans,'swing');
-    $('#foto1-9peu').delay('800').animate({
-        'left': '100px'
-    },trans,'swing');
-    var pausa=1000;
-    var posi=5;
-    $('#foto1-9 .f').each(function(){
-        $(this).delay(pausa).animate({
-            'top':'10vh',
-            'left':posi+'%'
-        },trans);
-        pausa+=50;
-        posi+=2;
-    });
-}
-function diapositiva21(){
-    var pausa=0;
-    $('#foto1-9 .f').each(function(){
-        $(this).delay(pausa).animate({
-            'top':'-80%',
-            'left':'180%'
-        },trans);
-        pausa+=50;
-    });
-    $('#foto1-9peu').delay('600').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto1-9 .tapa').delay('800').animate({
-        'opacity': '.6'
-    },trans,'swing');
-    $('#foto1-9text').delay('1000').animate({
-        'top': '15%'
-    },trans,'swing');
-    $('#foto1-9b1').delay('1200').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto1-9b2').delay('1400').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto1-9i1').click(function(){
-        $('body').off('mousewheel');
-        $('#foto1-9foto').show();
-        $('#foto1-9foto').click(function(){
-            $('#foto1-9foto').hide();
-            $('body').on('mousewheel',function(e){
-                controlMouse(e);
+            diapo19 = new TimelineMax();
+            diapo19
+                .to($('#foto1-8text'),2,{top:'210%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-8 .tapa'),2,{backgroundColor:'black',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-8 .videofons'),2,{top:'0',ease:Power3.easeInOut},'-=1.8');
+            diapo19.addCallback(f19);
+            function f19(){
+                $('#foto1-8 .videofons video')[0].play();
+                ratoli()
+            }
+            $('#foto1-8 .videofons video').on('ended',function(){
+                passar(20);
             });
-        });
-    });
-    $('#foto1-9i2').click(function(){
-        $('body').off('mousewheel');
-        $('#videos').load('apartat1video3.html',function(){
-            $('.videopopup').show();
-        });        
-    });
-}
-function diapositiva21b(){
-    $('#foto1-10text').animate({
-        'top': '215%'
-    },trans,'swing');
-    $('#foto1-10').delay('200').animate({
-        'top': '-100%'
-    },trans,'swing');
-    $('#foto1-9').delay('200').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto1-9text').delay('400').animate({
-        'top': '15%'
-    },trans,'swing');
-    $('#foto1-9b1').delay('600').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto1-9text p').delay('800').animate({
-        'top': '0'
-    },trans,'swing');
-}
-function diapositiva22(){
-    $('#foto1-9text p').animate({
-        'top': '-300px'
-    },trans,'swing');
-    $('#foto1-9b1').delay('200').animate({
-        'top': '-300px'
-    },trans,'swing');
-    $('#foto1-9text').delay('400').animate({
-        'top': '-285%'
-    },trans,'swing');
-    $('#foto1-9').delay('600').animate({
-        'top': '100%'
-    },trans,'swing');
-    $('#foto1-10').delay('600').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto1-10text').delay('800').animate({
-        'top': '15%'
-    },trans,'swing');
-}
-function diapositiva22b(){
-    $('#foto1-10peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto1-10text2').delay('200').animate({
-        'top': '215%'
-    },trans,'swing');
-    $('#foto1-10text').delay('400').animate({
-        'top': '15%'
-    },trans,'swing');
-    $('#foto1-10 .tapa').delay('600').animate({
-        'opacity': '.6'
-    },trans,'swing');
-}
-function diapositiva23(){
-    $('#foto1-10 .tapa').animate({
-        'opacity': '0'
-    },trans,'swing');
-    $('#foto1-10text').delay('200').animate({
-        'top': '-85%'
-    },trans,'swing');
-    $('#foto1-10text2').delay('400').animate({
-        'top': '10%'
-    },trans,'swing');
-    $('#foto1-10peu').delay('600').animate({
-        'left': '100px'
-    },trans,'swing');
-}
-function diapositiva23b(){
-    $('#foto1-11b').animate({
-        'top': '300px'
-    },trans,'swing');
-    $('#foto1-11text').delay('200').animate({
-        'top': '210%'
-    },trans,'swing');
-    $('#foto1-11').delay('400').animate({
-        'top': '-100%'
-    },trans,'swing');
-    $('#foto1-10').delay('400').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto1-10text2').delay('600').animate({
-        'top': '10%'
-    },trans,'swing');
-    $('#foto1-10peu').delay('800').animate({
-        'left': '100px'
-    },trans,'swing');
-}
-function diapositiva24(){
-    $('#foto1-10peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto1-10text2').delay('200').animate({
-        'top': '-190%'
-    },trans,'swing');
-    $('#foto1-10').delay('400').animate({
-        'top': '100%'
-    },trans,'swing');
-    $('#foto1-11').delay('400').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto1-11text').delay('600').animate({
-        'top': '10%'
-    },trans,'swing');
-    $('#foto1-11b').delay('800').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto1-11i').click(function(){
-        $('body').off('mousewheel');
-        $('#videos').load('apartat1video4.html',function(){
-            $('.videopopup').show();
-        });        
-    });
-}
-function diapositiva24b(){
-    $('#foto1-12peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto1-12text').delay('200').animate({
-        'top': '210%'
-    },trans,'swing');
-    $('#foto1-12').delay('400').animate({
-        'top': '-100%'
-    },trans,'swing');
-    $('#foto1-11').delay('400').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto1-11text').delay('600').animate({
-        'top': '10%'
-    },trans,'swing');
-    $('#foto1-11text p').delay('800').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto1-11peu').delay('1000').animate({
-        'left': '100px'
-    },trans,'swing');
-}
-function diapositiva25(){
-    $('#foto1-11peu').animate({
-        'left': '-50%'
-    },trans,'swing');
-    $('#foto1-11text p').delay('200').animate({
-        'top': '-300px'
-    },trans,'swing');
-    $('#foto1-11text').delay('400').animate({
-        'top': '-190%'
-    },trans,'swing');
-    $('#foto1-11').delay('600').animate({
-        'top': '100%'
-    },trans,'swing');
-    $('#foto1-12').delay('600').animate({
-        'top': '0'
-    },trans,'swing');
-    $('#foto1-12text').delay('800').animate({
-        'top': '10%'
-    },trans,'swing');
-    $('#foto1-12peu').delay('1000').animate({
-        'left': '100px'
-    },trans,'swing');
-}
-
-// Funcions de video
-
-function tancarvideo(){
-    $('.videopopup').hide();
-    $('#videos').html('');
-    $('body').on('mousewheel',function(e){
-        controlMouse(e);
-    });
-}
-
-// Funcions fotos
-function drag_start(event){
-    var style = window.getComputedStyle(event.target, null);
-    var str = (parseInt(style.getPropertyValue("left")) - event.clientX) + ',' 
-            + (parseInt(style.getPropertyValue("top")) - event.clientY)+ ',' + event.target.id;
-    event.dataTransfer.setData("Text",str);
-}
-function drop(event){
-    var offset = event.dataTransfer.getData("Text").split(',');
-    var dm = document.getElementById(offset[2]);
-    dm.style.left = (event.clientX + parseInt(offset[0],10)) + 'px';
-    dm.style.top = (event.clientY + parseInt(offset[1],10)) + 'px';
-    dm.style.zIndex = zi;
-    zi++;
-    event.preventDefault();
-    return false;
-}
-function drag_over(event){
-    event.preventDefault();
-    return false;
+            break;
+        case 190:
+            var pausa=0;
+            $('#foto1-9 .f').each(function(){
+                $(this).delay(pausa).animate({
+                    'top':'-80vh',
+                    'left':'-80vw'
+                },1000);
+                pausa+=200;
+            });
+            diapo20.tweenTo(0, {onComplete:f19});
+            break;
+        case 20:
+            $('#foto1-8 .videofons video')[0].pause();
+            diapo20 = new TimelineMax();
+            diapo20.to($('#foto1-8 .videofons'),2,{top:'-200%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-8'),2,{top:'100%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-9'),2,{top:'0',ease:Power3.easeInOut},'-=2')
+                .to($('#foto1-9peu'),2,{left:'0',ease:Power3.easeInOut},'3');
+            diapo20.addCallback(ratoli);
+            var angle=5;
+            var posi=25;
+            var pausa=600;
+            $('#foto1-9 .f').rotate('40deg');
+            $('#foto1-9 .f').each(function(){
+                $(this).delay(pausa).animate({
+                    'top':'10vh',
+                    'left':posi+'vw',
+                    rotate: angle+'deg'
+                },1000);
+                angle-=1;
+                posi+=1;
+                pausa+=200;
+            });
+            break;
+        case 200:
+            var angle=5;
+            var posi=25;
+            var pausa=600;
+            $('#foto1-9 .f').rotate('40deg');
+            $('#foto1-9 .f').each(function(){
+                $(this).delay(pausa).animate({
+                    'top':'10vh',
+                    'left':posi+'vw',
+                    rotate: angle+'deg'
+                },1000);
+                angle-=1;
+                posi+=1;
+                pausa+=200;
+            });
+            diapo21.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 21:
+            var pausa=0;
+            $('#foto1-9 .f').each(function(){
+                $(this).delay(pausa).animate({
+                    'top':'-80vh',
+                    'left':'180vw'
+                },1000);
+                pausa+=200;
+            });
+            diapo21 = new TimelineMax();
+            diapo21.to($('#foto1-9peu'),2,{left:'-50%',ease:Power3.easeInOut},'2')
+                .to($('#foto1-9 .tapa'),2,{autoAlpha:'.5',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-9text'),2,{top:'15%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-9boto1'),2,{top:'0',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-9boto2'),2,{top:'0',ease:Power3.easeInOut},'-=1.8');
+            diapo21.addCallback(ratoli);
+            foto('#foto1-9boto1','#foto1-9foto');
+            video('#foto1-9boto2','apartat1video3.php');
+            break;
+        case 210:
+            diapo22.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 22:
+            diapo22 = new TimelineMax();
+            diapo22.to($('#foto1-9text p'),2,{top:'-300px',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-9boto1'),2,{top:'-300px',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-9text'),2,{top:'-215%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-9'),2,{top:'100%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-10'),2,{top:'0',ease:Power3.easeInOut},'-=2')
+                .to($('#foto1-10text'),2,{top:'10%',ease:Power3.easeInOut},'-=1.8');
+            diapo22.addCallback(ratoli);
+            break;
+        case 220:
+            diapo23.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 23:
+            diapo23 = new TimelineMax();
+            diapo23.to($('#foto1-10text'),2,{top:'-210%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-10 .tapa'),2,{autoAlpha:'0',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-10text2'),2,{top:'10%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-10peu'),2,{left:'0',ease:Power3.easeInOut},'-=1.8');
+            diapo23.addCallback(ratoli);
+            break;
+        case 230:
+            diapo24.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 24:
+            diapo24 = new TimelineMax();
+            diapo24.to($('#foto1-10peu'),2,{left:'-50%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-10text2'),2,{top:'-210%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-10'),2,{top:'100%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-11'),2,{top:'0',ease:Power3.easeInOut},'-=2')
+                .to($('#foto1-11text'),2,{top:'10%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-11boto'),2,{top:'0',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-11peu'),2,{left:'0',ease:Power3.easeInOut},'-=1.8');
+            diapo24.addCallback(ratoli);
+            video('#foto1-11boto','apartat1video4.php');
+            break;
+        case 240:
+            diapo25.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 25:
+            diapo25 = new TimelineMax();
+            diapo25.to($('#foto1-11peu'),2,{left:'-50%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-11text p'),2,{top:'-300px',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-11text'),2,{top:'-210%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-11'),2,{top:'100%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-12'),2,{top:'0',ease:Power3.easeInOut},'-=2')
+                .to($('#foto1-12text'),2,{top:'10%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-12peu'),2,{left:'0',ease:Power3.easeInOut},'-=1.8');
+            diapo25.addCallback(ratoli);
+            break;
+        case 26:
+            $('.final').show();
+            $('.final').animate({
+                'opacity': '1'
+            },3000);
+            break;
+    }
 }
