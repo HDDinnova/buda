@@ -58,10 +58,15 @@
                         <img class="blau" id="foto1-1i" src="img/play.png" alt="reproduir video de Francesc Vidal">
                     </div>
                 </div>
-                <div id="foto1-1text3" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <p class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-4 col-md-4 col-sm-9 col-xs-10">L’illa de Buda abasta unes 1.100 hectàrees, de les quals unes 250 són arrossars i la resta es reparteixen entre els diferents hàbitats 
-                    o ambients naturals propis del Delta: els canyissars de les àrees i marges fluvials, les jonqueres i els salicornars dels ambients 
-                    salobres, i les llacunes litorals anomenades “Calaixos” (Calaix Gran i Calaix de Mar)</p>
+                <div id="foto1-1text3" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+                    <p class="col-lg-12 col-md-12 col-sm-9 col-xs-10">L’illa de Buda abasta unes 1.100 hectàrees, de les quals unes 250 són arrossars i la resta es reparteixen entre els diferents hàbitats o ambients naturals propis del Delta: els canyissars de les àrees i marges fluvials, les jonqueres i els salicornars dels ambients salobres, i les llacunes litorals anomenades “Calaixos” (Calaix Gran i Calaix de Mar)</p>
+                    <?php
+                        if (isset($_COOKIE['personatge'])){ ?>
+                    <div class="guardartext">
+                        <img src="../img/save.png" alt="icona guardar" data-img="00metaforadelta/foto/IMG003PNDE.jpg" data-text="00metaforadelta/text/text1.html" onclick="guardarText(this)"/>
+                    </div>
+                        <?php }
+                    ?>
                 </div>
                 <div class="f">
                     <img id="pnde1" src="foto/IMG001PNDE.jpg" alt="Foto històrica 1 del Delta"/>

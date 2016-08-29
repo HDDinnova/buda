@@ -124,3 +124,16 @@ function guardarFoto(obj){
         toastr["info"]("Foto guardada correctament");
     });
 }
+function guardarText(obj){
+    var img = $(obj).data('img');
+    var text = $(obj).data('text');
+    var user = document.cookie.split(';')[0].split('=')[1];
+    
+    var url = '{"user":"'+user+'","img":"'+img+'","url":"'+text+'"}';
+    url = JSON.parse(url);
+    
+    $.post('../api/savetext',url,function(data){
+        console.log(data);
+        toastr["info"]("Text guardat correctament");
+    });
+}

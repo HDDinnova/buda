@@ -36,5 +36,5 @@
 <div class="final text-center">
     <h2>Moltes felicitats!, has acabat aquesta investigació.</h2>
     <h3>Vols continuar explorant l’illa de Buda?</h3>
-    <a href="../02genesifar"><img src="../menu/02genesifar.jpg" alt=""/><br><br>LA GÈNESI DEL FAR DE BUDA</a>
+    <a href="../02genesifar"><img src="../menu/02genesifar.jpg" alt=""/><br><br>EL FAR DE BUDA</a>
 </div>

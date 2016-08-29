@@ -42,6 +42,24 @@ Flight::route('POST /savefoto', function(){
     }
 });
 
+Flight::route('POST /savetext', function(){
+    $db=Flight::db();
+    
+    $savetext = $db->prepare("INSERT INTO textos (usuari,imatge,url) VALUES (:user, :img, :url)");
+    $savetext->bindParam(':user', $_POST['user'], PDO::PARAM_INT);
+    $savetext->bindParam(':img', $_POST['img']);
+    $savetext->bindParam(':url', $_POST['url']);
+    
+    $return = $savetext->execute();
+    $db=NULL;
+    
+    if ($return) {
+        echo TRUE;
+    } else {
+        echo FALSE;
+    }
+});
+
 Flight::route('/', function(){
     echo 'Buda Interactiu';
 });

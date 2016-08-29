@@ -159,6 +159,9 @@ button,#start{
     z-index: 101;
     overflow-y: auto;
 }
+#textos img{
+    max-width: 70%;
+}
 #portafotos{
     height: 35vh;
 }

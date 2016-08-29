@@ -123,7 +123,7 @@ $t = $db->query('SELECT * FROM textos WHERE usuari='.$per['id']);
                 <div id="textos" class="objecte">
                     <?php while ($text = $t->fetch_array(MYSQLI_ASSOC)){ ?>
                     <div class="col-md-3 col-sm-3 col-xs-6 text-center">
-                        <img src="<?=$text['imatge']?>" alt="" data-url="textos/<?=$per['tipus']?>/<?=$text['url']?>"/>
+                        <img src="<?=$text['imatge']?>" alt="" data-url="<?=$text['url']?>"/>
                     </div>
                     <?php } ?>
                 </div>

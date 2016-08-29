@@ -10,6 +10,13 @@
         <p>
             Han desaparegut ja sota les aigües les antigues basses de Matarranya, Moixarres i el Pradot, situades més prop del front marí i del cap de Tortosa.
         </p>
+        <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardartext">
+            <img src="../img/save.png" alt="icona guardar" data-img="00metaforadelta/foto/IMG007PNDE.jpg" data-text="00metaforadelta/text/text2.html" onclick="guardarText(this)"/>
+        </div>
+            <?php }
+        ?>
         <div class="boto pull-left" id="foto1-2b1">
             <img class="blau" id="foto1-2i1" src="img/play.png" alt="Animació de la regressió patida a Buda">
         </div>
