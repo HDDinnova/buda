@@ -9,3 +9,10 @@
 <div class="groc">
     El navegant de l’Ebre Pepe Sapiña recorda com el treball de l’arròs era especialment intens els mesos de la plantada i la sega.
 </div>
+<?php
+    if (isset($_COOKIE['personatge'])){ ?>
+<div class="guardar">
+    <img src="../img/save.png" alt="icona guardar" data-video="08arros/video/PepeSapinya_NomesFeinaDuraEpocaArros" data-descripcio="El navegant de l’Ebre Pepe Sapiña recorda com el treball de l’arròs era especialment intens els mesos de la plantada i la sega." onclick="guardarVideo(this)"/>
+</div>
+    <?php }
+?>

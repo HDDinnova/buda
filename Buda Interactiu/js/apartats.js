@@ -22,7 +22,9 @@ function ratoli(){
     });
     $(document).keydown(function(e){
         tecla = e.which;
-        controlMouse(tecla);
+        if (tecla == 38 || tecla == 40){
+            controlMouse(tecla);
+        }
     });
 }
 
