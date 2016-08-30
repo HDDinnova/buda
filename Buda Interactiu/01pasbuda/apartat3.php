@@ -11,6 +11,13 @@
         <div class="col-lg-offset-1 col-md-offset-1 col-lg-8 col-md-8" id="foto3-1text2">
             <img src="img/marca2.png" alt="icona disseny"/>
             <p>Al llarg de la seva existència, els diversos propietaris de l’illa han hagut de salvar l’obstacle dels braços del riu Ebre que separen a l’illa de la resta del Delta.<br>El pas, de caràcter privat, era el darrer pas de barca que creuava l’Ebre, i va permetre un important moviment de persones i càrregues arran de la transformació d’erms de l’illa en camps d’arròs. Durant els mesos en quèhi havia més feina als arrossars els jornalers vivien en la mateixa illa, molts d’ells procedents de Deltebre.</p>
+            <?php
+                if (isset($_COOKIE['personatge'])){ ?>
+            <div class="guardartext">
+                <img src="../img/save.png" alt="icona guardar" data-img="01pasbuda/video/pas_de_barca_ebre.jpg" data-text="01pasbuda/text/text3.html" onclick="guardarText(this)"/>
+            </div>
+                <?php }
+            ?>
         </div>
     </div>
 </div>
@@ -34,6 +41,13 @@
         <div class="col-lg-offset-1 col-md-offset-1 col-lg-8 col-md-8" id="foto3-2text2">
             <img src="img/marca2.png" alt="icona disseny"/>
             <p>El riu Migjorn és un braç de riu d’uns 3 quilòmetres i mig de longitud, que havia estat una antiga desembocadura del riu Ebre, abandonada a la dècada de 1930 a favor del braç de Llevant, avui única llera principal del riu que desemboca a la zona del Garxal.<br>Actualment s’ha quedat com un canal llarg que, per la pesca i activitats que s’hi practiquen, esdevé més una llacuna que un riu, i que mor a uns 50 metres de la platja sense arribar a desguassar al mar.</p>
+            <?php
+                if (isset($_COOKIE['personatge'])){ ?>
+            <div class="guardartext">
+                <img src="../img/save.png" alt="icona guardar" data-img="01pasbuda/video/pas_de_barca_migjorn.jpg" data-text="01pasbuda/text/text4.html" onclick="guardarText(this)"/>
+            </div>
+                <?php }
+            ?>
         </div>
     </div>
 </div>

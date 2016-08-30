@@ -671,6 +671,8 @@ function diapositiva(id){
                 .to($('#foto3-3boto1'),2,{top:'0',ease:Power3.easeInOut},'-=1.8')
                 .to($('#foto3-3text p'),2,{top:'0',ease:Power3.easeInOut},'-=1.8');
             diapo36.addCallback(ratoli);
+            video('#foto3-3boto1','apartat3video4.php');
+            video('#foto3-3boto2','apartat3video5.php');
             break;
         case 360:
             diapo37.tweenTo(0, {onComplete:ratoli});

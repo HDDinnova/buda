@@ -261,7 +261,7 @@ function diapositiva(id){
                 .to($('#foto2-1'),2,{top:'-100%',ease:Power3.easeInOut},'-=1.8')
                 .to($('#foto3-1'),2,{top:'0',ease:Power3.easeInOut},'-=2')
                 .to($('#foto3-1text'),2,{top:'10%',ease:Power3.easeInOut},'-=1.8')
-                .to($('#foto3-1text p'),2,{top:'0',ease:Power3.easeInOut},'-=1.8');
+                .to($('#foto31p'),2,{top:'0',ease:Power3.easeInOut},'-=1.8');
             diapo16.addCallback(ratoli);
             break;
         case 160:
@@ -370,7 +370,7 @@ function diapositiva(id){
                 .to($('#foto4-2plantes2'),2,{left:'-100%',ease:Power3.easeInOut},'-=1.8')
                 .to($('#foto4-2 .tapa'),2,{autoAlpha:'.4',ease:Power3.easeInOut},'-=1.8')
                 .to($('#foto4-2text2'),2,{bottom:'10%',ease:Power3.easeInOut},'-=1.8')
-                .to($('#foto4-2text2 p:last-child'),2,{top:'0',ease:Power3.easeInOut},'-=1.8');
+                .to($('#foto4-2text2p'),2,{top:'0',ease:Power3.easeInOut},'-=1.8');
             diapo23.addCallback(ratoli);
             break;
         case 230:

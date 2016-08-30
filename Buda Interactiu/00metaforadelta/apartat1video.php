@@ -12,7 +12,7 @@
 <?php
     if (isset($_COOKIE['personatge'])){ ?>
 <div class="guardar">
-    <img src="../img/save.png" alt="icona guardar" data-video="00metaforadelta/video/SiscoVidal_BudaMetaforaDelta" data-descripcio="Francesc Vidal. Director del Parc Natural del Delta de l'Ebre" onclick="guardarVideo(this)"/>
+    <img src="../img/save.png" alt="icona guardar" data-video="00metaforadelta/video/SiscoVidal_BudaMetaforaDelta" data-descripcio="Francesc Vidal - Particularitats de l’illa de Buda" onclick="guardarVideo(this)"/>
 </div>
     <?php }
 ?>

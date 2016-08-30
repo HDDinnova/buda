@@ -63,7 +63,6 @@
 }
 #foto2-1text p{
     color: white;
-    padding: 30px;
     font-size: 1.5vw;
 }
 #foto2-1text2{
@@ -125,9 +124,12 @@
     font-weight: 600;
     line-height: 1 !important;
 }
-#foto3-1text p{
+#foto31p{
     position: relative;
     top: -300px;
+    padding: 0;
+}
+#foto3-1text p{
     color: white;
     padding: 30px;
     line-height: 1;
@@ -197,7 +199,7 @@
     text-transform: uppercase;
     font-weight: 600;
 }
-#foto4-2text p:last-child{
+#foto4-2textp2{
     position: relative;
     top: 0;
     color: white;
@@ -240,7 +242,7 @@
     text-transform: uppercase;
     font-weight: 600;
 }
-#foto4-2text2 p:last-child{
+#foto4-2text2p{
     position: relative;
     top: 300px;
     color: black;

@@ -7,16 +7,23 @@
     <p id="foto4-1peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Foto: Salvador Maluquer (dècada de 1950 i 1960).<br>Arxiu Parc Natural del Delta de l’Ebre.</p>
 </div>
 <div id="foto4-2" class="fotofons">
-    <div id="foto4-2text" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
-        <p class="groc col-lg-1 col-md-2 col-sm-10 col-xs-10 text-center"><strong>LA FLORA</strong></p>
+    <div id="foto4-2text" class="col-lg-4 col-md-4 col-sm-9 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+        <p class="groc col-lg-3 col-md-4 col-sm-10 col-xs-10 text-center"><strong>LA FLORA</strong></p>
         <div class="clearfix"></div>
-        <p class="groc col-lg-4 col-md-4 col-sm-9 col-xs-10">Aquestes llacunes, d’entre totes les del Delta, són molt riques en hidròfits (vegetals que creixen completament submergits 
+        <p id="foto4-2textp2" class="groc">Aquestes llacunes, d’entre totes les del Delta, són molt riques en hidròfits (vegetals que creixen completament submergits 
         en l’aigua) i en macròfits. Aquests últims reben el nom local de llapons i entre els quals podem trobar la llengua d’oca 
         (Potamogeton pectinatus), Ceratophyllum demersum, Najas marina o Ruppia cirhosa. A les zones més dolces, com el Calaix 
         Gran, hi viuen abundants plantes helòfites, en sòls entollats o inundats permanentment, formant un cinturó d’extensos i 
         tupits canyissars, amb plantes helòfites com el canyís (Phragmites australis) i la boga (Typha sp), de la qual deriva el 
         topònim de l’illa. Al Calaix de Mar hi abunden les plantes halòfites, adaptades als ambients més salins, com la cirialera 
         vera (Arthrocnemum fruticosum), el jonc marí (Juncus maritimus) i el salat (Atriplex portulacoides).</p>                
+        <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardartext">
+            <img src="../img/save.png" alt="icona guardar" data-img="03llacunes/foto/IMG000PNDE.jpg" data-text="03llacunes/text/text4.html" onclick="guardarText(this)"/>
+        </div>
+            <?php }
+        ?>
     </div>
     <div class="tapa groc"></div>
     <div id="foto4-2plantes1" class="foto4-2plantes col-lg-12 col-md-12">
@@ -58,10 +65,17 @@
     <div id="foto4-2text2" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-lg-offset-7 col-md-offset-7 col-sm-offset-1 col-xs-offset-1">
         <p class="negre col-lg-3 col-md-4 text-center"><strong>LA FAUNA</strong></p>
         <div class="clearfix"></div>
-        <p class="blanc col-lg-12 col-md-12">Tota aquesta vegetació de les llacunes constitueix refugi i aliment per als ocells i altres exemplars de fauna, 
+        <p id="foto4-2text2p" class="blanc col-lg-12 col-md-12">Tota aquesta vegetació de les llacunes constitueix refugi i aliment per als ocells i altres exemplars de fauna, 
         que converteixen als Calaixos en una reserva de fauna de primer ordre dins les zones humides d’Europa: mamífers com les rates 
         d’aigua o musaranyes; els rèptils com les colobres d’aigua; granotes; i peixos com la llissa, l’anguila, el llobarro, les 
-        muixarres i altres espècies…</p>                
+        muixarres i altres espècies…</p>
+        <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardartext">
+            <img src="../img/save.png" alt="icona guardar" data-img="03llacunes/foto/IMG000PNDE.jpg" data-text="03llacunes/text/text5.html" onclick="guardarText(this)"/>
+        </div>
+            <?php }
+        ?>
     </div>
     <div id="foto4-2animals1" class="foto4-2animals col-lg-12 col-md-12">
         <div id="foto4-2animal11" class="col-md-4 col-md-offset-4 text-center">

@@ -13,16 +13,32 @@
         D’altra banda, una de les barques que va funcionar els anys cinquanta i seixanta del segle passat va ser la llanxa motora “Correo de Buda”, propietat de Pedro Franch 
         Piñana, administrador de l’illa. Aquesta embarcació no només es va utilitzar al pas, sinó també per navegar des de la Cava a Buda.<br>
         Fins a mitjans del segle XX s’empraria també una barca petita per passar persones o càrregues de poc pes.</p>
+        <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardartext">
+            <img src="../img/save.png" alt="icona guardar" data-img="01pasbuda/foto/Diapositiva151.jpg" data-text="01pasbuda/text/text5.html" onclick="guardarText(this)"/>
+        </div>
+            <?php }
+        ?>
     </div>
 </div>
 <div id="foto4-2" class="fotofons">
     <div id="foto4-2text" class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <h2 class="blau col-lg-3 col-md-3 col-sm-10 col-xs-10">"Isla de Buda"</h2>
         <div class="clearfix"></div>
-        <p class="blau col-lg-4 col-md-4 col-sm-10 col-xs-10">Els anys 50, la societat “Explotaciones Agrícolas Pedro Franch Casanova, S.A.”, administradora de Buda, adquereix tres llaüts construïts a Tortosa pel conegut 
-        calafat Isaïes Vilàs Panisello: la “Pinta”, la “Niña” i la “Santa Maria”. Amb aquestes tres embarcacions es construiria la barcassa “Isla de Buda”, inscrita com 
-        a plataforma flotante para tráfico del río Ebro, ja motoritzada. Va funcionar fins a mitjans dels anys 90, per creuar transversalment el riu des de la zona de 
-        Riumar, on actualment es troben els vaixells turístics, fins a l’illa.</p>
+        <div id="foto42p" class="col-lg-4 col-md-4 col-sm-10 col-xs-10">
+            <p class="blau">Els anys 50, la societat “Explotaciones Agrícolas Pedro Franch Casanova, S.A.”, administradora de Buda, adquereix tres llaüts construïts a Tortosa pel conegut 
+            calafat Isaïes Vilàs Panisello: la “Pinta”, la “Niña” i la “Santa Maria”. Amb aquestes tres embarcacions es construiria la barcassa “Isla de Buda”, inscrita com 
+            a plataforma flotante para tráfico del río Ebro, ja motoritzada. Va funcionar fins a mitjans dels anys 90, per creuar transversalment el riu des de la zona de 
+            Riumar, on actualment es troben els vaixells turístics, fins a l’illa.</p>
+            <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+            <div class="guardartext">
+                <img src="../img/save.png" alt="icona guardar" data-img="01pasbuda/foto/Diapositiva152.jpg" data-text="01pasbuda/text/text6.html" onclick="guardarText(this)"/>
+            </div>
+                <?php }
+            ?>
+        </div>
         <div class="clearfix"></div>
         <div id="foto4-2botons" class="boto">
             <img id="foto4-2boto1" class="blau" src="img/play.png" alt="reproduir video">

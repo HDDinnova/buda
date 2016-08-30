@@ -16,15 +16,18 @@
     font-weight: 600;
     line-height: 0.8 !important;
 }
-#foto1-1text p{
+#foto1-1text div{
     position: relative;
     top: -300px;
+}
+#foto1-1text p{
     color: white;
     padding: 30px;
     font-size: 1.3vw;
 }
 #foto1-1 .tapa{
     z-index: 0;
+    display: none;
 }
 #foto1-1text2{
     position: absolute;
@@ -251,9 +254,12 @@
     font-weight: 600;
     line-height: 0.8 !important;
 }
-#foto4-2text p{
+#foto42p{
     position: relative;
     top: 300px;
+    padding: 0;
+}
+#foto4-2text p{
     color: white;
     padding: 30px;
 }

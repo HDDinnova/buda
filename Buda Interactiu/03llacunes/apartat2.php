@@ -9,6 +9,13 @@
         <div id="foto2-1boto" class="boto">
             <img class="groc" src="img/play.png" alt="reproduir video">
         </div>
+        <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardartext">
+            <img src="../img/save.png" alt="icona guardar" data-img="03llacunes/foto/buda-4.jpg" data-text="03llacunes/text/text1.html" onclick="guardarText(this)"/>
+        </div>
+            <?php }
+        ?>
     </div>
     <img id="marcacanyis" class="col-lg-offset-1 col-md-offset-1" src="img/marca2.png" alt="icona de canyís"/>
     <div id="foto2-1text3" class="col-lg-offset-1 col-md-offset-1 col-lg-4 col-md-4">
@@ -17,5 +24,12 @@
         </div>
         <div class="clearfix"></div>
         <p class="verd">El Calaix de Mar, en canvi, és una llacuna molt més salinitzada, per la seva proximitat al mar, que fa que rebi aportacions d’aigua marina, sobretot amb els temporals de llevant, la qual cosa fa que la vegetació que la rodeixa sigui més típica de salobrars, on predomina la salicòrnia.</p>
+        <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardartext">
+            <img src="../img/save.png" alt="icona guardar" data-img="03llacunes/foto/buda-4.jpg" data-text="03llacunes/text/text2.html" onclick="guardarText(this)"/>
+        </div>
+            <?php }
+        ?>
     </div>
 </div>

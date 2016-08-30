@@ -73,7 +73,7 @@
                     <?php
                         if (isset($_COOKIE['personatge'])){ ?>
                     <div class="guardar">
-                        <img src="../img/save.png" alt="icona guardar" data-foto="00metaforadelta/foto/IMG001PNDE.jpg" data-descripcio="Foto històrica 1 del Delta" onclick="guardarFoto(this)"/>
+                        <img src="../img/save.png" alt="icona guardar" data-foto="00metaforadelta/foto/IMG001PNDE.jpg" data-descripcio="Salvador Maluquer - l’illa de Buda (dècada de 1950 i 1960)" onclick="guardarFoto(this)"/>
                     </div>
                         <?php }
                     ?>
@@ -83,7 +83,7 @@
                     <?php
                         if (isset($_COOKIE['personatge'])){ ?>
                     <div class="guardar">
-                        <img src="../img/save.png" alt="icona guardar" data-foto="00metaforadelta/foto/IMG002PNDE.jpg" data-descripcio="Foto històrica 2 del Delta" onclick="guardarFoto(this)"/>
+                        <img src="../img/save.png" alt="icona guardar" data-foto="00metaforadelta/foto/IMG002PNDE.jpg" data-descripcio="Salvador Maluquer - l’illa de Buda (dècada de 1950 i 1960)" onclick="guardarFoto(this)"/>
                     </div>
                         <?php }
                     ?>
@@ -93,7 +93,7 @@
                     <?php
                         if (isset($_COOKIE['personatge'])){ ?>
                     <div class="guardar">
-                        <img src="../img/save.png" alt="icona guardar" data-foto="00metaforadelta/foto/IMG004PNDE.jpg" data-descripcio="Foto històrica 3 del Delta" onclick="guardarFoto(this)"/>
+                        <img src="../img/save.png" alt="icona guardar" data-foto="00metaforadelta/foto/IMG004PNDE.jpg" data-descripcio="Salvador Maluquer - l’illa de Buda (dècada de 1950 i 1960)" onclick="guardarFoto(this)"/>
                     </div>
                         <?php }
                     ?>
@@ -103,7 +103,7 @@
                     <?php
                         if (isset($_COOKIE['personatge'])){ ?>
                     <div class="guardar">
-                        <img src="../img/save.png" alt="icona guardar" data-foto="00metaforadelta/foto/IMG010PNDE.jpg" data-descripcio="Foto històrica 4 del Delta" onclick="guardarFoto(this)"/>
+                        <img src="../img/save.png" alt="icona guardar" data-foto="00metaforadelta/foto/IMG010PNDE.jpg" data-descripcio="Salvador Maluquer - l’illa de Buda (dècada de 1950 i 1960)" onclick="guardarFoto(this)"/>
                     </div>
                         <?php }
                     ?>

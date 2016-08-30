@@ -12,7 +12,7 @@
 <?php
     if (isset($_COOKIE['personatge'])){ ?>
 <div class="guardar">
-    <img src="../img/save.png" alt="icona guardar" data-video="01pasbuda/video/GuillermoBores_Barcassa" data-descripcio="Guillermo Borés, propietari de la part privada de l’illa, comenta el valor de la barcassa com a símbol d’un temps." onclick="guardarVideo(this)"/>
+    <img src="../img/save.png" alt="icona guardar" data-video="01pasbuda/video/GuillermoBores_Barcassa" data-descripcio="Guillermo Borés - El pas de Buda" onclick="guardarVideo(this)"/>
 </div>
     <?php }
 ?>

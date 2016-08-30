@@ -98,7 +98,7 @@ function diapositiva(id){
             diapo1 = new TimelineMax();
             diapo1.fromTo($('#foto1-1'),2,{autoAlpha:0},{autoAlpha:1,onComplete:foto11play})
                 .fromTo($('#foto1-1text'),2,{top:'-50%'},{top:'30%',ease:Power3.easeInOut},1)
-                .fromTo($('#foto1-1text p'),2,{top:'-300px'},{top:'0',ease:Power3.easeInOut},'-=1.8')
+                .fromTo($('#foto1-1text div'),2,{top:'-300px'},{top:'0',ease:Power3.easeInOut},'-=1.8')
                 .fromTo($('.scroll'),2,{bottom:'-50%'},{bottom:'1.5%',ease:Power3.easeInOut},'-=1.8');
             diapo1.addCallback(ratoli);
             function foto11play(){
@@ -106,12 +106,17 @@ function diapositiva(id){
             }
             break;
         case 10:
-            diapo11.tweenTo(0, {onComplete:ratoli});
+            diapo11.tweenTo(0, {onComplete:f10});
+            function f10(){
+                $('#foto1-1 .tapa').hide();
+                ratoli();
+            }
             break;
         case 11:
+            $('#foto1-1 .tapa').show();
             diapo11 = new TimelineMax();
             diapo11.fromTo($('.scroll'),2,{bottom:'1.5%'},{bottom:'-50%',ease:Power3.easeInOut})
-                .fromTo($('#foto1-1text p'),2,{top:'0'},{top:'-150vh',ease:Power3.easeInOut},'-=1.8')
+                .fromTo($('#foto1-1text div'),2,{top:'0'},{top:'-150vh',ease:Power3.easeInOut},'-=1.8')
                 .fromTo($('#foto1-1text'),2,{top:'30%'},{top:'130%',ease:Power3.easeInOut},'-=1.8')
                 .fromTo($('#foto1-1 .tapa'),2,{autoAlpha:'0'},{autoAlpha:'.6',ease:Power3.easeInOut},'-=1.8')
                 .fromTo($('#foto1-1text2'),2,{left:'-50vw'},{left:'0',ease:Power3.easeInOut},'-=1.8')
@@ -294,7 +299,7 @@ function diapositiva(id){
                 .fromTo($('#foto4-1'),2,{top:'0'},{top:'-100%',ease:Power3.easeInOut},'-=1.8')
                 .fromTo($('#foto4-2'),2,{top:'100%'},{top:'0',ease:Power3.easeInOut},'-=2')
                 .fromTo($('#foto4-2text'),2,{top:'125%'},{top:'25%',ease:Power3.easeInOut},'-=1.8')
-                .fromTo($('#foto4-2text p'),2,{top:'300px'},{top:'0',ease:Power3.easeInOut},'-=1.8')
+                .fromTo($('#foto42p'),2,{top:'300px'},{top:'0',ease:Power3.easeInOut},'-=1.8')
                 .fromTo($('#foto4-2botons'),2,{top:'300px'},{top:'0',ease:Power3.easeInOut},'-=1.8')
                 .fromTo($('#foto4-2boto2'),2,{top:'300px'},{top:'0',ease:Power3.easeInOut},'-=1.8')
                 .fromTo($('#foto4-2boto3'),2,{top:'300px'},{top:'0',ease:Power3.easeInOut},'-=1.8');

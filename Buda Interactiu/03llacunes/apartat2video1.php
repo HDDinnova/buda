@@ -12,7 +12,7 @@
 <?php
     if (isset($_COOKIE['personatge'])){ ?>
 <div class="guardar">
-    <img src="../img/save.png" alt="icona guardar" data-video="01pasbuda/video/Sarro_calaixos_3" data-descripcio="El Calaix Gran (o de Dalt).<br>Filmació: Artur Sarró (dècada de 1960)" onclick="guardarVideo(this)"/>
+    <img src="../img/save.png" alt="icona guardar" data-video="01pasbuda/video/Sarro_calaixos_3" data-descripcio="Artur Sarró - El Calaix Gran (o de Dalt)" onclick="guardarVideo(this)"/>
 </div>
     <?php }
 ?>

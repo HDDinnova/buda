@@ -37,8 +37,16 @@
                     <source src="video/08_VoraRiu_1.webm" type="video/webm">
                 </video>
                 <div id="foto1-1text" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <p class="blau col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-4 col-md-4 col-sm-9 col-xs-10">Buda, avui amb unes 1.100 hectàrees de superfície, és una illa fluvial i marítima, que forma un triangle entre el riu Migjorn, la riba dreta de l’actual desembocadura de l’Ebre i la Mediterrània.</p>
-                    <div class="clearfix"></div>
+                    <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-4 col-md-4 col-sm-9 col-xs-10">
+                        <p class="blau">Buda, avui amb unes 1.100 hectàrees de superfície, és una illa fluvial i marítima, que forma un triangle entre el riu Migjorn, la riba dreta de l’actual desembocadura de l’Ebre i la Mediterrània.</p>
+                        <?php
+                            if (isset($_COOKIE['personatge'])){ ?>
+                        <div class="guardartext">
+                            <img src="../img/save.png" alt="icona guardar" data-img="01pasbuda/video/08_VoraRiu_1.jpg" data-text="01pasbuda/text/text1.html" onclick="guardarText(this)"/>
+                        </div>
+                            <?php }
+                        ?>
+                    </div>
                     <h2 class="blau col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-7 col-md-7 col-sm-9 col-xs-10">El pas de buda</h2>
                 </div>
                 <div class="scroll">
@@ -50,6 +58,13 @@
                         <img id="marca" src="img/marca1.png" alt="icona destacat"/>
                     </div>
                     <p class="col-lg-offset-1 col-md-offset-1 col-lg-11 col-md-11"><strong>En algunes èpoques de l’any només es pot accedir a l’illa de Buda creuant el riu Migjorn amb un petit transbordador o bé creuant el riu Ebre en barca des de la riba esquerra.</strong></p>
+                    <?php
+                        if (isset($_COOKIE['personatge'])){ ?>
+                    <div class="guardartext">
+                        <img src="../img/save.png" alt="icona guardar" data-img="01pasbuda/video/08_VoraRiu_1.jpg" data-text="01pasbuda/text/text2.html" onclick="guardarText(this)"/>
+                    </div>
+                        <?php }
+                    ?>
                 </div>
                 <div id="foto1-1foto" class="col-lg-offset-7 col-md-offset-7 col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <img src="foto/_MG_8133.jpg" alt="Pas de buda pel riu ebre"/>

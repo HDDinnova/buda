@@ -13,7 +13,7 @@
 <?php
     if (isset($_COOKIE['personatge'])){ ?>
 <div class="guardar">
-    <img src="../img/save.png" alt="icona guardar" data-video="00metaforadelta/video/GuillermoBores_regressioBuda" data-descripcio="Guillermo Borés explica que en les darreres dècades es calcula que s’han perdut unes 400 hectàrees de llacunes." onclick="guardarVideo(this)"/>
+    <img src="../img/save.png" alt="icona guardar" data-video="00metaforadelta/video/GuillermoBores_regressioBuda" data-descripcio="Guillermo Borés - la pèrdua a les llacunes" onclick="guardarVideo(this)"/>
 </div>
     <?php }
 ?>
