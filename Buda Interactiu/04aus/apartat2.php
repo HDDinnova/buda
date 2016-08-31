@@ -1,6 +1,15 @@
 <div id="foto2-1" class="fotofons">
     <div id="foto2-1text" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
-        <p class="taronga col-lg-4 col-md-4 col-sm-9 col-xs-10">El delta de l’Ebre es troba enmig d’una ruta migratòria de primer ordre, la que ressegueix la costa de llevant de la Península Ibèrica. Centenars de milers d’ocells s’aturen en les seues rutes d’Europa cap al sud de la Península i Àfrica, i a l’inrevès. Aquí fan parada i s’alimenten per prendre forces i continuar el seu camí.</p>
+        <div class="col-lg-4 col-md-4 col-sm-9 col-xs-10">
+            <p class="taronga">El delta de l’Ebre es troba enmig d’una ruta migratòria de primer ordre, la que ressegueix la costa de llevant de la Península Ibèrica. Centenars de milers d’ocells s’aturen en les seues rutes d’Europa cap al sud de la Península i Àfrica, i a l’inrevès. Aquí fan parada i s’alimenten per prendre forces i continuar el seu camí.</p>
+            <?php
+                if (isset($_COOKIE['personatge'])){ ?>
+            <div class="guardartext">
+                <img src="../img/save.png" alt="icona guardar" data-img="04aus/foto/_MG_8086.jpg" data-text="04aus/text/text5.html" onclick="guardarText(this)"/>
+            </div>
+                <?php }
+            ?>
+        </div>
         <div class="clearfix"></div>
         <h2 class="taronga col-lg-5 col-md-5 col-sm-9 col-xs-10">PARADA I FONDA</h2>
     </div>
@@ -17,7 +26,16 @@
 </div>
 <div id="foto2-2" class="fotofons">
     <div id="foto2-2text" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
-        <p class="taronga col-lg-4 col-md-4 col-sm-9 col-xs-10">I és que la fauna de Buda és valorada principalment per l’espectacular presència d’aus aqüàtiques, tant en època de reproducció com d’hivernada. A més de les llacunes, les aus volen i mengen entre els arrossars, les séquies i canals i les platges arenoses de Buda. La diversitat i qualitat dels ecosistemes aqüàtics que concentra l’illa és com si fos ella sola tot el Delta.</p>
+        <div class="col-lg-4 col-md-4 col-sm-9 col-xs-10">
+            <p class="taronga">I és que la fauna de Buda és valorada principalment per l’espectacular presència d’aus aqüàtiques, tant en època de reproducció com d’hivernada. A més de les llacunes, les aus volen i mengen entre els arrossars, les séquies i canals i les platges arenoses de Buda. La diversitat i qualitat dels ecosistemes aqüàtics que concentra l’illa és com si fos ella sola tot el Delta.</p>
+            <?php
+                if (isset($_COOKIE['personatge'])){ ?>
+            <div class="guardartext">
+                <img src="../img/save.png" alt="icona guardar" data-img="04aus/foto/2_2.jpg" data-text="04aus/text/text6.html" onclick="guardarText(this)"/>
+            </div>
+                <?php }
+            ?>
+        </div>
         <div class="clearfix"></div>
         <div id="foto2-2botons" class="boto">
             <img id="foto2-2boto1" class="taronga" src="img/play.png" alt="reproduir video">

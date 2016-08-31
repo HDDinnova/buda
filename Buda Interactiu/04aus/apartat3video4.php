@@ -12,7 +12,7 @@
 <?php
     if (isset($_COOKIE['personatge'])){ ?>
 <div class="guardar">
-    <img src="../img/save.png" alt="icona guardar" data-video="04aus/video/SalvadoMaluquer_PrimerAnellament" data-descripcio="Salvador Maluquer recorda com es va produir el primer anellament d’aus a l’illa de Buda." onclick="guardarVideo(this)"/>
+    <img src="../img/save.png" alt="icona guardar" data-video="04aus/video/SalvadoMaluquer_PrimerAnellament" data-descripcio="Salvador Maluquer - El primer anellament" onclick="guardarVideo(this)"/>
 </div>
     <?php }
 ?>

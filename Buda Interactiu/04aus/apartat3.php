@@ -32,6 +32,13 @@
 <div id="foto3-3" class="fotofons">
     <div id="foto3-3text" class="col-lg-2 col-md-2 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
         <p class="roig">Salvador Maluquer i Artur Sarró foren pioners en l’elaboració de censos, estudis i filmacions a les llacunes de Buda i deixarien una gran empremta en posteriors accions i estudis realitzats per entitats mediambientals i de protecció natural.</p>
+        <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardartext">
+            <img src="../img/save.png" alt="icona guardar" data-img="04aus/foto/_MG_8090.jpg" data-text="04aus/text/text7.html" onclick="guardarText(this)"/>
+        </div>
+            <?php }
+        ?>
     </div>
     <p id="foto3-3peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Foto: Salvador Maluquer</p>
     <div id="foto3-3botons" class="boto col-lg-2 col-md-2 col-sm-12 col-xs-12 col-lg-offset-7 col-md-offset-7 col-sm-offset-1 col-xs-offset-1">

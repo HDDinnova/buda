@@ -12,7 +12,7 @@
 <?php
     if (isset($_COOKIE['personatge'])){ ?>
 <div class="guardar">
-    <img src="../img/save.png" alt="icona guardar" data-video="04aus/video/IreneMaluquer_ImpressioDeGranQuantitOcells" data-descripcio="Irene Maluquer, la vídua d’Artur Sarró, explica com el seu germà Salvador va acabar influint en la passió pels ocells i pel Delta que més endavant experimentaria Artur Sarró." onclick="guardarVideo(this)"/>
+    <img src="../img/save.png" alt="icona guardar" data-video="04aus/video/IreneMaluquer_ImpressioDeGranQuantitOcells" data-descripcio="Irene Maluquer - L’ornitologia, una passió familiar" onclick="guardarVideo(this)"/>
 </div>
     <?php }
 ?>

@@ -50,17 +50,33 @@
             <div id="foto1-3" class="fotofons">
                 <p id="foto1-3peu" class="peu verd col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Foto: Salvador Maluquer (dècada de 1950 i 1960).<br>Arxiu Parc Natural del Delta de l’Ebre.</p>
                 <div class="tapa verd"></div>
-                <div id="foto1-3text" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
-                    <img src="img/marca1.png" alt="icona gràfica"/>
+                <div id="foto1-3text" class="col-lg-4 col-md-4 col-sm-9 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+                    <img id="foto1-3marca" src="img/marca1.png" alt="icona gràfica"/>
                     <div class="clearfix"></div>
-                    <p class="col-lg-4 col-md-4 col-sm-9 col-xs-10">Una manera d’avaluar la sostenibilitat d’un hàbitat és mesurar la seua biodiversitat d’organismes vius i ecosistemes que el formen. I Buda és un d’aquests hàbitats, especialment per als ocells.</p>
+                    <p>Una manera d’avaluar la sostenibilitat d’un hàbitat és mesurar la seua biodiversitat d’organismes vius i ecosistemes que el formen. I Buda és un d’aquests hàbitats, especialment per als ocells.</p>
+                    <?php
+                        if (isset($_COOKIE['personatge'])){ ?>
+                    <div class="guardartext">
+                        <img src="../img/save.png" alt="icona guardar" data-img="04aus/foto/IMG024PNDE.jpg" data-text="04aus/text/text1.html" onclick="guardarText(this)"/>
+                    </div>
+                        <?php }
+                    ?>
                 </div>
             </div>
             <div id="foto1-4" class="fotofons">
                 <p id="foto1-4peu" class="peu verd col-lg-offset-9 col-md-offset-8 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Foto: Salvador Maluquer (dècada de 1950 i 1960).<br>Arxiu Parc Natural del Delta de l’Ebre.</p>
                 <div class="tapa verd"></div>
                 <div id="foto1-4text" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-lg-offset-7 col-md-offset-7 col-sm-offset-1 col-xs-offset-1">
-                    <p class="col-lg-4 col-md-4 col-sm-9 col-xs-10">És sobretot a les llacunes dels Calaixos on no és gens difícil veure-hi sobrevolar flamencs, ànecs ó rapinyaires i observar moltes altres aus aquàtiques: limícoles, gavines i xatracs, corbs marins...</p>
+                    <div class="col-lg-4 col-md-4 col-sm-9 col-xs-10">
+                        <p>És sobretot a les llacunes dels Calaixos on no és gens difícil veure-hi sobrevolar flamencs, ànecs ó rapinyaires i observar moltes altres aus aquàtiques: limícoles, gavines i xatracs, corbs marins...</p>
+                        <?php
+                            if (isset($_COOKIE['personatge'])){ ?>
+                        <div class="guardartext">
+                            <img src="../img/save.png" alt="icona guardar" data-img="04aus/foto/IMG025PNDE.jpg" data-text="04aus/text/text2.html" onclick="guardarText(this)"/>
+                        </div>
+                            <?php }
+                        ?>
+                    </div>
                     <div class="clearfix"></div>
                     <div id="foto1-4boto" class="boto">
                         <img class="groc" src="img/play.png" alt="reproduir video">
@@ -70,22 +86,36 @@
             <div id="foto1-5" class="fotofons">
                 <p id="foto1-5peu" class="peu verd col-lg-offset-9 col-md-offset-8 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Foto: Salvador Maluquer (dècada de 1950 i 1960).<br>Arxiu Parc Natural del Delta de l’Ebre.</p>
                 <div class="tapa verd"></div>
-                <div id="foto1-5text" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-lg-offset-7 col-md-offset-7 col-sm-offset-1 col-xs-offset-1">
-                    <p class="blanc col-lg-4 col-md-4 col-sm-9 col-xs-10">Els Calaixos de Buda són les basses més privilegiades del delta de l’Ebre: aquí nidifiquen, hivernen o són lloc de parada en les migracions d’aquestes aus.</p>
+                <div id="foto1-5text" class="col-lg-4 col-md-4 col-sm-9 col-xs-10 col-lg-offset-7 col-md-offset-7 col-sm-offset-1 col-xs-offset-1">
+                    <p class="blanc">Els Calaixos de Buda són les basses més privilegiades del delta de l’Ebre: aquí nidifiquen, hivernen o són lloc de parada en les migracions d’aquestes aus.</p>
+                    <?php
+                        if (isset($_COOKIE['personatge'])){ ?>
+                    <div class="guardartext">
+                        <img src="../img/save.png" alt="icona guardar" data-img="04aus/foto/IMG022PNDE.jpg" data-text="04aus/text/text3.html" onclick="guardarText(this)"/>
+                    </div>
+                        <?php }
+                    ?>
                 </div>
             </div>
             <div id="foto1-6" class="fotofons">
                 <p id="foto1-6peu" class="peu verd col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Foto: Salvador Maluquer (dècada de 1950 i 1960).<br>Arxiu Parc Natural del Delta de l’Ebre.</p>
                 <div class="tapa verd"></div>
-                <div id="foto1-6text" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
-                    <p class="blanc col-lg-4 col-md-4 col-sm-9 col-xs-10">Aquí s’hi concentra una bona part de tots els ocells que habiten el Delta, cridats per la riquesa i qualitat de les aigües i la vegetació que les envolta. Aquest fet va veure’s reconegut el febrer de 1994, quan es va declarar per la Generalitat de Catalunya la reserva natural de fauna silvestre de la part meridional de l’illa de Buda i les llacunes dels Calaixos.</p>
+                <div id="foto1-6text" class="col-lg-4 col-md-4 col-sm-9 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+                    <p class="blanc">Aquí s’hi concentra una bona part de tots els ocells que habiten el Delta, cridats per la riquesa i qualitat de les aigües i la vegetació que les envolta. Aquest fet va veure’s reconegut el febrer de 1994, quan es va declarar per la Generalitat de Catalunya la reserva natural de fauna silvestre de la part meridional de l’illa de Buda i les llacunes dels Calaixos.</p>
+                    <?php
+                        if (isset($_COOKIE['personatge'])){ ?>
+                    <div class="guardartext">
+                        <img src="../img/save.png" alt="icona guardar" data-img="04aus/foto/IMG016PNDE.jpg" data-text="04aus/text/text4.html" onclick="guardarText(this)"/>
+                    </div>
+                        <?php }
+                    ?>
                 </div>
                 <div class="f">
                     <img id="sarroimg1" src="foto/IMG021PNDE.jpg" alt="Foto històrica 1 del Delta"/>
                     <?php
                         if (isset($_COOKIE['personatge'])){ ?>
                     <div class="guardar">
-                        <img src="../img/save.png" alt="icona guardar" data-foto="00metaforadelta/foto/IMG001PNDE.jpg" data-descripcio="Foto històrica 1 del Delta" onclick="guardarFoto(this)"/>
+                        <img src="../img/save.png" alt="icona guardar" data-foto="00metaforadelta/foto/IMG001PNDE.jpg" data-descripcio="Salvador Maluquer - Les aus de l’illa de Buda" onclick="guardarFoto(this)"/>
                     </div>
                         <?php }
                     ?>
@@ -95,7 +125,7 @@
                     <?php
                         if (isset($_COOKIE['personatge'])){ ?>
                     <div class="guardar">
-                        <img src="../img/save.png" alt="icona guardar" data-foto="00metaforadelta/foto/IMG001PNDE.jpg" data-descripcio="Foto històrica 1 del Delta" onclick="guardarFoto(this)"/>
+                        <img src="../img/save.png" alt="icona guardar" data-foto="00metaforadelta/foto/IMG001PNDE.jpg" data-descripcio="Salvador Maluquer - Les aus de l’illa de Buda" onclick="guardarFoto(this)"/>
                     </div>
                         <?php }
                     ?>
@@ -105,7 +135,7 @@
                     <?php
                         if (isset($_COOKIE['personatge'])){ ?>
                     <div class="guardar">
-                        <img src="../img/save.png" alt="icona guardar" data-foto="00metaforadelta/foto/IMG001PNDE.jpg" data-descripcio="Foto històrica 1 del Delta" onclick="guardarFoto(this)"/>
+                        <img src="../img/save.png" alt="icona guardar" data-foto="00metaforadelta/foto/IMG001PNDE.jpg" data-descripcio="Salvador Maluquer - Les aus de l’illa de Buda" onclick="guardarFoto(this)"/>
                     </div>
                         <?php }
                     ?>
@@ -115,7 +145,7 @@
                     <?php
                         if (isset($_COOKIE['personatge'])){ ?>
                     <div class="guardar">
-                        <img src="../img/save.png" alt="icona guardar" data-foto="00metaforadelta/foto/IMG001PNDE.jpg" data-descripcio="Foto històrica 1 del Delta" onclick="guardarFoto(this)"/>
+                        <img src="../img/save.png" alt="icona guardar" data-foto="00metaforadelta/foto/IMG001PNDE.jpg" data-descripcio="Salvador Maluquer - Les aus de l’illa de Buda" onclick="guardarFoto(this)"/>
                     </div>
                         <?php }
                     ?>
@@ -125,7 +155,7 @@
                     <?php
                         if (isset($_COOKIE['personatge'])){ ?>
                     <div class="guardar">
-                        <img src="../img/save.png" alt="icona guardar" data-foto="00metaforadelta/foto/IMG001PNDE.jpg" data-descripcio="Foto històrica 1 del Delta" onclick="guardarFoto(this)"/>
+                        <img src="../img/save.png" alt="icona guardar" data-foto="00metaforadelta/foto/IMG001PNDE.jpg" data-descripcio="Salvador Maluquer - Les aus de l’illa de Buda" onclick="guardarFoto(this)"/>
                     </div>
                         <?php }
                     ?>

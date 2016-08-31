@@ -12,7 +12,7 @@
 <?php
     if (isset($_COOKIE['personatge'])){ ?>
 <div class="guardar">
-    <img src="../img/save.png" alt="icona guardar" data-video="04aus/video/IreneMaluquer_ArturSarro" data-descripcio="Irene Maluquer, vídua d’Artur Sarró, explica qui fou el seu marit." onclick="guardarVideo(this)"/>
+    <img src="../img/save.png" alt="icona guardar" data-video="04aus/video/IreneMaluquer_ArturSarro" data-descripcio="Irene Maluquer - Artur Sarró, pioner de la cinematografia naturalista" onclick="guardarVideo(this)"/>
 </div>
     <?php }
 ?>

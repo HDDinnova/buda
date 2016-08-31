@@ -12,7 +12,7 @@
 <?php
     if (isset($_COOKIE['personatge'])){ ?>
 <div class="guardar">
-    <img src="../img/save.png" alt="icona guardar" data-video="04aus/video/Sarro_Aus_04" data-descripcio="Filmació: Artur Sarró (dècada de 1960)" onclick="guardarVideo(this)"/>
+    <img src="../img/save.png" alt="icona guardar" data-video="04aus/video/Sarro_Aus_04" data-descripcio="Artur Sarró - Les aus de l'illa de Buda (II)" onclick="guardarVideo(this)"/>
 </div>
     <?php }
 ?>

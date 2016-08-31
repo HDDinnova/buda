@@ -12,7 +12,7 @@
 <?php
     if (isset($_COOKIE['personatge'])){ ?>
 <div class="guardar">
-    <img src="../img/save.png" alt="icona guardar" data-video="04aus/video/SalvadoMaluquer_PrimeresCatalogacions" data-descripcio="Salvador Maluquer explica en què consistiren les seves primeres visites al Delta." onclick="guardarVideo(this)"/>
+    <img src="../img/save.png" alt="icona guardar" data-video="04aus/video/SalvadoMaluquer_PrimeresCatalogacions" data-descripcio="Salvador Maluquer - Les primeres visites ornitològiques al Delta" onclick="guardarVideo(this)"/>
 </div>
     <?php }
 ?>

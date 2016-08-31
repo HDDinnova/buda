@@ -12,7 +12,7 @@
 <?php
     if (isset($_COOKIE['personatge'])){ ?>
 <div class="guardar">
-    <img src="../img/save.png" alt="icona guardar" data-video="04aus/video/Sarro_Aus_03" data-descripcio="L’hàbitat de l’illa de Buda és aprofitat per diferents varietats d’aus.<br>Filmació: Artur Sarró (dècada de 1960) " onclick="guardarVideo(this)"/>
+    <img src="../img/save.png" alt="icona guardar" data-video="04aus/video/Sarro_Aus_03" data-descripcio="Artur Sarró - Les aus de l’illa de Buda" onclick="guardarVideo(this)"/>
 </div>
     <?php }
 ?>

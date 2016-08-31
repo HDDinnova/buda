@@ -12,7 +12,7 @@
 <?php
     if (isset($_COOKIE['personatge'])){ ?>
 <div class="guardar">
-    <img src="../img/save.png" alt="icona guardar" data-video="04aus/video/SalvadoMaluquer_PrimerNiu" data-descripcio="Salvador Maluquer explica com fou la troballa del primer niu -en aquest cas,de gavines- al delta de l’Ebre." onclick="guardarVideo(this)"/>
+    <img src="../img/save.png" alt="icona guardar" data-video="04aus/video/SalvadoMaluquer_PrimerNiu" data-descripcio="Salvador Maluquer - El primer niu trobat a l’illa de Buda" onclick="guardarVideo(this)"/>
 </div>
     <?php }
 ?>
