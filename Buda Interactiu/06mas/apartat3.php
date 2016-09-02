@@ -52,12 +52,26 @@
     <div class="tapa taronga"></div>
     <div id="foto3-3text" class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-4 col-md-4 col-sm-10 col-xs-10">
         <p><strong>Des de primers del segle XX i especialment a partir de la dècada dels anys 40, vivien a l’illa de Buda moltes famílies, vingudes sobretot de Deltebre (Jesús i Maria i La Cava), de Sant Jaume d’Enveja i d’altres poblacions. Els propietaris necessitaven cada vegada més treballadors per fer les feines d’explotació dels arrossars i les llacunes.</strong></p>
+        <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardartext">
+            <img src="../img/save.png" alt="icona guardar" data-img="06mas/foto/Santi124.jpg" data-text="06mas/text/text8.html" onclick="guardarText(this)"/>
+        </div>
+            <?php }
+        ?>
     </div>
     <p id="foto3-3peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Arxiu família Borés<br>(gentilesa Museu de les Terres de l’Ebre).</p>
 </div>
 <div id="foto3-4" class="fotofons">
     <div id="foto3-4text" class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-4 col-md-4 col-sm-10 col-xs-10">
         <p><strong>És l’època en què s’hi aixequen més casetes i barraques per l’illa, per acollir totes aquestes famílies. Al mas, s’hi habiliten espais per fer-ne una escola, on anaven a aprendre els fills dels colons.</strong></p>
+        <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardartext">
+            <img src="../img/save.png" alt="icona guardar" data-img="06mas/foto/Santi196.jpg" data-text="06mas/text/text9.html" onclick="guardarText(this)"/>
+        </div>
+            <?php }
+        ?>
         <div class="clearfix"></div>
         <div id="foto3-4boto" class="boto pull-right">
             <img class="marro" src="img/play.png" alt="reproduir video">
@@ -103,6 +117,13 @@
     <div id="foto3-5text" class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-4 col-md-4 col-sm-10 col-xs-10">
         <p class="taronga">I és que el mas ha estat, per damunt de tot, testimoni de les feines lligades al conreu de l’arròs, on encarregats i colons treballaven frenèticament durant la campanya de la sega de l’arròs. En els sequesos del Mas s’hi trillava i ensacava l’arròs segat als arrossars de l’illa, primer amb trills manuals i després amb les trilladores mecàniques. Dones solejant l’arròs escampat als sequesos, fent solcs amb els peus, homes trillant-lo i carretjant-lo amb carros i carretes cap a dins els magatzems annexos</p>
         <div class="clearfix"></div>
+        <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardartext">
+            <img src="../img/save.png" alt="icona guardar" data-img="06mas/foto/Santi176.jpg" data-text="06mas/text/text10.html" onclick="guardarText(this)"/>
+        </div>
+            <?php }
+        ?>
         <div id="foto3-5boto1" class="boto">
             <img class="marro" src="img/play.png" alt="reproduir video">
         </div>

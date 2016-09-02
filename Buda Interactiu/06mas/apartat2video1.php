@@ -12,7 +12,7 @@
 <?php
     if (isset($_COOKIE['personatge'])){ ?>
 <div class="guardar">
-    <img src="../img/save.png" alt="icona guardar" data-video="06mas/video/0558_PontFusta_Vaixell" data-descripcio="Animació del vapor Anita al pont de fusta." onclick="guardarVideo(this)"/>
+    <img src="../img/save.png" alt="icona guardar" data-video="06mas/video/0558_PontFusta_Vaixell" data-descripcio="Reconstrucció virtual a partir de fotografies de l’Arxiu Borrell (Arxiu Històric Comarcal del Baix Ebre) - El vapor Anita a la passarel·la del far de Buda" onclick="guardarVideo(this)"/>
 </div>
     <?php }
 ?>

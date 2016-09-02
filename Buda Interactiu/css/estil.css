@@ -219,6 +219,7 @@
 #videos .guardar img{
     width: 100%;
     height: 100%;
+    cursor: pointer;
 }
 .guardartext{
     position: relative;
@@ -233,7 +234,10 @@
 }
 .guardartext img{
     width: 100% !important;
+    min-width: 40px !important;
+    min-height: 40px !important;
     height: 100% !important;
+    cursor: pointer;
 }
 .scroll{
     position: absolute;
@@ -386,6 +390,7 @@
 .f .guardar img{
     width: 100%;
     height: 100%;
+    cursor: pointer;
 }
 .videofull{
     height: 100vh;

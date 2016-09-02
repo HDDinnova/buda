@@ -25,6 +25,13 @@
         </div>
         <div class="clearfix"></div>
         <p><strong>Des de la Casa de Buda, els Pons organitzaven trobades amb convidats vinguts de Tortosa i d’altres llocs, als quals mostraven les seves propietats. Sovint aprofitaven aquestes visites de treball o d’oci per anar des de Tortosa fins a l’illa amb el vapor “Anita”, propietat també de D. Lluís Pons, qui el va fer construir.</strong></p>
+        <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardartext">
+            <img src="../img/save.png" alt="icona guardar" data-img="06mas/foto/Santi081.jpg" data-text="06mas/text/text4.html" onclick="guardarText(this)"/>
+        </div>
+            <?php }
+        ?>
     </div>
     <p id="foto2-2peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Foto: Guillermo Barberà</p>
     <div id="foto2-2foto1" class="foto">
@@ -53,6 +60,13 @@
 <div id="foto2-3" class="fotofons">
     <div id="foto2-3text" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-lg-offset-7 col-md-offset-7 col-sm-offset-1 col-xs-offset-1">
         <p class="taronga">Va ser també en aquests anys quan Lluís Pons, mogut pel seu interès per la caça d’aus a l’illa, organitzava tirades amb amics i coneguts, i de les quals aparéixen fins i tot referenciades en diaris de primers de segle XX. És en aquells anys quan es va constituir una societat anomenada “Coto Isla de Buda”, de la que formaven part distingides personalitats de la ciutat de Barcelona i rodalies, i que el 1917 va fer construir un edifici amb habitacions i tot tipus de comoditats per a pernoctar-hi durant les expedicions de caça.</p>
+        <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardartext">
+            <img src="../img/save.png" alt="icona guardar" data-img="06mas/foto/Santi161.jpg" data-text="06mas/text/text6.html" onclick="guardarText(this)"/>
+        </div>
+            <?php }
+        ?>
     </div>
     <p id="foto2-3peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Arxiu família Borés<br>(gentilesa Museu de les Terres de l’Ebre).</p>
     <div class="tapa taronga"></div>
@@ -61,7 +75,7 @@
         <?php
             if (isset($_COOKIE['personatge'])){ ?>
         <div class="guardar">
-            <img src="../img/save.png" alt="icona guardar" data-foto="06mas/foto/Santi091.jpg" data-descripcio="Foto històrica 1 del Delta" onclick="guardarFoto(this)"/>
+            <img src="../img/save.png" alt="icona guardar" data-foto="06mas/foto/Santi091.jpg" data-descripcio="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre) - El mas de Buda" onclick="guardarFoto(this)"/>
         </div>
             <?php }
         ?>
@@ -71,7 +85,7 @@
         <?php
             if (isset($_COOKIE['personatge'])){ ?>
         <div class="guardar">
-            <img src="../img/save.png" alt="icona guardar" data-foto="06mas/foto/Santi092.jpg" data-descripcio="Foto històrica 2 del Delta" onclick="guardarFoto(this)"/>
+            <img src="../img/save.png" alt="icona guardar" data-foto="06mas/foto/Santi092.jpg" data-descripcio="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre) - El mas de Buda" onclick="guardarFoto(this)"/>
         </div>
             <?php }
         ?>
@@ -81,7 +95,7 @@
         <?php
             if (isset($_COOKIE['personatge'])){ ?>
         <div class="guardar">
-            <img src="../img/save.png" alt="icona guardar" data-foto="06mas/foto/Santi098.jpg" data-descripcio="Foto històrica 3 del Delta" onclick="guardarFoto(this)"/>
+            <img src="../img/save.png" alt="icona guardar" data-foto="06mas/foto/Santi098.jpg" data-descripcio="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre) - El mas de Buda" onclick="guardarFoto(this)"/>
         </div>
             <?php }
         ?>
@@ -91,7 +105,7 @@
         <?php
             if (isset($_COOKIE['personatge'])){ ?>
         <div class="guardar">
-            <img src="../img/save.png" alt="icona guardar" data-foto="06mas/foto/Santi099.jpg" data-descripcio="Foto històrica 4 del Delta" onclick="guardarFoto(this)"/>
+            <img src="../img/save.png" alt="icona guardar" data-foto="06mas/foto/Santi099.jpg" data-descripcio="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre) - El mas de Buda" onclick="guardarFoto(this)"/>
         </div>
             <?php }
         ?>
@@ -101,7 +115,7 @@
         <?php
             if (isset($_COOKIE['personatge'])){ ?>
         <div class="guardar">
-            <img src="../img/save.png" alt="icona guardar" data-foto="06mas/foto/Santi162.jpg" data-descripcio="Foto històrica 5 del Delta" onclick="guardarFoto(this)"/>
+            <img src="../img/save.png" alt="icona guardar" data-foto="06mas/foto/Santi162.jpg" data-descripcio="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre) - El mas de Buda" onclick="guardarFoto(this)"/>
         </div>
             <?php }
         ?>
@@ -111,7 +125,7 @@
         <?php
             if (isset($_COOKIE['personatge'])){ ?>
         <div class="guardar">
-            <img src="../img/save.png" alt="icona guardar" data-foto="06mas/foto/Santi220.jpg" data-descripcio="Foto històrica 6 del Delta" onclick="guardarFoto(this)"/>
+            <img src="../img/save.png" alt="icona guardar" data-foto="06mas/foto/Santi220.jpg" data-descripcio="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre) - El mas de Buda" onclick="guardarFoto(this)"/>
         </div>
             <?php }
         ?>
@@ -123,6 +137,13 @@
 <div id="foto2-4" class="fotofons">
     <div id="foto2-4text" class="col-lg-3 col-md-3 col-sm-12 col-xs-12 col-lg-offset-8 col-md-offset-8 col-sm-offset-1 col-xs-offset-1">
         <p><strong>La família Borés, l’última nissaga de propietaris de l’Illa, ho és des de l’any 1924, quan va adquirir-la a Luís G. Pons els germans Pere i Joan Borés Casamiglia, de Barcelona.</strong></p>
+        <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardartext">
+            <img src="../img/save.png" alt="icona guardar" data-img="06mas/foto/buda-46.jpg" data-text="06mas/text/text7.html" onclick="guardarText(this)"/>
+        </div>
+            <?php }
+        ?>
     </div>
     <p id="foto2-4peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Foto: Guillermo Barberà</p>
 </div>

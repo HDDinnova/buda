@@ -54,6 +54,13 @@
                     </div>
                     <div class="col-lg-8 col-md-8">
                         <p><strong>La fesomia del gran mas de Buda i les seves parets emblanquinades són mediterrànies, però la construcció d’alguns elements annexes, com la capella, i l’entorn del palmerar que l’abraça, li donen un toc colonial, d’illa més aviat tropical que mediterrània.</strong></p>
+                        <?php
+                            if (isset($_COOKIE['personatge'])){ ?>
+                        <div class="guardartext">
+                            <img src="../img/save.png" alt="icona guardar" data-img="06mas/foto/Santi087.jpg" data-text="06mas/text/text1.html" onclick="guardarText(this)"/>
+                        </div>
+                            <?php }
+                        ?>
                     </div>
                 </div>
                 <p id="foto1-3peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Arxiu família Borés<br>(gentilesa Museu de les Terres de l’Ebre).</p>
@@ -63,6 +70,13 @@
             <div id="foto1-4" class="fotofons">
                 <div id="foto1-4text" class="col-lg-3 col-md-3 col-sm-12 col-xs-12 col-lg-offset-8 col-md-offset-8 col-sm-offset-1 col-xs-offset-1">
                     <p><strong>Ubicat a 100 m del llit del riu, està envoltat per arrossars. S’hi arriba després d’un màgic camí de terra, coronat per eucaliptus i palmeres. El caràcter exòtic que pren tot aquest entorn reforça el sentiment d’evasió que hom sent en endinsar-se cap al mas.</strong></p>
+                    <?php
+                        if (isset($_COOKIE['personatge'])){ ?>
+                    <div class="guardartext">
+                        <img src="../img/save.png" alt="icona guardar" data-img="06mas/foto/Santi228.jpg" data-text="06mas/text/text2.html" onclick="guardarText(this)"/>
+                    </div>
+                        <?php }
+                    ?>
                 </div>
                 <p id="foto1-4peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Arxiu família Borés<br>(gentilesa Museu de les Terres de l’Ebre).</p>
                 <div id="foto1-4a" class="fotofons"></div>
@@ -80,6 +94,13 @@
             <div id="foto1-6" class="fotofons">
                 <div id="foto1-6text" class="col-lg-3 col-md-3 col-sm-12 col-xs-12 col-lg-offset-8 col-md-offset-8 col-sm-offset-1 col-xs-offset-1">
                     <p class="taronga">El mas que coneixem avui es va fer construir per Lluís G. Pons i Enrich, industrial i polític destacat a la Catalunya de primers de segle XX. Aquest influent diputat a Corts pel districte de Berga, era alhora un gran empresari i inversor en negocis i propietats diverses, entre aquestes a la zona de l’Ebre. Va adquirir Buda l’any 1896 i en va ser el seu propietari fins l’any 1919. Allí hi va fer edificar una austera i espaiosa casa i també una ermita, que va ser inaugurada el febrer de 1903, en presència del bisbe de Solsona. Un gran mas, enmig d’una illa amb barraques on vivien els jornalers, pescadors i caçadors de l’illa.</p>
+                    <?php
+                        if (isset($_COOKIE['personatge'])){ ?>
+                    <div class="guardartext">
+                        <img src="../img/save.png" alt="icona guardar" data-img="06mas/foto/Santi130.jpg" data-text="06mas/text/text3.html" onclick="guardarText(this)"/>
+                    </div>
+                        <?php }
+                    ?>
                 </div>
                 <p id="foto1-6peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Arxiu família Borés<br>(gentilesa Museu de les Terres de l’Ebre).</p>
             </div>

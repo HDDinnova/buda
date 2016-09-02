@@ -1,6 +1,13 @@
 <div id="foto4-1" class="fotofons">
     <div id="foto4-1text" class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-4 col-md-4 col-sm-10 col-xs-10">
         <p><strong>Durant el segle passat es van anar afegint construccions de nous espais annexos al mas, per emmagatzematge de les eines i equips per al conreu de l’arròs i altres, així com arranjaments de la capella, que es va dedicar a Sant Pere (un dels propietaris de l’illa era Pere Borés), constituït com a patró de les festes de Buda.</strong></p>
+        <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardartext">
+            <img src="../img/save.png" alt="icona guardar" data-img="06mas/foto/Santi193.jpg" data-text="06mas/text/text11.html" onclick="guardarText(this)"/>
+        </div>
+            <?php }
+        ?>
         <div class="clearfix"></div>
         <div id="foto4-1boto" class="boto pull-right">
             <img class="taronga" src="img/play.png" alt="reproduir video">
@@ -61,12 +68,26 @@
                 <footer><strong>Josep Maria de Segarra (1945)</strong></footer>
             </blockquote>
         </div>
+        <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardartext">
+            <img src="../img/save.png" alt="icona guardar" data-img="06mas/foto/Santi155.jpg" data-text="06mas/text/text12.html" onclick="guardarText(this)"/>
+        </div>
+            <?php }
+        ?>
     </div>
     <p id="foto4-4peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Arxiu família Borés<br>(gentilesa Museu de les Terres de l’Ebre).</p>
 </div>>
 <div id="foto4-5" class="fotofons">
     <div id="foto4-5text" class="col-lg-offset-8 col-md-offset-8 col-sm-offset-1 col-xs-offset-1 col-lg-3 col-md-3 col-sm-10 col-xs-10">
         <p class="taronga">Actualment, el gran mas de Buda s’utilitza com a habitatge dels seus propietaris, i alhora també esdevé un dels allotjaments rurals més grans del delta de l’Ebre. S’hi allotgen sobretot els caçadors que venen per caçar a la zona privada de caça de Buda, així com ornitòlegs, biòlegs i altres estudiosos que sovint acull el mas i que venen a fer recerca i observació a l’illa.</p>
+        <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardartext">
+            <img src="../img/save.png" alt="icona guardar" data-img="06mas/foto/buda-70.jpg" data-text="06mas/text/text13.html" onclick="guardarText(this)"/>
+        </div>
+            <?php }
+        ?>
     </div>
     <p id="foto4-5peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Foto: Guillermo Barberà</p>
 </div>
