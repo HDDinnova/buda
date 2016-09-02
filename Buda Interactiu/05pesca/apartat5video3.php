@@ -12,7 +12,7 @@
 <?php
     if (isset($_COOKIE['personatge'])){ ?>
 <div class="guardar">
-    <img src="../img/save.png" alt="icona guardar" data-video="05pesca/video/Josepet_PerduaPesca" data-descripcio="Josepet explica com a canviat la pesca a Buda" onclick="guardarVideo(this)"/>
+    <img src="../img/save.png" alt="icona guardar" data-video="05pesca/video/Josepet_PerduaPesca" data-descripcio="Josep del Cadell - Els canvis en la pesca a Buda" onclick="guardarVideo(this)"/>
 </div>
     <?php }
 ?>

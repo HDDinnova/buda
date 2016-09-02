@@ -9,10 +9,3 @@
 <div class="groc">
     Arxiu TVE (No-Do). 
 </div>
-<?php
-    if (isset($_COOKIE['personatge'])){ ?>
-<div class="guardar">
-    <img src="../img/save.png" alt="icona guardar" data-video="05pesca/video/BD_TVE_Pesquera_3-encanyissada" data-descripcio="Arxiu TVE (No-Do)." onclick="guardarVideo(this)"/>
-</div>
-    <?php }
-?>

@@ -9,10 +9,3 @@
 <div class="groc">
     Filmació: Arxiu família Borés
 </div>
-<?php
-    if (isset($_COOKIE['personatge'])){ ?>
-<div class="guardar">
-    <img src="../img/save.png" alt="icona guardar" data-video="05pesca/video/bores_anys_60" data-descripcio="Filmació: Arxiu família Borés" onclick="guardarVideo(this)"/>
-</div>
-    <?php }
-?>

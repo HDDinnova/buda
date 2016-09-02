@@ -12,7 +12,7 @@
 <?php
     if (isset($_COOKIE['personatge'])){ ?>
 <div class="guardar">
-    <img src="../img/save.png" alt="icona guardar" data-video="05pesca/video/GuillermoBores_JugarAgafarAnguiles" data-descripcio="Guillermo Borés explica records" onclick="guardarVideo(this)"/>
+    <img src="../img/save.png" alt="icona guardar" data-video="05pesca/video/GuillermoBores_JugarAgafarAnguiles" data-descripcio="Guillermo Borés - Records de la pesca a Buda" onclick="guardarVideo(this)"/>
 </div>
     <?php }
 ?>

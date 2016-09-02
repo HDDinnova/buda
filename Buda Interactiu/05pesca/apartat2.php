@@ -1,6 +1,15 @@
 <div id="foto2-1" class="fotofons">
     <div id="foto2-1text" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
-        <p class="marro col-lg-3 col-md-3 col-sm-9 col-xs-10">Les llacunes han estat molt fèrtils en captures pesqueres, explotades i ben aprofitades des del segle XVIII i fins els anys 60 i 70 del segle passat. Des de 1879 la concessió de la pesca a les basses del Delta (l’Encanyissada, la Tancada, Canal Vell i Les Olles), la té la “Confraria de pescadors de Sant Pere”, excepte als Calaixos de Buda, de propietat privada.</p>
+        <div class="col-lg-3 col-md-3 col-sm-9 col-xs-10">
+            <p class="marro">Les llacunes han estat molt fèrtils en captures pesqueres, explotades i ben aprofitades des del segle XVIII i fins els anys 60 i 70 del segle passat. Des de 1879 la concessió de la pesca a les basses del Delta (l’Encanyissada, la Tancada, Canal Vell i Les Olles), la té la “Confraria de pescadors de Sant Pere”, excepte als Calaixos de Buda, de propietat privada.</p>
+            <?php
+                if (isset($_COOKIE['personatge'])){ ?>
+            <div class="guardartext">
+                <img src="../img/save.png" alt="icona guardar" data-img="05pesca/foto/Santi050.jpg" data-text="05pesca/text/text6.html" onclick="guardarText(this)"/>
+            </div>
+                <?php }
+            ?>
+        </div>
         <div class="clearfix"></div>
         <h2 class="marro col-lg-5 col-md-5 col-sm-9 col-xs-10">La pesca a Buda</h2>
     </div>
@@ -17,33 +26,33 @@
     </div>
     <div class="f">
         <img id="LVG19111221" src="pdf/LVG19111221-011.jpg" alt="Recull la vanguardia dia 21/12/1911"/>
-        <?php
-            if (isset($_COOKIE['personatge'])){ ?>
-        <div class="guardar">
-            <img src="../img/save.png" alt="icona guardar" data-foto="05pesca/pdf/LVG19111221-011.jpg" data-descripcio="Recull la vanguardia dia 21/12/1911" onclick="guardarFoto(this)"/>
-        </div>
-            <?php }
-        ?>
     </div>
     <div class="f">
         <img id="LVG19150615" src="pdf/LVG19150615-013.jpg" alt="Recull la vanguardia dia 15/06/1915"/>
-        <?php
-            if (isset($_COOKIE['personatge'])){ ?>
-        <div class="guardar">
-            <img src="../img/save.png" alt="icona guardar" data-foto="05pesca/pdf/LVG19150615-013.jpg" data-descripcio="Recull la vanguardia dia 15/06/1915" onclick="guardarFoto(this)"/>
-        </div>
-            <?php }
-        ?>
     </div>
 </div>
 <div id="foto2-3" class="fotofons">
     <div id="foto2-3text" class="col-lg-3 col-md-3 col-sm-12 col-xs-12 col-lg-offset-8 col-md-offset-8 col-sm-offset-1 col-xs-offset-1">
         <p class="marro">Durant les dècades del segle XX en què Buda va estar habitada per colons, la gran riquesa de les llacunes dels Calaixos donava de menjar a moltes famílies.<br>Des del mes d’octubre fins el mes de febrer s’hi practicava la pesca, o sigui, a la tardor i l’hivern, coincidint amb aquells mesos en què no hi havia feina als arrossars, la qual era un recurs vital per complementar la subsistencia de moltes famílies a l’illa, pescant als canals, a les basses, al riu i a la mar.</p>
+        <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardartext">
+            <img src="../img/save.png" alt="icona guardar" data-img="05pesca/foto/Santi107.jpg" data-text="05pesca/text/text7.html" onclick="guardarText(this)"/>
+        </div>
+            <?php }
+        ?>
     </div>
     <p id="foto2-3peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Arxiu família Borés<br>(gentilesa Museu de les Terres de l’Ebre).</p>
     <div class="tapa marro"></div>
     <div id="foto2-3text2" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-lg-offset-7 col-md-offset-7 col-sm-offset-1 col-xs-offset-1">
         <p>Com que hi havia tants pescadors, era tradició i pràctica habitual que hi hagués un treballador encarregat de les pesqueres, qui controlava i coordinava els treballs i les captures de tots els pescadors de Buda.</p>
+        <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardartext">
+            <img src="../img/save.png" alt="icona guardar" data-img="05pesca/foto/Santi107.jpg" data-text="05pesca/text/text8.html" onclick="guardarText(this)"/>
+        </div>
+            <?php }
+        ?>
     </div>
 </div>
 <div id="foto2-4" class="fotofons">
@@ -54,12 +63,26 @@
         </div>
         <div class="clearfix"></div>
         <p class="blanc">Els pescadors de Buda anaven cada dia a calar els ormejos i les arts de pesca a les basses, i també als canals i “desaigües” (canals de desguàs): ventrols, gànguils, ralls, gambers, tresmalls, anguileres… tot un ventall de “sàrsies” i arts per a pescar-hi el màxim possible.<br>S’hi estaven treballant fins al vespre, després de recollir (“xorrar”) el peix atrapat dins les xarxes calades de matí. S’hi desplaçaven per canals i sèquies fins les llacunes amb les pontones, petites embarcacions de poc calat i afuades i on hi carregaven les xarxes i el peix.</p>
+        <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardartext">
+            <img src="../img/save.png" alt="icona guardar" data-img="05pesca/foto/Santi109.jpg" data-text="05pesca/text/text9.html" onclick="guardarText(this)"/>
+        </div>
+            <?php }
+        ?>
     </div>
     <p id="foto2-4peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Arxiu família Borés<br>(gentilesa Museu de les Terres de l’Ebre).</p>
 </div>
 <div id="foto2-5" class="fotofons">
     <div id="foto2-5text" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
         <p class="marro">No només es pescava a les basses, també als canals i desguassos, on els “buderos” hi calaven diverses arts per pescar, sobretot anguiles. Igual que en altres grans finques del Delta on es conreava arròs, quan s’apropava la sega es buidava l’aigua dels arrossars gradualment, per facilitar les feines de la sega perquè el tiràs pogués llissar bé (el tiràs era una mena de trineu de fusta, estirat pel matxo, on es carregaven les garbes de l’arròs segat) i perquè no es quedessin seques del tot.</p>
+        <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardartext">
+            <img src="../img/save.png" alt="icona guardar" data-img="05pesca/foto/Santi178.jpg" data-text="05pesca/text/text10.html" onclick="guardarText(this)"/>
+        </div>
+            <?php }
+        ?>
     </div>
     <p id="foto2-5peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Arxiu família Borés<br>(gentilesa Museu de les Terres de l’Ebre).</p>
     <div class="tapa marro"></div>

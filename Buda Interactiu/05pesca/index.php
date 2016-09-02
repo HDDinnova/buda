@@ -42,21 +42,44 @@
                 </div>
             </div>
             <div id="foto1-2" class="fotofons">
-                <div id="foto1-2text" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
-                    <h2 class="blaufosc col-lg-3 col-md-3 col-sm-9 col-xs-10">Un mica d'història...</h2>
+                <div id="foto1-2text" class="col-lg-3 col-md-3 col-sm-9 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+                    <h2 class="blaufosc">Un mica d'història...</h2>
                     <div class="clearfix"></div>
-                    <p class="blaufosc col-lg-3 col-md-3 col-sm-9 col-xs-10">L’illa de Buda, concedida pel Reial Patrimoni el 1739 –llavors ocupava unes 6 hectàrees–, va créixer espectacularment en els 150 anys posteriors.</p>
+                    <p class="blaufosc">L’illa de Buda, concedida pel Reial Patrimoni el 1739 –llavors ocupava unes 6 hectàrees–, va créixer espectacularment en els 150 anys posteriors.</p>
+                    <?php
+                        if (isset($_COOKIE['personatge'])){ ?>
+                    <div class="guardartext">
+                        <img src="../img/save.png" alt="icona guardar" data-img="05pesca/foto/dreta_1880-bn.jpg" data-text="05pesca/text/text1.html" onclick="guardarText(this)"/>
+                    </div>
+                        <?php }
+                    ?>
                 </div>
                 <p id="foto1-2peu" class="peu taronga col-lg-offset-9 col-md-offset-8 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">La riba dreta de l’Ebre (1880).<br>Font: Instituto Nacional de Cartografía.</p>
             </div>
             <div id="foto1-3" class="fotofons">
-                <div id="foto1-3text" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
-                    <p class="blaufosc col-lg-4 col-md-4 col-sm-9 col-xs-10">En dades sobre pesca a les basses del delta de l’Ebre que daten del darrer terç del segle XIX (Fabregat, E.; MMB, 2010), l’any 1881 l’illa de Buda havia crescut fins les més  de 1.000 hectàrees. D’aquestes, de una bona part corresponien a basses i llacunes.<br>Com que la pràctica totalitat de Buda s’havia format a partir de mitjans del segle XVIII, segurament hi havia molts espais inundats, formats a partir del tancament de braços de mar per barres de sorra creades per l’acció conjunta de l’Ebre i del mar. </p>
+                <div id="foto1-3text" class="col-lg-4 col-md-4 col-sm-9 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+                    <p class="blaufosc">En dades sobre pesca a les basses del delta de l’Ebre que daten del darrer terç del segle XIX (Fabregat, E.; MMB, 2010), l’any 1881 l’illa de Buda havia crescut fins les més  de 1.000 hectàrees. D’aquestes, de una bona part corresponien a basses i llacunes.<br>Com que la pràctica totalitat de Buda s’havia format a partir de mitjans del segle XVIII, segurament hi havia molts espais inundats, formats a partir del tancament de braços de mar per barres de sorra creades per l’acció conjunta de l’Ebre i del mar. </p>
+                    <?php
+                        if (isset($_COOKIE['personatge'])){ ?>
+                    <div class="guardartext">
+                        <img src="../img/save.png" alt="icona guardar" data-img="05pesca/foto/dreta_1880.jpg" data-text="05pesca/text/text2.html" onclick="guardarText(this)"/>
+                    </div>
+                        <?php }
+                    ?>
                 </div>
             </div>
             <div id="foto1-4" class="fotofons">
                 <div id="foto1-4text" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
-                    <p class="verdfosc col-lg-3 col-md-3 col-sm-9 col-xs-10">Les basses dels Calaixos, riquíssimes en nutrients pel barreig d’aigua dolça i salada, juntament amb altres factors idonis com la temperatura i la salinitat, han afavorit la presència d’una elevada varietat d’espècies ictiològiques.</p>
+                    <div class="col-lg-3 col-md-3 col-sm-9 col-xs-10">
+                        <p class="verdfosc">Les basses dels Calaixos, riquíssimes en nutrients pel barreig d’aigua dolça i salada, juntament amb altres factors idonis com la temperatura i la salinitat, han afavorit la presència d’una elevada varietat d’espècies ictiològiques.</p>
+                        <?php
+                            if (isset($_COOKIE['personatge'])){ ?>
+                        <div class="guardartext">
+                            <img src="../img/save.png" alt="icona guardar" data-img="05pesca/foto/Santi106.jpg" data-text="05pesca/text/text3.html" onclick="guardarText(this)"/>
+                        </div>
+                            <?php }
+                        ?>
+                    </div>
                     <div class="clearfix"></div>
                     <h2 class="verdfosc col-lg-7 col-md-7 col-sm-9 col-xs-10">Els peixos de les llacunes</h2>
                 </div>
@@ -111,8 +134,15 @@
                 <p id="foto1-5peu" class="peu verdfosc col-lg-offset-9 col-md-offset-8 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">La pesca a les llacunes de Buda al primer terç del s.XX.<br>Foto: Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre).</p>
             </div>
             <div id="foto1-6" class="fotofons">
-                <div id="foto1-6text" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
-                    <p class="verdfosc col-lg-3 col-md-3 col-sm-9 col-xs-10">A les basses del Delta, i així mateix als Calaixos de Buda, sobretot durant la primavera i l’estiu, el canal que connecta la llacuna amb el riu i el mar roman obert, i l’angula i molts peixos menuts i adults de les badies penetren dins les llacunes buscant-hi aliment i refugi. És a la tardor i a l’hivern quan fan la migració des de les llacunes cap al mar.</p>
+                <div id="foto1-6text" class="col-lg-3 col-md-3 col-sm-9 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+                    <p class="verdfosc">A les basses del Delta, i així mateix als Calaixos de Buda, sobretot durant la primavera i l’estiu, el canal que connecta la llacuna amb el riu i el mar roman obert, i l’angula i molts peixos menuts i adults de les badies penetren dins les llacunes buscant-hi aliment i refugi. És a la tardor i a l’hivern quan fan la migració des de les llacunes cap al mar.</p>
+                    <?php
+                        if (isset($_COOKIE['personatge'])){ ?>
+                    <div class="guardartext">
+                        <img src="../img/save.png" alt="icona guardar" data-img="05pesca/foto/Santi096.jpg" data-text="05pesca/text/text4.html" onclick="guardarText(this)"/>
+                    </div>
+                        <?php }
+                    ?>
                 </div>
                 <p id="foto1-6peu" class="peu verdfosc col-lg-offset-9 col-md-offset-8 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">La pesca a les llacunes de Buda al primer terç del s.XX.<br>Foto: Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre).</p>
             </div>
@@ -122,6 +152,13 @@
                     <img src="img/marca-2.png" alt="icona gràfica"/>
                     <div class="clearfix"></div>
                     <p class="blanc">Segons les zones i les èpoques, s’hi pescaven més unes espècies que d’altres, però les més abundants han estat aquestes les principals espècies capturades: l’anguila, la llissa, la carpa, el llobarro i l’orada (muixarra).</p>
+                    <?php
+                        if (isset($_COOKIE['personatge'])){ ?>
+                    <div class="guardartext">
+                        <img src="../img/save.png" alt="icona guardar" data-img="05pesca/foto/Santi105.jpg" data-text="05pesca/text/text5.html" onclick="guardarText(this)"/>
+                    </div>
+                        <?php }
+                    ?>
                 </div>
                 <p id="foto1-7peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Foto: Arxiu família Borés<br>(gentilesa Museu de les Terres de l’Ebre).</p>
             </div>

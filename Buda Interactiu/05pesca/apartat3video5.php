@@ -9,10 +9,3 @@
 <div class="groc">
     Seqüència descartada de la pel·lícula “Buda, l’illa del Delta”.
 </div>
-<?php
-    if (isset($_COOKIE['personatge'])){ ?>
-<div class="guardar">
-    <img src="../img/save.png" alt="icona guardar" data-video="05pesca/video/Josepet_anguiles" data-descripcio="Seqüència descartada de la pel·lícula “Buda, l’illa del Delta”." onclick="guardarVideo(this)"/>
-</div>
-    <?php }
-?>

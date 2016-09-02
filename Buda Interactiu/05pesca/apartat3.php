@@ -6,6 +6,13 @@
     <div class="tapa taronga"></div>
     <div id="foto3-1text2" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
         <p class="blanc">A la tardor, el canal que comunica les basses amb el riu i el mar es “tanca” amb la pantena, un art de pesca fix i utilitzat des d’antic en llacunes com l’Encanyissada i també als Calaixos. Un art de pesca especial i alhora utilitzat tradicionalment a les basses més grans del Delta, com l’Encanyissada. És un art fix, clavat amb una estructura fixada al fons del canal que comunica la llacuna amb el riu i el mar, i calada amb xarxes. Aprofitant els hàbits migratoris d’alguns peixos i de les anguiles, els pescadors paraven la pantena per a capturar-los quan intenten sortir des de la llacuna al mar.</p>
+        <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardartext">
+            <img src="../img/save.png" alt="icona guardar" data-img="05pesca/foto/_MG_8135.jpg" data-text="05pesca/text/text11.html" onclick="guardarText(this)"/>
+        </div>
+            <?php }
+        ?>
         <div class="clearfix"></div>
         <div id="foto3-1botons" class="boto">
             <img id="foto3-1boto1" class="blau" src="img/play.png" alt="reproduir video">

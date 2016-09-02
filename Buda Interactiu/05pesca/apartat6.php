@@ -1,6 +1,15 @@
 <div id="foto6-1" class="fotofons">
     <div id="foto6-1text" class="col-lg-7 col-md-7 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
-        <p class="blaufosc col-lg-6 col-md-6">La pesca a les platges de Buda era tan natural com agafar-ho “a la paupa”, en “cèrcols” o bé complementant-ho amb altres estris de pesca més senzills, com la reixaga, una fitora de 4 o 5 pues llises i punxegudes. Arts de platja per pescar i mariscar: muixarres, llobarros, corballs, llisses,… mol·luscs marins com les tellerines (“tallarina”), les escopinyes (“catxels”), les cloïsses (“grúmols”) i altres espècies capturades al front marítim de Buda, “agafades” tradicionalment pels pescadors i colons de l’illa, i que actualment són espècies molt preuades al mercat pel seu gran valor gastronòmic.</p>
+        <div class="col-lg-6 col-md-6">
+            <p class="blaufosc">La pesca a les platges de Buda era tan natural com agafar-ho “a la paupa”, en “cèrcols” o bé complementant-ho amb altres estris de pesca més senzills, com la reixaga, una fitora de 4 o 5 pues llises i punxegudes. Arts de platja per pescar i mariscar: muixarres, llobarros, corballs, llisses,… mol·luscs marins com les tellerines (“tallarina”), les escopinyes (“catxels”), les cloïsses (“grúmols”) i altres espècies capturades al front marítim de Buda, “agafades” tradicionalment pels pescadors i colons de l’illa, i que actualment són espècies molt preuades al mercat pel seu gran valor gastronòmic.</p>
+            <?php
+                if (isset($_COOKIE['personatge'])){ ?>
+            <div class="guardartext">
+                <img src="../img/save.png" alt="icona guardar" data-img="05pesca/foto/Santi096.jpg" data-text="05pesca/text/text17.html" onclick="guardarText(this)"/>
+            </div>
+                <?php }
+            ?>
+        </div>
         <div class="clearfix"></div>
         <h2 class="blaufosc col-lg-12 col-md-12">MARISCAR I PESCAR A MAR</h2>
         <div class="clearfix"></div>
