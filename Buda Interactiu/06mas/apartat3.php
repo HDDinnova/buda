@@ -84,7 +84,7 @@
         <?php
             if (isset($_COOKIE['personatge'])){ ?>
         <div class="guardar">
-            <img src="../img/save.png" alt="icona guardar" data-foto="06mas/foto/Santi128.jpg" data-descripcio="Foto històrica 1 del Delta" onclick="guardarFoto(this)"/>
+            <img src="../img/save.png" alt="icona guardar" data-foto="06mas/foto/Santi128.jpg" data-descripcio="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre) - Els voltants del mas, les barraques dels colons" onclick="guardarFoto(this)"/>
         </div>
             <?php }
         ?>
@@ -94,7 +94,7 @@
         <?php
             if (isset($_COOKIE['personatge'])){ ?>
         <div class="guardar">
-            <img src="../img/save.png" alt="icona guardar" data-foto="06mas/foto/Santi079.jpg" data-descripcio="Foto històrica 2 del Delta" onclick="guardarFoto(this)"/>
+            <img src="../img/save.png" alt="icona guardar" data-foto="06mas/foto/Santi079.jpg" data-descripcio="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre) - Els voltants del mas, les barraques dels colons" onclick="guardarFoto(this)"/>
         </div>
             <?php }
         ?>
@@ -104,7 +104,7 @@
         <?php
             if (isset($_COOKIE['personatge'])){ ?>
         <div class="guardar">
-            <img src="../img/save.png" alt="icona guardar" data-foto="06mas/foto/Santi233.jpg" data-descripcio="Foto històrica 3 del Delta" onclick="guardarFoto(this)"/>
+            <img src="../img/save.png" alt="icona guardar" data-foto="06mas/foto/Santi233.jpg" data-descripcio="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre) - Els voltants del mas, les barraques dels colons" onclick="guardarFoto(this)"/>
         </div>
             <?php }
         ?>
@@ -137,15 +137,43 @@
         <div class="sliderfotos">
             <div>
                 <img src="foto/Santi139.jpg" alt="Arxiu família Borés"/>
+                <?php
+                    if (isset($_COOKIE['personatge'])){ ?>
+                <div class="guardar">
+                    <img src="../img/save.png" alt="icona guardar" data-foto="06mas/foto/Santi139.jpg" data-descripcio="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre) - El mas, testimoni de l’activitat agrícola de l’illa de Buda" onclick="guardarFoto(this)"/>
+                </div>
+                    <?php }
+                ?>
             </div>
             <div>
                 <img src="foto/Santi140.jpg" alt="Arxiu família Borés"/>
+                <?php
+                    if (isset($_COOKIE['personatge'])){ ?>
+                <div class="guardar">
+                    <img src="../img/save.png" alt="icona guardar" data-foto="06mas/foto/Santi140.jpg" data-descripcio="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre) - El mas, testimoni de l’activitat agrícola de l’illa de Buda" onclick="guardarFoto(this)"/>
+                </div>
+                    <?php }
+                ?>
             </div>
             <div>
                 <img src="foto/Santi175.jpg" alt="Arxiu família Borés"/>
+                <?php
+                    if (isset($_COOKIE['personatge'])){ ?>
+                <div class="guardar">
+                    <img src="../img/save.png" alt="icona guardar" data-foto="06mas/foto/Santi175.jpg" data-descripcio="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre) - El mas, testimoni de l’activitat agrícola de l’illa de Buda" onclick="guardarFoto(this)"/>
+                </div>
+                    <?php }
+                ?>
             </div>
             <div>
                 <img src="foto/Santi177.jpg" alt="Arxiu família Borés"/>
+                <?php
+                    if (isset($_COOKIE['personatge'])){ ?>
+                <div class="guardar">
+                    <img src="../img/save.png" alt="icona guardar" data-foto="06mas/foto/Santi177.jpg" data-descripcio="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre) - El mas, testimoni de l’activitat agrícola de l’illa de Buda" onclick="guardarFoto(this)"/>
+                </div>
+                    <?php }
+                ?>
             </div>
         </div>
         <div class="blau">

@@ -12,7 +12,7 @@
 <?php
     if (isset($_COOKIE['personatge'])){ ?>
 <div class="guardar">
-    <img src="../img/save.png" alt="icona guardar" data-video="06mas/video/Mestra_Esglesia-Escola" data-descripcio="Maria Rosa Merino, primera mestra destinada a l’illa de Buda, explica com es va adaptar l’església del complex en escola." onclick="guardarVideo(this)"/>
+    <img src="../img/save.png" alt="icona guardar" data-video="06mas/video/Mestra_Esglesia-Escola" data-descripcio="Rosa M. Merino - L’adaptació de l’església de Buda en escola" onclick="guardarVideo(this)"/>
 </div>
     <?php }
 ?>

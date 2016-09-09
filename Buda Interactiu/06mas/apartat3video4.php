@@ -12,7 +12,7 @@
 <?php
     if (isset($_COOKIE['personatge'])){ ?>
 <div class="guardar">
-    <img src="../img/save.png" alt="icona guardar" data-video="06mas/video/Ana_Adams_Mas" data-descripcio="L’actriu Ana Adams, interpretant l’artista Beatrice Field, passejant pel menjador del mas a la pel·lícula “Buda, l’illa del Delta”." onclick="guardarVideo(this)"/>
+    <img src="../img/save.png" alt="icona guardar" data-video="06mas/video/Ana_Adams_Mas" data-descripcio="“Buda, l’illa del Delta” - El mas de Buda" onclick="guardarVideo(this)"/>
 </div>
     <?php }
 ?>
