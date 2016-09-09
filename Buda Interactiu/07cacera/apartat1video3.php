@@ -12,7 +12,7 @@
 <?php
     if (isset($_COOKIE['personatge'])){ ?>
 <div class="guardar">
-    <img src="../img/save.png" alt="icona guardar" data-video="07cacera/video/GuillermoBores_cacadors" data-descripcio="Guillermo Borés explica com s’organitzava dècades enrere la cacera a l’illa de Buda" onclick="guardarVideo(this)"/>
+    <img src="../img/save.png" alt="icona guardar" data-video="07cacera/video/GuillermoBores_cacadors" data-descripcio="Guillermo Borés - Repàs històric de la cacera a l’illa de Buda" onclick="guardarVideo(this)"/>
 </div>
     <?php }
 ?>

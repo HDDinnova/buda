@@ -12,7 +12,7 @@
 <?php
     if (isset($_COOKIE['personatge'])){ ?>
 <div class="guardar">
-    <img src="../img/save.png" alt="icona guardar" data-video="07cacera/video/AntonioCabezas_autosuficiencia" data-descripcio="Antonio Cabezas, fill del darrer farer del far de Buda, recorda l’abundància de recursos que oferia l’illa." onclick="guardarVideo(this)"/>
+    <img src="../img/save.png" alt="icona guardar" data-video="07cacera/video/AntonioCabezas_autosuficiencia" data-descripcio="Antonio Cabezas - La cacera a Buda" onclick="guardarVideo(this)"/>
 </div>
     <?php }
 ?>

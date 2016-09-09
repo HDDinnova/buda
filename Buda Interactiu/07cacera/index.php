@@ -44,6 +44,13 @@
             <div id="foto1-2" class="fotofons">
                 <div id="foto1-2text" class="col-lg-3 col-md-3 col-sm-12 col-xs-12 col-lg-offset-8 col-md-offset-8 col-sm-offset-1 col-xs-offset-1">
                     <p><strong>La caça esdevé una activitat cinegètica molt arrelada a Buda. La memòria contada per colons i propietaris, diaris de caça, documents fílmics i fotogràfics, notícies i articles apareguts en la premsa de diferents dècades i altres fonts en són testimoni clau.</strong></p>
+                    <?php
+                        if (isset($_COOKIE['personatge'])){ ?>
+                    <div class="guardartext">
+                        <img src="../img/save.png" alt="icona guardar" data-img="07cacera/foto/Santi077.jpg" data-text="07cacera/text/text1.html" onclick="guardarText(this)"/>
+                    </div>
+                        <?php }
+                    ?>
                     <div class="clearfix"></div>
                     <div id="foto1-2boto1" class="boto">
                         <img class="groc" src="img/foto.png" alt="mostrar fotos">
@@ -62,15 +69,43 @@
                     <div class="sliderfotos">
                         <div>
                             <img src="foto/Santi108.jpg" alt="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre)."/>
+                            <?php
+                            if (isset($_COOKIE['personatge'])){ ?>
+                            <div class="guardar">
+                                <img src="../img/save.png" alt="icona guardar" data-foto="07cacera/foto/Santi108.jpg" data-descripcio="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre) - La cacera a Buda" onclick="guardarFoto(this)"/>
+                            </div>
+                                <?php }
+                            ?>
                         </div>
                         <div>
                             <img src="foto/Santi133.jpg" alt="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre)."/>
+                            <?php
+                            if (isset($_COOKIE['personatge'])){ ?>
+                            <div class="guardar">
+                                <img src="../img/save.png" alt="icona guardar" data-foto="07cacera/foto/Santi133.jpg" data-descripcio="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre) - La cacera a Buda" onclick="guardarFoto(this)"/>
+                            </div>
+                                <?php }
+                            ?>
                         </div>
                         <div>
                             <img src="foto/Santi185.jpg" alt="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre)."/>
+                            <?php
+                            if (isset($_COOKIE['personatge'])){ ?>
+                            <div class="guardar">
+                                <img src="../img/save.png" alt="icona guardar" data-foto="07cacera/foto/Santi185.jpg" data-descripcio="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre) - La cacera a Buda" onclick="guardarFoto(this)"/>
+                            </div>
+                                <?php }
+                            ?>
                         </div>
                         <div>
                             <img src="foto/Santi159.jpg" alt="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre)."/>
+                            <?php
+                            if (isset($_COOKIE['personatge'])){ ?>
+                            <div class="guardar">
+                                <img src="../img/save.png" alt="icona guardar" data-foto="07cacera/foto/Santi159.jpg" data-descripcio="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre) - La cacera a Buda" onclick="guardarFoto(this)"/>
+                            </div>
+                                <?php }
+                            ?>
                         </div>
                     </div>
                     <div class="blau">
@@ -89,6 +124,13 @@
                     <p class="groc">
                         A primers de segle XX, Buda ja rebia caceres organitzades per membres de classes socials privilegiades.<br>La gran quantitat d’aus a les llacunes de l’illa i del Delta atraïa l’afluència de caçadors provinents de fora, sobretot de Barcelona i altres llocs, amants de la natura i interessats per l’avifauna, que es desplaçaven a propòsit fins a Buda encara que de vegades fos per estar-s’hi només un dia.
                     </p>
+                    <?php
+                        if (isset($_COOKIE['personatge'])){ ?>
+                    <div class="guardartext">
+                        <img src="../img/save.png" alt="icona guardar" data-img="07cacera/foto/Santi214.jpg" data-text="07cacera/text/text2.html" onclick="guardarText(this)"/>
+                    </div>
+                        <?php }
+                    ?>
                     <div class="clearfix"></div>
                     <div class="boto" id="foto1-3boto1">
                         <img class="verdclar" src="img/play.png" alt="Rosa Merino explica com eren els dies de cacera a l’illa de Buda quan ella exercia de mestra dels fills dels colons.">
@@ -112,6 +154,13 @@
             <div id="foto1-5" class="fotofons">
                 <div id="foto1-5text" class="col-lg-3 col-md-3 col-lg-offset-1 col-md-offset-1">
                     <p><strong>Les dues primeres dècades del segle passat, essent propietari de l’illa Lluís G. Pons, diputat a Corts per Berga, s’hi desplaçaven des de Tortosa amb els vapors “Ciudad de Tortosa”, “María” i l’emblemàtic “Anita”, tot navegant riu avall fins a la desembocadura, on s’hi troba l’illa.</strong></p>
+                    <?php
+                        if (isset($_COOKIE['personatge'])){ ?>
+                    <div class="guardartext">
+                        <img src="../img/save.png" alt="icona guardar" data-img="07cacera/foto/SaP_584_08.jpg" data-text="07cacera/text/text3.html" onclick="guardarText(this)"/>
+                    </div>
+                        <?php }
+                    ?>
                 </div>
                 <p id="foto1-5peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Passarel·la on desembarcaven els vapors que viatjaven fins al far de Buda.<br>Arxiu Col·lecció Joan Salvany. Biblioteca de Catalunya.</p>
             </div>
@@ -167,67 +216,67 @@
                 <div class="f">
                     <img id="foto1-9foto1" src="foto/Santi102.jpg" alt="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre)"/>
                     <?php if (isset($_COOKIE['personatge'])){ ?>
-                    <div class="guardar"><img src="../img/save.png" alt="icona guardar" data-foto="07cacera/foto/Santi102.jpg" data-descripcio="Foto històrica 1 del Delta" onclick="guardarFoto(this)"/></div>
+                    <div class="guardar"><img src="../img/save.png" alt="icona guardar" data-foto="07cacera/foto/Santi102.jpg" data-descripcio="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre) - La cacera a Buda" onclick="guardarFoto(this)"/></div>
                     <?php } ?>
                 </div>
                 <div class="f">
                     <img id="foto1-9foto2" src="foto/Santi103.jpg" alt="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre)"/>
                     <?php if (isset($_COOKIE['personatge'])){ ?>
-                    <div class="guardar"><img src="../img/save.png" alt="icona guardar" data-foto="07cacera/foto/Santi103.jpg" data-descripcio="Foto històrica 1 del Delta" onclick="guardarFoto(this)"/></div>
+                    <div class="guardar"><img src="../img/save.png" alt="icona guardar" data-foto="07cacera/foto/Santi103.jpg" data-descripcio="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre) - La cacera a Buda" onclick="guardarFoto(this)"/></div>
                     <?php } ?>
                 </div>
                 <div class="f">
                     <img id="foto1-9foto3" src="foto/Santi114.jpg" alt="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre)"/>
                     <?php if (isset($_COOKIE['personatge'])){ ?>
-                    <div class="guardar"><img src="../img/save.png" alt="icona guardar" data-foto="07cacera/foto/Santi114.jpg" data-descripcio="Foto històrica 1 del Delta" onclick="guardarFoto(this)"/></div>
+                    <div class="guardar"><img src="../img/save.png" alt="icona guardar" data-foto="07cacera/foto/Santi114.jpg" data-descripcio="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre) - La cacera a Buda" onclick="guardarFoto(this)"/></div>
                     <?php } ?>
                 </div>
                 <div class="f">
                     <img id="foto1-9foto4" src="foto/Santi125.jpg" alt="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre)"/>
                     <?php if (isset($_COOKIE['personatge'])){ ?>
-                    <div class="guardar"><img src="../img/save.png" alt="icona guardar" data-foto="07cacera/foto/Santi125.jpg" data-descripcio="Foto històrica 1 del Delta" onclick="guardarFoto(this)"/></div>
+                    <div class="guardar"><img src="../img/save.png" alt="icona guardar" data-foto="07cacera/foto/Santi125.jpg" data-descripcio="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre) - La cacera a Buda" onclick="guardarFoto(this)"/></div>
                     <?php } ?>
                 </div>
                 <div class="f">
                     <img id="foto1-9foto5" src="foto/Santi146.jpg" alt="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre)"/>
                     <?php if (isset($_COOKIE['personatge'])){ ?>
-                    <div class="guardar"><img src="../img/save.png" alt="icona guardar" data-foto="07cacera/foto/Santi146.jpg" data-descripcio="Foto històrica 1 del Delta" onclick="guardarFoto(this)"/></div>
+                    <div class="guardar"><img src="../img/save.png" alt="icona guardar" data-foto="07cacera/foto/Santi146.jpg" data-descripcio="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre) - La cacera a Buda" onclick="guardarFoto(this)"/></div>
                     <?php } ?>
                 </div>
                 <div class="f">
                     <img id="foto1-9foto6" src="foto/Santi147.jpg" alt="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre)"/>
                     <?php if (isset($_COOKIE['personatge'])){ ?>
-                    <div class="guardar"><img src="../img/save.png" alt="icona guardar" data-foto="07cacera/foto/Santi147.jpg" data-descripcio="Foto històrica 1 del Delta" onclick="guardarFoto(this)"/></div>
+                    <div class="guardar"><img src="../img/save.png" alt="icona guardar" data-foto="07cacera/foto/Santi147.jpg" data-descripcio="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre) - La cacera a Buda" onclick="guardarFoto(this)"/></div>
                     <?php } ?>
                 </div>
                 <div class="f">
                     <img id="foto1-9foto7" src="foto/Santi164.jpg" alt="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre)"/>
                     <?php if (isset($_COOKIE['personatge'])){ ?>
-                    <div class="guardar"><img src="../img/save.png" alt="icona guardar" data-foto="07cacera/foto/Santi164.jpg" data-descripcio="Foto històrica 1 del Delta" onclick="guardarFoto(this)"/></div>
+                    <div class="guardar"><img src="../img/save.png" alt="icona guardar" data-foto="07cacera/foto/Santi164.jpg" data-descripcio="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre) - La cacera a Buda" onclick="guardarFoto(this)"/></div>
                     <?php } ?>
                 </div>
                 <div class="f">
                     <img id="foto1-9foto8" src="foto/Santi165.jpg" alt="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre)"/>
                     <?php if (isset($_COOKIE['personatge'])){ ?>
-                    <div class="guardar"><img src="../img/save.png" alt="icona guardar" data-foto="07cacera/foto/Santi165.jpg" data-descripcio="Foto històrica 1 del Delta" onclick="guardarFoto(this)"/></div>
+                    <div class="guardar"><img src="../img/save.png" alt="icona guardar" data-foto="07cacera/foto/Santi165.jpg" data-descripcio="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre) - La cacera a Buda" onclick="guardarFoto(this)"/></div>
                     <?php } ?>
                 </div>
                 <div class="f">
                     <img id="foto1-9foto9" src="foto/Santi167.jpg" alt="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre)"/>
                     <?php if (isset($_COOKIE['personatge'])){ ?>
-                    <div class="guardar"><img src="../img/save.png" alt="icona guardar" data-foto="07cacera/foto/Santi167.jpg" data-descripcio="Foto històrica 1 del Delta" onclick="guardarFoto(this)"/></div>
+                    <div class="guardar"><img src="../img/save.png" alt="icona guardar" data-foto="07cacera/foto/Santi167.jpg" data-descripcio="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre) - La cacera a Buda" onclick="guardarFoto(this)"/></div>
                     <?php } ?>
                 </div>
                 <div class="f">
                     <img id="foto1-9foto10" src="foto/Santi211.jpg" alt="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre)"/>
                     <?php if (isset($_COOKIE['personatge'])){ ?>
-                    <div class="guardar"><img src="../img/save.png" alt="icona guardar" data-foto="07cacera/foto/Santi211.jpg" data-descripcio="Foto històrica 1 del Delta" onclick="guardarFoto(this)"/></div>
+                    <div class="guardar"><img src="../img/save.png" alt="icona guardar" data-foto="07cacera/foto/Santi211.jpg" data-descripcio="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre) - La cacera a Buda" onclick="guardarFoto(this)"/></div>
                     <?php } ?>
                 </div>
                 <div class="f">
                     <img id="foto1-9foto11" src="foto/Santi221.jpg" alt="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre)"/>
                     <?php if (isset($_COOKIE['personatge'])){ ?>
-                    <div class="guardar"><img src="../img/save.png" alt="icona guardar" data-foto="07cacera/foto/Santi221.jpg" data-descripcio="Foto històrica 1 del Delta" onclick="guardarFoto(this)"/></div>
+                    <div class="guardar"><img src="../img/save.png" alt="icona guardar" data-foto="07cacera/foto/Santi221.jpg" data-descripcio="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre) - La cacera a Buda" onclick="guardarFoto(this)"/></div>
                     <?php } ?>
                 </div>
                 <div class="tapa groc"></div>
@@ -235,6 +284,13 @@
                     <p>
                         L’illa va ser adquirida l'any 1924 per Joan i Pere Borés Casalmiglia, qui van continuar amb aquesta activitat cinegètica de tipus lúdic i estretament lligada a les llacunes dels Calaixos, i que compartien amb altres amics i aficionats fidels a la caça a Buda. La família Borés sempre ha estat oberta a rebre aquestes caceres fins avui dia
                     </p>
+                    <?php
+                        if (isset($_COOKIE['personatge'])){ ?>
+                    <div class="guardartext">
+                        <img src="../img/save.png" alt="icona guardar" data-img="07cacera/foto/Santi210.jpg" data-text="07cacera/text/text4.html" onclick="guardarText(this)"/>
+                    </div>
+                        <?php }
+                    ?>
                     <div class="boto pull-right" id="foto1-9boto1">
                         <img class="groc" src="img/foto.png" alt="Arxiu família Borés<br>(gentilesa Museu de les Terres de l’Ebre)">
                     </div>
@@ -260,6 +316,13 @@
             <div id="foto1-11" class="fotofons">
                 <div id="foto1-11text" class="col-lg-4 col-md-4 col-lg-offset-7 col-md-offset-7">
                     <p class="groc">El 1993, un cop la Generalitat de Catalunya va adquirir part de l’illa de Buda, l’administració va optar per controlar la cacera en els terrenys segregats de l’àrea privada a partir d’una resolució en què es regulaven els aprofitaments cinegètics i piscícoles dins d’aquests nous terrenys gestionats pel Parc Natural del delta de l’Ebre</p>
+                    <?php
+                        if (isset($_COOKIE['personatge'])){ ?>
+                    <div class="guardartext">
+                        <img src="../img/save.png" alt="icona guardar" data-img="07cacera/foto/buda-36.jpg" data-text="07cacera/text/text5.html" onclick="guardarText(this)"/>
+                    </div>
+                        <?php }
+                    ?>
                     <div class="clearfix"></div>
                     <div class="boto pull-right" id="foto1-11boto">
                         <img class="verdclar" src="img/play.png" alt="Rafel Balada explica la importància de compatibilitzar la cacera amb la conservació">
