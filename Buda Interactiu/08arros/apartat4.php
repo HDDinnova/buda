@@ -5,15 +5,12 @@
         <h2 class="verdfosc">EL CONREU DE L’ARRÒS A BUDA AL SEGLE XXI</h2>                
     </div>
     <div id="foto4-1peu" class="peu col-lg-offset-1 col-md-offset-1 col-lg-2 col-md-3">Foto: Guillermo Barberà</div>
-</div>
-        
+</div>        
 <div class="final text-center">
     <h2>Moltes felicitats!, has acabat aquesta investigació.</h2>
     <h3>Vols continuar explorant l’illa de Buda?</h3>
     <a href="../09colons/"><img src="../menu/09colons.jpg" alt=""/><br><br>ELS COLONS DE BUDA</a>
 </div>
-
-
 <!--
     <div id="foto4-2">
         <div id="foto4-2text">
