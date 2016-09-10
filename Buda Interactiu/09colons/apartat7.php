@@ -111,4 +111,9 @@
         <source src="video/GuillermoBores_motBuderos.ogg" type="video/ogg">
         <source src="video/GuillermoBores_motBuderos.webm" type="video/webm">
     </video>
+</div>   
+<div class="final text-center">
+    <h2>Moltes felicitats!, has acabat aquesta investigació.</h2>
+    <h3>Vols continuar explorant l’illa de Buda?</h3>
+    <a href="../10vapors/"><img src="../menu/10vapors.jpg" alt=""/><br><br>Els “vapors” i els grans viatges cap a Buda</a>
 </div>
