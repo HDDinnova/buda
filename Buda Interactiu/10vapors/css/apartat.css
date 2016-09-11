@@ -5,18 +5,14 @@
 }
 #foto1-1text{
     position: absolute;
-    top: 150%;
-    left: 100px;
-    display: none;
+    top: 250%;
 }
 #foto1-1text h2{
-    position: relative;
     color: white;
     padding: 30px;
-    font-size: 8rem;
+    font-size: 4.5vw;
     text-transform: uppercase;
     font-weight: 600;
-    width: 100rem;
     line-height: initial;
 }
 #foto1-2{
@@ -25,14 +21,11 @@
 }
 #foto1-2text{
     position: absolute;
-    top: 110%;
-    right: 100px;
-    width: 33%;
-    display: none;
+    top: 210%;
 }
 #foto1-2text p{
     color: white;
-    font-size: 3.2rem;
+    font-size: 1.8vw;
     font-weight: 600;
 }
 #foto1-3{
@@ -42,12 +35,10 @@
 #foto1-3text{
     position: absolute;
     top: 220%;
-    right: 100px;
-    width: 30%;
 }
 #foto1-3text p{
     color: white;
-    font-size: 2.1rem;
+    font-size: 1.2vw;
     padding: 25px;
 }
 #apartat2{display: none;}
@@ -58,23 +49,20 @@
 #foto2-1text{
     position: absolute;
     top: 110%;
-    left: 100px;
 }
 #foto2-1text p{
     position: relative;
     top: 0;
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.1vw;
     padding: 15px;
-    width: 33%;
 }
 #foto2-1text h2{
     position: relative;
     top: 300px;
     color: white;
-    font-size: 7rem;
-    padding: 15px;
-    width: 90rem;
+    font-size: 3vw;
+    padding: 25px;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -85,13 +73,11 @@
 #foto2-2text{
     position: absolute;
     top: 230%;
-    right: 100px;
-    width: 30%;
 }
 #foto2-2text p{
     position: relative;
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.1vw;
     padding: 25px;
 }
 #foto2-2b{
@@ -106,73 +92,59 @@
 #foto3-1text{
     position: absolute;
     top: -50%;
-    left: 100px;
 }
 #foto3-1text p{
     position: relative;
     top: -300px;
     color: white;
-    font-size: 1.8rem;
+    font-size: 1vw;
     padding: 20px;
-    width: 42%;
 }
 #foto3-1text h2{
     position: relative;
     top: 0;
     color: white;
-    font-size: 7rem;
+    font-size: 3.5vw;
     padding: 25px;
-    width: 82rem;
     font-weight: 600;
     text-transform: uppercase;
 }
 #foto3-2{
-    bottom: 100%;
+    top: -100%;
     left: 0;
 }
 #foto3-2text{
     position: absolute;
     top: -50%;
-    left: 100px;
 }
 #foto3-2text p{
     color: #EEC41B;
-    font-size: 2.5rem;
+    font-size: 1.4vw;
     font-weight: 600;
-    width: 30%;
-}
-#foto3-2{
-    bottom: 100%;
-    left: 0;
 }
 #foto3-3{
-    bottom: 100%;
+    top: -100%;
     left: 0;
 }
 #foto3-4{
-    bottom: 100%;
+    top: -100%;
     left: 0;
 }
 #foto3-4text{
     position: absolute;
     top: -80%;
-    left: 100px;
-    width: 20%;
 }
 #foto3-4text p{
     color: white;
-    font-size: 1.8rem;
     padding: 20px;
 }
 #foto3-5{
-    bottom: 100%;
+    top: -100%;
     left: 0;
 }
 #foto3-5text{
     position: absolute;
     top: -80%;
-    left: 100px;
-    width: 30%;
 }
 #foto3-5text p{
     color: white;
@@ -180,37 +152,33 @@
     padding: 20px;
 }
 #foto3-6{
-    bottom: 100%;
+    top: -100%;
     left: 0;
 }
 #foto3-7{
-    bottom: 100%;
+    top: -100%;
     left: 0;
 }
 #foto3-7text{
     position: absolute;
     top: -80%;
-    left: 100px;
-    width: 30%;
 }
 #foto3-7text p{
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.1vw;
     padding: 20px;
 }
 #foto3-8{
-    bottom: 100%;
+    top: -100%;
     left: 0;
 }
 #foto3-8text{
     position: absolute;
     top: -80%;
-    left: 100px;
-    width: 30%;
 }
 #foto3-8text p{
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.3vw;
     padding: 20px;
 }
 #apartat4{display: none;}
