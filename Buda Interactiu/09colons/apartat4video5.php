@@ -9,3 +9,10 @@
 <div class="groc">
     Rosa Maria Merino explica anècdotes de la seva experiència com a mestra de l'escola de l’illa de Buda.
 </div>
+<?php
+    if (isset($_COOKIE['personatge'])){ ?>
+<div class="guardar">
+    <img src="../img/save.png" alt="icona guardar" data-video="09colons/video/Mestra_AnnecdotaAmbElsAlumnes" data-descripcio="Maria Rosa Merino - Anècdotes de la docència a l’illa de Buda(III)" onclick="guardarVideo(this)"/>
+</div>
+    <?php }
+?>

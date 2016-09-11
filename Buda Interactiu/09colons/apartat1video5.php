@@ -9,3 +9,10 @@
 <div class="groc">
     Josepet i Vicentica recorden com les condicions de vida impedien la intimitat
 </div>
+<?php
+    if (isset($_COOKIE['personatge'])){ ?>
+<div class="guardar">
+    <img src="../img/save.png" alt="icona guardar" data-video="09colons/video/JosepetVicentica_Festejar_MassaGentPerFestejar" data-descripcio="Josep i Vicentica - L’odissea de la intimitat a Buda" onclick="guardarVideo(this)"/>
+</div>
+    <?php }
+?>

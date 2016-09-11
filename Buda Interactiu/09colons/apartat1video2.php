@@ -9,3 +9,10 @@
 <div class="groc">
     Guillermo Borés explica que la germanor era el principal valor de la convivència entre els colons a l’illa
 </div>
+<?php
+    if (isset($_COOKIE['personatge'])){ ?>
+<div class="guardar">
+    <img src="../img/save.png" alt="icona guardar" data-video="09colons/video/GuillermoBores_Germanor" data-descripcio="Guillermo Borés - Els colons de Buda" onclick="guardarVideo(this)"/>
+</div>
+    <?php }
+?>

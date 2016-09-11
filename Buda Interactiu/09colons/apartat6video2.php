@@ -9,3 +9,10 @@
 <div class="groc">
     L’enginyer i constructor Pedro Parra recorda la seva participació a les festes de Buda.
 </div>
+<?php
+    if (isset($_COOKIE['personatge'])){ ?>
+<div class="guardar">
+    <img src="../img/save.png" alt="icona guardar" data-video="09colons/video/PedroParra_MusicaAFestesSantPere" data-descripcio="Pedro Parra- Les festes de Buda" onclick="guardarVideo(this)"/>
+</div>
+    <?php }
+?>

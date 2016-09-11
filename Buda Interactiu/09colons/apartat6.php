@@ -4,10 +4,17 @@
     </div>
     <p id="foto6-1peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Arxiu Joan Franch</p>
     <div class="tapa taronga"></div>
-    <div id="foto6-1text2" class="col-lg-offset-1 col-md-offset-1 col-lg-11 col-md-11 col-sm-12 col-xs-12">
-        <p class="blanc col-lg-4 col-md-4 col-sm-12 col-xs-12">Les festes de Buda: per Sant Pere, festes a l’Illa. Patró de mariners i pescadors, es va instaurar com a patró de Buda, arran sobretot que un dels propietaris, Pere Borés, portava el nom del sant. Sota la seua  advocació, encara avui dia es recorden aquestes festes amb una romeria a Buda, a peu i amb cavalls, des de Sant Jaume d’Enveja fins a l’Illa, pels volts de finals de juny o principis de juliol de cada any.</p>
+    <div id="foto6-1text2" class="col-lg-offset-1 col-md-offset-1 col-lg-4 col-md-4 col-sm-11 col-xs-11">
+        <p class="blanc">Les festes de Buda: per Sant Pere, festes a l’Illa. Patró de mariners i pescadors, es va instaurar com a patró de Buda, arran sobretot que un dels propietaris, Pere Borés, portava el nom del sant. Sota la seua  advocació, encara avui dia es recorden aquestes festes amb una romeria a Buda, a peu i amb cavalls, des de Sant Jaume d’Enveja fins a l’Illa, pels volts de finals de juny o principis de juliol de cada any.</p>
+        <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardartext">
+            <img src="../img/save.png" alt="icona guardar" data-img="09colons/foto/Arxiu_Joan_Franch/festes_de_buda_03.jpg" data-text="09colons/text/text12.html" onclick="guardarText(this)"/>
+        </div>
+            <?php }
+        ?>
         <div class="clearfix"></div>
-        <div id="foto6-1boto" class="boto col-lg-offset-4 col-md-offset-4">
+        <div id="foto6-1boto" class="boto col-lg-offset-12 col-md-offset-12">
             <img class="roig" src="img/play.png" alt="reproduir video">
         </div>
     </div>
@@ -66,16 +73,30 @@
     </div>
 </div>
 <div id="foto6-3" class="fotofons">
-    <div id="foto6-3text" class="col-lg-offset-1 col-md-offset-1 col-lg-11 col-md-11 col-sm-12 col-xs-12">
-        <p class="taronga col-lg-4 col-md-4 col-sm-12 col-xs-12">La popularitat de les festes fa que se celebrin durant els mesos de juliol o agost, depenent dels anys, quan les feines als arrossars eren menys feixugues.<br>Partits de futbol, balls de disfresses, curses populars… una comissió organitzadora composda pels propis colons se n’encarregava. Els dies 30 i 31 d’agost de 1947 es van celebrar per primera vegada les Festes Majors de Buda.</p>
+    <div id="foto6-3text" class="col-lg-offset-1 col-md-offset-1 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <p class="taronga">La popularitat de les festes fa que se celebrin durant els mesos de juliol o agost, depenent dels anys, quan les feines als arrossars eren menys feixugues.<br>Partits de futbol, balls de disfresses, curses populars… una comissió organitzadora composda pels propis colons se n’encarregava. Els dies 30 i 31 d’agost de 1947 es van celebrar per primera vegada les Festes Majors de Buda.</p>
+        <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardartext">
+            <img src="../img/save.png" alt="icona guardar" data-img="09colons/foto/Arxiu_Joan_Franch/futbol_buda_03.jpg" data-text="09colons/text/text13.html" onclick="guardarText(this)"/>
+        </div>
+            <?php }
+        ?>
         <div class="clearfix"></div>
-        <div id="foto6-3boto" class="boto col-lg-offset-4 col-md-offset-4">
+        <div id="foto6-3boto" class="boto col-lg-offset-12 col-md-offset-12">
             <img class="marro" src="img/foto.png" alt="mostrar foto">
         </div>
     </div>
     <p id="foto6-3peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Arxiu Joan Franch</p>
     <div id="foto6-3foto" class="foto">
         <img src="foto/Arxiu_Joan_Franch/festes_de_buda_04.jpg" alt="Arxiu Joan Franch"/>
+        <?php
+        if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardar">
+            <img src="../img/save.png" alt="icona guardar" data-foto="09colons/foto/Arxiu_Joan_Franch/festes_de_buda_04.jpg" data-descripcio="Arxiu familiar Joan Franch - Les festes de Buda" onclick="guardarFoto(this)"/>
+        </div>
+            <?php }
+        ?>
         <div class="groc">
             Arxiu Joan Franch
         </div>
@@ -113,12 +134,26 @@
     <p id="foto6-6peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Arxiu Joan Franch</p>
     <div id="foto6-6foto1" class="foto">
         <img src="foto/Arxiu_Joan_Franch/festes_de_buda_02.jpg" alt="Arxiu Joan Franch"/>
+        <?php
+        if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardar">
+            <img src="../img/save.png" alt="icona guardar" data-foto="09colons/foto/Arxiu_Joan_Franch/festes_de_buda_02.jpg" data-descripcio="Arxiu familiar Joan Franch - Les festes de Buda (II)" onclick="guardarFoto(this)"/>
+        </div>
+            <?php }
+        ?>
         <div class="groc">
             Arxiu Joan Franch
         </div>
     </div>
     <div id="foto6-6foto2" class="foto">
         <img src="foto/Arxiu_Joan_Franch/futbol_buda_02.jpg" alt="Arxiu Joan Franch"/>
+        <?php
+        if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardar">
+            <img src="../img/save.png" alt="icona guardar" data-foto="09colons/foto/Arxiu_Joan_Franch/futbol_buda_02.jpg" data-descripcio="Arxiu familiar Joan Franch - Les festes de Buda (III)" onclick="guardarFoto(this)"/>
+        </div>
+            <?php }
+        ?>
         <div class="groc">
             Arxiu Joan Franch
         </div>

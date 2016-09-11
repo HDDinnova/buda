@@ -41,17 +41,33 @@
                     <img src="img/scroll_roig.png" alt="Fes scroll per continuar"/>
                 </div>
                 <div class="tapa roig"></div>
-                <div id="foto1-1text2" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div id="foto1-1boto" class="boto col-lg-offset-4 col-md-offset-4">
+                <div id="foto1-1text2" class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <div id="foto1-1boto" class="boto col-lg-offset-12 col-md-offset-12">
                         <img class="groc" src="img/foto.png" alt="mostrar foto">
                     </div>
                     <div class="clearfix"></div>
-                    <p class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-3 col-md-3 col-sm-9 col-xs-10">Els colons van  viure a l’illa de Buda des de l’inici de l’expansió de l’activitat agrícola fins la dècada de 1960, un cop consolidada la mecanització de les feines del camp</p>                
+                    <p>Els colons van  viure a l’illa de Buda des de l’inici de l’expansió de l’activitat agrícola fins la dècada de 1960, un cop consolidada la mecanització de les feines del camp</p>                
+                    <?php
+                        if (isset($_COOKIE['personatge'])){ ?>
+                    <div class="guardartext">
+                        <img src="../img/save.png" alt="icona guardar" data-img="09colons/foto/ramon_fabra/IMG3.jpg" data-text="09colons/text/text1.html" onclick="guardarText(this)"/>
+                    </div>
+                        <?php }
+                    ?>
                 </div>
                 <div id="foto1-1foto" class="foto">
-                    <img src="foto/joan_rius/IMG5.jpg" alt="Arxiu família Cabezas"/>
-                    <div class="groc">
-                        Foto: Joan Rius<br>(arxiu familiar)
+                    <div>
+                      <img src="foto/joan_rius/IMG5.jpg" alt="Arxiu família Cabezas"/>
+                      <?php
+                      if (isset($_COOKIE['personatge'])){ ?>
+                      <div class="guardar">
+                          <img src="../img/save.png" alt="icona guardar" data-foto="09colons/foto/joan_rius/IMG5.jpg" data-descripcio="Arxiu familiar Joan Rius - Escenes de vida dels colons de l’illa de Buda" onclick="guardarFoto(this)"/>
+                      </div>
+                          <?php }
+                      ?>
+                      <div class="groc">
+                          Foto: Joan Rius<br>(arxiu familiar)
+                      </div>
                     </div>
                 </div>
             </div>
@@ -63,11 +79,25 @@
                 <div class="tapa roig"></div>
                 <div id="foto1-2text2" class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-3 col-md-3 col-sm-8 col-xs-8">
                     <p class="blanc">El paisatge humanitzat de Buda era regnat per les barraques. Elles eren les protagonistes de la vida dels colons a l’Illa. Fetes de fusta, canyes, fang i palla, i arrebossades i pintades amb calç, allotjaven famílies senceres com a habitatge, ja fos de manera permanent durant tot l’any o en els mesos en què s’hi desplaçaven des del poble per a la campanya de l’arròs. En aquest darrer cas, els colons romanien a Buda de març a octubre. Els colons procedien sobretot de La Cava, Jesús i Maria i Sant Jaume d’Enveja.</p>
+                    <?php
+                        if (isset($_COOKIE['personatge'])){ ?>
+                    <div class="guardartext">
+                        <img src="../img/save.png" alt="icona guardar" data-img="09colons/foto/AFCEC_EMC_X_4734.jpg" data-text="09colons/text/text2.html" onclick="guardarText(this)"/>
+                    </div>
+                        <?php }
+                    ?>
                 </div>
             </div>
             <div id="foto1-3" class="fotofons">
                 <div id="foto1-3text" class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-3 col-md-3 col-sm-8 col-xs-8">
                     <p class="roig">Va ser a partir de finals del segle XIX i principis del segle XX quan, amb el conreu de l’arròs a l’Illa, es van bastir moltes barraques per fer d’habitatge als colons i les seves famílies, aïllades vora la riba del riu o la franja marítima de Buda, i també al costat dels camins i les basses, fins i tot algunes agrupades en petits nuclis</p>
+                    <?php
+                        if (isset($_COOKIE['personatge'])){ ?>
+                    <div class="guardartext">
+                        <img src="../img/save.png" alt="icona guardar" data-img="09colons/foto/_MG_8116.jpg" data-text="09colons/text/text3.html" onclick="guardarText(this)"/>
+                    </div>
+                        <?php }
+                    ?>
                 </div>
                 <p id="foto1-3peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Foto: Salvador Maluquer</p>
             </div>
@@ -86,10 +116,24 @@
                     </div>
                     <div class="clearfix"></div>
                     <p class="roig">A Buda, on van arribar a viure més de 300 persones en els anys 50 i 60 del segle passat, a més de les barraques vivenda, s’hi van construir d’altres com a magatzem. D’aquestes, se’n podien trobar escampades per tota l’illa, i servien per guardar-hi estris i eines del camp, arts i ormeigs de pescar o altres equips de treball</p>
+                    <?php
+                        if (isset($_COOKIE['personatge'])){ ?>
+                    <div class="guardartext">
+                        <img src="../img/save.png" alt="icona guardar" data-img="09colons/foto/_MG_8130.jpg" data-text="09colons/text/text4.html" onclick="guardarText(this)"/>
+                    </div>
+                        <?php }
+                    ?>
                 </div>
                 <p id="foto1-4peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Foto: Salvador Maluquer</p>
                 <div id="foto1-4foto" class="foto">
                     <img src="foto/Santi172.jpg" alt="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre)."/>
+                    <?php
+                      if (isset($_COOKIE['personatge'])){ ?>
+                      <div class="guardar">
+                          <img src="../img/save.png" alt="icona guardar" data-foto="09colons/foto/Santi172.jpg" data-descripcio="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre) - Les construccions associades a la colonització de Buda" onclick="guardarFoto(this)"/>
+                      </div>
+                          <?php }
+                      ?>
                     <div class="groc">
                         Arxiu família Borés<br>(gentilesa Museu de les Terres de l’Ebre).
                     </div>
@@ -98,6 +142,13 @@
             <div id="foto1-5" class="fotofons">
                 <div id="foto1-5text" class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-3 col-md-3 col-sm-8 col-xs-8">
                     <p>Moltes altres barraques es van aixecar per ser refugi per a pagesos, caçadors, pescadors, guardes i pastors, i d’altres també com a corrals per aviram o per ramats. Les barraques vivenda, però, eren les més valorades i cuidades</p>
+                    <?php
+                        if (isset($_COOKIE['personatge'])){ ?>
+                    <div class="guardartext">
+                        <img src="../img/save.png" alt="icona guardar" data-img="09colons/foto/apartat1foto5.jpg" data-text="09colons/text/text5.html" onclick="guardarText(this)"/>
+                    </div>
+                        <?php }
+                    ?>
                 </div>
                 <p id="foto1-5peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Arxiu família Borés<br>(gentilesa Museu de les Terres de l’Ebre)</p>
             </div>
@@ -151,12 +202,33 @@
                     <div class="sliderfotos">
                         <div>
                             <img src="foto/joan_rius/IMG13.jpg" alt="arxiu Joan Rius"/>
+                            <?php
+                            if (isset($_COOKIE['personatge'])){ ?>
+                            <div class="guardar">
+                                <img src="../img/save.png" alt="icona guardar" data-foto="09colons/foto/joan_rius/IMG13.jpg" data-descripcio="Arxiu familiar Joan Rius - Escenes de vida dels colons de l’illa de Buda (II)" onclick="guardarFoto(this)"/>
+                            </div>
+                                <?php }
+                            ?>
                         </div>
                         <div>
                             <img src="foto/joan_rius/IMG17.jpg" alt="arxiu Joan Rius"/>
+                            <?php
+                            if (isset($_COOKIE['personatge'])){ ?>
+                            <div class="guardar">
+                                <img src="../img/save.png" alt="icona guardar" data-foto="09colons/foto/joan_rius/IMG17.jpg" data-descripcio="Arxiu familiar Joan Rius - Escenes de vida dels colons de l’illa de Buda (II)" onclick="guardarFoto(this)"/>
+                            </div>
+                                <?php }
+                            ?>
                         </div>
                         <div>
                             <img src="foto/joan_rius/IMG15.jpg" alt="arxiu Joan Rius"/>
+                            <?php
+                            if (isset($_COOKIE['personatge'])){ ?>
+                            <div class="guardar">
+                                <img src="../img/save.png" alt="icona guardar" data-foto="09colons/foto/joan_rius/IMG15.jpg" data-descripcio="Arxiu familiar Joan Rius - Escenes de vida dels colons de l’illa de Buda (II)" onclick="guardarFoto(this)"/>
+                            </div>
+                                <?php }
+                            ?>
                         </div>
                     </div>
                     <div class="blau">
@@ -170,6 +242,13 @@
             <div id="foto1-8" class="fotofons">
                 <div id="foto1-8text" class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-3 col-md-3 col-sm-8 col-xs-8">
                     <p class="roig">Els masos tenien diverses dependències domèstiques (cuina, menjador o sala gran i estances per dormir) i altres espais annexos de treball (magatzems per als estris i equips del camp; quadres per als animals; corrals per a l’aviram, etc.),  i alguns un forn, un pou o una cisterna. Els masos podien tenir una gran varietat estructural (planta baixa, un pis o dos); en ells hi vivien les famílies més lligades als treballs agrícoles, on s’hi estaven durant bona part de l’any.</p>
+                    <?php
+                        if (isset($_COOKIE['personatge'])){ ?>
+                    <div class="guardartext">
+                        <img src="../img/save.png" alt="icona guardar" data-img="09colons/foto/Santi150.jpg" data-text="09colons/text/text6.html" onclick="guardarText(this)"/>
+                    </div>
+                        <?php }
+                    ?>
                     <div class="clearfix"></div>
                     <div id="foto1-8boto" class="boto col-lg-offset-12 col-md-offset-12">
                         <img class="groc" src="img/foto.png" alt="mostrar text">
@@ -180,12 +259,33 @@
                     <div class="sliderfotos">
                         <div>
                             <img src="foto/Santi233.jpg" alt="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre)."/>
+                            <?php
+                            if (isset($_COOKIE['personatge'])){ ?>
+                            <div class="guardar">
+                                <img src="../img/save.png" alt="icona guardar" data-foto="09colons/foto/Santi233.jpg" data-descripcio="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre) - Les construccions associades a la colonització de Buda (II)" onclick="guardarFoto(this)"/>
+                            </div>
+                                <?php }
+                            ?>
                         </div>
                         <div>
                             <img src="foto/Santi069.jpg" alt="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre)."/>
+                            <?php
+                            if (isset($_COOKIE['personatge'])){ ?>
+                            <div class="guardar">
+                                <img src="../img/save.png" alt="icona guardar" data-foto="09colons/foto/Santi069.jpg" data-descripcio="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre) - Les construccions associades a la colonització de Buda (II)" onclick="guardarFoto(this)"/>
+                            </div>
+                                <?php }
+                            ?>
                         </div>
                         <div>
                             <img src="foto/Santi171.jpg" alt="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre)."/>
+                            <?php
+                            if (isset($_COOKIE['personatge'])){ ?>
+                            <div class="guardar">
+                                <img src="../img/save.png" alt="icona guardar" data-foto="09colons/foto/Santi171.jpg" data-descripcio="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre) - Les construccions associades a la colonització de Buda (II)" onclick="guardarFoto(this)"/>
+                            </div>
+                                <?php }
+                            ?>
                         </div>
                     </div>
                     <div class="blau">
@@ -211,6 +311,13 @@
             <div id="foto1-10" class="fotofons">
                 <div id="foto1-10text" class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-3 col-md-3 col-sm-8 col-xs-8">
                     <p class="roig">Masos singulars de l’illa de Buda van prendre el nom (i moltes vegades el malnom) de la família de colons que l’habitava. Molt sovint estaven a tocar dels camins que solcaven l’illa i que de vegades també portaven el nom d’aquests (del Carliste, de Nelo, de Guans, etc.)</p>
+                    <?php
+                        if (isset($_COOKIE['personatge'])){ ?>
+                    <div class="guardartext">
+                        <img src="../img/save.png" alt="icona guardar" data-img="09colons/foto/AFCEC_EMC_X_4735.jpg" data-text="09colons/text/text7.html" onclick="guardarText(this)"/>
+                    </div>
+                        <?php }
+                    ?>
                     <div class="clearfix"></div>
                     <div id="foto1-10boto" class="boto col-lg-offset-12 col-md-offset-12">
                         <img class="groc" src="img/foto.png" alt="mostrar foto">
@@ -219,6 +326,13 @@
                 <p id="foto1-10peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Arxiu Centre Excursionista de Catalunya.</p>            
                 <div id="foto1-10foto" class="foto">
                     <img src="foto/Arxiu_Joan_Franch/ranxo_buda_01.jpg" alt="Arxiu Joan Franch"/>
+                    <?php
+                    if (isset($_COOKIE['personatge'])){ ?>
+                    <div class="guardar">
+                        <img src="../img/save.png" alt="icona guardar" data-foto="09colons/foto/Arxiu_Joan_Franch/ranxo_buda_01.jpg" data-descripcio="Arxiu familiar Joan Franch - Els colons de Buda" onclick="guardarFoto(this)"/>
+                    </div>
+                        <?php }
+                    ?>
                     <div class="groc">
                         Arxiu Joan Franch
                     </div>

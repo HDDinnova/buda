@@ -9,3 +9,10 @@
 <div class="groc">
     Pepe Sapiña recorda l’acumulació de barraques i casetes que poblaven el tram final del riu Ebre fins l'illa de Buda
 </div>
+<?php
+    if (isset($_COOKIE['personatge'])){ ?>
+<div class="guardar">
+    <img src="../img/save.png" alt="icona guardar" data-video="09colons/video/PepeSapinya_PledeGentAbans" data-descripcio="Pepe Sapiña - L’acumulació de barraques i casetes dels colons feien de Buda un poble" onclick="guardarVideo(this)"/>
+</div>
+    <?php }
+?>

@@ -9,3 +9,10 @@
 <div class="groc">
     Rosa Maria Merino explica els inicis de l’escola de Buda.
 </div>
+<?php
+    if (isset($_COOKIE['personatge'])){ ?>
+<div class="guardar">
+    <img src="../img/save.png" alt="icona guardar" data-video="09colons/video/Mestra_CreacioEscola" data-descripcio="Maria Rosa Merino - Els inicis de l’escola de l’illa de Buda" onclick="guardarVideo(this)"/>
+</div>
+    <?php }
+?>

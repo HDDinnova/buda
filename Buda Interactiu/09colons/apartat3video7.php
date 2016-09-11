@@ -9,3 +9,10 @@
 <div class="groc">
     Salvador Maluquer recorda amb gratitud la solidaritat dels colons de Buda quan ell visitava l’illa per observar les aus
 </div>
+<?php
+    if (isset($_COOKIE['personatge'])){ ?>
+<div class="guardar">
+    <img src="../img/save.png" alt="icona guardar" data-video="09colons/video/SalvadoMaluquer_Contactes" data-descripcio="Salvador Maluquer - Record dels colons de Buda" onclick="guardarVideo(this)"/>
+</div>
+    <?php }
+?>

@@ -30,30 +30,93 @@
         <div class="sliderfotos">
             <div>
                 <img src="foto/joan_rius/IMG.jpg" alt="Arxiu Joan Rius"/>
+                <?php
+                if (isset($_COOKIE['personatge'])){ ?>
+                <div class="guardar">
+                    <img src="../img/save.png" alt="icona guardar" data-foto="09colons/foto/joan_rius/IMG.jpg" data-descripcio="Arxiu familiar Joan Rius - La vida dels colons a Buda" onclick="guardarFoto(this)"/>
+                </div>
+                    <?php }
+                ?>
             </div>
             <div>
                 <img src="foto/joan_rius/IMG1.jpg" alt="Arxiu Joan Rius"/>
+                <?php
+                if (isset($_COOKIE['personatge'])){ ?>
+                <div class="guardar">
+                    <img src="../img/save.png" alt="icona guardar" data-foto="09colons/foto/joan_rius/IMG1.jpg" data-descripcio="Arxiu familiar Joan Rius - La vida dels colons a Buda" onclick="guardarFoto(this)"/>
+                </div>
+                    <?php }
+                ?>
             </div>
             <div>
                 <img src="foto/joan_rius/IMG5.jpg" alt="Arxiu Joan Rius"/>
+                <?php
+                if (isset($_COOKIE['personatge'])){ ?>
+                <div class="guardar">
+                    <img src="../img/save.png" alt="icona guardar" data-foto="09colons/foto/joan_rius/IMG5.jpg" data-descripcio="Arxiu familiar Joan Rius - La vida dels colons a Buda" onclick="guardarFoto(this)"/>
+                </div>
+                    <?php }
+                ?>
             </div>
             <div>
                 <img src="foto/joan_rius/IMG7.jpg" alt="Arxiu Joan Rius"/>
+                <?php
+                if (isset($_COOKIE['personatge'])){ ?>
+                <div class="guardar">
+                    <img src="../img/save.png" alt="icona guardar" data-foto="09colons/foto/joan_rius/IMG7.jpg" data-descripcio="Arxiu familiar Joan Rius - La vida dels colons a Buda" onclick="guardarFoto(this)"/>
+                </div>
+                    <?php }
+                ?>
             </div>
             <div>
                 <img src="foto/joan_rius/IMG9.jpg" alt="Arxiu Joan Rius"/>
+                <?php
+                if (isset($_COOKIE['personatge'])){ ?>
+                <div class="guardar">
+                    <img src="../img/save.png" alt="icona guardar" data-foto="09colons/foto/joan_rius/IMG9.jpg" data-descripcio="Arxiu familiar Joan Rius - La vida dels colons a Buda" onclick="guardarFoto(this)"/>
+                </div>
+                    <?php }
+                ?>
             </div>
             <div>
                 <img src="foto/joan_rius/IMG11.jpg" alt="Arxiu Joan Rius"/>
+                <?php
+                if (isset($_COOKIE['personatge'])){ ?>
+                <div class="guardar">
+                    <img src="../img/save.png" alt="icona guardar" data-foto="09colons/foto/joan_rius/IMG11.jpg" data-descripcio="Arxiu familiar Joan Rius - La vida dels colons a Buda" onclick="guardarFoto(this)"/>
+                </div>
+                    <?php }
+                ?>
             </div>
             <div>
                 <img src="foto/joan_rius/IMG12.jpg" alt="Arxiu Joan Rius"/>
+                <?php
+                if (isset($_COOKIE['personatge'])){ ?>
+                <div class="guardar">
+                    <img src="../img/save.png" alt="icona guardar" data-foto="09colons/foto/joan_rius/IMG12.jpg" data-descripcio="Arxiu familiar Joan Rius - La vida dels colons a Buda" onclick="guardarFoto(this)"/>
+                </div>
+                    <?php }
+                ?>
             </div>
             <div>
                 <img src="foto/joan_rius/IMG14.jpg" alt="Arxiu Joan Rius"/>
+                <?php
+                if (isset($_COOKIE['personatge'])){ ?>
+                <div class="guardar">
+                    <img src="../img/save.png" alt="icona guardar" data-foto="09colons/foto/joan_rius/IMG14.jpg" data-descripcio="Arxiu familiar Joan Rius - La vida dels colons a Buda" onclick="guardarFoto(this)"/>
+                </div>
+                    <?php }
+                ?>
             </div>
             <div>
                 <img src="foto/joan_rius/IMG19.jpg" alt="Arxiu Joan Rius"/>
+                <?php
+                if (isset($_COOKIE['personatge'])){ ?>
+                <div class="guardar">
+                    <img src="../img/save.png" alt="icona guardar" data-foto="09colons/foto/joan_rius/IMG19.jpg" data-descripcio="Arxiu familiar Joan Rius - La vida dels colons a Buda" onclick="guardarFoto(this)"/>
+                </div>
+                    <?php }
+                ?>
             </div>
         </div>
         <div class="blau">
@@ -67,15 +130,43 @@
         <div class="sliderfotos">
             <div>
                 <img src="foto/olmos/1.jpg" alt="Arxiu Olmos"/>
+                <?php
+                if (isset($_COOKIE['personatge'])){ ?>
+                <div class="guardar">
+                    <img src="../img/save.png" alt="icona guardar" data-foto="09colons/foto/olmos/1.jpg" data-descripcio="Arxiu familiar Olmos - La vida dels colons a Buda" onclick="guardarFoto(this)"/>
+                </div>
+                    <?php }
+                ?>
             </div>
             <div>
                 <img src="foto/olmos/5.jpg" alt="Arxiu Olmos"/>
+                <?php
+                if (isset($_COOKIE['personatge'])){ ?>
+                <div class="guardar">
+                    <img src="../img/save.png" alt="icona guardar" data-foto="09colons/foto/olmos/5.jpg" data-descripcio="Arxiu familiar Olmos - La vida dels colons a Buda" onclick="guardarFoto(this)"/>
+                </div>
+                    <?php }
+                ?>
             </div>
             <div>
                 <img src="foto/olmos/6.jpg" alt="Arxiu Olmos"/>
+                <?php
+                if (isset($_COOKIE['personatge'])){ ?>
+                <div class="guardar">
+                    <img src="../img/save.png" alt="icona guardar" data-foto="09colons/foto/olmos/6.jpg" data-descripcio="Arxiu familiar Olmos - La vida dels colons a Buda" onclick="guardarFoto(this)"/>
+                </div>
+                    <?php }
+                ?>
             </div>
             <div>
                 <img src="foto/olmos/7.jpg" alt="Arxiu Olmos"/>
+                <?php
+                if (isset($_COOKIE['personatge'])){ ?>
+                <div class="guardar">
+                    <img src="../img/save.png" alt="icona guardar" data-foto="09colons/foto/olmos/7.jpg" data-descripcio="Arxiu familiar Olmos - La vida dels colons a Buda" onclick="guardarFoto(this)"/>
+                </div>
+                    <?php }
+                ?>
             </div>
         </div>
         <div class="blau">
@@ -89,12 +180,33 @@
         <div class="sliderfotos">
             <div>
                 <img src="foto/ramon_fabra/IMG.jpg" alt="Arxiu Ramon Fabra"/>
+                <?php
+                if (isset($_COOKIE['personatge'])){ ?>
+                <div class="guardar">
+                    <img src="../img/save.png" alt="icona guardar" data-foto="09colons/foto/ramon_fabra/IMG.jpg" data-descripcio="Arxiu familiar Ramon Fabra - La vida dels colons a Buda" onclick="guardarFoto(this)"/>
+                </div>
+                    <?php }
+                ?>
             </div>
             <div>
                 <img src="foto/ramon_fabra/IMG8.jpg" alt="Arxiu Ramon Fabra"/>
+                <?php
+                if (isset($_COOKIE['personatge'])){ ?>
+                <div class="guardar">
+                    <img src="../img/save.png" alt="icona guardar" data-foto="09colons/foto/ramon_fabra/IMG8.jpg" data-descripcio="Arxiu familiar Ramon Fabra - La vida dels colons a Buda" onclick="guardarFoto(this)"/>
+                </div>
+                    <?php }
+                ?>
             </div>
             <div>
                 <img src="foto/ramon_fabra/IMG6.jpg" alt="Arxiu Ramon Fabra"/>
+                <?php
+                if (isset($_COOKIE['personatge'])){ ?>
+                <div class="guardar">
+                    <img src="../img/save.png" alt="icona guardar" data-foto="09colons/foto/ramon_fabra/IMG6.jpg" data-descripcio="Arxiu familiar Ramon Fabra - La vida dels colons a Buda" onclick="guardarFoto(this)"/>
+                </div>
+                    <?php }
+                ?>
             </div>
         </div>
         <div class="blau">

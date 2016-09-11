@@ -9,3 +9,10 @@
 <div class="groc">
     Guillermo Borés explica com sorgeix la tradició de celebrar les festes de Buda per Sant Pere
 </div>
+<?php
+    if (isset($_COOKIE['personatge'])){ ?>
+<div class="guardar">
+    <img src="../img/save.png" alt="icona guardar" data-video="09colons/video/GuillermoBores_FestesBuda_ElPatro" data-descripcio="Guillermo Borés - Les festes donaven vida a l’illa de Buda" onclick="guardarVideo(this)"/>
+</div>
+    <?php }
+?>

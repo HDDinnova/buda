@@ -58,6 +58,13 @@
     <p id="foto3-2peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Foto: Arxiu família Borés<br>(gentilesa Museu de les Terres de l’Ebre)</p>
     <div id="foto3-2foto" class="foto">
         <img src="foto/Arxiu_Joan_Franch/menjant_amics_buda_01.jpg" alt="Arxiu Joan Franch"/>
+        <?php
+        if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardar">
+            <img src="../img/save.png" alt="icona guardar" data-foto="09colons/foto/Arxiu_Joan_Franch/menjant_amics_buda_01.jpg" data-descripcio="Arxiu familiar Joan Franch - Els colons de Buda(II)" onclick="guardarFoto(this)"/>
+        </div>
+            <?php }
+        ?>
         <div class="groc">
             Arxiu Joan Franch
         </div>
