@@ -6,6 +6,9 @@ $('#bso').click(function(){
     }
 });
 
+diari1 = false;
+diari2 = false;
+
 function controlMouse(e){
     $(window).unbind('wheel');
     $(document).off( "keydown" );
@@ -357,34 +360,79 @@ function diapositiva(id){
             $('#apartat4').show();
             $('#foto3-8 video')[0].pause();
             diapo24 = new TimelineMax();
-            diapo24;
+            diapo24.to($('#foto3-8text'),2,{top:'160%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto3-8'),2,{top:'-100%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto4-1'),2,{top:'0',ease:Power3.easeInOut},'-=2')
+                .to($('#foto4-1text'),2,{top:'15%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto4-1text p'),2,{top:'0',ease:Power3.easeInOut},'-=1.8');
             diapo24.addCallback(ratoli);
             break;
         case 240:
-            diapo25.tweenTo(0, {onComplete:f24});
+            diapo25.tweenTo(0, {onComplete:ratoli});
             break;
         case 25:
             diapo25 = new TimelineMax();
-            diapo25;
+            diapo25.to($('#foto4-1text h2'),2,{top:'300px',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto4-1text'),2,{top:'115%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto4-1 .tapa'),2,{autoAlpha:'.6',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto4-1text2'),2,{bottom:'10%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto4-1diari1'),2,{left:'0',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto4-1diari1peu'),2,{left:'0',ease:Power3.easeInOut},'-=1.8');
             diapo25.addCallback(ratoli);
+            if (!diari1){
+                $("#foto4-1diari1zoom").elevateZoom({
+                    scrollZoom : true,
+                    zoomType: "lens",
+                    lensShape: "square",
+                    loadingIcon: "true",
+                    lensSize: 400
+                });
+                diari1 = !diari1;
+            }
             break;
         case 250:
             diapo26.tweenTo(0, {onComplete:ratoli});
             break;
         case 26:
             diapo26 = new TimelineMax();
-            diapo26;
+            diapo26
+                .to($('#foto4-1diari1peu'),2,{left:'-50%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto4-1diari1'),2,{left:'-100%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto4-1diari2'),2,{left:'0',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto4-1diari2peu'),2,{left:'0',ease:Power3.easeInOut},'-=1.8');
             diapo26.addCallback(ratoli);
+            if (!diari2){
+                $("#foto4-1diari2zoom").elevateZoom({
+                    scrollZoom : true,
+                    zoomType: "lens",
+                    lensShape: "square",
+                    loadingIcon: "true",
+                    lensSize: 400
+                });
+                diari2 = !diari2;
+            }
             break;
         case 260:
+            $('#foto4-2 video')[0].pause();
             diapo27.tweenTo(0, {onComplete:ratoli});
             break;
         case 27:
             diapo27 = new TimelineMax();
-            diapo27;
-            diapo27.addCallback(ratoli);
+            diapo27.to($('#foto4-1diari2peu'),2,{left:'-50%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto4-1text2'),2,{bottom:'-210%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto4-1diari2'),2,{left:'-100%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto4-2'),2,{left:'0',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto4-1 .tapa'),2,{backgroundColor:'#000000',ease:Power3.easeInOut},'-=2')
+                .to($('#foto4-1 .tapa'),2,{autoAlpha:'.8',ease:Power3.easeInOut},'-=2')
+                .to($('#foto4-2peu'),2,{left:'0',ease:Power3.easeInOut},'-=1.8');
+            diapo27.addCallback(f27);
+            function f27(){
+                $('#foto4-2 video')[0].play();
+                ratoli();
+            }
             break;
         case 28:
+            $('#foto4-2 video')[0].pause();
             $('.final').show();
             $('.final').animate({
                 'opacity': '1'
@@ -393,380 +441,6 @@ function diapositiva(id){
     }
 }
 
-//function diapositiva16b(){
-//    $('#foto3-2 video')[0].pause();
-//    $('#foto3-2text').animate({
-//        'top': '-50%'
-//    },trans,'swing');
-//    $('#foto3-2').delay('200').animate({
-//        'bottom': '100%'
-//    },trans,'swing');
-//    $('#foto3-1').delay('200').animate({
-//        'top': '0'
-//    },trans,'swing');
-//    $('#foto3-1text').delay('400').animate({
-//        'top': '50%'
-//    },trans,'swing');
-//    $('#foto3-1text h2').delay('600').animate({
-//        'top': '0'
-//    },trans,'swing');
-//    $('#foto3-1peu').delay('800').animate({
-//        'left': '100px'
-//    },trans,'swing');
-//}
-//function diapositiva17(){
-//    $('#foto3-1peu').animate({
-//        'left': '-50%'
-//    },trans,'swing');
-//    $('#foto3-1text h2').delay('200').animate({
-//        'top': '300px'
-//    },trans,'swing');
-//    $('#foto3-1text').delay('400').animate({
-//        'top': '150%'
-//    },trans,'swing');
-//    $('#foto3-1').delay('600').animate({
-//        'top': '100%'
-//    },trans,'swing');
-//    $('#foto3-2').delay('600').animate({
-//        'bottom': '0'
-//    },trans,'swing');
-//    $('#foto3-2text').delay('800').animate({
-//        'top': '50%'
-//    },trans,'swing',function(){
-//        $('#foto3-2 video')[0].play();
-//    });
-//}
-//function diapositiva17b(){
-//    $('#foto3-3 video')[0].pause();
-//    $('#foto3-3').animate({
-//        'bottom': '100%'
-//    },trans,'swing');
-//    $('#foto3-2').animate({
-//        'bottom': '0'
-//    },trans,'swing',function(){
-//        $('#foto3-2 video')[0].play();
-//    });
-//    $('#foto3-2text').delay('200').animate({
-//        'top': '50%'
-//    },trans,'swing');
-//}
-//function diapositiva18(){
-//    $('#foto3-2 video')[0].pause();
-//    $('#foto3-2text').animate({
-//        'top': '250%'
-//    },trans,'swing');
-//    $('#foto3-2').delay('200').animate({
-//        'bottom': '-100%'
-//    },trans,'swing');
-//    $('#foto3-3').delay('200').animate({
-//        'bottom': '0'
-//    },trans,'swing',function(){
-//        $('#foto3-3 video')[0].play();
-//    });
-//}
-//function diapositiva18b(){
-//    $('#foto3-4 video')[0].pause();
-//    $('#foto3-4text').animate({
-//        'top': '-80%'
-//    },trans,'swing');
-//    $('#foto3-3').delay('200').animate({
-//        'bottom': '0'
-//    },trans,'swing',function(){
-//        $('#foto3-3 video')[0].play();
-//    });
-//    $('#foto3-4').delay('200').animate({
-//        'bottom': '100%'
-//    },trans,'swing');
-//}
-//function diapositiva19(){
-//    $('#foto3-3 video')[0].pause();
-//    $('#foto3-3').animate({
-//        'bottom': '-100%'
-//    },trans,'swing');
-//    $('#foto3-4').animate({
-//        'bottom': '0'
-//    },trans,'swing',function(){
-//        $('#foto3-4 video')[0].play();
-//    });
-//    $('#foto3-4text').delay('200').animate({
-//        'top': '20%'
-//    },trans,'swing');
-//}
-//function diapositiva19b(){
-//    $('#foto3-5 video')[0].pause();
-//    $('#foto3-5text').animate({
-//        'top': '-40%'
-//    },trans,'swing');
-//    $('#foto3-5').delay('200').animate({
-//        'bottom': '100%'
-//    },trans,'swing');
-//    $('#foto3-4').delay('200').animate({
-//        'bottom': '0'
-//    },trans,'swing',function(){
-//        $('#foto3-4 video')[0].play();
-//    });
-//    $('#foto3-4text').delay('400').animate({
-//        'top': '20%'
-//    },trans,'swing');
-//}
-//function diapositiva20(){
-//    $('#foto3-4 video')[0].pause();
-//    $('#foto3-4text').animate({
-//        'top': '120%'
-//    },trans,'swing');
-//    $('#foto3-4').delay('200').animate({
-//        'bottom': '-100%'
-//    },trans,'swing');
-//    $('#foto3-5').delay('200').animate({
-//        'bottom': '0'
-//    },trans,'swing',function(){
-//        $('#foto3-5 video')[0].play();
-//    });
-//    $('#foto3-5text').delay('400').animate({
-//        'top': '60%'
-//    },trans,'swing');
-//}
-//function diapositiva20b(){
-//    $('#foto3-6 video')[0].pause();
-//    $('#foto3-6').animate({
-//        'bottom': '100%'
-//    },trans,'swing');
-//    $('#foto3-5').animate({
-//        'bottom': '0'
-//    },trans,'swing',function(){
-//        $('#foto3-5 video')[0].play();
-//    });
-//    $('#foto3-5text').delay('200').animate({
-//        'top': '60%'
-//    },trans,'swing');
-//}
-//function diapositiva21(){
-//    $('#foto3-5 video')[0].pause();
-//    $('#foto3-5text').animate({
-//        'top': '160%'
-//    },trans,'swing');
-//    $('#foto3-5').delay('200').animate({
-//        'bottom': '-100%'
-//    },trans,'swing');
-//    $('#foto3-6').delay('200').animate({
-//        'bottom': '0'
-//    },trans,'swing',function(){
-//        $('#foto3-6 video')[0].play();
-//    });
-//}
-//function diapositiva21b(){
-//    $('#foto3-7 video')[0].pause();
-//    $('#foto3-7text').animate({
-//        'top': '-80%'
-//    },trans,'swing');
-//    $('#foto3-7').delay('200').animate({
-//        'bottom': '100%'
-//    },trans,'swing');
-//    $('#foto3-6').delay('200').animate({
-//        'bottom': '0'
-//    },trans,'swing',function(){
-//        $('#foto3-6 video')[0].play();
-//    });
-//}
-//function diapositiva22(){
-//    $('#foto3-6 video')[0].pause();
-//    $('#foto3-6').animate({
-//        'bottom': '-100%'
-//    },trans,'swing');
-//    $('#foto3-7').animate({
-//        'bottom': '0'
-//    },trans,'swing',function(){
-//        $('#foto3-7 video')[0].play();
-//    });
-//    $('#foto3-7text').delay('200').animate({
-//        'top': '60%'
-//    },trans,'swing');
-//}
-//function diapositiva22b(){
-//    $('#foto3-8 video')[0].pause();
-//    $('#foto3-8text').animate({
-//        'top': '-60%'
-//    },trans,'swing');
-//    $('#foto3-8').delay('200').animate({
-//        'bottom': '100%'
-//    },trans,'swing');
-//    $('#foto3-7').delay('200').animate({
-//        'bottom': '0'
-//    },trans,'swing',function(){
-//        $('#foto3-7 video')[0].play();
-//    });
-//    $('#foto3-7text').delay('400').animate({
-//        'top': '60%'
-//    },trans,'swing');
-//}
-//function diapositiva23(){
-//    $('#foto3-7 video')[0].pause();
-//    $('#foto3-7text').animate({
-//        'top': '160%'
-//    },trans,'swing');
-//    $('#foto3-7').delay('200').animate({
-//        'bottom': '-100%'
-//    },trans,'swing');
-//    $('#foto3-8').delay('200').animate({
-//        'bottom': '0'
-//    },trans,'swing',function(){
-//        $('#foto3-8 video')[0].play();
-//    });
-//    $('#foto3-8text').delay('400').animate({
-//        'top': '60%'
-//    },trans,'swing');
-//    $('#apartat4').load('apartat4.html');
-//}
-//function diapositiva23b(){
-//    $('#foto4-1text p').animate({
-//        'top': '-300px'
-//    },trans,'swing');
-//    $('#foto4-1text').delay('200').animate({
-//        'top': '-50%'
-//    },trans,'swing');
-//    $('#foto4-1').delay('400').animate({
-//        'top': '-100%'
-//    },trans,'swing');
-//    $('#foto3-8').delay('400').animate({
-//        'bottom': '0'
-//    },trans,'swing',function(){
-//        $('#foto3-8 video')[0].play();
-//    });
-//    $('#foto3-8text').delay('600').animate({
-//        'top': '60%'
-//    },trans,'swing');
-//}
-//function diapositiva24(){
-//    $('#apartat4').show();
-//    $('#foto3-8 video')[0].pause();
-//    $('#foto3-8text').animate({
-//        'top': '160%'
-//    },trans,'swing');
-//    $('#foto3-8').delay('200').animate({
-//        'bottom': '-100%'
-//    },trans,'swing');
-//    $('#foto4-1').delay('200').animate({
-//        'top': '0'
-//    },trans,'swing');
-//    $('#foto4-1text').delay('400').animate({
-//        'top': '15%'
-//    },trans,'swing');
-//    $('#foto4-1text p').delay('600').animate({
-//        'top': '0'
-//    },trans,'swing');
-//}
-//function diapositiva24b(){
-//    $('#foto4-1diari1peu').animate({
-//        'left': '-50%'
-//    },trans,'swing');
-//    $('#foto4-1diari1').delay('200').animate({
-//        'left': '100%'
-//    },trans,'swing');
-//    $('#foto4-1text2').delay('400').animate({
-//        'bottom': '-180%'
-//    },trans,'swing');
-//    $('#foto4-1 .tapa').delay('600').animate({
-//        'opacity': '0'
-//    },trans,'swing');
-//    $('#foto4-1text').delay('800').animate({
-//        'top': '15%'
-//    },trans,'swing');
-//    $('#foto4-1text h2').delay('1000').animate({
-//        'top': '0'
-//    },trans,'swing');
-//}
-//function diapositiva25(){
-//    $('#foto4-1text h2').animate({
-//        'top': '300px'
-//    },trans,'swing');
-//    $('#foto4-1text').delay('200').animate({
-//        'top': '115%'
-//    },trans,'swing');
-//    $('#foto4-1 .tapa').delay('400').animate({
-//        'opacity': '.6'
-//    },trans,'swing');
-//    $('#foto4-1text2').delay('600').animate({
-//        'bottom': '10%'
-//    },trans,'swing');
-//    $('#foto4-1diari1').delay('800').animate({
-//        'left': '0'
-//    },trans,'swing',function(){
-//        if (!diari1){
-//            $("#foto4-1diari1zoom").elevateZoom({
-//                scrollZoom : true,
-//                zoomType: "lens",
-//                lensShape: "square",
-//                loadingIcon: "true",
-//                lensSize: 400
-//            });
-//            diari1 = !diari1;
-//        }
-//    });
-//    $('#foto4-1diari1peu').delay('1000').animate({
-//        'left': '100px'
-//    },trans,'swing');
-//}
-//function diapositiva25b(){
-//    $('#foto4-1diari2peu').animate({
-//        'left': '-50%'
-//    },trans,'swing');
-//    $('#foto4-1diari2').delay('200').animate({
-//        'left': '100%'
-//    },trans,'swing');
-//    $('#foto4-1diari1').delay('200').animate({
-//        'left': '0'
-//    },trans,'swing');
-//    $('#foto4-1diari1peu').delay('400').animate({
-//        'left': '100px'
-//    },trans,'swing');
-//}
-//function diapositiva26(){
-//    $('#foto4-1diari1peu').animate({
-//        'left': '-50%'
-//    },trans,'swing');
-//    $('#foto4-1diari1').delay('200').animate({
-//        'left': '-100%'
-//    },trans,'swing');
-//    $('#foto4-1diari2').delay('200').animate({
-//        'left': '0'
-//    },trans,'swing',function(){
-//        if (!diari2){
-//            $("#foto4-1diari2zoom").elevateZoom({
-//                scrollZoom : true,
-//                zoomType: "lens",
-//                lensShape: "square",
-//                loadingIcon: "true",
-//                lensSize: 400
-//            });
-//            diari2 = !diari2;
-//        }
-//    });
-//    $('#foto4-1diari2peu').delay('400').animate({
-//        'left': '100px'
-//    },trans,'swing');
-//}
-//function diapositiva26b(){
-//    $('#foto4-2 video')[0].pause();
-//    $('#foto4-2peu').animate({
-//        'left': '-150%'
-//    },trans,'swing');
-//    $('#foto4-1 .tapa').delay('200').animate({
-//        'backgroundColor': '#F15D42',
-//        'opacity': '.6'
-//    },trans,'swing');
-//    $('#foto4-2').delay('200').animate({
-//        'left': '100%'
-//    },trans,'swing');
-//    $('#foto4-1diari2').delay('200').animate({
-//        'left': '0'
-//    },trans,'swing');
-//    $('#foto4-1text2').delay('400').animate({
-//        'bottom': '10%'
-//    },trans,'swing');
-//    $('#foto4-1diari2peu').delay('600').animate({
-//        'left': '100px'
-//    },trans,'swing');
-//}
 //function diapositiva27(){
 //    $('#foto4-1diari2peu').animate({
 //        'left': '-50%'
@@ -789,14 +463,4 @@ function diapositiva(id){
 //    $('#foto4-2peu').delay('600').animate({
 //        'left': '100px'
 //    },trans,'swing');
-//}
-//
-//// Funcions de video
-//
-//function tancarvideo(){
-//    $('.videopopup').hide();
-//    $('#videos').html('');
-//    $('body').on('mousewheel',function(e){
-//        controlMouse(e);
-//    });
 //}

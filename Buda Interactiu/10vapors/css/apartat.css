@@ -183,29 +183,26 @@
 }
 #apartat4{display: none;}
 #foto4-1{
-    top: -100%;
+    top: 100%;
     background-image: url('../foto/pdf_fons.jpg');
 }
 #foto4-1text{
     position: absolute;
-    top: -50%;
-    left: 100px;
+    top: -150%;
 }
 #foto4-1text p{
     position: relative;
     top: -300px;
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.1vw;
     padding: 20px;
-    width: 42%;
 }
 #foto4-1text h2{
     position: relative;
     top: 0;
     color: white;
-    font-size: 6.5rem;
+    font-size: 6vw;
     padding: 25px;
-    width: 95rem;
     font-weight: 600;
     text-transform: uppercase;
     line-height: inherit;
@@ -213,26 +210,25 @@
 #foto4-1text2{
     position: absolute;
     bottom: -180%;
-    right: 50px;
-    width: 40%;
     z-index: 999;
 }
 #foto4-1text2 p{
     color: white;
-    font-size: 1.8rem;
     padding: 20px;
 }
 #foto4-1diari1,#foto4-1diari2{
+    max-width: 100vw;
     display: block;
     left: 100%;
     background-color: rgba(0,0,0,0);
+    
 }
 #foto4-2{
     height: 100vh;
     min-width: 100%;
     position: absolute;
     top: 0;
-    left: 0100%;
+    left: 100%;
     z-index: -10;
     display: table;
 }
@@ -245,6 +241,6 @@
     height: auto;
 }
 #foto4-2peu{
-    padding: 10px;
+    padding: 15px;
     left: -150%;
 }

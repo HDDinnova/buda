@@ -46,11 +46,25 @@
                 <div class="tapa blaufosc"></div>
                 <div id="foto1-2text" class="col-lg-offset-8 col-md-offset-8 col-lg-3 col-md-3">
                     <p>Entre la segona meitat del segle XIX i el primer terç del segle XX, els vaixells de vapor van constituir l’element més característic i alhora innovador del trànsit fluvial pel tram final de l’Ebre</p>
+                    <?php
+                        if (isset($_COOKIE['personatge'])){ ?>
+                    <div class="guardartext">
+                        <img src="../img/save.png" alt="icona guardar" data-img="10vapors/foto/Santi082.jpg" data-text="10vapors/text/text1.html" onclick="guardarText(this)"/>
+                    </div>
+                        <?php }
+                    ?>
                 </div>
             </div>
             <div id="foto1-3" class="fotofons">
                 <div id="foto1-3text" class="col-lg-offset-7 col-md-offset-7 col-lg-4 col-md-4">
                     <p class="blaufosc">Durant aquest període, hi ha constancia de més de 15 vapors que van navegar-hi, fins i tot realitzant navegació de cabotatge, tot sortint a mar i fent escales a diversos ports com Barcelona, Tarragona i Vilanova</p>
+                    <?php
+                        if (isset($_COOKIE['personatge'])){ ?>
+                    <div class="guardartext">
+                        <img src="../img/save.png" alt="icona guardar" data-img="10vapors/foto/Foto_Tarraconense.jpg" data-text="10vapors/text/text2.html" onclick="guardarText(this)"/>
+                    </div>
+                        <?php }
+                    ?>
                 </div>
                 <p id="foto1-3peu" class="peu col-lg-offset-1 col-md-offset-1 col-lg-2 col-md-3">El vapor “Tarraconense” al seu pas per la façana fluvial de Tortosa</p>
             </div>
@@ -65,12 +79,12 @@
         <script src="js/jquery-ui.min.js" type="text/javascript"></script>
         <script src="../js/bootstrap.min.js" type="text/javascript"></script>
         <script src="js/TweenMax.min.js" type="text/javascript"></script>
-        <!--<script src="js/Draggable.min.js" type="text/javascript"></script>-->
         <script src="../js/toastr.min.js" type="text/javascript"></script>
         <script src="js/slick.min.js" type="text/javascript"></script>
         <script src="../js/apartats.js" type="text/javascript"></script>
         <script src="js/funcions.js" type="text/javascript"></script>
         <script src="js/jquery.rotate.js" type="text/javascript"></script>
+        <script src="js/jquery.elevateZoom-3.0.8.min.js" type="text/javascript"></script>
         <script>
             var pos = 10;
             $(window).load(function(){

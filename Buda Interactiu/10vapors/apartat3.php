@@ -14,6 +14,13 @@
     </video>
     <div id="foto3-2text" class="col-lg-offset-1 col-md-offset-1 col-lg-3 col-md-3">
         <p>El “Ciudad de Tortosa” va funcionar des del 1883 fins a finals de segle XX, tot transportant mercaderies i passatgers des de Tortosa a La Cava i viceversa</p>
+        <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardartext">
+            <img src="../img/save.png" alt="icona guardar" data-img="10vapors/video/0565_Borrell.jpg" data-text="10vapors/text/text4.html" onclick="guardarText(this)"/>
+        </div>
+            <?php }
+        ?>
     </div>
 </div>
 <div id="foto3-3" class="videofull">
@@ -31,6 +38,13 @@
     </video>
     <div id="foto3-4text" class="col-lg-offset-1 col-md-offset-1 col-lg-2 col-md-2">
         <p class="groc">L’”Anita”, construït el 1915, va funcionar més o menys regularment fins el 1928</p>
+        <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardartext">
+            <img src="../img/save.png" alt="icona guardar" data-img="10vapors/video/08_Anita.jpg" data-text="10vapors/text/text5.html" onclick="guardarText(this)"/>
+        </div>
+            <?php }
+        ?>
     </div>
 </div>
 <div id="foto3-5" class="videofull">
@@ -41,6 +55,13 @@
     </video>
     <div id="foto3-5text" class="col-lg-offset-1 col-md-offset-1 col-lg-3 col-md-3">
         <p class="groc">El darrer servei de l’Anita es va efectuar el 29 d’abril de 1929. Fou precisament una excursió a l’illa i el far de Buda amb alumnes dels instituts de segon ensenyament de Tarragona i Tortosa</p>
+        <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardartext">
+            <img src="../img/save.png" alt="icona guardar" data-img="10vapors/video/0566_GrupGentFaro.jpg" data-text="10vapors/text/text6.html" onclick="guardarText(this)"/>
+        </div>
+            <?php }
+        ?>
     </div>
 </div>
 <div id="foto3-6" class="videofull">
@@ -68,5 +89,12 @@
     </video>
     <div id="foto3-8text" class="col-lg-offset-1 col-md-offset-1 col-lg-4 col-md-4">
         <p class="groc">Reconstruir la història de l’”Anita” i d’altres vapors de l’Ebre és fer-ho també de moltes vivències i històries de vida d’ebrencs i de forasters, que recorden amb nostàlgia i felicitat els viatges fins a l’illa i el gran Far, descobrir-ne la seva silueta inoblidable a mesura que baixaven riu avall o quan el tornaven a remuntar de tornada a casa</p>
+        <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardartext">
+            <img src="../img/save.png" alt="icona guardar" data-img="10vapors/video/0558_PontFusta_Vaixell.jpg" data-text="10vapors/text/text7.html" onclick="guardarText(this)"/>
+        </div>
+            <?php }
+        ?>
     </div>
 </div>
