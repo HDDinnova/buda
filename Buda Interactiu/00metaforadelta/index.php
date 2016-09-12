@@ -46,13 +46,13 @@
                     <div class="clearfix"></div>
                     <p class="taronga col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-3 col-md-3 col-sm-9 col-xs-10">Metonímia del Delta de l’Ebre</p>
                 </div>
-                <p id="foto1-1peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Foto: Salvador Maluquer (dècada de 1950 i 1960).<br>Arxiu Parc Natural del Delta de l’Ebre</p>
+                <p id="foto1-1peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Foto: Salvador Maluquer (dècades de 1950 i  1960).<br>Arxiu Parc Natural del Delta de l’Ebre</p>
                 <div class="scroll">
                     <img src="img/scroll_taronga.png" alt="Fes scroll per continuar"/>
                 </div>
                 <div class="tapa taronga"></div>
                 <div id="foto1-1text2" class="col-lg-11 col-md-11 col-sm-11 col-xs-11 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
-                    <p class="col-lg-4 col-md-4 col-sm-9 col-xs-10">Actualment, Buda forma part de les diverses “figures” de protecció del medi natural: espai PEIN “Delta de l’Ebre”, Parc Natural i Xarxa Natura 2000</p>
+                    <p class="col-lg-4 col-md-4 col-sm-9 col-xs-10">Actualment, Buda s’integra dins de diverses figures de protecció del medi natural: espai PEIN “Delta de l’Ebre”, Parc Natural del delta de l’Ebre i Xarxa Natura 2000.</p>
                     <div class="clearfix"></div>
                     <div class="boto" id="foto1-1b">
                         <img class="blau" id="foto1-1i" src="img/play.png" alt="reproduir video de Francesc Vidal">
@@ -109,7 +109,7 @@
                     ?>
                 </div>
                 <div id="foto1-1peufotos" class="peu groc col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">
-                    Fotos: Salvador Maluquer (dècada de 1950 i 1960).<br>Arxiu Parc Natural del Delta de l’Ebre
+                    Fotos: Salvador Maluquer (dècades de 1950 i  1960).<br>Arxiu Parc Natural del Delta de l’Ebre
                 </div>
             </div>
         </div>

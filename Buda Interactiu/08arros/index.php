@@ -59,7 +59,7 @@
                     </video>
                 </div>                    
                 <div id="foto1-1videopeu" class="groc videopeu">
-                    Reportatge sobre la vida en barraques al delta de l’Ebre durant la postguerra.<br>Arxiu TVE (No-Do).
+                    Reportatge sobre el conreu de l'arròs al delta de l'Ebre.<br>Arxiu TVE (No-Do).
                 </div>
             </div>
             <div id="foto1-2" class="fotofons">

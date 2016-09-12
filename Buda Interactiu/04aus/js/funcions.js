@@ -284,7 +284,7 @@ function diapositiva(id){
                 },1200);
                 pausa+=150;
             });
-            ratoli();
+            setTimeout(function(){ ratoli(); }, 1500);
             break;
         case 20:
             var angle=5;
@@ -301,7 +301,7 @@ function diapositiva(id){
                 posi+=1;
                 pausa+=150;
             });
-            ratoli();
+            setTimeout(function(){ ratoli(); }, 1800);
             $('#apartat2').load('apartat2.php');
             break;
         case 200:
@@ -318,7 +318,11 @@ function diapositiva(id){
                 posi+=1;
                 pausa+=150;
             });
-            diapo21.tweenTo(0, {onComplete:ratoli});
+            diapo21.tweenTo(0, {onComplete:f200});
+            function f200(){
+                $('#apartat2').hide();
+                ratoli();
+            }
             break;
         case 21:
             var pausa=0;

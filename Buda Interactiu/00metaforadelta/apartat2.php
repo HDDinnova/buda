@@ -4,7 +4,7 @@
         <div class="clearfix"></div>
         <p class="roig col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-4 col-md-4 col-sm-9 col-xs-10">El repte de la conservació</p>
     </div>
-    <p id="foto1-2peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Foto: Salvador Maluquer (dècada de 1950 i 1960).<br>Arxiu Parc Natural del Delta de l’Ebre</p>
+    <p id="foto1-2peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Foto: Salvador Maluquer (dècades de 1950 i  1960).<br>Arxiu Parc Natural del Delta de l’Ebre</p>
     <div class="tapa roig"></div>
     <div id="foto1-2text2">
         <p>

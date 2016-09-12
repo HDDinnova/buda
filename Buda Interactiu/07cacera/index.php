@@ -117,6 +117,9 @@
                 </div>
                 <div id="foto1-2foto" class="foto">
                     <img src="foto/_MG_9135.jpg" alt="Arxiu família Cabezas"/>
+                    <div class="groc">
+                        Antonio Cabezas, el farer de Buda
+                    </div>
                 </div>
             </div>
             <div id="foto1-3" class="fotofons">

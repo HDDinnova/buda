@@ -1,5 +1,5 @@
 <div id="foto2-1" class="fotofons">
-    <div id="foto2-1text" class="col-lg-offset-5 col-md-offset-5 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    <div id="foto2-1text" class="col-lg-offset-5 col-md-offset-5 col-lg-6 col-md-7 col-sm-12 col-xs-12">
         <h2 class="marro col-lg-12 col-md-12 col-sm-12 col-xs-12">Buda, memòria latent</h2>
         <div class="clearfix"></div>
         <p class="marro col-lg-offset-5 col-md-offset-5 col-lg-7 col-md-7">Descendent de colons de Buda, Joan Franch i Soler (La Cava, Deltebre, 1941), és tal volta l’erudit que més i millor ha sabut divulgar el sentiment de pertinença dels buderos.<br>El seu llibre de memòries Buda, memòria latent recull vivències, anècdotes, fotografies i notícies de premsa.</p>

@@ -43,7 +43,7 @@
             </div>
             <div id="foto1-2" class="fotofons">
                 <div id="foto1-2text" class="col-lg-3 col-md-3 col-sm-9 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
-                    <h2 class="blaufosc">Un mica d'història...</h2>
+                    <h2 class="blaufosc">Una mica d'història...</h2>
                     <div class="clearfix"></div>
                     <p class="blaufosc">L’illa de Buda, concedida pel Reial Patrimoni el 1739 –llavors ocupava unes 6 hectàrees–, va créixer espectacularment en els 150 anys posteriors.</p>
                     <?php
@@ -54,11 +54,11 @@
                         <?php }
                     ?>
                 </div>
-                <p id="foto1-2peu" class="peu taronga col-lg-offset-9 col-md-offset-8 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">La riba dreta de l’Ebre (1880).<br>Font: Instituto Nacional de Cartografía.</p>
+                <p id="foto1-2peu" class="peu taronga col-lg-offset-9 col-md-offset-8 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">L’hemidelta dret de l’Ebre (1880).<br>Font: Instituto Nacional de Cartografía.</p>
             </div>
             <div id="foto1-3" class="fotofons">
                 <div id="foto1-3text" class="col-lg-4 col-md-4 col-sm-9 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
-                    <p class="blaufosc">En dades sobre pesca a les basses del delta de l’Ebre que daten del darrer terç del segle XIX (Fabregat, E.; MMB, 2010), l’any 1881 l’illa de Buda havia crescut fins les més  de 1.000 hectàrees. D’aquestes, de una bona part corresponien a basses i llacunes.<br>Com que la pràctica totalitat de Buda s’havia format a partir de mitjans del segle XVIII, segurament hi havia molts espais inundats, formats a partir del tancament de braços de mar per barres de sorra creades per l’acció conjunta de l’Ebre i del mar. </p>
+                    <p class="blaufosc">En dades sobre pesca a les basses del delta de l’Ebre que daten del darrer terç del segle XIX (Fabregat, E.; MMB, 2010), l’any 1881 l’illa de Buda havia crescut fins a més de 1.000 hectàrees. D’aquestes, una bona part corresponien a basses i llacunes.<br>Com que la pràctica totalitat de Buda s’havia format a partir de mitjans del segle XVIII, segurament hi havia molts espais inundats, formats a partir del tancament de braços de mar per barres de sorra creades per l’acció conjunta de l’Ebre i del mar. </p>
                     <?php
                         if (isset($_COOKIE['personatge'])){ ?>
                     <div class="guardartext">
