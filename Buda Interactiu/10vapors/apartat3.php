@@ -29,6 +29,7 @@
         <source src="video/135_VaporTortosa_Amposta.ogg" type="video/ogg">
         <source src="video/135_VaporTortosa_Amposta.webm" type="video/webm">
     </video>
+    <p id="foto3-3peu" class="peu col-lg-offset-1 col-md-offset-1 col-lg-2 col-md-3">El vapor “Ciudad de Tortosa” navegant riu amunt a Amposta, passant per davant la resclosa d’entrada al canal de navegació entre l’Ebre i el port de Sant Carles de la Ràpita.</p>
 </div>
 <div id="foto3-4" class="videofull">
     <video poster="video/08_Anita.jpg" preload>

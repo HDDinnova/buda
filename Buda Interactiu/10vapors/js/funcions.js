@@ -258,7 +258,8 @@ function diapositiva(id){
             diapo18 = new TimelineMax();
             diapo18.to($('#foto3-2text'),2,{top:'250%',ease:Power3.easeInOut},'-=1.8')
                 .to($('#foto3-2'),2,{top:'100%',ease:Power3.easeInOut},'-=1.8')
-                .to($('#foto3-3'),2,{top:'0',ease:Power3.easeInOut},'-=2');
+                .to($('#foto3-3'),2,{top:'0',ease:Power3.easeInOut},'-=2')
+                .to($('#foto3-3peu'),2,{left:'0',ease:Power3.easeInOut},'-=1.8');
             diapo18.addCallback(f18);
             function f18(){
                 $('#foto3-3 video')[0].play();
@@ -272,7 +273,8 @@ function diapositiva(id){
         case 19:
             $('#foto3-3 video')[0].pause();
             diapo19 = new TimelineMax();
-            diapo19.to($('#foto3-3'),2,{top:'100%',ease:Power3.easeInOut},'-=1.8')
+            diapo19.to($('#foto3-3peu'),2,{left:'-50%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto3-3'),2,{top:'100%',ease:Power3.easeInOut},'-=1.8')
                 .to($('#foto3-4'),2,{top:'0',ease:Power3.easeInOut},'-=2')
                 .to($('#foto3-4text'),2,{top:'20%',ease:Power3.easeInOut},'-=1.8');
             diapo19.addCallback(f19);
@@ -430,6 +432,9 @@ function diapositiva(id){
                 $('#foto4-2 video')[0].play();
                 ratoli();
             }
+            $('#foto4-2 video').on('ended',function(){
+                passar(28);
+            });
             break;
         case 28:
             $('#foto4-2 video')[0].pause();
@@ -440,27 +445,3 @@ function diapositiva(id){
             break;
     }
 }
-
-//function diapositiva27(){
-//    $('#foto4-1diari2peu').animate({
-//        'left': '-50%'
-//    },trans,'swing');
-//    $('#foto4-1text2').delay('200').animate({
-//        'bottom': '-180%'
-//    },trans,'swing');
-//    $('#foto4-1diari2').delay('400').animate({
-//        'left': '-100%'
-//    },trans,'swing');
-//    $('#foto4-2').delay('400').animate({
-//        'left': '0'
-//    },trans,'swing',function(){
-//        $('#foto4-2 video')[0].play();
-//    });
-//    $('#foto4-1 .tapa').delay('400').animate({
-//        'backgroundColor': 'black',
-//        'opacity': '.8'
-//    },trans,'swing');
-//    $('#foto4-2peu').delay('600').animate({
-//        'left': '100px'
-//    },trans,'swing');
-//}

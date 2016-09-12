@@ -74,7 +74,7 @@
 </div>
 <div id="foto6-3" class="fotofons">
     <div id="foto6-3text" class="col-lg-offset-1 col-md-offset-1 col-lg-4 col-md-4 col-sm-12 col-xs-12">
-        <p class="taronga">La popularitat de les festes fa que se celebrin durant els mesos de juliol o agost, depenent dels anys, quan les feines als arrossars eren menys feixugues.<br>Partits de futbol, balls de disfresses, curses populars… una comissió organitzadora composda pels propis colons se n’encarregava. Els dies 30 i 31 d’agost de 1947 es van celebrar per primera vegada les Festes Majors de Buda.</p>
+        <p class="taronga">La popularitat de les festes fa que se celebrin durant els mesos de juliol o agost, depenent dels anys, quan les feines als arrossars eren menys feixugues.<br>Partits de futbol, balls de disfresses, curses populars… una comissió organitzadora composada pels propis colons se n’encarregava. Els dies 30 i 31 d’agost de 1947 es van celebrar per primera vegada les Festes Majors de Buda.</p>
         <?php
             if (isset($_COOKIE['personatge'])){ ?>
         <div class="guardartext">

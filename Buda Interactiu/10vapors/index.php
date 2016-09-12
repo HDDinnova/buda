@@ -36,7 +36,7 @@
                 <div id="foto1-1text" class="col-lg-offset-1 col-md-offset-1 col-lg-7 col-md-7">
                     <h2 class="blaufosc">Els “vapors”<br>i els grans viatges cap a Buda</h2>                
                 </div>
-                <p id="foto1-1peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">El vapor Anita a la passarel·la del far de Buda. Arxiu Borrell (gentilesa Arxiu Històric Comarcal del Baix Ebre)</p>
+                <p id="foto1-1peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Grup de viatgers a bord d'un vapor en un viatge a Buda.<br>Arxiu Borrell (gentilesa Arxiu Històric Comarcal del Baix Ebre)</p>
                 <div class="scroll">
                     <img src="img/scroll_blaufosc.png" alt="Fes scroll per continuar"/>
                 </div>
@@ -66,7 +66,7 @@
                         <?php }
                     ?>
                 </div>
-                <p id="foto1-3peu" class="peu col-lg-offset-1 col-md-offset-1 col-lg-2 col-md-3">El vapor “Tarraconense” al seu pas per la façana fluvial de Tortosa</p>
+                <p id="foto1-3peu" class="peu col-lg-offset-1 col-md-offset-1 col-lg-2 col-md-3">El vapor “Ebro”, a finals de la dècada de 1870, amarrat a l’embarcador de Sant Roc, actual zona del Paiolet de Tortosa.</p>
             </div>
         </div>
         <div class="containerapartat" id="apartat2"></div>

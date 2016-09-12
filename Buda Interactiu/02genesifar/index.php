@@ -9,14 +9,16 @@
 
         <link href="../css/estil.css" rel="stylesheet" type="text/css"/>
         <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/toastr.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/apartat.css" rel="stylesheet" type="text/css"/>
         <link href="css/slick.css" rel="stylesheet" type="text/css"/>
         <link href="css/slick-theme.css" rel="stylesheet" type="text/css"/>
         
-        <script src="../js/jquery-2.1.4.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-2.2.4.min.js" type="text/javascript"></script>
+        <script src="../js/menu.js" type="text/javascript"></script>
     </head>
-    <body ondragover="drag_over(event)" ondrop="drop(event)">
-        <nav class="navbar navbar-default"></nav>
+    <body>
+        <nav class="navbar navbar-default"><?php include '../menu/menusuperior.php'; ?></nav>
         <!--Fi capçalera-->
         <audio loop id="audio">
             <source src="../musica/Buda Frag 7 de 7.mp3" type="audio/mpeg">
@@ -78,13 +80,6 @@
                 </a>
             </div>
         </div>
-        <script>
-            $('#m').load('../menu/menu.html',function(){
-                $('nav').load('../menu/menusuperior.html',function(){
-                    menu();
-                });                
-            });
-        </script>
         <div class="containerapartat" id="apartat1">
             <div id="foto1-1" class="fotofons">
                 <div id="foto1-1text" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -147,33 +142,29 @@
         </div>
     
     <script src="js/jquery-ui.min.js" type="text/javascript"></script>
-    <script src="js/TweenMax.min.js" type="text/javascript"></script>
-    <script src="js/jquery.gsap.min.js" type="text/javascript"></script>
-    <script src="js/slick.min.js" type="text/javascript"></script>
-    <script src="js/funcions.js" type="text/javascript"></script>
-    <script src="js/jquery.mousewheel.min.js" type="text/javascript"></script>
-    <script src="js/jquery-css-transform.js" type="text/javascript"></script>
-    <script src="js/jquery.rotate.js" type="text/javascript"></script>
-    <script src="../js/jquery.color.js" type="text/javascript"></script>
-    <script src="js/jquery.elevateZoom-3.0.8.min.js" type="text/javascript"></script>
-    <script src="../js/menu.js" type="text/javascript"></script>
-    <script src="js/menu_apartat.js" type="text/javascript"></script>
-    <script>
-        var pos = 10;
-        $(window).load(function(){
-            $('#menu2').click(function(){
-                $('#mi').animate({
-                    bottom: '0'
-                }, 200);
-                $('body').off('mousewheel');
-            });
-            diapositiva(1);
-            $('#m').load('../menu/menu.html',function(){
-                $('nav').load('../menu/menusuperior.html',function(){
+        <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/TweenMax.min.js" type="text/javascript"></script>
+        <script src="js/Draggable.min.js" type="text/javascript"></script>
+        <script src="../js/toastr.min.js" type="text/javascript"></script>
+        <script src="js/slick.min.js" type="text/javascript"></script>
+        <script src="../js/apartats.js" type="text/javascript"></script>
+        <script src="js/funcions.js" type="text/javascript"></script>
+        <script src="js/jquery.rotate.js" type="text/javascript"></script>
+        <script>
+            var pos = 10;
+            $(window).load(function(){
+                diapositiva(1);
+                $('#m').load('../menu/menu.html',function(){
                     menu();
-                });                
+                    $('#menu2').click(function(){
+                        $('#mi').animate({
+                            bottom: '0'
+                        }, 200);
+                        $(window).unbind('wheel');
+                        $(document).off( "keydown" );
+                    });
+                });
             });
-        });
-    </script>
+        </script>
     </body>
 </html>

@@ -25,5 +25,5 @@
             <a href="docs/Els_vaixells_de_vapor_a_l_Ebre.pdf" target="_blank"><img class="groc" id="foto2-1i" src="img/text.png" alt="Article de Maite Subirats i Carme Queralt “La navegació per l’Ebre. Els vaixells de vapor (1856-1929)”"></a>
         </div>
     </div>
-    <p id="foto2-2peu" class="peu col-lg-offset-1 col-md-offset-1 col-lg-2 col-md-3">El vapor Anita a la passarel·la del far de Buda. Arxiu Borrell (gentilesa Arxiu Històric Comarcal del Baix Ebre)</p>
+    <p id="foto2-2peu" class="peu col-lg-offset-1 col-md-offset-1 col-lg-2 col-md-3">El vapor Anita als tallers Sales de Tortosa, a punt per a la seva avarada, l’octubre de 1915. Arxiu Borrell (gentilesa Arxiu Històric Comarcal del Baix Ebre)</p>
 </div>
