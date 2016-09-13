@@ -548,7 +548,7 @@
     background-position: center center;
 }
 #foto6-72{
-    background-image: url('../foto/Planol_05.jpg');
+    background-image: url('../foto/Planol_06.jpg');
     background-position: center center;
     left: 100%;
 }
@@ -640,9 +640,6 @@
     color: white;
     padding: 25px;
     text-transform: uppercase;
-}
-#foto7-2{
-    top: 0;
 }
 #foto7-2text{
     position: absolute;

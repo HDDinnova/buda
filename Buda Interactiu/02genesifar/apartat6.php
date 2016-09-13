@@ -14,7 +14,7 @@
     </div>
     <p id="foto6-3peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Il·lustració que representa la ciutat de Birmingham l’any 1866</p>
 </div>
-<div id="foto6-4" class="videofons">
+<div id="foto6-4" class="videofull">
     <video poster="video/LucioValle_FinalPeliBuda.jpg" preload>
         <source src="video/LucioValle_FinalPeliBuda.mp4" type="video/mp4">
         <source src="video/LucioValle_FinalPeliBuda.ogg" type="video/ogg">
