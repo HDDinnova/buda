@@ -5,10 +5,10 @@
     </div>
 </div>
 <div id="foto20-2" class="fotofons">
-    <div id="foto20-2text" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <p class="groc col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-4 col-md-4 col-sm-11 col-xs-11">L’any 2008, un pescador va localitzar les restes d’un antic vaixell, quan la càrrega d’aquest buc va quedar enganxada a les seues xarxes mentre feinejava. El vaixell estava enfonsat prop de la desembocadura de l’Ebre, davant la costa de l’illa de Buda. Després de contactar amb la Generalitat de Catalunya, el Centre d’Arqueologia Subaquàtica de Catalunya (CASC) es va desplaçar al Delta per fer-ne unes primeres prospeccions i actuacions d’urgència per protegir el jaciment i l’estiu de l’any 2009 ja hi van anar per treballar a fons en una primera campanya programada al jaciment batejat com a “Deltebre I”</p>
+    <div id="foto20-2text" class="col-lg-offset-1 col-md-offset-1 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <p class="groc">L’any 2008, un pescador va localitzar les restes d’un antic vaixell, quan la càrrega d’aquest buc va quedar enganxada a les seues xarxes mentre feinejava. El vaixell estava enfonsat prop de la desembocadura de l’Ebre, davant la costa de l’illa de Buda. Després de contactar amb la Generalitat de Catalunya, el Centre d’Arqueologia Subaquàtica de Catalunya (CASC) es va desplaçar al Delta per fer-ne unes primeres prospeccions i actuacions d’urgència per protegir el jaciment i l’estiu de l’any 2009 ja hi van anar per treballar a fons en una primera campanya programada al jaciment batejat com a “Deltebre I”</p>
         <div class="clearfix"></div>
-        <div class="col-lg-offset-5 col-md-offset-5 col-lg-1 col-md-1">
+        <div class="col-lg-offset-12 col-md-offset-12">
             <div id="foto20-2boto" class="boto">
                 <img class="groc" src="img/play.png" alt="veure video">
             </div>
