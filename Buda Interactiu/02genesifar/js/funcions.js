@@ -369,7 +369,7 @@ function controlMouse(e){
                 passar(450);
                 break;
             case 47:
-                passar(470);
+                passar(460);
                 break;
             case 48:
                 passar(470);
@@ -379,6 +379,126 @@ function controlMouse(e){
                 break;
             case 50:
                 passar(490);
+                break;
+            case 51:
+                passar(500);
+                break;
+            case 52:
+                passar(510);
+                break;
+            case 53:
+                passar(520);
+                break;
+            case 54:
+                passar(530);
+                break;
+            case 55:
+                passar(540);
+                break;
+            case 56:
+                passar(550);
+                break;
+            case 57:
+                passar(560);
+                break;
+            case 58:
+                passar(570);
+                break;
+            case 59:
+                passar(580);
+                break;
+            case 60:
+                passar(590);
+                break;
+            case 61:
+                passar(600);
+                break;
+            case 62:
+                passar(610);
+                break;
+            case 63:
+                passar(620);
+                break;
+            case 64:
+                passar(630);
+                break;
+            case 65:
+                passar(640);
+                break;
+            case 66:
+                passar(650);
+                break;
+            case 67:
+                passar(660);
+                break;
+            case 68:
+                passar(670);
+                break;
+            case 69:
+                passar(680);
+                break;
+            case 70:
+                passar(690);
+                break;
+            case 71:
+                passar(700);
+                break;
+            case 72:
+                passar(710);
+                break;
+            case 73:
+                passar(720);
+                break;
+            case 74:
+                passar(730);
+                break;
+            case 75:
+                passar(740);
+                break;
+            case 76:
+                passar(750);
+                break;
+            case 77:
+                passar(760);
+                break;
+            case 78:
+                passar(770);
+                break;
+            case 79:
+                passar(780);
+                break;
+            case 80:
+                passar(790);
+                break;
+            case 81:
+                passar(800);
+                break;
+            case 82:
+                passar(810);
+                break;
+            case 83:
+                passar(820);
+                break;
+            case 84:
+                passar(830);
+                break;
+            case 85:
+                passar(840);
+                break;
+            case 86:
+                passar(850);
+                break;
+            case 87:
+                passar(860);
+                break;
+            case 88:
+                passar(870);
+                break;
+            case 89:
+                passar(880);
+                break;
+            case 90:
+                passar(890);
                 break;
         }
     }
@@ -1020,7 +1140,427 @@ function diapositiva(id){
                 .to($('#foto7-3text'),2,{top:'30%',ease:Power3.easeInOut},'-=1.8');
             diapo50.addCallback(ratoli);
             break;
+        case 500:
+            diapo51.tweenTo(0, {onComplete:ratoli});
+            break;
         case 51:
+            diapo51 = new TimelineMax();
+            diapo51.to($('#foto7-3text'),2,{top:'130%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto7-3'),2,{top:'100%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto7-4'),2,{top:'0',ease:Power3.easeInOut},'-=2')
+                .to($('#foto7-4text'),2,{top:'20%',ease:Power3.easeInOut},'-=1.8');
+            diapo51.addCallback(ratoli);
+            break;
+        case 510:
+            diapo52.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 52:
+            diapo52 = new TimelineMax();
+            diapo52.to($('#foto7-4text'),2,{top:'120%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto7-4'),2,{top:'100%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto7-5'),2,{top:'0',ease:Power3.easeInOut},'-=2')
+                .to($('#foto7-5text'),2,{top:'20%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto7-5text p'),2,{top:'0',ease:Power3.easeInOut},'-=1.8');
+            diapo52.addCallback(ratoli);
+            slider('#foto7-5boto','#foto7-5fotos');
+            break;
+        case 520:
+            diapo53.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 53:
+            diapo53 = new TimelineMax();
+            diapo53.to($('#foto7-5boto'),2,{top:'300px',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto7-5text'),2,{top:'120%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto7-5'),2,{top:'100%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto7-6'),2,{top:'0',ease:Power3.easeInOut},'-=2')
+                .to($('#foto7-6text'),2,{top:'20%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto7-6text p'),2,{top:'0',ease:Power3.easeInOut},'-=1.8');
+            diapo53.addCallback(ratoli);
+            break;
+        case 530:
+            diapo54.tweenTo(0, {onComplete:f530});
+            function f530(){
+                $('#foto7-7').hide();
+                ratoli();
+            }
+            break;
+        case 54:
+            $('#foto7-7').show();
+            diapo54 = new TimelineMax();
+            diapo54.to($('#foto7-6text h2'),2,{top:'300px',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto7-6text'),2,{top:'120%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto7-7'),2,{autoAlpha:'1',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto7-7text'),2,{top:'10%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto7-7text p'),2,{top:'0',ease:Power3.easeInOut},'-=1.8');
+            diapo54.addCallback(ratoli);
+            break;
+        case 540:
+            diapo55.tweenTo(0, {onComplete:f540});
+            function f540(){
+                $('#foto7-8').hide();
+                ratoli();
+            }
+            break;
+        case 55:
+            $('#foto7-8').show();
+            diapo55 = new TimelineMax();
+            diapo55.to($('#foto7-7boto'),2,{top:'300px',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto7-7text'),2,{top:'110%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto7-8'),2,{autoAlpha:'1',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto7-8text'),2,{top:'30%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto7-8text p'),2,{top:'0',ease:Power3.easeInOut},'-=1.8');
+            diapo55.addCallback(ratoli);
+            video('#foto7-8boto','apartat7video1.php');
+            break;
+        case 550:
+            diapo56.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 56:
+            diapo56 = new TimelineMax();
+            diapo56.to($('#foto7-8boto'),2,{top:'300px',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto7-8text'),2,{top:'130%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto7-8'),2,{top:'100%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto7-9'),2,{top:'0',ease:Power3.easeInOut},'-=2')
+                .to($('#foto7-9text'),2,{top:'25%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto7-9boto1'),2,{top:'0',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto7-9text p:last'),2,{top:'0',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto7-9text p:first'),2,{top:'0',ease:Power3.easeInOut},'-=1.8');
+            diapo56.addCallback(ratoli);
+            video('#foto7-9boto1','apartat7video2.php');
+            $('#apartat8').load('apartat8.php');
+            break;
+        case 560:
+            diapo57.tweenTo(0, {onComplete:f560});
+            function f560(){
+                $('#apartat8').hide();
+                ratoli();
+            }
+            break;
+        case 57:
+            $('#apartat8').show();
+            diapo57 = new TimelineMax();
+            diapo57.to($('#foto7-9boto2'),2,{top:'300px',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto7-9boto1'),2,{top:'300px',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto7-9text p:last'),2,{top:'300px',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto7-9text'),2,{top:'125%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto7-9'),2,{top:'100%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto8-1'),2,{top:'0',ease:Power3.easeInOut},'-=2')
+                .to($('#foto8-1text'),2,{top:'35%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto8-1text h2'),2,{top:'0',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto8-1peu'),2,{left:'0',ease:Power3.easeInOut},'-=1.8');
+            diapo57.addCallback(ratoli);
+            video('#foto8-1boto','apartat8video1.php');
+            break;
+        case 570:
+            diapo58.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 58:
+            diapo58 = new TimelineMax();
+            diapo58.to($('#foto8-1peu'),2,{left:'-50%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto8-1boto'),2,{top:'300px',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto8-1text'),2,{top:'235%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto8-1'),2,{top:'-100%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto8-2'),2,{top:'0',ease:Power3.easeInOut},'-=2')
+                .to($('#foto8-2text'),2,{top:'20%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto8-2boto1'),2,{top:'0',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto8-2text p'),2,{top:'0',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto8-2peu'),2,{left:'0',ease:Power3.easeInOut},'-=1.8');
+            diapo58.addCallback(ratoli);
+            foto('#foto8-2boto1','#foto8-2foto1');
+            foto('#foto8-2boto2','#foto8-2foto2');
+            break;
+        case 580:
+            diapo59.tweenTo(0, {onComplete:f580});
+            function f580(){
+                $('#foto8-3').hide();
+                $('#foto8-3fotos').hide();
+                ratoli();
+            }
+            break;
+        case 59:
+            Draggable.create($('#foto8-3 .f'));
+            $('#foto8-3').show();
+            $('#foto8-3fotos').show();
+            diapo59 = new TimelineMax();
+            diapo59.to($('#foto8-2peu'),2,{left:'-50%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto8-2boto2'),2,{top:'300px',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto8-2boto1'),2,{top:'300px',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto8-2text'),2,{top:'120%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto8-3'),2,{autoAlpha:'1',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto8-3text'),2,{top:'20%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto8-3text p'),2,{top:'0',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto8-3foto1'),2,{top:'15%',left:'45%',transform:'rotate(5deg)',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto8-3foto2'),2,{top:'15%',left:'47%',transform:'rotate(2deg)',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto8-3foto3'),2,{top:'15%',left:'49%',transform:'rotate(-1deg)',ease:Power3.easeInOut},'-=1.8');
+            diapo59.addCallback(ratoli);
+            video('#foto8-3boto','apartat8video6.php');
+            break;
+        case 590:
+            diapo60.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 60:
+            diapo60 = new TimelineMax();
+            diapo60.to($('#foto8-3foto1'),2,{top:'-80%',left:'180%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto8-3foto2'),2,{top:'-80%',left:'180%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto8-3foto3'),2,{top:'-80%',left:'180%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto8-3boto'),2,{top:'300px',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto8-3text'),2,{top:'220%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto8-4'),2,{top:'0',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto8-4text'),2,{top:'20%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto8-4text p'),2,{top:'0',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto8-4peu'),2,{left:'0',ease:Power3.easeInOut},'-=1.8');
+            diapo60.addCallback(ratoli);
+            video('#foto8-4boto2','apartat8video2.php');
+            break;
+        case 600:
+            diapo61.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 61:
+            diapo61 = new TimelineMax();
+            diapo61;
+            diapo61.addCallback(ratoli);
+            break;
+        case 610:
+            diapo62.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 62:
+            diapo62 = new TimelineMax();
+            diapo62;
+            diapo62.addCallback(ratoli);
+            break;
+        case 620:
+            diapo63.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 63:
+            diapo63 = new TimelineMax();
+            diapo63;
+            diapo63.addCallback(ratoli);
+            break;
+        case 640:
+            diapo64.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 64:
+            diapo64 = new TimelineMax();
+            diapo64;
+            diapo64.addCallback(ratoli);
+            break;
+        case 650:
+            diapo65.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 65:
+            diapo65 = new TimelineMax();
+            diapo65;
+            diapo65.addCallback(ratoli);
+            break;
+        case 650:
+            diapo66.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 66:
+            diapo66 = new TimelineMax();
+            diapo66;
+            diapo66.addCallback(ratoli);
+            break;
+        case 660:
+            diapo67.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 67:
+            diapo67 = new TimelineMax();
+            diapo67;
+            diapo67.addCallback(ratoli);
+            break;
+        case 670:
+            diapo68.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 68:
+            diapo68 = new TimelineMax();
+            diapo68;
+            diapo68.addCallback(ratoli);
+            break;
+        case 690:
+            diapo69.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 69:
+            diapo69 = new TimelineMax();
+            diapo69;
+            diapo69.addCallback(ratoli);
+            break;
+        case 690:
+            diapo70.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 70:
+            diapo70 = new TimelineMax();
+            diapo70;
+            diapo70.addCallback(ratoli);
+            break;
+        case 700:
+            diapo71.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 71:
+            diapo71 = new TimelineMax();
+            diapo71;
+            diapo71.addCallback(ratoli);
+            break;
+        case 710:
+            diapo72.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 72:
+            diapo72 = new TimelineMax();
+            diapo72;
+            diapo72.addCallback(ratoli);
+            break;
+        case 720:
+            diapo73.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 73:
+            diapo73 = new TimelineMax();
+            diapo73;
+            diapo73.addCallback(ratoli);
+            break;
+        case 730:
+            diapo74.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 74:
+            diapo74 = new TimelineMax();
+            diapo74;
+            diapo74.addCallback(ratoli);
+            break;
+        case 740:
+            diapo75.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 75:
+            diapo75 = new TimelineMax();
+            diapo75;
+            diapo75.addCallback(ratoli);
+            break;
+        case 750:
+            diapo76.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 76:
+            diapo76 = new TimelineMax();
+            diapo76;
+            diapo76.addCallback(ratoli);
+            break;
+        case 760:
+            diapo77.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 77:
+            diapo77 = new TimelineMax();
+            diapo77;
+            diapo77.addCallback(ratoli);
+            break;
+        case 770:
+            diapo78.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 78:
+            diapo78 = new TimelineMax();
+            diapo78;
+            diapo78.addCallback(ratoli);
+            break;
+        case 780:
+            diapo79.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 79:
+            diapo79= new TimelineMax();
+            diapo79;
+            diapo79.addCallback(ratoli);
+            break;
+        case 790:
+            diapo80.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 80:
+            diapo80 = new TimelineMax();
+            diapo80;
+            diapo80.addCallback(ratoli);
+            break;
+        case 800:
+            diapo81.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 81:
+            diapo81 = new TimelineMax();
+            diapo81;
+            diapo81.addCallback(ratoli);
+            break;
+        case 810:
+            diapo82.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 82:
+            diapo82 = new TimelineMax();
+            diapo82;
+            diapo82.addCallback(ratoli);
+            break;
+        case 820:
+            diapo83.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 83:
+            diapo83 = new TimelineMax();
+            diapo83;
+            diapo83.addCallback(ratoli);
+            break;
+        case 830:
+            diapo84.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 84:
+            diapo84 = new TimelineMax();
+            diapo84;
+            diapo84.addCallback(ratoli);
+            break;
+        case 840:
+            diapo85.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 85:
+            diapo85 = new TimelineMax();
+            diapo85;
+            diapo85.addCallback(ratoli);
+            break;
+        case 850:
+            diapo86.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 86:
+            diapo86 = new TimelineMax();
+            diapo86;
+            diapo86.addCallback(ratoli);
+            break;
+        case 860:
+            diapo87.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 87:
+            diapo87 = new TimelineMax();
+            diapo87
+            diapo87.addCallback(ratoli);
+            break;
+        case 870:
+            diapo88.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 88:
+            diapo88 = new TimelineMax();
+            diapo88;
+            diapo88.addCallback(ratoli);
+            break;
+        case 880:
+            diapo89.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 89:
+            diapo89 = new TimelineMax();
+            diapo89;
+            diapo89.addCallback(ratoli);
+            break;
+        case 890:
+            diapo90.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 90:
+            diapo90 = new TimelineMax();
+            diapo90;
+            diapo90.addCallback(ratoli);
+            break;
+        case 900:
+            diapo91.tweenTo(0, {onComplete:ratoli});
+            break;
+        case 91:
+            diapo91 = new TimelineMax();
+            diapo91;
+            diapo91.addCallback(ratoli);
+            break;
+        case 151:
             $('.final').show();
             $('.final').animate({
                 'opacity': '1'

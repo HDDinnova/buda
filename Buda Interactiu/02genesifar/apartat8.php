@@ -45,9 +45,9 @@
         </div>
     </div>
     <div id="foto8-3fotos" class="col-md-12 col-lg-12">
-        <img id="foto8-3foto1" class="f" src="foto/Far SandKey_Web Tectonicablog.jpg" alt="Foto fars" draggable="true" ondragstart="drag_start(event)"/>
-        <img id="foto8-3foto2" class="f" src="foto/Far Sand Key_Web Tectonicablog_2.jpg" alt="Foto fars" draggable="true" ondragstart="drag_start(event)"/>
-        <img id="foto8-3foto3" class="f" src="foto/SAND_KEY.JPG" alt="Foto fars" draggable="true" ondragstart="drag_start(event)"/>
+        <img id="foto8-3foto1" class="f" src="foto/Far SandKey_Web Tectonicablog.jpg" alt="Foto fars"/>
+        <img id="foto8-3foto2" class="f" src="foto/Far Sand Key_Web Tectonicablog_2.jpg" alt="Foto fars"/>
+        <img id="foto8-3foto3" class="f" src="foto/SAND_KEY.JPG" alt="Foto fars"/>
     </div>
 </div>
 <div id="foto8-4" class="fotofons">

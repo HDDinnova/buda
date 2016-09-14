@@ -960,6 +960,13 @@
     display: none;
     z-index: -5;
 }
+#foto8-3fotos .f{
+    transform: rotate(40deg);
+    max-height: 75vh;
+    max-width: 45vw;
+    height: initial !important;
+    width: initial !important;
+}
 #foto8-4{
     top: 100%;
     background-image: url('../foto/foto_apartat_8_4.jpg');
