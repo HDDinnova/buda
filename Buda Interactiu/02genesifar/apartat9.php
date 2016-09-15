@@ -11,7 +11,7 @@
         <p class="verdfosc col-lg-12 col-md-12 col-sm-12 col-xs-12">L’Exposició Universal de París va esdevenir l’aparador dels grans avenços tècnics en obres i infraestructures dels països més avançats del món. Inaugurada l’1 d’abril de 1867, va durar set mesos, i va ser la més grandiosa exposició internacional fins llavors, tant per la seva magnitud com per la qualitat dels projectes que va acollir. Els edificis ja van ser projectats per l’equip de l’emperador Napoleó III, als Camps de Mart, el gran escenari de les desfilades militars. En canvi, el tema principal de l’Exposició va ser el progrés i la pau.<br>El gegantí edifici ovalat per acollir l’Expo estava dissenyat amb dotze galeries concèntriques que rodeixaven un gran jardí disposat al centre. A més s’hi van fer més d’un centenar d’edificis més petits a l’entorn de la seu principal.</p>
     </div>
     <div id="foto9-2fotos" class="col-md-12 col-lg-12">
-        <img id="foto9-2foto" class="f" src="foto/800px-Exposition_universelle_de_1867_vue_generale_prise_des_Hauteurs_du_Trocadero.jpg" alt="Foto fars" draggable="true" ondragstart="drag_start(event)"/>
+        <img id="foto9-2foto" src="foto/800px-Exposition_universelle_de_1867_vue_generale_prise_des_Hauteurs_du_Trocadero.jpg" alt="Foto fars" draggable="true" ondragstart="drag_start(event)"/>
     </div>
 </div>
 <div id="foto9-3" class="fotofons">

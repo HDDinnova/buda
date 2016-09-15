@@ -1203,11 +1203,18 @@
 }
 #foto9-2fotos{
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -100%;
+    left: -100%;
     width: 100vw;
     height: 100vh;
     z-index: -5;
+}
+#foto9-2fotos img{
+    position: relative;
+    top: 15%;
+    left: 5%;
+    transform: rotate(40deg);
+    width: 45vw;
 }
 #foto9-3{
     top: -100%;

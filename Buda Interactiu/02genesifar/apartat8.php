@@ -66,7 +66,7 @@
 <div id="foto8-6" class="fotofons"></div>
 <div id="foto8-7" class="fotofons"></div>
 <div id="foto8-8" class="fotofons"></div>
-<div id="foto8-9" class="videofons">
+<div id="foto8-9" class="videofull">
     <video poster="video/05_mitchell.jpg" preload>
         <source src="video/05_mitchell.mp4" type="video/mp4">
         <source src="video/05_mitchell.ogg" type="video/ogg">
@@ -94,7 +94,7 @@
         <img src="foto/apartat5_textB.jpg" alt=""/>
     </div>
 </div>
-<div id="foto8-10" class="videofons blanc">
+<div id="foto8-10" class="videofull blanc">
     <video poster="video/04_Piramide.jpg" preload>
         <source src="video/04_Piramide.mp4" type="video/mp4">
         <source src="video/04_Piramide.ogg" type="video/ogg">
@@ -128,7 +128,7 @@
         <img src="foto/borrell-21.jpg" alt=""/>
     </div>
 </div>
-<div id="foto8-11" class="videofons blanc">
+<div id="foto8-11" class="videofull blanc">
     <video poster="video/03_casa.jpg" preload>
         <source src="video/03_casa.mp4" type="video/mp4">
         <source src="video/03_casa.ogg" type="video/ogg">
@@ -186,7 +186,7 @@
     </div>
     <p id="foto8-14peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">A partir de la pàgina 5 d’aquest document, Lucio del Valle dóna les conclusions de la comparativa entre les llanternes franceses i angleses, i exposa les condicions en què s’encarregarà a Chance Brothers</p>
 </div>
-<div id="foto8-15" class="videofons">
+<div id="foto8-15" class="videofull">
     <video poster="video/01_llanterna.jpg" preload>
         <source src="video/01_llanterna.mp4" type="video/mp4">
         <source src="video/01_llanterna.ogg" type="video/ogg">
