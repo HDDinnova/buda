@@ -55,8 +55,8 @@
         <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><strong>Una de les imatges exposades a París va ser l’albúmina amb la imatge del Far de Buda, realitzada per José Martínez Sánchez.</strong></p>
     </div>
     <div id="foto9-6fotos" class="col-md-12 col-lg-12">
-        <img id="foto9-6foto1" class="f" src="foto/Albumina-J.jpg" alt="Foto fars" draggable="true" ondragstart="drag_start(event)"/>
-        <img id="foto9-6foto2" class="f" src="foto/Vista-general-i-llegenda-expo-Paris.jpg" alt="Foto fars" draggable="true" ondragstart="drag_start(event)"/>
+        <img id="foto9-6foto1" src="foto/Albumina-J.jpg" alt="Foto fars"/>
+        <img id="foto9-6foto2" src="foto/Vista-general-i-llegenda-expo-Paris.jpg" alt="Foto fars"/>
     </div>
 </div>
 <div id="foto9-7" class="fotofons">
@@ -67,8 +67,8 @@
     </div>
     <p id="foto9-7peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Maqueta del Far de Buda a l'Exposició Universal de 1867, cdv , M. Leon & J. Levy.<br>Archivo Lucio del Valle</p>
     <div id="foto9-7fotos" class="col-md-12 col-lg-12">
-        <img id="foto9-7foto1" class="f" src="foto/Faro-Buda-Expo-paris-cdv.jpg" alt="Foto fars"/>
-        <img id="foto9-7foto2" class="f" src="foto/apartat6_textA.jpg" alt="Foto fars"/>
+        <img id="foto9-7foto1" src="foto/Faro-Buda-Expo-paris-cdv.jpg" alt="Foto fars"/>
+        <img id="foto9-7foto2" src="foto/apartat6_textA.jpg" alt="Foto fars"/>
     </div>
     <div class="verdfosc tapa"></div>
     <div id="foto9-7text2" class="col-lg-offset-5 col-md-offset-5 col-sm-offset-1 col-xs-offset-1 col-lg-6 col-md-6 col-sm-11 col-xs-11">

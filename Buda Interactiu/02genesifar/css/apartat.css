@@ -1303,6 +1303,14 @@
     height: 100vh;
     z-index: -5;
 }
+#foto9-6fotos img{
+    position: absolute;
+    top: -200%;
+    left: -200%;
+    max-width: 45vw;
+    max-height: 75vh;
+    transform: rotate(90deg);
+}
 #foto9-7{
     top: -100%;
     background-image: url('../foto/foto_apartat_9_7.jpg');
@@ -1327,6 +1335,14 @@
     width: 100vw;
     height: 100vh;
     z-index: -5;
+}
+#foto9-7fotos img{
+    position: absolute;
+    top: -200%;
+    left: -200%;
+    max-width: 45vw;
+    max-height: 75vh;
+    transform: rotate(90deg);
 }
 #foto9-7text2{
     position: absolute;
