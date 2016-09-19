@@ -30,7 +30,7 @@ function ratoli(){
 
 function passar(id){
     diapositiva(id);
-    if (id < 100){
+    if (id < 120){
         pos=id;
     } else {
         pos=id/10;

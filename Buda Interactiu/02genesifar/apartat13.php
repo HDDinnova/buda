@@ -148,7 +148,7 @@
     </div>
     <p id="foto13-9videopeu" class="terra peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Seqüència de la pel·lícula “Buda, l’illa del Delta”</p>
 </div>
-<div id="foto13-10" class="fotofons terra">
+<!--<div id="foto13-10" class="fotofons terra">
     <div id="foto13-10text" class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-10 col-md-10 col-sm-11 col-xs-11">
         <div class="col-lg-7 col-md-7 pull-left">
             <iframe src="http://www.ccma.cat/video/embed/5558494" allowfullscreen scrolling="no" frameborder="0"></iframe>
@@ -167,4 +167,4 @@
             <p class="blanc col-lg-12 col-md-12 col-sm-12 col-xs-12">El novembre de 1995 es redacta un plec de característiques amb el títol “Suministro del equipamiento necesario para la instalación del sistema de supervisión remota para las Señales Marítimas dependientes de la Autoritat Portuària de Tarragona”, que s’adjudica a l'empresa Page Ibérica, S.A., i va entrar en funcionament el 4 d'abril de 1998.<br>Aquest sistema servirà des de llavors per a vigilar el funcionament, controlar i comandar tots els fars de la província des d'un centre de control que està situat a la quarta planta de l'edifici de serveis denominat Port Control, ubicat en el moll de Catalunya del port de Tarragona.</p>
         </div>
     </div>
-</div>
+</div>-->
