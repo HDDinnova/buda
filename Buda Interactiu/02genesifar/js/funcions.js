@@ -2121,24 +2121,48 @@ function diapositiva(id){
             break;
         case 103:
             diapo103 = new TimelineMax();
-            diapo103;
+            diapo103.to($('#foto13-3peu'),2,{left:'150%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto13-3text p:first'),2,{top:'-300px',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto13-3text p:last'),2,{top:'-300px',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto13-3text'),2,{top:'-220%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto13-3'),2,{top:'100%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto13-4'),2,{top:'0',ease:Power3.easeInOut},'-=2')
+                .to($('#foto13-4text'),2,{top:'20%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto13-4boto'),2,{top:'0',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto13-4peu'),2,{left:'0',ease:Power3.easeInOut},'-=1.8');
             diapo103.addCallback(ratoli);
+            foto('#foto13-4boto','#foto13-4foto');
             break;
         case 1030:
             diapo92.tweenTo(0, {onComplete:ratoli});
             break;
         case 104:
             diapo104 = new TimelineMax();
-            diapo104;
+            diapo104.to($('#foto13-4peu'),2,{left:'150%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto13-4text p'),2,{top:'-300px',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto13-4text'),2,{top:'-220%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto13-4'),2,{top:'100%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto13-5'),2,{top:'0',ease:Power3.easeInOut},'-=2')
+                .to($('#foto13-5text'),2,{top:'45%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto13-5boto'),2,{top:'0',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto13-5peu'),2,{left:'0',ease:Power3.easeInOut},'-=1.8');
             diapo104.addCallback(ratoli);
+            foto('#foto13-5boto','#foto13-5foto');
             break;
         case 1040:
             diapo105.tweenTo(0, {onComplete:ratoli});
             break;
         case 105:
             diapo105 = new TimelineMax();
-            diapo105;
+            diapo105.to($('#foto13-5peu'),2,{left:'150%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto13-5boto'),2,{top:'-300px',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto13-5text'),2,{top:'-245%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto13-5'),2,{top:'100%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto13-6'),2,{top:'0',ease:Power3.easeInOut},'-=2')
+                .to($('#foto13-6peu'),2,{left:'0',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto13-6peu p'),2,{left:'0',ease:Power3.easeInOut},'-=1.8');
             diapo105.addCallback(ratoli);
+            video('#foto13-6boto','apartat13video2.php');
             break;
         case 1050:
             diapo106.tweenTo(0, {onComplete:ratoli});

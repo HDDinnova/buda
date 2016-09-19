@@ -1,27 +1,4 @@
 
-//        case 97:
-//            $('#foto13-2video video')[0].pause();
-//            animat('#foto13-2video','0','-100%');
-//            animal('#foto13-2videopeu','200','-50%');
-//            animat('#foto13-2','400','100%');
-//            animat('#foto13-3','400','0');
-//            animat('#foto13-3text','600','20%');
-//            animat('#foto13-3text p:last','800','0');
-//            animat('#foto13-3boto','1000','0');
-//            animal('#foto13-3peu','1200','0');
-//            video('#foto13-3boto','apartat13video1.html');
-//            break;
-//        case 970:
-//            animal('#foto13-4peu','0','150%');
-//            animat('#foto13-4boto','200','300px');
-//            animat('#foto13-4text','400','220%');
-//            animat('#foto13-4','600','-100%');
-//            animat('#foto13-3','600','0');
-//            animat('#foto13-3text','800','20%');
-//            animat('#foto13-3text p:last','1000','0');
-//            animat('#foto13-3text p:first','1200','0');
-//            animal('#foto13-3peu','1400','0');
-//            break;
 //        case 98:
 //            animal('#foto13-3peu','0','150%');
 //            animat('#foto13-3text p:first','200','-300px');
