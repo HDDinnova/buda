@@ -8,7 +8,16 @@
 </div>
 <div id="foto5-2" class="fotofons">
     <div id="foto5-2text" class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <p class="verd col-lg-4 col-md-4 col-sm-8 col-xs-8">De tot aquest projecte, va extreure’n les anomalies i deficiències en l’enllumenat de les costes de l’Estat. Per documentar-se bé i millorar els seus coneixements sobre el tema, l’Estat li encomana visitar fars a d’altres països, com França i Anglaterra, per poder-ne fer així un bon anàlisi de característiques tècniques i estudiar nous projectes i millores a aplicar en els fars de les costes espanyoles. D’entre aquests, analitza la necessitat urgent de fars a la mar de l’Ebre,  del què en va sortir el projecte fet per ell mateix per a la construcció dels fars de Buda, la Banya i el Fangar, que se li encarrega l’any 1860</p>
+        <div class="col-lg-4 col-md-4 col-sm-8 col-xs-8">
+            <p class="verd">De tot aquest projecte, va extreure’n les anomalies i deficiències en l’enllumenat de les costes de l’Estat. Per documentar-se bé i millorar els seus coneixements sobre el tema, l’Estat li encomana visitar fars a d’altres països, com França i Anglaterra, per poder-ne fer així un bon anàlisi de característiques tècniques i estudiar nous projectes i millores a aplicar en els fars de les costes espanyoles. D’entre aquests, analitza la necessitat urgent de fars a la mar de l’Ebre,  del què en va sortir el projecte fet per ell mateix per a la construcció dels fars de Buda, la Banya i el Fangar, que se li encarrega l’any 1860</p>
+            <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+            <div class="guardartext">
+                <img src="../img/save.png" alt="icona guardar" data-img="02genesifar/foto/planols_fars.jpg" data-text="02genesifar/text/text13.html" onclick="guardarText(this)"/>
+            </div>
+                <?php }
+            ?>
+        </div>
         <div class="clearfix"></div>
         <div id="foto5-2boto" class="boto col-lg-offset-4 col-md-offset-4">
             <img class="verd" src="img/foto.png" alt="veure fotos">
@@ -19,36 +28,113 @@
         <div class="sliderfotos">
             <div>
                 <img src="foto/REVISTA-OBRAS-PUBLICAS_1861_tomoI_4_02-3.jpg" alt="Plànols dels projectes constructius dels tres fars dissenyats a la costa de l’Ebre"/>
+                <?php
+                    if (isset($_COOKIE['personatge'])){ ?>
+                <div class="guardar">
+                    <img src="../img/save.png" alt="icona guardar" data-foto="02genesifar/foto/REVISTA-OBRAS-PUBLICAS_1861_tomoI_4_02-3.jpg" data-descripcio="Revista de Obras Públicas - Plànols del “Proyecto de torres de hierro para los faros del Ebro” (1860)" onclick="guardarFoto(this)"/>
+                </div>
+                    <?php }
+                ?>
             </div>
             <div>
                 <img src="foto/REVISTA-OBRAS-PUBLICAS_1861_tomoI_4_02-4.jpg" alt="Plànols dels projectes constructius dels tres fars dissenyats a la costa de l’Ebre"/>
+                <?php
+                    if (isset($_COOKIE['personatge'])){ ?>
+                <div class="guardar">
+                    <img src="../img/save.png" alt="icona guardar" data-foto="02genesifar/foto/REVISTA-OBRAS-PUBLICAS_1861_tomoI_4_02-4.jpg" data-descripcio="Revista de Obras Públicas - Plànols del “Proyecto de torres de hierro para los faros del Ebro” (1860)" onclick="guardarFoto(this)"/>
+                </div>
+                    <?php }
+                ?>
             </div>
             <div>
                 <img src="foto/REVISTA-OBRAS-PUBLICAS_1861_tomoI_4_02-5.jpg" alt="Plànols dels projectes constructius dels tres fars dissenyats a la costa de l’Ebre"/>
+                <?php
+                    if (isset($_COOKIE['personatge'])){ ?>
+                <div class="guardar">
+                    <img src="../img/save.png" alt="icona guardar" data-foto="02genesifar/foto/REVISTA-OBRAS-PUBLICAS_1861_tomoI_4_02-5.jpg" data-descripcio="Revista de Obras Públicas - Plànols del “Proyecto de torres de hierro para los faros del Ebro” (1860)" onclick="guardarFoto(this)"/>
+                </div>
+                    <?php }
+                ?>
             </div>
             <div>
                 <img src="foto/REVISTA-OBRAS-PUBLICAS_1861_tomoI_4_02-6.jpg" alt="Plànols dels projectes constructius dels tres fars dissenyats a la costa de l’Ebre"/>
+                <?php
+                    if (isset($_COOKIE['personatge'])){ ?>
+                <div class="guardar">
+                    <img src="../img/save.png" alt="icona guardar" data-foto="02genesifar/foto/REVISTA-OBRAS-PUBLICAS_1861_tomoI_4_02-6.jpg" data-descripcio="Revista de Obras Públicas - Plànols del “Proyecto de torres de hierro para los faros del Ebro” (1860)" onclick="guardarFoto(this)"/>
+                </div>
+                    <?php }
+                ?>
             </div>
             <div>
                 <img src="foto/REVISTA-OBRAS-PUBLICAS_1861_tomoI_4_02-7.jpg" alt="Plànols dels projectes constructius dels tres fars dissenyats a la costa de l’Ebre"/>
+                <?php
+                    if (isset($_COOKIE['personatge'])){ ?>
+                <div class="guardar">
+                    <img src="../img/save.png" alt="icona guardar" data-foto="02genesifar/foto/REVISTA-OBRAS-PUBLICAS_1861_tomoI_4_02-7.jpg" data-descripcio="Revista de Obras Públicas - Plànols del “Proyecto de torres de hierro para los faros del Ebro” (1860)" onclick="guardarFoto(this)"/>
+                </div>
+                    <?php }
+                ?>
             </div>
             <div>
                 <img src="foto/REVISTA-OBRAS-PUBLICAS_1861_tomoI_4_02-8.jpg" alt="Plànols dels projectes constructius dels tres fars dissenyats a la costa de l’Ebre"/>
+                <?php
+                    if (isset($_COOKIE['personatge'])){ ?>
+                <div class="guardar">
+                    <img src="../img/save.png" alt="icona guardar" data-foto="02genesifar/foto/REVISTA-OBRAS-PUBLICAS_1861_tomoI_4_02-8.jpg" data-descripcio="Revista de Obras Públicas - Plànols del “Proyecto de torres de hierro para los faros del Ebro” (1860)" onclick="guardarFoto(this)"/>
+                </div>
+                    <?php }
+                ?>
             </div>
             <div>
                 <img src="foto/REVISTA-OBRAS-PUBLICAS_1861_tomoI_4_02-9.jpg" alt="Plànols dels projectes constructius dels tres fars dissenyats a la costa de l’Ebre"/>
+                <?php
+                    if (isset($_COOKIE['personatge'])){ ?>
+                <div class="guardar">
+                    <img src="../img/save.png" alt="icona guardar" data-foto="02genesifar/foto/REVISTA-OBRAS-PUBLICAS_1861_tomoI_4_02-9.jpg" data-descripcio="Revista de Obras Públicas - Plànols del “Proyecto de torres de hierro para los faros del Ebro” (1860)" onclick="guardarFoto(this)"/>
+                </div>
+                    <?php }
+                ?>
             </div>
             <div>
                 <img src="foto/REVISTA-OBRAS-PUBLICAS_1861_tomoI_4_02-10.jpg" alt="Plànols dels projectes constructius dels tres fars dissenyats a la costa de l’Ebre"/>
+                <?php
+                    if (isset($_COOKIE['personatge'])){ ?>
+                <div class="guardar">
+                    <img src="../img/save.png" alt="icona guardar" data-foto="02genesifar/foto/REVISTA-OBRAS-PUBLICAS_1861_tomoI_4_02-10.jpg" data-descripcio="Revista de Obras Públicas - Plànols del “Proyecto de torres de hierro para los faros del Ebro” (1860)" onclick="guardarFoto(this)"/>
+                </div>
+                    <?php }
+                ?>
             </div>
             <div>
                 <img src="foto/REVISTA-OBRAS-PUBLICAS_1861_tomoI_4_02-11.jpg" alt="Plànols dels projectes constructius dels tres fars dissenyats a la costa de l’Ebre"/>
+                <?php
+                    if (isset($_COOKIE['personatge'])){ ?>
+                <div class="guardar">
+                    <img src="../img/save.png" alt="icona guardar" data-foto="02genesifar/foto/REVISTA-OBRAS-PUBLICAS_1861_tomoI_4_02-11.jpg" data-descripcio="Revista de Obras Públicas - Plànols del “Proyecto de torres de hierro para los faros del Ebro” (1860)" onclick="guardarFoto(this)"/>
+                </div>
+                    <?php }
+                ?>
             </div>
             <div>
                 <img src="foto/REVISTA-OBRAS-PUBLICAS_1861_tomoI_4_02-12.jpg" alt="Plànols dels projectes constructius dels tres fars dissenyats a la costa de l’Ebre"/>
+                <?php
+                    if (isset($_COOKIE['personatge'])){ ?>
+                <div class="guardar">
+                    <img src="../img/save.png" alt="icona guardar" data-foto="02genesifar/foto/REVISTA-OBRAS-PUBLICAS_1861_tomoI_4_02-12.jpg" data-descripcio="Revista de Obras Públicas - Plànols del “Proyecto de torres de hierro para los faros del Ebro” (1860)" onclick="guardarFoto(this)"/>
+                </div>
+                    <?php }
+                ?>
             </div>
             <div>
                 <img src="foto/REVISTA-OBRAS-PUBLICAS_1861_tomoI_4_02-13.jpg" alt="Plànols dels projectes constructius dels tres fars dissenyats a la costa de l’Ebre"/>
+                <?php
+                    if (isset($_COOKIE['personatge'])){ ?>
+                <div class="guardar">
+                    <img src="../img/save.png" alt="icona guardar" data-foto="02genesifar/foto/REVISTA-OBRAS-PUBLICAS_1861_tomoI_4_02-13.jpg" data-descripcio="Revista de Obras Públicas - Plànols del “Proyecto de torres de hierro para los faros del Ebro” (1860)" onclick="guardarFoto(this)"/>
+                </div>
+                    <?php }
+                ?>
             </div>
         </div>
         <div class="blau">
@@ -81,7 +167,16 @@
 </div>
 <div id="foto5-5" class="fotofons">
     <div id="foto5-5text" class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <p class="blanc col-lg-3 col-md-3 col-sm-8 col-xs-8">Lucio del Valle va morir l’any 1874, quan encara ocupava el càrrec de Director de l’Escola d’Enginyers de Camins.<br>Pel volum i diversitat de fonts que tracten la seva figura o que són fruit directe de la seva feina (bibliogràfiques, fotogràfiques, informes i projectes, correspondència, exposicions, etc.), ell fou realment un dels artífexs de les obres públiques a Espanya al segle XIX, amb obres que encara avui són emblemàtiques a tot l’Estat</p>
+        <div class="col-lg-3 col-md-3 col-sm-8 col-xs-8">
+            <p class="blanc">Lucio del Valle va morir l’any 1874, quan encara ocupava el càrrec de Director de l’Escola d’Enginyers de Camins.<br>Pel volum i diversitat de fonts que tracten la seva figura o que són fruit directe de la seva feina (bibliogràfiques, fotogràfiques, informes i projectes, correspondència, exposicions, etc.), ell fou realment un dels artífexs de les obres públiques a Espanya al segle XIX, amb obres que encara avui són emblemàtiques a tot l’Estat</p>
+            <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+            <div class="guardartext">
+                <img src="../img/save.png" alt="icona guardar" data-img="02genesifar/foto/foto_apartat_5-5.jpg" data-text="02genesifar/text/text14.html" onclick="guardarText(this)"/>
+            </div>
+                <?php }
+            ?>
+        </div>
         <div class="clearfix"></div>
         <div id="foto5-5boto" class="boto col-lg-offset-3 col-md-offset-3">
             <img class="groc" src="img/play.png" alt="veure video">

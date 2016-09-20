@@ -9,3 +9,10 @@
 <div class="groc">
     Josep M. Espinàs exposa el tram final del seu viatge al far de Buda.
 </div>
+<?php
+    if (isset($_COOKIE['personatge'])){ ?>
+<div class="guardar">
+    <img src="../img/save.png" alt="icona guardar" data-video="02genesifar/video/JMEspinas_FinalDunCami" data-descripcio="Josep M. Espinàs - l’acostament al far de Buda" onclick="guardarVideo(this)"/>
+</div>
+    <?php }
+?>

@@ -6,7 +6,16 @@
 </div>
 <div id="foto11-2" class="fotofons">
     <div id="foto11-2text" class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-12 col-md-12 col-sm-11 col-xs-11">
-        <p class="blanc col-lg-3 col-md-3 col-sm-12 col-xs-12">Van passant els últims anys dels 50 i principis de la dècada dels 60, i és molt difícil i perillós apropar-s’hi, fins que finalment, a finals de l’any 1961, la monumental estructura de ferro es va desplomar. La font oficial, la del llibre de servei de la Jefatura de Señales Marítimas corresponent als fars del Delta, havia resseguit i informat l’estat de la situació del Far des de mitjans del mes de desembre de 1961, amb temporals de pluja i vent a la mar de l’Ebre, a través del tècnic de manteniment dels fars, i que així anotava en el llibre de servei el dia 25 de desembre de 1961: “En el día de hoy se ha desplomado el antiguo Faro de la Isla de Buda, causado por el fuerte viento. El servicio sin novedad”. Allí acabava la vida del Gegant de Ferro, una joia del patrimoni marítim i vital de la mar de l’Ebre, ja lamentablement perdut.</p>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">    
+            <p class="blanc">Van passant els últims anys dels 50 i principis de la dècada dels 60, i és molt difícil i perillós apropar-s’hi, fins que finalment, a finals de l’any 1961, la monumental estructura de ferro es va desplomar. La font oficial, la del llibre de servei de la Jefatura de Señales Marítimas corresponent als fars del Delta, havia resseguit i informat l’estat de la situació del Far des de mitjans del mes de desembre de 1961, amb temporals de pluja i vent a la mar de l’Ebre, a través del tècnic de manteniment dels fars, i que així anotava en el llibre de servei el dia 25 de desembre de 1961: “En el día de hoy se ha desplomado el antiguo Faro de la Isla de Buda, causado por el fuerte viento. El servicio sin novedad”. Allí acabava la vida del Gegant de Ferro, una joia del patrimoni marítim i vital de la mar de l’Ebre, ja lamentablement perdut.</p>
+            <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+            <div class="guardartext">
+                <img src="../img/save.png" alt="icona guardar" data-img="02genesifar/foto/IMG_4147.jpg" data-text="02genesifar/text/text40.html" onclick="guardarText(this)"/>
+            </div>
+                <?php }
+            ?>
+        </div>
         <div class="clearfix"></div>
         <div id="foto11-2boto1" class="boto col-lg-offset-3 col-md-offset-3">
             <img class="marro" src="img/text.png" alt="mostrar notícia">

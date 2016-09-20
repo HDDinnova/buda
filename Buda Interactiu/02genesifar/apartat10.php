@@ -15,7 +15,16 @@
 </div>
 <div id="foto10-2" class="fotofons">
     <div id="foto10-2text" class="col-lg-offset-8 col-md-offset-8 col-sm-offset-8 col-xs-offset-8 col-lg-3 col-md-3 col-sm-11 col-xs-11">
-        <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><strong>Els últims anys del Far de Buda van estar embolcallats d’agonia. La Mediterrània anava menjant-se, any rere any, la franja costanera de l’Illa i del Delta, una guerra que s’acostava a un final trist, en el què les diferents batalles entre terra i mar acabarien amb el Far tombat i submergit sota les aigües.</strong></p>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <p><strong>Els últims anys del Far de Buda van estar embolcallats d’agonia. La Mediterrània anava menjant-se, any rere any, la franja costanera de l’Illa i del Delta, una guerra que s’acostava a un final trist, en el què les diferents batalles entre terra i mar acabarien amb el Far tombat i submergit sota les aigües.</strong></p>
+            <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+            <div class="guardartext">
+                <img src="../img/save.png" alt="icona guardar" data-img="02genesifar/foto/far_ferro_enfonsat_Parra.jpg" data-text="02genesifar/text/text39.html" onclick="guardarText(this)"/>
+            </div>
+                <?php }
+            ?>
+        </div>
     </div>
     <p id="foto10-2peu" class="peu col-lg-offset-9 col-md-offset-9 col-sm-offset-9 col-xs-offset-9 col-lg-2 col-md-3 col-sm-4 col-xs-4">Arxiu Pedro Parra.</p>
 </div>
@@ -43,6 +52,13 @@
     </div>
     <div id="foto10-4foto" class="foto">
         <img src="foto/_MG_9257.jpg" alt="Arxiu família Cabezas"/>
+        <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardar">
+            <img src="../img/save.png" alt="icona guardar" data-foto="02genesifar/foto/_MG_9257.jpg" data-descripcio="Arxiu família Cabezas - excursió al far de Buda (dècada de 1950)" onclick="guardarFoto(this)"/>
+        </div>
+            <?php }
+        ?>
     </div>
     <p id="foto10-4peu" class="peu col-lg-offset-9 col-md-offset-9 col-sm-offset-9 col-xs-offset-9 col-lg-2 col-md-3 col-sm-4 col-xs-4">Foto: Arxiu família Cabezas</p>
 </div>

@@ -9,3 +9,10 @@
 <div class="groc">
     Antonio Sánchez, fill de farer, va néixer al far de Buda
 </div>
+<?php
+    if (isset($_COOKIE['personatge'])){ ?>
+<div class="guardar">
+    <img src="../img/save.png" alt="icona guardar" data-video="02genesifar/video/AntonioSánchez_LaVidaAlFar" data-descripcio="Antonio Sánchez - els records d’un fill de faroner nascut al far de Buda" onclick="guardarVideo(this)"/>
+</div>
+    <?php }
+?>

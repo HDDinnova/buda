@@ -9,3 +9,10 @@
 <div class="groc">
     Antonio Cabezas explica l’episodi del sabotatge del far durant la Guerra Civil.
 </div>
+<?php
+    if (isset($_COOKIE['personatge'])){ ?>
+<div class="guardar">
+    <img src="../img/save.png" alt="icona guardar" data-video="02genesifar/video/AntonioCabezas_elFarEnFlames" data-descripcio="Antonio Cabezas - el sabotatge del far de Buda durant la Guerra Civil II" onclick="guardarVideo(this)"/>
+</div>
+    <?php }
+?>

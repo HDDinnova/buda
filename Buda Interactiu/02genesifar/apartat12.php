@@ -12,12 +12,33 @@
         <div class="sliderfotos vertical">
             <div>
                 <img src="foto/RestesferroFaralfonsdelmar1.jpg" alt="Fotos cedides per J.J Bertomeu"/>
+                <?php
+                    if (isset($_COOKIE['personatge'])){ ?>
+                <div class="guardar">
+                    <img src="../img/save.png" alt="icona guardar" data-foto="02genesifar/foto/RestesferroFaralfonsdelmar1.jpg" data-descripcio="Arxiu J.J. Bertomeu - restes del far de Buda sota el mar" onclick="guardarFoto(this)"/>
+                </div>
+                    <?php }
+                ?>
             </div>
             <div>
                 <img src="foto/RestesferroFaralfonsdelmar2.jpg" alt="Fotos cedides per J.J Bertomeu"/>
+                <?php
+                    if (isset($_COOKIE['personatge'])){ ?>
+                <div class="guardar">
+                    <img src="../img/save.png" alt="icona guardar" data-foto="02genesifar/foto/RestesferroFaralfonsdelmar2.jpg" data-descripcio="Arxiu J.J. Bertomeu - restes del far de Buda sota el mar" onclick="guardarFoto(this)"/>
+                </div>
+                    <?php }
+                ?>
             </div>
             <div>
                 <img src="foto/RestesferroFaralfonsdelmar3.jpg" alt="Fotos cedides per J.J Bertomeu"/>
+                <?php
+                    if (isset($_COOKIE['personatge'])){ ?>
+                <div class="guardar">
+                    <img src="../img/save.png" alt="icona guardar" data-foto="02genesifar/foto/RestesferroFaralfonsdelmar3.jpg" data-descripcio="Arxiu J.J. Bertomeu - restes del far de Buda sota el mar" onclick="guardarFoto(this)"/>
+                </div>
+                    <?php }
+                ?>
             </div>
         </div>
         <div class="blau">

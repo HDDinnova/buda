@@ -9,3 +9,10 @@
 <div class="groc">
     Salvador Maluquer explica les seves sensacions després de la construcció del far de pedra
 </div>
+<?php
+    if (isset($_COOKIE['personatge'])){ ?>
+<div class="guardar">
+    <img src="../img/save.png" alt="icona guardar" data-video="02genesifar/video/SalvadoMaluquer_FarPedraCaiguda" data-descripcio="Salvador Maluquer - el far de pedra" onclick="guardarVideo(this)"/>
+</div>
+    <?php }
+?>

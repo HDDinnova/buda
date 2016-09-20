@@ -9,3 +9,10 @@
 <div class="groc">
     Vicenta Cardona explica el seu record de la caiguda del far.
 </div>
+<?php
+    if (isset($_COOKIE['personatge'])){ ?>
+<div class="guardar">
+    <img src="../img/save.png" alt="icona guardar" data-video="02genesifar/video/Vicentica_CaigudaDelsDosFars" data-descripcio="Vicenta Cardona - el record de la caiguda del far de Buda" onclick="guardarVideo(this)"/>
+</div>
+    <?php }
+?>

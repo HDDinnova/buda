@@ -20,7 +20,7 @@ function ratoli(){
     $(window).bind('wheel',function(e){
         controlMouse(e.originalEvent);
     });
-    $(document).keydown(function(e){
+    $(document).on("keydown",function(e){
         tecla = e.which;
         if (tecla == 38 || tecla == 40){
             controlMouse(tecla);
@@ -40,7 +40,7 @@ function passar(id){
 function tancarvideo(){
     $('.videopopup').hide();
     $('#videos').html('');
-    ratoli();
+    setTimeout(function(){ ratoli(); }, 1000);
 }
 
 function video(boto,video){
@@ -63,7 +63,7 @@ function slider(boto,div){
         $(div+' .blau').click(function(){
             $(div).hide();
             $(div+' .sliderfotos').slick('unslick');
-            ratoli();
+            setTimeout(function(){ ratoli(); }, 1000);
         });
     });
 }
@@ -74,7 +74,7 @@ function foto(boto,div){
         $(div).show();
         $(div).click(function(){
             $(div).hide();
-            ratoli();
+            setTimeout(function(){ ratoli(); }, 1000);
         });
     });
 }

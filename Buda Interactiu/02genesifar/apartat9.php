@@ -8,7 +8,16 @@
     <div id="foto9-2text" class="col-lg-offset-7 col-md-offset-7 col-sm-offset-1 col-xs-offset-1 col-lg-4 col-md-4 col-sm-11 col-xs-11">
         <p class="verdfosc col-lg-12 col-md-12 col-sm-12 col-xs-12"><strong>L’Exposició Universal<br>de París de 1867</strong></p>
         <div class="clearfix"></div>
-        <p class="verdfosc col-lg-12 col-md-12 col-sm-12 col-xs-12">L’Exposició Universal de París va esdevenir l’aparador dels grans avenços tècnics en obres i infraestructures dels països més avançats del món. Inaugurada l’1 d’abril de 1867, va durar set mesos, i va ser la més grandiosa exposició internacional fins llavors, tant per la seva magnitud com per la qualitat dels projectes que va acollir. Els edificis ja van ser projectats per l’equip de l’emperador Napoleó III, als Camps de Mart, el gran escenari de les desfilades militars. En canvi, el tema principal de l’Exposició va ser el progrés i la pau.<br>El gegantí edifici ovalat per acollir l’Expo estava dissenyat amb dotze galeries concèntriques que rodeixaven un gran jardí disposat al centre. A més s’hi van fer més d’un centenar d’edificis més petits a l’entorn de la seu principal.</p>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <p class="verdfosc">L’Exposició Universal de París va esdevenir l’aparador dels grans avenços tècnics en obres i infraestructures dels països més avançats del món. Inaugurada l’1 d’abril de 1867, va durar set mesos, i va ser la més grandiosa exposició internacional fins llavors, tant per la seva magnitud com per la qualitat dels projectes que va acollir. Els edificis ja van ser projectats per l’equip de l’emperador Napoleó III, als Camps de Mart, el gran escenari de les desfilades militars. En canvi, el tema principal de l’Exposició va ser el progrés i la pau.<br>El gegantí edifici ovalat per acollir l’Expo estava dissenyat amb dotze galeries concèntriques que rodeixaven un gran jardí disposat al centre. A més s’hi van fer més d’un centenar d’edificis més petits a l’entorn de la seu principal.</p>
+            <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+            <div class="guardartext">
+                <img src="../img/save.png" alt="icona guardar" data-img="02genesifar/foto/foto_apartat_9_2.jpg" data-text="02genesifar/text/text37.html" onclick="guardarText(this)"/>
+            </div>
+                <?php }
+            ?>
+        </div>
     </div>
     <div id="foto9-2fotos" class="col-md-12 col-lg-12">
         <img id="foto9-2foto" src="foto/800px-Exposition_universelle_de_1867_vue_generale_prise_des_Hauteurs_du_Trocadero.jpg" alt="Foto fars" draggable="true" ondragstart="drag_start(event)"/>
@@ -18,7 +27,16 @@
     <div id="foto9-3text1" class="col-lg-offset-7 col-md-offset-7 col-sm-offset-1 col-xs-offset-1 col-lg-4 col-md-4 col-sm-11 col-xs-11">
         <p class="blanc col-lg-12 col-md-12 col-sm-12 col-xs-12"><strong>La mostra de les obres més<br>emblemàtiques de la enginyeria<br>pública del segle XIX</strong></p>
         <div class="clearfix"></div>
-        <p class="blanc col-lg-12 col-md-12 col-sm-12 col-xs-12">Concretament a la galeria IV s’hi exposà una mostra de les més destacades obres públiques de l’Estat Espanyol, en la que el Cos Nacional d’Enginyers va preparar una selecció d’imatges, maquetes i plànols més important feta mai: ports, carreteres, ponts, fars, màquines, rescloses i obres de canalització, etc., i que la premsa nacional i internacional així ho remarcava, des dels catàlegs oficials de l’Exposició fins a articles publicats per enginyers i periodistes de l’època.<br>Aquest període històric, el de mitjans del segle XIX, és exponent de nous avenços en les comunicacions a Europa: l’arribada del ferrocarril, la construcció de fars i la il·luminació de les costes, la construcció de ports i noves vies de comunicació… són exponents del nou ordre industrial també a l’Estat Espanyol, malgrat el llarg camí que encara havia de fer per estar a l’alçada dels països més avançats d’Europa.</p>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <p class="blanc">Concretament a la galeria IV s’hi exposà una mostra de les més destacades obres públiques de l’Estat Espanyol, en la que el Cos Nacional d’Enginyers va preparar una selecció d’imatges, maquetes i plànols més important feta mai: ports, carreteres, ponts, fars, màquines, rescloses i obres de canalització, etc., i que la premsa nacional i internacional així ho remarcava, des dels catàlegs oficials de l’Exposició fins a articles publicats per enginyers i periodistes de l’època.<br>Aquest període històric, el de mitjans del segle XIX, és exponent de nous avenços en les comunicacions a Europa: l’arribada del ferrocarril, la construcció de fars i la il·luminació de les costes, la construcció de ports i noves vies de comunicació… són exponents del nou ordre industrial també a l’Estat Espanyol, malgrat el llarg camí que encara havia de fer per estar a l’alçada dels països més avançats d’Europa.</p>
+            <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+            <div class="guardartext">
+                <img src="../img/save.png" alt="icona guardar" data-img="02genesifar/foto/foto_apartat_9_3.jpg" data-text="02genesifar/text/text38.html" onclick="guardarText(this)"/>
+            </div>
+                <?php }
+            ?>
+        </div>
     </div>
     <div id="foto9-3text2" class="col-lg-offset-7 col-md-offset-7 col-sm-offset-1 col-xs-offset-1 col-lg-4 col-md-4 col-sm-11 col-xs-11">
         <p class="blanc col-lg-12 col-md-12 col-sm-12 col-xs-12">Els testimonis visuals sobre el projecte, construcció i els primers anys de vida del Far de Buda, a la dècada dels 60 del segle XIX, són dels millors exemples de la mirada fotogràfica de l’enginyeria civil d’aquella època a l’Espanya isabelina. L’any 1839 naixia el daguerrotip, a partir del qual la fotografia com a nou suport gràfic va suposar una autèntica i gran revolució en els diferents mitjans de reproducció d’imatges que anirien sorgint en les següents dècades. La fotografia congelava instants de la realitat, i alhora esdevenia un testimoni històric de primer ordre d’allò que captava la càmera.</p>

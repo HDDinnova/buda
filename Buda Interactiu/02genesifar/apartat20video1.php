@@ -9,3 +9,10 @@
 <div class="groc">
     Gustau Vivar, director del CASC, explica la troballa del vaixell Deltebre I.
 </div>
+<?php
+    if (isset($_COOKIE['personatge'])){ ?>
+<div class="guardar">
+    <img src="../img/save.png" alt="icona guardar" data-video="02genesifar/video/Gustau_Vivar" data-descripcio="Gustau Vivar - la troballa del Deltebre I" onclick="guardarVideo(this)"/>
+</div>
+    <?php }
+?>

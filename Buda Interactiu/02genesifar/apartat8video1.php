@@ -6,3 +6,10 @@
 <div class="blau">
     <img src="img/tancar.png" alt="icona tancar" onclick="tancarvideo()"/>
 </div>
+<?php
+    if (isset($_COOKIE['personatge'])){ ?>
+<div class="guardar">
+    <img src="../img/save.png" alt="icona guardar" data-video="02genesifar/video/GuillermoBorés_excursióPerArribarAlFar" data-descripcio="Guillermo Borés - la significació del far per a l’illa de Buda" onclick="guardarVideo(this)"/>
+</div>
+    <?php }
+?>

@@ -9,3 +9,10 @@
 <div class="groc">
     César Díaz-Aguado comenta la repercussió de la figura del seu avantpassat
 </div>
+<?php
+    if (isset($_COOKIE['personatge'])){ ?>
+<div class="guardar">
+    <img src="../img/save.png" alt="icona guardar" data-video="02genesifar/video/CésarDíaz_importanciaLuciodelValle" data-descripcio="César Díaz-Aguado - la dimensió de Lucio del Valle, enginyer del far de Buda" onclick="guardarVideo(this)"/>
+</div>
+    <?php }
+?>

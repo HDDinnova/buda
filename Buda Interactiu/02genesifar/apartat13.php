@@ -6,7 +6,16 @@
 </div>
 <div id="foto13-2" class="fotofons">
     <div id="foto13-2text" class="col-lg-offset-7 col-md-offset-7 col-sm-offset-1 col-xs-offset-1 col-lg-4 col-md-4 col-sm-11 col-xs-11">
-        <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><i>A finals de la dècada de 1950, després de diversos episodis soferts que van agreujar el greu estat en què es trobava l’estructura del gran Far, l’any 1959 es va instal·lar un aparell provisional sobre una torreta metàl·lica desmuntable, que va funcionar fins a mitjans de 1963, quan estaria acabat un nou far de formigó.</i></p>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <p><i>A finals de la dècada de 1950, després de diversos episodis soferts que van agreujar el greu estat en què es trobava l’estructura del gran Far, l’any 1959 es va instal·lar un aparell provisional sobre una torreta metàl·lica desmuntable, que va funcionar fins a mitjans de 1963, quan estaria acabat un nou far de formigó.</i></p>
+            <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+            <div class="guardartext">
+                <img src="../img/save.png" alt="icona guardar" data-img="02genesifar/foto/muntatge_far_obra_Parra_02-copia.jpg" data-text="02genesifar/text/text41.html" onclick="guardarText(this)"/>
+            </div>
+                <?php }
+            ?>
+        </div>
     </div>
     <p id="foto13-2peu" class="peu col-lg-offset-9 col-md-offset-8 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Arxiu Pedro Parra</p>
     <div class="tapa negre"></div>
@@ -40,6 +49,13 @@
     </div>
     <div id="foto13-4foto" class="foto">
         <img src="foto/_MG_8118.jpg" alt="Salvador Maluquer (dècada 1960)"/>
+        <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardar">
+            <img src="../img/save.png" alt="icona guardar" data-foto="02genesifar/foto/_MG_8118.jpg" data-descripcio="Arxiu Pedro Parra - el far de pedra" onclick="guardarFoto(this)"/>
+        </div>
+            <?php }
+        ?>
     </div>
     <p id="foto13-4peu" class="peu col-lg-offset-9 col-md-offset-8 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Foto: Salvador Maluquer<br>(dècada 1960).</p>
 </div>
@@ -129,7 +145,7 @@
     </div>
     <p id="foto13-8videopeu" class="terra peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Filmació: Artur Sarró<br>(dècada de 1960)</p>
 </div>
-<div id="foto13-9" class="videofons">
+<div id="foto13-9" class="videofull">
     <div id="foto13-9video">
         <video poster="foto/Abalisa.jpg" preload>
             <source src="video/Abalisa.mp4" type="video/mp4">
@@ -148,7 +164,7 @@
     </div>
     <p id="foto13-9videopeu" class="terra peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Seqüència de la pel·lícula “Buda, l’illa del Delta”</p>
 </div>
-<!--<div id="foto13-10" class="fotofons terra">
+<div id="foto13-10" class="fotofons terra">
     <div id="foto13-10text" class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-10 col-md-10 col-sm-11 col-xs-11">
         <div class="col-lg-7 col-md-7 pull-left">
             <iframe src="http://www.ccma.cat/video/embed/5558494" allowfullscreen scrolling="no" frameborder="0"></iframe>
@@ -167,4 +183,10 @@
             <p class="blanc col-lg-12 col-md-12 col-sm-12 col-xs-12">El novembre de 1995 es redacta un plec de característiques amb el títol “Suministro del equipamiento necesario para la instalación del sistema de supervisión remota para las Señales Marítimas dependientes de la Autoritat Portuària de Tarragona”, que s’adjudica a l'empresa Page Ibérica, S.A., i va entrar en funcionament el 4 d'abril de 1998.<br>Aquest sistema servirà des de llavors per a vigilar el funcionament, controlar i comandar tots els fars de la província des d'un centre de control que està situat a la quarta planta de l'edifici de serveis denominat Port Control, ubicat en el moll de Catalunya del port de Tarragona.</p>
         </div>
     </div>
-</div>-->
+</div>
+
+<div class="final text-center">
+    <h2>Moltes felicitats!, has acabat aquesta investigació.</h2>
+    <h3>Vols continuar explorant l’illa de Buda?</h3>
+    <a href="../03llacunes/"><img src="../menu/03llacunes.jpg" alt=""/><br><br>ELS CALAIXOS</a>
+</div>

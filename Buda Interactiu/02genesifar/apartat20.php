@@ -6,7 +6,16 @@
 </div>
 <div id="foto20-2" class="fotofons">
     <div id="foto20-2text" class="col-lg-offset-1 col-md-offset-1 col-lg-4 col-md-4 col-sm-12 col-xs-12">
-        <p class="groc">L’any 2008, un pescador va localitzar les restes d’un antic vaixell, quan la càrrega d’aquest buc va quedar enganxada a les seues xarxes mentre feinejava. El vaixell estava enfonsat prop de la desembocadura de l’Ebre, davant la costa de l’illa de Buda. Després de contactar amb la Generalitat de Catalunya, el Centre d’Arqueologia Subaquàtica de Catalunya (CASC) es va desplaçar al Delta per fer-ne unes primeres prospeccions i actuacions d’urgència per protegir el jaciment i l’estiu de l’any 2009 ja hi van anar per treballar a fons en una primera campanya programada al jaciment batejat com a “Deltebre I”</p>
+        <div>
+            <p class="groc">L’any 2008, un pescador va localitzar les restes d’un antic vaixell, quan la càrrega d’aquest buc va quedar enganxada a les seues xarxes mentre feinejava. El vaixell estava enfonsat prop de la desembocadura de l’Ebre, davant la costa de l’illa de Buda. Després de contactar amb la Generalitat de Catalunya, el Centre d’Arqueologia Subaquàtica de Catalunya (CASC) es va desplaçar al Delta per fer-ne unes primeres prospeccions i actuacions d’urgència per protegir el jaciment i l’estiu de l’any 2009 ja hi van anar per treballar a fons en una primera campanya programada al jaciment batejat com a “Deltebre I”</p>
+            <?php
+                if (isset($_COOKIE['personatge'])){ ?>
+            <div class="guardartext">
+                <img src="../img/save.png" alt="icona guardar" data-img="02genesifar/foto/PLANOL-PROV-TARRAGONA_1853_BNE_verd2.jpg" data-text="02genesifar/text/text03.html" onclick="guardarText(this)"/>
+            </div>
+                <?php }
+            ?>
+        </div>
         <div class="clearfix"></div>
         <div class="col-lg-offset-12 col-md-offset-12">
             <div id="foto20-2boto" class="boto">
@@ -20,14 +29,30 @@
 </div>
 <div id="foto20-3" class="fotofons">
     <div id="foto20-3text" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <p class="roig col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-4 col-md-4 col-sm-9 col-xs-9">El Deltebre I va ser un vaixell de transport militar de l’armada anglesa, enfonsat a la desembocadura de l’Ebre l'estiu de 1813, durant el conflicte bèl·lic de la Guerra del Francès.</p>
+        <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-4 col-md-4 col-sm-9 col-xs-9">
+            <p class="roig">El Deltebre I va ser un vaixell de transport militar de l’armada anglesa, enfonsat a la desembocadura de l’Ebre l'estiu de 1813, durant el conflicte bèl·lic de la Guerra del Francès.</p>
+            <?php
+                if (isset($_COOKIE['personatge'])){ ?>
+            <div class="guardartext">
+                <img src="../img/save.png" alt="icona guardar" data-img="02genesifar/foto/tarragona.jpg" data-text="02genesifar/text/text04.html" onclick="guardarText(this)"/>
+            </div>
+                <?php }
+            ?>
+        </div>
         <div class="clearfix"></div>
         <h2 class="roig col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-6 col-md-7 col-sm-11 col-xs-11">QUI ERA EL “DELTEBRE I”</h2>
     </div>
     <p id="foto20-3peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Font: Biblioteca Nacional de España (BNE)</p>
 </div>
 <div id="foto20-4" class="fotofons">
-    <div id="foto20-4text" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <p class="roig col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-4 col-md-4 col-sm-9 col-xs-9">Formava part del comboi militar que actuà en el setge a la plaça de Tarragona. La presa i la defensa de la ciutat de Tarragona eren l’objectiu de la expedició marítima procedent d’Alacant, organitzada pel lloctinent general John Murray i dirigida pel contraalmirall Hallowell. Es pretenia dividir la península en dues parts i aturar el subministrament francès, per tal de trencar les línies de defensa franceses i obligar el mariscal Suchet a retirar-se de la línia del Xúquer i València</p>
+    <div id="foto20-4text" class="col-lg-offset-1 col-md-offset-1 col-lg-4 col-md-4">
+        <p class="roig">Formava part del comboi militar que actuà en el setge a la plaça de Tarragona. La presa i la defensa de la ciutat de Tarragona eren l’objectiu de la expedició marítima procedent d’Alacant, organitzada pel lloctinent general John Murray i dirigida pel contraalmirall Hallowell. Es pretenia dividir la península en dues parts i aturar el subministrament francès, per tal de trencar les línies de defensa franceses i obligar el mariscal Suchet a retirar-se de la línia del Xúquer i València</p>
+        <?php
+            if (isset($_COOKIE['personatge'])){ ?>
+        <div class="guardartext">
+            <img src="../img/save.png" alt="icona guardar" data-img="02genesifar/foto/tarragona2.jpg" data-text="02genesifar/text/text05.html" onclick="guardarText(this)"/>
+        </div>
+            <?php }
+        ?>
     </div>
 </div>

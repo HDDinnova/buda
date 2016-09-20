@@ -641,6 +641,10 @@
     padding: 25px;
     text-transform: uppercase;
 }
+#foto7-1 video{
+    position: absolute;
+    z-index: -10;
+}
 #foto7-2text{
     position: absolute;
     top: -80%;

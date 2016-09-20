@@ -103,6 +103,13 @@
                 <div class="tapa marro"></div>
                 <div id="foto1-2text2" class="col-md-offset-1 col-lg-4 col-md-6 col-sm-8 col-xs-10">
                     <h3>La costa de l’Ebre esdevingué durant segles el litoral de la mort, un veritable cementiri de vaixells i homes, que durant segles la sorra i el fang van absorbir i fer desaparéixer</h3>
+                    <?php
+                        if (isset($_COOKIE['personatge'])){ ?>
+                    <div class="guardartext">
+                        <img src="../img/save.png" alt="icona guardar" data-img="02genesifar/foto/PLANOL_GOLAS_DEL_EBRO_1883_BNE.jpg" data-text="02genesifar/text/text01.html" onclick="guardarText(this)"/>
+                    </div>
+                        <?php }
+                    ?>
                 </div>
                 <p id="foto1-2peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Carta Nàutica de 1883 de les Goles de l’Ebre. Plànol ordenat per la Comissió Hidrogràfica al capità de fragata D. Rafael Pardo de Figueroa.<br>Font: Biblioteca Nacional de España</p>
                 <div id="foto1-2text3" class="col-md-offset-1 col-lg-4 col-md-6 col-sm-8 col-xs-10">
@@ -111,11 +118,19 @@
             </div>
             <div id="foto1-3" class="fotofons">
                 <div id="foto1-3text" class="col-md-offset-1 col-lg-offset-1 col-lg-4 col-md-6 col-sm-8 col-xs-12">
-                    <p class="marro col-md-11">
-                        José Huertas Morión, Los últimos veleros del Mediterráneo: “...En los barcos de cabotaje…se decía que cuando quedaban atras las luces de Vinaroz a media tripulación comenzaban a temblarle las rodillas y el temblor no se les quitaba hasta tener las luces de Tarragona y el Cabo de Salou por la popa...”.<br>
-                        “…Y era verdad que a muchos marineros y a muchos patrones, al navegar por este pedazo de costa, se les iba el sueño y no lo recuperaban hasta haberlo pasado (…) era un verdadero cementerio de barcos y de hombres que yacían tragados por sus absorbentes arenas”.
-
-                    </p>
+                    <div class="col-md-11">
+                        <p class="marro">
+                            José Huertas Morión, Los últimos veleros del Mediterráneo: “...En los barcos de cabotaje…se decía que cuando quedaban atras las luces de Vinaroz a media tripulación comenzaban a temblarle las rodillas y el temblor no se les quitaba hasta tener las luces de Tarragona y el Cabo de Salou por la popa...”.<br>
+                            “…Y era verdad que a muchos marineros y a muchos patrones, al navegar por este pedazo de costa, se les iba el sueño y no lo recuperaban hasta haberlo pasado (…) era un verdadero cementerio de barcos y de hombres que yacían tragados por sus absorbentes arenas”.
+                        </p>
+                        <?php
+                            if (isset($_COOKIE['personatge'])){ ?>
+                        <div class="guardartext">
+                            <img src="../img/save.png" alt="icona guardar" data-img="02genesifar/foto/PLANOL-PROV-TARRAGONA_1853_BNE.jpg" data-text="02genesifar/text/text02.html" onclick="guardarText(this)"/>
+                        </div>
+                            <?php }
+                        ?>
+                    </div>
                     <div class="clearfix"></div>
                     <div id="play1-3" class="col-md-offset-11 boto">
                         <img id="foto1-3play" class="marro" src="img/play.png" alt="reproduir video">
