@@ -16,37 +16,67 @@ toastr.options = {
   "hideMethod": "fadeOut"
 };
 
-function ratoli(){
-    $(window).bind('wheel',function(e){
-        controlMouse(e.originalEvent);
-    });
-    $(document).on("keydown",function(e){
-        tecla = e.which;
-        if (tecla == 38 || tecla == 40){
-            controlMouse(tecla);
+function controlMouse(e){
+    $(window).unbind('wheel');
+    $(document).off( "keydown" );
+    if(e.deltaY>0 || e==40){
+        pos++;
+        passar(pos);
+    } else if(e.deltaY<0 || e==38) {
+        if (pos === 10) {
+            ratoli();
+        } else {
+            pos--;
+            if (pos === 10) {
+                passar(pos);
+            } else {
+                passar(pos*10);
+            }
         }
-    });
+    }
+}
+
+var ultima = '';
+
+function ratoli(e){
+    if (ultima !== 'ratoli'){
+        $(window).bind('wheel',function(e){
+            controlMouse(e.originalEvent);
+        });
+        $(document).on("keydown",function(e){
+            tecla = e.which;
+            if (tecla == 38 || tecla == 40){
+                controlMouse(tecla);
+            }
+        });
+    }
+    ultima = 'ratoli';
 }
 
 function passar(id){
     diapositiva(id);
-    if (id < 120){
-        pos=id;
-    } else {
-        pos=id/10;
-    }
+    ultima = 'passar';
+//    if (id < 120){
+//        pos=id;
+//    } else {
+//        pos=id/10;
+//    }
 }
 
 function tancarvideo(){
-    $('.videopopup').hide();
-    $('#videos').html('');
-    setTimeout(function(){ ratoli(); }, 1000);
+    $('.videopopup').hide(0,function(){
+        $('#videos').html('');
+        $(window).unbind('wheel');
+        $(document).off( "keydown");
+        ultima = 'tancarvideo';
+        ratoli('videopopup');
+    });
 }
 
 function video(boto,video){
     $(boto).click(function(){
-        $(window).unbind('wheel');
         $(document).off( "keydown" );
+        $(window).unbind('wheel');
         $('#videos').load(video,function(){
             $('.videopopup').show();
         });
@@ -57,14 +87,27 @@ function slider(boto,div){
         $(window).unbind('wheel');
         $(document).off( "keydown" );
         $(div).show();
-        $(div+' .sliderfotos').slick({
-            infinite: false
-        });
-        $(div+' .blau').click(function(){
-            $(div).hide();
-            $(div+' .sliderfotos').slick('unslick');
-            setTimeout(function(){ ratoli(); }, 1000);
-        });
+        try {
+            $(div+' .sliderfotos').slick({
+                infinite: false
+            });
+            $(div+' .blau').on('click',function(){
+                $(div).hide(0,function(){
+                    $(div+' .sliderfotos').slick('unslick');
+                    $(window).unbind('wheel');
+                    $(document).off( "keydown");
+                    ultima = 'slider';
+                    ratoli('slider');
+                    $(div+' .blau').off('click');
+                });
+                
+            });
+        }
+        catch(err) {
+            console.log(err);
+            $(window).unbind('wheel');
+            $(document).off( "keydown" );
+        }
     });
 }
 function foto(boto,div){
@@ -72,9 +115,14 @@ function foto(boto,div){
         $(window).unbind('wheel');
         $(document).off( "keydown" );
         $(div).show();
-        $(div).click(function(){
-            $(div).hide();
-            setTimeout(function(){ ratoli(); }, 1000);
+        $(div).on('click',function(){
+            $(div).hide(0,function(){
+                $(window).unbind('wheel');
+                $(document).off( "keydown" );
+                ultima = 'foto';
+                ratoli('foto');
+                $(div).off('click');
+            });            
         });
     });
 }
@@ -91,9 +139,13 @@ function fotozoom(boto,div,imatge){
             lensSize: 400
         });
         $(div).click(function(){
-            $(this).hide();
-            $('.zoomContainer').remove();
-            ratoli();
+            $(this).hide(0,function(){
+                $('.zoomContainer').remove();
+                $(window).unbind('wheel');
+                $(document).off( "keydown");
+                ultima = 'fotozoom';
+                ratoli('fotozoom');
+            });
         });
     });
 }

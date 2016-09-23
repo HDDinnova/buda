@@ -2,6 +2,17 @@
     <div id="foto9-1text" class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-6 col-md-6 col-sm-11 col-xs-11">
         <h2 class="verdfosc col-lg-12 col-md-12 col-sm-12 col-xs-12">EL FAR DE BUDA A PARÍS</h2>
     </div>
+    <div id="foto9-1text2" class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-4 col-md-4 col-sm-11 col-xs-11">
+        <p class="verdfosc">El far de Buda apareix referenciat en guies turístiques publicades a Europa a finals del segle XIX. La seva mostra a l’Exposició Universal de París i la repercussió que va significar aquest event, es va traduir en el seu renom a nivel internacional, i diverses obres publicades en aquells anys i a primers de segle XX referencien el Far com a recurs turístic destacat de les costes espanyoles.</p>
+        <div class="clearfix"></div>
+        <div id="foto9-1boto" class="boto">
+            <img class="verdfosc" src="img/text.png" alt="mostra recull">
+        </div>
+    </div>
+    <img id="foto9-1text2foto" src="foto/PORTADA_GUIDE-TURISTIQUE_1879.jpg" alt="POrtada guis turística"/>
+    <div id="foto9-1foto" class="foto">
+        <img src="foto/guide_turistique.jpg" alt="mostrar recull"/>
+    </div>
 </div>
 <div id="foto9-2" class="fotofons">
     <div class="negre tapa"></div>

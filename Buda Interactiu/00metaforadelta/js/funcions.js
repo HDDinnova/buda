@@ -31,56 +31,6 @@ $('#mi a').click(function(){
         controlMouse(e);
     });
 });
-function controlMouse(e){
-    $(window).unbind('wheel');
-    $(document).off( "keydown" );
-    if(e.deltaY>0 || e==40){
-        switch (pos) {
-            case 10:
-                passar(11);
-                break;
-            case 11:
-                passar(12);
-                break;
-            case 12:
-                passar(13);
-                break;
-            case 13:
-                passar(14);
-                break;
-            case 14:
-                passar(15);
-                break;
-            case 15:
-                passar(16);
-                break;
-            case 16:
-                passar(17);
-                break;
-        }
-    } else if(e.deltaY<0 || e==38) {
-        switch (pos) {
-            case 11:
-                passar(10);
-                break;
-            case 12:
-                passar(110);
-                break;
-            case 13:
-                passar(120);
-                break;
-            case 14:
-                passar(130);
-                break;
-            case 15:
-                passar(140);
-                break;
-            case 16:
-                passar(150);
-                break;
-        }
-    }
-}
 function diapositiva(id){
     switch (id) {
         case 1:
@@ -149,7 +99,7 @@ function diapositiva(id){
             $('#apartat2').load('apartat2.php');
             break;
         case 130:
-            diapo14.tweenTo(0, {onComplete:ratoli});
+            diapo14.tweenTo(0, {onComplete:f130});
             var pausa=800;
             var posi=18;
             $('#foto1-1 .f').each(function(){
@@ -160,6 +110,10 @@ function diapositiva(id){
                 pausa+=150;
                 posi+=5;
             });
+            function f130(){
+                $('#apartat2').hide();
+                ratoli();
+            }
             break;
         case 14:
             $('#apartat2').show();

@@ -146,12 +146,17 @@
         <p class="taronga col-lg-4 col-md-4 col-sm-10 col-xs-10">“Any de 1864. El far de l'illa de Buda està situat per fora i a un cable de distància del cap de Tortosa, que és la part més baixa i sortint cap a l'est de l'illa de Buda. Té les següents característiques:<br>Aparell catadiòptric de segon ordre. Llum giratòria de color blanc amb llampades de minut en minut; abast 20 milles i elevació sobre el terreny de 51,5 m.<br><br>Latitud: 40º 45' 24'' N. Longitud: 7º 9' 15'' E de l'observatori de San Fernando”</p>
         <div class="clearfix"></div>
         <div class="col-lg-offset-4 col-md-offset-4 col-lg-6 col-md-6">
-            <div id="foto7-9boto1" class="boto col-lg-2 col-md-2">
-                <img class="blaufosc" src="img/play.png" alt="reproduir video">
-            </div>
-            <div id="foto7-9boto2" class="boto col-lg-2 col-md-2">
+            <div id="foto7-9boto" class="boto col-lg-2 col-md-2">
                 <a href="doc/El_Clamor_publico._20-10-1864.pdf" target="_blank"><img class="groc" src="img/text.png" alt="mostrar document"></a>
             </div>
         </div>
     </div>
+    <div id="foto7-9text2" class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-4 col-md-4 col-sm-10 col-xs-10">
+        <p class="taronga">Leonardo Sánchez, natural  de Cadis, va ingressar al cos de torrers de Fars l’any 1914. Ell va ser farer de Buda en els anys 20, i allí va néixer son fill Antonio Sánchez Genil (entrevista). El seu germà bessó, Leonardo Sánchez Genil, també va ser torrer de fars i, curiosament, es va casar amb Manuela Díaz López, nascuda també a l’illa de Buda l’any 1906, quan son pare Manuel Díaz López, natural de Bilbao, n’era el farer.</p>
+        <div class="clearfix"></div>
+        <div id="foto7-9boto2" class="boto col-lg-offset-12 col-md-offset-12">
+            <img class="blaufosc" src="img/play.png" alt="reproduir video">
+        </div>
+    </div>
+    <img id="foto7-9text2foto" src="foto/Leonardo-Sanchez-Alcaraz-carnet-Ministeri.jpg" alt="Carnet ministeri Leonardo Sanchez"/>
 </div>

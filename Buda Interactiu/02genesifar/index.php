@@ -100,6 +100,15 @@
                         La mar de l’Ebre,<br>la costa de la mort
                     </h2>
                 </div>
+                <div id="foto1-2text4" class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                    <p class="marro col-lg-5 col-md-5" id="foto1-2text4-1">
+                        <strong>L’escriptor Josep Pla en el recull de narracions de temàtica marinera, “Aigua de mar” (1966), fa referència a l’illa i al Far, quan descriu el seu viatge per la costa catalana, en el tram comprès entre “La Cala” (L’Ametlla de Mar) i Sant Carles de la Ràpita</strong>
+                    </p>
+                    <div class="clearfix"></div>
+                    <p class="marro col-lg-offset-7 col-md-offset-7 col-lg-5 col-md-5" id="foto1-2text4-2">
+                        <i>“… En el moment de prendre el cafè, les aigües aparegueren lleugerament tocades de fang. Aparagueren, al sud, les terres baixes, de l’últim curs del riu, vagaroses, flotants sobre el mar dens, terrós i enfangat. Navegàrem fora de l’illa de Buda, sobre les mateixes boques de l’Ebre. Albert portava el timó. Martinet i jo miràvem el paisatge de terra, que sota la llum perpendicular del sol semblava endormiscat. Es veien ocells que revoletejaven. La densitat de fang de l’aigua havia augmentat. Tot el rodal líquid semblava més passiu i pesant…”</i>
+                    </p>
+                </div>
                 <div class="tapa marro"></div>
                 <div id="foto1-2text2" class="col-md-offset-1 col-lg-4 col-md-6 col-sm-8 col-xs-10">
                     <h3>La costa de l’Ebre esdevingué durant segles el litoral de la mort, un veritable cementiri de vaixells i homes, que durant segles la sorra i el fang van absorbir i fer desaparéixer</h3>

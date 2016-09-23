@@ -2,16 +2,45 @@
     <div id="foto10-1text" class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-6 col-md-6 col-sm-11 col-xs-11">
         <h2 class="marro col-lg-12 col-md-12 col-sm-12 col-xs-12">EL NAUFRAGI DEL FAR</h2>
     </div>
-    <p id="foto10-1peu0" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-3 col-md-3 col-sm-4 col-xs-4">Fotografia presa per Josep M. Espinàs el setembre de 1961. Una de les darreres fotos preses amb el far encara plantat a la mar; hi ha qui assegura que fou la darrera.</p>
+    <p id="foto10-1peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-3 col-md-3 col-sm-4 col-xs-4">Fotografia presa per Josep M. Espinàs el setembre de 1961. Una de les darreres fotos preses amb el far encara plantat a la mar; hi ha qui assegura que fou la darrera.</p>
+</div>
+<div id="foto10-1b" class="videofull">
+    <video poster="video/01_SenyorBarca.jpg" preload>
+        <source src="video/01_SenyorBarca.mp4" type="video/mp4">
+        <source src="video/01_SenyorBarca.ogg" type="video/ogg">
+        <source src="video/01_SenyorBarca.webm" type="video/webm">
+    </video>
+    <div id="foto10-1btext" class="col-lg-offset-2 col-md-offset-2 col-sm-offset-1 col-xs-offset-1 col-lg-4 col-md-4 col-sm-11 col-xs-11">
+        <p class="marro">L’agost de 1936 ja es va instal·lar al far una partida de milicians per controlar, com en molts altres fars i senyals marítims, l’enllumenat del far segons conveniències militars. Els altres treballadors del Far havien abandonat el far quan va esclatar la guerra, però Alfredo Cabezas, torrer principal de Buda, va romandre en el seu lloc i acompanyat de la seva dona i els seus cinc fills.</p>
+        <div class="clearfix"></div>
+        <p class="marro">Finalment, a l’alba del dia 21 d’abril de 1938, es presentaren forces de la Infanteria de Marina amb una ordre escrita al cap del “Puesto de Carabineros” que hi havia al lloc conegut per “Les barraques”, ordenant el desallotjament del Far perquè anava a ser incendiat aquell mateix dia.</p>
+        <div class="clearfix"></div>
+        <div id="foto10-1boto1" class="boto">
+            <img class="taronga" src="img/play.png" alt="reproduir video">
+        </div>
+        <div id="foto10-1boto2" class="boto col-lg-offset-2 col-md-offset-2">
+            <img class="roig" src="img/play.png" alt="reproduir video">
+        </div>
+    </div>
+</div>
+<div id="foto10-1c" class="videofull">
+    <video poster="video/06_FamiliaFar.jpg" preload>
+        <source src="video/06_FamiliaFar.mp4" type="video/mp4">
+        <source src="video/06_FamiliaFar.ogg" type="video/ogg">
+        <source src="video/06_FamiliaFar.webm" type="video/webm">
+    </video>
+    <div id="foto10-1ctext" class="col-lg-offset-7 col-md-offset-7 col-sm-offset-1 col-xs-offset-1 col-lg-4 col-md-4 col-sm-11 col-xs-11">
+        <p class="marro">Alfredo Cabezas Martos va néixer a Sanlúcar de Barrameda (Cadis) l’any 1887, tercer fill d’Antonio Cabezas González, torrer de Fars del Ministeri de Foment. Alfredo va seguir les passes de son pare, i va ingressar al cos de farers l’any 1914. Ell va ser el farer de Buda en els anys 30, quan es van viure els greus episodis de la guerra civil (enllaçar amb el vídeo on son fill, Antonio Cabezas Azuara, els recorda en una entrevista). Alfredo Cabezas va estar destinat al Far de Sant Carles de la Ràpita l’any 1943, encarregat de l’abalisament de La Banya i el Galatxo. Allí va morir l’any 1945, en un desgraciat accident quan va caure de la figuera que encara hi ha al jardí del far, que li va produir un politraumatisme amb hemorràgia interna.</p>
+    </div>
     <div class="tapa negre"></div>
-    <div id="foto10-1video">
+    <div id="foto10-1cvideo">
         <video preload>
             <source src="video/Sarro_FarFerro.mp4" type="video/mp4">
             <source src="video/Sarro_FarFerro.ogg" type="video/ogg">
             <source src="video/Sarro_FarFerro.webm" type="video/webm">
         </video>
     </div>
-    <p id="foto10-1peu" class="peu groc col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Filmació: Artur Sarró<br>(dècada de 1960).</p>
+    <p id="foto10-1cpeu" class="peu groc col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Filmació: Artur Sarró<br>(dècada de 1960).</p>
 </div>
 <div id="foto10-2" class="fotofons">
     <div id="foto10-2text" class="col-lg-offset-8 col-md-offset-8 col-sm-offset-8 col-xs-offset-8 col-lg-3 col-md-3 col-sm-11 col-xs-11">
@@ -31,14 +60,6 @@
 <div id="foto10-3" class="fotofons">
     <div id="foto10-3text" class="col-lg-offset-8 col-md-offset-8 col-sm-offset-8 col-xs-offset-8 col-lg-3 col-md-3 col-sm-11 col-xs-11">
         <p class="marro col-lg-12 col-md-12 col-sm-12 col-xs-12">Després de les obres de remodelació en acabar la Guerra Civil, durant els anys 50 es feia necessari realitzar noves obres per tal d’aturar la precarietat del Far i el perill que comportava l’avanç del mar cap a la torre i la seva afectació als fonaments de les estaques metàl·liques. </p>
-        <div class="clearfix"></div>
-        <div id="foto10-3boto1" class="boto">
-            <img class="taronga" src="img/play.png" alt="reproduir video">
-        </div>
-        <div class="clearfix"></div>
-        <div id="foto10-3boto2" class="boto">
-            <img class="roig" src="img/play.png" alt="reproduir video">
-        </div>
     </div>
     <p id="foto10-3peu" class="peu col-lg-offset-9 col-md-offset-9 col-sm-offset-9 col-xs-offset-9 col-lg-2 col-md-3 col-sm-4 col-xs-4">Foto: Salvador Maluquer (arxiu PNDE).</p>
 </div>

@@ -56,6 +56,22 @@
     font-weight: 600;
     line-height: initial;
 }
+#foto1-2text4{
+    position: absolute;
+    top: -240%;
+}
+#foto1-2text4 p{
+    color: white;
+    padding: 20px;
+}
+#foto1-2text4-1{
+    position: relative;
+    top: -300px;
+}
+#foto1-2text4-2{
+    position: relative;
+    top: 0;
+}
 #foto1-3{
     top: 100%;
     background-image: url('../foto/PLANOL-PROV-TARRAGONA_1853_BNE.jpg');
@@ -784,13 +800,30 @@
     padding: 25px;
     font-size: 1.1vw;
 }
-#foto7-9boto1{
+#foto7-9boto{
+    position: relative;
+    top: 0;
+}
+#foto7-9text2{
+    position: absolute;
+    top: -70%;
+}
+#foto7-9text2 p{
     position: relative;
     top: -300px;
+    color: white;
+    padding: 25px;
+    font-size: 1.1vw;
 }
 #foto7-9boto2{
     position: relative;
     top: 0;
+}
+#foto7-9text2foto{
+    position: absolute;
+    height: 80vh;
+    top: 10%;
+    right: -110%;
 }
 #apartat20{display: none;}
 #foto20-1{
@@ -1182,6 +1215,26 @@
     position: absolute;
     top: -85%;
 }
+#foto9-1text2{
+    position: absolute;
+    top: -130%;
+}
+#foto9-1text2 p{
+    position: relative;
+    top: -300px;
+    padding: 20px;
+    color: white;
+}
+#foto9-1boto{
+    position: relative;
+    top: 0;
+}
+#foto9-1text2foto{
+    position: absolute;
+    right: -210%;
+    height: 80vh;
+    top: 10%;
+}
 #foto9-1text h2{
     color: white;
     padding: 25px;
@@ -1367,29 +1420,68 @@
     position: absolute;
     top: -170%;
 }
+#foto10-1b{
+    top: 100%;
+}
+#foto10-1b .videofull{
+    top: 0;
+}
+#foto10-1btext{
+    position: absolute;
+    top: -220%;
+}
+#foto10-1btext p{
+    position: relative;
+    top: -300px;
+    padding: 20px;
+    color: white;
+}
+#foto10-1boto1{
+    position: relative;
+    top: -300px;
+}
+#foto10-1boto2{
+    position: relative;
+    top: 0;
+}
+#foto10-1c{
+    top: 100%;
+}
+#foto10-1c .videofull{
+    top: 0;
+}
+#foto10-1ctext{
+    position: absolute;
+    top: -240%;
+}
+#foto10-1ctext p{
+    padding: 20px;
+    color: white;
+}
 #foto10-1text h2{
     color: white;
     padding: 25px;
     font-weight: 600;
     text-transform: uppercase;
 }
-#foto10-1 .tapa{
+#foto10-1c .tapa{
     opacity: 0;
-}
-#foto10-1peu{
-    padding: 10px;
-    color: black;
     z-index: 11;
 }
-#foto10-1video{
+#foto10-1cpeu{
+    padding: 10px;
+    color: black;
+    z-index: 13;
+}
+#foto10-1cvideo{
     position: absolute;
     display: block;
     height: 100vh;
     width: 100vw;
-    z-index: 10;
+    z-index: 12;
     top: -200%;
 }
-#foto10-1video video{
+#foto10-1cvideo video{
     display: block;
     height: 100vh;
     margin-right: auto;
