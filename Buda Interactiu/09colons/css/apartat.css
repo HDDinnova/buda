@@ -549,11 +549,17 @@
     top: -210%;
 }
 #foto6-1text h2{
+    position: relative;
+    top: -300px;
     color: white;
     padding: 30px;
     font-size: 3.5vw;
     text-transform: uppercase;
     font-weight: 600;
+}
+#foto6-1boto2{
+    position: relative;
+    top: 0;
 }
 #foto6-1text2{
     position: absolute;

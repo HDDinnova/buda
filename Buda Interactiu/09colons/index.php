@@ -198,6 +198,7 @@
                         <img class="groc" src="img/play.png" alt="mostrar text">
                     </div>
                 </div>
+                <p id="foto1-7peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Arxiu familiar Joan Franch</p>
                 <div id="foto1-7fotos" class="slider">
                     <div class="sliderfotos">
                         <div>

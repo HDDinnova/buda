@@ -9,18 +9,18 @@ require_once 'class/connexio.php';
 $db = new connexio();
 
 if(isset($p)){
-    $offset=($p-1)*4;
+    $offset=($p-1)*8;
 } else {
     $offset=0;
 }
-$query="SELECT * FROM mur WHERE validat=1 ORDER BY data DESC LIMIT 4 OFFSET $offset";
+$query="SELECT * FROM mur WHERE validat=1 ORDER BY data DESC LIMIT 8 OFFSET $offset";
 $querytotalrows = "SELECT id FROM mur WHERE validat=1";
 $msgs = $db->query($query);
 $totalrows = $db->query($querytotalrows);
 $numrows = $totalrows->num_rows;
 $db->close();
 if ($numrows!=0){
-    $numpags = $numrows/4;
+    $numpags = $numrows/8;
     if(fmod($numpags, 1)>0){
         $resto=1;
     }
@@ -72,7 +72,7 @@ if ($numrows!=0){
         <!--Menú lateral-->
         <div id="m"></div>
         <!--Fi menú lateral-->
-        <div class="col-lg-offset-1 col-md-offset-1 col-lg-11 col-md-11 col-sm-12 col-xs-12">
+        <div class="col-lg-offset-1 col-md-offset-1 col-lg-10 col-md-10 col-sm-12 col-xs-12">
             
 <?php
     $db = new connexio();
@@ -82,10 +82,9 @@ if ($numrows!=0){
         $us=$db->query($query);
         $u=$us->fetch_array(MYSQLI_ASSOC);
         $dia = new DateTime($msg['data']);
-        if($i%2==0){echo '<div class="row">';}
 ?>
             
-            <div class="col-lg-offset-1 col-md-offset-1 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                 <div class="fotomur text-center">
                     <img src="<?=$msg['foto']?>" alt="Imatge del mur" class="fotom">
                     <img src="img/polaroid.png" alt="Superposició" class="polaroid"/>
@@ -101,10 +100,8 @@ if ($numrows!=0){
             </div>
             
         <?php
-        if($i%2!=0){echo '</div><div class="clearfix"></div>';}
         $i++;
     }
-    if($i%2!=0){echo '</div><div class="clearfix"></div>';}
     
     if (isset($_COOKIE['personatge'])){ ?>
     <div class="round-button">

@@ -106,7 +106,7 @@
                     <source src="video/soltada_aigua.ogg" type="video/ogg">
                     <source src="video/soltada_aigua.webm" type="video/webm">
                 </video>
-                <p class="groc videopeu">Seqüència descartada de la pel·lícula</p>
+                <p class="groc videopeu">Obertura de les comportes del canal de la Dreta de l’Ebre que permeten l’entrada d’aigua de reg als arrossars de l’illa de Buda</p>
             </div>
         </div>
         <div class="containerapartat" id="apartat2"></div>

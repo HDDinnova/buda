@@ -118,7 +118,7 @@ input[type="file"]{
     margin-bottom: 10px;
 }
 .fotomur{
-    width: 300px;
+    width: 100%;
     overflow: hidden;
     /*height: 100%;*/
     display: block;
@@ -132,8 +132,8 @@ input[type="file"]{
 .fotomur .fotom{
     position: absolute;
     top: 0;
-    width: 300px;
-    margin-top: 55px;
+    width: 88%;
+    margin-top: 15%;
     z-index: -9999;
 }
 .fotomur .peufoto{

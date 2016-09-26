@@ -1,6 +1,10 @@
 <div id="foto6-1" class="fotofons">
-    <div id="foto6-1text" class="col-lg-offset-1 col-md-offset-1 col-lg-11 col-md-11 col-sm-12 col-xs-12">
-        <h2 class="taronga col-lg-6 col-md-6 col-sm-12 col-xs-12">Les festes de Buda</h2>
+    <div id="foto6-1text" class="col-lg-offset-1 col-md-offset-1 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <h2 class="taronga">Les festes de Buda</h2>
+        <div class="clearfix"></div>
+        <div id="foto6-1boto2" class="boto col-lg-offset-12 col-md-offset-12">
+            <img class="taronga" src="img/audio.png" alt="reproduir cançó">
+        </div>
     </div>
     <p id="foto6-1peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Arxiu Joan Franch</p>
     <div class="tapa taronga"></div>

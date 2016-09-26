@@ -118,7 +118,7 @@
                 <div id="foto1-2foto" class="foto">
                     <img src="foto/_MG_9135.jpg" alt="Arxiu família Cabezas"/>
                     <div class="groc">
-                        Antonio Cabezas, el farer de Buda
+                        Antonio Cabezas, el darrer farer de Buda
                     </div>
                 </div>
             </div>
@@ -146,6 +146,9 @@
                 <p id="foto1-3peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Arxiu família Borés<br>(gentilesa Museu de les Terres de l’Ebre).</p>
                 <div id="foto1-3foto" class="foto">
                     <img src="foto/Santi198.jpg" alt="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre)."/>
+                    <div class="groc">
+                        Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre)
+                    </div>
                 </div>
             </div>
             <div id="foto1-4" class="fotofons">
@@ -304,6 +307,9 @@
                 </div>
                 <div id="foto1-9foto" class="foto">
                     <img src="foto/Santi133.jpg" alt="Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre)"/>
+                    <div class="groc">
+                        Arxiu família Borés (gentilesa Museu de les Terres de l’Ebre)
+                    </div>
                 </div>
             </div>
             <div id="foto1-10" class="fotofons">

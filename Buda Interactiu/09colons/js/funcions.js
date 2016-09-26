@@ -126,7 +126,8 @@ function diapositiva(id){
                 .to($('#foto1-7'),2,{top:'0',ease:Power3.easeInOut},'-=2')
                 .to($('#foto1-7text'),2,{bottom:'3%',ease:Power3.easeInOut},'-=1.8')
                 .to($('#foto1-7boto1'),2,{top:'0',ease:Power3.easeInOut},'-=1.8')
-                .to($('#foto1-7boto2'),2,{top:'0',ease:Power3.easeInOut},'-=1.8');
+                .to($('#foto1-7boto2'),2,{top:'0',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-7peu'),2,{left:'0',ease:Power3.easeInOut},'-=1.8');
             diapo18.addCallback(ratoli); slider('#foto1-7boto1','#foto1-7fotos');
             video('#foto1-7boto2','apartat1video4.php');
             break;
@@ -135,7 +136,8 @@ function diapositiva(id){
             break;
         case 19:
             diapo19 = new TimelineMax();
-            diapo19.to($('#foto1-7text p'),2,{top:'-300px',ease:Power3.easeInOut},'-=1.8')
+            diapo19.to($('#foto1-7peu'),2,{left:'-50%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto1-7text p'),2,{top:'-300px',ease:Power3.easeInOut},'-=1.8')
                 .to($('#foto1-7boto1'),2,{top:'-300px',ease:Power3.easeInOut},'-=1.8')
                 .to($('#foto1-7text'),2,{bottom:'203%',ease:Power3.easeInOut},'-=1.8')
                 .to($('#foto1-7'),2,{top:'100%',ease:Power3.easeInOut},'-=1.8')
@@ -215,7 +217,8 @@ function diapositiva(id){
                 .to($('#foto1-11'),2,{top:'-100%',ease:Power3.easeInOut},'-=1.8')
                 .to($('#foto2-1'),2,{top:'0',ease:Power3.easeInOut},'-=2')
                 .to($('#foto2-1text'),2,{top:'10%',ease:Power3.easeInOut},'-=1.8')
-                .to($('#foto2-1text h2'),2,{top:'0',ease:Power3.easeInOut},'-=1.8');
+                .to($('#foto2-1text h2'),2,{top:'0',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto2-1peu'),2,{left:'0',ease:Power3.easeInOut},'-=1.8');
             diapo23.addCallback(ratoli);
             break;
         case 230:
@@ -224,7 +227,8 @@ function diapositiva(id){
             break;
         case 24:
             diapo24 = new TimelineMax();
-            diapo24.to($('#foto2-1text p'),2,{top:'300px',ease:Power3.easeInOut},'-=1.8')
+            diapo24.to($('#foto2-1peu'),2,{left:'-50%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto2-1text p'),2,{top:'300px',ease:Power3.easeInOut},'-=1.8')
                 .to($('#foto2-1text'),2,{top:'210%',ease:Power3.easeInOut},'-=1.8')
                 .to($('#foto2-1 .tapa'),2,{autoAlpha:'.8',ease:Power3.easeInOut},'-=1.8')
                 .to($('#foto2-1video'),2,{top:'0',ease:Power3.easeInOut},'-=1.8')
@@ -498,6 +502,7 @@ function diapositiva(id){
                 .to($('#foto5-6'),2,{top:'-100%',ease:Power3.easeInOut},'-=1.8')
                 .to($('#foto6-1'),2,{top:'0',ease:Power3.easeInOut},'-=2')
                 .to($('#foto6-1text'),2,{top:'10%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto6-1text h2'),2,{top:'0',ease:Power3.easeInOut},'-=1.8')
                 .to($('#foto6-1peu'),2,{left:'0',ease:Power3.easeInOut},'-=1.8');
             diapo39.addCallback(ratoli);
             break;
@@ -507,6 +512,7 @@ function diapositiva(id){
         case 40:
             diapo40 = new TimelineMax();
             diapo40.to($('#foto6-1peu'),2,{left:'-50%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto6-1boto2'),2,{top:'300px',ease:Power3.easeInOut},'-=1.8')
                 .to($('#foto6-1text'),2,{top:'210%',ease:Power3.easeInOut},'-=1.8')
                 .to($('#foto6-1 .tapa'),2,{autoAlpha:'.6',ease:Power3.easeInOut},'-=1.8')
                 .to($('#foto6-1text2'),2,{top:'30%',ease:Power3.easeInOut},'-=1.8')

@@ -26,5 +26,5 @@
 <div class="final text-center">
     <h2>Moltes felicitats!, has acabat aquesta investigació.</h2>
     <h3>Vols continuar explorant l’illa de Buda?</h3>
-    <a href="../05pesca/"><img src="../menu/05pesca.jpg" alt=""/><br><br>LA PESCA</a>
+    <a href="../05pesca/"><img src="../menu/05pesca.jpg" alt=""/><br><br>HISTÒRIES DE LA PESCA A BUDA</a>
 </div>
