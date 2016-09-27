@@ -168,6 +168,106 @@
     overflow: hidden;
     z-index: -1;
 }
+#dossierapartat{
+    display: none;
+    background-color: rgba(255,255,255,1);
+    z-index: 100;
+}
+#dossierapartat .dossierapartat{
+    height: 100%;
+}
+#dossierapartat h1{
+    font-family: 'Annie Use Your Telescope', cursive;
+    text-align: center;
+    font-size: 7rem;
+}
+#dossierapartat .botodossier{
+    width: 3.5vw;
+    height: 5.3vh;
+}
+#dossierapartat #botomapa{
+    top: 7.8%;
+    right: 1.7%;
+}
+#dossierapartat #botofoto{
+    top: 13.1%;
+    right: 1.7%;
+}
+#dossierapartat #botovideo{
+    top: 19.2%;
+    right: 1.9%;
+}
+#dossierapartat #bototext{
+    top: 25.6%;
+    right: 1.9%;
+}
+#dossierapartat #botoperfil{
+    top: 32.8%;
+    right: 1.7%;
+}
+#dossierapartat #dossier{
+    max-height: 90%;
+}
+#dossierapartat #objectes{
+    height: 90%;
+    overflow: hidden;
+}
+#dossierapartat .objecte{
+    height: 87%;
+    margin-top: 4.35%;
+    padding-right: 80px;
+    padding-left: 68px;
+    padding-top: 30px;
+    width: 97%;
+}
+#dossierapartat .blau{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    display: block;
+    width: 30px;
+    cursor: pointer;
+}
+#dossierapartat .blau img{
+    height: 20px;
+}
+#dossierapartat #vapor{
+    top: 16%;
+    left: 32%;
+}
+#dossierapartat #planta{
+    top: 27%;
+    left: 25%;
+}
+#dossierapartat #barraca{
+    top: 40%;
+    left: 31%;
+}
+#dossierapartat #niu{
+    top: 27%;
+    left: 38%;
+}
+#dossierapartat #serp{
+    top: 74%;
+    left: 38%;
+}
+#dossierapartat #cacador{
+    top: 57%;
+    left: 37%;
+}
+#dossierapartat #peix{
+    top: 42%;
+    left: 52%;
+}
+#dossierapartat #far{
+    top: 13%;
+    left: 82%;
+}
+#dossierapartat #flamenc{
+    top: 30%;
+    left: 65%;
+}
 .videopopup{
     position: absolute;
     z-index: 10;
@@ -437,8 +537,8 @@
 .videofull video{
     display: block;
     /* max-height: 100vh; */
-    min-width: 100%;
-    min-height: 100vh;
+    min-width: 100% !important;
+    min-height: 100vh !important;
     margin-right: auto;
     margin-left: auto;
 }

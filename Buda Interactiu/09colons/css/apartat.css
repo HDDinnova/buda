@@ -557,6 +557,19 @@
     text-transform: uppercase;
     font-weight: 600;
 }
+#foto6-1audio{
+    color: white;
+}
+.musica{
+    position: absolute;
+    display: block;
+    width: 40vw;
+    margin-left: 30vw;
+    margin-top: 20vh;
+}
+.musica audio{
+    margin-top: 3vh;
+}
 #foto6-1boto2{
     position: relative;
     top: 0;

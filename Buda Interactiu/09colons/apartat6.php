@@ -6,6 +6,15 @@
             <img class="taronga" src="img/audio.png" alt="reproduir cançó">
         </div>
     </div>
+    <div id="foto6-1audio" class="foto">
+        <div class="musica">
+            <h3><strong>Les festes de Buda</strong></h3>
+            <h4><i>Música: Montse Castellà. Lletra: Carlos Itarte</i></h4>
+            <audio controls id="audio">
+                <source src="audio/Buda_festes_majors.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
     <p id="foto6-1peu" class="peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Arxiu Joan Franch</p>
     <div class="tapa taronga"></div>
     <div id="foto6-1text2" class="col-lg-offset-1 col-md-offset-1 col-lg-4 col-md-4 col-sm-11 col-xs-11">

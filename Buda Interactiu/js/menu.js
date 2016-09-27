@@ -80,4 +80,11 @@ function menu(){
         var url = (window.location.href).toString();
         window.location.replace('../logout.php?url='+url);
     });
+    $('#bdosier').click(function(){
+        $(window).unbind('wheel');
+        $(document).off( "keydown");
+        $('#dossierapartat').load('../dossier.php',function(){
+            $('#dossierapartat').show();
+        });
+    });
 }

@@ -7,13 +7,13 @@
         <meta name="description" content="Documental interactiu sobre Buda, la illa del Delta">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
+        <link href="../css/registre.css" rel="stylesheet" type="text/css"/>
         <link href="../css/estil.css" rel="stylesheet" type="text/css"/>
         <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
         <link href="../css/toastr.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/apartat.css" rel="stylesheet" type="text/css"/>
         
         <script src="../js/jquery-2.1.4.min.js" type="text/javascript"></script>
-        <script src="../js/menu.js" type="text/javascript"></script>
     </head>
     <body>
         <nav class="navbar navbar-default"><?php include '../menu/menusuperior.php'; ?></nav>
@@ -21,14 +21,43 @@
         <audio loop id="audio">
             <source src="../musica/Buda Frag 2 de 7.mp3" type="audio/mpeg">
         </audio>
-        <!--Menú lateral-->
+        <!----------------------------------------->
+        <!----------------------------------------->
+        <!--*************************************-->
+        <!--***********  Menú lateral  **********-->
+        <!--*************************************-->
+        <!----------------------------------------->
+        <!----------------------------------------->
         <div id="m"></div>
         <div id="mi">
-            <div class="menuinf">
-                
-            </div>
+            
         </div>
-        <!--Fi menú lateral-->
+        <!----------------------------------------->
+        <!----------------------------------------->
+        <!--*************************************-->
+        <!--*********  Fi Menú lateral  *********-->
+        <!--*************************************-->
+        <!----------------------------------------->
+        <!----------------------------------------->
+        
+        
+        <!----------------------------------------->
+        <!----------------------------------------->
+        <!--*************************************-->
+        <!--*************  Dossier  *************-->
+        <!--*************************************-->
+        <!----------------------------------------->
+        <!----------------------------------------->
+        <div id="dossierapartat" class="containerapartat">
+            
+        </div>
+        <!----------------------------------------->
+        <!----------------------------------------->
+        <!--*************************************-->
+        <!--************  Fi Dossier  ***********-->
+        <!--*************************************-->
+        <!----------------------------------------->
+        <!----------------------------------------->
         <div class="containerapartat" id="apartat1">
             <div id="foto1-1" class="videofull">
                 <video poster="video/08_VoraRiu_1.jpg">
@@ -89,6 +118,7 @@
     <script src="../js/apartats.js" type="text/javascript"></script>
     <script src="js/funcions.js" type="text/javascript"></script>
     <script src="js/jquery.rotate.js" type="text/javascript"></script>
+    <script src="../js/menu.js" type="text/javascript"></script>
     <script>
         var pos = 10;
         $(window).load(function(){

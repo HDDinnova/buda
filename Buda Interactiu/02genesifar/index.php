@@ -7,6 +7,7 @@
         <meta name="description" content="Documental interactiu sobre Buda, la illa del Delta">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link href="../css/registre.css" rel="stylesheet" type="text/css"/>
         <link href="../css/estil.css" rel="stylesheet" type="text/css"/>
         <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
         <link href="../css/toastr.min.css" rel="stylesheet" type="text/css"/>
@@ -15,7 +16,6 @@
         <link href="css/slick-theme.css" rel="stylesheet" type="text/css"/>
         
         <script src="../js/jquery-2.2.4.min.js" type="text/javascript"></script>
-        <script src="../js/menu.js" type="text/javascript"></script>
     </head>
     <body>
         <nav class="navbar navbar-default"><?php include '../menu/menusuperior.php'; ?></nav>
@@ -79,7 +79,24 @@
                     <h3>ELS ALTRES FARS DE BUDA</h3>
                 </a>
             </div>
+        </div>        
+        <!----------------------------------------->
+        <!----------------------------------------->
+        <!--*************************************-->
+        <!--*************  Dossier  *************-->
+        <!--*************************************-->
+        <!----------------------------------------->
+        <!----------------------------------------->
+        <div id="dossierapartat" class="containerapartat">
+            
         </div>
+        <!----------------------------------------->
+        <!----------------------------------------->
+        <!--*************************************-->
+        <!--************  Fi Dossier  ***********-->
+        <!--*************************************-->
+        <!----------------------------------------->
+        <!----------------------------------------->
         <div class="containerapartat" id="apartat1">
             <div id="foto1-1" class="fotofons">
                 <div id="foto1-1text" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -174,6 +191,7 @@
         <script src="../js/apartats.js" type="text/javascript"></script>
         <script src="js/funcions.js" type="text/javascript"></script>
         <script src="js/jquery.rotate.js" type="text/javascript"></script>
+        <script src="../js/menu.js" type="text/javascript"></script>
         <script>
             var pos = 10;
             $(window).load(function(){

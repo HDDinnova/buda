@@ -109,7 +109,7 @@ button,#start{
     top: 59%;
     left: 51%;
 }
-.boto{
+.botodossier{
     position: absolute;
     -ms-transform: rotate(-1deg);
     -webkit-transform: rotate(-1deg);
@@ -120,7 +120,7 @@ button,#start{
     cursor: pointer;
     opacity: .6;
 }
-.boto:hover{
+.botodossier:hover{
     background-color: gray;
     opacity: .2;
 }
@@ -176,7 +176,7 @@ button,#start{
     text-align: left;
     margin-left: 10%;
 }
-video{
+#objectes video{
     width: 85%;
     border: white solid 8px;
     box-shadow: 1px 1px 20px black;

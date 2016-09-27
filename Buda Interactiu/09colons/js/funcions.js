@@ -5,6 +5,24 @@ $('#bso').click(function(){
         $('#audio')[0].pause();
     }
 });
+function audio(boto,div){
+    $(boto).click(function(){
+        $(window).unbind('wheel');
+        $(document).off( "keydown" );
+        $(div).show();
+        $(div+' audio')[0].play();
+        $(div).on('click',function(){
+            $(div+' audio')[0].pause();
+            $(div).hide(0,function(){
+                $(window).unbind('wheel');
+                $(document).off( "keydown" );
+                ultima = 'foto';
+                ratoli('foto');
+                $(div).off('click');
+            });            
+        });
+    });
+}
 
 function diapositiva(id){
     switch (id) {
@@ -505,6 +523,7 @@ function diapositiva(id){
                 .to($('#foto6-1text h2'),2,{top:'0',ease:Power3.easeInOut},'-=1.8')
                 .to($('#foto6-1peu'),2,{left:'0',ease:Power3.easeInOut},'-=1.8');
             diapo39.addCallback(ratoli);
+            audio('#foto6-1boto2','#foto6-1audio');
             break;
         case 390:
             diapo40.tweenTo(0, {onComplete:ratoli});

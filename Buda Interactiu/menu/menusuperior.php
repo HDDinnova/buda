@@ -10,7 +10,7 @@
             <li><a href="#" id="bcredits" class="menutext"><strong>CRÈDITS</strong></a></li>
             <li><a href="#" id="bpeli" class="menutext"><strong>LA PEL·LÍCULA</strong></a></li>
              <?php if (isset($_COOKIE['personatge'])){ ?>
-            <li><a href="#"><img src="../img/menu-llibreta.png" alt="mostrar dossier"/></a></li>
+            <li><a href="#" id="bdosier"><img src="../img/menu-llibreta.png" alt="mostrar dossier"/></a></li>
             <li><a href="#" id="buser" class="menutext dropdown-toggle" data-toggle="dropdown" role="button"><img src="../img/menu-user.png" alt="menú"/>  <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                     <li><a id="bmodificar" href="#">Modificar dades</a></li>
