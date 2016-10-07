@@ -39,7 +39,7 @@
             </li>
             <?php } ?>
             <li><a href="#" id="bso"><img src="../img/menu-audio.png" alt="silenciar"/></a></li>
-            <li><a href="#" id="menu2"><img src="../img/menu-vertical.png" alt="menú"/></a></li>
+<!--            <li><a href="#" id="menu2"><img src="../img/menu-vertical.png" alt="menú"/></a></li>-->
             <li><a href="#" id="menu1"><img src="../img/menu-menu.png" alt="menú"/></a></li>
         </ul>
     </div><!-- /.navbar-collapse -->
