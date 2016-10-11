@@ -78,30 +78,15 @@ li a{
     text-decoration: none;
     transition: font 0.3s ease;
     color: black;
+    font-size: 2.5rem;
 }
 li a:hover{
-    text-decoration: none;
     color: black;
-}
-li a:active{
     text-decoration: none;
-    color: black;
 }
 li a:visited{
-    text-decoration: none;
     color: black;
-}
-li.active{
-    border: solid black 1px;
-    border-radius: 50px;
-    font-size: 2.8rem;
-    background-color: rgba(200,200,200,.5);
-}
-li.active:hover{
-    background-color: rgba(200,200,200,.8);
-}
-li:not(.active):hover{
-    font-size: 2.5rem;
+    text-decoration: none;
 }
 .credits{
     position: absolute;
@@ -113,4 +98,7 @@ li:not(.active):hover{
     position: absolute;
     right: 20px;
     bottom: 20px;
+}
+#cat{
+    cursor: pointer;
 }

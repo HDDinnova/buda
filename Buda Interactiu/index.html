@@ -19,10 +19,10 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12 text-center logo">
+                <div class="col-md-12 text-center logo" id="cat">
                     <img src="img/logo_inici.png" alt=""/>
                     <ul>
-                        <li id="cat" class="active"><a href="#">ENTRAR</a></li>
+                        <li><a href="#">ENTRAR</a></li>
                     </ul>
                 </div>
                 <video poster="img/background-jpg" preload autoplay loop>
@@ -55,16 +55,12 @@
         <a id="saltar" href="index2.html"><i class="fa fa-times"></i> Començar l'experiència</a>
     <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
     <script>
-        $('li').click(function(){
-            
-            switch($(this).attr('id')){
-                case 'cat':
-                    $('#pantalla').fadeTo('slow',0,function(){
-                        $('#catala')[0].play();
-                        $('.container audio')[0].play();
-                        $('#saltar').fadeTo('slow',1);
-                    });
-            }
+        $('#cat').click(function(){
+            $('#pantalla').fadeTo('slow',0,function(){
+                $('#catala')[0].play();
+                $('.container audio')[0].play();
+                $('#saltar').fadeTo('slow',1);
+            });
         });
     </script>
     </body>
