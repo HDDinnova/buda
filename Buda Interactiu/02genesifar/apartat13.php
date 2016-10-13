@@ -184,6 +184,16 @@
         </div>
     </div>
 </div>
+<div id="foto13-11" class="videofull">
+    <div id="foto13-11video">
+        <video poster="foto/FarDroneB.jpg" preload>
+            <source src="video/FarDroneB.mp4" type="video/mp4">
+            <source src="video/FarDroneB.ogg" type="video/ogg">
+            <source src="video/FarDroneB.webm" type="video/webm">
+        </video>
+    </div>
+    <p id="foto13-11videopeu" class="terra peu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-2 col-md-3 col-sm-4 col-xs-4">Reconstrucció virtual del far de Buda a l'actual platja de l'illa<br>(filmació amb drone realitzada el setembre de 2015).<br>Autor: Jaume Moya</p>
+</div>
 
 <div class="final text-center">
     <h2>Moltes felicitats!, has acabat aquesta investigació.</h2>

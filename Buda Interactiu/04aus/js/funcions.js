@@ -433,6 +433,7 @@ function diapositiva(id){
             $('.final').animate({
                 'opacity': '1'
             },3000);
+            guardarFinal(4);
             break;
     }
 }

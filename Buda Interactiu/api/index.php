@@ -60,6 +60,47 @@ Flight::route('POST /savetext', function(){
     }
 });
 
+Flight::route('POST /apfinal', function(){
+    $db=Flight::db();
+    
+    $checkactual = $db->prepare("SELECT COUNT(id) FROM ap_actual WHERE usuari=:user AND apartat=:apartat");
+    $checkactual->bindParam(':user', $_POST['user'], PDO::PARAM_INT);
+    $checkactual->bindParam(':apartat', $_POST['apartat'], PDO::PARAM_INT);
+    
+    $checkactual->execute();
+    
+    $ch_ac = $checkactual->fetchColumn();
+    
+    if ($ch_ac > 0) {
+      $delactual = $db->prepare("DELETE FROM ap_actual WHERE usuari=:user AND apartat=:apartat");
+      $delactual->bindParam(':user', $_POST['user'], PDO::PARAM_INT);
+      $delactual->bindParam(':apartat', $_POST['apartat'], PDO::PARAM_INT);
+
+      $delactual->execute();
+    }
+    
+    $checkfinal = $db->prepare("SELECT COUNT(id) FROM ap_final WHERE usuari=:user AND apartat=:apartat");
+    $checkfinal->bindParam(':user', $_POST['user'], PDO::PARAM_INT);
+    $checkfinal->bindParam(':apartat', $_POST['apartat'], PDO::PARAM_INT);
+    
+    $checkfinal->execute();
+    
+    $ch_fi = $checkactual->fetchColumn();
+    
+    if ($ch_fi == 0) {
+      
+      $insfinal = $db->prepare("INSERT INTO ap_final (usuari,apartat) VALUES (:user, :apartat)");
+      $insfinal->bindParam(':user', $_POST['user'], PDO::PARAM_INT);
+      $insfinal->bindParam(':apartat', $_POST['apartat'], PDO::PARAM_INT);
+
+      $insfinal->execute();
+    }
+    
+    $db=NULL;
+    
+    echo 'Guardat API';
+});
+
 Flight::route('/', function(){
     echo 'Buda Interactiu';
 });

@@ -1747,11 +1747,32 @@ function diapositiva(id){
                 .to($('#foto13-10text2'),2,{top:'30%',ease:Power3.easeInOut},'-=1.8');
             diapo119.addCallback(ratoli);
             break;
+        case 1190:
+            $('#foto13-11video video')[0].pause();
+            diapo120.tweenTo(0, {onComplete:ratoli});
+            break;
         case 120:
+            diapo120 = new TimelineMax();
+            diapo120.to($('#foto13-10text2'),2,{top:'-130%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto13-10'),2,{top:'100%',ease:Power3.easeInOut},'-=1.8')
+                .to($('#foto13-11'),2,{top:'0',ease:Power3.easeInOut},'-=2')
+                .to($('#foto13-11videopeu'),2,{left:'0',ease:Power3.easeInOut},'-=1.8');
+            diapo120.addCallback(f120);
+            function f120(){
+                $('#foto13-11video video')[0].play();
+                ratoli();
+            }
+            $('#foto13-11video video').on('ended',function(){
+                passar(121);
+            });
+            break;
+        case 121:
+            $('#foto13-11video video')[0].pause();
             $('.final').show();
             $('.final').animate({
                 'opacity': '1'
             },3000);
+            guardarFinal(2);
             break;
     }
 }

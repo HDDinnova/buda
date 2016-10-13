@@ -189,3 +189,15 @@ function guardarText(obj){
         toastr["info"]("Text guardat correctament");
     });
 }
+function guardarFinal(apartat){
+    console.log('GuardarFinal');
+    var user = document.cookie.split(';')[0].split('=')[1];
+    
+    var url = '{"user":"'+user+'","apartat":"'+apartat+'"}';
+    url = JSON.parse(url);
+    console.log(url);
+    
+    $.post('../api/apfinal',url,function(data){
+        console.log(data);
+    });
+}
