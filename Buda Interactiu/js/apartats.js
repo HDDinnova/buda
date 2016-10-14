@@ -190,14 +190,22 @@ function guardarText(obj){
     });
 }
 function guardarFinal(apartat){
-    console.log('GuardarFinal');
     var user = document.cookie.split(';')[0].split('=')[1];
     
     var url = '{"user":"'+user+'","apartat":"'+apartat+'"}';
     url = JSON.parse(url);
-    console.log(url);
     
     $.post('../api/apfinal',url,function(data){
+        console.log(data);
+    });
+}
+function guardarActual(apartat){
+    var user = document.cookie.split(';')[0].split('=')[1];
+    
+    var url = '{"user":"'+user+'","apartat":"'+apartat+'"}';
+    url = JSON.parse(url);
+    
+    $.post('../api/apactual',url,function(data){
         console.log(data);
     });
 }

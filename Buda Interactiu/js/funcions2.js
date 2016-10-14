@@ -10,7 +10,7 @@ function menu(){
       }, 200);
     });
 };
-$('.boto').on('click',function(){
+$('.botodossier').on('click',function(){
     var color = $('#dossier').data('color');
     switch ($(this).attr('id')){
         case 'botomapa':
@@ -19,7 +19,7 @@ $('.boto').on('click',function(){
             $('#videos').hide();
             $('#textos').hide();
             $('#perfil').hide();
-            $('.boto').removeClass(color);
+            $('.botodossier').removeClass(color);
             $('#botomapa').addClass(color);
             break;
         case 'botofoto':
@@ -28,7 +28,7 @@ $('.boto').on('click',function(){
             $('#videos').hide();
             $('#textos').hide();
             $('#perfil').hide();
-            $('.boto').removeClass(color);
+            $('.botodossier').removeClass(color);
             $('#botofoto').addClass(color);
             break;
         case 'botovideo':
@@ -37,7 +37,7 @@ $('.boto').on('click',function(){
             $('#mapa').hide();
             $('#textos').hide();
             $('#perfil').hide();
-            $('.boto').removeClass(color);
+            $('.botodossier').removeClass(color);
             $('#botovideo').addClass(color);
             break;
         case 'bototext':
@@ -46,7 +46,7 @@ $('.boto').on('click',function(){
             $('#videos').hide();
             $('#mapa').hide();
             $('#perfil').hide();
-            $('.boto').removeClass(color);
+            $('.botodossier').removeClass(color);
             $('#bototext').addClass(color);
             break;
         case 'botoperfil':
@@ -55,7 +55,7 @@ $('.boto').on('click',function(){
             $('#videos').hide();
             $('#textos').hide();
             $('#mapa').hide();
-            $('.boto').removeClass(color);
+            $('.botodossier').removeClass(color);
             $('#botoperfil').addClass(color);
             break;
     }

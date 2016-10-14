@@ -153,6 +153,11 @@
         <script src="js/jquery.rotate.js" type="text/javascript"></script>
         <script src="js/jquery.elevateZoom-3.0.8.min.js" type="text/javascript"></script>
         <script src="../js/menu.js" type="text/javascript"></script>
+    <?php
+        if (isset($_COOKIE['personatge'])){ ?>
+    <script>guardarActual(6);</script>
+        <?php }
+    ?>
         <script>
             var pos = 10;
             $(window).load(function(){

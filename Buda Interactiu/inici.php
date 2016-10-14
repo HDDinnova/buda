@@ -78,11 +78,11 @@ $t = $db->query('SELECT * FROM textos WHERE usuari='.$per['id']);
           </div>
         </div>
         <div class="col-lg-9 col-md-9 col-sm-12 dossier">
-            <div id="botomapa" class="boto <?=$c?>"></div>
-            <div id="botofoto" class="boto"></div>
-            <div id="botovideo" class="boto"></div>
-            <div id="bototext" class="boto"></div>
-            <div id="botoperfil" class="boto"></div>
+            <div id="botomapa" class="botodossier <?=$c?>"></div>
+            <div id="botofoto" class="botodossier"></div>
+            <div id="botovideo" class="botodossier"></div>
+            <div id="bototext" class="botodossier"></div>
+            <div id="botoperfil" class="botodossier"></div>
             <div id="objectes" class="col-md-12">
                 <div id="mapa" class="objecte">
                     <h2>Illa de Buda</h2>
@@ -128,8 +128,203 @@ $t = $db->query('SELECT * FROM textos WHERE usuari='.$per['id']);
                     <?php } ?>
                 </div>
                 <div id="perfil" class="objecte">
-                    
+            <div class="col-md-6 col-sm-6 col-xs-6 text-center">
+                <h3>Investigacions finalitzades</h3>
+            <?php while ($acabats = $apfi->fetch_array(MYSQLI_ASSOC)){ ?>
+                <div class="col-md-12">
+                    <?php switch ($acabats['apartat']) {
+                        case 0:?>
+                    <div class="col-md-4">
+                        <img src="../menu/00metafora.jpg">
+                    </div>
+                    <div class="col-md-8">
+                        <p>Metonímia del Delta</p>
+                    </div>
+                            <?php break;
+                        case 1:?>
+                    <div class="col-md-4">
+                        <img src="../menu/01pasbuda.jpg">
+                    </div>
+                    <div class="col-md-8">
+                        <p>Pas de Buda</p>
+                    </div>
+                            <?php break;
+                        case 2:?>
+                    <div class="col-md-4">
+                        <img src="../menu/02genesifar.jpg">
+                    </div>
+                    <div class="col-md-8">
+                        <p>El Far de Buda</p>
+                    </div>
+                            <?php break;
+                        case 3:?>
+                    <div class="col-md-4">
+                        <img src="../menu/03llacunes.jpg">
+                    </div>
+                    <div class="col-md-8">
+                        <p>Els calaixos de Buda</p>
+                    </div>
+                            <?php break;
+                        case 4:?>
+                    <div class="col-md-4">
+                        <img src="../menu/04aus.jpg">
+                    </div>
+                    <div class="col-md-8">
+                        <p>Les aus de Buda</p>
+                    </div>
+                            <?php break;
+                        case 5:?>
+                    <div class="col-md-4">
+                        <img src="../menu/05pesca.jpg">
+                    </div>
+                    <div class="col-md-8">
+                        <p>Històries de pesca a Buda</p>
+                    </div>
+                            <?php break;
+                        case 6:?>
+                    <div class="col-md-4">
+                        <img src="../menu/06mas.jpg">
+                    </div>
+                    <div class="col-md-8">
+                        <p>El mas de Buda</p>
+                    </div>
+                            <?php break;
+                        case 7:?>
+                    <div class="col-md-4">
+                        <img src="../menu/07cacera.jpg">
+                    </div>
+                    <div class="col-md-8">
+                        <p>La cacera a Buda</p>
+                    </div>
+                            <?php break;
+                        case 8:?>
+                    <div class="col-md-4">
+                        <img src="../menu/08arros.jpg">
+                    </div>
+                    <div class="col-md-8">
+                        <p>El conreu de l'arròs</p>
+                    </div>
+                            <?php break;
+                        case 9:?>
+                    <div class="col-md-4">
+                        <img src="../menu/09colons.jpg">
+                    </div>
+                    <div class="col-md-8">
+                        <p>Els colons de Buda</p>
+                    </div>
+                            <?php break;
+                        case 10:?>
+                    <div class="col-md-4">
+                        <img src="../menu/10vapors.jpg">
+                    </div>
+                    <div class="col-md-8">
+                        <p>Els "vapors" i els grans viatges cap a Buda</p>
+                    </div>
+                            <?php break;
+                    }
+                    ?>
                 </div>
+            <?php } ?>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6 text-center">
+                <h3>Investigació en curs</h3>
+            <?php while ($curs = $apac->fetch_array(MYSQLI_ASSOC)){ ?>
+                <div class="col-md-12">
+                    <?php switch ($curs['apartat']) {
+                        case 0:?>
+                    <div class="col-md-4">
+                        <img src="../menu/00metafora.jpg">
+                    </div>
+                    <div class="col-md-8">
+                        <p>Metonímia del Delta</p>
+                    </div>
+                            <?php break;
+                        case 1:?>
+                    <div class="col-md-4">
+                        <img src="../menu/01pasbuda.jpg">
+                    </div>
+                    <div class="col-md-8">
+                        <p>Pas de Buda</p>
+                    </div>
+                            <?php break;
+                        case 2:?>
+                    <div class="col-md-4">
+                        <img src="../menu/02genesifar.jpg">
+                    </div>
+                    <div class="col-md-8">
+                        <p>El Far de Buda</p>
+                    </div>
+                            <?php break;
+                        case 3:?>
+                    <div class="col-md-4">
+                        <img src="../menu/03llacunes.jpg">
+                    </div>
+                    <div class="col-md-8">
+                        <p>Els calaixos de Buda</p>
+                    </div>
+                            <?php break;
+                        case 4:?>
+                    <div class="col-md-4">
+                        <img src="../menu/04aus.jpg">
+                    </div>
+                    <div class="col-md-8">
+                        <p>Les aus de Buda</p>
+                    </div>
+                            <?php break;
+                        case 5:?>
+                    <div class="col-md-4">
+                        <img src="../menu/05pesca.jpg">
+                    </div>
+                    <div class="col-md-8">
+                        <p>Històries de pesca a Buda</p>
+                    </div>
+                            <?php break;
+                        case 6:?>
+                    <div class="col-md-4">
+                        <img src="../menu/06mas.jpg">
+                    </div>
+                    <div class="col-md-8">
+                        <p>El mas de Buda</p>
+                    </div>
+                            <?php break;
+                        case 7:?>
+                    <div class="col-md-4">
+                        <img src="../menu/07cacera.jpg">
+                    </div>
+                    <div class="col-md-8">
+                        <p>La cacera a Buda</p>
+                    </div>
+                            <?php break;
+                        case 8:?>
+                    <div class="col-md-4">
+                        <img src="../menu/08arros.jpg">
+                    </div>
+                    <div class="col-md-8">
+                        <p>El conreu de l'arròs</p>
+                    </div>
+                            <?php break;
+                        case 9:?>
+                    <div class="col-md-4">
+                        <img src="../menu/09colons.jpg">
+                    </div>
+                    <div class="col-md-8">
+                        <p>Els colons de Buda</p>
+                    </div>
+                            <?php break;
+                        case 10:?>
+                    <div class="col-md-4">
+                        <img src="../menu/10vapors.jpg">
+                    </div>
+                    <div class="col-md-8">
+                        <p>Els "vapors" i els grans viatges cap a Buda</p>
+                    </div>
+                            <?php break;
+                    }
+                    ?>
+                </div>
+            <?php } ?>
+            </div>
+        </div>
             </div>            
             <img id="dossier" src="img/dossier-obert.png" alt="Imatge del dossier obert" data-color="<?=$c?>"/>
         </div>

@@ -160,6 +160,11 @@
     <script src="js/jquery.mousewheel.min.js" type="text/javascript"></script>
     <script src="js/jquery.rotate.js" type="text/javascript"></script>
     <script src="../js/menu.js" type="text/javascript"></script>
+    <?php
+        if (isset($_COOKIE['personatge'])){ ?>
+    <script>guardarActual(0);</script>
+        <?php }
+    ?>
     <script>
         var pos = 10;
         $(window).load(function(){
